@@ -132,32 +132,30 @@ for the course, and possible disciplinary proceedings.
 
 * Attendance Policy
 
-Attendance is mandatory. Students are expected to be present at all class lectures and are responsible for all material
-covered in class and assigned in readings.  Likewise lab sessions are mandatory.  Lab sessions may not be made up,
-and absences will affect your final course grade directly for the missed assignments.
+Attendance is mandatory. Students are expected to be present at all
+class lectures and are responsible for all material covered in class
+and assigned in readings.  Likewise lab sessions are mandatory.  Lab
+sessions may not be made up, and absences will affect your final
+course grade directly for the missed assignments.
 
 
-* Course Requirements
+* Course Requirements and Deadlines
+Credit will be given for ONLY those exams, programs, and/or projects
+turned in no later than the deadline as announced by the instructor of
+this class, unless prior arrangement has been made with the
+instructor. Late programs / projects / assignments can or cannot gain
+partial credit. Credit for late programs / projects /assignments will be
+announced with the description of it.
+
+Assignments and projects will be posted in university’s eCollege
+communication system. Detailed information will be provided by the
+instructor. Students also should turn in their assignment through
+eCollege portal. Each student is responsible for the
+content/instructions of email communications.
+
 Study: To plan a minimum of three hours of outside preparation for
 each hour of class is a safe time allocation for successfully
 completing the course.
-
-Assignments: There will be regularly assigned homework
-problems. Assignments will be given and returned via the online
-eCollege system as a convenience to the students and the instructor.
-In general, we will probably have 1 written assignment and/or 1
-programming assignment for each of the major parts of the course.  It
-is very important that students follow the instructions carefully on
-the assignments. It is the student’s responsibility to have all
-assignments ready on time by the given due date. Late assignment may
-not be accepted or may be penalized and assignment may not be accepted
-beyond a certain time. Important material from the text and outside
-sources will be covered in class. Students should plan to take careful
-notes as not all material can be found in the texts or
-readings. Discussion is encouraged as student-procured outside
-material relevant to topics being covered. End of chapter activities
-and online activities may be assigned to reinforce material in the
-text.
 
 Exams: Three exams will be given.  The exams will not be
 comprehensive, and will focus on the particular materials/readings
