@@ -71,10 +71,10 @@ the identified student(s). Regarding codes in assignments / projects,
 you may be required to explain the code you submitted. In case of
 discursive explanation, the instructor holds the right to lower your
 grade. You are given many programming assignments during semester. The
-student submitting other’s source code will take -1 for the this
+student submitting other’s source code will take -1 for this
 specific assignment. A student having more than three -1 cannot gain
 any point for the Lab/Assignments section of class evaluation. It
-means that you will automatically lose 30% of your total grade.
+means that you will automatically lose 20% of your total grade.
 
 Letter grades will be assigned according to the following scale:
 
