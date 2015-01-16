@@ -71,10 +71,10 @@ the identified student(s). Regarding codes in assignments / projects,
 you may be required to explain the code you submitted. In case of
 discursive explanation, the instructor holds the right to lower your
 grade. You are given many programming assignments during semester. The
-student submitting other’s source code will take -1 for this
-specific assignment. A student having more than three -1 cannot gain
-any point for the Lab/Assignments section of class evaluation. It
-means that you will automatically lose 20% of your total grade.
+student submitting other’s source code will take -1 for this specific
+assignment. A student having more than three -1 cannot gain any point
+for the Lab/Assignments section of class evaluation. It means that you
+will automatically lose 20% of your total grade.
 
 Letter grades will be assigned according to the following scale:
 
@@ -86,6 +86,25 @@ Letter grades will be assigned according to the following scale:
 | 70 - 79           | C            |
 | 60 - 69           | D            |
 | Below 60          | F            |
+
+
+* Student's with Disabilities
+
+The Americans with Disabilities Act (ADA) is a federal
+anti-discrimination statute that provides comprehensive civil rights
+protection for persons with disabilities.  Among other things, this
+legislation requires that all students with disabilities be guaranteed
+a learning environment that provides for reasonable accommodation of
+their disabilities.  If you have a disability requiring an
+accommodation, please contact: 
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+| Office of Student Disability Resourcesand Services |
+| Texas A&M University-Commerce                      |
+| Gee Library, Room 132                              |
+| Phone (903) 886-5150 or (903) 886-5835             |
+| Fax (903) 468-8148                                 |
+| StudentDisabilityServices@tamuc.edu                |
 
 
 * Course Requirements
@@ -139,18 +158,6 @@ Credit will be given for ONLY those exam(s), program(s), and/or
 project(s) turned in no later than the deadline(s) as announced by the
 instructor of this class unless prior arrangement has been made with
 the instructor.
-
-* Student's with Disabilities
-
-The Americans with Disabilities Act (ADA) is a federal
-anti-discrimination statute that provides comprehensive civil rights
-protection for persons with disabilities.  Among other things, this
-legislation requires that all students with disabilities be guaranteed
-a learning environment that provides for reasonable accommodation of
-their disabilities.  If you have a disability requiring an
-accommodation, please contact: Office of Student Disability Resources
-and Services, Texas A&M University-Commerce, Gee Library, Room 132,
-Phone (903) 886-5150, StudentDisabilityServices@tamuc.edu
 
 * Academic Ethics
 
