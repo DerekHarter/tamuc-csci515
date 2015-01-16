@@ -163,10 +163,3 @@ material.
 
 
 
-* Course Requirement Deadlines
-
-Credit will be given for ONLY those exam(s), program(s), and/or
-project(s) turned in no later than the deadline(s) as announced by the
-instructor of this class unless prior arrangement has been made with
-the instructor.
-
