@@ -1,4 +1,4 @@
-#+TITLE:     CSci 515 Fundamentals of Programming
+1#+TITLE:     CSci 515 Fundamentals of Programming
 #+Author:    Course Syllabus
 #+Date:      Spring 2015
 #+DESCRIPTION: Tentative Course Syllabus
@@ -107,6 +107,36 @@ accommodation, please contact:
 | StudentDisabilityServices@tamuc.edu                |
 
 
+* Academic Ethics
+
+"All students enrolled at the University shall follow the tenets of
+common decency and acceptable behavior conducive to a positive
+learning environment." (See Student's Guide Handbook, Policies and
+Procedures, Conduct). 
+
+Absolutely no usage of laptops and cellular devices (texting and
+talking) in class. Talking and other activities that distract/disturb
+others in the class will not be tolerated. Instructor holds the right
+to ask you leave the classroom any time based on any of disturbing
+attitude. Each student should sign the sign-sheet if asked by
+instructor. Late student may not be allowed to participate the
+lecture.
+
+Ethics also includes the issue of plagiarism, and copying code for
+programming/lab assignments is just as serious as any other type of
+plagiarism.  If you are caught sharing or using other people's work in
+this class, you will receive a 0 grade and a warning on the first
+instance.  A subsequent instance will result in receiving an F grade
+for the course, and possible disciplinary proceedings.
+
+
+* Attendance Policy
+
+Attendance is mandatory. Students are expected to be present at all class lectures and are responsible for all material
+covered in class and assigned in readings.  Likewise lab sessions are mandatory.  Lab sessions may not be made up,
+and absences will affect your final course grade directly for the missed assignments.
+
+
 * Course Requirements
 Study: To plan a minimum of three hours of outside preparation for
 each hour of class is a safe time allocation for successfully
@@ -139,18 +169,6 @@ through eCollege to help ensure students stay up with assigned
 material.
 
 
-* Attendance Policy
-
-Student participation will be graded by the level of class
-participation and attendance. Students are expected to attend every
-class. The student may fail the course if the attendance is below a
-certain percentage.  If a student is absent from class on the due date
-of any assignment, they are expected to make alternative arrangements
-to assure that the assignment is turned in ON TIME. Any student
-wishing to withdraw from the course must do so officially as outlined
-in the class schedule. THE INSTRUCTOR CANNOT DROP OR WITHDRAW ANY
-STUDENT.
-
 
 * Course Requirement Deadlines
 
@@ -158,16 +176,4 @@ Credit will be given for ONLY those exam(s), program(s), and/or
 project(s) turned in no later than the deadline(s) as announced by the
 instructor of this class unless prior arrangement has been made with
 the instructor.
-
-* Academic Ethics
-
-"All students enrolled at the University shall follow the tenets of
-common decency and acceptable behavior conducive to a positive
-learning environment." (See Student's Guide Handbook, Policies and
-Procedures, Conduct). Ethics also includes the issue of plagiarism,
-and copying code for programming/lab assignments is just as serious as any
-other type of plagiarism.  If you are caught sharing or using other
-people's work in this class, you will receive a 0 grade and a warning
-on the first instance.  A subsequent instance will result in receiving
-an F grade for the course, and possible disciplinary proceedings.
 
