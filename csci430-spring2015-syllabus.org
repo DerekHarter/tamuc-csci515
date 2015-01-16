@@ -1,4 +1,4 @@
-#+TITLE:     CSci 430 Operating Systems
+#+TITLE:     CSci 515 Fundamentals of Programming
 #+Author:    Course Syllabus
 #+Date:      Spring 2015
 #+DESCRIPTION: Tentative Course Syllabus
@@ -23,16 +23,19 @@ This course will be web enhanced.  Lectures, notes and course
 materials will be distributed through our University's eCollege online
 course system.
 
-| 01E | 20941 | TR 11:00a - 12:15p | Location: EDS 133
+| Section 03E (Lecture) | 23224 | W 11:00a - 1:40p | Location: EDS 133 |
+| Section 03L (Lab)     | 23225 | W  2:00p - 4:00p | Location Jour 102 |
 
 
 
 * Course Description
-
-Operating Systems (OS). A study of operating systems with emphasis on
-a multiprogramming environment; concentrates on principles involved in
-resource management; topics such as job scheduling and memory
-management are also studied. *Credit hours: 3*.
+This is an advanced programming course using a high level programming
+language, C and C++. Specific objectives are to introduce the
+development of algorithms as a disciplined approach to problem
+solving; to present programming practices in design, coding,
+debugging, testing and documentation of computer programs; to provide
+the student with the fundamental knowledge necessary for further study
+in the field of computational sciences.
 
 * Prerequisites
 CSCI241: Machine Learning and Computer Organization; and CSCI270 Data
