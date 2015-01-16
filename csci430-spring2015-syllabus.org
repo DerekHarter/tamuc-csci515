@@ -35,29 +35,18 @@ debugging, testing and documentation of computer programs; to provide
 the student with the fundamental knowledge necessary for further study
 in the field of computational sciences.
 
-* Prerequisites
-CSCI241: Machine Learning and Computer Organization; and CSCI270 Data
-Structures and Algorithms.
-
 * Student Learning Outcomes:
 
-- (SLO430.1) Students will be able to identify the basic components, and functions of OS.
-- (SLO430.2) Students will be able to identify modern memory management techniques.
-- (SLO430.3) Students will be able to identify components of multiprogramming and multiuser OS.
-- (SLO430.4) Students will be able to identify processes, threads, and their management by the OS.
-- (SLO430.5) Students will be able to identify concurrent programming techniques and job scheduling.
-- (SLO430.6) Students will learn about some commercially available modern OS.
+- To understand the internal representation of the various data types.
+- To review the language syntax and learn new syntax you have not previously used in programming applications.
+- To correctly solve programming problems and learn how to develop algorithms.
+- To examine the internal representation of two and three dimension arrays in C/C++.
+- To understand dynamic memory allocation, parameter passing, the use of pointers. 
 
 * Textbook
 
 ** Required: 
-/Operating Systems Internals and Design Principles/ (2011). 7\textsuperscript{th}
-Edition.  by William Stallings, Prentice-Hall Inc., 2011,
-ISBN-10:013230998X. 
-
-** Recommended: 
-/Operating System Concepts/ (2006).  7\textsuperscript{th} Edition. by A. Silberschatz
-and P. Galvin, John Wiley & Sons, Inc., ISBN 0-471-69466-5. 
+/C++ How to Program (7th Edition), by Paul J. Deitel & Harvey M. Deitel, ISBN-13: 978 0136117261
 
 * Course Outline / Content
 
