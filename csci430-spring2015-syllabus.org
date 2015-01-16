@@ -43,9 +43,7 @@ in the field of computational sciences.
 - To examine the internal representation of two and three dimension arrays in C/C++.
 - To understand dynamic memory allocation, parameter passing, the use of pointers. 
 
-* Textbook
-
-** Required: 
+* _Mandatory_ Textbook
 /C++ How to Program (7th Edition), by Paul J. Deitel & Harvey M. Deitel, ISBN-13: 978 0136117261
 
 * Course Outline / Content
