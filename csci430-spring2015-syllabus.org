@@ -46,68 +46,47 @@ in the field of computational sciences.
 * _Mandatory_ Textbook
 /C++ How to Program (7th Edition), by Paul J. Deitel & Harvey M. Deitel, ISBN-13: 978 0136117261
 
-* Course Outline / Content
-
-#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
-
-Part One: Background (Chapters 1, 2)
-
-\leftskip=0.25in Chapter 1. Computer system overview (Week 1)
-
-\leftskip=0.25in Parts of Chapter 2. Operating system overview (Week 2)
-
-
-\leftskip=-0.25in Part Two: Processes (Chapters 3, 4)
-
-\leftskip=0.25in Parts of Chapter 3. Process description and control (Week 3, 4)
-
-\leftskip=0.25in Parts of Chapter 4. Threads (Week 4, 5)
-
-\leftskip=0.25in Week 7: _Test 1_ 
-
-\leftskip=-0.25in Part Three: Concurrency (Chapters 5, 6)
-
-\leftskip=0.25in Parts of Chapter 5. Concurrency I: Mutual exclusion (Week 8)
-
-\leftskip=0.25in Week 9: _Spring Break (March 16 through 22)_
-
-\leftskip=0.25in Parts of Chapter 6. Concurrency II: Deadlock/Starve (Week 10)
-
-\leftskip=0.25in Week 11: _Test 2_
-
-\leftskip=-0.25in Part Four: Memory (Chapters 7, 8)
-
-\leftskip=0.25in Parts of Chapter 7. Memory management (Week 12, Week 13)
-
-\leftskip=0.25in Parts of Chapter 8. Virtual memory (Week 13, 14)
-
-\leftskip=-0.25in Part Five: Scheduling (Chapters 9)
-
-\leftskip=0.25in Parts of Chapter 9.  Uniprocessor scheduling (Week 14)
-
-\leftskip=0.25in Review of the course material; Q&A; wrap-up (Week 15)
-
-\leftskip=0.25in _Finals Week (May 11 through 15): Test 3_
-
-
 
 
 * Evaluation (Tentative)
 Your grade for the course will be based on the following (approximate) percentages:
 
 #+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
-| Three Exams                              | 60% (20% each) |
-| Labs / Programming Assignments (appx. 6) |            35% |
-| Quizzes and Participation                |             5% |
+| First Test         | 25% |
+| Second Test        | 25% |
+| Labs / Assignments | 20% |
+| Final Test         | 30% |
+
+Final test might be in any form, a program, such as project
+presentation, a regular test, or a paper. The instructor will make a
+decision after a cooperative discussion with the students.
+
+You should do your own work on exams/projects and for computer
+assignments. Copying another student’s work is not acceptable. Any
+indication of cheating and/or plagiarism on an exam/assignment/project
+will be an automatic 0 (zero) for the exam/assignment/project for all
+students involved. Yet, based on cheating and plagiarism activity in
+any section of class, instructor holds the right to give F grade to
+the identified student(s). Regarding codes in assignments / projects,
+you may be required to explain the code you submitted. In case of
+discursive explanation, the instructor holds the right to lower your
+grade. You are given many programming assignments during semester. The
+student submitting other’s Spring 2015 CSCI 515 Course Syllabus |
+December 19, 2014 source code will take -1 for the this specific
+assignment. A student having more than three -1 cannot gain any point
+for the Lab/Assignments section of class evaluation. It means that you
+will automatically lose 30% of your total grade.  
+
+Letter grades will be assigned according to the following scale:
 
 #+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
-| Final Average | Letter Grade |
-|---------------+--------------|
-| 90 - 100      | A            |
-| 80 - 89       | B            |
-| 70 - 79       | C            |
-| 60 - 69       | D            |
-| Below 60      | F            |
+| Final Average (%) | Letter Grade |
+|-------------------+--------------|
+| 90 - 100          | A            |
+| 80 - 89           | B            |
+| 70 - 79           | C            |
+| 60 - 69           | D            |
+| Below 60          | F            |
 
 
 * Course Requirements
