@@ -1,0 +1,200 @@
+#+TITLE:     CSci 430 Operating Systems
+#+Author:    Course Syllabus
+#+Date:      Spring 2015
+#+DESCRIPTION: Tentative Course Syllabus
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{color}
+
+* Instructor
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+| Derek Harter, Ph.D., Associate Professor |
+| Department of Computer Science           |
+| Texas A&M University - Commerce          |
+| Office: SCI 355                          |
+| E-mail: Derek.Harter@tamuc.edu           |
+
+* Class Meetings
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+This course will be web enhanced.  Lectures, notes and course
+materials will be distributed through our University's eCollege online
+course system.
+
+| 01E | 20941 | TR 11:00a - 12:15p | Location: EDS 133
+
+
+
+* Course Description
+
+Operating Systems (OS). A study of operating systems with emphasis on
+a multiprogramming environment; concentrates on principles involved in
+resource management; topics such as job scheduling and memory
+management are also studied. *Credit hours: 3*.
+
+* Prerequisites
+CSCI241: Machine Learning and Computer Organization; and CSCI270 Data
+Structures and Algorithms.
+
+* Student Learning Outcomes:
+
+- (SLO430.1) Students will be able to identify the basic components, and functions of OS.
+- (SLO430.2) Students will be able to identify modern memory management techniques.
+- (SLO430.3) Students will be able to identify components of multiprogramming and multiuser OS.
+- (SLO430.4) Students will be able to identify processes, threads, and their management by the OS.
+- (SLO430.5) Students will be able to identify concurrent programming techniques and job scheduling.
+- (SLO430.6) Students will learn about some commercially available modern OS.
+
+* Textbook
+
+** Required: 
+/Operating Systems Internals and Design Principles/ (2011). 7\textsuperscript{th}
+Edition.  by William Stallings, Prentice-Hall Inc., 2011,
+ISBN-10:013230998X. 
+
+** Recommended: 
+/Operating System Concepts/ (2006).  7\textsuperscript{th} Edition. by A. Silberschatz
+and P. Galvin, John Wiley & Sons, Inc., ISBN 0-471-69466-5. 
+
+* Course Outline / Content
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+
+Part One: Background (Chapters 1, 2)
+
+\leftskip=0.25in Chapter 1. Computer system overview (Week 1)
+
+\leftskip=0.25in Parts of Chapter 2. Operating system overview (Week 2)
+
+
+\leftskip=-0.25in Part Two: Processes (Chapters 3, 4)
+
+\leftskip=0.25in Parts of Chapter 3. Process description and control (Week 3, 4)
+
+\leftskip=0.25in Parts of Chapter 4. Threads (Week 4, 5)
+
+\leftskip=0.25in Week 7: _Test 1_ 
+
+\leftskip=-0.25in Part Three: Concurrency (Chapters 5, 6)
+
+\leftskip=0.25in Parts of Chapter 5. Concurrency I: Mutual exclusion (Week 8)
+
+\leftskip=0.25in Week 9: _Spring Break (March 16 through 22)_
+
+\leftskip=0.25in Parts of Chapter 6. Concurrency II: Deadlock/Starve (Week 10)
+
+\leftskip=0.25in Week 11: _Test 2_
+
+\leftskip=-0.25in Part Four: Memory (Chapters 7, 8)
+
+\leftskip=0.25in Parts of Chapter 7. Memory management (Week 12, Week 13)
+
+\leftskip=0.25in Parts of Chapter 8. Virtual memory (Week 13, 14)
+
+\leftskip=-0.25in Part Five: Scheduling (Chapters 9)
+
+\leftskip=0.25in Parts of Chapter 9.  Uniprocessor scheduling (Week 14)
+
+\leftskip=0.25in Review of the course material; Q&A; wrap-up (Week 15)
+
+\leftskip=0.25in _Finals Week (May 11 through 15): Test 3_
+
+
+
+
+* Evaluation (Tentative)
+Your grade for the course will be based on the following (approximate) percentages:
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+| Three Exams                              | 60% (20% each) |
+| Labs / Programming Assignments (appx. 6) |            35% |
+| Quizzes and Participation                |             5% |
+
+#+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
+| Final Average | Letter Grade |
+|---------------+--------------|
+| 90 - 100      | A            |
+| 80 - 89       | B            |
+| 70 - 79       | C            |
+| 60 - 69       | D            |
+| Below 60      | F            |
+
+
+* Course Requirements
+Study: To plan a minimum of three hours of outside preparation for
+each hour of class is a safe time allocation for successfully
+completing the course.
+
+Assignments: There will be regularly assigned homework
+problems. Assignments will be given and returned via the online
+eCollege system as a convenience to the students and the instructor.
+In general, we will probably have 1 written assignment and/or 1
+programming assignment for each of the major parts of the course.  It
+is very important that students follow the instructions carefully on
+the assignments. It is the student’s responsibility to have all
+assignments ready on time by the given due date. Late assignment may
+not be accepted or may be penalized and assignment may not be accepted
+beyond a certain time. Important material from the text and outside
+sources will be covered in class. Students should plan to take careful
+notes as not all material can be found in the texts or
+readings. Discussion is encouraged as student-procured outside
+material relevant to topics being covered. End of chapter activities
+and online activities may be assigned to reinforce material in the
+text.
+
+Exams: Three exams will be given.  The exams will not be
+comprehensive, and will focus on the particular materials/readings
+just covered in the previous 3 to 5 weeks of the course.  The
+instructor may add other exams as they see necessary.  
+
+Quizzes: Unannounced pop-quizzes may be given in class and/or online
+through eCollege to help ensure students stay up with assigned
+material.
+
+
+* Attendance Policy
+
+Student participation will be graded by the level of class
+participation and attendance. Students are expected to attend every
+class. The student may fail the course if the attendance is below a
+certain percentage.  If a student is absent from class on the due date
+of any assignment, they are expected to make alternative arrangements
+to assure that the assignment is turned in ON TIME. Any student
+wishing to withdraw from the course must do so officially as outlined
+in the class schedule. THE INSTRUCTOR CANNOT DROP OR WITHDRAW ANY
+STUDENT.
+
+
+* Course Requirement Deadlines
+
+Credit will be given for ONLY those exam(s), program(s), and/or
+project(s) turned in no later than the deadline(s) as announced by the
+instructor of this class unless prior arrangement has been made with
+the instructor.
+
+* Student's with Disabilities
+
+The Americans with Disabilities Act (ADA) is a federal
+anti-discrimination statute that provides comprehensive civil rights
+protection for persons with disabilities.  Among other things, this
+legislation requires that all students with disabilities be guaranteed
+a learning environment that provides for reasonable accommodation of
+their disabilities.  If you have a disability requiring an
+accommodation, please contact: Office of Student Disability Resources
+and Services, Texas A&M University-Commerce, Gee Library, Room 132,
+Phone (903) 886-5150, StudentDisabilityServices@tamuc.edu
+
+* Academic Ethics
+
+"All students enrolled at the University shall follow the tenets of
+common decency and acceptable behavior conducive to a positive
+learning environment." (See Student's Guide Handbook, Policies and
+Procedures, Conduct). Ethics also includes the issue of plagiarism,
+and copying code for programming/lab assignments is just as serious as any
+other type of plagiarism.  If you are caught sharing or using other
+people's work in this class, you will receive a 0 grade and a warning
+on the first instance.  A subsequent instance will result in receiving
+an F grade for the course, and possible disciplinary proceedings.
+
