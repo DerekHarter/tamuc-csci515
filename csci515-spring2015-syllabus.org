@@ -1,4 +1,4 @@
-1#+TITLE:     CSci 515 Fundamentals of Programming
+#+TITLE:     CSci 515 Fundamentals of Programming
 #+Author:    Course Syllabus
 #+Date:      Spring 2015
 #+DESCRIPTION: Tentative Course Syllabus
