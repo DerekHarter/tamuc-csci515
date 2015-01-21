@@ -1,0 +1,39 @@
+#+TITLE:     CSci 515 Coding Style Guidelines
+#+Author:    
+#+Date:      Spring 2015
+#+DESCRIPTION: Class Coding Style Guidelines
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{color}
+
+* Overview
+
+Learning correct style and formatting standards for written programs
+are an important part of become a good computer scientist and software
+engineer.  Style and formatting guidelines are to programming as
+grammer, punctuation and formatting rules are to written languages.
+They help you to communicate the intention and meaning of your
+programs to both other readers (other programmers and software
+engineers) as well as your future self trying to read and understand
+code you may have written sometime in the distant past.
+
+In general, you must follow good programming practice tips and
+specifications given in our Deitel textbook for this course.  Failure
+to follow follow a good programming formatting practice as specificed
+in our textbook may cost you points on your lab and programming
+assignments.  In general, if your follow these guidelines and format
+your code to look and conform to the style shown in your textbook,
+then you will not have points removed for style issues.  However, the
+following are additional issues and guidelines that you must also
+follow, that may be slightly different or that we will emphasize from
+the Deital style formatting and guidelines.
+
+* File header documentation
+
+All assignment files you create for this course must have a file
+document header included at the beginning of the source code file.  We
+will use a pseudo docoxygen format, and ask you to provide the
+following information at the beginning of each of your source files
+submitted for assignment for this course:
+
