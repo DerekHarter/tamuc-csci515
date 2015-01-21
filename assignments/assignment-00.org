@@ -30,21 +30,21 @@ You should prompt the user to enter an appropriate value that can be
 stored in the type, and then you should perform some manipulation of
 the type and display the result.
 
-** Lab Submission
+* Lab Submission
 On the day of the lab, you simply need to complete a demonstration of
 getting an int data type and then manipulating the int and displaying
 the result after performing your calculation.  Your program needs to
 be completed in class, and should be uploaded to the Lab-00 dropbox on
 our eCollege submission system.
 
-** Programming Submission
+* Programming Submission
 Then, by the end of next Tuesday (1/27), you need to complete your
 program as specified above to demonstrate using all of the required
 list of data types to input a value and display a result of a
 manipulation.  Your completed program should be uploaded to the
 eCollege dropbox named Prog-00 for this course.
 
-** Requirements
+* Requirements
 Your programs must conform to the style and formatting guidelines
 given for this course.  In particular, you should have a program
 header in your file (with your name, cwid, date, description,
