@@ -164,3 +164,15 @@ void displayMatrix(int rows, int cols, int v[MAX_PROCESSES][MAX_RESOURCES])
   cout << endl;
 }
 #+end_src
+
+* Whitespace
+
+Pay special attention to the programming guidelines regarding space
+within statements and between blocks of code and functions.  For
+example, always put a single space before and after all binary
+operators (like +, -, <<, etc.).  Put a single space after commas (,)
+and semicolons (;) separating lists of parameters or declarations in
+functions/control blocks.  But a single blank line before and after a
+control block inside of a function.  For this course, you should place
+2 blank lines between the end of each function and the beginning of
+the next function documentation.
