@@ -42,6 +42,7 @@ submitted for assignment for this course:
  * @author Joe Student
  * @cwid   123 45 678
  * @assg   Assignment #1
+ * @ide    Visual Studio Express 2013
  * @date   January 20, 2015
  *
  * @description Provide a short description of the problem and the approach you 
