@@ -126,7 +126,7 @@ to choose meaningful variable names for your programs.
 
 For this course you are required to place (most) all braces defining a
 control block (like a for loop or if statement) on a separate line by
-themselves, indented appropriately.  For example, this function has X
+themselves, indented appropriately.  For example, this function has 2
 levels of indentation, and all levels are consistently indented and
 all opening/closing braces appear on their own line for readability:
 
