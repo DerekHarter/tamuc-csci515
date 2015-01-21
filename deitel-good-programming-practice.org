@@ -88,4 +88,13 @@
 - 5.3 Vertical spacing above and below control statements and
   indentation of the bodies of control statements give programs a
   two-dimensional appearance that improves readability.
+- 5.10 Provide a default case in switch statements. Cases not
+  explicitly tested in a switch statement without a default case are
+  ignored. Including a default case focuses you on the need to process
+  exceptional conditions. There are situations in which no default
+  processing is needed. Although the case clauses and the default case
+  clause in a switch statement can occur in any order, it’s common
+  practice to place the default clause last.
+- 6.1 Capitalize the first letter of an identifier used as a
+  user-defined type name. (e.g. a Class or Struct name, for example)
 - 
