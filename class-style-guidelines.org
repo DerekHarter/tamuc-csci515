@@ -120,6 +120,11 @@ to choose meaningful variable names for your programs.
 
 * Brace Placement for Control Blocks
 
-For this course you are required to place (most) all braces defining
-a control block (like a for loop or if statement) on a separate line
-by themselves, indented appropriately.  
+For this course you are required to place (most) all braces defining a
+control block (like a for loop or if statement) on a separate line by
+themselves, indented appropriately.  For example, this function has X
+levels of indentation, and all levels are consistently indented and
+all opening/closing braces appear on their own line for readability:
+
+#+begin_src cpp :includes <stdio.h> :exports both
+#+end_src
