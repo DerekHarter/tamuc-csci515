@@ -1,0 +1,56 @@
+#+TITLE:     Assignment 00
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
+#+DESCRIPTION: Assignment 00
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
+**Due Date:** 11:59 pm., Tuesday January 27, 2015
+
+* Objective
+
+In this assignment, you need to demonstrate the use of basic data
+types of C, and practice using stream I/O to get and display data on
+the terminal.
+
+Write a complete C program that uses all of the following data types.
+You should prompt the user to enter an appropriate value that can be
+stored in the type, and then you should perform some manipulation of
+the type and display the result.
+
+** Lab Submission
+On the day of the lab, you simply need to complete a demonstration of
+getting an int data type and then manipulating the int and displaying
+the result after performing your calculation.  Your program needs to
+be completed in class, and should be uploaded to the Lab-00 dropbox on
+our eCollege submission system.
+
+** Programming Submission
+Then, by the end of next Tuesday (1/27), you need to complete your
+program as specified above to demonstrate using all of the required
+list of data types to input a value and display a result of a
+manipulation.
+
+** Requirements
+Your programs must conform to the style and formatting guidelines
+given for this course.  In particular, you should have a program
+header in your file (with your name, cwid, date, description,
+etc. information).  In addition, though your program will only consist
+of a single main() function, I want you to get into the habit of
+providing function documentation as well.  You may use the following
+function documentation for basic main() functions for the initial
+programming assignments for this course.
+
+#+begin_src cpp :includes <stdio.h> :exports both
+/** program entry point
+ * The main entry point of the program.  Execution of the program
+ * will begin in this function.
+ *
+ * @returns 0 for successful program completion.
+ */
+int main()
+{
+    // programming assignment implementation goes here
+}
+#+end_src
