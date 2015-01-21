@@ -47,7 +47,7 @@ programming assignments for this course.
  * The main entry point of the program.  Execution of the program
  * will begin in this function.
  *
- * @returns 0 for successful program completion.
+ * @returns an int 0 for successful program completion.
  */
 int main()
 {
