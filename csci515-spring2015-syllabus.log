@@ -742,4 +742,569 @@ Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 )
 
 Package ifplatform Warning: 
-    shell escape is disabled, so I can o
+    shell escape is disabled, so I can only detect \ifwindows.
+
+)
+\minted@bgbox=\box40
+\minted@code=\write4
+\@float@every@listing=\toks28
+\c@listing=\count125
+)
+
+! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \usepackage
+                {array}
+? q
+OK, entering \batchmode...
+runsystem(which pygmentize && touch csci515-spring2015-syllabus.aex)...disabled
+ (restricted).
+
+
+! Package minted Error: You must have `pygmentize' installed to use this packag
+e.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \usepackage
+                {array}
+Refer to the installation instructions in the minted documentation for more inf
+ormation.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks29
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
+No file csci515-spring2015-syllabus.aux.
+\openout1 = `csci515-spring2015-syllabus.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen128
+\scratchbox=\box41
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen129
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring OFF on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count132
+)
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+\@outlinefile=\write5
+\openout5 = `csci515-spring2015-syllabus.out'.
+
+runsystem(pygmentize -S default -f latex > csci515-spring2015-syllabus.pyg)...d
+isabled (restricted).
+
+ (./csci515-spring2015-syllabus.pyg)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 32.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+! Missing number, treated as zero.
+<to be read again> 
+                   |
+l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   |
+l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! Package calc Error: `|' invalid at this point.
+
+See the calc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+                                                  
+I expected to see one of: + - * / )
+
+
+! Package array Error:  Illegal pream-token (\hline): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 \hline
+            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.213 \textbf{W} &
+                   \textbf{Content} & \textbf{Assignments}\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.213 \textbf{W} & \textbf{Content} &
+                                      \textbf{Assignments}\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.215 1 &
+          Introduction, Data types, Cin, Cout & Lab assg. to be completed in...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.215 1 & Introduction, Data types, Cin, Cout &
+                                                Lab assg. to be completed in...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.217 2 &
+          Decision making, details of loops, string comparison, nested contr...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.217 ...structures, logical operators, == and = &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.219 3 &
+          File Operations, text files, binary files.  How to read and write,...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.219 ...domness.  Loops to read data from file. &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.221 4 &
+          Functions: Modular programming, pass by reference, pass by value, ...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.221 ... function, memory details of functions. &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.223 5 &
+          Determining the Size of a Data Type, Scope, static variables, func...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.223 ...d (system) functions, default arguments &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.225 6 &
+          Arrays: Using with different data types, index and access to array...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.225 ...ess to arrays.  Applications to images. &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.227 7 &
+          Array operations, add, shift, replace, deleta an element, parallel...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.227 ...ifferent data types (basics of structs) &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.229 8 &
+          Array applications: Search in sorted and unsorted data.  Sort algo...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.229 ...ay size calculation for a given problem &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.231 9 &
+          Structs, memory status of structs, arrays in structs, functions wi...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.231 ...ays in structs, functions with structs. &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.233 10 &
+           Structs, structs in structs, sorting structs, sorting structs in ...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.233 ...ng structs, sorting structs in an array &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.235 11 &
+           Dynamic Programming, Pointers, new and delete operators.  Dynamic...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.235 ...d arrays, dynamically created pointers. &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.237 12 &
+           Dynamic Programming with various scenarios.  Friendship network, ...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.237 ...ook problem, Traveling salesman problem &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.239 13 &
+           Dynamic Programming with structs.  Pointers to various datatypes ...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.239 ...structs.  Pointers to various datatypes &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.241 14 &
+           Templates, pointer based strings, C string and string class & Lab...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.241 ...ased strings, C string and string class &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.243 15 &
+           Family tree problem with dynamic programming, recursive functions...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.243 ...ynamic programming, recursive functions &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.245 16 &
+           Review for Final exam, practical examples: constrained sorting, D...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.245 ...ed sorting, DNA search, bank simulation &
+                                                   Lab assg. to be completed...
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Overfull \hbox (510.01646pt too wide) in alignment at lines 212--247
+[] 
+ []
+
+ [4]
+
+! LaTeX Error: \begin{tabular*} on input line 211 ended by \end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.248 \end{center}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ [5]
+
+! LaTeX Error: \begin{center} on input line 210 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
+ (./csci515-spring2015-syllabus.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
+
+Package rerunfilecheck Warning: File `csci515-spring2015-syllabus.out' has chan
+ged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `csci515-spring2015-syllabus.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 210 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 8929 strings out of 495028
+ 122054 string characters out of 6181498
+ 210550 words of memory out of 5000000
+ 11962 multiletter control sequences out of 15000+600000
+ 21093 words of font info for 65 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 31i,6n,37p,286b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.60
+0pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/
+dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0600.600pk> </home/dash/.texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/dash/.texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecti1095.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/tcrm1095.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
+1095.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> 
+</home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dash/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
+Output written on csci515-spring2015-syllabus.pdf (6 pages, 94017 bytes).
+PDF statistics:
+ 374 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
