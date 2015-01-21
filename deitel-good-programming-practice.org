@@ -55,4 +55,37 @@
   comments.
 - 3.3 Place 2 blank lines between member/function definitions to
   enhance program readability.
-- 3.4 
+- 4.1 Consistently applying reasonable indentation conventions
+  throughout your programs greatly improves program readability. We
+  suggest two blanks per indent. Some people prefer using tabs, but
+  these can vary across editors, causing a program written on one
+  editor to align differently when used with another.
+- 4.2 Whatever indentation convention you choose should be applied
+  consistently throughout your programs. It’s difficult to read
+  programs that do not obey uniform spacing conventions.
+- 4.3 Indent both body statements of an if ... else statement.
+- 4.4 If there are several levels of indentation, each level should be
+  indented the same additional amount of space to promote readability
+  and maintainability.
+- 4.5 Always putting the braces in an if ... else statement (or any
+  control statement) helps prevent their accidental omission,
+  especially when adding statements to an if or else clause at a later
+  time. To avoid omitting one or both of the braces, some programmers
+  prefer to type the beginning and ending braces of blocks even before
+  typing the individual statements within the braces.
+- 4.6 Separate declarations from other statements in functions with a
+  blank line for readability.
+- 4.7 Declare each variable on a separate line with its own comment
+  for readability.
+- 4.9 Unlike binary operators, the unary increment and decrement
+  operators should be placed next to their operands, with no
+  intervening spaces.
+- 5.1 Put a blank line before and after each control statement to make
+  it stand out in the program.
+- 5.2 Too many levels of nesting can make a program difficult to
+  understand. As a rule, try to avoid using more than three levels of
+  indentation.
+- 5.3 Vertical spacing above and below control statements and
+  indentation of the bodies of control statements give programs a
+  two-dimensional appearance that improves readability.
+- 
