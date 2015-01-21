@@ -1,8 +1,11 @@
 * Chapter 1
 
-- 1.1 Write your C++ programs in a simple and straightforward manner. This is sometimes re-
-ferred to as KISS (“keep it simple stupid”). Do not “stretch” the
-language by trying bizarre usages.
+- 1.1 Write your C++ programs in a simple and straightforward
+  manner. This is sometimes referred to as KISS (“keep it simple
+  stupid”). Do not “stretch” the language by trying bizarre usages.
 - 2.1 Every program should begin with a comment that describes the purpose of the program.
 - 2.2 Use blank lines, space characters and tabs to enhance program readability.
+- 2.3 Indent the entire body of each function one level within the
+  braces that delimit the body of the function. This makes a program’s
+  functional structure stand out and makes the program easier to read.
 - 
