@@ -862,8 +862,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 ! Missing number, treated as zero.
 <to be read again> 
-                   |
-l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+                   a
+l.211 ...lar*}{align=|p{0.1in}|p{2.2in}|p{2.2in}|}
                                                   
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -871,8 +871,8 @@ look up `weird error' in the index to The TeXbook.)
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
-                   |
-l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+                   a
+l.211 ...lar*}{align=|p{0.1in}|p{2.2in}|p{2.2in}|}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -882,13 +882,13 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-! Package calc Error: `|' invalid at this point.
+! Package calc Error: `a' invalid at this point.
 
 See the calc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 ...n{tabular*}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+l.211 ...lar*}{align=|p{0.1in}|p{2.2in}|p{2.2in}|}
                                                   
 I expected to see one of: + - * / )
 
@@ -1275,7 +1275,7 @@ ppen/ec/tcrm1095.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
 1095.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> 
 </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dash/
 .texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on csci515-spring2015-syllabus.pdf (6 pages, 94017 bytes).
+Output written on csci515-spring2015-syllabus.pdf (6 pages, 94021 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
