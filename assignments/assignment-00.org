@@ -54,7 +54,7 @@ providing function documentation as well.  You may use the following
 function documentation for basic ~main()~ functions for the initial
 programming assignments for this course.
 
-#+begin_src CPP :includes <stdio.h> :exports both
+#+begin_src cpp :includes <stdio.h> :exports both
 
 /** program entry point
  * The main entry point of the program.  Execution of the program
