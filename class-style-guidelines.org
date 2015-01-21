@@ -127,4 +127,36 @@ levels of indentation, and all levels are consistently indented and
 all opening/closing braces appear on their own line for readability:
 
 #+begin_src cpp :includes <stdio.h> :exports both
+/** Display a matrix
+ * A helper function for debugging.  Display a state matrix to
+ * standard output
+ *
+ * @param rows The number of rows in the matrix
+ * @param cols The number of cols in the matrix
+ * @param m A 2 dimensional array of rows x cols integers
+ */
+void displayMatrix(int rows, int cols, int v[MAX_PROCESSES][MAX_RESOURCES])
+{
+  int r, c;
+
+  // display column headers
+  cout << "   "; // extra space over for row labels
+  for (c = 0; c < cols; c++)
+  {
+    cout << "R" << c << " ";
+  }
+  cout << endl;
+  
+  // now display data in matrix
+  for (r = 0; r < rows; r++)
+  {
+    cout << "P" << r << " ";
+    for (c = 0; c < cols; c++)
+    {
+      cout << setw(2) << v[r][c] << " ";
+    }
+    cout << endl;
+  }
+  cout << endl;
+}
 #+end_src
