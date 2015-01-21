@@ -1,4 +1,4 @@
-% Created 2015-01-20 Tue 19:44
+% Created 2015-01-21 Wed 10:03
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,30 +7,34 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
+\usepackage{soul}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
+\usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
-\usepackage{minted}
 \usepackage{array}
 \usepackage{color}
-\date{Spring 2015}
+\providecommand{\alert}[1]{\textbf{#1}}
+
 \title{CSci 515 Coding Style Guidelines}
+\author{}
+\date{Spring 2015}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Class Coding Style Guidelines},
-  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
 \begin{document}
 
 \maketitle
 
+
 \section*{Overview}
 \label{sec-1}
+
 
 Learning correct style and formatting standards for written programs
 are an important part of become a good computer scientist and software
@@ -54,25 +58,29 @@ the Deital style formatting and guidelines.
 \section*{File header documentation}
 \label{sec-2}
 
+
 All assignment files you create for this course must have a file
 document header included at the beginning of the source code file.  We
 will use a pseudo docoxygen format, and ask you to provide the
 following information at the beginning of each of your source files
 submitted for assignment for this course:
 
-\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{cpp}
+
+\begin{verbatim}
 /** 
  * @author Joe Student
  * @cwid   123 45 678
  * @assg   Assignment #1
+ * @ide    Visual Studio Express 2013
  * @date   January 20, 2015
  *
  * @description Provide a short description of the problem and the approach you 
  *              took to solving the problem.
  */
-\end{minted}
+\end{verbatim}
 \section*{Function header documentation}
 \label{sec-3}
+
 
 In a similar manner, all functions you write for this course should
 include a function header declaration and documentation using (pseudo)
@@ -83,7 +91,8 @@ mainly to document the input parameters to the function, and any
 output results the function returns.  Use the following format to
 document all functions you write for assignment for this course:
 
-\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{cpp}
+
+\begin{verbatim}
 /** Check for process arrivals
  * Check the process table information to find processes that are
  * arriving.  Place all arriving processes at the end of the round
@@ -104,7 +113,7 @@ document all functions you write for assignment for this course:
  * @returns bool True if a process arrived, false otherwise 
  */
 bool checkProcessArrivals(int currentTime, ProcessTable* processTable, 
-			    list<Process*>& rrQueue)
+                            list<Process*>& rrQueue)
 {
   for (int pid=0; pid < processTable->numProcesses; pid++)
   {
@@ -112,7 +121,7 @@ bool checkProcessArrivals(int currentTime, ProcessTable* processTable,
     if (p->arrivalTime == currentTime)
     {
       DEBUG(cout << "   Process arrives: " 
-		 << p->processName << endl;)
+                 << p->processName << endl;)
       rrQueue.push_back(p);
       return True
     }
@@ -120,9 +129,10 @@ bool checkProcessArrivals(int currentTime, ProcessTable* processTable,
 
   return False
 }
-\end{minted}
+\end{verbatim}
 \section*{Indentation}
 \label{sec-4}
+
 
 Make sure you pay special attention to the Deital style guidelines
 regarding proper indentation of course code.  For this course we
@@ -133,12 +143,13 @@ levels for code submitted for this class.  DO NOT use hard coded
 \section*{Function and Variable Names}
 \label{sec-5}
 
+
 All functions and variables should follow camelCaseNameing convention
 for your programs for this course.  When creating a user defined type,
 like a class or a struct, you should use CamelCaseNameing with the
 initial letter capitalized (this differentiates functions and
 variables from classes and user defined types). Constants, in
-enumerated types or otherwise, should use ALL$_{\text{CAPS}}$$_{\text{UNDERSCORE}}$
+enumerated types or otherwise, should use ALL$_{\mathrm{CAPS}}$$_{\mathrm{UNDERSCORE}}$
 convention for nameing.  Make sure you choose meaningful variable,
 function, class and constant names for your programs, as meaningful
 well chosen names make your programs more readable and reduce the need
@@ -147,13 +158,15 @@ to choose meaningful variable names for your programs.
 \section*{Brace Placement for Control Blocks}
 \label{sec-6}
 
+
 For this course you are required to place (most) all braces defining a
 control block (like a for loop or if statement) on a separate line by
 themselves, indented appropriately.  For example, this function has 2
 levels of indentation, and all levels are consistently indented and
 all opening/closing braces appear on their own line for readability:
 
-\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{cpp}
+
+\begin{verbatim}
 /** Display a matrix
  * A helper function for debugging.  Display a state matrix to
  * standard output
@@ -186,9 +199,10 @@ void displayMatrix(int rows, int cols, int v[MAX_PROCESSES][MAX_RESOURCES])
   }
   cout << endl;
 }
-\end{minted}
+\end{verbatim}
 \section*{Whitespace}
 \label{sec-7}
+
 
 Pay special attention to the programming guidelines regarding space
 within statements and between blocks of code and functions.  For
@@ -201,5 +215,5 @@ control block inside of a function.  For this course, you should place
 the next function documentation.  In general, pay attention to the
 formatting of whitespace in our Deitel textbook and follow the
 conventions shown there.
-% Emacs 24.3.1 (Org mode 8.2.4)
+
 \end{document}
