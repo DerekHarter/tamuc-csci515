@@ -53,6 +53,6 @@
 - 3.2 Choosing meaningful function names and meaningful parameter
   names makes programs more readable and helps avoid excessive use of
   comments.
-- 3.3 Place 2 blank lines between member-function definitions to
+- 3.3 Place 2 blank lines between member/function definitions to
   enhance program readability.
 - 3.4 
