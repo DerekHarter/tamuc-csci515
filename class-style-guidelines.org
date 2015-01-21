@@ -175,4 +175,6 @@ and semicolons (;) separating lists of parameters or declarations in
 functions/control blocks.  But a single blank line before and after a
 control block inside of a function.  For this course, you should place
 2 blank lines between the end of each function and the beginning of
-the next function documentation.
+the next function documentation.  In general, pay attention to the
+formatting of whitespace in our Deitel textbook and follow the
+conventions shown there.
