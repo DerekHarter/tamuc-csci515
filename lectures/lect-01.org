@@ -1,0 +1,29 @@
+#+TITLE:     Lecture 01 Notes
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
+#+DESCRIPTION: Lecture 01 Notes.
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
+* Install Visual Studio
+* Set Parameters (tabs)
+* First Program in C++ (Hello World)
+- Program Header
+- main function documentation
+- explain line by line
+- compile
+
+* Escape Characters
+
+* cout and cin
+- namespace resolution
+
+* Adding integers (example of input)
+
+* Variables, types, memory
+
+* Arithmetic operations, operater order of precedence
+- modulus
+
+* Relational operators, boolean types, Equality
