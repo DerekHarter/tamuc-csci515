@@ -61,5 +61,37 @@ output results the function returns.  Use the following format to
 document all functions you write for assignment for this course:
 
 #+begin_src cpp :includes <stdio.h> :exports both
+/** Check for process arrivals
+ * Check the process table information to find processes that are
+ * arriving.  Place all arriving processes at the end of the round
+ * robin scheduling queue.
+ *
+ * @param currentTime An int value, the current time step of the
+ *              simulation, check for processes in table arriving at
+ *              this time.
+ * @param processTable A pointer to a ProcessTable struct, a list of
+ *              all the process information for processes we are
+ *              simulating, including their arrival times.
+ * @param rrQueue A STL list holding pointers to Process struct items.
+ *              This is our simulated round robin queue. This parameter
+ *              is passed as a reference parameter.  We will add
+ *              any arriving processes to the end of this queue as a
+ *              side effect of calling this function, since it is a
+ *              reference parameter.
+ */
+void checkProcessArrivals(int currentTime, ProcessTable* processTable, 
+			    list<Process*>& rrQueue)
+{
+  for (int pid=0; pid < processTable->numProcesses; pid++)
+  {
+    Process* p = processTable->process[pid];
+    if (p->arrivalTime == currentTime)
+    {
+      DEBUG(cout << "   Process arrives: " 
+                 << p->processName << endl;)
+      rrQueue.push_back(p);
+    }
+  }
+}
 #+end_src
 
