@@ -14,7 +14,18 @@ In this assignment, you need to demonstrate the use of basic data
 types of C, and practice using stream I/O to get and display data on
 the terminal.
 
-Write a complete C program that uses all of the following data types.
+Write a complete C program that uses all of the following data types
+(see Deitel chapter 6, pg. 218 for a complete list):
+
+- int
+- char
+- short
+- long
+- float
+- double
+- unsigned
+- bool
+
 You should prompt the user to enter an appropriate value that can be
 stored in the type, and then you should perform some manipulation of
 the type and display the result.
