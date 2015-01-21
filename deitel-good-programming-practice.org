@@ -3,6 +3,8 @@
 - 1.1 Write your C++ programs in a simple and straightforward
   manner. This is sometimes referred to as KISS (“keep it simple
   stupid”). Do not “stretch” the language by trying bizarre usages.
+
+* Chapter 2
 - 2.1 Every program should begin with a comment that describes the
   purpose of the program.
 - 2.2 Use blank lines, space characters and tabs to enhance program readability.
@@ -50,11 +52,15 @@
   do in an algebraic expression. Be sure to observe that some
   operators such as assignment ( = ) associate right to left rather
   than left to right.
+
+* Chapter 3
 - 3.2 Choosing meaningful function names and meaningful parameter
   names makes programs more readable and helps avoid excessive use of
   comments.
 - 3.3 Place 2 blank lines between member/function definitions to
   enhance program readability.
+
+* Chapter 4
 - 4.1 Consistently applying reasonable indentation conventions
   throughout your programs greatly improves program readability. We
   suggest two blanks per indent. Some people prefer using tabs, but
@@ -80,6 +86,8 @@
 - 4.9 Unlike binary operators, the unary increment and decrement
   operators should be placed next to their operands, with no
   intervening spaces.
+
+* Chapter 5
 - 5.1 Put a blank line before and after each control statement to make
   it stand out in the program.
 - 5.2 Too many levels of nesting can make a program difficult to
@@ -95,11 +103,15 @@
   processing is needed. Although the case clauses and the default case
   clause in a switch statement can occur in any order, it’s common
   practice to place the default clause last.
+
+* Chapter 6
 - 6.1 Capitalize the first letter of an identifier used as a
   user-defined type name. (e.g. a Class or Struct name, for example)
 - 6.2 Use only uppercase letters in constant names. This makes these
   constants stand out in a program and reminds you that constants are
   not variables.
+
+* Chapter 7
 - 7.2 Defining the size of an array as a constant variable instead of
   a literal constant makes programs clearer. This technique eliminates
   so-called magic numbers. For example, repeatedly mentioning the size
