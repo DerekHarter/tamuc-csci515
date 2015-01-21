@@ -3,9 +3,50 @@
 - 1.1 Write your C++ programs in a simple and straightforward
   manner. This is sometimes referred to as KISS (“keep it simple
   stupid”). Do not “stretch” the language by trying bizarre usages.
-- 2.1 Every program should begin with a comment that describes the purpose of the program.
+- 2.1 Every program should begin with a comment that describes the
+  purpose of the program.
 - 2.2 Use blank lines, space characters and tabs to enhance program readability.
 - 2.3 Indent the entire body of each function one level within the
   braces that delimit the body of the function. This makes a program’s
   functional structure stand out and makes the program easier to read.
-- 
+- 2.4 Set a convention for the size of indent you prefer, then apply
+  it uniformly. The tab key may be used to create indents, but tab
+  stops may vary. We recommend using either 1/4 inch tab stops or
+  (preferably) three spaces to form a level of indent. (I require 2
+  spaces for all indentation).
+- 2.5 Place a space after each comma ( , ) to make programs more readable.
+- 2.6 Choosing meaningful identifiers makes a program
+  self-documenting—a person can understand the program simply by
+  reading it rather than having to refer to manuals or comments.
+- 2.7 Avoid using abbreviations in identifiers. This promotes program
+  readability.
+- 2.8 Avoid identifiers that begin with underscores and double
+  underscores, because C++ compilers may use names like that for their
+  own purposes internally. This will prevent names you choose from
+  being confused with names the compilers choose.
+- 2.9 Always place a blank line between a declaration and adjacent
+  executable statements. This makes the declarations stand out in the
+  program and contributes to program clarity.
+- 2.10 Place spaces on either side of a binary operator. This makes
+  the operator stand out and makes the program more readable.
+- 2.11 Using redundant parentheses in complex arithmetic expressions
+  can make the expressions clearer.
+- 2.12 Indent the statement(s) in the body of an if statement to
+  enhance readability.
+- 2.13 For readability, there should be no more than one statement per
+  line in a program.
+- 2.14 A lengthy statement may be spread over several lines. If a
+  single statement must be split across lines, choose meaningful
+  breaking points, such as after a comma in a comma-separated list, or
+  after an operator in a lengthy expression. If a statement is split
+  across two or more lines, indent all subsequent lines and left-align
+  the group of indented lines.
+- 2.15 Refer to the operator precedence and associativity chart when
+  writing expressions containing many operators. Confirm that the
+  operators in the expression are performed in the order you
+  expect. If you are uncertain about the order of evaluation in a
+  complex expression, break the expression into smaller statements or
+  use parentheses to force the order of evaluation, exactly as you’d
+  do in an algebraic expression. Be sure to observe that some
+  operators such as assignment ( = ) associate right to left rather
+  than left to right.
