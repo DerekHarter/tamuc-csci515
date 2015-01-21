@@ -61,14 +61,5 @@ output results the function returns.  Use the following format to
 document all functions you write for assignment for this course:
 
 #+begin_src cpp :includes <stdio.h> :exports both
-/** 
- * @author Joe Student
- * @cwid   123 45 678
- * @assg   Assignment #1
- * @date   January 20, 2015
- *
- * @description Provide a short description of the problem and the approach you 
- *              took to solving the problem.
- */
 #+end_src
 
