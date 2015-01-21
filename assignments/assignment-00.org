@@ -5,6 +5,8 @@
 #+DESCRIPTION: Assignment 00
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{minted}
+#+LaTeX_HEADER: \usemintedstyle{default}
 
 **Due Date:** 11:59 pm., Tuesday January 27, 2015
 
