@@ -78,8 +78,9 @@ document all functions you write for assignment for this course:
  *              any arriving processes to the end of this queue as a
  *              side effect of calling this function, since it is a
  *              reference parameter.
+ * @returns bool True if a process arrived, false otherwise 
  */
-void checkProcessArrivals(int currentTime, ProcessTable* processTable, 
+bool checkProcessArrivals(int currentTime, ProcessTable* processTable, 
 			    list<Process*>& rrQueue)
 {
   for (int pid=0; pid < processTable->numProcesses; pid++)
