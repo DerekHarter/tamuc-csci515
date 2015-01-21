@@ -1,5 +1,5 @@
 #+TITLE:     Assignment 00
-#+AUTHOR:    Derek Harter
+#+AUTHOR:    
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
 #+DESCRIPTION: Assignment 00
