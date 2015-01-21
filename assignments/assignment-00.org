@@ -41,7 +41,8 @@ our eCollege submission system.
 Then, by the end of next Tuesday (1/27), you need to complete your
 program as specified above to demonstrate using all of the required
 list of data types to input a value and display a result of a
-manipulation.
+manipulation.  Your completed program should be uploaded to the
+eCollege dropbox named Prog-00 for this course.
 
 ** Requirements
 Your programs must conform to the style and formatting guidelines
