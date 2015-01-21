@@ -95,3 +95,31 @@ void checkProcessArrivals(int currentTime, ProcessTable* processTable,
 }
 #+end_src
 
+* Indentation
+
+Make sure you pay special attention to the Deital style guidelines
+regarding proper indentation of course code.  For this course we
+require you to use spaces (no embedded tabs) for indentation.  You are
+required to use 2 spaces as the unit of indentation for all code/block
+levels for code submitted for this class.  DO NOT use hard coded
+(embdeded) tabs in your submitted programs.
+
+* Function and Variable Names
+
+All functions and variables should follow camelCaseNameing convention
+for your programs for this course.  When creating a user defined type,
+like a class or a struct, you should use CamelCaseNameing with the
+initial letter capitalized (this differentiates functions and
+variables from classes and user defined types). Constants, in
+enumerated types or otherwise, should use ALL_CAPS_UNDERSCORE
+convention for nameing.  Make sure you choose meaningful variable,
+function, class and constant names for your programs, as meaningful
+well chosen names make your programs more readable and reduce the need
+for extensive comments.  See Deitel guidelines for more hints on how
+to choose meaningful variable names for your programs.
+
+* Brace Placement for Control Blocks
+
+For this course you are required to place (most) all braces defining
+a control block (like a for loop or if statement) on a separate line
+by themselves, indented appropriately.  
