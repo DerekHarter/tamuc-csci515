@@ -1,3 +1,12 @@
+#+TITLE:     CSci 515 Deitel Good Programming Practices
+#+Author:    
+#+Date:      Spring 2015
+#+DESCRIPTION: Tentative Course Syllabus
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{color}
+
 * Chapter 1
 
 - 1.1 Write your C++ programs in a simple and straightforward
