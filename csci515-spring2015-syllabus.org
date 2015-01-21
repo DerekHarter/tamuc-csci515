@@ -206,6 +206,7 @@ material.
 |  16 | Review for Final exam, practical examples: constrained sorting, DNA search, bank simulation                                          | Lab assg. to be completed in one hours. Take-home assg: Bonus homework: Parsing a computer program                                                    |
 |-----+--------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------|
 
+* Reading Schedule
 
 #+ATTR_LATEX: environment=tabular*
 #+ATTR_LATEX: width=1.0\textwidth
