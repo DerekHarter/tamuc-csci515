@@ -97,4 +97,12 @@
   practice to place the default clause last.
 - 6.1 Capitalize the first letter of an identifier used as a
   user-defined type name. (e.g. a Class or Struct name, for example)
-- 
+- 6.2 Use only uppercase letters in constant names. This makes these
+  constants stand out in a program and reminds you that constants are
+  not variables.
+- 7.2 Defining the size of an array as a constant variable instead of
+  a literal constant makes programs clearer. This technique eliminates
+  so-called magic numbers. For example, repeatedly mentioning the size
+  10 in array-processing code for a 10-element array gives the number
+  10 an artificial significance and can be confusing when the program
+  includes other 10s that have nothing to do with the array size.
