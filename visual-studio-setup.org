@@ -1,0 +1,8 @@
+#+TITLE:     CSci 515 Setting Up Visual Studio Express 2010
+#+Author:    
+#+Date:      Spring 2015
+#+DESCRIPTION: Setting Up Visual Studio Express 2010
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{array}
+#+LATEX_HEADER: \usepackage{color}
