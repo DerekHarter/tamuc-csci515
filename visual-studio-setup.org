@@ -6,3 +6,16 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{array}
 #+LATEX_HEADER: \usepackage{color}
+
+* Line Numbers
+
+I prefer to always have line numbers enabled in my source code editor
+as most compiler errors/warnings refer to specific line numbers in the
+source file, and thus it is easier to quicly determine the potential
+location of problems if line numbers are visible.  For Visual Studio
+Express 2010 you can enable line numbers like this:
+
+1. Tools $\rightarrow$ Options
+2. In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ General
+3. Enable the Line Numbers checkbox
+
