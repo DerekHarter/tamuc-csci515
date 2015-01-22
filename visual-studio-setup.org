@@ -49,3 +49,33 @@ display of invisible whitespace characters on and off, you can:
 ** Method 2
 The keyboard shortcut for this toggle is Ctrl-R Ctrl-W.
 
+* Cause Terminal/Console to Persist after Program Execution
+You are forbidden to include statements in your submitted programs
+whose sole purpose is to keep the terminal from closing upon program
+completion, before you can see the output.  Statements like
+~system("pause")~ or ~getch()~ are hacks, and are often not portable
+to other enviornments or IDE systems.  When using Visual Studio Express 2010
+you can have your IDE keep the console up in the following 2 ways:
+
+** Method 1
+Simple use of debugger.  You can simply set a debug breakpoint on the
+closing brace of your main function.  Then whenever you run your
+program (using Debug $\rightarrow$ Start Debugging or equivalently
+using the F5 function key), your program will run till it hits this
+breakpoint, and you can then look at the terminal output.
+
+** Method 2
+You can also set a property for console applications, so that if you
+run without debugging, Visual Studio keeps the terminal open until
+you press a key.  You need to set the following property for each
+project you create (Visual Studio doesn't enable this by default
+on new projects):
+
+1. Project $\rightarrow$ Properties
+2. In the Project Property Pages dialog select Configuration Properties $\rightarrow$ Linker $\rightarrow$ System
+3. In the Linker System options, pull down the SubSystem property and select Console (/SUBSYSTEM:CONSOLE)
+4. Hit OK or Apply to have your property setting saved (for this particular Project only, you have to do this for every project you create).
+
+Now if you run your program with debugging (Debug $\rightarrow$ Start
+Without Debugging or equivalently Shift-F5), your terminal will be
+paused when the program completes execution.
