@@ -92,7 +92,7 @@ For this class, you need to submit plain/standard C/C++ code (code that does not
 or frameworks.  One confusing aspect of Visual Studio is that it supports many types of (Microsoft) specific
 application and framework targets.  For this class, you should always use an Empty Project, which will allow
 you to create programs using standard C/C++ libraries using no external framework.  Always follow these
-steps when creating a new project for assignment for this course:
+steps when creating a new project for assignments for this course:
 
 1. File $\rightarrow$ New $\rightarrow$ Project
 2. In the New Project Dialog, select Visual C++ $\rightarrow$ General
