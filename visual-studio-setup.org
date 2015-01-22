@@ -109,3 +109,7 @@ steps when creating a new project for assignment for this course:
 
 Here is the boiler plate you should use (but don't type this in by hand every time), including the correct file
 header and an example function header for the main function.
+
+#+begin_src cpp :includes <iostream> :exports both
+
+#+end_src
