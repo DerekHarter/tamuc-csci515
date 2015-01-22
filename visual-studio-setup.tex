@@ -1,4 +1,4 @@
-% Created 2015-01-22 Thu 13:57
+% Created 2015-01-22 Thu 14:06
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,6 +15,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
+\usepackage{minted}
 \usepackage{array}
 \usepackage{color}
 \providecommand{\alert}[1]{\textbf{#1}}
@@ -151,5 +152,47 @@ steps when creating a new project for assignment for this course:
 \item Hit the Add button to create the empty source file and add it to your managed Source Files for the project.
 \item Copy the boilerplate C++ Hello World program to your empty file, and make sure that it correctly compiles and runs and generates the expected output.  You can find the official HelloWorld boilerplate on our eCollege course site.
 \end{enumerate}
+
+Here is the boiler plate you should use (but don't type this in by hand every time), including the correct file
+header and an example function header for the main function.
+
+
+\begin{verbatim}
+/**
+ * @author Joe Programmer
+ * @cwid   123 45 678
+ * @class  CSci 515, Spring 2015
+ * @ide    Visual Studio Express 2010
+ * @date   January 1, 2015
+ * @assg   ExamplAssg00
+ *
+ * @description A short descrption of the program and its purpose, and
+ *    the approach you took in solving the problem.
+ */
+#include <iostream>
+using namespace std;
+
+
+/** main entry point
+ * The main entry point for this program.  Execution
+ * of this program will beigin with this function.
+ *
+ * @returns An int value.  By default, if we don't specify a return or
+ *           exit value, 0 is returned to indicate successful program
+ *           completion.  A non-zero value indicates an error or
+ *           problem with execution.
+ */
+int main()
+{
+  cout << "Hello, world!" << endl;
+
+  // return 0 to indicate successful completion
+  return 0;
+}
+\end{verbatim}
+
+\begin{verbatim}
+ Hello, world!
+\end{verbatim}
 
 \end{document}
