@@ -1,4 +1,4 @@
-% Created 2015-01-22 Thu 13:19
+% Created 2015-01-22 Thu 13:25
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -47,5 +47,43 @@ Express 2010 you can enable line numbers like this:
 \item In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ General
 \item Enable the Line Numbers checkbox
 \end{enumerate}
+\section*{Program Indentation and Tab Settings}
+\label{sec-2}
+
+For this class, you are required to correctly and consistently indent your code according to the
+Deitel good programming guidelines, and our class coding/formatting guidelines.  You can have
+Visual Studio Express 2010 automatically set your indentation for you by changing the following
+settings:
+
+\begin{enumerate}
+\item Tools $\rightarrow$ Options
+\item In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ Tabs
+\item Set Indenting to Smart
+\item Set Tab size to 2
+\item Set indent size to 2
+\item Select Insert Spaces (rather than Keep tabs)
+\end{enumerate}
+
+The last step will keep you from creating files with hardcoded,
+embedded tabs, which will not display properly in other editors.
+\section*{Display/Undisplay Invisible (space) Characters}
+\label{sec-3}
+
+If you still have problems with getting hardcoded tabs in your source
+files, most programming editors have a command that makes normally
+invisible whitespace characters become visible, using symbols for the
+different types of characters (space, tab, etc.).  To toggle the
+display of invisible whitespace characters on and off, you can:
+\subsection*{Method 1}
+\label{sec-3-1}
+
+\begin{enumerate}
+\item Turn on advanced settings from Tools $\rightarrow$ Settings $\rightarrow$ Expert Settings
+\item Toggle display of white space on/off from Edit $\rightarrow$ Advanced $\rightarrow$ View Whitespace
+\end{enumerate}
+\subsection*{Method 2}
+\label{sec-3-2}
+
+The keyboard shortcut for this toggle is Ctrl-R Ctrl-W.
 
 \end{document}
