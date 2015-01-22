@@ -105,3 +105,6 @@ steps when creating a new project for assignment for this course:
 10. Choose an appropriate name for you C++ source file, you may be required to name the file with a particular name for an assignment.  If so use the required name for the file.
 11. Hit the Add button to create the empty source file and add it to your managed Source Files for the project.
 12. Copy the boilerplate C++ Hello World program to your empty file, and make sure that it correctly compiles and runs and generates the expected output.  You can find the official HelloWorld boilerplate on our eCollege course site.
+
+Here is the boiler plate you should use (but don't type this in by hand every time), including the correct file
+header and an example function header for the main function.
