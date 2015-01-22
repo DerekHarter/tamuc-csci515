@@ -85,3 +85,23 @@ For readability, you can increase/decrease the font size of the Visual
 Studio programming editor. Use Ctrl-Shift-, to increase font size,
 and ~Ctrl-Shift-.~ to decrease text size.  You can also directly set
 the zoom level in the lower left of the editor frame.
+
+* Project Creating Steps for Class Assignments
+For this class, you need to submit plain/standard C/C++ code (code that does not use special 3rd party libraries
+or frameworks.  One confusing aspect of Visual Studio is that it supports many types of (Microsoft) specific
+application and framework targets.  For this class, you should always use an Empty Project, which will allow
+you to create programs using standard C/C++ libraries and no external framework.  Always follow these
+steps when creating a new project for assignment for this course:
+
+1. File $\rightarrow$ New $\rightarrow$ Project
+2. In the New Project Dialog, select Visual C++ $\rightarrow$ General
+3. Choose Empty Project (Visual C++) as your project type in the center.
+4. Enter an appropriate name for the project.
+5. Select OK to create the project.
+6. Once your IDE and Solution Explorer open with the newly created project, add a source file.
+7. In the Solution Explorer, right click on the Source Files folder
+8. Select Add $\rightarrow$ New Item
+9. In the Add New Item dialog, select C++ File in the center
+10. Choose an appropriate name for you C++ source file, you may be required to name the file with a particular name for an assignment.  If so use the required name for the file.
+11. Hit the Add button to create the empty source file and add it to your managed Source Files for the project.
+12. Copy the boilerplate C++ Hello World program to your empty file, and make sure that it correctly compiles and runs and generates the expected output.  You can find the official HelloWorld boilerplate on our eCollege course site.
