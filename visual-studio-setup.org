@@ -61,7 +61,7 @@ you can have your IDE keep the console up in the following 2 ways:
 Simple use of debugger.  You can simply set a debug breakpoint on the
 closing brace of your main function.  Then whenever you run your
 program (using Debug $\rightarrow$ Start Debugging or equivalently
-using the F5 function key), your program will run till it hits this
+using the ~F5~ function key), your program will run till it hits this
 breakpoint, and you can then look at the terminal output.
 
 ** Method 2
@@ -77,5 +77,8 @@ on new projects):
 4. Hit OK or Apply to have your property setting saved (for this particular Project only, you have to do this for every project you create).
 
 Now if you run your program with debugging (Debug $\rightarrow$ Start
-Without Debugging or equivalently Shift-F5), your terminal will be
+Without Debugging or equivalently ~Shift-F5~), your terminal will be
 paused when the program completes execution.
+
+* Increase/Decrease Editor Font Size
+For readability, you can increase/decrease the font size of the Visual Studio programming editor. Use ~Ctrl-Shift-,~ 
