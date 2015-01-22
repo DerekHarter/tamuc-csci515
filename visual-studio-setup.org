@@ -47,7 +47,7 @@ display of invisible whitespace characters on and off, you can:
 2. Toggle display of white space on/off from Edit $\rightarrow$ Advanced $\rightarrow$ View Whitespace
 
 ** Method 2
-The keyboard shortcut for this toggle is Ctrl-R Ctrl-W.
+The keyboard shortcut for this toggle is ~Ctrl-R~ ~Ctrl-W~.
 
 * Cause Terminal/Console to Persist after Program Execution
 You are forbidden to include statements in your submitted programs
