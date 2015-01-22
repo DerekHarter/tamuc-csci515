@@ -83,5 +83,5 @@ paused when the program completes execution.
 * Increase/Decrease Editor Font Size
 For readability, you can increase/decrease the font size of the Visual
 Studio programming editor. Use Ctrl-Shift-, to increase font size,
-and Ctrl-Shift-. to decrease text size.  You can also directly set
+and ~Ctrl-Shift-.~ to decrease text size.  You can also directly set
 the zoom level in the lower left of the editor frame.
