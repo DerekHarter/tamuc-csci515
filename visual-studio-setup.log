@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.3)  22 JAN 2015 14:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.3)  22 JAN 2015 14:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -850,7 +850,7 @@ en/ec/ecbx1200.600pk> </home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm10
 home/dash/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/dash/.t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on visual-studio-setup.pdf (5 pages, 99287 bytes).
+Output written on visual-studio-setup.pdf (5 pages, 99310 bytes).
 PDF statistics:
  422 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
