@@ -77,7 +77,7 @@ on new projects):
 3. In the Linker System options, pull down the SubSystem property and select Console (/SUBSYSTEM:CONSOLE)
 4. Hit OK or Apply to have your property setting saved (for this particular Project only, you have to do this for every project you create).
 
-Now if you run your program with debugging (Debug $\rightarrow$ Start
+Now if you run your program without debugging (Debug $\rightarrow$ Start
 Without Debugging or equivalently ~Shift-F5~), your terminal will be
 paused when the program completes execution.
 
