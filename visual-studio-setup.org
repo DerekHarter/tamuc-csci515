@@ -12,7 +12,7 @@
 
 I prefer to always have line numbers enabled in my source code editor
 as most compiler errors/warnings refer to specific line numbers in the
-source file, and thus it is easier to quicly determine the potential
+source file, and thus it is easier to quickly determine the potential
 location of problems if line numbers are visible.  For Visual Studio
 Express 2010 you can enable line numbers like this:
 
