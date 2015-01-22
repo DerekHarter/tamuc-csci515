@@ -7,7 +7,7 @@
  * @assg   ExamplAssg00
  *
  * @description A short descrption of the program and its purpose, and
- * the approach you took in solving the problem.
+ *    the approach you took in solving the problem.
  */
 #include <iostream>
 using namespace std;
