@@ -1,4 +1,4 @@
-% Created 2015-01-22 Thu 13:48
+% Created 2015-01-22 Thu 13:57
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -128,5 +128,28 @@ For readability, you can increase/decrease the font size of the Visual
 Studio programming editor. Use Ctrl-Shift-, to increase font size,
 and \verb~Ctrl-Shift-.~ to decrease text size.  You can also directly set
 the zoom level in the lower left of the editor frame.
+\section{Project Creating Steps for Class Assignments}
+\label{sec-6}
+
+For this class, you need to submit plain/standard C/C++ code (code that does not use special 3rd party libraries
+or frameworks.  One confusing aspect of Visual Studio is that it supports many types of (Microsoft) specific
+application and framework targets.  For this class, you should always use an Empty Project, which will allow
+you to create programs using standard C/C++ libraries and no external framework.  Always follow these
+steps when creating a new project for assignment for this course:
+
+\begin{enumerate}
+\item File $\rightarrow$ New $\rightarrow$ Project
+\item In the New Project Dialog, select Visual C++ $\rightarrow$ General
+\item Choose Empty Project (Visual C++) as your project type in the center.
+\item Enter an appropriate name for the project.
+\item Select OK to create the project.
+\item Once your IDE and Solution Explorer open with the newly created project, add a source file.
+\item In the Solution Explorer, right click on the Source Files folder
+\item Select Add $\rightarrow$ New Item
+\item In the Add New Item dialog, select C++ File in the center
+\item Choose an appropriate name for you C++ source file, you may be required to name the file with a particular name for an assignment.  If so use the required name for the file.
+\item Hit the Add button to create the empty source file and add it to your managed Source Files for the project.
+\item Copy the boilerplate C++ Hello World program to your empty file, and make sure that it correctly compiles and runs and generates the expected output.  You can find the official HelloWorld boilerplate on our eCollege course site.
+\end{enumerate}
 
 \end{document}
