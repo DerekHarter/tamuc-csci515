@@ -34,6 +34,7 @@
 | Mar 27 | 07 | Pointer Interaction               |
 | Mar 28 | 03 | Month Calculator                  |
 | Apr 03 | 07 | Arrow Operator (Intro to Pointers |
+| Apr 06 | 07 | Business Interactions             |
 | Apr 10 | 07 | 2D Dynamic Array                  |
 | Apr 11 | 05 | Hotel Manager                     |
 | Apr 17 | 07 | Pointers to  Struct               |
@@ -2029,4 +2030,49 @@ Dropbox Assignment Submission Procedures
 
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Pointer Interaction.Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Business Interactions
+Business Interactions
+Due date: 11:59pm, Apr 6
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named BusinessInteraction.cpp.
+
+Objective: In this assignment you need to demonstrate your skills in menu design, using functions (predefined and user), file operations, pointers.
+
+Description 
+
+Your aim is to create connection between businesses based on a formatted data file. Please see a sample data file under DocSharing tab, linkedBusinesses.txt . There are two section in this file: name of businesses, and connection between them. 
+
+
+In the first section, you will find name on businesses. At most 100 company name can be listed in this first section. Then, in the second section (after string CONNECTION:), the connections between businesses are given in a format 
+A:B;C;D
+which means that A has a connection with B, C, and D.
+
+Connection are bidirectional, meaning that if A is connected to B, B is also connected to A.
+
+Regarding above line (A:B;C;D), even you did not find a B:A, you will create a link to A->B, and B->A. 
+
+Assume that a business can have at most 3 connections. For example,  in the data  file, the first line of connections is 
+
+Acme:Red Co;GreenSun;White Inc
+
+It lists all  three connections of Acme, which cannot have a fourth connection (because max number of connection is 3). It is similar to 3 courses of a student.
+
+You task is
+- Create an array of struct,
+struct ??
+{
+ string BusiName;
+  ?? * conn [3];
+};
+
+??  mylist[100];
+
+- Fill out this array by reading items from data file.
+- In a loop, ask user a business name, say BN, and then list all connections of BN.
+
+
+
 
