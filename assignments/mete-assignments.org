@@ -38,6 +38,7 @@
 | Apr 10 | 07 | 2D Dynamic Array                  |
 | Apr 11 | 05 | Hotel Manager                     |
 | Apr 17 | 07 | Pointers to  Struct               |
+| Apr 24 | 07 | Recursive Function                |
 | Apr 26 | 06 | Cricket World Cup                 |
 
 * 01 Basic Elements of C++
@@ -2075,4 +2076,28 @@ struct ??
 
 
 
+
+
+** Recursive Function
+Recursive Function
+
+Due date: Wed, Apr 24, 12:30pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Recursive.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in recursive functions.
+
+
+Description
+
+Assume that there is a series of number: 1,1,2,2,3,3,4,4,5,5,6,6...  In this series, 1st element is 1, 2nd is 1, and 3rd is 2. The  nth , n > 3, element is found by nth =(n-1)th+(n-2)th -(n-3)th.  Given these definitions, you need to write a program using a recursive function to calculate nth  (n>3) element of this series. User give the parameter as unsigned integer from the command line, such as
+
+>series.exe 7 
+
+calculate 7th elements, which is 4.
+
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
 
