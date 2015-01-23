@@ -1,0 +1,30 @@
+#+TITLE:     Lab 02: Find Average of a Group of Numbers
+#+AUTHOR:    CSci 515 Spring 2015
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
+#+DESCRIPTION: Lab 02
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{minted}
+#+LaTeX_HEADER: \usemintedstyle{default}
+
+**Due Date:** 11:59 pm., Tuesday January 27, 2015
+
+* Objective
+Determine the average, and some other properties for an arbitrary
+number of floating point values.  The user should be prompted to enter
+numbers and to indicate when they are done entering numbers by using a
+sentinel (use -9999 as your sentinel value).
+
+Your program should report the following values after the user has
+indicated they are finished entering numbers.  The average of the
+values, the minimum value entered, the maximum value entered, and the
+total number of values the user entered.  Your output should be formatted
+to the terminal to look exactly like this:
+
+\+begin_example
+Number of Values Entered: 5
+Maximum Value: 28
+Minimum Value: -32
+Average Value: 18.5236
+\+end_example
