@@ -69,6 +69,14 @@ this with a for loop next.)
   sentenial/flag.
 
 
+** Increment, decrement and assignment
+- C++ provides several assignment operators for abbreviating
+  assignment since it is very common to need to manipulate a value and
+  assign it back to the variable. (+=, -=, *=, etc.)
+- increment and decrement are uniary operators.  We can increment and
+  decrement using pre or post increment, which means either we first
+  incrmeent the value then use that in the expression, or we first use
+  current value in expression then increment after.
 
 * Part 3 (12:40 - 1:40)
 
