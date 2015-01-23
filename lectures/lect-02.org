@@ -15,4 +15,7 @@
 - The datatype is how pattern of bits in memory are stored and
   interpreted to mean a number, a character, etc.
 - Int32 representation (http://en.wikipedia.org/wiki/Integer_%28computer_science%29)
-- 
+- Debug $\rightarrow$ QuickWatch
+- Debug $\rightarrow$ Windows $\rightarrow$ Memory
+- Representation of integer 1 vs. -1
+
