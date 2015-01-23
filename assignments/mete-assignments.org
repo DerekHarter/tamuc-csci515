@@ -26,6 +26,7 @@
 | Feb 28 | 01 | Random Math              |
 | Mar 25 | 03 | Spelling Out Numbers     |
 | Mar 28 | 03 | Month Calculator         |
+| Apr 11 | 05 | Hotel Manager            |
 
 
 * 01 Basic Elements of C++
@@ -1346,4 +1347,48 @@ int main()
 
 dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Sorting. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Hotel Manager
+Hotel Manager
+Due date: 11:59pm, Friday, 4/11
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named HotelManager.cpp.
+Objective: In this assignment you need to demonstrate your skills in 3D array representation, abstraction and manipulation.
+ 
+Description 
+
+Download Hotel.txt  from Doc Sharing section of eCollege. This file includes names of guests at  your hotel. A similar structure of the hotel/dorm was discussed in the class. The hotel is 5-floor building having 10 rooms (2 x 5 or 5 x 2 arrangement)  at each floor.  Write a C++ program to
+
+
+Define and initialize a 3D array to keep names of all guests.
+Given a floor number, print out names of all guests staying at this particular floor.
+Print out names of guests that stay in the corner rooms.
+Given a name of guest, print out room number (similar to array index). 
+Details of the homework will be discussed in the class. 
+ 
+ 
+Notes:
+
+Don’t use unnecessary libraries. 
+Commenting in appropriate way will be evaluated. You may lose 1 (one) point if you don’t comment out your code appropriately.   
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Sep 8, 2009
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+ 
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled HotelManager. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
