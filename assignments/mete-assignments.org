@@ -43,6 +43,7 @@
 | Apr 24 |  07 | Recursive Function                |
 | Apr 26 |  06 | Cricket World Cup                 |
 
+
 * 01 Basic Elements of C++
 
 ** Assignment #0
@@ -1055,6 +1056,7 @@ To submit to the Dropbox, click on the Dropbox tab at the top of this course con
 
 * 04 Functions II
 
+
 * 05 Arrays
 
 ** Mix of Numbers and Chars
@@ -1475,6 +1477,7 @@ int main()
 Dropbox Assignment Submission Procedures
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled CharFrequency. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
 
 * 06 Structs (Records)
 
