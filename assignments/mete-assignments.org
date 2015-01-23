@@ -23,6 +23,7 @@
 | Nov 07 | 05 | Logo                     |
 | Nov 07 | 05 | Dim Converter            |
 | Nov 12 | 06 | Absolute Frequency       |
+| Nov 23 | 06 | Sorted Structs           |
 | Jan 27 | 01 | Assignment 0             |
 | Feb 11 | 02 | Math in File             |
 | Feb 28 | 01 | Random Math              |
@@ -1565,4 +1566,55 @@ Dropbox Assignment Submission Procedures
 
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Absolute Frequency. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Sorted Structs
+Sorted Structs
+
+Due date: 11:59pm, Nov 23
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named SortedStructs.cpp.
+Objective: In this assignment you need to demonstrate your skills in structs, insertion sort, arrays, functions.
+
+Description 
+
+Download  Struct_DB.txt from Doc Sharing section of this course. This file includes 109 lines. First line is a comment line, rest of them (108 lines) are data lines. 
+
+You responsibilities include followings:
+
+Define and initialize a struct to hold each item indicated in one line. See first line of the file for the hints about data types.
+Read data from files into your array of structs. 
+Display a menu to ask which item will be used in sorting. Sorting the structs will be based on different pieces of data: CID, CNAME, and Time. Use only selection sort. 
+
+A selection code for a int array is below.
+
+
+ selection 
+
+
+
+Notes:
+
+Don’t use unnecessary libraries. 
+Commenting in appropriate way will be evaluated. You may lose 1 (one) point if you don’t comment out your code appropriately.   
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Sep 8, 2009
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SortedStructs. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
 
