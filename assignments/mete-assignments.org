@@ -31,6 +31,7 @@
 | Feb 11 | 02 | Math in File                      |
 | Feb 28 | 01 | Random Math                       |
 | Mar 25 | 03 | Spelling Out Numbers              |
+| Mar 27 | 07 | Pointer Interaction               |
 | Mar 28 | 03 | Month Calculator                  |
 | Apr 03 | 07 | Arrow Operator (Intro to Pointers |
 | Apr 10 | 07 | 2D Dynamic Array                  |
@@ -1990,4 +1991,42 @@ Enter second dimension: 0
 Make sure that after each run you delete the second dimension arrays with delete [] pointervariable.
 
 Upload your program into dropbox basket 2D Dynamic Array.
+
+
+** Pointer Interaction
+Pointer Interaction
+Due date: Wednesday, Mar. 27, 11:30am
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named IntPointer.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using pointers with basic data types.
+
+Description
+
+Assume that there is a short variable X. And, there are three pointers: A, B, C. All  these three pointers point X in the memory.
+Use if-statement and show that 3*X is equal to A+B+C
+Then increase X by 5, and again use if-statement and show that 3*X is equal to A+B+C+15.
+
+
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #14
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Pointer Interaction.Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
