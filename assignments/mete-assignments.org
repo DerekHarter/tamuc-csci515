@@ -1,25 +1,27 @@
 * Index
 
-| Sep 04 | 01 | Intro to Variables   |
-| Sep 11 | 01 | MinMax               |
-| Sep 12 | 01 | Geometry             |
-| Sep 13 | 01 | Static Cast          |
-| Sep 17 | 01 | Store                |
-| Sep 20 | 01 | Compound Statements  |
-| Sep 24 | 02 | MaxFinder            |
-| Sep 25 | 02 | MinMaxChars          |
-| Sep 27 | 01 | NumberGame           |
-| Oct 01 | 02 | Substring Finder     |
-| Oct 02 | 03 | Function Definitions |
-| Oct 07 | 03 | Spelling Out Dates   |
-| Oct 10 | 02 | RandCalculation      |
-| Oct 15 | 03 | Function Overloading |
-| Oct 17 | 03 | Date Calculator      |
-| Jan 27 | 01 | Assignment 0         |
-| Feb 11 | 02 | Math in File         |
-| Feb 28 | 01 | Random Math          |
-| Mar 25 | 03 | Spelling Out Numbers |
-| Mar 28 | 03 | Month Calculator     |
+| Sep 04 | 01 | Intro to Variables       |
+| Sep 11 | 01 | MinMax                   |
+| Sep 12 | 01 | Geometry                 |
+| Sep 13 | 01 | Static Cast              |
+| Sep 17 | 01 | Store                    |
+| Sep 20 | 01 | Compound Statements      |
+| Sep 24 | 02 | MaxFinder                |
+| Sep 25 | 02 | MinMaxChars              |
+| Sep 27 | 01 | NumberGame               |
+| Oct 01 | 02 | Substring Finder         |
+| Oct 02 | 03 | Function Definitions     |
+| Oct 07 | 03 | Spelling Out Dates       |
+| Oct 10 | 02 | RandCalculation          |
+| Oct 15 | 03 | Function Overloading     |
+| Oct 17 | 03 | Date Calculator          |
+| Oct 22 | 05 | Char Frequency           |
+| Oct 25 | 05 | Mix of Numbers and Chars |
+| Jan 27 | 01 | Assignment 0             |
+| Feb 11 | 02 | Math in File             |
+| Feb 28 | 01 | Random Math              |
+| Mar 25 | 03 | Spelling Out Numbers     |
+| Mar 28 | 03 | Month Calculator         |
 
 
 * 01 Basic Elements of C++
@@ -1031,3 +1033,112 @@ Commenting in appropriate way will be evaluated. You may lose 10 points if you d
 Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SpellingOutDates. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
+
+* 04 Functions II
+
+* 05 Arrays
+
+** Mix of Numbers and Chars
+Mix of Numbers and Chars
+Due date: Friday, Oct 25, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named MixIntChar.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using arrays.
+
+
+Description
+
+Assume that you are given a text file, which can contain up to 200 integer numbers and 200 characters. 
+
+12 a -5 
+T 23 -1 34 R K s 3 4 r  
+a a 34 12 -12 y  
+
+As seen in above representation, each line can have multiple numbers.  Your task is write a program to find
+
+- How many lower case letters given in the file
+- How many upper case letters given in the file
+- How many integers given in the file
+- Sum of all integers in the file
+
+You should keep all integers in an array, and characters in another array. Think about extreme cases and decide about size of arrays.
+
+Your program should output similar to:
+
+10 numbers are found in the file. The sum is 104.
+6 lower case letters and 3 upper case letters are found in the file.
+
+You should use an array / arrays with reasonable initial capacity. You may implement your program using parallel arrays.
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #3
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MixIntChars. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+** Char Frequency
+CharFrequency
+Due date: Wed, Oct 22, 11:59pm. Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named CharFrequency.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using parallel arrays.
+
+
+Description
+
+Assume that you are given a text file, which can contain up to 200 letters from the set of {A, B, C, D, E}, such as
+
+A E  
+B B A A D E A A
+C C D D D D D
+
+
+In the data file, number of letters in one line can be different than others. Write a C++ program to find 
+1) Frequency of each letter
+2) The most and the least frequent letters.
+
+For the above example, the output should be
+
+A -> 5
+B -> 2
+C -> 2
+D -> 6
+E -> 2
+The most frequent letter(s) seen 6 time: D
+The least frequent letter(s) seen 2 times: B, C, E
+
+You should use an array / arrays with reasonable initial capacity. 
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #3
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+ 
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Arrays:CharFre. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
