@@ -88,7 +88,24 @@ this with a for loop next.)
 - Give examples of counting up and counting down.
 - Give example of counting with a step size.
 
-** 
+** do..while Repetition
+- If we need to ensure some statements are always executed at least
+  once, use do..while construct.  Useful so we can avoid duplicating
+  some code.
+
+** switch statement
+- You may run across the switch statement.  Switch provides multiple-selection (like nested if).
+- It is limited, can only compare the value of a variable to a
+  constant integral expression (e.g. our example of grades in ranges
+  can't be accomplished using switch, we still need to use nested if
+  for them.)
+- switch statement requires use of break statements.
+- break and continue statements can be useful sometimes in loops, to
+  avoid some unnecessary repetitions of the loop.
+- For example, in the prime number algorithm, we don't need to perform
+  any more loops after we find first negative example.
+- Can use a break statement.  An equivalent effect can be achieved by using a flag.
+- 
 
 ** Visual Studio Tips
 - Turn on expert settings
