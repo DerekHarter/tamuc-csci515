@@ -1,6 +1,21 @@
 * Index
-- Sep 13 01 Static Cast
-- Jan 27 01 Assignment 0
+
+| Sep 04 | 01 | Intro to Variables   |
+| Sep 11 | 01 | MinMax               |
+| Sep 12 | 01 | Geometry             |
+| Sep 13 | 01 | Static Cast          |
+| Sep 17 | 01 | Store                |
+| Sep 20 | 01 | Compound Statements  |
+| Sep 24 | 02 | MaxFinder            |
+| Sep 25 | 02 | MinMaxChars          |
+| Sep 27 | 01 | NumberGame           |
+| Oct 01 | 02 | Substring Finder     |
+| Oct 02 | 03 | Function Definitions |
+| Oct 10 | 02 | RandCalculation      |
+| Jan 27 | 01 | Assignment 0         |
+| Feb 11 | 02 | Math in File         |
+| Feb 28 | 01 | Random Math          |
+| Mar 25 | 03 | Spelling Out Numbers |
 
 
 
@@ -82,3 +97,669 @@ Dropbox Assignment Submission Procedures
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Static Cast. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
+
+** Geometry
+Geometry
+Due date:  Friday, 9/12, 11:59pm.
+
+You will earn 100 points if you return complete and in time. You will lose 50 points for each late day (24 hour).
+
+You need to upload your assignment through eCollege system. You should upload a file named Geometry.cpp.
+
+Objective: In this assignment, you need to demonstrate basics of C++.
+
+Write a complete C++ program that takes width and height of a rectangular and calculates its area and perimeter. The user will input height and width as (signed or unsigned? ) integers. The results should be printed out to screen. Also give a message if user entered the measures (width/height) for a square. See below for example output.
+
+> Enter width and height of rectangle: 3 5
+
+> Area:15, perimeter:16
+
+
+> Enter width and height of rectangle: 9 9
+
+> Area:81, perimeter:36. It is a square.
+
+Tip(s): 
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - DATE
+// CWID: YOUR_ID
+// Compiler: NAME_OF_COMPILER
+// Assignment  ID
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.       
+*/
+Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled same as assignment ID (Geometry). Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Intro to Variables
+Intro to Variables
+Due date: Wed, Sep 4, 11:30am.
+You will earn 100 points if you return complete and in time. You will lose 30 points for each late hour. You need to upload your assignment through eCollege system. You should upload a file named Assg_1.cpp.
+Objective: In this assignment, you need to demonstrate basics of C++.
+Write a complete C++ program that prints out result of four math operations (+,-,*,/) within a cout operator, such as cout <<  2 + 2; for addition. In addition, printout first three characters of your last name on screen using ASCII table value. Assuming your last name is "TEST". So, write
+char first = 84; // 84->T
+char second = 69; // 69->E
+char third = 83; // 83->S
+cout << "My last name starts with " << first << second << third <<  "." ;
+
+Your code should start with comments as follows:
+// FIRSTNAME LASTNAME  - Jan 27, 2010
+// CWID: 123456789
+// Compiler: Visual Studio
+// Assignment #1 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.       
+*/
+Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Intro to Variables. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+
+** Store
+The Store
+Due date: Wed, 9/17, 11:59pm.
+You earn 100 points if you return complete and in time. You will lose 10 points for each late hour.
+You need to upload your assignment through eCollege. You should upload a file named Store.cpp.
+Objective: In this assignment, you need to demonstrate your ability in input, output, data types, and if statement.
+Assume that you need write a C++ program for a cash register. There are only three items in the store:
+
+Bread, $0.99 each
+Milk, $3.99 each
+Banana, $ 0.77 each
+
+Once a customer buys items, you will ask her/his how many of them are bought. The quantity can be in the range of 0-10 (including 0 and 10).
+
+Then, calculate total for this transaction. Later ask for payment method, which could be either Credit Card or Cash. 
+
+If the payment method is CC, your program exits. If it is cash, and enter the amount received from customer. Then show the due amount the customer.
+
+An example scenario for a CC payment would be:
+
+Enter how many bread customer bought:2
+Enter how many milk customer bought:1
+Enter how many cheese customer bought:3
+
+Total is $8.28
+
+Payment Method:CC
+
+Thanks...
+
+An example scenario for a cash payment would be:
+
+Enter how many bread customer bought:2
+Enter how many milk customer bought:1
+Enter how many cheese customer bought:3
+
+Total is $8.28
+
+Payment Method:Cash
+
+Enter the amount received from customer:25.00
+
+Due amount is $16.72
+
+Thanks...
+
+Tip:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Sep. 17, 2014
+// CWID: 123456789
+// Compiler: Visual Studio
+// Assignment Store 
+/* This program calculates … takes two int numbers ….
+Summarize your code functionality here.       
+*/
+ dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Store. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Compound Statements
+
+Compound Statements
+
+Due date: Friday, Sep 20, 11:59pm.
+
+Assignment Type: Individual, meaning that extremely similar or same assignment will result in course grade F.
+Grade: You will earn 10 points if you return your assignment complete and in time. You will lose  points for each late day (60 min).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Compound.cpp.
+Objective: In this assignment, you need to demonstrate conditional selection and a basic loop.
+Description:In this assignment, you need to demonstrate your ability in changing flow of execution. 
+
+What is this month? Possible answers: January, February, ... , December
+What is today? Possible answers: Monday, Tuesday, ... , Sunday
+Do you take CSCI 515? Possible answers: Yes, No
+
+Based on answers you get, if user takes CSCI 515; and today is Tuesday or Wednesday or Thursday; and the month is not May, June, July, August (summer) then print a message "You have 515 class today". If it is not a summer month, and it is a weekday but not Tuesday or Wednesday or Thursday, print a message "Study 515 at home today." If it is weekend, just print a message "Have a nice weekend.". If it is summer, print a message "Have a nice summer.". For all other cases, print "Enjoy your day!!!".
+
+You should use at least one compound logical expression in if statement, i.e, if ( .... && ....), if ( .... || ....), if ( .... || .... && .....).
+
+
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Jun 28, 2012
+// CWID: 123456789
+// Compiler: Visual Studio
+// Assignment #4
+/* This program calculates … takes two int numbers ….
+Summarize your code functionality here.       
+*/
+ dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled CompoundStatements. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** MinMax
+MinMax
+
+Due date: Wednesday, Sep 11, 11:30pm.
+
+You earn 100 points if you return complete and in time. You will lose 30 points for each late hour.
+
+You need to upload your assignment through eCollege system. You should upload a file named MinMax.cpp.
+
+Objective: In this assignment, you need to demonstrate basics of C++
+
+Write a complete C++ program that shows initialization of nine different integral data types, which were discussed in class. First you need initialize one variable for each data type. With each variable, comment out memory size of it. After initializing, you should assign minimum and maximum values to those variables. Check your compiler specs to find out minimum and maximum values regarding data types. Then, you should print out minimum and maximum values of variables on screen.
+
+For instant, your code may include
+
+int i_typ; //  four bytes
+
+i_type =  123; // max of int
+
+cout <<  “Max int:” << i_type << endl ;
+
+Tip:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+
+Your code should start with comments as seen in following:
+
+// FIRSTNAME LASTNAME  - Jan 27, 2010
+
+// CWID: 123456789
+
+// Compiler: Visual Studio
+
+// Assignment #1 
+
+/* This program calculates … or This function takes two int parameters ….
+
+Summarize your code functionality here.       
+
+*/
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MinMax. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** NumberGame 
+NumberGame
+
+Due date: Friday, Sep 27, 11:59pm.
+
+You earn 100 points if you return complete and in time. You will lose 30 points for each late day.
+
+You need to upload your assignment through eCollege. You should upload a file named NumberGame.cpp.
+
+Objective: In this assignment, you need to demonstrate your ability in  while loop, switch structure, and other basic of C++.
+
+You aim to write a program to play number guessing game, as discussed in this week lecture. It is game played by two persons. One (Person A) pick a secret number in a number range, such as 1-100, then other (Person B) tries to guess the secret number. When Person A hears a new number from Person B, he/she says only one of these three options:"too high", "too low", or "yes, it is correct."
+
+In you program, there will be two scenarios: 
+1) Computer picks a number and user tries to find secret number.
+2) User picks a number and computer tries to find user's secret number.
+
+First design a menu:
+
+Select number range:
+1) 1-10
+2) 1-20
+3) 1-50
+4) 1-100
+
+Then show a second menu
+
+Select playing scenario :
+1) Computer keeps a number and user finds it
+2) User keeps a number and computer finds it
+
+Based on selections, the game starts.  After the game is over, you will ask if user wants to play again or not. If yes, then restart game.
+
+The two menus will be written in switch structure. You will need to use random function, rand(). Please see example program at  http://codepad.org/ZCryJ3WY 
+
+Please submit your cpp file to dropbox: NumberGam
+
+** Random Math
+Random Math Operations 
+
+Due date: Friday, Feb 28, 11:59pm.
+
+You earn 100 points if you return complete and in time. Late submissions will be not accepted.
+
+You need to upload your assignment through eCollege. You should upload a file named RandomMath.cpp. 
+
+Description: This program is to ask the user N number of math (using only +, -, *, and /) questions. Once the program start it asks the user to enter how many questions will be asked (N, which is between 3-30, including). Then, the program automatically asks N questions. Each question will be one of four math operations (+, -, *, and /).  The operation and operands will be selected randomly in your program.
+After N questions, program exits with success score. The operands can be only “unsigned short”. See a sample run.
+
+------
+
+Enter number of questions: 5
+
+3 + 4 = 6
+Incorrect, 7 was the answer.
+
+8 – 4 = 4
+
+Correct
+
+5 * 6= 30
+
+Correct
+
+5-345= -300
+
+Incorrect, -340 was the answer
+
+0-0=0
+
+Correct
+
+Your success rate is 60%.
+
+
+-----
+Your code should start with comments as follows:
+
+// FIRSTNAME LASTNAME  - Feb 20, 2014
+
+// CWID: 123456789
+
+// Compiler: Visual Studio
+
+// Assignment: Random Math 
+
+/* This program  does ...
+
+Summarize your code functionality here.       
+
+*/
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled RandomMath. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+* 02 File IO, Loops
+
+** RandCalculation
+RandCalculation
+
+
+
+Due date: Saturday, 10/5, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named RandCal.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate  loops, file operations, and predefined function(s), especially random.
+
+
+Description
+
+You will be given a *.txt file, similar to  Random_Calculation.txt in Doc Sharing. The file has two numbers at each line. Notice that number of operation in the file is not known. You need to write your program to find a random operation (from the set of plus, minus, times, divided by, mod, power ) for each line, then calculate the operation and write this operation into another file with results.
+
+For instance, the input file has only three lines,
+
+12 56
+9 -3
+45 15 
+
+You will run your program and find an operation for each line iteratively using rand() function. Assuming you found randomly first minus, then divided by and plus, your output file will be
+
+12 minus 56 is -44
+9 divided by -3 is -3
+45 plus 15 is 65
+
+
+An example for rand() function is given at http://codepad.org/ZCryJ3WY . The name of output file will be operations.txt. 
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment ??
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled RandCalculation. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+
+** MinMaxChars
+ 
+Min-Max Chars of File
+
+Due date: Wednesday, Sep. 25, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named MinMaxChars.cpp. 
+
+Objective: In this assignment, you need to mainly demonstrate loops and file IO operations.
+
+Description
+
+Assume that you have a text file, letters.txt that have only one character in each line.
+
+C
+G
+T
++
+M
+m
+r
+6
+9
+R
+
+You will write a program to find minimum and maximum of characters (according to ASCII table) given in the file.
+
+Keep in mind:
+Number of lines in the file can be as much as possible.
+Do not predefine a minimum and maximum values. Instead the first char of the file will be min and max.
+Think about extreme cases: Many characters or only one character in the file.
+
+Choose your loop carefully. 
+
+    Don’t use unnecessary libraries.
+    You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated. 
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #3
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MinMaxChars. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** MaxFinder
+
+ MaxFinder
+
+Due date: Wednesday, 9/24, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named MaxFinder.cpp. 
+
+Objective: In this assignment, you need to mainly demonstrate loops, assert function, and  and other logical operators. 
+
+
+Description
+
+In this program, you will ask user to enter a positive integer number, N, between 4 and 8 (including 4 and 8). This number indicates how many numbers user will enter into your program.  Then in a loop, ask user N times to enter a number. At each time, user will enter one number only. At the last, your program prints out maximum of all entered number.
+
+How many numbers do you want to enter:4
+Enter a number: 3
+Enter a number: 33
+Enter a number: 333
+Enter a number: 99
+The maximum of them is 333
+
+Additional Conditions: 
+Use assert function to make sure that N is between 4 and 8. See  http://codepad.org/55znhRl2  for an example usage.
+Use ternary operator to find maximum of two numbers, such as max_n = (max_n<new_n) ? new_n : max_n ; 
+
+Don’t use unnecessary libraries. 
+You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated. 
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2055
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #3
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MaxFinder. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+
+** Math in File
+Math in File
+
+
+
+Due date: Monday, 2/11, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named MathInFile.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate  loops and file operations.
+
+
+Description
+
+You will be given a *.txt file, similar to OpeInFile.txt in Doc. Sharing. The file has only one calculation per line. Notice that number of lines in the file is not known. You need to write your program to read each line and write the question and answer into another line.
+There are six main math operations: plus, minus, times, divided by, Min, Max. However plus, minus, times, and divided by can be expressed with signs also. 
+For instance, the input file has only three lines,
+
+12 + 56
+9 divided by -3
+45 minus 15
+Min of 2 and 1
+Max of 3 and 5
+34 plus 33
+
+  Your output file will be
+
+12 + 56 is 68
+9 divided by -3 is -3
+45 minus 15 is 30
+Min of 2 and 1 is 1
+Max of 3 and 5 is 5
+34 plus 33 is 67
+
+
+The name of output file will be OpeResults.txt. 
+
+       Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment ??
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+
+** Substring Finder
+Substring Finder
+Due: Wednesday, Oct 1st, 11:59pm
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named substring.cpp. 
+Description
+You will develop a C++ program to find a frequency of substring in strings of a txt file. Once you run your program, it will ask the user the input file and substring (see below for an example run). Then the program searches the substring in file and outputs frequency of the substring. A substring has at least two characters.
+
+Enter file name: test.txt
+Enter a substring to find:ing
+Found 33 "ing" in test.txt.
+
+Do you want to search another substring(y/n):y
+Enter a substring to find:sh
+Found 55 "sh" in the test.txt.
+
+
+In this program you have to implement a function that takes a string and a substring then return frequency of substring in string as unsinged short. The function signature will be 
+unsigned short NumStr(string mainstr, string user_substr);
+
+
+You will use <string> library in this program. Also you can use predefined functions from <string> such as substr() and find(). Please check documentation of string library to find functions you need to use.
+
+Don’t use unnecessary libraries.
+You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+Your code should start with comments as seen in following:
+
+// FIRSTNAME LASTNAME - Feb 3, 2034
+
+// CWID: 123456789
+
+// Compiler: Visual Studio, GNU C++, etc.
+
+// Assignment ...
+
+
+
+/* This program calculates … 
+
+*/
+
+int main()
+
+{}
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Substring Finder. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+
+
+
+* 03 Functions I
+
+** Function Definitions
+Function Definitions
+
+
+Due date: Wednesday, Oct 2, 11:30am
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named FunDef.cpp. 
+
+Objective: In this assignment, you need to mainly demonstrate concepts of function definition. 
+
+
+Description
+
+In a program, define a set of functions to complete following operations.
+
+max_of(int, int, int) returns maximum of three integers.
+max_of(short, short, short) returns maximum of shorts. 
+sumall(int, int &, short, short &) returns sum of all integers and shorts.
+addS(string, string) returns concatenation of two strings.
+IsIn(string, char) returns true if char is found in string. Returns false if not. You can use other string function(s) in this function.
+
+Give example usages for each function in the main the function.
+Don’t use unnecessary libraries. 
+You may use lose points because of calling unused libraries.
+
+Commenting in appropriate way will be evaluated. 
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled FunDefinitions. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+** Spelling Out Numbers
+Spelling Out Numbers
+Due date: Tue, Mar 25, 11:59pm
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Spellout.cpp.
+Objective: In this assignment, you need to demonstrate mainly file operations, loops, string operations, and user defined functions (optional).
+ Description
+You will develop a C++ program to spell out numbers given in a file. Assume that you have text file appears as
+
+15
+-568
+3432
+9001
+16045
+...
+...
+
+Input file has one number (short) (minus or plus or zero) at each line. A number can have at most 5 characters, such as 12356, or  -1245. For the above file, your program should generate 
+
+fifteen
+minus  five hundred sixty eight 
+three thousand four hundred sixty two
+nine thousand one
+sixteen thousand forty five
+...
+...
+
+
+While completing your assignment, write a function takes an short, which is a number read from file, and returns a string, which is spelling out  of number, i.e., the prototype seems like
+
+string Spell (short a);
+
+Note that you do not know how many numbers are in the input file. See  http://codepad.org/IZ9UbWji for a clue.
+
+Notes:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+ Your code should start with comments as seen in following: 
+// FIRSTNAME LASTNAME  - Mar 25, 2099
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment
+ 
+/* This program calculates or This function takes two int parameters
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+ 
+Commenting in appropriate way will be evaluated. You may lose 1 (one) point if you don’t comment out your code appropriately.
+ 
+Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SpellingOutNumbers. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
