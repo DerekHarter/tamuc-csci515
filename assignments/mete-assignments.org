@@ -11,6 +11,7 @@
 | Sep 27 | 01 | NumberGame           |
 | Oct 01 | 02 | Substring Finder     |
 | Oct 02 | 03 | Function Definitions |
+| Oct 07 | 03 | Spelling Out Dates   |
 | Oct 10 | 02 | RandCalculation      |
 | Oct 15 | 03 | Function Overloading |
 | Oct 17 | 03 | Date Calculator      |
@@ -973,4 +974,60 @@ Dropbox Assignment Submission Procedures
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MonthCalculator. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
+
+
+** Spelling Out Dates
+Spelling Out Dates
+Due date: Tue, Oct 7, 11:59pm
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Spelloutdates.cpp.
+Objective: In this assignment, you need to demonstrate mainly file operations, loops, string operations, and user defined functions (optional).
+ Description
+You will develop a C++ program to spell out numbers given in a file. Assume that you have text file appears as
+
+5/3/2014
+12-4-2011
+01-19-200
+1/1/2011
+03/03/1900
+...
+...
+
+Input file has one data at each line. Notice that month, day, and year of date can be seperated by '/' or '-'. For the above file, your program should generate 
+
+May 3rd, 2014
+December 4th, 2011
+January 19th, 200
+January 1st, 2011
+March 3rd, 1900
+...
+...
+
+
+While completing your assignment, write a function takes a string, which is a date from the file, and returns a string, which is spelling out  of number, i.e., the prototype seems like
+
+string Spell(string a);
+
+
+Notes:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+ Your code should start with comments as seen in following: 
+// FIRSTNAME LASTNAME  - Mar 25, 2029
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment
+ 
+/* This program calculates or This function takes two int parameters
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+ 
+Commenting in appropriate way will be evaluated. You may lose 10 points if you don’t comment out your code appropriately.
+ 
+Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SpellingOutDates. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
