@@ -57,4 +57,10 @@ order in which they are written.  This is sequential execution.
 - An infinite loop occurs when you don't properly change values so
   that the condition of the loop is eventually false.
 
+** Different types of repetition
+- Our first while loop is a kind of purely logical controlled repetition.  We keep repeating as long as the condition
+is true, and once it becomes false we stop.
+- A common variation is, Counter-Controlled repetition, when you know you need to process X specific items (we will see a better way of doing
+this with a for loop next.)
+
 
