@@ -18,6 +18,7 @@
 | Oct 22 | 05 | Char Frequency           |
 | Oct 25 | 05 | Mix of Numbers and Chars |
 | Oct 29 | 05 | Stats in 2D Array        |
+| Nov 02 | 05 | Sorting                  |
 | Nov 07 | 05 | Logo                     |
 | Nov 07 | 05 | Dim Converter            |
 | Jan 27 | 01 | Assignment 0             |
@@ -1294,4 +1295,55 @@ int main()
 
 dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled DimConverter. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Sorting
+Sorting
+
+
+Due date: 11:59pm, Saturday, Nov 2nd
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Sort.cpp.
+Objective: In this assignment you need to demonstrate your skills in sorting and searching on an unordered list.
+
+Description 
+
+In this project, you need to read a list of number from a given file, which is Unordered_List.txt under Doc Sharing tab. This file includes 1,000,000 numbers, one per line basis.
+
+Write your program to read all numbers from file to an array. Then, 
+Write a function to perform a bubble sort on the array.
+Wrire a function to perform an insertion on the array.
+Also, refer to  http://codepad.org/lpUzqSV1 for the example of clock() function. Using similar structure, you need to measure how many ticks takes each sort algorithm (bubble and insertion). After running each function, print your measurement on the screen.
+
+Report number of ticks in the documentation of your program, such as 
+
+>The bubble sort spent 123 ticks to sort the array
+>The insertion sort spent 67 ticks to sort the array
+
+In the second part of this assignment, you need to write a function to search a given number on the unsorted array. First ask the user which number he/she will search.  Then, if your program find the number in the array, output array index, such as "123 found at Array[1111]." If you could not find the number then give an error indicating item is not found.
+
+
+Notes:
+
+Don’t use unnecessary libraries. clock() function requires <time.h>. You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated. 
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Date
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #11
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Sorting. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
