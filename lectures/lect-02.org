@@ -1,0 +1,8 @@
+#+TITLE:     Lecture 02 Notes
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
+#+DESCRIPTION: Lecture 02 Notes.
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
