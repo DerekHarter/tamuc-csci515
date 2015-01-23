@@ -63,5 +63,10 @@ is true, and once it becomes false we stop.
 - A common variation is, Counter-Controlled repetition, when you know you need to process X specific items (we will see a better way of doing
 this with a for loop next.)
 - Discuss an off-by-one error in a counter-controlled loop.
+- Sentenial-controlled repetition means we keep repeating until we see
+  some condition.  Our first example is really a sentenial-controlled
+  loop, though a more typical example is to have some explicit
+  sentenial/flag.
+
 
 
