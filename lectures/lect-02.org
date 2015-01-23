@@ -32,7 +32,7 @@
 * Part 2 (11:45 - 12:30)
 ** Algorithm
 An algorithm is a series of unambiguous explicit steps that can be taken to solve a problem.
-An algorithm is a procedure for solving a problem in terms of
+An algorithm is a procedure for solving a problem in terms of:
 
 1. the actions to execute and
 2. the order in which the actions execute
