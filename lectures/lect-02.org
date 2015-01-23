@@ -54,4 +54,7 @@ order in which they are written.  This is sequential execution.
 - while loop repeats a set of statements 0 or more times, checking for
   a condition before beginning and before each repetition of the
   statements in the body of the loop.
+- An infinite loop occurs when you don't properly change values so
+  that the condition of the loop is eventually false.
+
 
