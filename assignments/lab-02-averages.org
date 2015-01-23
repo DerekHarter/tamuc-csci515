@@ -38,4 +38,21 @@ Average Value: 18.5236
 * Lab Submission
 
 An eCollege dropbox has been created for this assignment.  You should upload your version of the lab by the
-end of lab time to the eCollege dropbox names Lab 02 Ave
+end of lab time to the eCollege dropbox named ~Lab 02 Average of Values~.
+
+* Requirements
+Your programs must conform to the style and formatting guidelines given for this course.
+The following is a list of the guidelines that are required for this lab:
+
+- The file header and function header for your main function must be present, and filled out correctly.
+- You must indent your code correctly and have no embedded tabs in your source code.
+- You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
+- You must have a single space before and after each binary operator.
+- You must have a single blank line after the end of your declaration of variables at the top of a function, before the first code statement.
+
+Failure to conform to these particular guidelines for this lab will
+result in a grade of 0 for the lab, and it being returned with an
+indication of which of these items your program violates.  Failure to
+follow other class/textbook programming guidelines may result in a
+loss of points, especially for those good programming practices given
+in chapters 1-5 of our textbook which you are to have read by now.
