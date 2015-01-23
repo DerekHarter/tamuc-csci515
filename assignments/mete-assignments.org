@@ -12,11 +12,13 @@
 | Oct 01 | 02 | Substring Finder     |
 | Oct 02 | 03 | Function Definitions |
 | Oct 10 | 02 | RandCalculation      |
+| Oct 15 | 03 | Function Overloading |
+| Oct 17 | 03 | Date Calculator      |
 | Jan 27 | 01 | Assignment 0         |
 | Feb 11 | 02 | Math in File         |
 | Feb 28 | 01 | Random Math          |
 | Mar 25 | 03 | Spelling Out Numbers |
-
+| Mar 28 | 03 | Month Calculator     |
 
 
 * 01 Basic Elements of C++
@@ -763,3 +765,212 @@ Commenting in appropriate way will be evaluated. You may lose 1 (one) point if y
  
 Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SpellingOutNumbers. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+** Function Overloading
+Function Overloading
+
+Due date: Wednesday, Oct 15, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 50 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named FuncOver.cpp. 
+
+Objective: In this assignment, you need to mainly demonstrate function overloading concept. 
+
+
+Description
+
+In a program, define a set of functions to complete following operations.
+
+Nbits(float) returns number of bits use this float variable, which is sizeof(float) * 8.
+Nbits(bool) returns number of bits use this bool variable, which is sizeof(bool) * 8.
+Nbits(unsinged double) returns number of bits use this unsigned double variable, which is sizeof(unsigned double) * 8.
+Cube(unsigned short n) returns n*n*n.
+Cube(unsigned float n) returns n*n*n.
+
+Give example usages (function calls) for each function in the main the function.
+Don’t use unnecessary libraries. 
+You may use lose points because of calling unused libraries.
+
+Commenting in appropriate way will be evaluated. 
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Function Overloading. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+** Date Calculator
+Date Calculator
+
+Due date: Thursday, Oct 17, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named DateCalc.cpp.
+
+Objective: In this assignment, you need to demonstrate mainly file operations, loops, string operations, and user defined functions.
+
+ Description
+
+You will develop a C++ program for date calculation which is specified in a text file. Assume that you have text file, which appears as
+
+01-01-1976  to 05-05-2013
+01-01-2006 + 100
+05-12-2008 - 300
+02-27-2011 to 01-01-2005 
+...
+...
+...
+
+The format of each line can be one of three:
+Date to Date
+Date - number of days
+Date + number of days
+
+Date format is Month-Day-Year
+
+"Date to Date" means you need to calculate difference between two dates in days, such as 01-01-1976 to 05-05-2013 should yield 13639 (days).
+Date + N, means you need to add N days to the date, and find a new date. 01-01-2006 + 100 should yield 04-11-2006.
+Date - N, means you need to subtract  N days from the date, and find a new date. 01-01-2006 - 300 should yield 07-17-2007.
+
+Notice that Date to Date operation can have (earlier to later) or (later to earlier) format. Earlier to later  results in positive number, as given above example. However, later to earlier gives a negative results, such as 02-27-2011 to 01-01-2005 should yield -2248 (days).
+
+In the text file, N is positive integer and N<30000.
+
+Since essentially there are three operations in the text file, (from, add, subtract) write three functions to accomplish these tasks. Your functions should take required parameters and return a string as a results. You should print it on screen for each calculation (line) given in the text file. The input file can have many lines, as assumed by default.
+
+Tip: MS Excel has similar calculations already. You may validate your results using Excel.
+
+Notes:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+
+ Your code should start with comments as seen in following: 
+
+// FIRSTNAME LASTNAME  - Sep 8, 2009
+
+// CWID: 123456789
+
+// Compiler: Visual Studio, GNU C++, etc.
+
+// Assignment #7
+
+ 
+
+/* This program calculates or This function takes two int parameters
+
+Summarize your code functionality here.
+
+  
+
+*/
+
+int main()
+
+{
+
+ 
+
+}
+
+ 
+
+Commenting in appropriate way will be evaluated. You may lose 10 (one) point if you don’t comment out your code appropriately.
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled DateCalculator. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Month Calculator
+Month Calculator
+
+Due date: Friday, March 28, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named MonthCalc.cpp.
+
+Objective: In this assignment, you need to demonstrate mainly file operations, loops, string operations, and user defined functions.
+
+ Description
+
+You will develop a C++ program for date calculation which is specified in a text file. Assume that you have text file, which appears as
+
+Jan 1  to May 5
+Jan 1 + 100
+May 12 - 300
+Mar 4 + 10
+Dec 31 - 55
+Feb 23 to Jan 23
+.
+
+The format of each line can be one of three:
+Month Day to Month Day
+Month Day + number of days
+Month Day - number of days
+
+
+"Date to Date" means you need to calculate difference between two dates in days, such as Jan 1  to May 5  should yield 124 (days), because starting Jan 1 124 days later falls into May 5.
+Date + N, means you need to add N days to the date, and find a new date. Jan 1 + 100 should yield Apr 11. 
+Date - N, means you need to subtract  N days from the date, and find a new date. Jan 1 - 300 should yield Mar 7.
+
+Assume that February has 28 days always.
+
+In the text file, N is positive integer and N<=366.
+
+Since there are three operations in the text file, (from, add, subtract) write three functions to accomplish these tasks. Your functions should take required parameters and return a string as a results. You should print it on screen for each calculation (line) given in the text file. The input file can have many lines, as assumed by default.
+
+Tip: MS Excel has similar calculations already. You may validate your results using Excel.
+
+Notes:
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+
+ Your code should start with comments as seen in following: 
+
+// FIRSTNAME LASTNAME  - Sep 8, 2009
+
+// CWID: 123456789
+
+// Compiler: Visual Studio, GNU C++, etc.
+
+// Assignment Month Calculator
+
+ 
+
+/* This program calculates or This function takes two int parameters
+
+Summarize your code functionality here.
+
+  
+
+*/
+
+int main()
+
+{
+
+ 
+
+}
+
+ 
+
+Commenting in appropriate way will be evaluated. You may lose 10 (one) point if you don’t comment out your code appropriately.
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled MonthCalculator. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
