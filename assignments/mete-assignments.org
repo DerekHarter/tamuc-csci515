@@ -1,0 +1,84 @@
+* Index
+- Sep 13 01 Static Cast
+- Jan 27 01 Assignment 0
+
+
+
+* 01 Basic Elements of C++
+
+** Assignment #0
+Assignment #0
+
+Due date: 11:59pm, Tuesday  Januray 27, 2015
+
+You will earn 100 points if you return complete and in time. You will lose 20 points for each late hour. You need to upload your assignment through eCollege system. You should upload a file named Assg_0.cpp (not a .txt or .exe  file).
+
+Objective: In this assignment, you need to demonstrate basic data types of C++.
+
+Write a complete C++ program that uses all nine integral data type involving a math operation (one of +, -, /, *) using a same kind hard-coded value. Only one operation is enough. For instance, to demonstrate the unsigned integer:
+
+unsigned int first = 33; 
+
+first = first + 5; // here first and 5 are both unsigned integers.
+
+
+Your code should start with comments as follows:
+// FIRSTNAME LASTNAME  - Jan 27, 2012
+
+// CWID: 123456789
+
+// Compiler: Visual Studio
+
+// Assignment #1 
+
+/* This program calculates … or This function takes two int parameters ….
+
+Summarize your code functionality here.       
+
+*/
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Assignment #0. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Static Cast
+Static Cast
+
+Due date: Friday, Sep 13, 11:59pm.
+
+You will earn 100 points if you return complete and in time. You will lose 50 points for each late day (24 hour).
+
+You need to upload your assignment through eCollege system. You should upload a file named StaticCast.cpp.
+
+Objective: In this assignment, you need to demonstrate basics of C++
+
+Write a complete C++ program that shows explicitly cast (using static_cast) operator
+
+ an integer variable to double. Print new double number on the screen
+ a short variable to integer. Print new integer number on the screen
+ a unsigned char to double. Print new double number on the screen
+Tip:
+
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+
+Your code should start with comments as seen in following:
+
+// FIRSTNAME LASTNAME  - May 30, 2033
+
+// CWID: 123456789
+
+// Compiler: Visual Studio
+
+// Assignment #1 
+
+/* This program calculates … or This function takes two int parameters ….
+
+Summarize your code's functionality here.       
+
+*/
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Static Cast. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
