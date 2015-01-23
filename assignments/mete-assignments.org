@@ -1,39 +1,39 @@
 * Index
 
-| Sep 04 | 01 | Intro to Variables       |
-| Sep 11 | 01 | MinMax                   |
-| Sep 12 | 01 | Geometry                 |
-| Sep 13 | 01 | Static Cast              |
-| Sep 17 | 01 | Store                    |
-| Sep 20 | 01 | Compound Statements      |
-| Sep 24 | 02 | MaxFinder                |
-| Sep 25 | 02 | MinMaxChars              |
-| Sep 27 | 01 | NumberGame               |
-| Oct 01 | 02 | Substring Finder         |
-| Oct 02 | 03 | Function Definitions     |
-| Oct 07 | 03 | Spelling Out Dates       |
-| Oct 10 | 02 | RandCalculation          |
-| Oct 15 | 03 | Function Overloading     |
-| Oct 17 | 03 | Date Calculator          |
-| Oct 22 | 05 | Char Frequency           |
-| Oct 25 | 05 | Mix of Numbers and Chars |
-| Oct 22 | 05 | Char Frequency           |
-| Oct 29 | 05 | Stats in 2D Array        |
-| Nov 02 | 05 | Sorting                  |
-| Nov 05 | 06 | Phone Keys               |
-| Nov 06 | 06 | Struct with Functions    |
-| Nov 07 | 05 | Logo                     |
-| Nov 07 | 05 | Dim Converter            |
-| Nov 12 | 06 | Absolute Frequency       |
-| Nov 23 | 06 | Sorted Structs           |
-| Jan 27 | 01 | Assignment 0             |
-| Feb 11 | 02 | Math in File             |
-| Feb 28 | 01 | Random Math              |
-| Mar 25 | 03 | Spelling Out Numbers     |
-| Mar 28 | 03 | Month Calculator         |
-|
-| Apr 11 | 05 | Hotel Manager            |
-| Apr 26 | 06 | Cricket World Cup        |
+| Sep 04 | 01 | Intro to Variables                |
+| Sep 11 | 01 | MinMax                            |
+| Sep 12 | 01 | Geometry                          |
+| Sep 13 | 01 | Static Cast                       |
+| Sep 17 | 01 | Store                             |
+| Sep 20 | 01 | Compound Statements               |
+| Sep 24 | 02 | MaxFinder                         |
+| Sep 25 | 02 | MinMaxChars                       |
+| Sep 27 | 01 | NumberGame                        |
+| Oct 01 | 02 | Substring Finder                  |
+| Oct 02 | 03 | Function Definitions              |
+| Oct 07 | 03 | Spelling Out Dates                |
+| Oct 10 | 02 | RandCalculation                   |
+| Oct 15 | 03 | Function Overloading              |
+| Oct 17 | 03 | Date Calculator                   |
+| Oct 22 | 05 | Char Frequency                    |
+| Oct 25 | 05 | Mix of Numbers and Chars          |
+| Oct 22 | 05 | Char Frequency                    |
+| Oct 29 | 05 | Stats in 2D Array                 |
+| Nov 02 | 05 | Sorting                           |
+| Nov 05 | 06 | Phone Keys                        |
+| Nov 06 | 06 | Struct with Functions             |
+| Nov 07 | 05 | Logo                              |
+| Nov 07 | 05 | Dim Converter                     |
+| Nov 12 | 06 | Absolute Frequency                |
+| Nov 23 | 06 | Sorted Structs                    |
+| Jan 27 | 01 | Assignment 0                      |
+| Feb 11 | 02 | Math in File                      |
+| Feb 28 | 01 | Random Math                       |
+| Mar 25 | 03 | Spelling Out Numbers              |
+| Mar 28 | 03 | Month Calculator                  |
+| Apr 03 | 07 | Arrow Operator (Intro to Pointers |
+| Apr 11 | 05 | Hotel Manager                     |
+| Apr 26 | 06 | Cricket World Cup                 |
 
 * 01 Basic Elements of C++
 
