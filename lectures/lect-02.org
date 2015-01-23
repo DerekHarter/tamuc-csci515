@@ -19,3 +19,7 @@
 - Debug $\rightarrow$ Windows $\rightarrow$ Memory
 - Representation of integer 1 vs. -1
 
+** Arithmetic and Precedence
+- Rules of precedence
+- Integer division vs. real division
+- Modulus operator
