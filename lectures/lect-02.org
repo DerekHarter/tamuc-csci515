@@ -70,3 +70,8 @@ this with a for loop next.)
 
 
 
+* Part 3 (12:40 - 1:40)
+
+** Visual Studio Tips
+- Turn on expert settings
+- Format selection Ctrl-k Ctrl-f
