@@ -20,6 +20,7 @@
 | Oct 22 | 05 | Char Frequency           |
 | Oct 29 | 05 | Stats in 2D Array        |
 | Nov 02 | 05 | Sorting                  |
+| Nov 05 | 06 | Phone Keys               |
 | Nov 07 | 05 | Logo                     |
 | Nov 07 | 05 | Dim Converter            |
 | Nov 12 | 06 | Absolute Frequency       |
@@ -1616,5 +1617,96 @@ int main()
 
 dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled SortedStructs. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Phone Keys
+Phone Keys
+
+ International Standard Key Pad
+
+1	2 
+ABC
+3 
+DEF
+4 
+GHI
+5 
+JKL
+6 
+MNO
+7 
+PQRS
+8 
+TUV
+9 
+WXYZ
+
+0	
+
+Due date: Wednesday, Nov 5, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named PhoneKeys.cpp. 
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using structs. 
+
+
+Description
+
+See above figure which shows numbers-letter association used in phone keys. Your task is to 
+1- Keep those association in an array of struct, such as 
+A,2
+B,2
+C,2
+...
+...
+...
+Z,9
+2- Given a three letter combination, find corresponding numbers for the string.
+
+In a menu ask user to enter a three-letter string.
+
+CSI 
+
+Your program should output 274. Similarly, 
+
+ABC should be map to 222 
+TOM should be map to 866
+BUY should be map to 289
+
+Ask user the strings repeatedly until user enters EXT.  
+
+
+* Don’t use unnecessary libraries, you may use lose points because of calling unused libraries. 
+* Commenting in appropriate way will be evaluated.
+
+
+Your code should start with comments as seen in following: 
+
+// FIRSTNAME LASTNAME - Feb 3, 2019 
+
+// CWID: 123456789 
+
+// Compiler: Visual Studio, GNU C++, etc. 
+
+// Assignment PhoneKeys 
+
+
+
+/* This program calculates … or This function takes two int parameters …. 
+
+Summarize your code functionality here. 
+
+
+*/ 
+
+int main() 
+
+{} 
+
+Dropbox Assignment Submission Procedures 
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Assignment PhoneKeys. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button. 
 
 
