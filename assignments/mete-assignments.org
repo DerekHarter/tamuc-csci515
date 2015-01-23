@@ -22,6 +22,7 @@
 | Nov 02 | 05 | Sorting                  |
 | Nov 07 | 05 | Logo                     |
 | Nov 07 | 05 | Dim Converter            |
+| Nov 12 | 06 | Absolute Frequency       |
 | Jan 27 | 01 | Assignment 0             |
 | Feb 11 | 02 | Math in File             |
 | Feb 28 | 01 | Random Math              |
@@ -1462,3 +1463,106 @@ int main()
 Dropbox Assignment Submission Procedures
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled CharFrequency. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+* 06 Structs (Records)
+
+** Absolute Frequency
+Absolute  Frequency
+Due date: Wednesday, Nov 12, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named AbsFre.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using structs and stings.
+
+
+Description
+
+Assume that you are given a text file, which can contain up to 50 numbers or characters. Your task is to write a C++ program to find the quantity of the form of each number / char appeared in this file. The form of a number means positive and negative valued number, or lower- and uppercase letters. 
+
+You need to ask user to enter file path to open. 
+
+For instance, after asking a file path
+
+> Enter file to open: mydata.txt
+
+ 5 -9  A -15 -5 54 62 -54 95 -44 5 a C K
+
+
+Your program should output similar to:
+
+ Number	Positive
+ Negative
+ 5	 2	 1
+ 9	0	 1
+ 15	 0	 1
+ 54	 1	 1
+ 95	 1	 0
+ 44	 0	 1
+62
+1
+0
+
+
+ Char	lower
+ Upper
+ a	 1	 1
+ C	0	 1
+ K	 0	 1
+
+In above example, there are 10 numbers and 3 chars in the file. 5 was seen two times as positive, and one time negative. 
+
+You should complete this task using structs. First define your struct , then create an array of structs with reasonable initial capacity.
+
+
+You should use array(s) of struct, depicted as for (numbers)
+
+Number
+Pos
+Neg
+Number
+Pos
+Neg
+Number
+Pos
+Neg
+Number
+Pos
+Neg
+…..
+ 
+…..
+ 
+…..
+ 
+struct item
+{
+  ...
+  ...
+  ...
+};
+
+item list[??];
+
+
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #3
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Absolute Frequency. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
