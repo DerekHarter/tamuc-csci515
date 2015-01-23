@@ -20,7 +20,7 @@
 Determine the average, and some other properties for an arbitrary
 number of integer values.  The user should be prompted to enter
 numbers from the terminal, and to indicate when they are done entering
-numbers by using a sentinel (use -9999 as your sentinel value).
+numbers by using a sentinel (use ~-9999~ as your sentinel value).
 
 Your program should report the following values after the user has
 indicated they are finished entering numbers.  The average of the
