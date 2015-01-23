@@ -17,6 +17,7 @@
 | Oct 17 | 03 | Date Calculator          |
 | Oct 22 | 05 | Char Frequency           |
 | Oct 25 | 05 | Mix of Numbers and Chars |
+| Oct 22 | 05 | Char Frequency           |
 | Oct 29 | 05 | Stats in 2D Array        |
 | Nov 02 | 05 | Sorting                  |
 | Nov 07 | 05 | Logo                     |
@@ -1392,3 +1393,72 @@ int main()
 dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled HotelManager. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
+
+** Char Frequency
+CharFrequency
+Due date: Wed, Oct 22, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named CharFrequency.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in parallel arrays mostly .
+
+
+Description
+
+Assume that you are given a text file, which can contain up to 200 letters from the set of {A, B, C, D, E}, such as
+
+A 
+B B A A D E E E A A
+C C D D D D D
+
+In the data file, number of letters in one line can be different than others. Write a C++ program to find 
+1) Frequency of each letter
+2) The least and most frequent letter.
+
+For the above example, the output should be
+
+A -> 5
+B -> 2
+C -> 2
+D -> 6
+E -> 3
+
+The least frequent letter(s) seen 2 times: B, C
+The most frequent letter(s) seen 6 times: D
+
+You should use an array / arrays with reasonable initial capacity. 
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+
+Your code should start with comments as seen in following:
+
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+
+// CWID: 123456789
+
+// Compiler: Visual Studio, GNU C++, etc.
+
+// Assignment #3
+
+ 
+
+/* This program calculates … or This function takes two int parameters ….
+
+Summarize your code functionality here.
+
+  
+
+*/
+
+int main()
+
+{}
+
+ 
+
+Dropbox Assignment Submission Procedures
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled CharFrequency. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
