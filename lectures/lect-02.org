@@ -47,5 +47,11 @@ order in which they are written.  This is sequential execution.
 - Selection statements: single if, double if / else, multiple switch
 - Repetition statements: for, while (0 or more) and do..while (1 or more)
 
+** Multiple Selection with if..else
+- can make 1 of multiple possible decisions using nested if statements.
 
+** Basic loop
+- while loop repeats a set of statements 0 or more times, checking for
+  a condition before beginning and before each repetition of the
+  statements in the body of the loop.
 
