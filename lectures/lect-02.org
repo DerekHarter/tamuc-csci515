@@ -9,7 +9,10 @@
 * Part 1 (11-11:45)
 ** Memory Concepts, Variables, Representation
 
-- When you declare a variable, it is assigned a location in memory.  All references to store or access 
-the named variable are translated by the C compiler using a lookup
-table.
+- When you declare a variable, it is assigned a location in memory.
+  All references to store or access the named variable are translated
+  by the C compiler using a lookup table.
+- The datatype is how pattern of bits in memory are stored and
+  interpreted to mean a number, a character, etc.
+- Int32 representation (http://en.wikipedia.org/wiki/Integer_%28computer_science%29)
 - 
