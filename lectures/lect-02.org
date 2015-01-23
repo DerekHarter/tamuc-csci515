@@ -6,7 +6,7 @@
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
-* Part 1 (11-11:45)
+* Part 1 (11 - 11:40)
 ** Memory Concepts, Variables, Representation
 
 - When you declare a variable, it is assigned a location in memory.
@@ -24,5 +24,10 @@
 - Integer division vs. real division
 - Modulus operator
 
-** Relational Comparisons
-- 
+** Relational Comparisons, and the bool type
+- Making decisions, we need be able to perform alternative actions
+  based on making some sort of decision.
+- bool should be used instead of an int for boolean flags in a program in modern c.
+
+* Part 2 (11:45 - 12:30)
+** 
