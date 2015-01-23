@@ -38,3 +38,8 @@ An algorithm is a procedure for solving a problem in terms of:
 2. the order in which the actions execute
 
 
+** Control Structures
+Normally statements in a program execute one after the other in the
+order in which they are written.  This is sequential execution.
+
+- The sequence structure is built into the C language normal operation.  Question: what/where is the first instruction executed in a C program
