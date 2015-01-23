@@ -70,7 +70,7 @@ this with a for loop next.)
 
 
 ** Increment, decrement and assignment
-- C++ provides several assignment operators for abbreviating
+- C provides several assignment operators for abbreviating
   assignment since it is very common to need to manipulate a value and
   assign it back to the variable. (+=, -=, *=, etc.)
 - increment and decrement are uniary operators.  We can increment and
@@ -79,6 +79,16 @@ this with a for loop next.)
   current value in expression then increment after.
 
 * Part 3 (12:40 - 1:40)
+
+** for Loop for Counter-Controlled Repetition
+- Counter-controlled loops are so commonly needed (especially when
+  processing arrays of elements later), that C provides a special
+  construct for implementing them.
+- Parts of a for loop, initialization, test, manipulation.
+- Give examples of counting up and counting down.
+- Give example of counting with a step size.
+
+** 
 
 ** Visual Studio Tips
 - Turn on expert settings
