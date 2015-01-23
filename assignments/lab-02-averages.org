@@ -25,8 +25,8 @@ sentinel (use -9999 as your sentinel value).
 Your program should report the following values after the user has
 indicated they are finished entering numbers.  The average of the
 values, the minimum value entered, the maximum value entered, and the
-total number of values the user entered.  Your output should be formatted
-to the terminal to look exactly like this:
+total number of values the user entered.  The output of your results
+should be formatted to the terminal to look exactly like this:
 
 #+begin_example
 Number of Values Entered: 5
