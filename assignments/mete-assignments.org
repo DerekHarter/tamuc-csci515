@@ -2101,3 +2101,208 @@ calculate 7th elements, which is 4.
 Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
 Commenting in appropriate way will be evaluated.
 
+
+* CodePad Links
+
+cout precedence (<< , < , +),  fancy comparison  http://codepad.org/EYgskWka
+
+Increment  (x++, ++x)   http://codepad.org/mSZfu5rA 
+
+List of Operators   http://www.cplusplus.com/doc/tutorial/operators/
+
+Order of Precedence http://codepad.org/12C0n1Rs 
+
+Switch Statement    http://codepad.org/NpF8VQbz  
+
+Assert Function http://codepad.org/55znhRl2
+
+For-loop   http://codepad.org/OiVUf55T 
+
+While-loop   http://codepad.org/4ucotz5o 
+
+Call by reference, call by value  http://codepad.org/LaFcVkUk 
+
+Pointer with Struct http://codepad.org/o5v8Zc80 
+
+2D very dynamic array http://codepad.org/mCXcvFs9  
+
+
+Call a function    http://codepad.org/ItZ3y1F1 
+
+Number Parsing   http://codepad.org/IZ9UbWji 
+
+Short- overflow    http://codepad.org/JHzpQe4X , and not  http://codepad.org/1EpgvzjA , int-to-short  http://codepad.org/mctjoTv2 
+
+Random number generator   http://codepad.org/ZCryJ3WY 
+
+Return Statement for functions   http://codepad.org/mctjoTv2 
+
+Parameter Coercion   http://codepad.org/1EpgvzjA   and  http://codepad.org/JHzpQe4X 
+
+Function Parameters, Call-by-reference  http://codepad.org/LaFcVkUk
+
+Scope of an Identifier   http://codepad.org/e6e5bInu 
+
+Static and Automatics Variables   http://codepad.org/JuQTgkdE 
+
+Default Parameters of a Function  http://codepad.org/wgRIWyCE 
+
+Passing an array to a function   http://codepad.org/FdKQncYp 
+
+Passing a 2D array to a function http://codepad.org/rO0qgtYi
+
+Passing an array to functions to update elements  http://codepad.org/c6Qt7bai 
+
+C-Strings   http://codepad.org/XMh2jYrC 
+
+Sizeof function   http://codepad.org/AFKlrcPt 
+
+Array of String   http://codepad.org/GmE4QiLZ 
+
+Structs  http://codepad.org/jaBmXBwX  
+
+Structs within Struct   http://codepad.org/u789FvSv 
+
+Pointers, introduction and simple example   http://codepad.org/A9s3mPu9 
+
+Pointers with Structs   http://codepad.org/XbGLBWxU 
+
+Namespace and Scope Resolution Operator   http://codepad.org/MkDqBiZ9 
+
+Structs with functions http://codepad.org/3R3qmioc 
+
+
+* Peer-to-Peer
+
+** Study on March 16, 2011
+
+Please go to http://csci515.ietherpad.com/ep/pad/view/ro.90-DlCH/rev.3
+Problem Description:
+
+// Ask user to enter up to 20 short numbers. Keep only odd numbers in an array. 
+// Once the user enters 0, then print out those numbers kept in the array 
+
+** Study on March 29, 2011
+
+Please go to http://csci515.ietherpad.com/ep/pad/view/ro.9HA0JxI/rev.1561
+
+
+Problem Description:
+
+// Assume that there are 30 days in one month; and first day is Monday. 
+// Randomly generate sales figures in double/float for each day($0.00- $100.00) 
+// Find the average sales for weekdays (Mon-Fri) of each week.
+
+** Study on April 19, 2011
+
+http://csci515.ietherpad.com/ep/pad/view/ro.9UfccnJ/rev.1474 
+
+Problem Description: 
+
+// Assume user will enter 5 pairs of person information (first name, last name, age), such as
+// Tom Green 24
+// Tim Yellow 33
+//
+// Read each line to one struct, which is a part of array of struct.
+// Write a function to return a struct to array.
+// Then sort them based on age
+
+Use this input in ideone.com
+
+Tim Green 12 
+Tom Yellow 34 
+Sam Red 55 
+Ken Brown 32 
+Ray Blue 45
+
+
+** Study on April 26, 2011
+
+http://csci515.ietherpad.com/ep/pad/view/ro.9lqQAWK/rev.1021
+
+Problem Description: 
+
+We will practice how to parse strings of Assg-17. Such as,
+
+Feb 20, 2011;New Zealand vs Kenya;Chennai;0930
+Feb 20, 2011;Sri Lanka vs Canada;Hambantota;1430
+Feb 21, 2011;Australia vs Zimbabwe;Ahmedabad;1430
+Feb 22, 2011;England vs Netherlands;Nagpur;1430
+
+** Study on May 3, 2011
+http://csci515.ietherpad.com/ep/pad/view/ro.95gQ1AL/rev.1803
+
+Problem Description
+
+We will create  dynamically  a student array, and an array of courses for each student, as seen below.
+
+SID
+SID
+SID
+SID
+SID
+SID
+Name
+Name
+Name
+Name
+Name
+Name
+nofC
+nofC
+nofC
+nofC
+nofC
+nofC
+*
+*
+*
+
+
+
+ arrow
+ arrow
+ arrow
+ 
+ 
+ 
+515
+512
+…..
+ 
+ 
+ 
+520
+455
+….
+ 
+ 
+ 
+526
+452
+…..
+ 
+ 
+ 
+565
+…..
+ 
+ 
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
