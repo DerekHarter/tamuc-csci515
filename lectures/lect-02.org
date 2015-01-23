@@ -44,5 +44,8 @@ order in which they are written.  This is sequential execution.
 
 - The sequence structure is built into the C language normal operation.
   Question: what/where is the first instruction executed in a C program?
-- 
+- Selection statements: single if, double if / else, multiple switch
+- Repetition statements: for, while (0 or more) and do..while (1 or more)
+
+
 
