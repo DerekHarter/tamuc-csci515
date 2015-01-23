@@ -25,6 +25,7 @@
 | Nov 07 | 05 | Logo                              |
 | Nov 07 | 05 | Dim Converter                     |
 | Nov 12 | 06 | Absolute Frequency                |
+| Nov 21 | 07 | Word Hunter                       |
 | Nov 23 | 06 | Sorted Structs                    |
 | Jan 27 | 01 | Assignment 0                      |
 | Feb 11 | 02 | Math in File                      |
@@ -1844,4 +1845,60 @@ Dropbox Assignment Submission Procedures
 
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled IntroPointers. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Word Hunter
+Word Hunter
+Due date: 11:59pm, Friday, Nov 21
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named WordHunter.cpp.
+
+Objective: In this assignment you need to demonstrate your skills in menu design, using functions (predefined and user), file operations, dynamic memory allocation, formatted printing and char arrays.
+
+Description 
+
+Your aim is to design program to find/list  specified words from English dictionary.  Your source file is Ordered_Word_list.txt (this file is reachable under Doc Sharing).  First line of this file has descriptive data, which says how many words listed in this file. List of words starts at second line, and goes until at the end of file one-per-line basis. Use a dynamic array to hold all words from the file.
+A user can list words based on length and substring.  Therefore you will ask user to enter two parameters.
+- What is the length of word?
+- What substring should be appeared in the word?
+For instance, when user enters 8 and "you", your program should print out these words from dictionary.
+embryous
+fooyoung
+joyously
+unjoyous
+youngish
+younglet
+yourself
+youthful
+youthily
+youwards
+
+The programming steps are follows:
+- Dynamically create an array to keep words in a string array. 
+- Read words from the file and store them in dynamic array.
+- Design a menu to ask user search parameters (length and substring).
+- Exit the menu if user enter 0 as a length of word.
+
+Notes:
+Don’t use unnecessary libraries. 
+Commenting in appropriate way will be evaluated. You may lose 3 (three) points if you don’t comment out your code appropriately.  
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - April, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #19
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Word Hunter. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
