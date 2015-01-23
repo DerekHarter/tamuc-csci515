@@ -105,7 +105,10 @@ this with a for loop next.)
 - For example, in the prime number algorithm, we don't need to perform
   any more loops after we find first negative example.
 - Can use a break statement.  An equivalent effect can be achieved by using a flag.
-- 
+- continue can be used to skip any remaining statemens in current
+  iteration, and then start immediately with the next iteration of the
+  loop.
+
 
 ** Visual Studio Tips
 - Turn on expert settings
