@@ -34,6 +34,7 @@
 | Mar 28 | 03 | Month Calculator                  |
 | Apr 03 | 07 | Arrow Operator (Intro to Pointers |
 | Apr 11 | 05 | Hotel Manager                     |
+| Apr 17 | 07 | Pointers to  Struct               |
 | Apr 26 | 06 | Cricket World Cup                 |
 
 * 01 Basic Elements of C++
@@ -1903,4 +1904,49 @@ dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Word Hunter. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
 
-** Point Struct
+** Pointers to Struct
+Point-to-Structs
+Due date: Wednesday, Apr 17, 12:00pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named PointStr.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using pointers with basic data types and structs.
+
+Description
+In this program, write your program to create below schema  to keep relationship between family members. Create adult and child structs. Parent's information is kept in adult structs, and children are kept in the child struct. Assume that  this family has 3 children (an array of structs). All of structs, array of structs should be created dynamically (new operator).
+
+   familytree2   
+
+Please be informed that  in order to keep the figure clean, I only showed father and mother link for Child-1. Child-2 and Child-3  point also their parents like Child-1.
+
+In your code, fill out your adult and child array (of structs) with imaginary values. Then in a for loop, print out children's  data in the following format.
+
+Child 1, Name ..., DOB ..., father's name is ...., and mother's name is ....
+Child 2, Name ..., DOB ..., father's name is ...., and mother's name is ....
+Child 3, Name ..., DOB ..., father's name is ...., and mother's name is ....
+
+
+
+
+Don’t use unnecessary libraries, you may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated.
+
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Feb 3, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #20
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{}
+Dropbox Assignment Submission Procedures
+
+
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled PointStruct. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
