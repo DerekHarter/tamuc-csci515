@@ -32,7 +32,7 @@
 | Mar 25 | 03 | Spelling Out Numbers     |
 | Mar 28 | 03 | Month Calculator         |
 | Apr 11 | 05 | Hotel Manager            |
-
+| Apr 26 | 06 | Cricket World Cup        |
 
 * 01 Basic Elements of C++
 
@@ -1752,4 +1752,54 @@ int main()
 
 dropbox01Dropbox Assignment Submission Procedures
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled StructWFunctoins. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Cricket World Cup
+
+CricketWorldCup
+
+Due date: 11:59pm, Saturday, Apr 26
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Cricket.cpp.
+Objective: In this assignment you need to demonstrate your skills in structs, selection sort, arrays, functions..
+
+Description 
+
+Download  Cricket World Cup 2011.txt from Doc Sharing section of the course. This file includes 49 match schedules of World Cup. First two lines are comment lines, and indicated by # at their first character. Rest of them (49 lines) are data lines. 
+
+You responsibilities include followings:
+Define and initialize a struct to hold each item indicated in one line.
+Read data from files into your array of structs.
+To do this, write a function takes a string STR (one data line from the file) and returns a struct filled with the data given in STR. 
+Sorting the structs based on different pieces of data, Date, Match, Venue, Time. Display a menu to ask which item will be used in sorting.
+Write a function takes a parameter as a indicator of sort item, then print out  sorted items. Use selection sort (given below for arrays).
+
+
+
+ selection 
+
+
+
+Notes:
+
+Don’t use unnecessary libraries. 
+Commenting in appropriate way will be evaluated. You may lose 1 (one) point if you don’t comment out your code appropriately.   
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Sep 8, 2013
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled CricketWorldCup. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
 
