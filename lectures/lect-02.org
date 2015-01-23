@@ -6,3 +6,10 @@
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
+* Part 1 (11-11:45)
+** Memory Concepts, Variables, Representation
+
+- When you declare a variable, it is assigned a location in memory.  All references to store or access 
+the named variable are translated by the C compiler using a lookup
+table.
+- 
