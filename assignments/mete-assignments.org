@@ -33,6 +33,7 @@
 | Mar 25 | 03 | Spelling Out Numbers              |
 | Mar 28 | 03 | Month Calculator                  |
 | Apr 03 | 07 | Arrow Operator (Intro to Pointers |
+| Apr 10 | 07 | 2D Dynamic Array                  |
 | Apr 11 | 05 | Hotel Manager                     |
 | Apr 17 | 07 | Pointers to  Struct               |
 | Apr 26 | 06 | Cricket World Cup                 |
@@ -1949,4 +1950,44 @@ Dropbox Assignment Submission Procedures
 
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled PointStruct. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** 2D Dynamic Array
+2D Dynamic Array
+Due date: Wednesday, April 10, 11:59am
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour.
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named 2DDyn.cpp.
+
+Objective: In this assignment, you need to mainly demonstrate your ability in using pointers within arrays.
+
+Description
+
+You will need to create and maintain a 2D-like dynamic arrays using array of pointers. Assume that you will create 2x3 dynamic structure with pointers. You would 
+ int *headcol[2];
+headcol[0]=new int [3];
+headcol[1]=new int [3];
+headcol[0][1]=33;
+headcol[1][2]=99; 
+
+In above example, we created 2x3 structure, in which first dimension is created with a static array ( int *headcol), but second dimension is created  with  new operator.
+
+Similarly you will create 2xN structure and fill out with random number (between 0 and 10), then list all numbers in the 2xN structure. Limit N < 10. You will ask user repeatedly enter second dimension until user enters 0. The program would seem
+
+Enter second dimension: 5
+3 4 0 9 0
+5 5 8 2 3
+
+Enter second dimension: 8
+8 7 6 3 4 0 9 0
+1 2 3 5 5 8 2 3
+
+...
+..
+Enter second dimension: 0
+
+Make sure that after each run you delete the second dimension arrays with delete [] pointervariable.
+
+Upload your program into dropbox basket 2D Dynamic Array.
 
