@@ -26,6 +26,7 @@
   (preferably) three spaces to form a level of indent. (I require 2
   spaces for all indentation).
 - 2.5 Place a space after each comma ( , ) to make programs more readable.
+- 2.5.1 Place a space before and after each binary operator (+ - * / < > <= == >= = << >> etc.)
 - 2.6 Choosing meaningful identifiers makes a program
   self-documenting—a person can understand the program simply by
   reading it rather than having to refer to manuals or comments.
