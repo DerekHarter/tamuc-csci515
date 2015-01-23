@@ -22,9 +22,9 @@ values, the minimum value entered, the maximum value entered, and the
 total number of values the user entered.  Your output should be formatted
 to the terminal to look exactly like this:
 
-\+begin_example
+#+begin_example
 Number of Values Entered: 5
 Maximum Value: 28
 Minimum Value: -32
 Average Value: 18.5236
-\+end_example
+#+end_example
