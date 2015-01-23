@@ -48,7 +48,9 @@ The following is a list of the guidelines that are required for this lab:
 - You must indent your code correctly and have no embedded tabs in your source code.
 - You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
 - You must have a single space before and after each binary operator.
-- You must have a single blank line after the end of your declaration of variables at the top of a function, before the first code statement.
+- You must have a single blank line after the end of your declaration
+  of variables at the top of a function, before the first code
+  statement.
 
 Failure to conform to these particular guidelines for this lab will
 result in a grade of 0 for the lab, and it being returned with an
