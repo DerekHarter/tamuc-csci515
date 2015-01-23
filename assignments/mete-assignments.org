@@ -17,6 +17,9 @@
 | Oct 17 | 03 | Date Calculator          |
 | Oct 22 | 05 | Char Frequency           |
 | Oct 25 | 05 | Mix of Numbers and Chars |
+| Oct 29 | 05 | Stats in 2D Array        |
+| Nov 07 | 05 | Logo                     |
+| Nov 07 | 05 | Dim Converter            |
 | Jan 27 | 01 | Assignment 0             |
 | Feb 11 | 02 | Math in File             |
 | Feb 28 | 01 | Random Math              |
@@ -1142,3 +1145,153 @@ int main()
 Dropbox Assignment Submission Procedures
 
 To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Arrays:CharFre. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+** Stats in 2D Array
+
+
+Statsin2DArray
+Due date: Wed, Oct 29, 11:59pm
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 20 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Statsin2DArray.cpp .
+
+Objective: In this assignment you need to demonstrate your skills in multidimensional arrays
+
+Description
+
+ You need to write a programs which fills a 3x7 array with random numbers between 20 and 50 (including 20 and 50). Find
+
+- Mean of all 21 numbers in the array
+- Max of all 21 numbers in the array
+- Min of all 21 numbers in the array
+- Frequency of all numbers in the array
+- Standard deviation of numbers in filled 2D array
+
+Refer to  http://codepad.org/ZCryJ3WY  for a random number generator example.
+
+Use Std. Dev. No Image , N is number of data points, which is 21 in this program.  No Image is mean of the list.
+
+You can use predefine functions, such as pow() and sqrt().
+
+Notes:
+
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated. You may lose 10 (one) point if you don’t comment out your code appropriately.   
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - March 8, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #6
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Statsin2DArray. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Logo
+TAMU-C Logo
+Due date: 11:59pm, Fri, Nov. 7
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 20 points for each late day (24 hour).
+Submission: You need to upload your assignment through eCollege system. You should upload a file named Logo.cpp (not a txt, exe, or doc file).
+Objective: In this assignment you need to demonstrate your skills in 3D array representation, abstraction and manipulation.
+
+Description 
+
+Download Tamu-commerce_logo-pixels.zip  from Doc Sharing section of this course. This zip file includes Logo_red.txt, Logo_green.txt, Logo_blue.txt files, which are color layer of our university's spirit logo, Lion. The image has size of 86x86 pixels. A pixel is unit size in image, and composed of 3 bytes (red, green, blue).
+
+You responsibilities includes followings:
+
+Define and initialize a 3D array to keep RGB pixels structured.
+Read pixels from three different files into your 3D array.
+Find average values for each layer R (red), G (green), B (blue) (Array[i][j][0] + Array[i][j][1]  + Array[i][j][2] ) /3, which is called intensity of a pixel.
+Find maximum and minimum intensity pixels of the image. Also, print out those pixel addresses of min an max values. Intensity is average of R, G, and B values. In case of multiple minimum and maximum values, you should show all of the pixel locations. 
+List address (x, y location) of pixels meeting pixel.R < pixel.G 
+Constrains: You need to read each source file once.
+
+Details of the homework will be discussed in the class on Monday. 
+Notes:
+
+Don’t use unnecessary libraries. 
+Commenting in appropriate way will be evaluated. You may lose 1 (one) point if you don’t comment out your code appropriately.   
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - Sep 8, 2009
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #9
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled Assignment #13. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
+
+** Dim Converter
+DimConverter
+Due date: 11:59am, Wed
+
+Grade: You will earn 100 points if you return your assignment complete and in time. You will lose 30 points for each late hour. 
+
+Submission: You need to upload your assignment through eCollege system. You should upload a file named DimConverter.cpp. 
+
+Objective: In this assignment you need to demonstrate your skills in 2D arrays especially.
+
+Description
+
+You need to write a programs (especially functions) to converts 2D  to 1D, and vice versa. The major constraint is that you should not use any global variable in your program. The steps are given below.
+
+Define a function (say F_2D_1D) takes 2D array and 1D array as two parameters. This function converts 2D array into 1D array organization. For instance, if the 2D array is 
+3 5 6 5
+5 6 7 0
+. . . . 
+. . . .
+1 2 3 4
+
+then 1D array should be filled as  3 5 6 5 5 6 7 0 . . . . . . . . 1 2 3 4. You should insert data from 2D array into 1D array row-by-row.
+Define a function (say, F_1D_2D) takes 1D array and 2D array as two parameters.  This function reads values from 1D array and store them in a 2D array. This function does reverse operation of F_2D_1D.
+In the main function, create a 2D array having 4 rows and 5 columns  with random unsigned short values between 1-9999. Then convert it to 1D using F_2D_1D. Print out input and output arrays in the main function.
+
+In the main function, create a 1D array having 60 elements with random unsigned short values between 1-9999. Then convert it to 2D (10-by-6) using F_1D_2D. Print out input and output arrays in the main function.
+
+Notes:
+
+In your functions, you may assume that sizes of array are known.
+Don't use global variables.
+Don’t use unnecessary libraries. You may use lose points because of calling unused libraries.
+Commenting in appropriate way will be evaluated. You may lose 10 points if you don’t comment out your code appropriately.  
+Your code should start with comments as seen in following:
+// FIRSTNAME LASTNAME  - March 8, 2010
+// CWID: 123456789
+// Compiler: Visual Studio, GNU C++, etc.
+// Assignment #6
+ 
+/* This program calculates … or This function takes two int parameters ….
+Summarize your code functionality here.
+  
+*/
+int main()
+{
+ 
+}
+      
+
+dropbox01Dropbox Assignment Submission Procedures
+To submit to the Dropbox, click on the Dropbox tab at the top of this course content frame. Click on the Submit an Assignment link. Choose the Dropbox Basket titled DimConverter. Click the Add Attachments button to browse for the assignment document on your computer that you would like to submit. After attaching this document, you may add comments to your instructor in the Comments field if you wish, then click the Submit button.
+
