@@ -1,0 +1,128 @@
+% Created 2015-01-24 Sat 10:02
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage{minted}
+\usemintedstyle{default}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Lab 02: Calculating PI}
+\author{CSci 515 Spring 2015}
+\date{2015-01-23}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lab 02},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Dates:}
+\label{sec-1}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ Due:  &  In Lab, Wednesday January 28, by 4 pm (lab end time)  \\
+\end{tabular}
+\end{center}
+\section*{Objectives}
+\label{sec-2}
+
+\begin{itemize}
+\item Practice writing index controlled loops
+\item Become more comfortable with using digital computers for calculating mathematical expressions in C.
+\item More practice with output formatting.
+\item Practice using real valued variables for mathematical calculations.
+\item Gain experience in translating formula into algorithmic procedures.
+\item Practice using uniary, binary and special assignment operators.
+\end{itemize}
+\section*{Description}
+\label{sec-3}
+
+Calculate an approximate value of $\pi$ from the series:
+
+$$ \pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} ... $$
+
+Print a table that shows the approximate value of $\pi$ after each of
+the first N terms of this series.  Your program should prompt the user
+for the value of N to determine how many values of the table of
+approximate values of $\pi$ will be displayed.  A session of using
+your program from the terminal should have exactly the following
+output:
+
+
+\begin{verbatim}
+What size of table should I compute: 5
+
+N     pi
+----- -------
+1     4
+2     2.66667
+3     3.46667
+4     2.89524
+5     3.33968
+\end{verbatim}
+\section*{Extra Credit}
+\label{sec-4}
+
+If you calculate the approximation of pi correctly using the series,
+you will see that using standard cout output it appears that only 6
+digits of precision are being calculated (e.g. create a table of size
+1000 or bigger).  However, the standard float data type is capable of
+representing 16 digits of precision.  The problem is that by default
+sending floats to cout only display a few decimal digits.  Find out
+how to display all of the calculated digits, using the iostream
+library.
+\section*{Lab Submission}
+\label{sec-5}
+
+
+An eCollege dropbox has been created for this lab.  You should
+upload your version of the lab by the end of lab time to the eCollege
+dropbox named \verb~Lab 02 Calculating Pi~.  Work submitted by the end
+of lab will be considered, but after the lab ends you may no longer
+submit work, so make sure you submit your best effort by the lab end
+time in order to receive credit.
+\section*{Requirements}
+\label{sec-6}
+
+Your programs must conform to the style and formatting guidelines given for this course.
+The following is a list of the guidelines that are required for the lab to be submitted
+this week.
+
+\begin{itemize}
+\item The file header and function header for your main function must be present, and filled out correctly.
+\item You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
+\item You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
+\item You must have a single space before and after each binary operator.
+\item You must have a single blank line after the end of your declaration
+  of variables at the top of a function, before the first code
+  statement.
+\end{itemize}
+
+Failure to conform to any of these formatting and programming practice
+guidelines for this lab will result in a grade of 0 for the lab, and
+your program being returned with an indication of which of these items
+your program violates.  Failure to follow other class/textbook
+programming guidelines may result in a loss of points, especially for
+those good programming practices given in chapters 1-5 of our textbook
+which you should have read by now.
+
+\end{document}
