@@ -28,7 +28,7 @@ int main()
   float piApprox;
   float denominator;
   float sign;
-  
+
   // Ask user for size of table to compute
   cout << "What size of table should I compute: ";
   cin >> N;
@@ -44,7 +44,7 @@ int main()
     denominator += 2.0;
     sign *= -1.0;
   }
-  
+
   // return 0 to indicate successful completion
   return 0;
 }
