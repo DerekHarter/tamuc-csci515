@@ -39,7 +39,7 @@ int main()
   sign = -1.0;
   for (int i = 1; i <= N; i++)
   {
-    cout << N << "     " << piApprox << endl;
+    cout << i << "     " << piApprox << endl;
     piApprox += sign * (4.0 / denominator);
     denominator += 2.0;
     sign *= -1.0;
