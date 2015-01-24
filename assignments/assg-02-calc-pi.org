@@ -32,6 +32,15 @@ your program from the terminal should have exactly the following
 output:
 
 #+begin_example
+What size of table should I compute: 5
+
+N     pi
+----- -------
+1     4
+2     2.66667
+3     3.46667
+4     2.89524
+5     3.33968
 #+end_example
 
 * Lab Submission
