@@ -70,7 +70,7 @@ You are forbidden to include statements in your submitted programs
 whose sole purpose is to keep the terminal from closing upon program
 completion, before you can see the output.  Statements like
 ~system("pause")~ or ~getch()~ are hacks, and are often not portable
-to other enviornments or IDE systems.  When using Visual Studio Express 2010
+to other environments or IDE systems.  When using Visual Studio Express 2010
 you can have your IDE keep the console up in the following 2 ways:
 
 ** Method 1
