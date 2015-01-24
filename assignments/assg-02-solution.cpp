@@ -6,8 +6,8 @@
  * @date   January 24, 2015
  * @assg   Assg 02, Calculating PI
  *
- * @description A short descrption of the program and its purpose, and
- *    the approach you took in solving the problem.
+ * @description Create a table showing approximate values of PI computed for steps in
+ *    the sequence \pi \approx 4  - 4/3 + 4/5 - 4/7 + 4/9 ... 
  */
 #include <iostream>
 using namespace std;
