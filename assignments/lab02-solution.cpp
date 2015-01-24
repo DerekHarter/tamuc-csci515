@@ -44,7 +44,7 @@ int main()
     if (value != -9999)
     {
       count++;
-      sum += item;
+      sum += value;
     }
   }
 
