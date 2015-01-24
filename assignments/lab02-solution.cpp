@@ -64,6 +64,7 @@ int main()
   }
 
   // display the results
+  cout << endl;
   cout << "Number of Values Entered: " << count << endl;
   cout << "Sum of values: " << sum << endl;
   cout << "Maximum value: " << max << endl;
