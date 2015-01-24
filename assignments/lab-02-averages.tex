@@ -1,4 +1,4 @@
-% Created 2015-01-23 Fri 13:48
+% Created 2015-01-23 Fri 21:37
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -59,17 +59,28 @@ numbers from the terminal, and to indicate when they are done entering
 numbers by using a sentinel (use \verb~-9999~ as your sentinel value).
 
 Your program should report the following values after the user has
-indicated they are finished entering numbers.  The average of the
-values, the minimum value entered, the maximum value entered, and the
-total number of values the user entered.  The output of your results
-should be formatted to the terminal to look exactly like this:
+indicated they are finished entering numbers.  The sum of the values,
+the average of the values, the minimum value entered, the maximum
+value entered, and the total number of values the user entered.  The
+output of a session with a user should be formatted to look exactly
+like this:
 
 
 \begin{verbatim}
-Number of Values Entered: 5
-Maximum Value: 28
-Minimum Value: -32
-Average Value: 18.5236
+Enter integer values, when done enter -9999.
+Enter next value: 3
+Enter next value: 6
+Enter next value: 13
+Enter next value: -3
+Enter next value: 8
+Enter next value: -2
+Enter next value: -9999
+
+Number of Values Entered: 6
+Sum of values: 25
+Maximum value: 13
+Minimum value: -3
+Average value: 4.16667
 \end{verbatim}
 \section*{Lab Submission}
 \label{sec-4}

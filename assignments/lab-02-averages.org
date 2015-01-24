@@ -23,10 +23,11 @@ numbers from the terminal, and to indicate when they are done entering
 numbers by using a sentinel (use ~-9999~ as your sentinel value).
 
 Your program should report the following values after the user has
-indicated they are finished entering numbers.  The average of the
-values, the minimum value entered, the maximum value entered, and the
-total number of values the user entered.  The output of a session with
-a user should be formatted to look exactly like this:
+indicated they are finished entering numbers.  The sum of the values,
+the average of the values, the minimum value entered, the maximum
+value entered, and the total number of values the user entered.  The
+output of a session with a user should be formatted to look exactly
+like this:
 
 #+begin_example
 Enter integer values, when done enter -9999.
