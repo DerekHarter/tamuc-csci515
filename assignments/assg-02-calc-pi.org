@@ -43,6 +43,16 @@ N     pi
 5     3.33968
 #+end_example
 
+* Extra Credit
+If you calculate the approximation of pi correctly using the series,
+you will see that using standard cout output it appears that only 6
+digits of precision are being calculated (e.g. create a table of size
+1000 or bigger).  However, the standard float data type is capable of
+representing 16 digits of precision.  The problem is that by default
+sending floats to cout only display a few decimal digits.  Find out
+how to display all of the calculated digits, using the iostream
+library.
+
 * Lab Submission
 
 An eCollege dropbox has been created for this assignment.  You should
