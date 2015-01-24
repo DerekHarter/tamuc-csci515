@@ -24,8 +24,8 @@ This course will be web enhanced.  Lectures, notes and course
 materials will be distributed through our University's eCollege online
 course system.
 
-| Section 03E (Lecture) | W 11:00a - 1:40p | Location: Jour 102 |
-| Section 03L (Lab)     | W  2:00p - 4:00p | Location: Jour 102 |
+| Section 03E (Lecture) | W 11:00a - 1:40p | Location: Jour 104 |
+| Section 03L (Lab)     | W  2:00p - 4:00p | Location: Jour 104 |
 
 * Course Description
 This is an advanced programming course using a high level programming
