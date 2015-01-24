@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday February 3, by Midnight |
+| Due: | In Lab, Wednesday January 28, by 4 pm (lab end time) |
 
 * Objectives
 - Practice writing index controlled loops
@@ -55,9 +55,12 @@ library.
 
 * Lab Submission
 
-An eCollege dropbox has been created for this assignment.  You should
-upload your version of the lab by the end of Tuesday 2/3 (midnight) to
-the dropbox named ~Assg 02 Calculating PI~. 
+An eCollege dropbox has been created for this lab.  You should
+upload your version of the lab by the end of lab time to the eCollege
+dropbox named ~Lab 02 Calculating Pi~.  Work submitted by the end
+of lab will be considered, but after the lab ends you may no longer
+submit work, so make sure you submit your best effort by the lab end
+time in order to receive credit.
 
 * Requirements
 Your programs must conform to the style and formatting guidelines given for this course.
@@ -65,7 +68,7 @@ The following is a list of the guidelines that are required for the lab to be su
 this week.
 
 - The file header and function header for your main function must be present, and filled out correctly.
-- You must indent your code correctly and have no embedded tabs in your source code.
+- You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
 - You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
 - You must have a single space before and after each binary operator.
 - You must have a single blank line after the end of your declaration
