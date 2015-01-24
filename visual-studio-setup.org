@@ -18,7 +18,7 @@ Express 2010 you can enable line numbers like this:
 
 1. Tools $\rightarrow$ Options
 2. In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ General
-3. Enable the Line Numbers checkbox
+3. Enable the Line Numbers check box
 
 * Program Indentation and Tab Settings
 For this class, you are required to correctly and consistently indent your code according to the
@@ -40,8 +40,8 @@ embedded tabs, which will not display properly in other editors.
 With tab settings set up correctly, you can actually get Visual Studio
 to do most of the work for you in making sure you program is correctly
 indented.  Visual Studio has a command to format the selected region.
-The formatting will follo the indention an tab settings you have for
-your project.  To have Visual Stuio format the indentation of a region
+The formatting will follow the indention an tab settings you have for
+your project.  To have Visual Studio format the indentation of a region
 for you automatically, do the following:
 
 1. Turn on advance settings from Tools $\rightarrow$ Settings
