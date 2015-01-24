@@ -54,9 +54,9 @@ Tuesday 2/3 (midnight) to the dropbox named ~Assg 02 Average of Values~.
 Late submissions will not be graded.
 
 * Requirements
-Your programs must conform to the style and formatting guidelines given for this course.
-The following is a list of the guidelines that are required for the lab to be submitted
-this week.
+Your programs must conform to the style and formatting guidelines
+given for this course.  The following is a list of the guidelines that
+are required for the assignment to be submitted this week.
 
 - The file header and function header for your main function must be present, and filled out correctly.
 - You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
