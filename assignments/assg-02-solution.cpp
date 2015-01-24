@@ -25,9 +25,9 @@ using namespace std;
 int main()
 {
   int N;
-  float piApprox;
-  float denominator;
-  float sign;
+  double piApprox;
+  double denominator;
+  double sign;
 
   // Ask user for size of table to compute
   cout << "What size of table should I compute: ";
