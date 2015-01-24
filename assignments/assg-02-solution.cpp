@@ -41,6 +41,8 @@ int main()
   {
     cout << N << "     " << piApprox << endl;
     piApprox += sign * (4.0 / denominator);
+    denominator += 2.0;
+    sign *= -1.0;
   }
   
   // return 0 to indicate successful completion
