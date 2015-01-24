@@ -36,6 +36,18 @@ settings:
 The last step will keep you from creating files with hardcoded,
 embedded tabs, which will not display properly in other editors.
 
+* Automatically Correctly Indent a Region
+With tab settings set up correctly, you can actually get Visual Studio to do most of the work
+for you in making sure you program is correctly indented.  Visual Studio has
+a command to format the select region.  The formatting will follo the indention an tab
+settings you have for your project.  To have Visual Stuio format the indentation of a 
+region for you automatically, do the following:
+
+1. Turn on advance settings from Tools $\rightarrow$ Settings $\rightarrow$ Expert Settings
+2. Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection,
+   or equivalently use the ~Ctrl-k~ ~Ctrl-f~ keyboar shortcut to
+   invoke automatic formatting of the selected region.
+
 * Display/Undisplay Invisible (space) Characters
 If you still have problems with getting hardcoded tabs in your source
 files, most programming editors have a command that makes normally
