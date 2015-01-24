@@ -37,11 +37,8 @@ output:
 * Lab Submission
 
 An eCollege dropbox has been created for this assignment.  You should
-upload your version of the lab by the end of lab time to the eCollege
-dropbox named ~Lab 02 Average of Values~.  Work submitted by the end
-of lab will be considered, but after the lab ends you may no longer
-submit work, so make sure you submit your best effort by the lab end
-time in order to receive credit.
+upload your version of the lab by the end of Tuesday 2/3 (midnight) to
+the dropbox named ~Assg 02 Calculating PI~. 
 
 * Requirements
 Your programs must conform to the style and formatting guidelines given for this course.
