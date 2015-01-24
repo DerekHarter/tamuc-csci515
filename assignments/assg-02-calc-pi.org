@@ -1,4 +1,4 @@
-#+TITLE:     Assg 02: Calculate PI
+#+TITLE:     Assg 02: Calculating PI
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
@@ -12,38 +12,26 @@
 | Due: | Tuesday February 3, by Midnight |
 
 * Objectives
-- Practice writing sentinel-controlled loops.
-- Become familiar with basic if..else decisions, and simple boolean logic.
+- Practice writing index controlled loops
+- Become more comfortable with using digital computers for calculating mathematical expressions in C.
 - Practice with arithmetic and type conversion in C.
+- More practice with output formatting.
+- Practice using real valued variables for mathematical calculations.
+- Gain experience in translating formula into algorithmic procedures.
 
 * Description
-Determine the average, and some other properties for an arbitrary
-number of integer values.  The user should be prompted to enter
-numbers from the terminal, and to indicate when they are done entering
-numbers by using a sentinel (use ~-9999~ as your sentinel value).
+Calculate the value of $\pi$ from the finite series:
 
-Your program should report the following values after the user has
-indicated they are finished entering numbers.  The sum of the values,
-the average of the values, the minimum value entered, the maximum
-value entered, and the total number of values the user entered.  The
-output of a session with a user should be formatted to look exactly
-like this:
+$\pi = 4 - \frac{4}{3} + \frac{4}{5}$
+
+Print a table that shows the approximate value of $\pi$ after each of
+the first N terms of this series.  Your program should prompt the user
+for the value of N to determine how many values of the table of
+approximate values of $\pi$ will be displayed.  A session of using
+your program from the terminal should have exactly the following
+output:
 
 #+begin_example
-Enter integer values, when done enter -9999.
-Enter next value: 3
-Enter next value: 6
-Enter next value: 13
-Enter next value: -3
-Enter next value: 8
-Enter next value: -2
-Enter next value: -9999
-
-Number of Values Entered: 6
-Sum of values: 25
-Maximum value: 13
-Minimum value: -3
-Average value: 4.16667
 #+end_example
 
 * Lab Submission
