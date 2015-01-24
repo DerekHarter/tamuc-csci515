@@ -3,7 +3,7 @@
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
 #+DESCRIPTION: Lecture 02 Notes.
-#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * Part 1 (11 - 11:40)

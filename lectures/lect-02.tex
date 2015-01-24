@@ -1,4 +1,4 @@
-% Created 2015-01-23 Fri 20:17
+% Created 2015-01-23 Fri 20:44
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,6 +15,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
+\usepackage{minted}
 \providecommand{\alert}[1]{\textbf{#1}}
 
 \title{Lecture 02 Notes}
@@ -30,9 +31,9 @@
 \maketitle
 
 
-\section*{Part 1 (11 - 11:40)}
+\section{Part 1 (11 - 11:40)}
 \label{sec-1}
-\subsection*{Memory Concepts, Variables, Representation}
+\subsection{Memory Concepts, Variables, Representation}
 \label{sec-1-1}
 
 
@@ -47,7 +48,7 @@
 \item Debug $\rightarrow$ Windows $\rightarrow$ Memory
 \item Representation of integer 1 vs. -1
 \end{itemize}
-\subsection*{Arithmetic and Precedence}
+\subsection{Arithmetic and Precedence}
 \label{sec-1-2}
 
 \begin{itemize}
@@ -55,7 +56,7 @@
 \item Integer division vs. real division
 \item Modulus operator
 \end{itemize}
-\subsection*{Relational Comparisons, and the bool type}
+\subsection{Relational Comparisons, and the bool type}
 \label{sec-1-3}
 
 \begin{itemize}
@@ -63,9 +64,9 @@
   based on making some sort of decision.
 \item bool should be used instead of an int for boolean flags in a program in modern c.
 \end{itemize}
-\section*{Part 2 (11:45 - 12:30)}
+\section{Part 2 (11:45 - 12:30)}
 \label{sec-2}
-\subsection*{Algorithm}
+\subsection{Algorithm}
 \label{sec-2-1}
 
 An algorithm is a series of unambiguous explicit steps that can be taken to solve a problem.
@@ -75,7 +76,7 @@ An algorithm is a procedure for solving a problem in terms of:
 \item the actions to execute and
 \item the order in which the actions execute
 \end{enumerate}
-\subsection*{Control Structures}
+\subsection{Control Structures}
 \label{sec-2-2}
 
 Normally statements in a program execute one after the other in the
@@ -87,13 +88,13 @@ order in which they are written.  This is sequential execution.
 \item Selection statements: single if, double if / else, multiple switch
 \item Repetition statements: for, while (0 or more) and do..while (1 or more)
 \end{itemize}
-\subsection*{Multiple Selection with if..else}
+\subsection{Multiple Selection with if..else}
 \label{sec-2-3}
 
 \begin{itemize}
 \item can make 1 of multiple possible decisions using nested if statements.
 \end{itemize}
-\subsection*{Basic loop}
+\subsection{Basic loop}
 \label{sec-2-4}
 
 \begin{itemize}
@@ -103,7 +104,7 @@ order in which they are written.  This is sequential execution.
 \item An infinite loop occurs when you don't properly change values so
   that the condition of the loop is eventually false.
 \end{itemize}
-\subsection*{Different types of repetition}
+\subsection{Different types of repetition}
 \label{sec-2-5}
 
 \begin{itemize}
@@ -121,7 +122,7 @@ this with a for loop next.)
   loop, though a more typical example is to have some explicit
   sentenial/flag.
 \end{itemize}
-\subsection*{Increment, decrement and assignment}
+\subsection{Increment, decrement and assignment}
 \label{sec-2-6}
 
 \begin{itemize}
@@ -133,9 +134,9 @@ this with a for loop next.)
   incrmeent the value then use that in the expression, or we first use
   current value in expression then increment after.
 \end{itemize}
-\section*{Part 3 (12:40 - 1:40)}
+\section{Part 3 (12:40 - 1:40)}
 \label{sec-3}
-\subsection*{for Loop for Counter-Controlled Repetition}
+\subsection{for Loop for Counter-Controlled Repetition}
 \label{sec-3-1}
 
 \begin{itemize}
@@ -146,7 +147,7 @@ this with a for loop next.)
 \item Give examples of counting up and counting down.
 \item Give example of counting with a step size.
 \end{itemize}
-\subsection*{do..while Repetition}
+\subsection{do..while Repetition}
 \label{sec-3-2}
 
 \begin{itemize}
@@ -154,7 +155,7 @@ this with a for loop next.)
   once, use do..while construct.  Useful so we can avoid duplicating
   some code.
 \end{itemize}
-\subsection*{switch statement}
+\subsection{switch statement}
 \label{sec-3-3}
 
 \begin{itemize}
@@ -173,7 +174,7 @@ this with a for loop next.)
   iteration, and then start immediately with the next iteration of the
   loop.
 \end{itemize}
-\subsection*{Visual Studio Tips}
+\subsection{Visual Studio Tips}
 \label{sec-3-4}
 
 \begin{itemize}
