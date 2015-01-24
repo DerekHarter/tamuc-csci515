@@ -2,7 +2,7 @@
  * @author Derek Harter
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
- * @ide    GCC / Emacs
+ * @ide    GCC/G++ Emacs
  * @date   January 24, 2015
  * @assg   Assg 02, Calculating PI
  *
@@ -24,8 +24,25 @@ using namespace std;
  */
 int main()
 {
-  cout << "Hello, world!" << endl;
+  int N;
+  float piApprox;
+  float denominator;
+  float sign;
+  
+  // Ask user for size of table to compute
+  cout << "What size of table should I compute: ";
+  cin >> N;
 
+  // display the table
+  piApprox = 4.0;
+  denominator = 3.0;
+  sign = -1.0;
+  for (int i = 1; i <= N; i++)
+  {
+    cout << N << "     " << piApprox << endl;
+    piApprox += sign * (4.0 / denominator);
+  }
+  
   // return 0 to indicate successful completion
   return 0;
 }
