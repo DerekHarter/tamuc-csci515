@@ -27,7 +27,26 @@ using namespace std;
  */
 int main()
 {
-  cout << "Hello, world!" << endl;
+  int value;
+  int count;
+  int sum;
+
+  // senteniel controlled loop, allow user to enter values untill they
+  // enter -9999 to indicate done
+  item = 0;
+  count = 0;
+  sum = 0;
+  cout << "Enter integer values, when done enter -9999." << endl;
+  while (item != -9999)
+  {
+    cout << "Enter next value: ";
+    cin >> item;
+    if (item != -9999)
+    {
+      count++;
+      sum += item;
+    }
+  }
 
   // return 0 to indicate successful completion
   return 0;
