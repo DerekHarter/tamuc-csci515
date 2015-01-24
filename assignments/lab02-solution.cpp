@@ -33,7 +33,7 @@ int main()
 
   // senteniel controlled loop, allow user to enter values untill they
   // enter -9999 to indicate done
-  item = 0;
+  value = 0;
   count = 0;
   sum = 0;
   cout << "Enter integer values, when done enter -9999." << endl;
