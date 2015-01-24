@@ -27,9 +27,9 @@ using namespace std;
  */
 int main()
 {
-  int value;
-  int count;
-  int sum;
+  int value; // holds most recent value entered by user
+  int count; // holds the number of values user has entered
+  int sum;   // keeps track of the running sum of the values
 
   // senteniel controlled loop, allow user to enter values untill they
   // enter -9999 to indicate done
