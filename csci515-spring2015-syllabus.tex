@@ -1,4 +1,4 @@
-% Created 2015-01-20 Tue 20:15
+% Created 2015-01-24 Sat 10:14
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,56 +7,65 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
+\usepackage{soul}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
+\usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
 \usepackage{minted}
 \usepackage{array}
 \usepackage{color}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{CSci 515 Fundamentals of Programming}
 \author{Course Syllabus}
 \date{Spring 2015}
-\title{CSci 515 Fundamentals of Programming}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Tentative Course Syllabus},
-  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
 \begin{document}
 
 \maketitle
 
+
 \section*{Instructor}
 \label{sec-1}
 
+
+
 \begin{center}
-\begin{tabular}{l}
-Derek Harter, Ph.D., Associate Professor\\
-Department of Computer Science\\
-Texas A\&M University - Commerce\\
-Office: SCI 355\\
-E-mail: Derek.Harter@tamuc.edu\\
-\end{tabular}
+\begin{tabular*}{0.9\textwidth}{l}
+ Derek Harter, Ph.D., Associate Professor  \\
+ Department of Computer Science            \\
+ Texas A\&M University - Commerce          \\
+ Office: SCI 355                           \\
+ Office Hours: M, Th, F 1-4 pm.            \\
+ E-mail: Derek.Harter@tamuc.edu            \\
+\end{tabular*}
 \end{center}
 \section*{Class Meetings}
 \label{sec-2}
+
 
 This course will be web enhanced.  Lectures, notes and course
 materials will be distributed through our University's eCollege online
 course system.
 
+
 \begin{center}
-\begin{tabular}{lll}
-Section 03E (Lecture) & W 11:00a - 1:40p & Location: EDS 133\\
-Section 03L (Lab) & W  2:00p - 4:00p & Location Jour 102\\
-\end{tabular}
+\begin{tabular*}{0.9\textwidth}{lll}
+ Section 03E (Lecture)  &  W 11:00a - 1:40p  &  Location: Jour 102  \\
+ Section 03L (Lab)      &  W  2:00p - 4:00p  &  Location: Jour 102  \\
+\end{tabular*}
 \end{center}
 \section*{Course Description}
 \label{sec-3}
+
 This is an advanced programming course using a high level programming
 language, C and C++. Specific objectives are to introduce the
 development of algorithms as a disciplined approach to problem
@@ -67,6 +76,7 @@ in the field of computational sciences.
 \section*{Student Learning Outcomes:}
 \label{sec-4}
 
+
 \begin{itemize}
 \item To understand the internal representation of the various data types.
 \item To review the language syntax and learn new syntax you have not previously used in programming applications.
@@ -74,23 +84,26 @@ in the field of computational sciences.
 \item To examine the internal representation of two and three dimension arrays in C/C++.
 \item To understand dynamic memory allocation, parameter passing, the use of pointers.
 \end{itemize}
-\section*{\uline{Mandatory} Textbook}
+\section*{\underline{Mandatory} Textbook}
 \label{sec-5}
+
 \emph{C++ How to Program (7th Edition)}, by Paul J. Deitel \& Harvey M. Deitel, ISBN-13: 978 0136117261
-
-
 \section*{Evaluation (Tentative)}
 \label{sec-6}
+
 Your grade for the course will be based on the following (approximate) percentages:
 
+
 \begin{center}
-\begin{tabular}{ll}
-First Test & 20\%\\
-Second Test & 20\%\\
-Labs / Assignments & 30\%\\
-Final Test & 30\%\\
-\end{tabular}
+\begin{tabular*}{0.9\textwidth}{ll}
+ First Test          &  15\%  \\
+ Second Test         &  15\%  \\
+ Labs / Assignments  &  45\%  \\
+ Final Test          &  25\%  \\
+\end{tabular*}
 \end{center}
+
+
 
 Final test might be in any form, a program, such as project
 presentation, a regular test, or a paper. The instructor will make a
@@ -113,20 +126,21 @@ will automatically lose 30\% of your total grade.
 
 Letter grades will be assigned according to the following scale:
 
-\begin{center}
-\begin{tabular}{ll}
-Final Average (\%) & Letter Grade\\
-\hline
-90 - 100 & A\\
-80 - 89 & B\\
-70 - 79 & C\\
-60 - 69 & D\\
-Below 60 & F\\
-\end{tabular}
-\end{center}
 
+\begin{center}
+\begin{tabular*}{0.9\textwidth}{ll}
+ Final Average (\%)  &  Letter Grade  \\
+\hline
+ 90 - 100            &  A             \\
+ 80 - 89             &  B             \\
+ 70 - 79             &  C             \\
+ 60 - 69             &  D             \\
+ Below 60            &  F             \\
+\end{tabular*}
+\end{center}
 \section*{Student's with Disabilities}
 \label{sec-7}
+
 
 The Americans with Disabilities Act (ADA) is a federal
 anti-discrimination statute that provides comprehensive civil rights
@@ -136,23 +150,24 @@ a learning environment that provides for reasonable accommodation of
 their disabilities.  If you have a disability requiring an
 accommodation, please contact: 
 
-\begin{center}
-\begin{tabular}{l}
-Office of Student Disability Resourcesand Services\\
-Texas A\&M University-Commerce\\
-Gee Library, Room 132\\
-Phone (903) 886-5150 or (903) 886-5835\\
-Fax (903) 468-8148\\
-StudentDisabilityServices@tamuc.edu\\
-\end{tabular}
-\end{center}
 
+\begin{center}
+\begin{tabular*}{0.9\textwidth}{l}
+ Office of Student Disability Resourcesand Services  \\
+ Texas A\&M University-Commerce                      \\
+ Gee Library, Room 132                               \\
+ Phone (903) 886-5150 or (903) 886-5835              \\
+ Fax (903) 468-8148                                  \\
+ StudentDisabilityServices@tamuc.edu                 \\
+\end{tabular*}
+\end{center}
 \section*{Academic Ethics}
 \label{sec-8}
 
-"All students enrolled at the University shall follow the tenets of
+
+``All students enrolled at the University shall follow the tenets of
 common decency and acceptable behavior conducive to a positive
-learning environment." (See Student's Guide Handbook, Policies and
+learning environment.'' (See Student's Guide Handbook, Policies and
 Procedures, Conduct). 
 
 Absolutely no usage of laptops and cellular devices (texting and
@@ -169,18 +184,18 @@ plagiarism.  If you are caught sharing or using other people's work in
 this class, you will receive a 0 grade and a warning on the first
 instance.  A subsequent instance will result in receiving an F grade
 for the course, and possible disciplinary proceedings.
-
 \section*{Attendance Policy}
 \label{sec-9}
+
 
 Attendance is mandatory. Students are expected to be present at all
 class lectures and are responsible for all material covered in class
 and assigned in readings.  Likewise lab sessions are mandatory.  Lab
 sessions may not be made up, and absences will affect your final
 course grade directly for the missed assignments.
-
 \section*{Course Requirements and Deadlines}
 \label{sec-10}
+
 Credit will be given for ONLY those exams, programs, and/or projects
 turned in no later than the deadline as announced by the instructor of
 this class, unless prior arrangement has been made with the
@@ -201,94 +216,97 @@ completing the course.
 Quizzes: Unannounced pop-quizzes may be given in class and/or online
 through eCollege to help ensure students stay up with assigned
 material.
-
-
 \section*{Course Schedule (Preliminary)}
 \label{sec-11}
 
+
 \tiny
+
 \begin{center}
-\begin{tabular}{|p{0.1in}|p{2.2in}|p{2.2in}|}
+\begin{tabular}{rll}
 \hline
-\textbf{W} & \textbf{Content} & \textbf{Assignments}\\
+ \textbf{W}  &  \textbf{Content}                                                                                                                      &  \textbf{Assignments}                                                                                                                                   \\
 \hline
-1 & Introduction, Data types, Cin, Cout & Lab assg. to be completed in 20 minutes. Take-home assg: limits of data types.\\
 \hline
-2 & Decision making, details of loops, string comparison, nested control structures, logical operators, == and = & Lab assg. to be completed in 20 minutes: Find averages of groups of numbers. Take-home assg.: Library inventory.\\
+          1  &  Introduction, Data types, Cin, Cout                                                                                                   &  Lab assg. to be completed in 20 minutes. Take-home assg: limits of data types.                                                                         \\
 \hline
-3 & File Operations, text files, binary files.  How to read and write, randomness.  Loops to read data from file. & Lab assg. to be completed in two hours. Take-home assg: Library inventory using files\\
+          2  &  Decision making, details of loops, string comparison, nested control structures, logical operators, == and =                          &  Lab assg. to be completed in 20 minutes: Find averages of groups of numbers. Take-home assg.: Library inventory.                                       \\
 \hline
-4 & Functions: Modular programming, pass by reference, pass by value, ARGV details for main() function, memory details of functions. & Lab assg. to be completed in two hours. Take-home assg: Complex Math operation with functions\\
+          3  &  File Operations, text files, binary files.  How to read and write, randomness.  Loops to read data from file.                         &  Lab assg. to be completed in two hours. Take-home assg: Library inventory using files                                                                  \\
 \hline
-5 & Determining the Size of a Data Type, Scope, static variables, function overloading, predefined (system) functions, default arguments & Lab assg. to be completed in two hours. Take-home assg: Student-course exercises to understand given concepts.\\
+          4  &  Functions: Modular programming, pass by reference, pass by value, ARGV details for main() function, memory details of functions.      &  Lab assg. to be completed in two hours. Take-home assg: Complex Math operation with functions                                                          \\
 \hline
-6 & Arrays: Using with different data types, index and access to arrays.  Applications to images. & Lab assg. to be completed in one hours. Take-hoem assg: Calculation of standard derivation in number arrays.  Calculations in 3D arrays (TAMU-C logo)\\
+          5  &  Determining the Size of a Data Type, Scope, static variables, function overloading, predefined (system) functions, default arguments  &  Lab assg. to be completed in two hours. Take-home assg: Student-course exercises to understand given concepts.                                         \\
 \hline
-7 & Array operations, add, shift, replace, deleta an element, parallel arrays with different data types (basics of structs) & Lab assg. to be completed in two hours. Take-home assg: Frequency calculation from a text file\\
+          6  &  Arrays: Using with different data types, index and access to arrays.  Applications to images.                                         &  Lab assg. to be completed in one hours. Take-hoem assg: Calculation of standard derivation in number arrays.  Calculations in 3D arrays (TAMU-C logo)  \\
 \hline
-8 & Array applications: Search in sorted and unsorted data.  Sort algorithms, efficient array size calculation for a given problem & Lab assg. to be completed in two hours. Take-home assg: Sort one million number to see difference in sort algorithms.\\
+          7  &  Array operations, add, shift, replace, deleta an element, parallel arrays with different data types (basics of structs)               &  Lab assg. to be completed in two hours. Take-home assg: Frequency calculation from a text file                                                         \\
 \hline
-9 & Structs, memory status of structs, arrays in structs, functions with structs. & Lab assg. to be completed in two hours. Take-home assg: Calculation of relative frequency\\
+          8  &  Array applications: Search in sorted and unsorted data.  Sort algorithms, efficient array size calculation for a given problem        &  Lab assg. to be completed in two hours. Take-home assg: Sort one million number to see difference in sort algorithms.                                  \\
 \hline
-10 & Structs, structs in structs, sorting structs, sorting structs in an array & Lab assg. to be completed in two hours. Take-home assg: Vanity numbers, a departmental courseware\\
+          9  &  Structs, memory status of structs, arrays in structs, functions with structs.                                                         &  Lab assg. to be completed in two hours. Take-home assg: Calculation of relative frequency                                                              \\
 \hline
-11 & Dynamic Programming, Pointers, new and delete operators.  Dynamically created arrays, dynamically created pointers. & Lab assg. to be completed in two hours. Take-home assg: Sorting Structs / Arrays using only pointer\\
+         10  &  Structs, structs in structs, sorting structs, sorting structs in an array                                                             &  Lab assg. to be completed in two hours. Take-home assg: Vanity numbers, a departmental courseware                                                      \\
 \hline
-12 & Dynamic Programming with various scenarios.  Friendship network, Facebook problem, Traveling salesman problem & Lab assg. to be completed in two hours. Take-home assg: TSP\\
+         11  &  Dynamic Programming, Pointers, new and delete operators.  Dynamically created arrays, dynamically created pointers.                   &  Lab assg. to be completed in two hours. Take-home assg: Sorting Structs / Arrays using only pointer                                                    \\
 \hline
-13 & Dynamic Programming with structs.  Pointers to various datatypes & Lab assg. to be completed in two hours. Take-home assg: Facebook and Movie database\\
+         12  &  Dynamic Programming with various scenarios.  Friendship network, Facebook problem, Traveling salesman problem                         &  Lab assg. to be completed in two hours. Take-home assg: TSP                                                                                            \\
 \hline
-14 & Templates, pointer based strings, C string and string class & Lab assg. to be completed in one hours. Take-home assg: String manipulations\\
+         13  &  Dynamic Programming with structs.  Pointers to various datatypes                                                                      &  Lab assg. to be completed in two hours. Take-home assg: Facebook and Movie database                                                                    \\
 \hline
-15 & Family tree problem with dynamic programming, recursive functions & Lab assg. to be completed in one hours. Take-home assg: Fibonacci numbers, Factorials\\
+         14  &  Templates, pointer based strings, C string and string class                                                                           &  Lab assg. to be completed in one hours. Take-home assg: String manipulations                                                                           \\
 \hline
-16 & Review for Final exam, practical examples: constrained sorting, DNA search, bank simulation & Lab assg. to be completed in one hours. Take-home assg: Bonus homework: Parsing a computer program\\
+         15  &  Family tree problem with dynamic programming, recursive functions                                                                     &  Lab assg. to be completed in one hours. Take-home assg: Fibonacci numbers, Factorials                                                                  \\
+\hline
+         16  &  Review for Final exam, practical examples: constrained sorting, DNA search, bank simulation                                           &  Lab assg. to be completed in one hours. Take-home assg: Bonus homework: Parsing a computer program                                                     \\
 \hline
 \end{tabular}
 \end{center}
 \section*{Reading Schedule}
 \label{sec-12}
 
+
 \small
+
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular*}{1.0\textwidth}{|p{0.1in}|p{4.0in}|}
 \hline
-\textbf{W} & \textbf{Reading}\\
+ \textbf{W}  &  \textbf{Reading}           \\
 \hline
-1 & Ch 1 (Introduction), Ch 2\\
 \hline
-2 & Ch 4, Ch 5\\
+          1  &  Ch 1 (Introduction), Ch 2  \\
 \hline
-3 & Ch 15, Ch 17\\
+          2  &  Ch 4, Ch 5                 \\
 \hline
-4 & 6.1 - 6.14\\
+          3  &  Ch 15, Ch 17               \\
 \hline
-5 & 6.15 - 6.17\\
+          4  &  6.1 - 6.14                 \\
 \hline
-6 & 7.1 - 7.4\\
+          5  &  6.15 - 6.17                \\
 \hline
-7 & \\
+          6  &  7.1 - 7.4                  \\
 \hline
-8 & 7.7 - 7.8\\
+          7  &                             \\
 \hline
-9 & 21.1 - 21.5\\
+          8  &  7.7 - 7.8                  \\
 \hline
-10 & Ch 20\\
+          9  &  21.1 - 21.5                \\
 \hline
-11 & 8.1 - 8.7\\
+         10  &  Ch 20                      \\
 \hline
-12 & \\
+         11  &  8.1 - 8.7                  \\
 \hline
-13 & 8.8 - 8.13, Ch 19\\
+         12  &                             \\
 \hline
-14 & Ch 14, Ch 18\\
+         13  &  8.8 - 8.13, Ch 19          \\
 \hline
-15 & \\
+         14  &  Ch 14, Ch 18               \\
 \hline
-16 & \\
- & \\
+         15  &                             \\
 \hline
-\end{tabular}
+         16  &                             \\
+\hline
+\end{tabular*}
 \end{center}
-% Emacs 24.3.1 (Org mode 8.2.4)
+
 \end{document}
