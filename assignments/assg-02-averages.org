@@ -67,9 +67,9 @@ are required for the assignment to be submitted this week.
   statement.
 
 Failure to conform to any of these formatting and programming practice
-guidelines for this lab will result in a grade of 0 for the lab, and
-your program being returned with an indication of which of these items
-your program violates.  Failure to follow other class/textbook
-programming guidelines may result in a loss of points, especially for
-those good programming practices given in chapters 1-5 of our textbook
-which you should have read by now.
+guidelines for this assignment will result in a grade of 0 for the
+assignment, and your program being returned with an indication of
+which of these items your program violates.  Failure to follow other
+class/textbook programming guidelines may result in a loss of points,
+especially for those good programming practices given in chapters 1-5
+of our textbook which you should have read by now.
