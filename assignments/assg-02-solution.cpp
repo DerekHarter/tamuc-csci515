@@ -32,11 +32,14 @@ int main()
   // Ask user for size of table to compute
   cout << "What size of table should I compute: ";
   cin >> N;
-
+  cout << endl;
+  
   // display the table
   piApprox = 4.0;
   denominator = 3.0;
   sign = -1.0;
+  cout << "N     pi" << endl;
+  cout << "----- ------"
   for (int i = 1; i <= N; i++)
   {
     cout << i << "     " << piApprox << endl;
