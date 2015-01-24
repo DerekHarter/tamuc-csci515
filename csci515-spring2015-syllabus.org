@@ -14,6 +14,7 @@
 | Department of Computer Science           |
 | Texas A&M University - Commerce          |
 | Office: SCI 355                          |
+| Office Hours: M, Th, F 1-4 pm.           |
 | E-mail: Derek.Harter@tamuc.edu           |
 
 * Class Meetings
