@@ -21,10 +21,11 @@ Express 2010 you can enable line numbers like this:
 3. Enable the Line Numbers check box
 
 * Program Indentation and Tab Settings
-For this class, you are required to correctly and consistently indent your code according to the
-Deitel good programming guidelines, and our class coding/formatting guidelines.  You can have
-Visual Studio Express 2010 automatically set your indentation for you by changing the following
-settings:
+For this class, you are required to correctly and consistently indent
+your code according to the Deitel good programming guidelines, and our
+class coding/formatting guidelines.  You can have Visual Studio
+Express 2010 automatically set your indentation for you by changing
+the following settings:
 
 1. Tools $\rightarrow$ Options
 2. In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ Tabs
