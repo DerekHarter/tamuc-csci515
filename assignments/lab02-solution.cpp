@@ -30,12 +30,17 @@ int main()
   int value; // holds most recent value entered by user
   int count; // holds the number of values user has entered
   int sum;   // keeps track of the running sum of the values
+  int max;   // hold the maximum value seen so far
+  int min;   // hold the minimum value seen so far
+  float average; // calculate the average of the values
 
   // senteniel controlled loop, allow user to enter values untill they
   // enter -9999 to indicate done
   value = 0;
   count = 0;
   sum = 0;
+  max = -10000000;
+  min = 10000000;
   cout << "Enter integer values, when done enter -9999." << endl;
   while (value != -9999)
   {
@@ -45,14 +50,24 @@ int main()
     {
       count++;
       sum += value;
+      
+      if (value > max)
+      {
+	max = value;
+      }
+
+      if (value < min)
+      {
+	value = min;
+      }
     }
   }
 
   // display the results
   cout << "Number of Values Entered: " << count << endl;
   cout << "Sum of values:" << sum << endl;
-  cout << "Maximum value:" << endl;
-  cout << "Minimum value:" << endl;
+  cout << "Maximum value:" << max << endl;
+  cout << "Minimum value:" << min << endl;
   cout << "Average value:" << endl;
 
   // return 0 to indicate successful completion
