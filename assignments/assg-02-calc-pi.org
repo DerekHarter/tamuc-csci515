@@ -20,7 +20,7 @@
 - Gain experience in translating formula into algorithmic procedures.
 
 * Description
-Calculate the value of $\pi$ from the finite series:
+Calculate an approximate value of $\pi$ from the series:
 
 $$ \pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \frac{4}{9} - \frac{4}{11} ... $$
 
