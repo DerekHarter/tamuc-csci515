@@ -33,7 +33,7 @@ int main()
   cout << "What size of table should I compute: ";
   cin >> N;
   cout << endl;
-  
+
   // display the table
   piApprox = 4.0;
   denominator = 3.0;
