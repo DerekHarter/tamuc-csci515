@@ -39,7 +39,7 @@ int main()
   denominator = 3.0;
   sign = -1.0;
   cout << "N     pi" << endl;
-  cout << "----- ------" << endl;
+  cout << "----- -------" << endl;
   for (int i = 1; i <= N; i++)
   {
     cout << i << "     " << piApprox << endl;
