@@ -69,7 +69,8 @@ int main()
   cout << "Sum of values: " << sum << endl;
   cout << "Maximum value: " << max << endl;
   cout << "Minimum value: " << min << endl;
-  cout << "Average value: " << endl;
+  average = (float)sum / (float)count;
+  cout << "Average value: " << average << endl;
 
   // return 0 to indicate successful completion
   return 0;
