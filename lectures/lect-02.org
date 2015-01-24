@@ -6,7 +6,7 @@
 #+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
-* Part 1 (11 - 11:40)
+* First Session (11 - 11:40)
 ** Memory Concepts, Variables, Representation
 
 - When you declare a variable, it is assigned a location in memory.
@@ -29,7 +29,7 @@
   based on making some sort of decision.
 - bool should be used instead of an int for boolean flags in a program in modern c.
 
-* Part 2 (11:45 - 12:30)
+* Second Session (11:45 - 12:30)
 ** Algorithm
 An algorithm is a series of unambiguous explicit steps that can be taken to solve a problem.
 An algorithm is a procedure for solving a problem in terms of:
@@ -78,7 +78,7 @@ this with a for loop next.)
   incrmeent the value then use that in the expression, or we first use
   current value in expression then increment after.
 
-* Part 3 (12:40 - 1:40)
+* Third Session (12:40 - 1:40)
 
 ** for Loop for Counter-Controlled Repetition
 - Counter-controlled loops are so commonly needed (especially when
