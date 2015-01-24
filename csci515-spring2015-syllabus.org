@@ -53,10 +53,10 @@ in the field of computational sciences.
 Your grade for the course will be based on the following (approximate) percentages:
 
 #+ATTR_LATEX: environment=tabular*,width=0.9\textwidth
-| First Test         | 20% |
-| Second Test        | 20% |
-| Labs / Assignments | 30% |
-| Final Test         | 30% |
+| First Test         | 15% |
+| Second Test        | 15% |
+| Labs / Assignments | 45% |
+| Final Test         | 25% |
 
 Final test might be in any form, a program, such as project
 presentation, a regular test, or a paper. The instructor will make a
