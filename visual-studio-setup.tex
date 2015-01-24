@@ -1,4 +1,4 @@
-% Created 2015-01-22 Thu 14:12
+% Created 2015-01-23 Fri 20:22
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,7 +15,6 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
-\usepackage{minted}
 \usepackage{minted}
 \usepackage{array}
 \usepackage{color}
@@ -68,8 +67,23 @@ settings:
 
 The last step will keep you from creating files with hardcoded,
 embedded tabs, which will not display properly in other editors.
-\section{Display/Undisplay Invisible (space) Characters}
+\section{Automatically Correctly Indent a Region}
 \label{sec-3}
+
+With tab settings set up correctly, you can actually get Visual Studio to do most of the work
+for you in making sure you program is correctly indented.  Visual Studio has
+a command to format the select region.  The formatting will follo the indention an tab
+settings you have for your project.  To have Visual Stuio format the indentation of a 
+region for you automatically, do the following:
+
+\begin{enumerate}
+\item Turn on advance settings from Tools $\rightarrow$ Settings $\rightarrow$ Expert Settings
+\item Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection,
+   or equivalently use the \verb~Ctrl-k~ \verb~Ctrl-f~ keyboar shortcut to
+   invoke automatic formatting of the selected region.
+\end{enumerate}
+\section{Display/Undisplay Invisible (space) Characters}
+\label{sec-4}
 
 If you still have problems with getting hardcoded tabs in your source
 files, most programming editors have a command that makes normally
@@ -77,18 +91,18 @@ invisible whitespace characters become visible, using symbols for the
 different types of characters (space, tab, etc.).  To toggle the
 display of invisible whitespace characters on and off, you can:
 \subsection{Method 1}
-\label{sec-3-1}
+\label{sec-4-1}
 
 \begin{enumerate}
 \item Turn on advanced settings from Tools $\rightarrow$ Settings $\rightarrow$ Expert Settings
 \item Toggle display of white space on/off from Edit $\rightarrow$ Advanced $\rightarrow$ View Whitespace
 \end{enumerate}
 \subsection{Method 2}
-\label{sec-3-2}
+\label{sec-4-2}
 
 The keyboard shortcut for this toggle is \verb~Ctrl-R~ \verb~Ctrl-W~.
 \section{Cause Terminal/Console to Persist after Program Execution}
-\label{sec-4}
+\label{sec-5}
 
 You are forbidden to include statements in your submitted programs
 whose sole purpose is to keep the terminal from closing upon program
@@ -97,7 +111,7 @@ completion, before you can see the output.  Statements like
 to other enviornments or IDE systems.  When using Visual Studio Express 2010
 you can have your IDE keep the console up in the following 2 ways:
 \subsection{Method 1}
-\label{sec-4-1}
+\label{sec-5-1}
 
 Simple use of debugger.  You can simply set a debug breakpoint on the
 closing brace of your main function.  Then whenever you run your
@@ -105,7 +119,7 @@ program (using Debug $\rightarrow$ Start Debugging or equivalently
 using the \verb~F5~ function key), your program will run till it hits this
 breakpoint, and you can then look at the terminal output.
 \subsection{Method 2}
-\label{sec-4-2}
+\label{sec-5-2}
 
 You can also set a property for console applications, so that if you
 run without debugging, Visual Studio keeps the terminal open until
@@ -120,24 +134,24 @@ on new projects):
 \item Hit OK or Apply to have your property setting saved (for this particular Project only, you have to do this for every project you create).
 \end{enumerate}
 
-Now if you run your program with debugging (Debug $\rightarrow$ Start
+Now if you run your program without debugging (Debug $\rightarrow$ Start
 Without Debugging or equivalently \verb~Shift-F5~), your terminal will be
 paused when the program completes execution.
 \section{Increase/Decrease Editor Font Size}
-\label{sec-5}
+\label{sec-6}
 
 For readability, you can increase/decrease the font size of the Visual
 Studio programming editor. Use Ctrl-Shift-, to increase font size,
 and \verb~Ctrl-Shift-.~ to decrease text size.  You can also directly set
 the zoom level in the lower left of the editor frame.
 \section{Project Creating Steps for Class Assignments}
-\label{sec-6}
+\label{sec-7}
 
 For this class, you need to submit plain/standard C/C++ code (code that does not use special 3rd party libraries
 or frameworks.  One confusing aspect of Visual Studio is that it supports many types of (Microsoft) specific
 application and framework targets.  For this class, you should always use an Empty Project, which will allow
-you to create programs using standard C/C++ libraries and no external framework.  Always follow these
-steps when creating a new project for assignment for this course:
+you to create programs using standard C/C++ libraries using no external framework.  Always follow these
+steps when creating a new project for assignments for this course:
 
 \begin{enumerate}
 \item File $\rightarrow$ New $\rightarrow$ Project
@@ -158,7 +172,7 @@ Here is the boiler plate you should use (but don't type this in by hand every ti
 header and an example function header for the main function.
 
 
-\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+\begin{verbatim}
 /**
  * @author Joe Programmer
  * @cwid   123 45 678
@@ -190,6 +204,10 @@ int main()
   // return 0 to indicate successful completion
   return 0;
 }
-\end{minted}
+\end{verbatim}
+
+\begin{verbatim}
+ Hello, world!
+\end{verbatim}
 
 \end{document}
