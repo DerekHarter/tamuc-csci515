@@ -48,6 +48,12 @@ int main()
     }
   }
 
+  cout << "Number of Values Entered: " << count << endl;
+  cout << "Sum of values:" << sum << endl;
+  cout << "Maximum value:" << endl;
+  cout << "Minimum value:" << endl;
+  cout << "Average value:" << endl;
+
   // return 0 to indicate successful completion
   return 0;
 }
