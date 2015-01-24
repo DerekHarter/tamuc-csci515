@@ -25,7 +25,7 @@ using namespace std;
 int main()
 {
   int N;
-  float piApprox;
+  float pi;;
   float denominator;
   float sign;
 
@@ -35,15 +35,15 @@ int main()
   cout << endl;
 
   // display the table
-  piApprox = 4.0;
+  pi = 4.0;
   denominator = 3.0;
   sign = -1.0;
   cout << "N     pi" << endl;
   cout << "----- -------" << endl;
   for (int i = 1; i <= N; i++)
   {
-    cout << i << "     " << piApprox << endl;
-    piApprox += sign * (4.0 / denominator);
+    cout << i << "     " << pi << endl;
+    pi += sign * (4.0 / denominator);
     denominator += 2.0;
     sign *= -1.0;
   }
