@@ -50,7 +50,7 @@ int main()
     {
       count++;
       sum += value;
-      
+
       if (value > max)
       {
 	max = value;
