@@ -45,11 +45,14 @@ The formatting will follow the indention an tab settings you have for
 your project.  To have Visual Studio format the indentation of a region
 for you automatically, do the following:
 
+** Method 1
 1. Turn on advance settings from Tools $\rightarrow$ Settings
    $\rightarrow$ Expert Settings
-2. Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection,
-   or equivalently use the ~Ctrl-k~ ~Ctrl-f~ keyboard shortcut to
-   invoke automatic formatting of the selected region.
+2. Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection.
+
+** Method 2
+The keyboard shortcut for formatting the selected region automatically is
+~Ctrl-k~ ~Ctrl-f~.
 
 * Display/Undisplay Invisible (space) Characters
 If you still have problems with getting hardcoded tabs in your source
