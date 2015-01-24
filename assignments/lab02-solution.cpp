@@ -37,11 +37,11 @@ int main()
   count = 0;
   sum = 0;
   cout << "Enter integer values, when done enter -9999." << endl;
-  while (item != -9999)
+  while (value != -9999)
   {
     cout << "Enter next value: ";
-    cin >> item;
-    if (item != -9999)
+    cin >> value;
+    if (value != -9999)
     {
       count++;
       sum += item;
