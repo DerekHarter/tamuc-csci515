@@ -58,7 +58,7 @@ int main()
 
       if (value < min)
       {
-	value = min;
+	min = value;
       }
     }
   }
