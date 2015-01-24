@@ -65,10 +65,10 @@ int main()
 
   // display the results
   cout << "Number of Values Entered: " << count << endl;
-  cout << "Sum of values:" << sum << endl;
-  cout << "Maximum value:" << max << endl;
-  cout << "Minimum value:" << min << endl;
-  cout << "Average value:" << endl;
+  cout << "Sum of values: " << sum << endl;
+  cout << "Maximum value: " << max << endl;
+  cout << "Minimum value: " << min << endl;
+  cout << "Average value: " << endl;
 
   // return 0 to indicate successful completion
   return 0;
