@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday January 28, by 4 pm (lab end time) |
+| Due: | Tuesday February 3, by Midnight |
 
 * Objectives
 - Practice writing sentinel-controlled loops.
