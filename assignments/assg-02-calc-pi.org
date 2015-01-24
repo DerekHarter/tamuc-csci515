@@ -14,10 +14,10 @@
 * Objectives
 - Practice writing index controlled loops
 - Become more comfortable with using digital computers for calculating mathematical expressions in C.
-- Practice with arithmetic and type conversion in C.
 - More practice with output formatting.
 - Practice using real valued variables for mathematical calculations.
 - Gain experience in translating formula into algorithmic procedures.
+- Practice using uniary, binary and special assignment operators.
 
 * Description
 Calculate an approximate value of $\pi$ from the series:
