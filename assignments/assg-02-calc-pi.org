@@ -22,7 +22,7 @@
 * Description
 Calculate the value of $\pi$ from the finite series:
 
-$\pi = 4 - \frac{4}{3} + ... $
+$$ \pi = 4 - \frac{4}{3} + ... $$
 
 Print a table that shows the approximate value of $\pi$ after each of
 the first N terms of this series.  Your program should prompt the user
