@@ -1,4 +1,4 @@
-% Created 2015-01-23 Fri 20:28
+% Created 2015-01-23 Fri 20:40
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -47,15 +47,16 @@ Express 2010 you can enable line numbers like this:
 \begin{enumerate}
 \item Tools $\rightarrow$ Options
 \item In Options Dialog, select Text Editor $\rightarrow$ C/C++ $\rightarrow$ General
-\item Enable the Line Numbers checkbox
+\item Enable the Line Numbers check box
 \end{enumerate}
 \section{Program Indentation and Tab Settings}
 \label{sec-2}
 
-For this class, you are required to correctly and consistently indent your code according to the
-Deitel good programming guidelines, and our class coding/formatting guidelines.  You can have
-Visual Studio Express 2010 automatically set your indentation for you by changing the following
-settings:
+For this class, you are required to correctly and consistently indent
+your code according to the Deitel good programming guidelines, and our
+class coding/formatting guidelines.  You can have Visual Studio
+Express 2010 automatically set your indentation for you by changing
+the following settings:
 
 \begin{enumerate}
 \item Tools $\rightarrow$ Options
@@ -74,17 +75,22 @@ embedded tabs, which will not display properly in other editors.
 With tab settings set up correctly, you can actually get Visual Studio
 to do most of the work for you in making sure you program is correctly
 indented.  Visual Studio has a command to format the selected region.
-The formatting will follo the indention an tab settings you have for
-your project.  To have Visual Stuio format the indentation of a region
+The formatting will follow the indention an tab settings you have for
+your project.  To have Visual Studio format the indentation of a region
 for you automatically, do the following:
+\subsection{Method 1}
+\label{sec-3-1}
 
 \begin{enumerate}
 \item Turn on advance settings from Tools $\rightarrow$ Settings
    $\rightarrow$ Expert Settings
-\item Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection,
-   or equivalently use the \verb~Ctrl-k~ \verb~Ctrl-f~ keyboar shortcut to
-   invoke automatic formatting of the selected region.
+\item Select Edit $\rightarrow$ Advanced $\rightarrow$ Format Selection.
 \end{enumerate}
+\subsection{Method 2}
+\label{sec-3-2}
+
+The keyboard shortcut for formatting the selected region automatically is
+\verb~Ctrl-k~ \verb~Ctrl-f~.
 \section{Display/Undisplay Invisible (space) Characters}
 \label{sec-4}
 
@@ -111,7 +117,7 @@ You are forbidden to include statements in your submitted programs
 whose sole purpose is to keep the terminal from closing upon program
 completion, before you can see the output.  Statements like
 \verb~system("pause")~ or \verb~getch()~ are hacks, and are often not portable
-to other enviornments or IDE systems.  When using Visual Studio Express 2010
+to other environments or IDE systems.  When using Visual Studio Express 2010
 you can have your IDE keep the console up in the following 2 ways:
 \subsection{Method 1}
 \label{sec-5-1}
