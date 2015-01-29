@@ -45,6 +45,6 @@ int main()
 
 
   // return 0 to indicate successful completion
-  dataFile.close();
+  inputFile.close();
   return 0;
 }
