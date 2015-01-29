@@ -1,33 +1,13 @@
 #+TITLE:     Lecture 03 Notes
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2014 <2015-01-20 Tue>
+#+DATE:      CSci 515 Spring 2014 <2015-01-28 Wed>
 #+DESCRIPTION: Lecture 03 Notes.
 #+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** Memory Concepts, Variables, Representation
 
-- When you declare a variable, it is assigned a location in memory.
-  All references to store or access the named variable are translated
-  by the C compiler using a lookup table.
-- The datatype is how pattern of bits in memory are stored and
-  interpreted to mean a number, a character, etc.
-- Int32 representation (http://en.wikipedia.org/wiki/Integer_%28computer_science%29)
-- Debug $\rightarrow$ QuickWatch
-- Debug $\rightarrow$ Windows $\rightarrow$ Memory
-- Representation of integer 1 vs. -1
-
-** Arithmetic and Precedence
-- Rules of precedence
-- Integer division vs. real division
-- Modulus operator
-
-** Relational Comparisons, and the bool type
-- Making decisions, we need be able to perform alternative actions
-  based on making some sort of decision.
-- bool should be used instead of an int for boolean flags in a program in modern c.
 
 * Second Session (11:45 - 12:30)
 ** Algorithm
