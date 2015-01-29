@@ -1,1 +1,0 @@
-ofstream outFile("name-of-output-file.txt");
