@@ -29,7 +29,7 @@ int main()
   ifstream dataFile(inputFileName);
 
   // test we found and opened file successfully
-  if (!dataFale)
+  if (!dataFile)
   {
     cout << "ERROR: could not find file named: " << inputFileName << endl;
     exit(1);
