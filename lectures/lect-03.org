@@ -68,8 +68,9 @@ cin >> x << y << z;
 #+begin_src c
 cout.put('A').put('\n');
 cin.get(c);
+#+end_src
 
-- Example of reading a character at a time of input until EOF
+- Example of reading a character at a time of input and echoing until EOF
 
 #+begin_src c
 int c; // use int, because char cannot represent EOF
@@ -77,6 +78,22 @@ while ( (character = cin.get()) != EOF)
 {
   cout.put(character);
 }
+#+end_src
+
+- Example of reading input a line at a time 
+
+#+begin_src c
+const int SIZE = 80;
+char buffer[SIZE];
+
+cin.getline(buffer, SIZE);
+#+end_src
+
+- peek, putback and ignore can be used for low level I/O.  We can
+  ignore a number of characters, and we can peek ahead (without
+  reading) or putback a character into the stream.
+
+
 
 
 * Second Session (11:45 - 12:30)
