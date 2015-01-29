@@ -12,6 +12,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <sstream>
 using namespace std;
 
 
@@ -41,7 +42,7 @@ int main()
 
   while (getline(inputFile, line))
   {
-    stringstream linestream(line, ',');
+    stringstream linestream(line);
     int idx;
     float f1, f2, f3;
 
