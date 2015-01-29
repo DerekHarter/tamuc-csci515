@@ -59,7 +59,7 @@ int main()
       sum += value;
     }
 
-    cout << "sum: " << sum << endl;
+    cout << "sum: " << sumValues << endl;
     lineNumber++;
   }
 
