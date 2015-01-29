@@ -29,7 +29,7 @@ You've already seen many examples of specifying the iostream header using
 #+end_src
 
 Iostream operators and objects are defined in the std namespace, thus you
-explicitly have to specify "std::" before using them, or include the
+explicitly have to specify ~std::~ before using them, or include the
 
 #+begin_src c
 using namespace std;
@@ -56,12 +56,27 @@ the stream, you need to include the iomanip header.
 
 ** Stream Output and Input
 
+- using the ~<<~ ~>>~  stream notation
 #+begin_src c
 cout << x << y << z;
 cin >> x << y << z;
 #+end_src
 
+- Using member functions.  The streams cout, cin, are objects, they have
+  member functions.  For example, and put and get single characters:
 
+#+begin_src c
+cout.put('A').put('\n');
+cin.get(c);
+
+- Example of reading a character at a time of input until EOF
+
+#+begin_src c
+char c;
+while ( (character = cin.get()) != EOF)
+{
+  cout.put(character);
+}
 
 
 * Second Session (11:45 - 12:30)
