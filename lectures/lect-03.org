@@ -96,6 +96,11 @@ cin.getline(buffer, SIZE);
 
 
 * Second Session (11:45 - 12:30)
+** Formatted I/O
+
+- We can display integers in any base,  using hex, oct, dec and setbase()
+- For float/double types, use cout.precision(p) or setprecision(p) 
+  manipulator to set number of decimal places shown.
 
 * Third Session (12:40 - 1:40)
 
