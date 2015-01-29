@@ -40,12 +40,13 @@ Sarah	184517	1024.38	0.025	2.50
 Jane	428146	125.45	0.01	5.0
 #+end_example
 
-In a CSV file, the values separated by commas are the features, and
-each row is an individual record.  In the previous example, this data
-might represent a database of bank account information, with the
-customer name, customer Id, their current balance, etc. as features.
-In this example file, the first row is a header row, which is present
-only to define the names of each of the column features in the table.
+In a space or tab separated file, the values separated by commas are
+the features, and each row is an individual record.  In the previous
+example, this data might represent a database of bank account
+information, with the customer name, customer Id, their current
+balance, etc. as features.  In this example file, the first row is a
+header row, which is present only to define the names of each of the
+column features in the table.
 
 For this lab you are to read in records from a CSV file, and do some
 processing of the data.  I will give you a CSV file to use.  The CSV file
