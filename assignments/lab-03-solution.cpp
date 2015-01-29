@@ -28,6 +28,7 @@ int main()
 {
   const char* inputFileName = "lab-03-data.csv";
   ifstream inputFile(inputFileName);
+  string line;
   int idx;
   float f1, f2, f3;
 
@@ -38,7 +39,7 @@ int main()
     exit(1);
   }
 
-  while (inputFile >> f1 >> f2 >> f3)
+  while (getline(inputFile, line))
   {
     cout << "Found following values: " << f1 << "  "  << f2 << "  " << f3 << endl;
   }
