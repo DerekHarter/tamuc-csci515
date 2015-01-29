@@ -39,7 +39,7 @@ int main()
 
   while (!inputFile.eof())
   {
-    inputFile >> idx >> f1;
+    inputFile >> f1;
     cout << "Found the following: idx=" << idx << " " << f1 << " " << f2 << " " << f3 << endl;
   }
 
