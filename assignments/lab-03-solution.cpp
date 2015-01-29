@@ -26,8 +26,8 @@ using namespace std;
  */
 int main()
 {
-  const char* inputFileName = "lab-03-data.csv";
-  ifstream inputFile(inputFileName);
+  string inputFileName = "lab-03-data.csv";
+  ifstream inputFile(inputFileName.cstr());
   string line;
   int idx;
   float f1, f2, f3;
