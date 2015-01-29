@@ -101,6 +101,9 @@ cin.getline(buffer, SIZE);
 - We can display integers in any base,  using hex, oct, dec and setbase()
 - For float/double types, use cout.precision(p) or setprecision(p) 
   manipulator to set number of decimal places shown.
+- For float/double, you can force fixed or scientific notation output
+  using those output stream manipulators.
+- 
 
 * Third Session (12:40 - 1:40)
 
