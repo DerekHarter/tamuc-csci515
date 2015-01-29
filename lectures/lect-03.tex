@@ -1,4 +1,4 @@
-% Created 2015-01-28 Wed 20:13
+% Created 2015-01-28 Wed 20:16
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -274,6 +274,10 @@ printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
 \item Discuss table of format specifiers
 \item \verb~scanf()~ to do (formatted) input
 \item uses same table of format specifiers
+\item \textbf{NEVER} mix iostream and stdio.h I/O in the same program.  Pick one
+or the other and stick with it.  It is confusing to switch between
+them, and possibly can introduce bugs if accessing for example the
+standard input stream using the 2 different libraries.
 \end{itemize}
 \subsection{File I/O with stdio.h}
 \label{sec-3-2}
