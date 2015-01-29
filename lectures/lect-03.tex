@@ -1,4 +1,4 @@
-% Created 2015-01-28 Wed 19:19
+% Created 2015-01-28 Wed 19:35
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -53,7 +53,7 @@ You've already seen many examples of specifying the iostream header using
 \end{minted}
 
 Iostream operators and objects are defined in the std namespace, thus you
-explicitly have to specify "std::" before using them, or include the
+explicitly have to specify \verb~std::~ before using them, or include the
 
 \begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
 using namespace std;
@@ -64,118 +64,76 @@ directive.
 In addition to iostream, if you want to do I/O to files, you need to include
 the fstream header.  If you want to manipulate and format the data in/out of
 the stream, you need to include the iomanip header.
+\subsection{Standard Stream Objects}
+\label{sec-1-3}
+
+\begin{itemize}
+\item cin, cout input from the standard input device, and output to the
+standard error device respectively.  These are the keyboard and
+terminal, by default, but can be connected to others (like a file)
+by the OS, and program doesn't know or care.
+\item cerr send output to the standard error device, can be useful for
+separating error messages from normal output (and redirecting
+standard error to a different location).  By default, standard error
+also goes to the terminal.
+\item clog also connects to the standard error output in a buffered
+manner.  You don't need to be concerned with clog in this class.
+\end{itemize}
+\subsection{Stream Output and Input}
+\label{sec-1-4}
+
+\begin{itemize}
+\item using the \verb~<<~ \verb~>>~  stream notation
+\end{itemize}
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+cout << x << y << z;
+cin >> x << y << z;
+\end{minted}
+
+\begin{itemize}
+\item Using member functions.  The streams cout, cin, are objects, they have
+member functions.  For example, and put and get single characters:
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+cout.put('A').put('\n');
+cin.get(c);
+\end{minted}
+
+\begin{itemize}
+\item Example of reading a character at a time of input and echoing until EOF
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+int c; // use int, because char cannot represent EOF
+while ( (character = cin.get()) != EOF)
+{
+  cout.put(character);
+}
+\end{minted}
+
+\begin{itemize}
+\item Example of reading input a line at a time
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+const int SIZE = 80;
+char buffer[SIZE];
+
+cin.getline(buffer, SIZE);
+\end{minted}
+
+\begin{itemize}
+\item peek, putback and ignore can be used for low level I/O.  We can
+ignore a number of characters, and we can peek ahead (without
+reading) or putback a character into the stream.
+\end{itemize}
 
 
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
-\subsection{Algorithm}
-\label{sec-2-1}
-An algorithm is a series of unambiguous explicit steps that can be taken to solve a problem.
-An algorithm is a procedure for solving a problem in terms of:
 
-\begin{enumerate}
-\item the actions to execute and
-\item the order in which the actions execute
-\end{enumerate}
-
-\subsection{Control Structures}
-\label{sec-2-2}
-Normally statements in a program execute one after the other in the
-order in which they are written.  This is sequential execution.
-
-\begin{itemize}
-\item The sequence structure is built into the C language normal operation.
-Question: what/where is the first instruction executed in a C program?
-\item Selection statements: single if, double if / else, multiple switch
-\item Repetition statements: for, while (0 or more) and do..while (1 or more)
-\end{itemize}
-\subsection{Multiple Selection with if..else}
-\label{sec-2-3}
-\begin{itemize}
-\item can make 1 of multiple possible decisions using nested if statements.
-\end{itemize}
-\subsection{Basic loop}
-\label{sec-2-4}
-\begin{itemize}
-\item while loop repeats a set of statements 0 or more times, checking for
-a condition before beginning and before each repetition of the
-statements in the body of the loop.
-\item An infinite loop occurs when you don't properly change values so
-that the condition of the loop is eventually false.
-\end{itemize}
-\subsection{Different types of repetition}
-\label{sec-2-5}
-\begin{itemize}
-\item Our first while loop is a kind of purely logical controlled repetition.  We keep repeating as long as the condition
-\end{itemize}
-is true, and once it becomes false we stop.
-\begin{itemize}
-\item A common variation is, Counter-Controlled repetition, when you know you need to process X specific items (we will see a better way of doing
-\end{itemize}
-this with a for loop next.)
-\begin{itemize}
-\item Discuss an off-by-one error in a counter-controlled loop.
-\item Sentenial-controlled repetition means we keep repeating until we see
-some condition.  Our first example is really a sentenial-controlled
-loop, though a more typical example is to have some explicit
-sentenial/flag.
-\end{itemize}
-
-\subsection{Increment, decrement and assignment}
-\label{sec-2-6}
-\begin{itemize}
-\item C provides several assignment operators for abbreviating
-assignment since it is very common to need to manipulate a value and
-assign it back to the variable. (+=, -=, *=, etc.)
-\item increment and decrement are uniary operators.  We can increment and
-decrement using pre or post increment, which means either we first
-incrmeent the value then use that in the expression, or we first use
-current value in expression then increment after.
-\end{itemize}
 \section{Third Session (12:40 - 1:40)}
 \label{sec-3}
-
-\subsection{for Loop for Counter-Controlled Repetition}
-\label{sec-3-1}
-\begin{itemize}
-\item Counter-controlled loops are so commonly needed (especially when
-processing arrays of elements later), that C provides a special
-construct for implementing them.
-\item Parts of a for loop, initialization, test, manipulation.
-\item Give examples of counting up and counting down.
-\item Give example of counting with a step size.
-\end{itemize}
-\subsection{do..while Repetition}
-\label{sec-3-2}
-\begin{itemize}
-\item If we need to ensure some statements are always executed at least
-once, use do..while construct.  Useful so we can avoid duplicating
-some code.
-\end{itemize}
-\subsection{switch statement}
-\label{sec-3-3}
-\begin{itemize}
-\item You may run across the switch statement.  Switch provides multiple-selection (like nested if).
-\item It is limited, can only compare the value of a variable to a
-constant integral expression (e.g. our example of grades in ranges
-can't be accomplished using switch, we still need to use nested if
-for them.)
-\item switch statement requires use of break statements.
-\item break and continue statements can be useful sometimes in loops, to
-avoid some unnecessary repetitions of the loop.
-\item For example, in the prime number algorithm, we don't need to perform
-any more loops after we find first negative example.
-\item Can use a break statement.  An equivalent effect can be achieved by using a flag.
-\item continue can be used to skip any remaining statemens in current
-iteration, and then start immediately with the next iteration of the
-loop.
-\end{itemize}
-
-\subsection{Visual Studio Tips}
-\label{sec-3-4}
-\begin{itemize}
-\item Turn on expert settings
-\item Format selection Ctrl-k Ctrl-f
-\end{itemize}
 % Emacs 24.3.1 (Org mode 8.2.4)
 \end{document}
