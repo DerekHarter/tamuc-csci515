@@ -30,11 +30,11 @@ int main()
   ifstream inputFile(inputFileName.c_str());
   int numFeatures;
   int lineNumber;
-  float feature;
+  float value;
   float maxValue;
   float minValue;
   float sum;
-  
+
   // test we found and opened file successfully
   if (!inputFile)
   {
