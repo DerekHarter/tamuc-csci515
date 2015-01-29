@@ -187,9 +187,9 @@ if (!outFile)
 ** Reading Lines of Data from a File
 ** Reading comma separated values (CSV)
 ** Random Access Files
-- Create using ios::binary specifier
-- use seekp() and write() read() member functions to get data in and out.
-- seekp() need to specify a byte location to move to in file, need to
+- Create using ~ios::binary~ specifier
+- use ~seekp()~ and write() read() member functions to get data in and out.
+- ~seekp()~ need to specify a byte location to move to in file, need to
   calculate correctly or bad things will result.
 - Advantages of binary files, more compact, faster to access (because of this)
 - But overrated.  Plain text files are human readable and editable.
@@ -197,6 +197,21 @@ if (!outFile)
 
 * Third Session (12:40 - 1:40)
 
-** 
+** stdio.h, old school C I/O
+- ~printf()~ function to do output and formatted output.
+- Discuss table of format specifiers
+- ~scanf()
+` to do (formatted) input
+- uses same table of format specifiers
 
+** File I/O with stdio.h
+ 
+- use ~fopen()~  to create a file handle than can be used for reading and
+  writing.
+
+#+begin_src
+FILE *fileHandle;
+
+fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file to write to
+#+end_src
 
