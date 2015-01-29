@@ -1,1 +1,1 @@
-ofstream outFile("name-of-output-file.txt");
+printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
