@@ -151,6 +151,8 @@ ofstream outFile("name-of-output-file.txt");
 ifstream inFile("name-of-input-file.txt");
 #+end_src
 
+** Writing/Reading Data from a sequential File
+
 - An open output stream file using sequential access, can be written
 to using the name we just created.  For example:
 
@@ -181,4 +183,7 @@ if (!outFile)
 #+end_src
 
 - Also, never hardcode an absolute path to a file.  Always use a relative path name.
+- Once you successfully open a file for read/write, you can use any of
+  the iostream methods we have talked about to format the input/output
+  from/to the file.
 
