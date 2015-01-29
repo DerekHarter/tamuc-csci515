@@ -11,6 +11,7 @@
  */
 #include <iostream>
 #inclide <ifstream>
+#include <stdlib.h>
 using namespace std;
 
 
