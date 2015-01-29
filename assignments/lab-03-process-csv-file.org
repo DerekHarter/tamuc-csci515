@@ -14,7 +14,7 @@
 * Objectives
 - Be able to Open a serial text file for reading.
 - Be able to process a simple text file of comma separated values.
-- Use I/O formatting manipulators, for reading and writting formatted data.
+- Use I/O formatting manipulators, for reading and writing formatted data.
 - Use loops to read and process line oriented files.
 - Get some more practice implementing mathematical formula for data processing tasks.
 
