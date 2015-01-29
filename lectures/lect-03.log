@@ -757,8 +757,7 @@ runsystem(which pygmentize && touch lect-03.aex)...executed.
 
 runsystem(rm lect-03.aex)...executed.
 
-
-No file lect-03.aux.
+ (.//lect-03.aux)
 \openout1 = `lect-03.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -775,6 +774,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -824,15 +824,17 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
+
+(.//lect-03.out) (.//lect-03.out)
 \@outlinefile=\write5
 \openout5 = `lect-03.out'.
 
 runsystem(pygmentize -S default -f latex > lect-03.pyg)...executed.
 
-
-(.//lect-03.pyg)
+ (.//lect-03.pyg)
 LaTeX Font Info:    Try loading font information for U+wasy on input line 30.
- (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 30.
@@ -852,4 +854,4 @@ options= ,frame=lines,numbersep=5pt,fontsize=\footnotesize " -o lect-03.out.pyg
  lect-03.pyg)...executed.
 
  (.//lect-03.out.pyg
-LaTeX Font Info:    Try loading font information for T1+c
+LaTeX Font Info:    Try l
