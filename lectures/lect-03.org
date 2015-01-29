@@ -205,8 +205,7 @@ printf("x = %d, f = %f, c = %c", someInt, someFloat, someChar)
 #+end_src
 
 - Discuss table of format specifiers
-- ~scanf()
-` to do (formatted) input
+- ~scanf()~ to do (formatted) input
 - uses same table of format specifiers
 
 ** File I/O with stdio.h
