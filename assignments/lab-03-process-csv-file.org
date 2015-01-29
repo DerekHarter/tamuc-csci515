@@ -48,8 +48,8 @@ balance, etc. as features.  In this example file, the first row is a
 header row, which is present only to define the names of each of the
 column features in the table.
 
-For this lab you are to read in records from a CSV file, and do some
-processing of the data.  I will give you a CSV file to use.  The CSV file
+For this lab you are to read in records from a tab separated file, and do some
+processing of the data.  I will give you a tab separated file to use.  The CSV file
 you are to process has the following format:
 
 #+begin_example
