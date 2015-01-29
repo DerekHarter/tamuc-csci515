@@ -199,6 +199,11 @@ if (!outFile)
 
 ** stdio.h, old school C I/O
 - ~printf()~ function to do output and formatted output.
+
+#+begin_src c
+printf("x = %d, f = %f, c = %c", someInt, someFloat, someChar)
+#+end_src
+
 - Discuss table of format specifiers
 - ~scanf()
 ` to do (formatted) input
@@ -215,3 +220,10 @@ FILE *fileHandle;
 fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file to write to
 #+end_src
 
+- when done with file, always use ~fclose(fileHandle);~
+- can pass a file handle to ~fprintf()~ and ~fscanf()~ functions to read
+  and write formatted input/output from/to files.
+
+#+begin_src
+fprintf(inputFileHandle, )
+#+end_src
