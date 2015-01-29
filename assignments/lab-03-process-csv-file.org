@@ -21,7 +21,7 @@
 * Description
 Plain text files containing tables of information are very common, minimal representations of data
 sets needed for processing.  The simplest type of formatting of a table of numbers, is to separate
-the columns or features of the table using commas, tabs or spaces.  A plain file with columns of
+the columns or features of the table using spaces, tabs or commas.  A plain file with columns of
 data separated by commas, is known as a file of comma separated values (CSV).  For example, we might 
 have a table in a file that looks like this:
 
