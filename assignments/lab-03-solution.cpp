@@ -27,7 +27,7 @@ using namespace std;
 int main()
 {
   char* inputFileName = "lab-03-data.csv";
-  ifstream dataFile(inputFileName);
+  ifstream dataFile("lab-03-data.csv");
 
   // test we found and opened file successfully
   if (!dataFile)
