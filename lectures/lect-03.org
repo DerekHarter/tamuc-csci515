@@ -107,7 +107,8 @@ cin.getline(buffer, SIZE);
 ** Field width
 
 - For strings (both inputs and outputs) can limit output using
-  cxx.width(w) or the setwidth(w) io manipulator.
+  cxx.width(w) or the setw(w) io manipulator.
+- 
 
 * Third Session (12:40 - 1:40)
 
