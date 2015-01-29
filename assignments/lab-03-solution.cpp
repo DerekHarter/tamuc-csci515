@@ -48,7 +48,6 @@ int main()
 
     linestream >> idx >> f1 >> f2 >> f3;
     cout << "Found the values idx = " << idx << " " << f1 << " " << f2 << " " << f3 << endl;
-
   }
 
 
