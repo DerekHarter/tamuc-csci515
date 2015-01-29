@@ -37,9 +37,9 @@ int main()
     exit(1);
   }
 
-  while (!inputFile.eof())
+  while (!cin.eof())
   {
-    inputFile >> f1;
+    cin >> f1;
     cout << "Found following value:" << f1 << endl;
   }
 
