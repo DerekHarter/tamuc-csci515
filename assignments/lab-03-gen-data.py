@@ -9,4 +9,4 @@ for idx in range(1, NUM_LINES+1):
     features = np.random.normal(0.0, 5.0, (NUM_FEATURES,))
     for f in features:
         print "%f\t" % f,
-    print "\n"
+    print ""
