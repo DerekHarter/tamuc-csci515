@@ -10,6 +10,7 @@
  *    the approach you took in solving the problem.
  */
 #include <iostream>
+#inclide <ifstream>
 using namespace std;
 
 
@@ -24,7 +25,7 @@ using namespace std;
  */
 int main()
 {
-  cout << "Hello, world!" << endl;
+  ifstream data;
 
   // return 0 to indicate successful completion
   return 0;
