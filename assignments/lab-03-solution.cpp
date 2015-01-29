@@ -27,14 +27,22 @@ using namespace std;
 int main()
 {
   const char* inputFileName = "lab-03-data.csv";
-  ifstream dataFile(inputFileName);
+  ifstream inputFile(inputFileName);
+  int idx, f1, f2, f3;
 
   // test we found and opened file successfully
-  if (!dataFile)
+  if (!inputFile)
   {
     cout << "ERROR: could not find file named: " << inputFileName << endl;
     exit(1);
   }
+
+  while (!inputFile.eof())
+  {
+    inputFile >> idx >> "," >> f1 >> "," >> f2 >> "," >> f3;
+    cout << "Found the following: idx=" << idx << " " << f1 << " " << f2 << " " << f3 << endl;
+  }
+
 
   // return 0 to indicate successful completion
   dataFile.close();
