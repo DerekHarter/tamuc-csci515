@@ -10,7 +10,7 @@
  *    the approach you took in solving the problem.
  */
 #include <iostream>
-#inclide <fstream>
+#include <fstream>
 #include <cstdlib>
 using namespace std;
 
