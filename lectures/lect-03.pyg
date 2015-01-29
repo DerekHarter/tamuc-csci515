@@ -1,1 +1,0 @@
-printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
