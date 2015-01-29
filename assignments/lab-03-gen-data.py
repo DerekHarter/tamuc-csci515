@@ -7,6 +7,8 @@ NUM_LINES = 10
 x, y, z = np.random.randn(3)
 for idx in range(1, NUM_LINES+1):
     print "%d\t%f\t%f\t%f" % (idx, x, y, z)
-    x += np.random.randn(1, 0.0, 0.25)[0]
-    y += np.random.randn(1, 0.0, 0.25)[0]
-    z += np.random.randn(1, 0.0, 0.25)[0]
+    xd, yd, zd = np.random.randn(3, 0.0, 0.25)
+    print xd, yd, zd
+    x += xd
+    y += yd
+    z += zd
