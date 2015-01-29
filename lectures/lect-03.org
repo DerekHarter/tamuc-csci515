@@ -207,6 +207,10 @@ printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
 - Discuss table of format specifiers
 - ~scanf()~ to do (formatted) input
 - uses same table of format specifiers
+- *NEVER* mix iostream and stdio.h I/O in the same program.  Pick one
+  or the other and stick with it.  It is confusing to switch between
+  them, and possibly can introduce bugs if accessing for example the
+  standard input stream using the 2 different libraries.
 
 ** File I/O with stdio.h
  
