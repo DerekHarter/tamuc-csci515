@@ -30,7 +30,7 @@ int main()
   // test we found and opened file successfully
   if (!dataFale)
   {
-		
+
   }
 
   // return 0 to indicate successful completion
