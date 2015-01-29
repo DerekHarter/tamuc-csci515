@@ -28,9 +28,13 @@ int main()
 {
   string inputFileName = "lab-03-data.csv";
   ifstream inputFile(inputFileName.c_str());
-  int idx;
-  float f1, f2, f3;
-
+  int num_features;
+  int lineNumber;
+  float feature;
+  float maxValue;
+  float minValue;
+  float sumValues;
+  
   // test we found and opened file successfully
   if (!inputFile)
   {
@@ -38,9 +42,15 @@ int main()
     exit(1);
   }
 
-  // Process the file one line at a time
+  // determine the number of features
+  cin >> num_features;
+
+  // now process all of the lines of data
+  lineNumber = 1;
   while (!inputFile.eof())
   {
+    sumValues = 0.0;
+    
     cout << "Found the values idx = " << idx << " " << f1 << " " << f2 << " " << f3 << endl;
   }
 
