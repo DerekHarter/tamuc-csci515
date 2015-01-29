@@ -164,3 +164,18 @@ outFile << x << y << z;
 inFile >> x >> y >> z;
 #+end_src
 
+- HINT: You need to be careful that you know what file you are opening
+  and where it is located on your filesystem.  I require that you
+  always check whether the open of the file was successful after
+  opening it:
+
+#+begin_src c
+ofstream outFile("name-of-input-file.txt");
+
+// exit program if unable to create a file
+if (!outFile)
+{
+  cerr << "File name-of-input-file.txt could not be opened, file not found error." << endl;
+  exit(1);
+}
+#+end_src
