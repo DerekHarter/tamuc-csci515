@@ -38,8 +38,8 @@ int main()
     exit(1);
   }
 
-  cin >> f1;
-  cout << "Found following value:" << f1 << endl;
+  inputFile >> f1 >> f2 >> fe;
+  cout << "Found following values:" << f1 << << f2 << f3 << endl;
 
 
   // return 0 to indicate successful completion
