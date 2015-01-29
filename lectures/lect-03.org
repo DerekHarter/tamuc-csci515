@@ -186,6 +186,11 @@ if (!outFile)
 
 ** Reading Lines of Data from a File
 ** Reading comma separated values (CSV)
+** Random Access Files
+- Create using ios::binary specifier
+- use seekp() and write() read() member functions to get data in and out.
+- seekp() need to specify a byte location to move to in file, need to
+  calculate correctly or bad things will result.
 
 * Third Session (12:40 - 1:40)
 
