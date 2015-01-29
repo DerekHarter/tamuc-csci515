@@ -50,7 +50,6 @@ int main()
     cout << "Found the values idx = " << idx << " " << f1 << " " << f2 << " " << f3 << endl;
   }
 
-
   // return 0 to indicate successful completion
   inputFile.close();
   return 0;
