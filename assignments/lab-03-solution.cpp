@@ -49,7 +49,7 @@ int main()
   lineNumber = 1;
   while (!inputFile.eof())
   {
-    sumValues = 0.0;
+    sum = 0.0;
     cout << "Line Number: " << lineNumber << " ";
 
     for (int i=0; i<numFeatures; i++)
@@ -59,7 +59,7 @@ int main()
       sum += value;
     }
 
-    cout << "sum: " << sumValues << endl;
+    cout << "sum: " << sum << endl;
     lineNumber++;
   }
 
