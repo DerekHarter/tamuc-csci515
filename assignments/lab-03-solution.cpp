@@ -32,7 +32,7 @@ int main()
   {
       
   }
-  
+
   // return 0 to indicate successful completion
   return 0;
 }
