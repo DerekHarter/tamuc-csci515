@@ -40,6 +40,15 @@ customer name, customer Id, their current balance, etc. as features.
 In this example file, the first row is a header row, which is present
 only to define the names of each of the column features in the table.
 
+For this lab you are to read in records from a CSV file, and do some
+processing of the data.  I will give you a CSV file to use.  The CSV file
+you are to process has the following format:
+
+#+begin_example
+1, 1.25, 2.48, 3.45
+2, 3.55, 2.98, 3.85
+3, 3.18, 2.98, 1.25
+#+end_example
 
 
 * Extra Credit
