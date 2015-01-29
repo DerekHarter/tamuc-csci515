@@ -25,12 +25,14 @@ using namespace std;
  */
 int main()
 {
-  ifstream dataFale("lab-03-data.csv");
+  char* inputFileName = "lab-03-data.csv";
+  ifstream dataFile(inputFileName);
 
   // test we found and opened file successfully
   if (!dataFale)
   {
-
+    cout << "ERROR: could not find file named: " << inputFileName << endl;
+    exit(1);
   }
 
   // return 0 to indicate successful completion
