@@ -37,5 +37,6 @@ int main()
   }
 
   // return 0 to indicate successful completion
+  dataFile.close();
   return 0;
 }
