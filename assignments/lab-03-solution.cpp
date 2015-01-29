@@ -39,7 +39,7 @@ int main()
   }
 
   // Process the file one line at a time
-  while (inputFile >> idx >> f1 >> f2 >> f3)
+  while (!inputFile.eof())
   {
     cout << "Found the values idx = " << idx << " " << f1 << " " << f2 << " " << f3 << endl;
   }
