@@ -1,4 +1,4 @@
-#+TITLE:     Lab 02: Calculating PI
+#+TITLE:     Lab 03: Processing CSV Files
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
@@ -9,15 +9,14 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday January 28, by 4 pm (lab end time) |
+| Due: | In Lab, Wednesday February 4, by 4 pm (lab end time)  |
 
 * Objectives
-- Practice writing index controlled loops
-- Become more comfortable with using digital computers for calculating mathematical expressions in C.
-- More practice with output formatting.
-- Practice using real valued variables for mathematical calculations.
-- Gain experience in translating formula into algorithmic procedures.
-- Practice using uniary, binary and special assignment operators.
+- Be able to Open a serial text file for reading.
+- Be able to process a simple text file of comma separated values.
+- Use I/O formatting manipulators, for reading and writting formatted data.
+- Use loops to read and process line oriented files.
+- Get some more practice implementing mathematical formula for data processing tasks.
 
 * Description
 Calculate an approximate value of $\pi$ from the series:
