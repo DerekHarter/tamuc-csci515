@@ -24,14 +24,14 @@ stream.
 ** iostream header
 You've already seen many examples of specifying the iostream header using
 
-#+begin_src CPP
+#+begin_src C
 #include <iostream>
 #+end_src
 
 Iostream operators and objects are defined in the std namespace, thus you
 explicitly have to specify "std::" before using them, or include the
 
-#+begin_src CPP
+#+begin_src C
 using namespace std;
 #+end_src
 
