@@ -25,8 +25,14 @@ using namespace std;
  */
 int main()
 {
-  ifstream data;
+  ifstream dataFale("lab-03-data.csv");
 
+  // test we found and opened file successfully
+  if (!dataFale)
+  {
+      
+  }
+  
   // return 0 to indicate successful completion
   return 0;
 }
