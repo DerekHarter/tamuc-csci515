@@ -28,7 +28,8 @@ int main()
 {
   const char* inputFileName = "lab-03-data.csv";
   ifstream inputFile(inputFileName);
-  int idx, f1, f2, f3;
+  int idx;
+  float f1, f2, f3;
 
   // test we found and opened file successfully
   if (!inputFile)
