@@ -19,18 +19,25 @@
 - Get some more practice implementing mathematical formula for data processing tasks.
 
 * Description
-Plain text files containing tables of information are very common, minimal representations of data
-sets needed for processing.  The simplest type of formatting of a table of numbers, is to separate
-the columns or features of the table using spaces, tabs or commas.  A plain file with columns of
-data separated by commas, is known as a file of comma separated values (CSV).  For example, we might 
-have a table in a file that looks like this:
+Plain text files containing tables of information are very common,
+minimal representations of data sets needed for processing.  The
+simplest type of formatting of a table of numbers, is to separate the
+columns or features of the table using spaces, tabs or commas. In
+general these are known as delimiter separated values files.  The most
+common is to use commas (known as comma separated values files or CSV
+files).  The C++ IOStream operators make it trivial to process space
+separated and tab separated value files, since it uses whitespace
+(spaces and tabs) by default as the delimiter when breaking apart a
+stream to automatically parse and convert into input variables.
+
+An example of a tab separated file is:
 
 #+begin_example
-Name, Id, Balance, Interest, Penalty
-Derek, 123456, 540.33, 0.02, 2.00
-Mike, 892315, 884.28, 0.015, 5.0
-Sarah, 184517, 1024.38, 0.025, 2.50
-Jane, 428146, 125.45, 0.01, 5.0
+Name	Id	Balance	Interest	Penalty
+Derek	123456	540.33	0.02	2.00
+Mike	892315	884.28	0.015	5.0
+Sarah	184517	1024.38	0.025	2.50
+Jane	428146	125.45	0.01	5.0
 #+end_example
 
 In a CSV file, the values separated by commas are the features, and
