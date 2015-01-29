@@ -7,6 +7,40 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
+** Streams
+The IOStream library is a new (object oriented) library, added with the C++
+language, to support Input and Output to source and destination devices.
+
+The source of input can be a keyboard, a file, or some other device.  Likewise
+the destination of output can be to a file, to a terminal screen, or to some
+other device (for example you can send output into another C variable, like
+a string in memory).
+
+A stream is a way of visualizing how data is transferred from the source to 
+destination.  A stream is inherently serial, the order in which you put things
+into the stream, is the order they will be received when they come out of the
+stream.
+
+** iostream header
+You've already seen many examples of specifying the iostream header using
+
+#+begin_src CPP
+#include <iostream>
+#+end_src
+
+Iostream operators and objects are defined in the std namespace, thus you
+explicitly have to specify "std::" before using them, or include the
+
+#+begin_src CPP
+using namespace std;
+#+end_src
+
+directive.
+
+In addition to iostream, if you want to do I/O to files, you need to include
+the fstream header.  If you want to manipulate and format the data in/out of
+the stream, you need to include the iomanip header.
+
 
 
 * Second Session (11:45 - 12:30)
