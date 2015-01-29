@@ -38,7 +38,7 @@ int main()
     exit(1);
   }
 
-  inputFile >> f1 >> f2 >> fe;
+  inputFile >> f1 >> f2 >> f3;
   cout << "Found following values:" << f1 << f2 << f3 << endl;
 
 
