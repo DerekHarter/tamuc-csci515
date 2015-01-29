@@ -93,9 +93,6 @@ cin.getline(buffer, SIZE);
   ignore a number of characters, and we can peek ahead (without
   reading) or putback a character into the stream.
 
-
-
-* Second Session (11:45 - 12:30)
 ** Formatted I/O, Precision and float output
 
 - We can display integers in any base,  using hex, oct, dec and setbase()
@@ -127,7 +124,7 @@ cin.getline(buffer, SIZE);
 
 
 
-* Third Session (12:40 - 1:40)
+* Second Session (11:45 - 12:30)
 
 ** File Processing
 For the most part, all of the stream I/O we have seen can be done to
@@ -186,4 +183,8 @@ if (!outFile)
 - Once you successfully open a file for read/write, you can use any of
   the iostream methods we have talked about to format the input/output
   from/to the file.
+
+
+* Third Session (12:40 - 1:40)
+
 
