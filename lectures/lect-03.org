@@ -201,7 +201,7 @@ if (!outFile)
 - ~printf()~ function to do output and formatted output.
 
 #+begin_src c
-printf("x = %d, f = %f, c = %c", someInt, someFloat, someChar)
+printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
 #+end_src
 
 - Discuss table of format specifiers
@@ -224,5 +224,7 @@ fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file 
   and write formatted input/output from/to files.
 
 #+begin_src
-fprintf(inputFileHandle, )
+fprintf(outputFileHandle, "x = %d, f = %f, c = %d\n", x, f, c); // output values to plain text file
 #+end_src
+
+- again similar syntax for input using ~scanf()~
