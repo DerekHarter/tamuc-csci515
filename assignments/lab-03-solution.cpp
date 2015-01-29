@@ -61,7 +61,6 @@ int main()
 
     cout << "sum: " << sum << endl;
     lineNumber++;
-
   }
 
   // return 0 to indicate successful completion
