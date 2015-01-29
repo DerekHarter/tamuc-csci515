@@ -108,7 +108,59 @@ cin.getline(buffer, SIZE);
 
 - For strings (both inputs and outputs) can limit output using
   cxx.width(w) or the setw(w) io manipulator.
-- 
+
+** Other Formatting
+
+- Figure 15.12 in section 15.7 shows a lot of other useful manipulators,
+  including to show as uppercase or lowercase, skipping white-space on input,
+  show or don't show the base for integers, etc.
+
+** Left and right justify strings, padding
+- use left and right manipulators to justify a sting output in a field.  
+- needs to be used in conjunction with setw(w) manipulator normally.
+- Can pad out strings (instead of using whitespace when justifying)
+  by using setfill('x')
+
+** Boolean output representation
+- Can have booleans output as true/false (rather than 0/1) using boolalpha
+  manipulator.
+
+
 
 * Third Session (12:40 - 1:40)
+
+** File Processing
+For the most part, all of the stream I/O we have seen can be done to
+and from a file that you open and specify (instead of the standard
+input/output device).  This is more complicated for a binary file we
+want to randomly access, but we will first look at opening a plain
+text stream, and reading/writing it sequentially.
+
+** Creating a Sequential File
+
+- need to include fstream libray to open files for read/write
+- At most basic, can open a file for output as
+
+#+begin_src c
+ofstream outFile("name-of-output-file.txt");
+#+end_src
+
+- And can open a file for input using:
+
+#+begin_src c
+ifstream inFile("name-of-input-file.txt");
+#+end_src
+
+- An open output stream file using sequential access, can be written
+to using the name we just created.  For example:
+
+#+begin_src c
+outFile << x << y << z;
+#+end_src
+
+- Likewise we can read input from a simple sequential file we opened:
+
+#+begin_src c
+inFile >> x >> y >> z;
+#+end_src
 
