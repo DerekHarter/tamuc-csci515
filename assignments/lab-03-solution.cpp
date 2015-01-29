@@ -33,7 +33,7 @@ int main()
   float feature;
   float maxValue;
   float minValue;
-  float sumValues;
+  float sum;
   
   // test we found and opened file successfully
   if (!inputFile)
