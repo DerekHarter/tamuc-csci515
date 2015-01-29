@@ -3,6 +3,7 @@
 """
 import numpy as np
 NUM_LINES = 10
+NUM_FEATURES = 5
 
 x, y, z = np.random.normal(0.0, 2.0, (3,))
 for idx in range(1, NUM_LINES+1):
