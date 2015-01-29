@@ -213,7 +213,7 @@ printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
 - use ~fopen()~  to create a file handle than can be used for reading and
   writing.
 
-#+begin_src
+#+begin_src c
 FILE *fileHandle;
 
 fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file to write to
@@ -223,7 +223,7 @@ fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file 
 - can pass a file handle to ~fprintf()~ and ~fscanf()~ functions to read
   and write formatted input/output from/to files.
 
-#+begin_src
+#+begin_src c
 fprintf(outputFileHandle, "x = %d, f = %f, c = %d\n", x, f, c); // output values to plain text file
 #+end_src
 

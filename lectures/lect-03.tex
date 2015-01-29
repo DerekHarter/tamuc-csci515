@@ -1,4 +1,4 @@
-% Created 2015-01-28 Wed 19:35
+% Created 2015-01-28 Wed 20:13
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -128,12 +128,179 @@ cin.getline(buffer, SIZE);
 ignore a number of characters, and we can peek ahead (without
 reading) or putback a character into the stream.
 \end{itemize}
+\subsection{Formatted I/O, Precision and float output}
+\label{sec-1-5}
+
+\begin{itemize}
+\item We can display integers in any base,  using hex, oct, dec and setbase()
+\item For float/double types, use cout.precision(p) or setprecision(p) 
+manipulator to set number of decimal places shown.
+\item For float/double, you can force fixed or scientific notation output
+using those output stream manipulators.
+\end{itemize}
+\subsection{Field width}
+\label{sec-1-6}
+
+\begin{itemize}
+\item For strings (both inputs and outputs) can limit output using
+cxx.width(w) or the setw(w) io manipulator.
+\end{itemize}
+\subsection{Other Formatting}
+\label{sec-1-7}
+
+\begin{itemize}
+\item Figure 15.12 in section 15.7 shows a lot of other useful manipulators,
+including to show as uppercase or lowercase, skipping white-space on input,
+show or don't show the base for integers, etc.
+\end{itemize}
+\subsection{Left and right justify strings, padding}
+\label{sec-1-8}
+\begin{itemize}
+\item use left and right manipulators to justify a sting output in a field.
+\item needs to be used in conjunction with setw(w) manipulator normally.
+\item Can pad out strings (instead of using whitespace when justifying)
+by using setfill('x')
+\end{itemize}
+\subsection{Boolean output representation}
+\label{sec-1-9}
+\begin{itemize}
+\item Can have booleans output as true/false (rather than 0/1) using boolalpha
+manipulator.
+\end{itemize}
 
 
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
 
+\subsection{File Processing}
+\label{sec-2-1}
+For the most part, all of the stream I/O we have seen can be done to
+and from a file that you open and specify (instead of the standard
+input/output device).  This is more complicated for a binary file we
+want to randomly access, but we will first look at opening a plain
+text stream, and reading/writing it sequentially.
+\subsection{Creating a Sequential File}
+\label{sec-2-2}
+
+\begin{itemize}
+\item need to include fstream libray to open files for read/write
+\item At most basic, can open a file for output as
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+ofstream outFile("name-of-output-file.txt");
+\end{minted}
+
+\begin{itemize}
+\item And can open a file for input using:
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+ifstream inFile("name-of-input-file.txt");
+\end{minted}
+\subsection{Writing/Reading Data from a sequential File}
+\label{sec-2-3}
+
+\begin{itemize}
+\item An open output stream file using sequential access, can be written
+\end{itemize}
+to using the name we just created.  For example:
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+outFile << x << y << z;
+\end{minted}
+
+\begin{itemize}
+\item Likewise we can read input from a simple sequential file we opened:
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+inFile >> x >> y >> z;
+\end{minted}
+
+\begin{itemize}
+\item HINT: You need to be careful that you know what file you are opening
+and where it is located on your filesystem.  I require that you
+always check whether the open of the file was successful after
+opening it:
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+ofstream outFile("name-of-input-file.txt");
+
+// exit program if unable to create a file
+if (!outFile)
+{
+  cerr << "File name-of-input-file.txt could not be opened, file not found error." << endl;
+  exit(1);
+}
+\end{minted}
+
+\begin{itemize}
+\item Also, never hardcode an absolute path to a file.  Always use a relative path name.
+\item Once you successfully open a file for read/write, you can use any of
+the iostream methods we have talked about to format the input/output
+from/to the file.
+\end{itemize}
+\subsection{Reading Lines of Data from a File}
+\label{sec-2-4}
+\subsection{Reading comma separated values (CSV)}
+\label{sec-2-5}
+\subsection{Random Access Files}
+\label{sec-2-6}
+\begin{itemize}
+\item Create using \verb~ios::binary~ specifier
+\item use \verb~seekp()~ and write() read() member functions to get data in and out.
+\item \verb~seekp()~ need to specify a byte location to move to in file, need to
+calculate correctly or bad things will result.
+\item Advantages of binary files, more compact, faster to access (because of this)
+\item But overrated.  Plain text files are human readable and editable.
+Storage is cheap, programmer time is expensive.
+\end{itemize}
 \section{Third Session (12:40 - 1:40)}
 \label{sec-3}
+
+\subsection{stdio.h, old school C I/O}
+\label{sec-3-1}
+\begin{itemize}
+\item \verb~printf()~ function to do output and formatted output.
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+printf("x = %d, f = %f, c = %c\n", someInt, someFloat, someChar)
+\end{minted}
+
+\begin{itemize}
+\item Discuss table of format specifiers
+\item \verb~scanf()~ to do (formatted) input
+\item uses same table of format specifiers
+\end{itemize}
+\subsection{File I/O with stdio.h}
+\label{sec-3-2}
+
+\begin{itemize}
+\item use \verb~fopen()~  to create a file handle than can be used for reading and
+writing.
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+FILE *fileHandle;
+
+fileHandle = fopen("file-name-to-open.txt", "r");  // or "w" for an output file to write to
+\end{minted}
+
+\begin{itemize}
+\item when done with file, always use \verb~fclose(fileHandle);~
+\item can pass a file handle to \verb~fprintf()~ and \verb~fscanf()~ functions to read
+and write formatted input/output from/to files.
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+fprintf(outputFileHandle, "x = %d, f = %f, c = %d\n", x, f, c); // output values to plain text file
+\end{minted}
+
+\begin{itemize}
+\item again similar syntax for input using \verb~scanf()~
+\end{itemize}
 % Emacs 24.3.1 (Org mode 8.2.4)
 \end{document}
