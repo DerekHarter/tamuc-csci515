@@ -184,7 +184,10 @@ if (!outFile)
   the iostream methods we have talked about to format the input/output
   from/to the file.
 
+** Reading Lines of Data from a File
+** Reading comma separated values (CSV)
 
 * Third Session (12:40 - 1:40)
+
 
 
