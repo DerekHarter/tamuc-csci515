@@ -41,7 +41,7 @@ int main()
 
   while (getline(inputFile, line))
   {
-    cout << "Found following values: " << f1 << "  "  << f2 << "  " << f3 << endl;
+    cout << "Found following line <" << line << ">" << endl;
   }
 
 
