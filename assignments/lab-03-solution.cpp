@@ -29,7 +29,6 @@ int main()
 {
   string inputFileName = "lab-03-data.csv";
   ifstream inputFile(inputFileName.c_str());
-  string line;
   int idx;
   float f1, f2, f3;
 
@@ -40,13 +39,9 @@ int main()
     exit(1);
   }
 
+  // Process the file one line at a time
   while (getline(inputFile, line))
   {
-    stringstream linestream(line);
-    int idx;
-    float f1, f2, f3;
-
-    linestream >> idx >> f1 >> f2 >> f3;
     cout << "Found the values idx = " << idx << " " << f1 << " " << f2 << " " << f3 << endl;
   }
 
