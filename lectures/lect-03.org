@@ -72,7 +72,7 @@ cin.get(c);
 - Example of reading a character at a time of input until EOF
 
 #+begin_src c
-char c;
+int c; // use int, because char cannot represent EOF
 while ( (character = cin.get()) != EOF)
 {
   cout.put(character);
