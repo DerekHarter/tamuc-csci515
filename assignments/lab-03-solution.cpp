@@ -37,11 +37,8 @@ int main()
     exit(1);
   }
 
-  while (!cin.eof())
-  {
-    cin >> f1;
-    cout << "Found following value:" << f1 << endl;
-  }
+  cin >> f1;
+  cout << "Found following value:" << f1 << endl;
 
 
   // return 0 to indicate successful completion
