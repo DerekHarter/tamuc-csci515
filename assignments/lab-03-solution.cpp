@@ -43,7 +43,7 @@ int main()
   }
 
   // determine the number of features
-  cin >> numFeatures;
+  inputFile >> numFeatures;
 
   // now process all of the lines of data
   lineNumber = 1;
