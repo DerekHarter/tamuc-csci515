@@ -47,7 +47,22 @@ the stream, you need to include the iomanip header.
   standard error device respectively.  These are the keyboard and
   terminal, by default, but can be connected to others (like a file)
   by the OS, and program doesn't know or care.
-- 
+- cerr send output to the standard error device, can be useful for
+  separating error messages from normal output (and redirecting
+  standard error to a different location).  By default, standard error
+  also goes to the terminal.
+- clog also connects to the standard error output in a buffered
+  manner.  You don't need to be concerned with clog in this class.
+
+** Stream Output and Input
+
+#+begin_src c
+cout << x << y << z;
+cin >> x << y << z;
+#+end_src
+
+
+
 
 * Second Session (11:45 - 12:30)
 
