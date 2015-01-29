@@ -47,7 +47,7 @@ int main()
 
   // now process all of the lines of data
   lineNumber = 1;
-  while (!inputFile.eof())
+  while (!inputFile.fail())
   {
     sum = 0.0;
     cout << "Line Number: " << lineNumber << " ";
