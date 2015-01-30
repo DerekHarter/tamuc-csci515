@@ -46,7 +46,7 @@ int main()
   lineNumber = 1;
   while (inputFile >> value1 >> value2 >> value3)
   {
-    cout << lineNumber << " " << value1 << " " << value2 << " " << value3;
+    cout << lineNumber << " " << value1 << " " << value2 << " " << value3 << endl;
     lineNumber++;
   }
 
