@@ -116,12 +116,12 @@ time in order to receive credit.
   correct order and attempt to process them. 20 points.
 - Your program must use I/O manipulators to achieve the correct output
   format of the cleaned up original data.  30 or more points.
-- Your program must include the header for the original data, properly
+- Your program must include a header for the original data, properly
   formatted. 10 points.
 - Your program must produce the correct summary information values. 30
   or more points.
-- Your program must format the summary information as required.  20 or
-  more points.
+- Your program must format the summary information as required, again
+  using I/O formatting manipulators.  20 or more points.
 
 
 ** Program Style
