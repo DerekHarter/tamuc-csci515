@@ -1,4 +1,4 @@
-% Created 2015-01-30 Fri 12:34
+% Created 2015-01-30 Fri 12:36
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -93,7 +93,7 @@ category, and will be a string.
 
 Your task is to process this file.  We are only interested in experimental
 trials that are of a particular class.  In the above example, the first
-line indicates that we need to process the \verb~STRANGE~ TRIALS.  \textbf{NOTE}: I
+line indicates that we need to process the \verb~STRANGE~ trials.  \textbf{NOTE}: I
 can and will use your code on different input files, that will filter
 on a different class, so you need to read in this first line from the
 file, and only process subsequent experimental trials of that type.
@@ -102,9 +102,9 @@ Each trial of the experiment has recorded the x, y and z position.  We need
 to calculate the distance traveled between successive trials of the
 target filter class, using the standard euclidean distance:
 
-$$
+\begin{equation}
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^}
-$$
+\end{equation}
 
 So for example, there are only 3 trials (1, 7 and 8) in our example data of the
 target \verb~STRANGE~ class.  The distance traveled for the \verb~STRANGE~ item between
