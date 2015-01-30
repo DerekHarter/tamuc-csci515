@@ -48,6 +48,11 @@ int main()
     cout << "ERROR: could not find input file named: " << inputFileName << endl;
     exit(1);
   }
+  if (!outputFile)
+  {
+    cout << "ERROR: could not create output file named: " << outputFileName << endl;
+    exit(1);
+  }
 
   // first read the filter information, and skip over the header
   inputFile >> filterClass;
