@@ -30,16 +30,6 @@ separated and tab separated value files, since it uses whitespace
 (spaces and tabs) by default as the delimiter when breaking apart a
 stream to automatically parse and convert into input variables.
 
-An example of a tab separated file is:
-
-#+begin_example
-Name	Id	Balance	Intrst	Penalty
-Derek	123456	540.33	0.02	2.00
-Mike	892315	884.28	0.015	5.0
-Sarah	184517	1024.38	0.025	2.50
-Jane	428146	125.45	0.01	5.0
-#+end_example
-
 In a space or tab separated file, the values separated by space are
 the features, and each row or line is an individual record.  In the
 previous example, this data might represent a database of bank account
