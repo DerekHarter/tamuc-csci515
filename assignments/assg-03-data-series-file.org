@@ -88,6 +88,8 @@ to look exactly like this output (using IOStream manipulators to format the outp
 as required):
 
 #+begin_example
+00007   0.32486
+00008   0.25480
 #+end_example
 
 The first column is simply the trial identifier of the $x_2, y_2, z_2$
