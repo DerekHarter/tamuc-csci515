@@ -7,7 +7,12 @@
  * @assg   Lab 02, Calculating PI
  *
  * @description Create a table showing approximate values of PI computed for steps in
- *    the sequence \pi \approx 4  - 4/3 + 4/5 - 4/7 + 4/9 ... 
+ *    the sequence \pi \approx 4  - 4/3 + 4/5 - 4/7 + 4/9 ...
+ *    I use an example of an indexed controlled for loop.  Here I use a floating
+ *    point variable, sign, to switch between adding and subtracting the values
+ *    in the series.  Another valid approach is to use the modulus operator to
+ *    differentiate between odd and even terms in the series and subtract and add
+ *    accordingly.
  */
 #include <iostream>
 using namespace std;
