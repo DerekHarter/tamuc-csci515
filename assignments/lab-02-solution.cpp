@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    GCC/G++ Emacs
  * @date   January 24, 2015
- * @assg   Assg 02, Calculating PI
+ * @assg   Lab 02, Calculating PI
  *
  * @description Create a table showing approximate values of PI computed for steps in
  *    the sequence \pi \approx 4  - 4/3 + 4/5 - 4/7 + 4/9 ... 
