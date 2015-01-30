@@ -22,14 +22,14 @@
 * Description
 Plain text files containing tables of information are very common,
 minimal representations of data sets needed for processing.  The
-simplest type of formatting of a table of values or features, is to
-separate the columns or features of the table using spaces, tabs or
-commas. In general these are known as delimiter separated value files
-(DSV).  The most common is to use commas (known as a comma separated
-value file or CSV files).  The C++ IOStream operators make it trivial
-to process space separated and tab separated value files, since it
-uses whitespace (spaces and tabs) by default as the delimiter when
-breaking apart a stream to automatically parse and convert into input
+simplest type of formatting of a table of values, is to separate the
+columns or features of the table using spaces, tabs or commas. In
+general these are known as delimiter separated value files (DSV).  The
+most common is to use commas (known as a comma separated value file or
+CSV files).  The C++ IOStream operators make it trivial to process
+space separated and tab separated value files, since it uses
+whitespace (spaces and tabs) by default as the delimiter when breaking
+apart a stream to automatically parse and convert into input
 variables. In a space or tab separated file, the values separated by
 space are the features, and each row or line is an individual record
 or trial in an experiment.
