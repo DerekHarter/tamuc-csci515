@@ -14,7 +14,7 @@
 * Objectives
 - Be able to Open a serial text file for reading.
 - Be able to process a simple text files of delimiter separated values.
-- Use I/O formatting manipulators, for writing formatted data.
+- Use I/O formatting manipulators, for writing formatted data output.
 - Use loops to read and process data files.
 - Practice using control structures for looping and conditional
   execution in C.
