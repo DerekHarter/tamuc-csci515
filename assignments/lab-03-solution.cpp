@@ -70,6 +70,10 @@ int main()
     lineNumber++;
   }
 
+  // display summary information:
+  cout << endl;
+  cout << setw(20) << right << "Number of Trials:" << fixed << setw(10) << lineNumber - 1 << endl;
+
   // return 0 to indicate successful completion
   inputFile.close();
   return 0;
