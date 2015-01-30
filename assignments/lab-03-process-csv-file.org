@@ -16,7 +16,8 @@
 - Be able to process a simple text files of delimiter separated values.
 - Use I/O formatting manipulators, for reading and writing formatted data.
 - Use loops to read and process data files.
-- Get some more practice implementing mathematical formula for data processing tasks.
+- Practice using control structures for looping and conditional
+  execution in C.
 
 * Description
 Plain text files containing tables of information are very common,
