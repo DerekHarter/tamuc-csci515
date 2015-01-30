@@ -39,7 +39,8 @@ int main()
 
   // first read the filter information, and skip over the header
   inputFile >> filterClass;
-  inputFile.getline();  // skips the next line, which should have the header
+  string headerLine;
+  inputFile.getline(headerLine);  // skips the next line, which should have the header
 
   // now process all of the lines of data
   while (inputFile >> value1 >> value2 >> value3)
