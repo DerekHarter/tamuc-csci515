@@ -50,7 +50,7 @@ int main()
     cout << setw(3) << lineNumber
 	 << fixed << setw(10) << setprecision(5) << value1
 	 << fixed << setw(10) << setprecision(5) << value2
-	 << fixed << setw(10) << setprecision(5) << value3
+	 << scientific << setw(10) << setprecision(5) << value3
          << endl;
     lineNumber++;
   }
