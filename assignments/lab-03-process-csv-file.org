@@ -104,7 +104,28 @@ of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
 
-* Requirements
+* Requirements and Grading Rubrics
+
+** Program Execution, Output and Functional Requirements
+
+- Your program must compile, run and produce some sort of output to be
+  graded. 0 if not satisfied.
+- Your program must use I/O manipulators to achieve the correct output
+  format of the cleaned up original data.  30 or more points.
+- Your program must include the header for the original data, properly
+  formatted. 10 points.
+- Your program must produce the correct summary information values. 30
+  or more points.
+- Your program must format the summary information as required.  20 or
+  more points.
+
+
+** Program Style
+
+- Your program must conform to all required style/formatting
+  guidelines for this week.  Each guideline that is not being followed
+  will remove 33 points from total.
+
 Your programs must conform to the style and formatting guidelines given for this course.
 The following is a list of the guidelines that are required for the lab to be submitted
 this week.
@@ -122,30 +143,13 @@ this week.
   statement.
 
 Failure to conform to any of these formatting and programming practice
-guidelines for this lab will result in a grade of 0 for the lab, and
-your program being returned with an indication of which of these items
-your program violates.  Failure to follow other class/textbook
-programming guidelines may result in a loss of points, especially for
-those good programming practices given in chapters 1-5 of our textbook
-which you should have read by now.
+guidelines for this lab will result at least 1/3 of the points (33)
+for the assignment being removed.  Failure to follow other
+class/textbook programming guidelines may result in a loss of points,
+especially for those programming practices given in our Deitel
+textbook that have been in our required reading so far.
+
 
 * Grading Rubrics
 
-** Program Execution, Output and Functional Requirements
 
-- Your program must compile, run and produce some sort of output to be
-  graded. 0 if not satisfied.
-- Your program must use I/O manipulators to achieve the correct output
-  format of the cleaned up original data.  30 or more points.
-- Your program must include the header for the original data, properly
-  formatted. 10 points.
-- Your program must produce the correct summary information values. 30
-  or more points.
-- Your program must format the summary information as required.  20 or
-  more points.
-
-** Program Style
-
-- Your program must conform to all required style/formatting
-  guidelines for this week.  Each guideline that is not being followed
-  will remove 33 points from total.
