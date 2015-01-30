@@ -79,12 +79,12 @@ You need to perform the following tasks:
   of width 3.  See the example output given for the input file above
   to better understand the required formatting you must perform.
 - In addition to cleaning up and formatting the data, you will do some
-  processing.  You need to determine the minimum value of all values
-  seen in column 1, the maximum of the values in column 2 and the
-  average of the values in column 3.  You will report these values
-  after displaying the cleaned contents of the file, with some others.
-  Again see the example output to determine exactly which summary
-  information you must produce and in what format.
+  processing of the data.  You need to determine the minimum value of
+  all values seen in column 1, the maximum of the values in column 2
+  and the average of the values in column 3.  You will report these
+  values after displaying the cleaned contents of the file, with some
+  others.  Again see the example output to determine exactly which
+  summary information you must produce and in what format.
 
 Here is an example of the correct, cleaned up and summarized data for
 the previously shown input file:
