@@ -102,6 +102,13 @@ of 5, with leading 0's (as in the input).  The second column is in a
 field width of 10, with 5 decimal places of precision and in fixed
 notation.
 
+In summary you need to perform the following tasks for this assignment:
+
+- Open the input file, and read in the trial class to filter on (and
+  skip over the header).
+- Open the input file and process it one line at a time.
+- Open an output file, and output the formatted results of your
+  distance calculations after filtering for successive trials.
 
 
 * Assignment Submission
