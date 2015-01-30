@@ -1,4 +1,4 @@
-#+TITLE:     Assg 03: Find Average of a Group of Numbers
+#+TITLE:     Assg 03: Process a File of Scientific Series of Data
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
