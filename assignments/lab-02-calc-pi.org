@@ -69,8 +69,8 @@ time in order to receive credit.
 - Your program must compile, run and produce some sort of output to be
   graded.  0 if not satisfied.
 - Your program must correctly respond to the user input when displaying
-  the number of items in the series.  15 or more points.
-- Your program must correctly calculate the values in the series. 30 or 
+  the number of items in the series.  20 or more points.
+- Your program must correctly calculate the values in the series. 40 or 
   more points.
 - Your program must correctly format the output as shown in the lab
   description.  20 points
