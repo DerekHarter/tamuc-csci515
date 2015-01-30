@@ -41,7 +41,7 @@ int main()
   inputFile >> filterClass;
   cout << "We are filtering on class: " << filterClass << endl;
   string headerLine;
-  inputFile.getline(headerLine);  // skips the next line, which should have the header
+  getline(inputFile, headerLine);  // skips the next line, which should have the header
   cout << "We got header <" << headerLine << ">" << endl;
   
   // now process all of the lines of data
