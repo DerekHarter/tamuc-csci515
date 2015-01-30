@@ -145,6 +145,9 @@ this week.
 - You must have a single blank space after , and ; operators used as a
   separator in lists of variables, parameters or other control
   structures.
+- You must have opening { and closing } for control statements on
+  their own line, and indented correctly for the level of the control
+  statement block.
 
 Failure to conform to any of these formatting and programming practice
 guidelines for this lab will result at least 1/3 of the points (33)
