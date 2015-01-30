@@ -76,6 +76,7 @@ d &= \sqrt{(4.27666 - 4.23169)^2 + (4.56251 - 4.68996)^2 + (-8.56897 - -8.86438)
 \end{split}
 $$
 
+
 * Assignment Submission
 
 An eCollege dropbox has been created for this assignment.  You should
