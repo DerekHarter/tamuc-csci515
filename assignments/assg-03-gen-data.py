@@ -9,7 +9,7 @@ CHOSEN_CLASS = 'STRANGE'
 
 x_prev, y_prev, z_prev = np.random.normal(0.0, 5.0, (3,))
 print CHOSEN_CLASS
-print "%03d\t%8s\t%8s\t%8s\t%s" % ("trial", "x", "y", "z", "class")
+print "%3s\t%8s\t%8s\t%8s\t%s" % ("trial", "x", "y", "z", "class")
 for trial in range(1, NUM_LINES+1):
     trial_class = np.random.choice(CLASSES)
 
@@ -21,7 +21,7 @@ for trial in range(1, NUM_LINES+1):
     else:
         x, y, z = np.random.normal(0.0, 5.0, (3,))
 
-    print "%03d\t%8.5f\t%8.5f\t%8.5f\t%-s" % (trial, x, y, z, trial_class)
+    print "%05d\t%8.5f\t%8.5f\t%8.5f\t%-s" % (trial, x, y, z, trial_class)
 
     if trial_class == CHOSEN_CLASS:
         x_prev, y_prev, z_prev = x, y, z
