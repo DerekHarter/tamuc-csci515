@@ -49,17 +49,6 @@ int main()
   lineNumber = 1;
   while (inputFile.peek() != EOF)
   {
-    sum = 0.0;
-    cout << "Line Number: " << lineNumber << " ";
-
-    for (int i=0; i<numFeatures; i++)
-    {
-      inputFile >> value;
-      cout << value << " ";
-      sum += value;
-    }
-
-    cout << "sum: " << sum << endl;
     lineNumber++;
   }
 
