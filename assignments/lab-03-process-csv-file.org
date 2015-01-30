@@ -48,26 +48,47 @@ balance, etc. as features.  In this example file, the first row is a
 header row, which is present only to define the names of each of the
 column features in the table.
 
-For this lab you are to read in records from a tab separated file, and do some
-processing of the data.  I will give you a tab separated file to use.  The CSV file
-you are to process has the following format:
+For this lab you are to read in records from a space separated file, and
+do some processing of the data.  I will give you a space separated file
+to use.  The file you are to open and process looks like this:
 
 #+begin_example
-1, 1.25, 2.48, 3.45
-2, 3.55, 2.98, 3.85
-3, 3.18, 2.98, 1.25
+ 1.03925	-0.0466664	 6.78488	
+ 5.733837	-7.16068	 -2.792169	
+-4.5309	-0.1812	6.10121759	
+  1.437688	2.798135755	  4.12021	
+1.22328	 -1.5012	  8.99924	
+-1.53216	 -5.395889	  4.0939	
+  8.6847	  5.44601	 -7.70818	
+-4.76181	8.362	 -0.389249517	
+ 2.298	4.148659	 -0.757	
+  3.3200104	  3.953700223	-5.8364352	
 #+end_example
 
+You need to perform the following tasks:
 
-* Extra Credit
-If you calculate the approximation of pi correctly using the series,
-you will see that using standard cout output it appears that only 6
-digits of precision are being calculated (e.g. create a table of size
-1000 or bigger).  However, the standard float data type is capable of
-representing 16 digits of precision.  The problem is that by default
-sending floats to cout only display a few decimal digits.  Find out
-how to display all of the calculated digits, using the iostream
-library.
+- Open the file and read it one line at a time.
+- Output the original contents of the file, but with cleaned up
+  formatting.  You will output each column in a field of width 10
+  characters.  All numbers will be printed with exactly 5 decimal
+  point digits of precision.  You will add an index as a new first
+  index of each line, in a field of width 3.  See the example output
+  given for the input file above to better understand the required
+  formatting you must perform.
+- In addition to cleaning up and formatting the data, you will do some
+  processing.  You need to determine the minimum value of all values
+  seen in column 1, the maximum of the values in column 2 and the
+  average of the values in column 3.  You will report these values
+  after displaying the cleaned contents of the file, with some others.
+  Again see the example output to determine exactly which summary
+  information you must produce and in what format.
+
+Here is an example of the correct, cleaned up and summarized data for
+the previously shown input file:
+
+#+begin_example
+#+end_example
+
 
 * Lab Submission
 
