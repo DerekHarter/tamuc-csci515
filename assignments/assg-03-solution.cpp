@@ -66,7 +66,7 @@ int main()
       }
       else // we need to calculate distance between current and prev, and output results
       {
-	distance = (x - x_prev) + (y - y_prev) + (z - z_prev);
+	distance = sqrt( pow(x - x_prev, 2.0) + pow(y - y_prev, 2.0) + pow(z - z_prev, 2.0) ); 
 	
       }
 
