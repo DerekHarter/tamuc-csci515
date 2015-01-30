@@ -70,7 +70,8 @@ So for example, there are only 2 trials (1 and 7) in our example data of the
 target ~STRANGE~ class.  The distance traveled for the ~STRANGE~ item would be:
 
 $$
-d = \sqrt{(4.27666 - 4.23169)^2 + (4.56251 - 4.68996)^2 + (-8.56897 - -8.86438)^2 = D}
+d = \sqrt{(4.27666 - 4.23169)^2 + (4.56251 - 4.68996)^2 + (-8.56897 - -8.86438)^2} \\
+  = D
 $$
 
 * Assignment Submission
