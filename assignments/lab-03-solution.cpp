@@ -26,7 +26,7 @@ using namespace std;
  */
 int main()
 {
-  string inputFileName = "lab-03-data.csv";
+  string inputFileName = "lab-03-data.dsv";
   ifstream inputFile(inputFileName.c_str());
   int numFeatures;
   int lineNumber;
