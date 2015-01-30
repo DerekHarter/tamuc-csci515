@@ -74,7 +74,6 @@ time in order to receive credit.
   more points.
 - Your program must correctly format the output as shown in the lab
   description.  20 points
-- 
 
 ** Program Style
 
