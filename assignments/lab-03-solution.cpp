@@ -30,7 +30,7 @@ int main()
   ifstream inputFile(inputFileName.c_str());
   int numFeatures;
   int lineNumber;
-  float value;
+  float value1, value2, value3;
   float maxValue;
   float minValue;
   float sum;
