@@ -1,8 +1,8 @@
-#+TITLE:     Assg 02: Find Average of a Group of Numbers
+#+TITLE:     Assg 03: Find Average of a Group of Numbers
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
-#+DESCRIPTION: Assg 02
+#+DESCRIPTION: Assg 03
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
@@ -50,7 +50,7 @@ Average value: 4.16667
 
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the out of class assignment by the end of
-Tuesday 2/3 (midnight) to the dropbox named ~Assg 02 Average of Values~.
+Tuesday 2/3 (midnight) to the dropbox named ~Assg 03 Scientific Data File~.
 Late submissions will not be graded.
 
 * Requirements
