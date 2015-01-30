@@ -31,12 +31,12 @@ separated and tab separated value files, since it uses whitespace
 stream to automatically parse and convert into input variables.
 
 In a space or tab separated file, the values separated by space are
-the features, and each row or line is an individual record.  In the
-previous example, this data might represent a database of bank account
-information, with the customer name, customer Id, their current
-balance, etc. as features.  In this example file, the first row is a
-header row, which is present only to define the names of each of the
-column features in the table.
+the features, and each row or line is an individual record or trial in
+an experiment.  In the previous example, this data might represent a
+database of bank account information, with the customer name, customer
+Id, their current balance, etc. as features.  In this example file,
+the first row is a header row, which is present only to define the
+names of each of the column features in the table.
 
 For this lab you are to read in records from a space separated file, and
 do some processing of the data.  I will give you a space separated file
