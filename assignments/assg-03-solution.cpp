@@ -27,8 +27,13 @@ using namespace std;
  */
 int main()
 {
+  // files
   string inputFileName = "assg-03-data.dsv";
   ifstream inputFile(inputFileName.c_str());
+  string outputFileName = "assg-03-data-out.dsv";
+  ofstream outputFile(outputFileName.c_str());
+
+  // variables for file processing
   string filterClass;
   string trialClass;
   int trial;
@@ -83,3 +88,4 @@ int main()
   inputFile.close();
   return 0;
 }
+1
