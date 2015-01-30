@@ -26,7 +26,7 @@ delimiter separated values of data gathered from an experiment, perform
 some simple data analysis on the data, and save the results to a new file.
 
 The input file you will be given has the following format (truncated,
-the real files will have many more items than 7 to process):
+the real files will have many more items than 10 to process):
 
 #+begin_example
 STRANGE
@@ -38,6 +38,9 @@ trial	       x	       y	       z	class
 00005	 0.90207	-0.38525	 4.66088	CHARM
 00006	-4.67474	-4.18064	 1.65754	UP
 00007	 4.27666	 4.56251	-8.56897	STRANGE
+00008	 4.17155	 4.33587	-8.61905	STRANGE
+00009	 2.52960	-3.98237	 8.60114	DOWN
+00010	 0.41158	 5.61738	 4.29349	UP
 ...
 #+end_example
 
