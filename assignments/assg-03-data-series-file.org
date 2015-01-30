@@ -134,7 +134,7 @@ Late submissions will not be graded.
 - Your program must use I/O manipulators to achieve the correct output
   format to the output file.  10 or more points.
 - Your program must correctly filter the input, and only calculate and
-  output results for the trials of the correct class.
+  output results for the trials of the correct class.  25 or more points
 - Your program must produce the correct distance values between successive
   trials. 25 or more points.
 
