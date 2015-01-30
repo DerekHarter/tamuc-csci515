@@ -128,3 +128,13 @@ your program violates.  Failure to follow other class/textbook
 programming guidelines may result in a loss of points, especially for
 those good programming practices given in chapters 1-5 of our textbook
 which you should have read by now.
+
+* Grading Rubrics
+
+** Program Execution, Output and Functional Requirements
+
+- Your program must compile, run and produce some sort of output to be
+  graded. 0 if not satisfied.
+- Your program must use I/O manipulators to achieve the correct output
+  format of the cleaned up original data.  20 or more points.
+- Your program must produce the correct summary information. 10 or more points.
