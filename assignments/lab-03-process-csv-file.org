@@ -122,10 +122,6 @@ time in order to receive credit.
 
 ** Program Style
 
-- Your program must conform to all required style/formatting
-  guidelines for this week.  Each guideline that is not being followed
-  will remove 33 points from total.
-
 Your programs must conform to the style and formatting guidelines given for this course.
 The following is a list of the guidelines that are required for the lab to be submitted
 this week.
