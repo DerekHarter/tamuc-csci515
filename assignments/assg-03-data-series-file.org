@@ -29,6 +29,15 @@ The input file you will be given has the following format:
 
 #+begin_example
 #+end_example
+The first line represents a filter class upon which the data is to be
+filtered.  More on this below. 
+
+The next line after the filter is a header for the columns/features of
+the data.  After the header are the actual data trials in the
+experiment.  Column 1 is simply the trial number for the row of data.
+Columns 2, 3 and 4 represent x, y and z measured positions of a
+physical item in some experiment.  Column 5 represents a feature
+category, and will be a string
 
 * Assignment Submission
 
