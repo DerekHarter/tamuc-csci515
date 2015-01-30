@@ -29,14 +29,14 @@ using namespace std;
  */
 int main()
 {
-  int N;
+  int n;
   float pi;
   float denominator;
   float sign;
 
   // Ask user for size of table to compute
   cout << "What size of table should I compute: ";
-  cin >> N;
+  cin >> n;
   cout << endl;
 
   // display the table
@@ -45,7 +45,7 @@ int main()
   sign = -1.0;
   cout << "N     pi" << endl;
   cout << "----- -------" << endl;
-  for (int i = 1; i <= N; i++)
+  for (int i = 1; i <= n; i++)
   {
     cout << i << "     " << pi << endl;
     pi += sign * (4.0 / denominator);
