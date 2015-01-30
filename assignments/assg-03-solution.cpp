@@ -28,7 +28,7 @@ using namespace std;
 int main()
 {
   // files
-  string inputFileName = "assg-03-data.dsv";
+  string inputFileName = "assg-03-data-in.dsv";
   ifstream inputFile(inputFileName.c_str());
   string outputFileName = "assg-03-data-out.dsv";
   ofstream outputFile(outputFileName.c_str());
