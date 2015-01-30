@@ -53,7 +53,7 @@ to use.  The file you are to open and process looks like this:
 
 You need to perform the following tasks:
 
-- Open the file and read it one line at a time.
+- Open the file and process it one line at a time.
 - Output the original contents of the file, but with cleaned up
   formatting.  You will output each column in a field of width 15
   characters (~setw()~).  All numbers will be printed with exactly 5
