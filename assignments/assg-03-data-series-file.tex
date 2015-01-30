@@ -1,4 +1,4 @@
-% Created 2015-01-30 Fri 11:45
+% Created 2015-01-30 Fri 12:34
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -62,7 +62,7 @@ delimiter separated values of data gathered from an experiment, perform
 some simple data analysis on the data, and save the results to a new file.
 
 The input file you will be given has the following format (truncated,
-the real files will have many more items than 7 to process):
+the real files will have many more items than 10 to process):
 
 
 \begin{verbatim}
@@ -75,6 +75,9 @@ trial          x               y               z        class
 00005    0.90207        -0.38525         4.66088        CHARM
 00006   -4.67474        -4.18064         1.65754        UP
 00007    4.27666         4.56251        -8.56897        STRANGE
+00008    4.17155         4.33587        -8.61905        STRANGE
+00009    2.52960        -3.98237         8.60114        DOWN
+00010    0.41158         5.61738         4.29349        UP
 ...
 \end{verbatim}
 
@@ -103,46 +106,115 @@ $$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^}
 $$
 
-So for example, there are only 2 trials (1 and 7) in our example data of the
-target \verb~STRANGE~ class.  The distance traveled for the \verb~STRANGE~ item would be:
+So for example, there are only 3 trials (1, 7 and 8) in our example data of the
+target \verb~STRANGE~ class.  The distance traveled for the \verb~STRANGE~ item between
+trials 1 and 7 would be:
 
-$$
+\begin{equation}
 \begin{split}
 d &= \sqrt{(4.27666 - 4.23169)^2 + (4.56251 - 4.68996)^2 + (-8.56897 - -8.86438)^2} \\\\
   &= DD
 \end{split}
-$$
+\end{equation}
+
+In addition to processing the file, you will open up a new file and save the results
+of the filtering and data processing to this file.  The file I will give you to test with
+for input will be called \verb~assg-03-data-in.dsv~.  You should put the results into a file
+you open and write to called \verb~assg-03-data-out.dsv~.  Your results need to be formatted
+to look exactly like this output (using IOStream manipulators to format the output
+as required):
+
+
+\begin{verbatim}
+00007   0.32486
+00008   0.25480
+\end{verbatim}
+
+The first column is simply the trial identifier of the $x_2, y_2, z_2$
+from the input (e.g.  the second pair of coordinates used in the
+distance calculation), and the second column is the calculated
+distance.  If you input file has $N$ trials of the class being
+filtered for, then your output file will end up with $N-1$ distance
+values being calculated.  The first column should be in a field width
+of 5, with leading 0's (as in the input).  The second column is in a
+field width of 10, with 5 decimal places of precision and in fixed
+notation.
+
+In summary you need to perform the following tasks for this assignment:
+
+\begin{itemize}
+\item Open the input file, and read in the trial class to filter on (and
+  skip over the header).
+\item Open the input file and process it one line at a time.
+\item Open an output file, and output the formatted results of your
+  distance calculations after filtering for successive trials.
+\item Calculate distance between successive trials of the trial class
+  of interest.
+\end{itemize}
 \section*{Assignment Submission}
 \label{sec-4}
 
 
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the out of class assignment by the end of
-Tuesday 2/3 (midnight) to the dropbox named \verb~Assg 03 Scientific Data File~.
+Tuesday 2/10 (midnight) to the dropbox named \verb~Assg 03 Scientific Data File~.
 Late submissions will not be graded.
-\section*{Requirements}
+\section*{Requirements and Grading Rubrics}
 \label{sec-5}
+\subsection*{Program Execution, Output and Functional Requirements}
+\label{sec-5-1}
 
-Your programs must conform to the style and formatting guidelines
-given for this course.  The following is a list of the guidelines that
-are required for the assignment to be submitted this week.
 
 \begin{itemize}
-\item The file header and function header for your main function must be present, and filled out correctly.
-\item You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
-\item You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
+\item Your program must compile, run and produce some sort of output to be
+  graded. 0 if not satisfied.
+\item Your program must successfully open the file from the current
+  working directory. 10 or more points.
+\item Your program must successfully open the output file for writing, and
+  write some contents to it.  10 or more points.
+\item Your program must successfully read the lines from the file in the
+  correct order and attempt to process them. 20 points.
+\item Your program must use I/O manipulators to achieve the correct output
+  format to the output file.  10 or more points.
+\item Your program must correctly filter the input, and only calculate and
+  output results for the trials of the correct class.  25 or more points
+\item Your program must produce the correct distance values between successive
+  trials. 25 or more points.
+\end{itemize}
+\subsection*{Program Style}
+\label{sec-5-2}
+
+
+Your programs must conform to the style and formatting guidelines given for this course.
+The following is a list of the guidelines that are required for the lab to be submitted
+this week.
+
+\begin{itemize}
+\item The file header for the file with your name and program information
+  and the function header for your main function must be present, and
+  filled out correctly.
+\item You must indent your code correctly and have no embedded tabs in
+  your source code. (Don't forget about the Visual Studio Format
+  Selection command).
+\item You must not have any statements that are hacks in order to keep
+  your terminal from closing when your program exits.
 \item You must have a single space before and after each binary operator.
 \item You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
   statement.
+\item You must have a single blank space after , and \verb~;~ operators used as a
+  separator in lists of variables, parameters or other control
+  structures.
+\item You must have opening \verb~{~ and closing \verb~}~ for control statement blocks
+  on their own line, indented correctly for the level of the control
+  statement block.
 \end{itemize}
 
 Failure to conform to any of these formatting and programming practice
-guidelines for this assignment will result in a grade of 0 for the
-assignment, and your program being returned with an indication of
-which of these items your program violates.  Failure to follow other
+guidelines for this lab will result in at least 1/3 of the points (33)
+for the assignment being removed.  Failure to follow other
 class/textbook programming guidelines may result in a loss of points,
-especially for those good programming practices given in chapters 1-5
-of our textbook which you should have read by now.
+especially for those programming practices given in our Deitel
+textbook that have been in our required reading so far.
 
 \end{document}
