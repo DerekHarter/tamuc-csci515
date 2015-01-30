@@ -45,7 +45,7 @@ int main()
   // test we found and opened file successfully
   if (!inputFile)
   {
-    cout << "ERROR: could not find file named: " << inputFileName << endl;
+    cout << "ERROR: could not find input file named: " << inputFileName << endl;
     exit(1);
   }
 
