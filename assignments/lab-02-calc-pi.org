@@ -62,7 +62,12 @@ of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
 
-* Requirements
+* Requirements and Grading Ruberics
+
+** Program Execution, Output and Functional Requirements
+
+** Program Style
+
 Your programs must conform to the style and formatting guidelines given for this course.
 The following is a list of the guidelines that are required for the lab to be submitted
 this week.
