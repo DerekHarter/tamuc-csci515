@@ -28,7 +28,8 @@ int main()
 {
   string inputFileName = "assg-03-data.dsv";
   ifstream inputFile(inputFileName.c_str());
-
+  string filterClass;
+  
   // test we found and opened file successfully
   if (!inputFile)
   {
@@ -36,6 +37,9 @@ int main()
     exit(1);
   }
 
+  // first read the filter information, and skip over the header
+  inputFile >> filterClass;
+  
   // now process all of the lines of data
   while (inputFile >> value1 >> value2 >> value3)
   {
