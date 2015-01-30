@@ -45,9 +45,9 @@ int main()
   cout << "We got header <" << headerLine << ">" << endl;
   
   // now process all of the lines of data
-  while (inputFile >> value1 >> value2 >> value3)
-  {
-  }
+  //while (inputFile >> value1 >> value2 >> value3)
+  //{
+  //}
 
 
   // return 0 to indicate successful completion
