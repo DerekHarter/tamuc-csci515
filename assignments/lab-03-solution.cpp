@@ -45,13 +45,20 @@ int main()
 
   // now process all of the lines of data
   lineNumber = 1;
+  minValue = 1000.0;
+  maxValue = -1000.0
   while (inputFile >> value1 >> value2 >> value3)
   {
+    // reformat the input nicely
     cout << setw(3) << lineNumber
 	 << scientific << setw(15) << setprecision(5) << value1
 	 << scientific << setw(15) << setprecision(5) << value2
 	 << scientific << setw(15) << setprecision(5) << value3
          << endl;
+
+    // keep track of minimum, maximum and running sum so we can compute
+    // average
+    if (value1 < )
     lineNumber++;
   }
 
