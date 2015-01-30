@@ -4,7 +4,7 @@
 import numpy as np
 import sys
 NUM_LINES = 10
-NUM_FEATURES = 5
+NUM_FEATURES = 3
 
 print "%d" % NUM_FEATURES
 for idx in range(1, NUM_LINES+1):
