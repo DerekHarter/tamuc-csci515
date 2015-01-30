@@ -19,7 +19,7 @@ for trial in range(1, NUM_LINES+1):
     else:
         x, y, z = np.random.normal(0.0, 5.0, (3,))
         
-    print "%03d\t%-s" % (trial, trial_class)
+    print "%03d\t%10.5f\t%10.5f\t%10.5f\t%-s" % (trial, x, y, z, trial_class)
 
 # for idx in range(1, NUM_LINES+1):
 #     features = np.random.normal(0.0, 5.0, (NUM_FEATURES,))
