@@ -11,7 +11,7 @@ x_prev, y_prev, z_prev = np.random.normal(0.0, 5.0, (3,))
 for trial in range(1, NUM_LINES+1):
     trial_class = np.random.choice(CLASSES)
 
-    print "%03d\t%-10s" % (trial, trial_class)
+    print "%03d\t%-s" % (trial, trial_class)
 
 # for idx in range(1, NUM_LINES+1):
 #     features = np.random.normal(0.0, 5.0, (NUM_FEATURES,))
