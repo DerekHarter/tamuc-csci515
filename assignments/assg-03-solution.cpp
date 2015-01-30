@@ -33,8 +33,9 @@ int main()
   int trial;
   float x_prev, y_prev, z_prev;  // hold previous values of position
   float x, y, z; // will hold current values of position
+  float distance;
   bool firstTrial = true; // use a flag to handle first item, before we have 2 items to calc distance with 
-  
+
   // test we found and opened file successfully
   if (!inputFile)
   {
@@ -49,7 +50,7 @@ int main()
   getline(inputFile, headerLine);  // skips past newline?
   getline(inputFile, headerLine);  // skips the next line, which should have the header
   cout << "We got header <" << headerLine << ">" << endl;
-  
+
   // now process all of the lines of data
   // current values of position are put into x, y and z
   while (inputFile >> trial >> x >> y >> z >> trialClass)
@@ -57,7 +58,20 @@ int main()
     // filter items by their class, only process items of the correct class
     if (trialClass == filterClass)
     {
-      
+      // if this is our first time in, then we can't calculate distance yet
+      if (firstTrial)
+      {
+	firstTrial = false;
+      }
+      else // we need to calculate distance between current and prev, and output results
+      {
+	
+      }
+
+      // keep track of these values for next distance calculation
+      x_prev = x;
+      y_prev = y;
+      z_prev = z;
     }
   }
 
