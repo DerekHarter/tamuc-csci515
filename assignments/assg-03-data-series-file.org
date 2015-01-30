@@ -109,7 +109,8 @@ In summary you need to perform the following tasks for this assignment:
 - Open the input file and process it one line at a time.
 - Open an output file, and output the formatted results of your
   distance calculations after filtering for successive trials.
-
+- Calculate distance between successive trials of the trial class
+  of interest.
 
 * Assignment Submission
 
