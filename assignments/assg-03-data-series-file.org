@@ -21,33 +21,13 @@
   written in C.
 
 * Description
-Determine the average, and some other properties for an arbitrary
-number of integer values.  The user should be prompted to enter
-numbers from the terminal, and to indicate when they are done entering
-numbers by using a sentinel (use ~-9999~ as your sentinel value).
+In this assignment, we will be writing a filter, that will filter a file of
+delimiter separated values of data gathered from an experiment, perform
+some simple data analysis on the data, and save the results to a new file.
 
-Your program should report the following values after the user has
-indicated they are finished entering numbers.  The sum of the values,
-the average of the values, the minimum value entered, the maximum
-value entered, and the total number of values the user entered.  The
-output of a session with a user should be formatted to look exactly
-like this:
+The input file you will be given has the following format:
 
 #+begin_example
-Enter integer values, when done enter -9999.
-Enter next value: 3
-Enter next value: 6
-Enter next value: 13
-Enter next value: -3
-Enter next value: 8
-Enter next value: -2
-Enter next value: -9999
-
-Number of Values Entered: 6
-Sum of values: 25
-Maximum value: 13
-Minimum value: -3
-Average value: 4.16667
 #+end_example
 
 * Assignment Submission
