@@ -1,4 +1,4 @@
-% Created 2015-01-29 Thu 20:17
+% Created 2015-01-29 Thu 20:43
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -41,7 +41,7 @@ Due: & In Lab, Wednesday February 4, by 4 pm (lab end time)\\
 \label{sec-2}
 \begin{itemize}
 \item Be able to Open a serial text file for reading.
-\item Be able to process a simple text files of delimiter separated values.
+\item Learn about and process simple text files of delimiter separated values.
 \item Use I/O formatting manipulators, for writing formatted data output.
 \item Use loops to read and process data files.
 \item Practice using control structures for looping and conditional
@@ -51,7 +51,7 @@ execution in C.
 \label{sec-3}
 Plain text files containing tables of information are very common,
 minimal representations of data sets needed for processing.  The
-simplest type of formatting of a table of numbers, is to separate the
+simplest type of formatting of a table of values, is to separate the
 columns or features of the table using spaces, tabs or commas. In
 general these are known as delimiter separated value files (DSV).  The
 most common is to use commas (known as a comma separated value file or
@@ -83,7 +83,7 @@ to use.  The file you are to open and process looks like this:
 You need to perform the following tasks:
 
 \begin{itemize}
-\item Open the file and read it one line at a time.
+\item Open the file and process it one line at a time.
 \item Output the original contents of the file, but with cleaned up
 formatting.  You will output each column in a field of width 15
 characters (\verb~setw()~).  All numbers will be printed with exactly 5
@@ -178,7 +178,7 @@ your terminal from closing when your program exits.
 \item You must have a single blank line after the end of your declaration
 of variables at the top of a function, before the first code
 statement.
-\item You must have a single blank space after \textasciitilde{},\textasciitilde{} and \verb~;~ operators used as a
+\item You must have a single blank space after , and \verb~;~ operators used as a
 separator in lists of variables, parameters or other control
 structures.
 \item You must have opening \verb~{~ and closing \verb~}~ for control statement blocks
