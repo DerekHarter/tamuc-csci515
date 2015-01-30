@@ -153,7 +153,3 @@ class/textbook programming guidelines may result in a loss of points,
 especially for those programming practices given in our Deitel
 textbook that have been in our required reading so far.
 
-
-* Grading Rubrics
-
-
