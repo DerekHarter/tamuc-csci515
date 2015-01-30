@@ -12,6 +12,7 @@
 #include <fstream>
 #include <cstdlib>
 #include <iomanip>
+#include <math.h>
 using namespace std;
 
 
@@ -65,6 +66,7 @@ int main()
       }
       else // we need to calculate distance between current and prev, and output results
       {
+	distance = (x - x_prev) + (y - y_prev) + (z - z_prev);
 	
       }
 
