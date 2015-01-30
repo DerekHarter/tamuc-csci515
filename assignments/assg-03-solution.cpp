@@ -29,6 +29,10 @@ int main()
   string inputFileName = "assg-03-data.dsv";
   ifstream inputFile(inputFileName.c_str());
   string filterClass;
+  int trial;
+  float x_prev, y_prev, z_prev;  // hold previous values of position
+  float x, y, z; // will hold current values of position
+  bool firstTrial = true; // use a flag to handle first item, before we have 2 items to calc distance with 
   
   // test we found and opened file successfully
   if (!inputFile)
