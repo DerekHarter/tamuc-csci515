@@ -70,7 +70,8 @@ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^}
 $$
 
 So for example, there are only 3 trials (1, 7 and 8) in our example data of the
-target ~STRANGE~ class.  The distance traveled for the ~STRANGE~ item would be:
+target ~STRANGE~ class.  The distance traveled for the ~STRANGE~ item between
+trials 1 and 7 would be:
 
 \begin{equation}
 \begin{split}
