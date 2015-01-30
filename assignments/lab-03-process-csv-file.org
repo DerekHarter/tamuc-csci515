@@ -139,8 +139,10 @@ which you should have read by now.
   format of the cleaned up original data.  30 or more points.
 - Your program must include the header for the original data, properly
   formatted. 10 points.
-- Your program must produce the correct summary information. 30 or more points.
-- Your program must format the summary information as required.  20 or more points.
+- Your program must produce the correct summary information values. 30
+  or more points.
+- Your program must format the summary information as required.  20 or
+  more points.
 
 ** Program Style
 
