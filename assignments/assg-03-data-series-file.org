@@ -28,9 +28,20 @@ some simple data analysis on the data, and save the results to a new file.
 The input file you will be given has the following format:
 
 #+begin_example
+STRANGE
+trial	       x	       y	       z	class
+00001	 4.23169	 4.68996	-8.86438	STRANGE
+00002	 5.43040	-3.59577	-4.71896	UP
+00003	 0.37792	 3.34626	-0.22265	CHARM
+00004	 5.35208	 3.96738	 1.77813	UP
+00005	 0.90207	-0.38525	 4.66088	CHARM
+00006	-4.67474	-4.18064	 1.65754	UP
+00007	 4.27666	 4.56251	-8.56897	STRANGE
+...
 #+end_example
+
 The first line represents a filter class upon which the data is to be
-filtered.  More on this below. 
+filtered.  More on this below.
 
 The next line after the filter is a header for the columns/features of
 the data.  After the header are the actual data trials in the
