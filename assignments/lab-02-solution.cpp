@@ -30,7 +30,7 @@ using namespace std;
 int main()
 {
   int N;
-  float pi;;
+  float pi;
   float denominator;
   float sign;
 
