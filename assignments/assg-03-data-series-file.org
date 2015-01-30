@@ -69,13 +69,22 @@ $$
 So for example, there are only 2 trials (1 and 7) in our example data of the
 target ~STRANGE~ class.  The distance traveled for the ~STRANGE~ item would be:
 
-$$
+\begin{equation}
 \begin{split}
 d &= \sqrt{(4.27666 - 4.23169)^2 + (4.56251 - 4.68996)^2 + (-8.56897 - -8.86438)^2} \\\\
   &= DD
 \end{split}
-$$
+\end{equation}
 
+In addition to processing the file, you will open up a new file and save the results
+of the filtering and data processing to this file.  The file I will give you to test with
+for input will be called ~assg-03-data-in.dsv~.  You should put the results into a file
+you open and write to called ~assg-03-data-out.dsv~.  Your results need to be formatted
+to look exactly like this output (using IOStream manipulators to format the output
+as required):
+
+#+begin_example
+#+end_example
 
 * Assignment Submission
 
