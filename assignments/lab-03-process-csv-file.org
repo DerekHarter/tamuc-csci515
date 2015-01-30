@@ -61,8 +61,7 @@ You need to perform the following tasks:
   (~scientific~).  See the example output to get details on what
   this should look like.
 - You will add an index as a new first column of each line, in a field
-  of width 3.  See the example output given for the input file above
-  to better understand the required formatting you must perform.
+  of width 5.  
 - In addition to cleaning up and formatting the data, you will do some
   processing of the data.  You need to determine the minimum value of
   all values seen in column 1, the maximum of the values in column 2
