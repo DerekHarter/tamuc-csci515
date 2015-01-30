@@ -48,8 +48,10 @@ int main()
   while (inputFile >> value1 >> value2 >> value3)
   {
     cout << setw(3) << lineNumber
-	 << setw(10) << setprecision(5)
-	 << value1 << value2 << value3 << endl;
+	 << fixed << setw(10) << setprecision(5) << value1
+	 << fixed << setw(10) << setprecision(5) << value2
+	 << fixed << setw(10) << setprecision(5) << value3
+         << endl;
     lineNumber++;
   }
 
