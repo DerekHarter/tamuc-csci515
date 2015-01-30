@@ -51,8 +51,14 @@ int main()
   cout << "We got header <" << headerLine << ">" << endl;
   
   // now process all of the lines of data
+  // current values of position are put into x, y and z
   while (inputFile >> trial >> x >> y >> z >> trialClass)
   {
+    // filter items by their class, only process items of the correct class
+    if (trialClass == filterClass)
+    {
+      
+    }
   }
 
 
