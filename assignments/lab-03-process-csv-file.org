@@ -143,7 +143,7 @@ this week.
 - You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
   statement.
-- You must have a single blank space after ~,~ and ~;~ operators used as a
+- You must have a single blank space after , and ~;~ operators used as a
   separator in lists of variables, parameters or other control
   structures.
 - You must have opening ~{~ and closing ~}~ for control statement blocks
