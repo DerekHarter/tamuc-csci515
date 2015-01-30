@@ -68,7 +68,7 @@ int main()
       {
 	distance = sqrt( pow(x - x_prev, 2.0) + pow(y - y_prev, 2.0) + pow(z - z_prev, 2.0) ); 
 	cout << setfill('0') << setw(5) << trial
-	     << setw(10) << fixed << setprecision(5) << distance << endl;
+	     << setfill('') << setw(10) << fixed << setprecision(5) << distance << endl;
       }
 
       // keep track of these values for next distance calculation
