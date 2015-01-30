@@ -1,7 +1,7 @@
 #+TITLE:     Assg 03: Process a File of Scientific Series of Data
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
+#+DATE:      CSci 515 Spring 2014 <2015-01-30 Fri>
 #+DESCRIPTION: Assg 03
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
