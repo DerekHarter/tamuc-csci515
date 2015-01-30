@@ -48,9 +48,9 @@ int main()
   minValue = 1000.0;
   maxValue = -1000.0;
   cout << setw(5) << "Trial"
-       << setw(15) << "Feature 1"
-       << setw(15) << "Feature 2"
-       << setw(15) << "Feature 3" << endl;
+       << setw(15) << "Feature-1"
+       << setw(15) << "Feature-2"
+       << setw(15) << "Feature-3" << endl;
   while (inputFile >> value1 >> value2 >> value3)
   {
     // reformat the input nicely
