@@ -73,8 +73,9 @@ You need to perform the following tasks:
   characters (~setw()~).  All numbers will be printed with exactly 5
   decimal point digits of precision (~setprecision()~).  All of the
   floating point numbers should be displayed using scientific notation
-  (~scientific~).
-- You will add an index as a new first index of each line, in a field
+  (~scientific~).  See the example output to get details on what
+  this should look like.
+- You will add an index as a new first column of each line, in a field
   of width 3.  See the example output given for the input file above
   to better understand the required formatting you must perform.
 - In addition to cleaning up and formatting the data, you will do some
