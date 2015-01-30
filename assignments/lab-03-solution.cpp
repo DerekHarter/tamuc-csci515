@@ -77,6 +77,8 @@ int main()
        << fixed << setprecision(5) << minValue << endl;
   cout << setw(25) << right << "Maximum of Feature 2:" << setw(10)
        << fixed << setprecision(5) << maxValue << endl;
+  cout << setw(25) << right << "Average of Feature 3:" << setw(10)
+       << fixed << setprecision(5) << ( sum / (float)(lineNumber - 1) ) << endl;
 
 
   // return 0 to indicate successful completion
