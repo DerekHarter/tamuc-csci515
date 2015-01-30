@@ -42,13 +42,11 @@ int main()
     exit(1);
   }
 
-  // determine the number of features
-  inputFile >> numFeatures;
-
   // now process all of the lines of data
   lineNumber = 1;
-  while (inputFile.peek() != EOF)
+  while (inputFile >> value1 >> value2 >> value3)
   {
+    cout << lineNumber " " << value1 << " " << value2 << " " << value3;
     lineNumber++;
   }
 
