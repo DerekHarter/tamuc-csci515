@@ -74,10 +74,10 @@ int main()
   cout << endl;
   cout << setw(20) << right << "Number of Trials:" << setw(10) << lineNumber - 1 << endl;
   cout << setw(20) << right << "Minimum of Feature 1:" << setw(10)
-       << fixed << setprecision(5) << minValue;
+       << fixed << setprecision(5) << minValue << endl;
   cout << setw(20) << right << "Maximum of Feature 2:" << setw(10)
-       << fixed << setprecision(5) << maxValue;
-  
+       << fixed << setprecision(5) << maxValue << endl;
+
 
   // return 0 to indicate successful completion
   inputFile.close();
