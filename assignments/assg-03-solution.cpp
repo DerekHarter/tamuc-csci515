@@ -29,6 +29,7 @@ int main()
   string inputFileName = "assg-03-data.dsv";
   ifstream inputFile(inputFileName.c_str());
   string filterClass;
+  string trialClass;
   int trial;
   float x_prev, y_prev, z_prev;  // hold previous values of position
   float x, y, z; // will hold current values of position
@@ -50,9 +51,9 @@ int main()
   cout << "We got header <" << headerLine << ">" << endl;
   
   // now process all of the lines of data
-  //while (inputFile >> value1 >> value2 >> value3)
-  //{
-  //}
+  while (inputFile >> trial >> x >> y >> z >> trialClass)
+  {
+  }
 
 
   // return 0 to indicate successful completion
