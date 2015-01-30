@@ -15,7 +15,7 @@
 - Be able to open a serial text file for reading and writing.
 - Process more complex data items from a file of delimiter separated values.
 - More practice with I/O formatting manipulators.
-- Gain more practice using C control structures for implementation
+- Gain more practice using C control structures for implementing
   algorithms.
 - Implement formula calculations into a typical data processing task
   written in C.
