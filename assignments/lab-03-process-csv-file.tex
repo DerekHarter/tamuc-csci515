@@ -1,4 +1,4 @@
-% Created 2015-01-29 Thu 19:28
+% Created 2015-01-29 Thu 19:38
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -52,30 +52,15 @@ Plain text files containing tables of information are very common,
 minimal representations of data sets needed for processing.  The
 simplest type of formatting of a table of numbers, is to separate the
 columns or features of the table using spaces, tabs or commas. In
-general these are known as delimiter separated values files.  The most
-common is to use commas (known as comma separated values files or CSV
-files).  The C++ IOStream operators make it trivial to process space
-separated and tab separated value files, since it uses whitespace
-(spaces and tabs) by default as the delimiter when breaking apart a
-stream to automatically parse and convert into input variables.
-
-An example of a tab separated file is:
-
-\begin{verbatim}
-Name	Id	Balance	Intrst	Penalty
-Derek	123456	540.33	0.02	2.00
-Mike	892315	884.28	0.015	5.0
-Sarah	184517	1024.38	0.025	2.50
-Jane	428146	125.45	0.01	5.0
-\end{verbatim}
-
-In a space or tab separated file, the values separated by space are
-the features, and each row or line is an individual record.  In the
-previous example, this data might represent a database of bank account
-information, with the customer name, customer Id, their current
-balance, etc. as features.  In this example file, the first row is a
-header row, which is present only to define the names of each of the
-column features in the table.
+general these are known as delimiter separated value files (DSV).  The
+most common is to use commas (known as a comma separated value file or
+CSV files).  The C++ IOStream operators make it trivial to process
+space separated and tab separated value files, since it uses
+whitespace (spaces and tabs) by default as the delimiter when breaking
+apart a stream to automatically parse and convert into input
+variables. In a space or tab separated file, the values separated by
+space are the features, and each row or line is an individual record
+or trial in an experiment.
 
 For this lab you are to read in records from a space separated file, and
 do some processing of the data.  I will give you a space separated file
@@ -106,8 +91,9 @@ floating point numbers should be displayed using scientific notation
 (\verb~scientific~).  See the example output to get details on what
 this should look like.
 \item You will add an index as a new first column of each line, in a field
-of width 3.  See the example output given for the input file above
-to better understand the required formatting you must perform.
+of width 5.
+\item You will add a header to the original data, as shown in the example
+output.
 \item In addition to cleaning up and formatting the data, you will do some
 processing of the data.  You need to determine the minimum value of
 all values seen in column 1, the maximum of the values in column 2
@@ -121,21 +107,22 @@ Here is an example of the correct, cleaned up and summarized data for
 the previously shown input file:
 
 \begin{verbatim}
- 1    1.03925e+00   -4.66664e-02    6.78488e+00
- 2    5.73384e+00   -7.16068e+00   -2.79217e+00
- 3   -4.53090e+00   -1.81200e-01    6.10122e+00
- 4    1.43769e+00    2.79814e+00    4.12021e+00
- 5    1.22328e+00   -1.50120e+00    8.99924e+00
- 6   -1.53216e+00   -5.39589e+00    4.09390e+00
- 7    8.68470e+00    5.44601e+00   -7.70818e+00
- 8   -4.76181e+00    8.36200e+00   -3.89250e-01
- 9    2.29800e+00    4.14866e+00   -7.57000e-01
-10    3.32001e+00    3.95370e+00   -5.83644e+00
+Trial      Feature-1      Feature-2      Feature-3
+    1    1.03925e+00   -4.66664e-02    6.78488e+00
+    2    5.73384e+00   -7.16068e+00   -2.79217e+00
+    3   -4.53090e+00   -1.81200e-01    6.10122e+00
+    4    1.43769e+00    2.79814e+00    4.12021e+00
+    5    1.22328e+00   -1.50120e+00    8.99924e+00
+    6   -1.53216e+00   -5.39589e+00    4.09390e+00
+    7    8.68470e+00    5.44601e+00   -7.70818e+00
+    8   -4.76181e+00    8.36200e+00   -3.89250e-01
+    9    2.29800e+00    4.14866e+00   -7.57000e-01
+   10    3.32001e+00    3.95370e+00   -5.83644e+00
 
-       Number of Trials:        10
-   Minimum of Feature 1:  -4.76181
-   Maximum of Feature 2:   8.36200
-   Average of Feature 3:   1.26164
+        Number of Trials:        10
+    Minimum of Feature 1:  -4.76181
+    Maximum of Feature 2:   8.36200
+    Average of Feature 3:   1.26164
 \end{verbatim}
 
 \section*{Lab Submission}
