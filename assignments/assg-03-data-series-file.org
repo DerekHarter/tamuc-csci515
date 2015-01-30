@@ -50,6 +50,15 @@ Columns 2, 3 and 4 represent x, y and z measured positions of a
 physical component in some experiment.  Column 5 represents a feature
 category, and will be a string.
 
+Your task is to process this file.  We are only interested in experimental
+trials that are of a particular class.  In the above example, the first
+line indicates that we need to process the ~STRANGE~ TRIALS.  *NOTE*: I
+can and will use your code on different input files, that will filter
+on a different class, so you need to read in this first line from the
+file, and only process subsequent experimental trials of that type.
+
+Each trial of the app
+
 * Assignment Submission
 
 An eCollege dropbox has been created for this assignment.  You should
