@@ -58,7 +58,15 @@ int main()
 
     // keep track of minimum, maximum and running sum so we can compute
     // average
-    if (value1 < )
+    if (value1 < minValue)
+    {
+      minValue = value1;
+    }
+    if (value2 > maxValue)
+    {
+      maxValue = value2;
+    }
+    sum += value3;
     lineNumber++;
   }
 
