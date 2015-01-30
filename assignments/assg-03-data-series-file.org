@@ -58,7 +58,11 @@ can and will use your code on different input files, that will filter
 on a different class, so you need to read in this first line from the
 file, and only process subsequent experimental trials of that type.
 
-Each trial of the app
+Each trial of the experiment has recorded the x, y and z position.  We need
+to calculate the distance traveled between successive trials of the
+target filter class, using the standard euclidean distance:
+
+$d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^}
 
 * Assignment Submission
 
