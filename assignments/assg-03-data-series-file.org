@@ -1,0 +1,75 @@
+#+TITLE:     Assg 02: Find Average of a Group of Numbers
+#+AUTHOR:    CSci 515 Spring 2015
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
+#+DESCRIPTION: Assg 02
+#+OPTIONS:   H:4 num:nil toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+#+LATEX_HEADER: \usepackage{minted}
+#+LaTeX_HEADER: \usemintedstyle{default}
+
+* Dates:
+| Due: | Tuesday February 3, by Midnight |
+
+* Objectives
+- Practice writing sentinel-controlled loops.
+- Become familiar with basic if..else decisions, and simple boolean logic.
+- Practice with arithmetic and type conversion in C.
+
+* Description
+Determine the average, and some other properties for an arbitrary
+number of integer values.  The user should be prompted to enter
+numbers from the terminal, and to indicate when they are done entering
+numbers by using a sentinel (use ~-9999~ as your sentinel value).
+
+Your program should report the following values after the user has
+indicated they are finished entering numbers.  The sum of the values,
+the average of the values, the minimum value entered, the maximum
+value entered, and the total number of values the user entered.  The
+output of a session with a user should be formatted to look exactly
+like this:
+
+#+begin_example
+Enter integer values, when done enter -9999.
+Enter next value: 3
+Enter next value: 6
+Enter next value: 13
+Enter next value: -3
+Enter next value: 8
+Enter next value: -2
+Enter next value: -9999
+
+Number of Values Entered: 6
+Sum of values: 25
+Maximum value: 13
+Minimum value: -3
+Average value: 4.16667
+#+end_example
+
+* Assignment Submission
+
+An eCollege dropbox has been created for this assignment.  You should
+upload your version of the out of class assignment by the end of
+Tuesday 2/3 (midnight) to the dropbox named ~Assg 02 Average of Values~.
+Late submissions will not be graded.
+
+* Requirements
+Your programs must conform to the style and formatting guidelines
+given for this course.  The following is a list of the guidelines that
+are required for the assignment to be submitted this week.
+
+- The file header and function header for your main function must be present, and filled out correctly.
+- You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
+- You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
+- You must have a single space before and after each binary operator.
+- You must have a single blank line after the end of your declaration
+  of variables at the top of a function, before the first code
+  statement.
+
+Failure to conform to any of these formatting and programming practice
+guidelines for this assignment will result in a grade of 0 for the
+assignment, and your program being returned with an indication of
+which of these items your program violates.  Failure to follow other
+class/textbook programming guidelines may result in a loss of points,
+especially for those good programming practices given in chapters 1-5
+of our textbook which you should have read by now.
