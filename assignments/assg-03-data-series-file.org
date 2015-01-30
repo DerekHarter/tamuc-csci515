@@ -86,6 +86,13 @@ as required):
 #+begin_example
 #+end_example
 
+The first column is simply the trial identifier of the $x_2, y_2, z_2$
+from the input (e.g.  the second pair of coordinates used in the
+distance calculation), and the second column is the calculated
+distance.  If you input file has $N$ trials of the class being
+filtered for, then your output file will end up with $N-1$ distance
+values being calculated.
+
 * Assignment Submission
 
 An eCollege dropbox has been created for this assignment.  You should
