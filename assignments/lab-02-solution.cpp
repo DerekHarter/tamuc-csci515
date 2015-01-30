@@ -2,15 +2,12 @@
  * @author Derek Harter
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
- * @ide    Gnu C++ / Emacs
- * @date   January 22, 2015
- * @assg   Lab 02 Averages of Numbers
+ * @ide    GCC/G++ Emacs
+ * @date   January 24, 2015
+ * @assg   Assg 02, Calculating PI
  *
- * @description Write a sentenial controlled loop to
- *    prompt user to enter a series of integer numbers.
- *    Perform a series of calculation on the numbers,
- *    including finding their average, min, max, etc.
- *    and display the results.
+ * @description Create a table showing approximate values of PI computed for steps in
+ *    the sequence \pi \approx 4  - 4/3 + 4/5 - 4/7 + 4/9 ... 
  */
 #include <iostream>
 using namespace std;
@@ -27,50 +24,29 @@ using namespace std;
  */
 int main()
 {
-  int value; // holds most recent value entered by user
-  int count; // holds the number of values user has entered
-  int sum;   // keeps track of the running sum of the values
-  int max;   // hold the maximum value seen so far
-  int min;   // hold the minimum value seen so far
-  float average; // calculate the average of the values
+  int N;
+  float pi;;
+  float denominator;
+  float sign;
 
-  // senteniel controlled loop, allow user to enter values untill they
-  // enter -9999 to indicate done
-  value = 0;
-  count = 0;
-  sum = 0;
-  max = -10000000;
-  min = 10000000;
-  cout << "Enter integer values, when done enter -9999." << endl;
-  while (value != -9999)
-  {
-    cout << "Enter next value: ";
-    cin >> value;
-    if (value != -9999)
-    {
-      count++;
-      sum += value;
-
-      if (value > max)
-      {
-	max = value;
-      }
-
-      if (value < min)
-      {
-	min = value;
-      }
-    }
-  }
-
-  // display the results
+  // Ask user for size of table to compute
+  cout << "What size of table should I compute: ";
+  cin >> N;
   cout << endl;
-  cout << "Number of Values Entered: " << count << endl;
-  cout << "Sum of values: " << sum << endl;
-  cout << "Maximum value: " << max << endl;
-  cout << "Minimum value: " << min << endl;
-  average = (float)sum / (float)count;
-  cout << "Average value: " << average << endl;
+
+  // display the table
+  pi = 4.0;
+  denominator = 3.0;
+  sign = -1.0;
+  cout << "N     pi" << endl;
+  cout << "----- -------" << endl;
+  for (int i = 1; i <= N; i++)
+  {
+    cout << i << "     " << pi << endl;
+    pi += sign * (4.0 / denominator);
+    denominator += 2.0;
+    sign *= -1.0;
+  }
 
   // return 0 to indicate successful completion
   return 0;
