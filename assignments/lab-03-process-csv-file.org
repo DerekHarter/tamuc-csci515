@@ -141,3 +141,9 @@ which you should have read by now.
   formatted. 10 points.
 - Your program must produce the correct summary information. 10 or more points.
 - Your program must format the summary information as required.  10 or more points.
+
+** Program Style
+
+- Your program must conform to all required style/formatting
+  guidelines for this week.  Each guideline that is not being followed
+  will remove 33 points from total.
