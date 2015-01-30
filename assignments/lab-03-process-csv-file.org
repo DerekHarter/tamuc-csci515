@@ -62,6 +62,8 @@ You need to perform the following tasks:
   this should look like.
 - You will add an index as a new first column of each line, in a field
   of width 5.  
+- You will add a header to the original data, as shown in the example
+  output.
 - In addition to cleaning up and formatting the data, you will do some
   processing of the data.  You need to determine the minimum value of
   all values seen in column 1, the maximum of the values in column 2
@@ -74,16 +76,17 @@ Here is an example of the correct, cleaned up and summarized data for
 the previously shown input file:
 
 #+begin_example
-  1    1.03925e+00   -4.66664e-02    6.78488e+00
-  2    5.73384e+00   -7.16068e+00   -2.79217e+00
-  3   -4.53090e+00   -1.81200e-01    6.10122e+00
-  4    1.43769e+00    2.79814e+00    4.12021e+00
-  5    1.22328e+00   -1.50120e+00    8.99924e+00
-  6   -1.53216e+00   -5.39589e+00    4.09390e+00
-  7    8.68470e+00    5.44601e+00   -7.70818e+00
-  8   -4.76181e+00    8.36200e+00   -3.89250e-01
-  9    2.29800e+00    4.14866e+00   -7.57000e-01
- 10    3.32001e+00    3.95370e+00   -5.83644e+00
+Trial      Feature-1      Feature-2      Feature-3
+    1    1.03925e+00   -4.66664e-02    6.78488e+00
+    2    5.73384e+00   -7.16068e+00   -2.79217e+00
+    3   -4.53090e+00   -1.81200e-01    6.10122e+00
+    4    1.43769e+00    2.79814e+00    4.12021e+00
+    5    1.22328e+00   -1.50120e+00    8.99924e+00
+    6   -1.53216e+00   -5.39589e+00    4.09390e+00
+    7    8.68470e+00    5.44601e+00   -7.70818e+00
+    8   -4.76181e+00    8.36200e+00   -3.89250e-01
+    9    2.29800e+00    4.14866e+00   -7.57000e-01
+   10    3.32001e+00    3.95370e+00   -5.83644e+00
 
         Number of Trials:        10
     Minimum of Feature 1:  -4.76181
