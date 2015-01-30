@@ -25,7 +25,8 @@ In this assignment, we will be writing a filter, that will filter a file of
 delimiter separated values of data gathered from an experiment, perform
 some simple data analysis on the data, and save the results to a new file.
 
-The input file you will be given has the following format:
+The input file you will be given has the following format (truncated,
+the real files will have many more items than 7 to process):
 
 #+begin_example
 STRANGE
