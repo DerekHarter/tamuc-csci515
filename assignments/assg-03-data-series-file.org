@@ -119,7 +119,7 @@ In summary you need to perform the following tasks for this assignment:
 
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the out of class assignment by the end of
-Tuesday 2/10 (midnight) to the dropbox named ~Assg 03 Scientific Data File~.
+Tuesday 2/10 (midnight) to the dropbox named ~Assg 03 Time Series File~.
 Late submissions will not be graded.
 
 * Requirements and Grading Rubrics
