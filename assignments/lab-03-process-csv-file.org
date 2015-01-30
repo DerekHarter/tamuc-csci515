@@ -61,7 +61,7 @@ You need to perform the following tasks:
   (~scientific~).  See the example output to get details on what
   this should look like.
 - You will add an index as a new first column of each line, in a field
-  of width 5.  
+  of width 5.
 - You will add a header to the original data, as shown in the example
   output.
 - In addition to cleaning up and formatting the data, you will do some
@@ -139,7 +139,7 @@ this week.
   of variables at the top of a function, before the first code
   statement.
 - You must have a single blank space after , and ; operators used as a
-  seperator in lists of variables, parameters or other control
+  separator in lists of variables, parameters or other control
   structures.
 
 Failure to conform to any of these formatting and programming practice
