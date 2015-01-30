@@ -69,12 +69,14 @@ You need to perform the following tasks:
 
 - Open the file and read it one line at a time.
 - Output the original contents of the file, but with cleaned up
-  formatting.  You will output each column in a field of width 10
-  characters.  All numbers will be printed with exactly 5 decimal
-  point digits of precision.  You will add an index as a new first
-  index of each line, in a field of width 3.  See the example output
-  given for the input file above to better understand the required
-  formatting you must perform.
+  formatting.  You will output each column in a field of width 15
+  characters (~setw()~).  All numbers will be printed with exactly 5
+  decimal point digits of precision (~setprecision()~).  All of the
+  floating point numbers should be displayed using scientific notation
+  (~scientific~).
+- You will add an index as a new first index of each line, in a field
+  of width 3.  See the example output given for the input file above
+  to better understand the required formatting you must perform.
 - In addition to cleaning up and formatting the data, you will do some
   processing.  You need to determine the minimum value of all values
   seen in column 1, the maximum of the values in column 2 and the
