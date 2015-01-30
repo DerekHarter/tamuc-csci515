@@ -39,9 +39,11 @@ int main()
 
   // first read the filter information, and skip over the header
   inputFile >> filterClass;
+  cout << "We are filtering on class: " << filterClass << endl;
   string headerLine;
   inputFile.getline(headerLine);  // skips the next line, which should have the header
-
+  cout << "We got header <" << headerLine << ">" << endl;
+  
   // now process all of the lines of data
   while (inputFile >> value1 >> value2 >> value3)
   {
