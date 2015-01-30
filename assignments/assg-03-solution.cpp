@@ -67,7 +67,7 @@ int main()
       else // we need to calculate distance between current and prev, and output results
       {
 	distance = sqrt( pow(x - x_prev, 2.0) + pow(y - y_prev, 2.0) + pow(z - z_prev, 2.0) ); 
-	cout << trial << setw(10) << setprecision(5) << distance << endl;
+	cout << setw(5) << trial << setw(10) << setprecision(5) << distance << endl;
       }
 
       // keep track of these values for next distance calculation
