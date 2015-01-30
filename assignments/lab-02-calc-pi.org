@@ -66,6 +66,16 @@ time in order to receive credit.
 
 ** Program Execution, Output and Functional Requirements
 
+- Your program must compile, run and produce some sort of output to be
+  graded.  0 if not satisfied.
+- Your program must correctly respond to the user input when displaying
+  the number of items in the series.  15 or more points.
+- Your program must correctly calculate the values in the series. 30 or 
+  more points.
+- Your program must correctly format the output as shown in the lab
+  description.  20 points
+- 
+
 ** Program Style
 
 Your programs must conform to the style and formatting guidelines given for this course.
