@@ -62,7 +62,7 @@ of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
 
-* Requirements and Grading Ruberics
+* Requirements and Grading Rubrics
 
 ** Program Execution, Output and Functional Requirements
 
