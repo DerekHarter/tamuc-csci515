@@ -46,7 +46,7 @@ int main()
   // now process all of the lines of data
   lineNumber = 1;
   minValue = 1000.0;
-  maxValue = -1000.0
+  maxValue = -1000.0;
   while (inputFile >> value1 >> value2 >> value3)
   {
     // reformat the input nicely
