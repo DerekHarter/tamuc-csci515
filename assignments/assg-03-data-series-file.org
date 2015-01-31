@@ -128,18 +128,18 @@ Late submissions will not be graded.
 
 - Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-- Your program must successfully open the file from the current
-  working directory. 10 or more points.
-- Your program must successfully open the output file for writing, and
-  write some contents to it.  10 or more points.
-- Your program must successfully read the lines from the file in the
-  correct order and attempt to process them. 20 points.
-- Your program must use I/O manipulators to achieve the correct output
-  format to the output file.  10 or more points.
-- Your program must correctly filter the input, and only calculate and
-  output results for the trials of the correct class.  25 or more points
-- Your program must produce the correct distance values between successive
-  trials. 25 or more points.
+- 10+ pts. Your program must successfully open the file from the current
+  working directory.
+- 10+ pts. Your program must successfully open the output file for writing, and
+  write some contents to it.
+- 20 pts. Your program must successfully read the lines from the file in the
+  correct order and attempt to process them.
+- 10+ pts. Your program must use I/O manipulators to achieve the correct output
+  format to the output file.
+- 25+ pts. Your program must correctly filter the input, and only calculate and
+  output results for the trials of the correct class.
+- 25+ pts. Your program must produce the correct distance values between successive
+  trials.
 
 
 
