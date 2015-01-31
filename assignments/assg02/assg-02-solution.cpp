@@ -2,7 +2,7 @@
  * @author Derek Harter
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
- * @ide    Gnu C++ / Emacs
+ * @ide    Gnu C/C++, Emacs
  * @date   January 22, 2015
  * @assg   Lab 02 Averages of Numbers
  *
