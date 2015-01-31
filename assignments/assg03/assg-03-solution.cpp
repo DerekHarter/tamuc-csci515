@@ -1,9 +1,9 @@
 /**
- * @author Joe Programmer
+ * @author Derek Harter
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
- * @ide    Visual Studio Express 2010
- * @date   February 1, 2015
+ * @ide    Gnu C/C++, Emacs 24
+ * @date   January 30, 2015
  * @assg   Assg 03
  *
  * @description An example solution for the Assg 03.  
