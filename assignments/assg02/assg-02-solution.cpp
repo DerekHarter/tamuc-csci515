@@ -34,12 +34,12 @@ int main()
   int min;   // hold the minimum value seen so far
   float average; // calculate the average of the values
 
-  // senteniel controlled loop, allow user to enter values untill they
+  // senteniel controlled loop, allow user to enter values until they
   // enter -9999 to indicate done
   value = 0;
   count = 0;
   sum = 0;
-  max = -10000000;
+  max = -10000000; // BUG: these won't work if user never enters values above/below
   min = 10000000;
   cout << "Enter integer values, when done enter -9999." << endl;
   while (value != -9999)
