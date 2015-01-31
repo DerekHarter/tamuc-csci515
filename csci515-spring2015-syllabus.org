@@ -48,7 +48,6 @@ in the field of computational sciences.
 /C++ How to Program (7th Edition)/, by Paul J. Deitel & Harvey M. Deitel, ISBN-13: 978 0136117261
 
 
-
 * Evaluation (Tentative)
 Your grade for the course will be based on the following (approximate) percentages:
 
@@ -88,7 +87,6 @@ Letter grades will be assigned according to the following scale:
 | 60 - 69           | D            |
 | Below 60          | F            |
 
-
 * Student's with Disabilities
 
 The Americans with Disabilities Act (ADA) is a federal
@@ -106,7 +104,6 @@ accommodation, please contact:
 | Phone (903) 886-5150 or (903) 886-5835             |
 | Fax (903) 468-8148                                 |
 | StudentDisabilityServices@tamuc.edu                |
-
 
 * Academic Ethics
 
@@ -130,7 +127,6 @@ this class, you will receive a 0 grade and a warning on the first
 instance.  A subsequent instance will result in receiving an F grade
 for the course, and possible disciplinary proceedings.
 
-
 * Attendance Policy
 
 Attendance is mandatory. Students are expected to be present at all
@@ -138,7 +134,6 @@ class lectures and are responsible for all material covered in class
 and assigned in readings.  Likewise lab sessions are mandatory.  Lab
 sessions may not be made up, and absences will affect your final
 course grade directly for the missed assignments.
-
 
 * Course Requirements and Deadlines
 Credit will be given for ONLY those exams, programs, and/or projects
@@ -161,7 +156,6 @@ completing the course.
 Quizzes: Unannounced pop-quizzes may be given in class and/or online
 through eCollege to help ensure students stay up with assigned
 material.
-
 
 
 * Course Schedule (Preliminary)
