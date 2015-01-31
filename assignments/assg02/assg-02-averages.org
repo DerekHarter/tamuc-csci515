@@ -61,13 +61,13 @@ Late submissions will not be graded.
   graded.  0 if not satisfied.
 - Your program must use only standard C/C++ libraries, headers
   objects and functions.
-- 25++ pts. Your program must implement a sentinel controlled loop.
+- 30+ pts. Your program must implement a sentinel controlled loop.
   The loop must successfully exit on receiving input of the sentinel
   value -9999.
-- 10+ pts. Your program must use integer values for the inputs and
+- 20+ pts. Your program must use integer values for the inputs and
   max/min, but must calculate the average correctly using a floating
   point type.
-- 25+ pts. Your program must correctly keep track of and calculate
+- 30+ pts. Your program must correctly keep track of and calculate
   the minimum, maximum and other summary statistics required.
 - 20+ pts. Your program must correctly output the summary statistics,
   formatted as shown in the assignment description.
