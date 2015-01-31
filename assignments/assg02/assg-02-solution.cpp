@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   January 22, 2015
- * @assg   Lab 02 Averages of Numbers
+ * @assg   Assg 02 Averages of Numbers
  *
  * @description Write a sentenial controlled loop to
  *    prompt user to enter a series of integer numbers.
