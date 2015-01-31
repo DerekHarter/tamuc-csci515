@@ -109,19 +109,19 @@ time in order to receive credit.
 
 ** Program Execution, Output and Functional Requirements
 
-- Your program must compile, run and produce some sort of output to be
+1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-- Your program must successfully open the file from the current
+1. Your program must successfully open the file from the current
   working directory. 10 or more points.
-- Your program must successfully read the lines from the file in the
+1. Your program must successfully read the lines from the file in the
   correct order and attempt to process them. 20 points.
-- Your program must use I/O manipulators to achieve the correct output
+1. Your program must use I/O manipulators to achieve the correct output
   format of the cleaned up original data.  30 or more points.
-- Your program must include a header for the original data, properly
+1. Your program must include a header for the original data, properly
   formatted. 10 points.
-- Your program must produce the correct summary information values. 30
+1. Your program must produce the correct summary information values. 30
   or more points.
-- Your program must format the summary information as required, again
+1. Your program must format the summary information as required, again
   using I/O formatting manipulators.  20 or more points.
 
 
@@ -131,22 +131,22 @@ Your programs must conform to the style and formatting guidelines given for this
 The following is a list of the guidelines that are required for the lab to be submitted
 this week.
 
-- The file header for the file with your name and program information
+1. The file header for the file with your name and program information
   and the function header for your main function must be present, and
   filled out correctly.
-- You must indent your code correctly and have no embedded tabs in
+1. You must indent your code correctly and have no embedded tabs in
   your source code. (Don't forget about the Visual Studio Format
   Selection command).
-- You must not have any statements that are hacks in order to keep
+1. You must not have any statements that are hacks in order to keep
   your terminal from closing when your program exits.
-- You must have a single space before and after each binary operator.
-- You must have a single blank line after the end of your declaration
+1. You must have a single space before and after each binary operator.
+1. You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
   statement.
-- You must have a single blank space after , and ~;~ operators used as a
+1. You must have a single blank space after , and ~;~ operators used as a
   separator in lists of variables, parameters or other control
   structures.
-- You must have opening ~{~ and closing ~}~ for control statement blocks
+1. You must have opening ~{~ and closing ~}~ for control statement blocks
   on their own line, indented correctly for the level of the control
   statement block.
 
