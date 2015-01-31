@@ -53,14 +53,34 @@ upload your version of the out of class assignment by the end of
 Tuesday 2/3 (midnight) to the dropbox named ~Assg 02 Average of Values~.
 Late submissions will not be graded.
 
-* Requirements
+* Requirements and Grading Rubrics
+
+** Program Execution, Output and Functional Requirements
+
+- Your program must compile, run and produce some sort of output to be
+  graded.  0 if not satisfied.
+- Your program must use only standard C/C++ libraries, headers
+  objects and functions.
+- 15+ pts. Your program must implement a sentinel controlled loop.
+  The loop must successfully exit on receiving input of the sentinel
+  value -9999.
+- 25+ pts. Your program must correctly keep track of and calculate
+  the minimum, maximum and other summary statistics required.
+- 20+ pts. Your program must correctly output the summary statistics,
+  formatted as shown in the assignment description.
+
+** Program Style
 Your programs must conform to the style and formatting guidelines
 given for this course.  The following is a list of the guidelines that
 are required for the assignment to be submitted this week.
 
-- The file header and function header for your main function must be present, and filled out correctly.
-- You must indent your code correctly and have no embedded tabs in your source code. (Don't forget about the Visual Studio Format Selection command).
-- You must not have any statements that are hacks in order to keep your terminal from closing when your program exits.
+- The file header and function header for your main function must be
+  present, and filled out correctly.
+- You must indent your code correctly and have no embedded tabs in
+  your source code. (Don't forget about the Visual Studio Format
+  Selection command).
+- You must not have any statements that are hacks in order to keep
+  your terminal from closing when your program exits.
 - You must have a single space before and after each binary operator.
 - You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
