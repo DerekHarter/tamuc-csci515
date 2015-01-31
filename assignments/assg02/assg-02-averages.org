@@ -64,6 +64,9 @@ Late submissions will not be graded.
 - 25++ pts. Your program must implement a sentinel controlled loop.
   The loop must successfully exit on receiving input of the sentinel
   value -9999.
+- 10+ pts. Your program must use integer values for the inputs and
+  max/min, but must calculate the average correctly using a floating
+  point type.
 - 25+ pts. Your program must correctly keep track of and calculate
   the minimum, maximum and other summary statistics required.
 - 20+ pts. Your program must correctly output the summary statistics,
