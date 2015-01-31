@@ -9,8 +9,9 @@
  * @description An example solution for the Lab 03.  We rely on the IOStream tokenizing
  *     behavior on whitespace in order to process our lines.  Our while loop reads in
  *     all of the values for a single line of input, and works because the logical
- *     result of performing such input will be true if it succeeded, and fals if it doesn't
- *     (once we read past end of file).  
+ *     result of performing such input will be true if it succeeded, and false if it doesn't
+ *     (once we read past end of file).  We (re)format our input nicely to output stream,
+ *     using standard IOStream manipulators to do the formatting.
  */
 #include <iostream>
 #include <fstream>
