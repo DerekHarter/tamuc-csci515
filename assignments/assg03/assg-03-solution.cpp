@@ -6,7 +6,14 @@
  * @date   January 30, 2015
  * @assg   Assg 03
  *
- * @description An example solution for the Assg 03.  
+ * @description An example solution for the Assg 03.  We use 2 sets of 3D coordinates,
+ *     x,y,z and x_prev, y_prev, z_prev.  The values for current trial are always read
+ *     into x,y,z.  Whenever we successfully calculate a distance, we copy the
+ *     current values into x_prev, y_prev, z_prev, so that they will be available for
+ *     the next occurrence of the trial class we are filtering on.  We use a specific flag
+ *     variable, firstTrial, to skip over calculating distance for the first trial we
+ *     encounter, since at that point we have no previous position with which to calculate
+ *     a distance against.
  */
 #include <iostream>
 #include <fstream>
