@@ -61,7 +61,7 @@ Late submissions will not be graded.
   graded.  0 if not satisfied.
 - Your program must use only standard C/C++ libraries, headers
   objects and functions.
-- 15+ pts. Your program must implement a sentinel controlled loop.
+- 25++ pts. Your program must implement a sentinel controlled loop.
   The loop must successfully exit on receiving input of the sentinel
   value -9999.
 - 25+ pts. Your program must correctly keep track of and calculate
