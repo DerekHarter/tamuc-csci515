@@ -95,7 +95,6 @@ Trial      Feature-1      Feature-2      Feature-3
     Average of Feature 3:   1.26164
 #+end_example
 
-
 * Lab Submission
 
 An eCollege dropbox has been created for this lab.  You should
