@@ -8,7 +8,7 @@
  *
  * @description Write a sentenial controlled loop to
  *    prompt user to enter a series of integer numbers.
- *    Perform a series of calculation on the numbers,
+ *    Perform a series of calculations on the numbers,
  *    including finding their average, min, max, etc.
  *    and display the results.
  */
