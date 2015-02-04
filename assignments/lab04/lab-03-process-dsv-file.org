@@ -1,4 +1,4 @@
-#+TITLE:     Lab 03: Processing Delimiter Separated Files
+#+TITLE:     Lab 04: Processing Delimiter Separated Files
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
@@ -99,7 +99,7 @@ Trial      Feature-1      Feature-2      Feature-3
 
 An eCollege dropbox has been created for this lab.  You should
 upload your version of the lab by the end of lab time to the eCollege
-dropbox named ~Lab 03 Process DSV File~.  Work submitted by the end
+dropbox named ~Lab 04 Process DSV File~.  Work submitted by the end
 of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
