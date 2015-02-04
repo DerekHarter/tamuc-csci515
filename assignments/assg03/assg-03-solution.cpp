@@ -99,7 +99,7 @@ int main()
     }
   }
 
-  // return 0 to indicate successful completion
+  // clean up and return 0 to indicate successful completion
   inputFile.close();
   outputFile.close();
   return 0;
