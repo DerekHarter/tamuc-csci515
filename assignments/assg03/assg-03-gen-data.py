@@ -3,7 +3,7 @@
 """
 import numpy as np
 import sys
-NUM_LINES = 100
+NUM_LINES = 500
 CLASSES = ['UP', 'DOWN', 'STRANGE', 'CHARM']
 CHOSEN_CLASS = 'STRANGE'
 
