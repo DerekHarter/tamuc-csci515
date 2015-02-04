@@ -45,6 +45,7 @@ int main()
   // variables for file processing
   string filterClass;
   string trialClass;
+  string headerLine;
   int trial;
   float x_prev, y_prev, z_prev;  // hold previous values of position
   float x, y, z; // will hold current values of position
@@ -67,7 +68,6 @@ int main()
 
   // first read the filter information, and skip over the header
   inputFile >> filterClass;
-  string headerLine;
   getline(inputFile, headerLine);  // skips past newline?
   getline(inputFile, headerLine);  // skips the next line, which has header
 
