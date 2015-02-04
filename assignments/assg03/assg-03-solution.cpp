@@ -67,7 +67,6 @@ int main()
 
   // first read the filter information, and skip over the header
   inputFile >> filterClass;
-  cout << "We are filtering on class: " << filterClass << endl;
   string headerLine;
   getline(inputFile, headerLine);  // skips past newline?
   getline(inputFile, headerLine);  // skips the next line, which has header
