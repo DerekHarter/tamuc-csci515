@@ -60,7 +60,8 @@ int main()
   }
   if (!outputFile)
   {
-    cout << "ERROR: could not create output file named: " << outputFileName << endl;
+    cout << "ERROR: could not create output file named: "
+	 << outputFileName << endl;
     exit(1);
   }
 
