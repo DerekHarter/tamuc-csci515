@@ -83,7 +83,7 @@ int main()
       {
 	firstTrial = false;
       }
-      else // we need to calculate distance between current and prev, and output results
+      else // we need to calc distance between current and prev, output results
       {
 	distance = sqrt( pow(x - x_prev, 2.0) + pow(y - y_prev, 2.0)
 			 + pow(z - z_prev, 2.0) ); 
