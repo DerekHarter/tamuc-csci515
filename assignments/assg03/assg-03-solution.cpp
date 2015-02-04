@@ -70,9 +70,7 @@ int main()
   cout << "We are filtering on class: " << filterClass << endl;
   string headerLine;
   getline(inputFile, headerLine);  // skips past newline?
-  getline(inputFile, headerLine);  // skips the next line, which
-				   // should have the header
-  cout << "We got header <" << headerLine << ">" << endl;
+  getline(inputFile, headerLine);  // skips the next line, which has header
 
   // now process all of the lines of data
   // current values of position are put into x, y and z
