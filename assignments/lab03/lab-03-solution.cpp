@@ -93,8 +93,7 @@ int main()
   cout << setw(25) << right << "Average of Feature 3:" << setw(10)
        << fixed << setprecision(5) << ( sum / (float)(lineNumber - 1) ) << endl;
 
-
-  // return 0 to indicate successful completion
+  // clean up and return 0 to indicate successful completion
   inputFile.close();
   return 0;
 }
