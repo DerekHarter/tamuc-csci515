@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday February 11, by 4 pm (lab end time) |
+| Due: | In Lab, Wednesday February 11, by 4:10 pm (lab end time) |
 
 * Objectives
 - Be able to open a serial text file for reading.
