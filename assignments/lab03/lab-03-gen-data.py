@@ -3,7 +3,7 @@
 """
 import numpy as np
 import sys
-NUM_LINES = 10
+NUM_LINES = 50
 NUM_FEATURES = 3
 
 #print "%d" % NUM_FEATURES
