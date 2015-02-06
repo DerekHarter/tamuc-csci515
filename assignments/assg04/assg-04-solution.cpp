@@ -65,7 +65,7 @@ bool isPerfectNumber(int number)
  *
  * @returns void Output is displayed on standard output.
  */
-void findPerfectNumbers(int n)
+void findPrimes(int beginRange, int endRange)
 {
   int i;
 
