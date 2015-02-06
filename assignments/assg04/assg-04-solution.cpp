@@ -29,16 +29,20 @@ using namespace std;
  */
 bool isPrimeNumber(int number)
 {
-  int i;
-  int sum = 0;
+  bool result;
   
-  // loop through all values from 1 to number-1 to find divisors
-  for (i = 1; i <= number - 1; i++)
+  // loop through all values from 2 to number/2 to find divisor
+  // we start with assumption that number is prime, and if we
+  // find a divisor of the number, we change our mind and determine
+  // it is false
+  result = true;
+  for (int divisor = 2; divisor <= number / 2; divisor++)
   {
-    // whenever we find a divisor, add it to the running sum
-    if (number % i == 0)
+    // if we find a divisor, it must not be prime
+    if (number % divisor == 0)
     {
-      sum += i;
+      result = false;
+      break;
     }
   }
 
