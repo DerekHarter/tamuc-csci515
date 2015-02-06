@@ -55,13 +55,13 @@ bool isPerfectNumber(int number)
 }
 
 
-/** find perfect numbers
- * Find all perfect numbers in the range from 1 to n.  n is passed in as a parameter
- * determining how far we should search.  We display the results on standard ouput
- * of the perfect numbers we find.
+/** find primes in a range
+ * Find all prime numbers within a range of numbers.  Given the range to search
+ * as input, we test all numbers in that range (using isPerfectPrime) and display
+ * any numbers we find to be prime as our result.
  *
- * @param int n The maximum number we are to search up to, we will search through
- *    all values from 1 to n
+ * @param int beginRange The beginning of the range (inclusive) we will search
+ * @param int endRange The end of the range (inclusive) we will search
  *
  * @returns void Output is displayed on standard output.
  */
