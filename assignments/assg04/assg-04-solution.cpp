@@ -46,16 +46,9 @@ bool isPrimeNumber(int number)
     }
   }
 
-  // if all the divisors summed up to the original number
-  // then it is a perfect number
-  if (sum == number)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
+  // We calculated result as a bool, so we can simply return the result
+  // we found
+  return result;
 }
 
 
