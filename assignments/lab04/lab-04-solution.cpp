@@ -29,8 +29,18 @@ using namespace std;
  *
  * @returns void Output is displayed on standard output.
  */
-int main()
+void findPerfectNumbers(int n)
 {
+  int i;
+
+  // loop through the range we are to search over, looking for perfect numbers
+  for (i=1; i<= n; i++)
+  {
+    if (isPerfectNumber(i))
+    {
+      cout << i " is a perfect number" << endl;
+    }
+  }
 }
 
 
