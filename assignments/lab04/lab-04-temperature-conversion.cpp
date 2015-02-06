@@ -19,28 +19,16 @@
 using namespace std;
 
 
-/** find perfect numbers
- * Find all perfect numbers in the range from 1 to n.  n is passed in as a parameter
- * determining how far we should search.  We display the results on standard ouput
- * of the perfect numbers we find.
+/** convert Fahrenheit to Celcius
+ * Convert a temperature in degrees Fahrenheit to the Celcius scale.
  *
- * @param int n The maximum number we are to search up to, we will search through
- *    all values from 1 to n
+ * @param float degreesFahrenheit The temperature, measured in degrees F
  *
- * @returns void Output is displayed on standard output.
+ * @returns float The temperature converted to degress Celcius
  */
-void findPerfectNumbers(int n)
+float findPerfectNumbers(float degreesFahrenheit)
 {
-  int i;
-
-  // loop through the range we are to search over, looking for perfect numbers
-  for (i = 1; i <= n; i++)
-  {
-    if (isPerfectNumber(i))
-    {
-      cout << i << " is a perfect number" << endl;
-    }
-  }
+  return (degreesFahrenheit - 32) * 5.0/9.0;
 }
 
 
