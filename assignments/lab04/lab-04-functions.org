@@ -37,6 +37,33 @@ task, we will break down the big problem into 2 sub-problems:
    some particular number is a perfect number or not.
 2. Write a function, called ~findPerfectNumbers()~
 
+Your ~isPerfectNumber()~ function should do the following.  This function
+takes a single integer parameter as input, for example the value 6.  The
+function will return a single ~bool~ value as its result.  The function
+should return ~true~ if the number passed into it is a perfect number,
+and ~false~ if it is not.  Recall that you can determine if a number
+is evenly divisible by another number by using the `%` modulus
+operator.  The general idea of the algorithm for this function is to
+test every number from 1 to the number passed in (but not including
+it) and see if it is a divisor of the number.  You should sum
+up each divisor you find.  If the sum of the divisors is equal to
+the original number, you should return ~true~ since you have found
+a perfect number.  Otherwise you should return ~false~.
+
+The second function you should write will use your first function to
+test many numbers to see if they are perfect.  Your second function
+should be called ~findPerfectNumbers()~.  This function will again
+take a single parameter as input.  This function does not return a
+result, so it should be a ~void~ function.  The function should test
+all of the integers from 1 up to the number passed in to determine if
+they are perfect numbers or not.  This function will display its
+results on standard output.  You should prompt the user initially for
+the number of values they want to test.  The output of your function
+should look exactly like the following example, if the user
+asks to find the perfect numbers up to 20:
+
+#+begin_example
+#+end_example
 
 * Lab Submission
 
