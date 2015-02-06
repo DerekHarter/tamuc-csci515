@@ -65,10 +65,6 @@ in your ~main()~ function.  The output from running your program
 with the described functions should look exactly like this:
 
 #+begin_example
-This program finds all of the perfect numbers in the range from 1 to N.
-Up to what value of N should I search for perfect numbers: 100
-6 is a perfect number
-28 is a perfect number
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the ~main()~
