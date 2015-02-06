@@ -64,14 +64,14 @@ int main()
   // get a Fahrenheit temperature and convert it
   cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celsius scale: ";
   cin >> degreesFahrenheit;
-  cout << setprecision(2) << degreesFahrenheit << " degrees Fahrenheit is equal to "
+  cout << degreesFahrenheit << " degrees Fahrenheit is equal to "
        << fahrenheitToCelsius(degreesFahrenheit) << " degress Celsius" << endl;
   cout << endl;
 
   // get a temperature in Celsius scale and convert it
   cout << "Enter a value in degrees Celsius, and I will convert it to the Fahrenheit scale: ";
   cin >> degreesCelsius;
-  cout << setprecision(2) << degreesCelsius << " degrees Celsius is equal to "
+  cout << degreesCelsius << " degrees Celsius is equal to "
        << celsiusToFahrenheit(degreesCelsius) << " degress Fahrenheit" << endl;
 
   // clean up and return 0 to indicate successful completion
