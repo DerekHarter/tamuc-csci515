@@ -27,7 +27,7 @@ using namespace std;
  * @param int n The maximum number we are to search up to, we will search through
  *    all values from 1 to n
  *
- * @returns void
+ * @returns void Output is displayed on standard output.
  */
 int main()
 {
