@@ -1,4 +1,4 @@
-#+TITLE:     Lab 04: Perfect Numbers
+#+TITLE:     Assg 04: Perfect Numbers
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday February 11, by 4:10 pm (lab end time) |
+| Due: | Tuesday February 17, by Midnight |
 
 * Objectives
 - Write functions in C that take 1 or more parameters and return a result.
