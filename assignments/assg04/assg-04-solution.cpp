@@ -93,16 +93,18 @@ void findPerfectNumbers(int n)
  */
 int main()
 {
-  int n;
+  int beginRange, endRange;
 
   // ask user for input
-  cout << "This program finds all of the perfect numbers in the range from 1 to N." << endl;
-  cout << "Up to what value of N should I search for perfect numbers: ";
-  cin >> n;
+  cout << "This program finds all of the prime numbers within a range from M to N." << endl;
+  cout << "At what value should we begin searching: ";
+  cin >> beginRange;
+  cout << "At what value should we end searching: ";
+  cin >> endRange;
 
-  // search for perfect numbers
-  findPerfectNumbers(n);
-  
+  // search for primes
+  findPrimes(beginRange, endRange);
+
   // clean up and return 0 to indicate successful completion
   return 0;
 }
