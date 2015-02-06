@@ -1,4 +1,4 @@
-#+TITLE:     Lab 04: Processing Delimiter Separated Files
+#+TITLE:     Lab 04: Perfect Numbers
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
@@ -12,88 +12,31 @@
 | Due: | In Lab, Wednesday February 11, by 4:10 pm (lab end time) |
 
 * Objectives
-- Be able to open a serial text file for reading.
-- Learn about and process simple text files of delimiter separated values.
-- Use I/O formatting manipulators, for writing formatted data output.
-- Use loops to read and process data files.
-- Practice using control structures for looping and conditional
+- Write functions in C that take 1 or more parameters and return a result.
+- Learn about breaking up a larger problem into smaller sub-parts.
+- More practice using control structures for looping and conditional
   execution in C.
+- Practice using the modulus operator as a test for various conditions.
 
 * Description
-Plain text files containing tables of information are very common,
-minimal representations of data sets needed for processing.  The
-simplest type of formatting of a table of values, is to separate the
-columns or features of the table using spaces, tabs or commas. In
-general these are known as delimiter separated value files (DSV).  The
-most common is to use commas (known as a comma separated value file or
-CSV files).  The C++ IOStream operators make it trivial to process
-space separated and tab separated value files, since it uses
-whitespace (spaces and tabs) by default as the delimiter when breaking
-apart a stream to automatically parse and convert into input
-variables. In a space or tab separated file, the values separated by
-space are the features, and each row or line is an individual record
-or trial in an experiment.
+An integer is said to be a *perfect number* if the sum of its
+divisors, including 1 (but not the number itself), is equal to
+the number.  For example, the divisors of 6 are 1, 2 and 3 (not
+including 6 itself).  A divisor of a number is a number that
+evenly divides the original number (leaving no remainder).
+6 is a perfect number, because the sum of its divisors is
+equal to the original number, e.g.:
 
-For this lab you are to read in records from a space separated file, and
-do some processing of the data.  I will give you a space separated file
-to use.  The file you are to open and process looks like this:
+$6 = 1 + 2 + 3$
 
-#+begin_example
- 1.03925	-0.0466664	 6.78488	
- 5.733837	-7.16068	 -2.792169	
--4.5309	-0.1812	6.10121759	
-  1.437688	2.798135755	  4.12021	
-1.22328	 -1.5012	  8.99924	
--1.53216	 -5.395889	  4.0939	
-  8.6847	  5.44601	 -7.70818	
--4.76181	8.362	 -0.389249517	
- 2.298	4.148659	 -0.757	
-  3.3200104	  3.953700223	-5.8364352	
-#+end_example
+Your overall task is to write a function, called ~findPerfectNumbers()~ that
+will find all of the perfect numbers (up to some maximum).  To solve this
+task, we will break down the big problem into 2 sub-problems:
 
-You need to perform the following tasks:
+1. Write a function, called ~isPerfectNumber()~ that determines whether
+   some particular number is a perfect number or not.
+2. Write a function, called ~findPerfectNumbers()~
 
-- Open the file and process it one line at a time.
-- Output the original contents of the file, but with cleaned up
-  formatting.  You will output each column in a field of width 15
-  characters (~setw()~).  All numbers will be printed with exactly 5
-  decimal point digits of precision (~setprecision()~).  All of the
-  floating point numbers should be displayed using scientific notation
-  (~scientific~).  See the example output to get details on what
-  this should look like.
-- You will add an index as a new first column of each line, in a field
-  of width 5.
-- You will add a header to the original data, as shown in the example
-  output.
-- In addition to cleaning up and formatting the data, you will do some
-  processing of the data.  You need to determine the minimum value of
-  all values seen in column 1, the maximum of the values in column 2
-  and the average of the values in column 3.  You will report these
-  values after displaying the cleaned contents of the file, with some
-  others.  Again see the example output to determine exactly which
-  summary information you must produce and in what format.
-
-Here is an example of the correct, cleaned up and summarized data for
-the previously shown input file:
-
-#+begin_example
-Trial      Feature-1      Feature-2      Feature-3
-    1    1.03925e+00   -4.66664e-02    6.78488e+00
-    2    5.73384e+00   -7.16068e+00   -2.79217e+00
-    3   -4.53090e+00   -1.81200e-01    6.10122e+00
-    4    1.43769e+00    2.79814e+00    4.12021e+00
-    5    1.22328e+00   -1.50120e+00    8.99924e+00
-    6   -1.53216e+00   -5.39589e+00    4.09390e+00
-    7    8.68470e+00    5.44601e+00   -7.70818e+00
-    8   -4.76181e+00    8.36200e+00   -3.89250e-01
-    9    2.29800e+00    4.14866e+00   -7.57000e-01
-   10    3.32001e+00    3.95370e+00   -5.83644e+00
-
-        Number of Trials:        10
-    Minimum of Feature 1:  -4.76181
-    Maximum of Feature 2:   8.36200
-    Average of Feature 3:   1.26164
-#+end_example
 
 * Lab Submission
 
