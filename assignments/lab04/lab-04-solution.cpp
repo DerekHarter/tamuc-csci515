@@ -19,6 +19,41 @@
 using namespace std;
 
 
+/** is perfect number
+ * Test whether a given number is a perfect number.
+ *
+ * @param int number The number to test
+ *
+ * @returns bool true if the number is a perfect number, false otherwise
+ */
+bool isPerfectNumber(int number)
+{
+  int i;
+  int sum = 0;
+  
+  // loop through all values from 1 to number-1 to find divisors
+  for (i = 1; i < number; i++)
+  {
+    // whenever we find a divisor, add it to the running sum
+    if (number % i == 0)
+    {
+      sum += i;
+    }
+  }
+
+  // if all the divisors summed up to the original number
+  // then it is a perfect number
+  if (sum == number)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
 /** find perfect numbers
  * Find all perfect numbers in the range from 1 to n.  n is passed in as a parameter
  * determining how far we should search.  We display the results on standard ouput
@@ -34,7 +69,7 @@ void findPerfectNumbers(int n)
   int i;
 
   // loop through the range we are to search over, looking for perfect numbers
-  for (i=1; i<= n; i++)
+  for (i = 1; i <= n; i++)
   {
     if (isPerfectNumber(i))
     {
