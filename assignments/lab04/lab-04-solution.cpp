@@ -31,7 +31,16 @@ using namespace std;
  */
 int main()
 {
+  int n;
 
+  // ask user for input
+  cout << "This program finds all of the perfect numbers in the range from 1 to N." << endl;
+  cout << "Up to what value of N should I search for perfect numbers: ";
+  cin >> n;
+
+  // search for perfect numbers
+  findPerfectNumbers(n);
+  
   // clean up and return 0 to indicate successful completion
   return 0;
 }
