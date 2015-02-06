@@ -19,6 +19,21 @@
 using namespace std;
 
 
+/** find perfect numbers
+ * Find all perfect numbers in the range from 1 to n.  n is passed in as a parameter
+ * determining how far we should search.  We display the results on standard ouput
+ * of the perfect numbers we find.
+ *
+ * @param int n The maximum number we are to search up to, we will search through
+ *    all values from 1 to n
+ *
+ * @returns void
+ */
+int main()
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
