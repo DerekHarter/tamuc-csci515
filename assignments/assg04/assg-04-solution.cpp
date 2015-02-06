@@ -82,7 +82,8 @@ void findPerfectNumbers(int n)
 
 /** main entry point
  * The main entry point for this program.  Execution
- * of this program will beigin with this function.
+ * of this program will beigin with this function.  Prompt user
+ * for begin and end of range to search within for prime numbers.
  *
  * @returns An int value.  By default, if we don't specify a return or
  *           exit value, 0 is returned to indicate successful program
