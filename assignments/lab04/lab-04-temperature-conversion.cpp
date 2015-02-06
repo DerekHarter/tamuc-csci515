@@ -49,9 +49,9 @@ int main()
   float degreesCelcius;
 
   // ask user for input
-  cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celcius scale:" << endl;
+  cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celcius scale: ";
   cin >> degreesFahrenheit;
-  cout << degreesFahrenheit << "degrees Fahrenheit is equal to "
+  cout << setprecision(2) << degreesFahrenheit << "degrees Fahrenheit is equal to "
        << fahrenheitToCelcius(degreesFahrenheit) << "degress Celcius" << endl;
 
   // clean up and return 0 to indicate successful completion
