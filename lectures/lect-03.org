@@ -122,7 +122,6 @@ cin.getline(buffer, SIZE);
 - Can have booleans output as true/false (rather than 0/1) using boolalpha
   manipulator.
 
-
 * Second Session (11:45 - 12:30)
 
 ** File Processing
