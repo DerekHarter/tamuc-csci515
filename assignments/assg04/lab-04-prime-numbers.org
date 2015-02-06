@@ -13,54 +13,56 @@
 
 * Objectives
 - Write functions in C that take 1 or more parameters and return a result.
-- Learn about breaking up a larger problem into smaller sub-parts.
+- Learn and practice breaking up a larger problem into smaller sub-parts.
 - More practice using control structures for looping and conditional
   execution in C.
-- Practice using the modulus operator as a test for various conditions.
+- Practice with mathematical operations and concepts, like the modulus
+  operator.
 
 * Description
-An integer is said to be a *perfect number* if the sum of its
-divisors, including 1 (but not the number itself), is equal to
-the number.  For example, the divisors of 6 are 1, 2 and 3 (not
-including 6 itself).  A divisor of a number is a number that
-evenly divides the original number (leaving no remainder).
-6 is a perfect number, because the sum of its divisors is
-equal to the original number, e.g.:
+As you should know, an integer is said to be *prime* if it is
+divisible by only 1 and itself.  For example, 2, 3, 5 and 7 are
+prime, but 4, 6, 8 and 9 are not.
 
-$6 = 1 + 2 + 3$
+Your overall task is to write a function, called ~findPrimes()~ that
+will find all of the prime numbers in a range from M to N.  To
+solve this task, you will break down the big problem into two
+sub-problems:
 
-Your overall task is to write a function, called ~findPerfectNumbers()~ that
-will find all of the perfect numbers (up to some maximum).  To solve this
-task, we will break down the big problem into 2 sub-problems:
+1. Write a function called ~isPrimeNumber()~ that determines whether
+   some particular number is a prime number or not.
+2. Write a function, called ~findPrimes()~ that will use the first
+   function to search for primes in a range of values.
 
-1. Write a function, called ~isPerfectNumber()~ that determines whether
-   some particular number is a perfect number or not.
-2. Write a function, called ~findPerfectNumbers()~
+If you recall we gave an example of a brute force method for determining
+if a number is a prime or not previously.  A simple method to
+determine if a number X is a prime is to test all possible
+divisors from 2 to X/2.  If any number is found that can divide
+the number X evenly, then the number can not be a prime.  If
+no such divisor is found, then you have proven the number is
+a prime.  Recall that you can use the modulus operator '%'
+in C to test if 2 numbers are evenly divisible (with no
+remainder).  Your ~isPrimeNumber()~ function should take
+a single integer value as its input parameter.  The function
+will return a ~bool~ Boolean value as its result.  Your function
+should return ~true~ if the number passed into it in its
+parameter is a prime, and it should return ~false~ otherwise.
 
-Your ~isPerfectNumber()~ function should do the following.  This function
-takes a single integer parameter as input, for example the value 6.  The
-function will return a single ~bool~ value as its result.  The function
-should return ~true~ if the number passed into it is a perfect number,
-and ~false~ if it is not.  Recall that you can determine if a number
-is evenly divisible by another number by using the `%` modulus
-operator.  The general idea of the algorithm for this function is to
-test every number from 1 to the number passed in (but not including
-it) and see if it is a divisor of the number.  You should sum
-up each divisor you find.  If the sum of the divisors is equal to
-the original number, you should return ~true~ since you have found
-a perfect number.  Otherwise you should return ~false~.
+The second function you should write will use your first function
+to search for prime numbers in a range of numbers.  Your
+second function should be called ~findPrimes()~.  This function
+will take 2 integer parameters as input, the ~minRange~ and
+~maxRange~ of the range that the function should search
+within (inclusive) for prime numbers.  The function
+will not return any result, so it will be a ~void~ function.
+The function will communicate its results by displaying
+prime numbers that it finds to standard output.  
 
-The second function you should write will use your first function to
-test many numbers to see if they are perfect.  Your second function
-should be called ~findPerfectNumbers()~.  This function will again
-take a single parameter as input.  This function does not return a
-result, so it should be a ~void~ function.  The function should test
-all of the integers from 1 up to the number passed in to determine if
-they are perfect numbers or not.  This function will display its
-results on standard output.  You should prompt the user initially for
-the number of values they want to test.  The output of your function
-should look exactly like the following example, if the user
-asks to find the perfect numbers up to 20:
+Your program should initially prompt the user for the minimum and
+maximum values that should be used for the range that is to be
+searched for primes.  This prompt and input of values should be done
+in your ~main()~ function.  The output from running your program
+with the described functions should look exactly like this:
 
 #+begin_example
 This program finds all of the perfect numbers in the range from 1 to N.
