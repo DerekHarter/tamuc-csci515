@@ -79,5 +79,12 @@ problem.
 
 * Second Session (11:45 - 12:30)
 
+** Function prototypes
+- The signature of a function is its prototpye. 
+- To use a function, alls you need is the signature.
+- The actual implementation can be somewhere else.  
+- In fact, put signatures in a header file, implementations in a separate source file, and (re)use.
+- This is the basic method used for the standard libraries of functions.
+
 * Third Session (12:40 - 1:40)
 
