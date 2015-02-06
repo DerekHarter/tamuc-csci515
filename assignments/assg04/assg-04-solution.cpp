@@ -4,13 +4,14 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   February 5, 2015
- * @assg   Lab 04
+ * @assg   Assg 04
  *
- * @description An example solution for the Lab 04.  As specified, we
- *    break the problem up into 2 functions, isPerfectNumber() and
- *    findPerfectNumbers().  This program first asks the user how many
- *    numbers they want to test, and then calls findPerfectNumbers()
- *    to calculate and display the results.
+ * @description An example solution for the Assg 04.  As specified, we
+ *    break the problem up into 2 functions, isPrimeNumber() and
+ *    findPrimes().  This program first asks the user for the
+ *    beginning and the ending of the range of values to search, and
+ *    then calls the function to search for primes within the
+ *    indicated range.
  */
 #include <iostream>
 #include <fstream>
