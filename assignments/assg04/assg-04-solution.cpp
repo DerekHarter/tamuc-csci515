@@ -20,12 +20,12 @@
 using namespace std;
 
 
-/** is perfect number
- * Test whether a given number is a perfect number.
+/** test if is a prime number
+ * Test whether a given number is a prime number.
  *
  * @param int number The number to test
  *
- * @returns bool true if the number is a perfect number, false otherwise
+ * @returns bool true if the number is a prime number, false otherwise
  */
 bool isPerfectNumber(int number)
 {
