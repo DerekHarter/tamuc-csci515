@@ -63,10 +63,7 @@ int main()
   cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celcius scale:" << endl;
   cin >> f;
   cout << f "degrees Fahrenheit is equal to " << fahrenheitToCelcius(f) << "degress Celcius" << endl;
-  
-  // search for perfect numbers
-  findPerfectNumbers(n);
-  
+
   // clean up and return 0 to indicate successful completion
   return 0;
 }
