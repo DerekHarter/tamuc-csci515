@@ -32,6 +32,19 @@ float fahrenheitToCelsius(float degreesFahrenheit)
 }
 
 
+/** convert Celsius to Fahrenheit
+ * Convert a temperature in degrees Celsius to the Fahrenheit scale.
+ *
+ * @param float degreesCelsius The temperature, measured in degrees C
+ *
+ * @returns float The temperature converted to degress Fahrenheit
+ */
+float celsiusToFahrenheit(float degreesCelsius)
+{
+  return degreesCelsius * (9.0/5.0) + 32.0;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
