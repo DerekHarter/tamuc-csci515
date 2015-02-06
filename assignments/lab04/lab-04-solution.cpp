@@ -73,7 +73,7 @@ void findPerfectNumbers(int n)
   {
     if (isPerfectNumber(i))
     {
-      cout << i " is a perfect number" << endl;
+      cout << i << " is a perfect number" << endl;
     }
   }
 }
