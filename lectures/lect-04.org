@@ -96,3 +96,6 @@ problem.
 
 * Third Session (12:40 - 1:40)
 
+** Scope Rules
+
+** Function Call Stack
