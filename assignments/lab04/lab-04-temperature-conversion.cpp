@@ -19,14 +19,14 @@
 using namespace std;
 
 
-/** convert Fahrenheit to Celcius
- * Convert a temperature in degrees Fahrenheit to the Celcius scale.
+/** convert Fahrenheit to Celsius
+ * Convert a temperature in degrees Fahrenheit to the Celsius scale.
  *
  * @param float degreesFahrenheit The temperature, measured in degrees F
  *
- * @returns float The temperature converted to degress Celcius
+ * @returns float The temperature converted to degress Celsius
  */
-float fahrenheitToCelcius(float degreesFahrenheit)
+float fahrenheitToCelsius(float degreesFahrenheit)
 {
   return (degreesFahrenheit - 32) * 5.0/9.0;
 }
@@ -46,13 +46,13 @@ float fahrenheitToCelcius(float degreesFahrenheit)
 int main()
 {
   float degreesFahrenheit;
-  float degreesCelcius;
+  float degreesCelsius;
 
   // ask user for input
-  cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celcius scale: ";
+  cout << "Enter a value in degrees Fahrenheit, and I will convert it to the Celsius scale: ";
   cin >> degreesFahrenheit;
   cout << setprecision(2) << degreesFahrenheit << " degrees Fahrenheit is equal to "
-       << fahrenheitToCelcius(degreesFahrenheit) << " degress Celcius" << endl;
+       << fahrenheitToCelsius(degreesFahrenheit) << " degress Celsius" << endl;
 
   // clean up and return 0 to indicate successful completion
   return 0;
