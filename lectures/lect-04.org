@@ -68,6 +68,7 @@ problem.
   function signature.  We will go into more details about functions
   signatures, also called function prototypes, in a bit.
 - Use some of these functions.
+- Show Fig 6.7 (pg 219), list of some of the standard libraries in C/C++.
 
 ** Defining a Function
 - Function name (choose meaningful name)
@@ -85,6 +86,13 @@ problem.
 - The actual implementation can be somewhere else.  
 - In fact, put signatures in a header file, implementations in a separate source file, and (re)use.
 - This is the basic method used for the standard libraries of functions.
+
+** Variable and Argument Coercion
+
+- C promotes certain numeric values in mixed-type expressions.  Type
+  is promoted to the "highest" type in the expression.
+- *BEWARE* of the so called integer division error.
+- Passing a parameter to a function can also be automatically coerced in this way.
 
 * Third Session (12:40 - 1:40)
 
