@@ -67,7 +67,7 @@ void findPrimes(int beginRange, int endRange)
   // loop through the range we are to search over, looking for perfect numbers
   for (int p = beginRange; p <= endRange; p++)
   {
-    if (isPrime(p))
+    if (isPrimeNumber(p))
     {
       cout << p << " is a prime number" << endl;
     }
