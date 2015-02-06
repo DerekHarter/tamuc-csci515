@@ -32,7 +32,7 @@ bool isPerfectNumber(int number)
   int sum = 0;
   
   // loop through all values from 1 to number-1 to find divisors
-  for (i = 1; i < number; i++)
+  for (i = 1; i <= number - 1; i++)
   {
     // whenever we find a divisor, add it to the running sum
     if (number % i == 0)
