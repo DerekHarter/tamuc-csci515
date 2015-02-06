@@ -39,8 +39,9 @@ float fahrenheitToCelcius(float degreesFahrenheit)
  * @returns An int value.  By default, if we don't specify a return or
  *           exit value, 0 is returned to indicate successful program
  *           completion.  A non-zero value indicates an error or
- *           problem with execution.  Summary information is calculated
- *           while processing the individual lines of input.
+ *           problem with execution.  Summary information is
+ *           calculated while processing the individual lines of
+ *           input.
  */
 int main()
 {
