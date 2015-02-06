@@ -72,7 +72,7 @@ int main()
   cout << "Enter a value in degrees Celsius, and I will convert it to the Fahrenheit scale: ";
   cin >> degreesCelsius;
   cout << setprecision(2) << degreesCelsius << " degrees Celsius is equal to "
-       << celsiustoFahrenheit(degreesCelsius) << " degress Fahrenheit" << endl;
+       << celsiusToFahrenheit(degreesCelsius) << " degress Fahrenheit" << endl;
 
   // clean up and return 0 to indicate successful completion
   return 0;
