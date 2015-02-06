@@ -27,7 +27,7 @@ using namespace std;
  *
  * @returns bool true if the number is a prime number, false otherwise
  */
-bool isPerfectNumber(int number)
+bool isPrimeNumber(int number)
 {
   int i;
   int sum = 0;
