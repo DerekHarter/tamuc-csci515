@@ -26,7 +26,7 @@ using namespace std;
  *
  * @returns float The temperature converted to degress Celcius
  */
-float findPerfectNumbers(float degreesFahrenheit)
+float fahrenheitToCelcius(float degreesFahrenheit)
 {
   return (degreesFahrenheit - 32) * 5.0/9.0;
 }
