@@ -108,6 +108,9 @@ this week.
 1. The file header for the file with your name and program information
   and the function header for your main function must be present, and
   filled out correctly.
+1. A function header must be present for all functions you define.
+  You must document the purpose, input parameters and return values
+  of all functions.
 1. You must indent your code correctly and have no embedded tabs in
   your source code. (Don't forget about the Visual Studio Format
   Selection command).
