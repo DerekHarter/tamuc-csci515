@@ -1,4 +1,4 @@
-% Created 2015-02-06 Fri 15:16
+% Created 2015-02-06 Fri 15:44
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -73,27 +73,51 @@ $$
 F = C \cdot \frac{9}{5} + 32
 $$
 
+Perform the following tasks:
+
+\begin{enumerate}
+\item Write a function named \verb~fahrenheitToCelsius()~.  The function takes
+   a single float value as input, and returns a single float value
+   as its result.  The input of course represents a temperature in
+   degrees Fahrenheit, and your program should use the above formula
+   to convert the value to a temperature on the Celsius scale.
+\item Write a function named \verb~celsiusToFahrenheit()~.  The function
+   takes a single float values as input, and returns a single float
+   value as its result.  As you can guess, this function performs
+   the other operation, to convert from the Celsius scale back to
+   the Fahrenheit scale.
+\item In your \verb~main()~ function, prompt the user for a temperature on
+   the Fahrenheit scale.  Use the first function to convert this value
+   to the Celsius scale and display this to the user.  Then 
+   prompt the user for a temperature in degrees Centigrade, and use your
+   second function to convert it and display your results.
+\end{enumerate}
+
+Your program output should look exactly like the following when I
+run your program:
 
 
 \begin{verbatim}
-This program finds all of the perfect numbers in the range from 1 to N.
-Up to what value of N should I search for perfect numbers: 100
-6 is a perfect number
-28 is a perfect number
+Enter a value in degrees Fahrenheit, and I will convert it to the Celsius scale: 6
+6 degrees Fahrenheit is equal to -14.4444 degress Celsius
+
+Enter a value in degrees Celsius, and I will convert it to the Fahrenheit scale: 22
+22 degrees Celsius is equal to 71.6 degress Fahrenheit
 \end{verbatim}
 
-\textbf{NOTE}: Now that our programs have more functions than just the \verb~main()~
-function the use of the function headers becomes meaningful.  Make sure
-that all of your functions (\verb~main~, \verb~findPerfectNumbers~, \verb~isPerfectNumber~)
-have function headers before them that document the purpose of the
-functions, and the input values and return value of the function. 
+\textbf{NOTE}: Now that our programs have more functions than just the
+\verb~main()~ function, the use of the function headers becomes meaningful
+and required.  Make sure that all of your functions (\verb~main~,
+\verb~fahrenheitToCelsius~, \verb~celsiusToFahrenheit~) have function headers
+before them that document the purpose of the functions, and the input
+values and return value of the function.
 \section*{Lab Submission}
 \label{sec-4}
 
 
 An eCollege dropbox has been created for this lab.  You should
 upload your version of the lab by the end of lab time to the eCollege
-dropbox named \verb~Lab 04 Perfect Numbers~.  Work submitted by the end
+dropbox named \verb~Lab 04 Temperature Conversion~.  Work submitted by the end
 of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
@@ -109,10 +133,11 @@ time in order to receive credit.
 \item 40+ pts.  Your program must have the 2 required named functions, that 
    accept the required input parameters and return the required values
    (if any).
-\item 30+ pts. Your algorithm for determining if a number is perfect in the
-   \verb~isPerfectNumber()~ function must work correctly.
-\item 30+ pts. Likewise the \verb~findPerfectNumbers()~ function must work, and produce
-   the output as shown for the assignment.
+\item 30+ pts. Your functions must convert temperatures correctly, according to the
+   formula given for you for converting between the two scales.
+\item 30+ pts. You should prompt the user for values in your \verb~main()~ function, and
+   display the results.  The interaction with your program should be as shown
+   in the example output above.
 \end{enumerate}
 \subsection*{Program Style}
 \label{sec-5-2}

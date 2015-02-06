@@ -93,10 +93,11 @@ time in order to receive credit.
 1. 40+ pts.  Your program must have the 2 required named functions, that 
    accept the required input parameters and return the required values
    (if any). 
-1. 30+ pts. Your algorithm for determining if a number is perfect in the
-   ~isPerfectNumber()~ function must work correctly.
-1. 30+ pts. Likewise the ~findPerfectNumbers()~ function must work, and produce
-   the output as shown for the assignment.
+1. 30+ pts. Your functions must convert temperatures correctly, according to the
+   formula given for you for converting between the two scales.
+1. 30+ pts. You should prompt the user for values in your ~main()~ function, and
+   display the results.  The interaction with your program should be as shown
+   in the example output above.
 
 
 ** Program Style
