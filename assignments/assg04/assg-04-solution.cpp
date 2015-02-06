@@ -67,14 +67,12 @@ bool isPerfectNumber(int number)
  */
 void findPrimes(int beginRange, int endRange)
 {
-  int i;
-
   // loop through the range we are to search over, looking for perfect numbers
-  for (i = 1; i <= n; i++)
+  for (int p = beginRange; p <= endRange; p++)
   {
-    if (isPerfectNumber(i))
+    if (isPrime(p))
     {
-      cout << i << " is a perfect number" << endl;
+      cout << p << " is a prime number" << endl;
     }
   }
 }
