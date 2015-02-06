@@ -51,8 +51,8 @@ parameter is a prime, and it should return ~false~ otherwise.
 The second function you should write will use your first function
 to search for prime numbers in a range of numbers.  Your
 second function should be called ~findPrimes()~.  This function
-will take 2 integer parameters as input, the ~minRange~ and
-~maxRange~ of the range that the function should search
+will take 2 integer parameters as input, the ~beginRange~ and
+~endRange~ of the range that the function should search
 within (inclusive) for prime numbers.  The function
 will not return any result, so it will be a ~void~ function.
 The function will communicate its results by displaying
@@ -69,7 +69,7 @@ with the described functions should look exactly like this:
 
 *NOTE*: Now that our programs have more functions than just the ~main()~
 function the use of the function headers becomes meaningful.  Make sure
-that all of your functions (~main~, ~findPrimes~, ~isPrime~)
+that all of your functions (~main~, ~findPrimes~, ~isPrimeNumber~)
 have function headers before them that document the purpose of the
 functions, and the input values and return value of the function. 
 
