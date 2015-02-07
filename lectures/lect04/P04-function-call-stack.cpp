@@ -22,10 +22,22 @@ void A(int p)
 
   if (a < 2)
   {
-    B();
+    B(p);
   }
 
   cout << a << endl;
+}
+
+
+/** B
+ * The function B
+ *
+ * @param int p My parameter p is local to this functions invocation.
+ */
+void B(int p)
+{
+  p = 42;
+  C();
 }
 
 
