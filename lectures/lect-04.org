@@ -17,7 +17,7 @@
   smaller functions.
 
 Functions serve several purposes from the point of view of the
-developer:
+computer science and the application developer:
 
 1. Functions encapsulate an algorithm or procedure.
 1. Functions can be black boxes that help reduce complexity.  You can
@@ -28,14 +28,14 @@ developer:
 
 For example, it can be very complex to write an algorithm to compute
 mathematical functions, such as the sin() trigonometric function, on a
-computer.  However, there are standard libraries of math functions
-that you can use that implement the sin() function for you.  When you
-use a library that someone else has written, you are using the
-functions as black boxes.  You know what the function should take as
-input, and what its result should be.  But you do not need to concern
-yourself with the messy details.  Likewise, using standard libraries
-are examples of a type of reuse.  The functions are written one time,
-but reused over and over again in many programs.
+digital computer.  However, there are standard libraries of math
+functions that you can use that implement the sin() function for you.
+When you use a library that someone else has written, you are using
+the functions as black boxes.  You know what the function should take
+as input, and what its result should be.  But you do not need to
+concern yourself with the messy details.  Likewise, using standard
+libraries are examples of a type of reuse.  The functions are written
+one time, but reused over and over again in many programs.
 
 As a programmer you can get the same benefits by writing functions
 yourself.  You can write a function once, and reuse it in many
