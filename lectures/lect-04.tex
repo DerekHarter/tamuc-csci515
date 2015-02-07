@@ -1,4 +1,4 @@
-% Created 2015-02-06 Fri 16:40
+% Created 2015-02-06 Fri 18:50
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,65 +7,64 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{soul}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
-\usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
 \usepackage{minted}
-\providecommand{\alert}[1]{\textbf{#1}}
-
-\title{Lecture 04 Notes}
 \author{Derek Harter}
-\date{2015-02-06}
+\date{CSci 515 Spring 2014 \textit{<2015-02-06 Fri>}}
+\title{Lecture 04 Notes}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Lecture 04 Notes.},
-  pdfcreator={Emacs Org-mode version 7.9.3f}}
-
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
 \begin{document}
 
 \maketitle
-
 
 \section{First Session (11 - 11:40)}
 \label{sec-1}
 \subsection{Functional Programming}
 \label{sec-1-1}
-
 \begin{itemize}
-\item 6.1 To promote software reusability, every function should be limited to performing a single
-  well define task, and the name of the function should express the task effectively.
-\item 6.2 If you cannot choose a concise name that expresses a function's task, you function might
-  be attempting to perform too many diverse tasks.  It's usually best to break such a function
-  into several smaller functions.
+\item 6.1 To promote software reusability, every function should be
+limited to performing a single well define task, and the name of the
+function should express the task effectively.
+\item 6.2 If you cannot choose a concise name that expresses a function's
+task, your function might be attempting to perform too many diverse
+tasks.  It's usually best to break such a function into several
+smaller functions.
 \end{itemize}
 
 Functions serve several purposes from the point of view of the
-developer:
+computer science and the application developer:
 
 \begin{enumerate}
 \item Functions encapsulate an algorithm or procedure.
 \item Functions can be black boxes that help reduce complexity.  You can
-   build more complex algorithms on top of simple functions, without
-   worrying about the details of how the functions you use are
-   implemented.
+build more complex algorithms on top of simple functions, without
+worrying about the details of how the functions you use are
+implemented.
 \item Functions allow for reuse of code, and help to avoid code repetition.
 \end{enumerate}
 
 For example, it can be very complex to write an algorithm to compute
 mathematical functions, such as the sin() trigonometric function, on a
-computer.  However, there are standard libraries of math functions
-that you can use that implement the sin() function for you.  When you
-use a library that someone else has written, you are using the
-functions as black boxes.  You know what the function should take as
-input, and what its result should be.  But you do not need to concern
-yourself with the messy details.  Likewise, using standard libraries
-are examples of a type of reuse.  The functions are written one time,
-but reused over and over again in many programs.
+digital computer.  However, there are standard libraries of math
+functions that you can use that implement the sin() function for you.
+When you use a library that someone else has written, you are using
+the functions as black boxes.  You know what the function should take
+as input, what it does, and what its result should be.  But you do not
+need to concern yourself with the messy details of how it achieves its
+result.  Likewise, using standard libraries are examples of a type of
+reuse.  The functions are written one time by experts, but reused over
+and over again in many programs.
 
 As a programmer you can get the same benefits by writing functions
 yourself.  You can write a function once, and reuse it in many
@@ -84,46 +83,63 @@ those sub-tasks are complex, you further break them down into
 sub-sub-tasks.  You repeat this decomposition until you have defined
 problems that are simple enough to understand and code directly as
 small functions.  Then you solve the larger problems by stringing
-together and reusing your functions.  It takes skill and practice to
-learn how best to do such decomposition, but it is fundamental to
-learning how to solve real problems that are often complex and messy.
-Functional decomposition allows you to encapsulate the messiness of
-the details in black boxes, as functions, then forget about that
-messiness to solve larger issues, on up till you address your ultimate
-problem.
- 
+together and reusing your functions.
+
+It takes skill and practice to learn how best to do such
+decomposition, but it is fundamental to learning how to solve real
+problems that are often complex and messy.  Functional decomposition
+allows you to encapsulate the messiness of the details in black boxes,
+as functions, then forget about that messiness to solve larger issues,
+on up till you address your ultimate problem.
+
+Being able to break down a problem into good sub-problems, that can be
+easily solved individually and then combined into larger solutions is
+an extremely useful skill.  One of the benefits of learning math and
+computer science, is that you become trained in thinking about
+problems using these methods and tools.  For example, being able to
+write functions, both mathematical and for computer programs, involves
+precisely defining the inputs that the function works on, and the
+outputs that it produces.  And, in both cases, we need to formally
+define the operations that occur, so that the function always
+deterministically produces the same correct results for the given
+inputs.  This is one reason why thinking about and carefully
+documenting your input parameters and return results for a function
+are very important.
 \subsection{Standard Libraries of Functions}
 \label{sec-1-2}
-
 
 \begin{itemize}
 \item The math library
 \item Need to include the header to use a standard library \#include <cmath>
 \item Headers for libraries of standard functions basically define the
-  function signature.  We will go into more details about functions
-  signatures, also called function prototypes, in a bit.
+function signature.  We will go into more details about functions
+signatures, also called function prototypes, in a bit.
 \item Use some of these functions.
 \item Show Fig 6.7 (pg 219), list of some of the standard libraries in C/C++.
 \end{itemize}
 \subsection{Defining a Function}
 \label{sec-1-3}
-
 \begin{itemize}
 \item Function name (choose meaningful name)
 \item Function Input (the parameters to the function)
 \item Function Output (the return value)
 \item Always include a function header documentation.  Document purpose,
-  parameters and return value.
+parameters and return value.
 \item Implement pow(), fabs(), maybe ceil() and floor()
 \end{itemize}
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
+
 \subsection{Function prototypes}
 \label{sec-2-1}
-
 \begin{itemize}
 \item The signature of a function is its prototpye.
-\item To use a function, alls you need is the signature.
+\item To use a function, all you need is the signature.
+\item This is important conceputally.  The signature represents the "black
+box" idea of functions.  The details of the implementation are not
+so important, at least to those who want to use the function to
+solve larger problems.  They are only concerned about what it does,
+how you use it, and that it performs it stated task correctly.
 \item The actual implementation can be somewhere else.
 \item In fact, put signatures in a header file, implementations in a separate source file, and (re)use.
 \item This is the basic method used for the standard libraries of functions.
@@ -131,18 +147,50 @@ problem.
 \subsection{Variable and Argument Coercion}
 \label{sec-2-2}
 
-
 \begin{itemize}
 \item C promotes certain numeric values in mixed-type expressions.  Type
-  is promoted to the ``highest'' type in the expression.
+is promoted to the "highest" type in the expression.
 \item \textbf{BEWARE} of the so called integer division error.
 \item Passing a parameter to a function can also be automatically coerced in this way.
 \end{itemize}
 \section{Third Session (12:40 - 1:40)}
 \label{sec-3}
+
 \subsection{Scope Rules}
 \label{sec-3-1}
-\subsection{Function Call Stack}
+\begin{itemize}
+\item Variables declared in functions are local to the function.
+\item Variables (and constants) declared outside of functions are global.
+\item You probably should NOT be using global variables.  Global variables allow
+state information to leak between functions.
+\item Global constants, however, are often a good idea and useful.
+\item Understanding the scope of variables is important.  Limiting scope of
+variables is important.
+\end{itemize}
+\subsection{Passing Parameters by Reference}
 \label{sec-3-2}
-
+\begin{itemize}
+\item Variables are passed to functions by value by default.
+\item This means, the value is copied, and if you change value in the
+function, the value is not changed in the caller.
+\item The only way to get a value back to the caller, is to return it
+as the return result from the function.
+\item However, sometimes we need to return more than 1 value, or sometimes
+for efficiency reasons (e.g. need to return 1 million values, we probably
+don't really want to copy them all back).
+\item In this case, we can pass in values by reference.
+\item A reference parameter, if changed in the function, will be changed
+for the caller who provided it.  In effect, a reference parameter is
+not a copy, but it IS the actual variable from the caller, so
+changes to it will be accessible to the caller when the function
+returns.
+\end{itemize}
+\subsection{Function Call Stack}
+\label{sec-3-3}
+\begin{itemize}
+\item Example, functions A(), B() and C()
+\item Recursive
+\item Some advice/examples on using the Visual Studio debugger.
+\end{itemize}
+% Emacs 24.3.1 (Org mode 8.2.4)
 \end{document}
