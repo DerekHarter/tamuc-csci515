@@ -36,6 +36,16 @@ int main()
   cout << "pi                 : " << M_PI << endl;
   cout << "e                  : " << M_E << endl;
   cout << endl;
+
+  // the exponential functions
+  cout << "exp(1.0) e.g. e    : " << exp(1.0);
+  cout << endl;
+
+  // floor, ceil, fabs
+  cout << "floor of pi        : " << floor(M_PI) << endl;
+  cout << "ceiling of e       : " << ceil(M_E) << endl;
+  cout << "abs value of -3.25 : " << fabs(-3.251233432) << endl;
+  cout << endl;
   
   // raising to a power
   cout << "3^2                : " << pow(3.0, 2.0) << endl;
