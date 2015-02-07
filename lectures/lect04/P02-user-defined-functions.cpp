@@ -48,7 +48,9 @@ int pow(int x, int n)
  */
 float hypotenuse(float a, float b)
 {
-
+  float c;
+  c = sqrt( pow(a, 2.0) + pow(b, 2.0) );
+  return c;
 }
 
 /** main entry point
