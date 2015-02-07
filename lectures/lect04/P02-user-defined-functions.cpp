@@ -24,8 +24,13 @@ using namespace std;
  */
 int pow(int x, int n)
 {
-
-  return 0;
+  // to raise x to the n power, we need to multiple x by itself n times
+  int result = x;
+  for (int i=1; i<=n; i++)
+  {
+    result *= result;
+  }
+  return result;
 }
 
 /** main entry point
