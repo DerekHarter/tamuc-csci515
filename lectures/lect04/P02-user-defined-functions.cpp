@@ -108,30 +108,22 @@ bool isPerfectNumber(int number)
  *
  * @returns float An approximation of Pi to the i^th term of our series.
  */
-bool isPerfectNumber(int number)
+float approximatePi(int numTerms)
 {
-  int sum = 0; // Keep track of running sum of the divisors of the number
+  float approximation = 4.0; // the x_0th term of our approximation
+  float divisor = 3.0;  // The divisor for the x_1 next term
+  float sign = -1.0; // the sign of the next x_1 term in the series
 
-  // Test all numbers from 1 up to number-1 to see if they are valid divisors
-  for (int divisor = 1; divisor <= number - 1; divisor++)
+  // We start with approximation = x_0 term in the series, calculate
+  // up to the x_numTerms in the series
+  for (int i = 1; i <= numTerms; i++)
   {
-    // if divisor is an evenly divisible divisor of number, add it to the sum
-    if (number % divisor == 0)
-    {
-      sum += divisor;
-    }
+    approximation += sign * (4.0 / divisor);
+    divisor += 2.0;
+    sign *= -1.0;
   }
 
-  // Now we can test if it is a perfect number
-  // return (sum == number);
-  if (sum == number)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
+  return approximation;
 }
 
 
