@@ -55,7 +55,7 @@ those sub-tasks are complex, you further break them down into
 sub-sub-tasks.  You repeat this decomposition until you have defined
 problems that are simple enough to understand and code directly as
 small functions.  Then you solve the larger problems by stringing
-together and reusing your functions.  
+together and reusing your functions.
 
 It takes skill and practice to learn how best to do such
 decomposition, but it is fundamental to learning how to solve real
@@ -63,7 +63,7 @@ problems that are often complex and messy.  Functional decomposition
 allows you to encapsulate the messiness of the details in black boxes,
 as functions, then forget about that messiness to solve larger issues,
 on up till you address your ultimate problem.
- 
+
 ** Standard Libraries of Functions
 
 - The math library
