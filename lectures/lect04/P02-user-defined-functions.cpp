@@ -166,7 +166,7 @@ int main()
   }
   cout << endl;
 
-  cout <<  "Approximation of Pi to the 100 000th term     : " << approximatePi(100000) <<endl;
+  cout <<  "Approximation of Pi to the 1 000 000th term   : " << approximatePi(1000000) <<endl;
   cout <<  "True value of Pi (to machine precision)       : " << M_PI << endl;
   cout << endl;
   
