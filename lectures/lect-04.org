@@ -145,3 +145,6 @@ are very important.
   returns.
 
 ** Function Call Stack
+- Example, functions A(), B() and C()
+- Recursive
+- Some advice/examples on using the Visual Studio debugger.
