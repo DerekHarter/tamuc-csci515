@@ -64,6 +64,19 @@ allows you to encapsulate the messiness of the details in black boxes,
 as functions, then forget about that messiness to solve larger issues,
 on up till you address your ultimate problem.
 
+Being able to break down a problem into good sub-problems, that can be
+easily solved individually and then combined into larger solutions is
+an extremely useful skill.  One of the benefits of learning math and
+computer science, is that you become trained in thinking about
+problems using these methods and tools.  For example, being able to
+write functions, both mathematical and for computer programs, involves
+precisely defining the inputs that the function works on, and the
+outputs that it produces.  And, in both cases, we need to formally
+define the operations that occur, so that the function always
+deterministically produces the same correct results for the given
+inputs.  This is one reason why thinking about and carefully
+documenting your input parameters and return results for a function
+are very important.
 
 ** Standard Libraries of Functions
 
