@@ -160,7 +160,7 @@ int main()
 
   // test the approximation of pi
   cout << setprecision(8) << showpoint; // always show 8 decimal places in the next output
-  for (int i=0, i <= 20; i++)
+  for (int i=0; i <= 20; i++)
   {
     cout << "Approximation of Pi to the " << i << "th term: " << approximatePi(i) << endl;
   }
