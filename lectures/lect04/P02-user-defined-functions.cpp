@@ -13,6 +13,21 @@
 using namespace std;
 
 
+
+/** Raise an integer power
+ * Raise a given integer to the given (integer) power.
+ *
+ * @param int x The base we are raising to some power
+ * @param int n The power to raise the base too.
+ *
+ * @returns int The base raised to the power, e.g. x^n
+ */
+int pow(int x, int n)
+{
+
+  return 0;
+}
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
