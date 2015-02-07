@@ -33,7 +33,8 @@ int main()
   cout << endl;
 
   // some constants defined in the math library
-  cout << "PI                 : " << M_PI << endl;
+  cout << "pi                 : " << M_PI << endl;
+  cout << "e                  : " << M_E << endl;
   
   // raising to a power
   cout << "3^2                : " << pow(3.0, 2.0) << endl;
