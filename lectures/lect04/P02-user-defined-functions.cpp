@@ -122,7 +122,10 @@ int main()
   cout << boolalpha;  // make sure all booleans are displayed as true/false
   cout << "Is 6 a perfect number? : " << isPerfectNumber(6) << endl;
   cout << "Is 9 a perfect number? : " << isPerfectNumber(9) << endl;
-
+  cout << "Is 28 a perfect number? : " << isPerfectNumber(28) << endl;
+  cout << "Is 36 a perfect number? : " << isPerfectNumber(36) << endl;
+  cout << endl;
+  
   // Return 0 to indicate successful completion
   return 0;
 }
