@@ -125,6 +125,8 @@ are very important.
 - You probably should NOT be using global variables.  Global variables allow
   state information to leak between functions.
 - Global constants, however, are often a good idea and useful.
+- Understanding the scope of variables is important.  Limiting scope of
+  variables is important.
 
 ** Passing Parameters by Reference
 - Variables are passed to functions by value by default.
