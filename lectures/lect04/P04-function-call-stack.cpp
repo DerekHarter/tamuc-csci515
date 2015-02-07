@@ -14,6 +14,8 @@ using namespace std;
 
 /** A
  * The function A
+ *
+ * @param int p When p is less than 2 we call B().  In all cases we then print the value of p.
  */
 void A(int p)
 {
@@ -24,6 +26,18 @@ void A(int p)
   }
 
   cout << a << endl;
+}
+
+
+/** B
+ * The function B
+ *
+ * @param int p My parameter p is local to this functions invocation.
+ */
+void B(int p)
+{
+  p = 42;
+  C();
 }
 
 
