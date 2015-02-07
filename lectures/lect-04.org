@@ -99,9 +99,14 @@ are very important.
 * Second Session (11:45 - 12:30)
 
 ** Function prototypes
-- The signature of a function is its prototpye. 
-- To use a function, alls you need is the signature.
-- The actual implementation can be somewhere else.  
+- The signature of a function is its prototpye.
+- To use a function, all you need is the signature.
+- This is important conceputally.  The signature represents the "black
+  box" idea of functions.  The details of the implementation are not
+  so important, at least to those who want to use the function to
+  solve larger problems.  They are only concerned about what it does,
+  how you use it, and that it performs it stated task correctly.
+- The actual implementation can be somewhere else.
 - In fact, put signatures in a header file, implementations in a separate source file, and (re)use.
 - This is the basic method used for the standard libraries of functions.
 
