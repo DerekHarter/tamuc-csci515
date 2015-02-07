@@ -112,7 +112,7 @@ float approximatePi(int numTerms)
 {
   float approximation = 4.0; // the x_0th term of our approximation
   float divisor = 3.0;  // The divisor for the x_1 next term
-  float sign = -1.0; // the sign of the next x_1 term in the series
+  float sign = -1.0; // the sign of the next x_1 term in the series, alternate +/-
 
   // We start with approximation = x_0 term in the series, calculate
   // up to the x_numTerms in the series
