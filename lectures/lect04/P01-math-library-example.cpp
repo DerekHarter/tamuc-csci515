@@ -37,6 +37,10 @@ int main()
   cout << "e                  : " << M_E << endl;
   cout << endl;
 
+  // raising to a power
+  cout << "3^2                : " << pow(3.0, 2.0) << endl;
+  cout << "9^0.5              : " << pow(9.0, 0.5) << endl;
+
   // the exponential functions
   cout << "exp(1.0) e.g. e    : " << exp(1.0);
   cout << endl;
@@ -47,10 +51,6 @@ int main()
   cout << "abs value of -3.25 : " << fabs(-3.251233432) << endl;
   cout << endl;
   
-  // raising to a power
-  cout << "3^2                : " << pow(3.0, 2.0) << endl;
-  cout << "9^0.5              : " << pow(9.0, 0.5) << endl;
-
   // Return 0 to indicate successful completion
   return 0;
 }
