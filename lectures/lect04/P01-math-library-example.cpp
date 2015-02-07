@@ -31,11 +31,11 @@ int main()
   cout << "Square root of 2.0 : " << sqrt(2.0) << endl;
   cout << "Square root of -1.0: " << sqrt(-1.0) << endl;
   cout << endl;
-  
+
   // raising to a power
   cout << "3^2                : " << pow(3.0, 2.0) << endl;
   cout << "9^0.5              : " << pow(9.0, 0.5) << endl;
-  
+
   // Return 0 to indicate successful completion
   return 0;
 }
