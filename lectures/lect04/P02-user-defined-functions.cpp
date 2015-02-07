@@ -70,6 +70,7 @@ int main()
   cout << "3 ^ 3 : " << pow(3, 3) << endl;
 
   // test the hypotenuse function
+  cout << "Hypotenuse of triangle where A=3 and B=4: " << hypotenuse(3.0, 4.0) <<endl;
   
   // Return 0 to indicate successful completion
   return 0;
