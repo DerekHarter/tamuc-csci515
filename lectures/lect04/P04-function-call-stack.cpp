@@ -11,9 +11,12 @@
 #include <iostream>
 using namespace std;
 
+
+// function prototypes
 void A(int p);
 void B(int p);
 void C();
+
 
 /** A
  * The function A
