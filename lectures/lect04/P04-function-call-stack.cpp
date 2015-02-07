@@ -25,7 +25,7 @@ void A(int p)
     B(p);
   }
 
-  cout << a << endl;
+  cout << p << endl;
 }
 
 
