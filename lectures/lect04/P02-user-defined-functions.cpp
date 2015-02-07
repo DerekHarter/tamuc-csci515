@@ -47,6 +47,6 @@ int main()
   // Return 0 to indicate successful completion
   cout << "3 ^ 2 : " << pow(3, 2) << endl;
   cout << "2 ^ 3 : " << pow(2, 3) << endl;
-  
+
   return 0;
 }
