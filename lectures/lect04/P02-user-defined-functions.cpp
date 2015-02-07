@@ -76,6 +76,9 @@ int main()
   cout << "Hypotenuse of triangle where A=8 and B=15: " << hypotenuse(8.0, 15.0) << endl;
   cout << endl;
 
+  // test perfect numbers
+  cout << boolalpha;  // make sure all booleans are displayed as true/false
+  
   // Return 0 to indicate successful completion
   return 0;
 }
