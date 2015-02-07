@@ -10,8 +10,8 @@
  */
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
-
 
 
 /** Raise an integer power
@@ -33,6 +33,24 @@ int pow(int x, int n)
   return result;
 }
 
+
+/** Calculate hypotenuse
+ * Calculate the hypotenuse of a right triangle.  Given sides A and B
+ * on either side of a right triangle (90degrees), calculate the length
+ * of C, the hypotenuse of the triangle.  We can find the lenght using
+ * the Pythagorean theorem showing that C^2 = A^2 + B^2, or
+ * C = sqrt(A^2 + B^2)
+ *
+ * @param float a The length of side A of the right triangle
+ * @param float b The length of side B of the right triangle
+ *
+ * @returns float The length of the hypotenuse, side C of the right triangle
+ */
+float hypotenuse(float a, float b)
+{
+
+}
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -44,10 +62,13 @@ int pow(int x, int n)
  */
 int main()
 {
-  // Return 0 to indicate successful completion
+  // test our pow() function implementation
   cout << "3 ^ 2 : " << pow(3, 2) << endl;
   cout << "2 ^ 3 : " << pow(2, 3) << endl;
   cout << "3 ^ 3 : " << pow(3, 3) << endl;
 
+  // test the hypotenuse function
+  
+  // Return 0 to indicate successful completion
   return 0;
 }
