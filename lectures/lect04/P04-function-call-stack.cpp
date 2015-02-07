@@ -15,7 +15,7 @@ using namespace std;
 /** A
  * The function A
  */
-int A(int p)
+void A(int p)
 {
 
   if (a < 2)
@@ -24,8 +24,6 @@ int A(int p)
   }
 
   cout << a << endl;
-  
-  return 0;
 }
 
 
