@@ -9,7 +9,8 @@
  * @description Demonstration of standard math library functions.
  */
 #include <iostream>
-#include <cmath>
+#include <iomanip>
+#include <cmath> // <---- To use a library of functions, need to include header of function prototypes
 using namespace std;
 
 
