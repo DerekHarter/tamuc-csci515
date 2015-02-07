@@ -72,7 +72,17 @@ bool isPerfectNumber(int number)
 {
   int sum = 0; // Keep track of running sum of the divisors of the number
 
-  for (int )
+  // Test all numbers from 1 up to number-1 to see if they are valid divisors
+  for (int divisor = 1; divisor <= number - 1; divisor++)
+  {
+    // if divisor is an evenly divisible divisor of number, add it to the sum
+    if (number % divisor == 0)
+    {
+      sum += divisor;
+    }
+  }
+
+  
 }
 
 
