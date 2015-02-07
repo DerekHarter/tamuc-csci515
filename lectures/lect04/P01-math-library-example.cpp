@@ -54,6 +54,12 @@ int main()
   // logarithms
   cout << "natural log(e)     : " << log(M_E) << endl;
   cout << "log base 10 of 1000: " << log10(1000.0) << endl;
+
+  // trigonometric functions
+
+  // hyperbolic trig functions
+
+  // etc.
   
   // Return 0 to indicate successful completion
   return 0;
