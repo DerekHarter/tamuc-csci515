@@ -26,10 +26,12 @@ int pow(int x, int n)
 {
   // to raise x to the n power, we need to multiple x by itself n times
   int result = x;
+  
   for (int i=2; i<=n; i++)
   {
     result *= x;
   }
+  
   return result;
 }
 
@@ -49,9 +51,30 @@ int pow(int x, int n)
 float hypotenuse(float a, float b)
 {
   float c;
+  
   c = sqrt( pow(a, 2.0) + pow(b, 2.0) );
+  
   return c;
 }
+
+
+/** Test for a perfect number
+ * Determine if the number is a perfect number.  A perfect number
+ * is a number such that the sum of the divisors of the number (including)
+ * number.  For example, 6 is a perfect number, because its divisors
+ * 1, 2 and 3 (excluding 6) has the property that 1 + 2 + 3 = 6
+ *
+ * @param int number The number to test 
+ *
+ * @returns bool true if the number is a perfect number, false otherwise
+ */
+bool isPerfectNumber(int number)
+{
+  int sum = 0; // Keep track of running sum of the divisors of the number
+
+  for (int )
+}
+
 
 /** main entry point
  * The main entry point for this program.  Execution
