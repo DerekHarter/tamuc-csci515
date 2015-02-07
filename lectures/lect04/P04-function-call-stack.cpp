@@ -11,6 +11,9 @@
 #include <iostream>
 using namespace std;
 
+void A(int p);
+void B(int p);
+void C();
 
 /** A
  * The function A
