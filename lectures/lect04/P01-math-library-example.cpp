@@ -50,6 +50,10 @@ int main()
   cout << "ceiling of e       : " << ceil(M_E) << endl;
   cout << "abs value of -3.25 : " << fabs(-3.251233432) << endl;
   cout << endl;
+
+  // logarithms
+  cout << "natural log(e)     : " << log(M_E) << endl;
+  cout << "log base 10 of 1000: " << log10(1000.0) << endl;
   
   // Return 0 to indicate successful completion
   return 0;
