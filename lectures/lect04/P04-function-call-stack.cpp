@@ -41,15 +41,12 @@ void B(int p)
 }
 
 
-/** B
- * The function B
- *
- * @param int p My parameter p is local to this functions invocation.
+/** C
+ * The function C
  */
-void B(int p)
+void C()
 {
-  p = 42;
-  C();
+  A(2);
 }
 
 
