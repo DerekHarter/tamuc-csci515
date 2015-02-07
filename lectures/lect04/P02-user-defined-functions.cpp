@@ -165,6 +165,10 @@ int main()
     cout << "Approximation of Pi to the " << i << "th term: " << approximatePi(i) << endl;
   }
   cout << endl;
+
+  cout <<  "Approximation of Pi to the 100 000th term     : " << approximatePi(100000) <<endl;
+  cout <<  "True value of Pi (to machine precision)       : " << M_PI << endl;
+  cout << endl;
   
   // Return 0 to indicate successful completion
   return 0;
