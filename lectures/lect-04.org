@@ -62,7 +62,8 @@ decomposition, but it is fundamental to learning how to solve real
 problems that are often complex and messy.  Functional decomposition
 allows you to encapsulate the messiness of the details in black boxes,
 as functions, then forget about that messiness to solve larger issues,
-on up till you address your ultimate problem.
+on up till you address your ultimate problem.  
+
 
 ** Standard Libraries of Functions
 
