@@ -82,7 +82,15 @@ bool isPerfectNumber(int number)
     }
   }
 
-  
+  // Now we can test if it is a perfect number
+  if (sum == number)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 
