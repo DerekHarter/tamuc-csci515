@@ -120,6 +120,7 @@ int main()
 
   // test perfect numbers
   cout << boolalpha;  // make sure all booleans are displayed as true/false
+  cout << "Is 6 a perfect number? : " << isPerfectNumber(6) << endl;
   
   // Return 0 to indicate successful completion
   return 0;
