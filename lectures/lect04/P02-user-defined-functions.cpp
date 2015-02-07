@@ -68,9 +68,12 @@ int main()
   cout << "3 ^ 2 : " << pow(3, 2) << endl;
   cout << "2 ^ 3 : " << pow(2, 3) << endl;
   cout << "3 ^ 3 : " << pow(3, 3) << endl;
-
+  cout << endl;
+  
   // test the hypotenuse function
-  cout << "Hypotenuse of triangle where A=3 and B=4: " << hypotenuse(3.0, 4.0) <<endl;
+  cout << "Hypotenuse of triangle where A=3 and B=4 : " << hypotenuse(3.0, 4.0) <<endl;
+  cout << "Hypotenuse of triangle where A=5 and B=12: " << hypotenuse(5.0, 12.0) << endl;
+  cout << endl;
   
   // Return 0 to indicate successful completion
   return 0;
