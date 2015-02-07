@@ -1,13 +1,12 @@
 /**
- * @author Joe Programmer
+ * @author Derek Harter
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
- * @ide    Visual Studio Express 2010
- * @date   January 1, 2015
- * @assg   ExamplAssg00
+ * @ide    Emacs, GCC/G++
+ * @date   February 5, 2015
+ * @assg   Lecture 04, P01 Math Library Example
  *
- * @description A short descrption of the program and its purpose, and
- *    the approach you took in solving the problem.
+ * @description Demonstration of standard math library functions.
  */
 #include <iostream>
 #include <cmath>
