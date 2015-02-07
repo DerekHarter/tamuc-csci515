@@ -95,6 +95,46 @@ bool isPerfectNumber(int number)
 }
 
 
+/** Approximate Pi
+ * Approximate Pi for the series:
+ *
+ * Pi = 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 ...
+ *
+ * to the i^th term in the series, where:
+ *     x_0=4  x_1=4/3 x_2=4/5, etc.
+ * and we are given i, the i^th term to calcuate to.
+ *
+ * @param int i The term in the series to calculate our approximation of Pi up to.
+ *
+ * @returns float An approximation of Pi to the i^th term of our series.
+ */
+bool isPerfectNumber(int number)
+{
+  int sum = 0; // Keep track of running sum of the divisors of the number
+
+  // Test all numbers from 1 up to number-1 to see if they are valid divisors
+  for (int divisor = 1; divisor <= number - 1; divisor++)
+  {
+    // if divisor is an evenly divisible divisor of number, add it to the sum
+    if (number % divisor == 0)
+    {
+      sum += divisor;
+    }
+  }
+
+  // Now we can test if it is a perfect number
+  // return (sum == number);
+  if (sum == number)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
