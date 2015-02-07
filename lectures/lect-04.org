@@ -33,9 +33,10 @@ functions that you can use that implement the sin() function for you.
 When you use a library that someone else has written, you are using
 the functions as black boxes.  You know what the function should take
 as input, what it does, and what its result should be.  But you do not
-need to concern yourself with the messy details.  Likewise, using
-standard libraries are examples of a type of reuse.  The functions are
-written one time, but reused over and over again in many programs.
+need to concern yourself with the messy details of how it achieves its
+result.  Likewise, using standard libraries are examples of a type of
+reuse.  The functions are written one time, but reused over and over
+again in many programs.
 
 As a programmer you can get the same benefits by writing functions
 yourself.  You can write a function once, and reuse it in many
