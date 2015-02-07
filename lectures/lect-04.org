@@ -8,11 +8,13 @@
 
 * First Session (11 - 11:40)
 ** Functional Programming
-- 6.1 To promote software reusability, every function should be limited to performing a single
-  well define task, and the name of the function should express the task effectively.
-- 6.2 If you cannot choose a concise name that expresses a function's task, you function might
-  be attempting to perform too many diverse tasks.  It's usually best to break such a function
-  into several smaller functions.
+- 6.1 To promote software reusability, every function should be
+  limited to performing a single well define task, and the name of the
+  function should express the task effectively.
+- 6.2 If you cannot choose a concise name that expresses a function's
+  task, your function might be attempting to perform too many diverse
+  tasks.  It's usually best to break such a function into several
+  smaller functions.
 
 Functions serve several purposes from the point of view of the
 developer:
