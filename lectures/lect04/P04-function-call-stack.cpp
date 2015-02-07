@@ -40,7 +40,4 @@ int main()
 {
 
   A(1);
-  
-  // Return 0 to indicate successful completion
-  return 0;
 }
