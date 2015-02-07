@@ -26,8 +26,8 @@ using namespace std;
 int main()
 {
   // sqrt
-  cout << "Square root of 4.0: " << sqrt(4.0) << endl;
-  cout << "Square root of 2.0: " << setprecision(16) << sqrt(2.0) << endl;
+  cout << "Square root of 4.0: " << setprecision(16) << sqrt(4.0) << endl;
+  cout << "Square root of 2.0: " << sqrt(2.0) << endl;
 
   // Return 0 to indicate successful completion
   return 0;
