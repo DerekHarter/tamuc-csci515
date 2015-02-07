@@ -26,7 +26,7 @@ void C();
 void A(int p)
 {
 
-  if (a < 2)
+  if (p < 2)
   {
     B(p);
   }
