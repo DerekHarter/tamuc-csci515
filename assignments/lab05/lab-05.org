@@ -73,9 +73,9 @@ run your program:
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions (~main~,
-~fahrenheitToCelsius~, ~celsiusToFahrenheit~) have function headers
-before them that document the purpose of the functions, and the input
-values and return value of the function.
+~rollDice~, ~simulateDiceGame~) have function headers preceeding them
+that document the purpose of the functions, and the input values and
+return value of the function.
 
 * Lab Submission
 
