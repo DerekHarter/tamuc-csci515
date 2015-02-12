@@ -68,7 +68,7 @@ Perform the following tasks:
    resulting ratio.  This ratio should represent an estimate of the
    probability of throwing a 7 or an 11 when rolling 2 dice.
 
-Your program output should look exactly like the following when I
+Your program output should look something close to the following when I
 run your program:
 
 #+begin_example
