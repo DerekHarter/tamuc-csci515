@@ -14,14 +14,12 @@
 using namespace std;
 
 
-/** is perfect number
- * Test whether a given number is a perfect number.
+/** roll a dice
+ * Roll a single dice.  Return a random number in the range [1, 6] (inclusive)
  *
- * @param int number The number to test
- *
- * @returns bool true if the number is a perfect number, false otherwise
+ * @returns int The randomly rolled dice, an integer in the range [1, 6]
  */
-bool isPerfectNumber(int number)
+int rollDice()
 {
 }
 
