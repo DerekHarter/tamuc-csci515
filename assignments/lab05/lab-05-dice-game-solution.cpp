@@ -54,7 +54,7 @@ void findPerfectNumbers(int n)
 int main()
 {
   // initialize seed to some known starting point
-  srand(42);
+  //srand(42);
 
   // test the rollDice() function
   for (int i=0; i<10; i++)
