@@ -81,6 +81,14 @@ I tried 1000000 experiments.  The estimated probability
 of rolling a 7 or an 11 is: 0.2224999964237213
 #+end_example
 
+If you implement your program correctly, then giving the same value
+for the seed will end up resulting in the same estimated probability
+on subsequent runs of your program.  However different seeds will give
+slightly different results.  The true probability of getting a sum of
+7 or 11 when rolling 2 dice is $\frac{8}{36} \approx 0.22222222$, so
+any experiment you run should end up with a value somewhere around
+that true probability.
+
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions (~main~,
