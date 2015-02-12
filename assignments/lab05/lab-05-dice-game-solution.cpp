@@ -22,7 +22,7 @@ using namespace std;
  */
 int rollDice()
 {
-  int dice = rand();
+  int dice = rand() % 6;
   return dice;
 }
 
