@@ -18,37 +18,42 @@
 - Learn about rescaling ranges of values.
 
 * Description
-In this lab we will write two simple functions.  The functions will
-take a single parameter as input, and return a single value as their
-result.  You are to write functions that convert temperatures
-on the Fahrenheit scale into the Celsius scale, and vice verse.
+In this lab we will write a program to answer a simple question from
+probability.  The question is, if I roll 2 dices, what is the probability
+of rolling a sum of either a 7 or 11 if I add up the faces of the 2 dice
+rolled.
 
-The formula for converting a temperature from Fahrenheit to Celsius is
-given by:
+You will first of all create a function that will return a random
+number between 1 and 6 when called.  Then you need to write another
+function to implement you simulation.  The simulation should roll
+N pairs of dice, and keep track of the number of times M out of the
+N rolls that the sum of the two dice was either a 7 or an 11.  The
+function will return this result M/N as a floating point ratio
+of the result.  For example, if we roll 1000 pairs of dice, and
+it comes up with a 7 or an 11 676 out of those 1000 trials, then
+the function will return 676 / 1000 = 0.676
 
-$$
-C = (F - 32) \cdot \frac{5}{9}
-$$
-
-And to convert in the other direction, from Celsius to Fahrenheit:
-
-$$
-F = C \cdot \frac{9}{5} + 32
-$$
 
 Perform the following tasks:
 
-1. Write a function named ~fahrenheitToCelsius()~.  The function takes
-   a single float value as input, and returns a single float value
-   as its result.  The input of course represents a temperature in
-   degrees Fahrenheit, and your program should use the above formula
-   to convert the value to a temperature on the Celsius scale.
+1. Write a function named ~rollDice()~.  This function takes no
+   parameters as input.  It will return a single integer value in the
+   range from 1 to 6.  The function should use the rand()
+   system call to generate a random number, and then scale the
+   number to the appropriate range [1,6] and return it.
 
-2. Write a function named ~celsiusToFahrenheit()~.  The function
-   takes a single float values as input, and returns a single float
-   value as its result.  As you can guess, this function performs
-   the other operation, to convert from the Celsius scale back to
-   the Fahrenheit scale.
+2. Write a function call ~simulateDiceGame()~.  This function will
+   take a single integer called ~numTrials~ as the input.  This is the
+   number of pairs of dice it is to simulate rolling.  You should
+   implement rolling ~numTrials~ pairs of dice by writing a for loop
+   that uses an index that ranges from 1 up to ~numTrials~.  You need
+   to call your ~rollDice()~ function two times, to simulate rolling 2
+   pairs of dice.  You then need to sum up the values of the two
+   random dice rolls you receive.  You need to keep track of the
+   number of trials whose sum is either 7 or 11, by for example
+   declaring a variable called ~successes~ that is initially 0, and
+   that is incremented by 1 each time the sum of the two dice rolls is
+   as indicated.
 
 3. In your ~main()~ function, prompt the user for a temperature on
    the Fahrenheit scale.  Use the first function to convert this value
