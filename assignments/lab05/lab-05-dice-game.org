@@ -31,8 +31,8 @@ rolls that the sum of the two dice was either a 7 or an 11.  The
 function will return this result M/N as a floating point ratio of the
 result (make sure you avoid integer division problems when returning
 the result).  For example, if we roll 1000 pairs of dice, and it comes
-up with a 7 or an 11 676 out of those 1000 trials, then the function
-will return 676 / 1000 = 0.676
+up with a 7 or an 11 on 676 out of those 1000 trials, then the
+function will return 676 / 1000 = 0.676
 
 
 Perform the following tasks:
