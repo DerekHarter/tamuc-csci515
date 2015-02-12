@@ -1,15 +1,15 @@
-#+TITLE:     Lab 04: Temperature Conversion Functions
+#+TITLE:     Lab 05: Temperature Conversion Functions
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2014 <2015-01-23 Fri>
-#+DESCRIPTION: Lab 04
+#+DATE:      CSci 515 Spring 2015 <2015-02-11 Wed>
+#+DESCRIPTION: Lab 05
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday February 11, by 4:10 pm (lab end time) |
+| Due: | In Lab, Wednesday February 18, by 4:05 pm (lab end time) |
 
 * Objectives
 - Write functions in C that take 1 or more parameters and return a result.
