@@ -90,6 +90,7 @@ int main()
 
   cout << endl;
   cout << "I tried " << numTrials << " experiments.  The estimated probability" << endl;
+  cout << "of rolling a 7 or an 11 is: " << prob << endl;
 
   // clean up and return 0 to indicate successful completion
   return 0;
