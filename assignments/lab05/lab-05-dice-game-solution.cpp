@@ -72,17 +72,22 @@ float simulateDiceGame(int numTrials)
  */
 int main()
 {
-  // initialize seed to some known starting point
   int seed;
+  int numTrials;
+  float prob;
+  
+  // initialize seed to some known starting point
   cout << "Enter a seed with which to initialize the random number generator: ";
   cin >> seed;
   srand(seed);
 
-  // test the rollDice() function
-  for (int i=0; i<10; i++)
-  {
-    cout << "Rolling the dice, rolled a: " << rollDice() << endl;
-  }
+  // Ask user for number of trials to perform, and do the experiment
+  cout << "I will simulate rolling a pair of dice and estimate the probability";
+  cout << "of rolling a 7 or an 11.  Enter the number of trials to run: ";
+  cin >> numTrials;
+  prob = simulateDiceGame(numTrials);
+  cout << "I tried " << numTrials << " experiments.  The estimated probability";
+  cout << "of rolling a 7 or an 11 is: " << prob;
 
   // clean up and return 0 to indicate successful completion
   return 0;
