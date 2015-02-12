@@ -12,11 +12,10 @@
 | Due: | In Lab, Wednesday February 18, by 4:05 pm (lab end time) |
 
 * Objectives
-- Write functions in C that take 1 or more parameters and return a result.
-- Learn about breaking up a larger problem into smaller sub-parts.
-- Create simple functions that use an input parameter.
-- Learn how to return results using the return values from a function.
-- Practice with input and output.
+- More practice writing C functions
+- Use standard library rand() functions to implement random simulations
+- Practice creating user defined functions that break problems into smaller pieces
+- Learn about rescaling ranges of values.
 
 * Description
 In this lab we will write two simple functions.  The functions will
