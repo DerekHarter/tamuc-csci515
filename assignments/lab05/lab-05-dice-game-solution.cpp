@@ -83,15 +83,13 @@ int main()
   cout << endl;
 
   // Ask user for number of trials to perform, and do the experiment
-  cout << "I will simulate rolling a pair of dice and estimate the probability";
+  cout << "I will simulate rolling a pair of dice and estimate the probability" << endl;
   cout << "of rolling a 7 or an 11.  Enter the number of trials to run: ";
   cin >> numTrials;
   prob = simulateDiceGame(numTrials);
 
   cout << endl;
-  cout << "I tried " << numTrials << " experiments.  The estimated probability";
-  cout << "of rolling a 7 or an 11 is: " << prob << endl;
-
+  cout << "I tried " << numTrials << " experiments.  The estimated probability" << endl
   // clean up and return 0 to indicate successful completion
   return 0;
 }
