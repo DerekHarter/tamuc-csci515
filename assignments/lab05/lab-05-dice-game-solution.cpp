@@ -87,6 +87,8 @@ int main()
   cout << "of rolling a 7 or an 11.  Enter the number of trials to run: ";
   cin >> numTrials;
   prob = simulateDiceGame(numTrials);
+
+  cout << endl;
   cout << "I tried " << numTrials << " experiments.  The estimated probability";
   cout << "of rolling a 7 or an 11 is: " << prob << endl;
 
