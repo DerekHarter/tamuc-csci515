@@ -57,8 +57,11 @@ int main()
   srand(42);
 
   // test the rollDice() function
-  cout << "Rolling the dice, rolled a: " << rollDice() << endl;
-  
+  for (int i=0; i<10; i++)
+  {
+    cout << "Rolling the dice, rolled a: " << rollDice() << endl;
+  }
+
   // clean up and return 0 to indicate successful completion
   return 0;
 }
