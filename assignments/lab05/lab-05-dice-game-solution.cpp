@@ -39,8 +39,24 @@ int rollDice()
  * @returns float The ratio of the number of trials that summed up to 7 or 11 among the
  *     total number of trials we ran.
  */
-void findPerfectNumbers(int n)
+float simulateDiceGame(int numTrials)
 {
+  int successes = 0;
+  int sum;
+
+  for (int trial = 1; trial <= numTrials; trial++)
+  {
+    // roll a pair of dice
+    sum = rollDice() + rollDice();
+
+    // test if the sum was a 7 or an 11
+    if ( (sum == 7) || (sum == 11) )
+    {
+      successes++;
+    }
+  }
+
+  return float(successes) / float(numTrials);
 }
 
 
