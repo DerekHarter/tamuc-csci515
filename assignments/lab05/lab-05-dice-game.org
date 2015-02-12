@@ -1,4 +1,4 @@
-#+TITLE:     Lab 05: Temperature Conversion Functions
+#+TITLE:     Lab 05: Dice Game
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2015 <2015-02-11 Wed>
