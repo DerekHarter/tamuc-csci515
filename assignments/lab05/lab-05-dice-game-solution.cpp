@@ -4,13 +4,11 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   February 5, 2015
- * @assg   Lab 04
+ * @assg   Lab 05
  *
- * @description An example solution for the Lab 04.  As specified, we
- *    break the problem up into 2 functions, isPerfectNumber() and
- *    findPerfectNumbers().  This program first asks the user how many
- *    numbers they want to test, and then calls findPerfectNumbers()
- *    to calculate and display the results.
+ * @description Simulate a game of dice.  Roll pairs of dice and count up
+ *    the number of rolls where the sum is a 7 or an 11.  Use this to
+ *    approximate the expected probability of rolling a 7 or an 11.
  */
 #include <iostream>
 #include <fstream>
