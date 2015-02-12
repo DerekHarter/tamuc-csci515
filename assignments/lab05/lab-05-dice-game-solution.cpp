@@ -75,13 +75,13 @@ int main()
   int seed;
   int numTrials;
   float prob;
-  
+
   // initialize seed to some known starting point
   cout << "Enter a seed with which to initialize the random number generator: ";
   cin >> seed;
   srand(seed);
   cout << endl;
-  
+
   // Ask user for number of trials to perform, and do the experiment
   cout << "I will simulate rolling a pair of dice and estimate the probability";
   cout << "of rolling a 7 or an 11.  Enter the number of trials to run: ";
