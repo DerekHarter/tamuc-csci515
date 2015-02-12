@@ -72,6 +72,13 @@ Your program output should look exactly like the following when I
 run your program:
 
 #+begin_example
+Enter a seed with which to initialize the random number generator: 42
+
+I will simulate rolling a pair of dice and estimate the probability
+of rolling a 7 or an 11.  Enter the number of trials to run: 1000000
+
+I tried 1000000 experiments.  The estimated probability
+of rolling a 7 or an 11 is: 0.2224999964237213
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
