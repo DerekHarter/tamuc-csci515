@@ -22,6 +22,7 @@ using namespace std;
  */
 int rollDice()
 {
+  return 6;
 }
 
 
@@ -52,7 +53,8 @@ void findPerfectNumbers(int n)
  */
 int main()
 {
-  int n;
+  // initialize seed to some known starting point
+  srand(42);
 
   // clean up and return 0 to indicate successful completion
   return 0;
