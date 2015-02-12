@@ -26,15 +26,18 @@ int rollDice()
 }
 
 
-/** find perfect numbers
- * Find all perfect numbers in the range from 1 to n.  n is passed in as a parameter
- * determining how far we should search.  We display the results on standard ouput
- * of the perfect numbers we find.
+/** simulate rolling pairs of dice game
+ * Simulate rolling a pair of dice.  We perform a number of simulations of this
+ * experiment (provided as input to the function).  We keep track of the number
+ * of trials in which the sum of our pairs of dice was either a 7 or an 11.  The
+ * ratio of the number of trials that added up to this sum, divided by the total
+ * number of trials tried is returned (e.g. the estimated probability of rolling)
+ * either a 7 or an 11.
  *
- * @param int n The maximum number we are to search up to, we will search through
- *    all values from 1 to n
+ * @param numTrials An integer value, the number of dice throwing experiments to try.
  *
- * @returns void Output is displayed on standard output.
+ * @returns float The ratio of the number of trials that summed up to 7 or 11 among the
+ *     total number of trials we ran.
  */
 void findPerfectNumbers(int n)
 {
