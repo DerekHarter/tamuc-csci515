@@ -54,7 +54,10 @@ void findPerfectNumbers(int n)
 int main()
 {
   // initialize seed to some known starting point
-  //srand(42);
+  int seed;
+  cout << "Enter a seed with which to initialize the random number generator: ";
+  cin >> seed;
+  srand(seed);
 
   // test the rollDice() function
   for (int i=0; i<10; i++)
