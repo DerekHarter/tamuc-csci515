@@ -68,11 +68,6 @@ Your program output should look exactly like the following when I
 run your program:
 
 #+begin_example
-Enter a value in degrees Fahrenheit, and I will convert it to the Celsius scale: 6
-6 degrees Fahrenheit is equal to -14.4444 degress Celsius
-
-Enter a value in degrees Celsius, and I will convert it to the Fahrenheit scale: 22
-22 degrees Celsius is equal to 71.6 degress Fahrenheit
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
