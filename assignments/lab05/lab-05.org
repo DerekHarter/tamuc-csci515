@@ -53,13 +53,16 @@ Perform the following tasks:
    number of trials whose sum is either 7 or 11, by for example
    declaring a variable called ~successes~ that is initially 0, and
    that is incremented by 1 each time the sum of the two dice rolls is
-   as indicated.
+   as indicated.  The result of your ~simulateDiceGame()~ function should
+   be a single floating point number, between [0.0, 1.0], that is the
+   result of dividing the number of successes, by the total number of
+   simulated dice throwing trials that were performed.
 
-3. In your ~main()~ function, prompt the user for a temperature on
-   the Fahrenheit scale.  Use the first function to convert this value
-   to the Celsius scale and display this to the user.  Then 
-   prompt the user for a temperature in degrees Centigrade, and use your
-   second function to convert it and display your results.
+3. In your ~main()~ function, prompt the user to enter the number of
+   trials to run.  Then call your ~simulateDiceGame()~ with this
+   number of trials, and get back the resulting ratio.  This ratio
+   should represent an estimate of the probability of throwing a 7 or
+   an 11 when rolling 2 dice.
 
 Your program output should look exactly like the following when I
 run your program:
