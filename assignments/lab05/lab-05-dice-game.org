@@ -94,8 +94,8 @@ that true probability.
 ~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions (~main~,
 ~rollDice~, ~simulateDiceGame~) have function headers preceding them
-that document the purpose of the functions, and the input values and
-return value of the function.
+that document the purpose of the functions, and the input parameters
+and return value of the function.
 
 * Lab Submission
 
