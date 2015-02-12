@@ -11,6 +11,7 @@
  *    approximate the expected probability of rolling a 7 or an 11.
  */
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 
