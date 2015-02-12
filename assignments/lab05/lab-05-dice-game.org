@@ -59,7 +59,10 @@ Perform the following tasks:
    result of dividing the number of successes, by the total number of
    simulated dice throwing trials that were performed.
 
-3. In your ~main()~ function, prompt the user to enter the number of
+3. In your ~main()~ function, prompt the user to enter two values.
+   First of all, ask the user to enter a random number to use as the
+   seed for the srand() function.  Use the value entered to seed the
+   random number generator.  Then ask the user to enter the number of
    trials to run.  Then call your ~simulateDiceGame()~ with this
    number of trials, and get back the resulting ratio.  This ratio
    should represent an estimate of the probability of throwing a 7 or
