@@ -53,11 +53,17 @@ Coin tossCoin()
 int randomRange(int a, int b)
 {
   int val;
-
+  int scale;
+  
   // first generate a value in range 0 to RAND_MAX
   val = rand();
 
   // now we scale the value
+  scale = b - a; // the magnitude of range we need to generate within
+  val = val % scale; // number is now scaled from 0 to scale-1
+  val = val + a; // number is now scaled from a to b
+
+  return val;
 }
 
 
