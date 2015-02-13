@@ -74,4 +74,7 @@ int main()
 	 << setw(10) << right << factorialIterative(i)
 	 << setw(10) << right << factorialRecursive(i) << endl;
   }
+
+  // Test Fibonacci sequence
+  
 }
