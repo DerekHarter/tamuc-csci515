@@ -73,7 +73,13 @@ int main()
 {
   int n;
 
-  cout << "Enter n (an integer >= 0) "
+  cout << "Enter n (an integer >= 0), and I will calculate the n^th" << endl
+       << "Fibonacci term for you using two different methods: ";
+  cin >> n;
+
+  cout << n << " term of the Fibonacci series, using iterative method: "
+       << nthFibonacciIterative(n) << endl;
+  
   // clean up and return 0 to indicate successful completion
   return 0;
 }
