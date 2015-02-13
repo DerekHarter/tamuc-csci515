@@ -104,18 +104,19 @@ time in order to receive credit.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 40+ pts.  Your program must have the 2 required named functions,
+1. 25+ pts.  Your program must have the 2 required named functions,
    that accept the required input parameters and return the required
    values (if any).
-1. 20+ pts. Your dice rolling function must return a random value within the
-   correct range each time it is called.
-1. 20+ pts. Your dice simulation function must correctly perform the number of indicated
+1. 25+ pts. Your iterative implementation must use loops/iteration to implement
+   its calculation.  The function must of course correctly compute the $n^{th}$
+   term of the series.
+1. 40+ pts. Your recursive implementation must perform its calculation using
+   recursion.  You must have the correct base cases defined.  Your function must
+   of course correctly compute the $n^{th}$ term of the series.
    trials, and count up the successful trials from all of the trials performed,
    and return the correct probability ratio.  Your ratio must be correct.
-1. 20+ pts. You should prompt the user for the number of trials to
-   perform in your ~main()~ function, and display the results.  The
-   interaction with your program should be as shown in the example
-   output above.
+1. 10+ pts. You must prompt the user for $n$ in main, and correctly display
+   the returned results form your function as shown.
 
 
 ** Program Style
