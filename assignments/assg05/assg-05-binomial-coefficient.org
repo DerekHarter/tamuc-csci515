@@ -146,6 +146,7 @@ $ assg05
 Enter n (an integer >= 0), the number of items in a set to choose from: 10
 Enter i (an integer >= 0), the number of elements to select from the set: 6
 The number of combinations (determined directly)    of 10 choose 6 is: 210
+The number of combinations (determined recursively) of 10 choose 6 is: 210
 
 #+end_example
 
