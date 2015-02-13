@@ -61,7 +61,10 @@
   subparts.  We can call our function itself on these smaller subproblems, and combine
   the answer in some way to solve the more complex problem.  This is the
   *recursive call* or the *recursion step*.
-- 
+- Example, calculate the factorial of a number
+- Write recursive function to calculate factorial.
+- Example, the Fibonacci sequence
+- Write a recursive function to calculate Fibonacci sequence
 
 * Third Session (12:40 - 1:40)
 ** Function Call Stack
