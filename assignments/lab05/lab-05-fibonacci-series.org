@@ -91,9 +91,9 @@ the input parameters and return value of the function.
 
 * Assignment Submission
 
-An eCollege dropbox has been created for this lab.  You should
+An eCollege dropbox has been created for this assignment.  You should
 upload your version of the lab by the end of lab time to the eCollege
-dropbox named ~Lab 05 Dice Game~.  Work submitted by the end
+dropbox named ~Assg 05 Fibonacci Sequence~.  Work submitted by the end
 of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
