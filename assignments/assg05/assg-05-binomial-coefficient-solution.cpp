@@ -113,8 +113,10 @@ int main()
   cin >> i;
 
   // Display the results
-  cout << "The number of combinations (determined directly) of " << n << " choose " << i << " is: "
+  cout << "The number of combinations (determined directly)    of " << n << " choose " << i << " is: "
        << countCombinationsDirectly(n, i) << endl;
+  cout << "The number of combinations (determined recursively) of " << n << " choose " << i << " is: "
+       << countCombinationsRecursively(n, i) << endl;
 
   // clean up and return 0 to indicate successful completion
   return 0;
