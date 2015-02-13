@@ -50,10 +50,13 @@ above and return it.  Your functions will return a single integer
 as their result, which will be the $n^{th}$ Fibonacci number they
 were asked to calculate.
 
-Call your first function ~nthFibonacciIterative()~.  This version
-takes a single integer as input, and returns an integer as its result,
-as already mentioned.  You should implement this function using a loop
-(when needed) to calculate the $n^{th}$ Fibonacci number.
+Perform the following tasks:
+
+1. Write a function called ~nthFibonacciIterative()~.  This version
+   takes a single integer as input, and returns an integer as its
+   result, as already mentioned.  You should implement this function
+   using a loop (when needed) to calculate the $n^{th}$ Fibonacci
+   number.
 
 The second function you will create will also calculate the $n^{th}$
 term in the Fibonacci sequence, but you are to do this using a
@@ -65,25 +68,7 @@ function itself in the appropriate manner in order to calculate the
 correct term of the sequence.
 
 
-In this lab we will write a program to answer a simple question from
-probability.  The question is, if I roll 2 dices, what is the probability
-of rolling a sum of either a 7 or 11 if I add up the faces of the 2 dice
-rolled.
 
-You will first of all create a function that will return a random
-number between 1 and 6 when called that simulates the rolling of a
-single dice.  Then you will write another function to implement the
-simulation of the dice game.  The simulation should roll N pairs of
-dice, and keep track of the number of times M out of the N rolls that
-the sum of the two dice was either a 7 or an 11.  The function will
-return this result M/N as a floating point ratio of the result (make
-sure you avoid integer division problems when returning the result).
-For example, if we roll 1000 pairs of dice, and it comes up with a 7
-or an 11 on 676 out of those 1000 trials, then the function will
-return 676 / 1000 = 0.676
-
-
-Perform the following tasks:
 
 1. Write a function named ~rollDice()~.  This function takes no
    parameters as input.  It will return a single integer value in the
