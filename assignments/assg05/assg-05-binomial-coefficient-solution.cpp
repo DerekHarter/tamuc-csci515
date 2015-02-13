@@ -90,7 +90,7 @@ int main()
   int i;
 
   // test factorial
-  for (int i=0; i<=5; i++)
+  for (int i=0; i<=10; i++)
   {
     cout << "Factorial " << i << " : " << factorial(i) << endl;
   }
