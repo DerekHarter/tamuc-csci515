@@ -101,7 +101,7 @@ int nthFibonacciIterative(int n)
  *
  * @returns int The n^th Fibonacci number in the sequence
  */
-int nthFibonacciIterative(int n)
+int nthFibonacciRecursive(int n)
 {
   if (n == 0)
   {
@@ -111,21 +111,7 @@ int nthFibonacciIterative(int n)
   {
     return 1;
   }
-
-  int nth;
-  int nMinusTwo = 0;
-  int nMinusOne = 1;
-  for (int i = 2; i <= n; i++)
-  {
-    // calculate the ith term (2,3,...)
-    nth = nMinusOne + nMinusTwo;
-
-    // save two previous terms for next iteration
-    nMinusTwo = nMinusOne;
-    nMinusOne = nth;
-  }
-
-  return nth;
+  return nthFibonacciRecursive(n - 1) + nthFibonacciRecursive(n - 2);
 }
 
 
