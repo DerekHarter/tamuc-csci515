@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Wednesday February 24, by Midnight |
+| Due: | Tuesday February 24, by Midnight |
 
 * Objectives
 - More practice writing C functions
