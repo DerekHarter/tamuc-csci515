@@ -59,6 +59,34 @@ int nthFibonacciIterative(int n)
 }
 
 
+/** nth term of Fibonacci series (recursive)
+ * Calculate the n^th term of the Fibonacci series.  Implement the
+ * calculation using a recursive approach.  We take a single
+ * integer n as input, which is the term we are to calculate, and return the
+ * nth term of the series as an integer for our result.
+ *
+ * @param n An integer value, the term of the series we are to
+ *     caclualte and return.  n must be >= 0, a positive term.
+ *
+ * @returns int The nth Fibonacci term
+ */
+int nthFibonacciRecursive(int n)
+{
+  // The base cases x_0 and x_1
+  if (n == 0)
+  {
+    return 0;
+  }
+  if (n == 1)
+  {
+    return 1;
+  }
+
+  // otherwise we can calculate recursive
+  return nthFibonacciRecursive(n - 1) + nthFibonacciRecursive(n- 2);
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
