@@ -1,4 +1,4 @@
-% Created 2015-02-13 Fri 10:09
+% Created 2015-02-13 Fri 10:29
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,12 +20,12 @@
 \usemintedstyle{default}
 \providecommand{\alert}[1]{\textbf{#1}}
 
-\title{Lab 05: Fibonacci Series}
+\title{Assg 05: Fibonacci Series}
 \author{CSci 515 Spring 2015}
 \date{2015-02-11}
 \hypersetup{
   pdfkeywords={},
-  pdfsubject={Lab 05},
+  pdfsubject={Assg 05},
   pdfcreator={Emacs Org-mode version 7.9.3f}}
 
 \begin{document}
@@ -39,7 +39,7 @@
 
 \begin{center}
 \begin{tabular}{ll}
- Due:  &  In Lab, Wednesday February 18, by 4:05 pm (lab end time)  \\
+ Due:  &  Wednesday February 24, by Midnight  \\
 \end{tabular}
 \end{center}
 \section*{Objectives}
@@ -77,97 +77,59 @@ values in the sequence together, and that the base cases are when $n=0$
 then the value of the series is $0$ and when $n=1$ the value of the
 series is $1$.
 
-
-
-In this lab we will write a program to answer a simple question from
-probability.  The question is, if I roll 2 dices, what is the probability
-of rolling a sum of either a 7 or 11 if I add up the faces of the 2 dice
-rolled.
-
-You will first of all create a function that will return a random
-number between 1 and 6 when called that simulates the rolling of a
-single dice.  Then you will write another function to implement the
-simulation of the dice game.  The simulation should roll N pairs of
-dice, and keep track of the number of times M out of the N rolls that
-the sum of the two dice was either a 7 or an 11.  The function will
-return this result M/N as a floating point ratio of the result (make
-sure you avoid integer division problems when returning the result).
-For example, if we roll 1000 pairs of dice, and it comes up with a 7
-or an 11 on 676 out of those 1000 trials, then the function will
-return 676 / 1000 = 0.676
-
+In this assignment you need to write two functions that calculate
+and return the $nth$ value of the Fibonacci series.  The functions
+will take a single integer parameter $n$ as input.  If $n$ is 0, you
+should return 0, and if $n$ is 1 you should return 1.  For all other
+values of $n>1$ you should calculate the value to return as given
+above and return it.  Your functions will return a single integer
+as their result, which will be the $n^{th}$ Fibonacci number they
+were asked to calculate.
 
 Perform the following tasks:
 
 \begin{enumerate}
-\item Write a function named \verb~rollDice()~.  This function takes no
-   parameters as input.  It will return a single integer value in the
-   range from 1 to 6.  The function should use the rand()
-   system call to generate a random number, and then scale the
-   number to the appropriate range [1,6] and return it.
-\item Write a function call \verb~simulateDiceGame()~.  This function will
-   take a single integer called \verb~numTrials~ as the input.  This is the
-   number of pairs of dice it is to simulate rolling.  You should
-   implement rolling \verb~numTrials~ pairs of dice by writing a for loop
-   that uses an index that ranges from 1 up to \verb~numTrials~.  You need
-   to call your \verb~rollDice()~ function two times, to simulate rolling 2
-   pairs of dice.  You then need to sum up the values of the two
-   random dice rolls you receive.  You need to keep track of the
-   number of trials whose sum is either 7 or 11, by for example
-   declaring a variable called \verb~successes~ that is initially 0, and
-   that is incremented by 1 each time the sum of the two dice rolls is
-   as indicated.  The result of your \verb~simulateDiceGame()~ function should
-   be a single floating point number, between [0.0, 1.0], that is the
-   result of dividing the number of successes, by the total number of
-   simulated dice throwing trials that were performed.
-\item In your \verb~main()~ function, prompt the user to enter two values.
-   First of all, ask the user to enter a random number to use as the
-   seed for the srand() function.  Use the value entered to seed the
-   random number generator.  Then ask the user to enter the number of
-   trials to run. Using this number of trials values, call your
-   \verb~simulateDiceGame()~ with this number of trials, and get back the
-   resulting ratio.  This ratio should represent an estimate of the
-   probability of throwing a 7 or an 11 when rolling 2 dice.
+\item Write a function called \verb~nthFibonacciIterative()~.  This version of
+   the function takes a single integer as input, and returns an
+   integer as its result, as already mentioned.  You should implement
+   this function using a loop (when needed) to calculate the $n^{th}$
+   Fibonacci number.
+\item Write a second function that will also calculate the $n^{th}$ term
+   in the Fibonacci sequence.  But your second function will do this
+   using a recursive implementation.  Your recursive implementation
+   should be called \verb~nthFibonacciRecursive()~.  You should not use any
+   loops in this version of the function, you will calculate the
+   $n^{th}$ Fibonacci number by recursively calling the
+   \verb~nthFibonacciRecursive()~ function itself in the appropriate manner
+   in order to calculate the correct term of the sequence.
+\item In your \verb~main()~ function, prompt the user to enter a value for $n$.
+   You should then call each of your two different implementations, and
+   display the result of their calculation of the $n^{th}$ term of the
+   Fibonacci sequence, which if you implement the two different versions
+   correctly, should always give the same result.  Be careful of using
+   large values of $n$, as the recursive implementation especially may
+   take quite a while to calculate in cases of large $n$.
 \end{enumerate}
 
 Your program output should look something close to the following when I
 run your program:
 
 
-\begin{verbatim}
-Enter a seed with which to initialize the random number generator: 42
-
-I will simulate rolling a pair of dice and estimate the probability
-of rolling a 7 or an 11.  Enter the number of trials to run: 1000000
-
-I tried 1000000 experiments.  The estimated probability
-of rolling a 7 or an 11 is: 0.2224999964237213
-\end{verbatim}
-
-If you implement your program correctly, then giving the same value
-for the seed will end up resulting in the same estimated probability
-on subsequent runs of your program.  However different seeds will give
-slightly different results.  The true probability of getting a sum of
-7 or 11 when rolling 2 dice is $\frac{8}{36} \approx 0.22222222$, so
-any experiment you run should end up with a value somewhere around
-that true probability.
 
 \textbf{NOTE}: Now that our programs have more functions than just the
 \verb~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions (\verb~main~,
-\verb~rollDice~, \verb~simulateDiceGame~) have function headers preceding them
-that document the purpose of the functions, and the input parameters
-and return value of the function.
-\section*{Lab Submission}
+\verb~nthFibonacciIterative~, \verb~nthFibonacciRecursive~) have function
+headers preceding them that document the purpose of the functions, and
+the input parameters and return value of the function.
+\section*{Assignment Submission}
 \label{sec-4}
 
 
-An eCollege dropbox has been created for this lab.  You should
-upload your version of the lab by the end of lab time to the eCollege
-dropbox named \verb~Lab 05 Dice Game~.  Work submitted by the end
-of lab will be considered, but after the lab ends you may no longer
-submit work, so make sure you submit your best effort by the lab end
-time in order to receive credit.
+An eCollege dropbox has been created for this assignment.  You should
+upload your version of the assignment to the eCollege dropbox named
+\verb~Assg 05 Fibonacci Sequence~ created for this submission.  Work
+submitted by the due date will be considered for evaluation.
 \section*{Requirements and Grading Rubrics}
 \label{sec-5}
 \subsection*{Program Execution, Output and Functional Requirements}
@@ -177,26 +139,27 @@ time in order to receive credit.
 \begin{enumerate}
 \item Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-\item 40+ pts.  Your program must have the 2 required named functions,
+\item 25+ pts.  Your program must have the 2 required named functions,
    that accept the required input parameters and return the required
    values (if any).
-\item 20+ pts. Your dice rolling function must return a random value within the
-   correct range each time it is called.
-\item 20+ pts. Your dice simulation function must correctly perform the number of indicated
+\item 25+ pts. Your iterative implementation must use loops/iteration to implement
+   its calculation.  The function must of course correctly compute the $n^{th}$
+   term of the series.
+\item 40+ pts. Your recursive implementation must perform its calculation using
+   recursion.  You must have the correct base cases defined.  Your function must
+   of course correctly compute the $n^{th}$ term of the series.
    trials, and count up the successful trials from all of the trials performed,
    and return the correct probability ratio.  Your ratio must be correct.
-\item 20+ pts. You should prompt the user for the number of trials to
-   perform in your \verb~main()~ function, and display the results.  The
-   interaction with your program should be as shown in the example
-   output above.
+\item 10+ pts. You must prompt the user for $n$ in main, and correctly display
+   the returned results form your function as shown.
 \end{enumerate}
 \subsection*{Program Style}
 \label{sec-5-2}
 
 
-Your programs must conform to the style and formatting guidelines given for this course.
-The following is a list of the guidelines that are required for the lab to be submitted
-this week.
+Your programs must conform to the style and formatting guidelines
+given for this course.  The following is a list of the guidelines that
+are required for the assignment to be submitted this week.
 
 \begin{enumerate}
 \item The file header for the file with your name and program information
@@ -223,11 +186,12 @@ this week.
 \end{enumerate}
 
 Failure to conform to any of these formatting and programming practice
-guidelines for this lab will result in at least 1/3 of the points (33)
-for the assignment being removed for each guideline that is not
-followed (up to 3 before getting a 0 for the assignment). Failure to
-follow other class/textbook programming guidelines may result in a
-loss of points, especially for those programming practices given in
-our Deitel textbook that have been in our required reading so far.
+guidelines for this assignment will result in at least 1/3 of the
+points (33) for the assignment being removed for each guideline that
+is not followed (up to 3 before getting a 0 for the
+assignment). Failure to follow other class/textbook programming
+guidelines may result in a loss of points, especially for those
+programming practices given in our Deitel textbook that have been in
+our required reading so far.
 
 \end{document}
