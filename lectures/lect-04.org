@@ -1,7 +1,7 @@
 #+TITLE:     Lecture 04 Notes
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2014 <2015-02-06 Fri>
+#+DATE:      CSci 515 Spring 2015 <2015-02-06 Fri>
 #+DESCRIPTION: Lecture 04 Notes.
 #+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
