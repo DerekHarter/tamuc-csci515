@@ -19,7 +19,7 @@ using namespace std;
  *
  * @returns int The factorial of n, n!
  */
-int factorialIterative(n)
+int factorialIterative(int n)
 {
   int res = 1;
 
