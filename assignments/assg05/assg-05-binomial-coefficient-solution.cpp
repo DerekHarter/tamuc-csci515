@@ -87,6 +87,7 @@ int countCombinationsRecursively(int n)
 int main()
 {
   int n;
+  int i;
 
   cout << "Enter n (an integer >= 0), and I will calculate the n^th" << endl
        << "Fibonacci term for you using two different methods: ";
