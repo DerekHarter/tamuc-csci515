@@ -45,13 +45,11 @@ int main()
 {
   // Test factorial functions
   cout << setw(2) << right << "n"
-       << " "
-       << setw(10) << left << "iterative" << endl;
+       << setw(10) << right << "iterative" << endl;
   
   for (int i=0; i <= 10; i++)
   {
     cout << setw(2) << right << i
-	 << " "
-	 << " " << factorialIterative(i) << endl;
+	 << setw(10) << right << factorialIterative(i) << endl;
   }
 }
