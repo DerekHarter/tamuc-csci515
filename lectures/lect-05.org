@@ -39,6 +39,7 @@
 - ~rand()~ generates an integer from 0 to max
 - ~srand()~ setting the seed.
 - Random number generator function is *pseudo random*, a sequence
+- Can repeat a sequence of random numbers.
 - How do we flip a coin sided die?
 - Write a function that flips a coin.
 - Write a function that returns random number in arbitrary range.
