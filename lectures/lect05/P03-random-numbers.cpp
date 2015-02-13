@@ -139,7 +139,12 @@ int main()
   {
     cout << randomRange(1, 5) << endl;
   }
-
-  // Example of generate floating point values in range from 0.0 to 1.0
+  cout << endl;
   
+  // Example of generate floating point values in range from 0.0 to 1.0
+  cout << "Random floats with uniform probability of value in range [0.0, 1.0]:" << endl;
+  for (int i=0; i < 10; i++)
+  {
+    cout << randomUniform() << endl;
+  }
 }
