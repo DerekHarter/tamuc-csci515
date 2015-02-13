@@ -12,6 +12,26 @@
 using namespace std;
 
 
+/** factorial (iterative)
+ * Calculate the factorial of an integer number n, e.g. n!
+ *
+ * @param n An integer number to find factorial of.
+ *
+ * @returns int The factorial of n, n!
+ */
+int factorial(n)
+{
+  int f = 1;
+
+  for (int i = 1; i <= n; i++)
+  {
+    f = f * i;
+  }
+
+  return f;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
