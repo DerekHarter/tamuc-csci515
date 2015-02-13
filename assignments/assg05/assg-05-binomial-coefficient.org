@@ -52,6 +52,13 @@ $$
 Where $!$ represents the factorial of a number, as we discussed in
 class.
 
+However, another way of computing the number of combinations is by
+defining a recursive relationship:
+
+$$
+{n \choose i} = {n-1 \choose i-1} + {n-1 \choose i}
+$$
+
 
 
 
