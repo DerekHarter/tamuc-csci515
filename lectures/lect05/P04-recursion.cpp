@@ -103,6 +103,8 @@ int nthFibonacciIterative(int n)
 int main()
 {
   // Test factorial functions
+  cout << "Factorial" << endl;
+  cout << "---------" << endl;
   cout << setw(2) << right << "n"
        << setw(10) << right << "iterative"
        << setw(10) << right << "recursive" << endl;
@@ -114,5 +116,14 @@ int main()
   }
 
   // Test Fibonacci sequence
+  cout << setw(2) << right << "n"
+       << setw(10) << right << "iterative"
+       << setw(10) << right << "recursive" << endl;
+  for (int i=0; i <= 10; i++)
+  {
+    cout << setw(2) << right << i
+	 << setw(10) << right << factorialIterative(i)
+	 << setw(10) << right << factorialRecursive(i) << endl;
+  }
   
 }
