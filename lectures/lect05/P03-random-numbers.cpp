@@ -110,6 +110,12 @@ int main()
     }
   }
   cout << "After 10 coin tosses, we got " << numHeads << " Heads and " << numTails << " tails." << endl;
-
+  cout << endl;
+  
   // Example of function to return random number in range from a to b
+  cout << "Random range, from 1 to 5" << endl;
+  for (int i=0; i < 10; i++)
+  {
+    cout << randomRange(1, 5) << endl;
+  }
 }
