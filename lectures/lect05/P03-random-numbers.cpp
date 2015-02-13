@@ -9,6 +9,7 @@
  * @description Example of using the c standard library random number generator functions.
  */
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 
