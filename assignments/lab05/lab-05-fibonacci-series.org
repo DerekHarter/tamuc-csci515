@@ -41,6 +41,28 @@ values in the sequence together, and that the base cases are when $n=0$
 then the value of the series is $0$ and when $n=1$ the value of the
 series is $1$.
 
+In this assignment you need to write two functions that calculate
+and return the $nth$ value of the Fibonacci series.  The functions
+will take a single integer parameter $n$ as input.  If $n$ is 0, you
+should return 0, and if $n$ is 1 you should return 1.  For all other
+values of $n>1$ you should calculate the value to return as given
+above and return it.  Your functions will return a single integer
+as their result, which will be the $n^{th}$ Fibonacci number they
+were asked to calculate.
+
+Call your first function ~nthFibonacciIterative()~.  This version
+takes a single integer as input, and returns an integer as its result,
+as already mentioned.  You should implement this function using a loop
+(when needed) to calculate the $n^{th}$ Fibonacci number.
+
+The second function you will create will also calculate the $n^{th}$
+term in the Fibonacci sequence, but you are to do this using a
+recursive implementation.  Your recursive implementation should be
+called ~nthFibonacciRecursive()~.  You should not use any loops in
+this version of the function, you will calculate the $n^{th}$
+Fibonacci number by recursively calling the ~nthFibonacciRecursive()~
+function itself in the appropriate manner in order to calculate the
+correct term of the sequence.
 
 
 In this lab we will write a program to answer a simple question from
