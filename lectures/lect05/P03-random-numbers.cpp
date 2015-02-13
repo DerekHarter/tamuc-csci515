@@ -82,7 +82,7 @@ float randomUniform()
   val = rand();
 
   // we can convert to a float by dividing by RAND_MAX
-  float res = (float)val / (float)RAND_MAX;
+  res = (float)val / (float)RAND_MAX;
 
   return res;
 }
