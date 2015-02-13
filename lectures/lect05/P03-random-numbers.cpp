@@ -73,7 +73,7 @@ int randomRange(int a, int b)
  * 
  * @returns float A randomly generated floating point number in range [0.0, 1.0]
  */
-int randomUniform(int a, int b)
+float randomUniform()
 {
 }
 
