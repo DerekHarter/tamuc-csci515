@@ -1,4 +1,4 @@
-#+TITLE:     Lab 05: Dice Game
+#+TITLE:     Lab 05: Fibonacci Series
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-11 Wed>
@@ -13,9 +13,9 @@
 
 * Objectives
 - More practice writing C functions
-- Use standard library rand() functions to implement random simulations
-- Practice creating user defined functions that break problems into smaller pieces
-- Learn about rescaling ranges of values.
+- Learn about implementing algorithms using iteration and recursion.
+- Practice writing a recursive function.
+- Become more familiar with implementing mathematical series on a computer.
 
 * Description
 In this lab we will write a program to answer a simple question from
