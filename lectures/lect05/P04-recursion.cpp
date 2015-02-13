@@ -74,7 +74,7 @@ int nthFibonacciIterative(int n)
     return 1;
   }
 
-  int nth = 0;
+  int nth;
   int nMinusOne = 0;
   int nMinusTwo = 1;
   for (int i = 2; i <= n; i++)
