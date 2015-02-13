@@ -175,14 +175,12 @@ submitted by the due date will be considered for evaluation.
 1. 25+ pts.  Your program must have the 3 required named functions,
    that accept the required input parameters and return the required
    values.
-1. 25+ pts. Your iterative implementation must use loops/iteration to implement
-   its calculation.  The function must of course correctly compute the $n^{th}$
-   term of the series.
+1. 25+ pts. Your direct calculation implementation must use the formula
+   for the binomial coefficient, and calculate the number of combinations
+   using the factorial function you provide.
 1. 40+ pts. Your recursive implementation must perform its calculation using
    recursion.  You must have the correct base cases defined.  Your function must
-   of course correctly compute the $n^{th}$ term of the series.
-   trials, and count up the successful trials from all of the trials performed,
-   and return the correct probability ratio.  Your ratio must be correct.
+   of course correctly compute the number of combinations.
 1. 10+ pts. You must prompt the user for $n$ in main, and correctly display
    the returned results form your function as shown.
 
