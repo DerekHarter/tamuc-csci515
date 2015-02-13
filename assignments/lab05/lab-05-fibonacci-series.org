@@ -89,7 +89,7 @@ and required.  Make sure that all of your functions (~main~,
 headers preceding them that document the purpose of the functions, and
 the input parameters and return value of the function.
 
-* Lab Submission
+* Assignment Submission
 
 An eCollege dropbox has been created for this lab.  You should
 upload your version of the lab by the end of lab time to the eCollege
