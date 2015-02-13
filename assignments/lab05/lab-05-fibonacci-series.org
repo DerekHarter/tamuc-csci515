@@ -58,48 +58,22 @@ Perform the following tasks:
    this function using a loop (when needed) to calculate the $n^{th}$
    Fibonacci number.
 
-The second function you will create will also calculate the $n^{th}$
-term in the Fibonacci sequence, but you are to do this using a
-recursive implementation.  Your recursive implementation should be
-called ~nthFibonacciRecursive()~.  You should not use any loops in
-this version of the function, you will calculate the $n^{th}$
-Fibonacci number by recursively calling the ~nthFibonacciRecursive()~
-function itself in the appropriate manner in order to calculate the
-correct term of the sequence.
+2. Write a second function that will also calculate the $n^{th}$ term
+   in the Fibonacci sequence.  But your second function will do this
+   using a recursive implementation.  Your recursive implementation
+   should be called ~nthFibonacciRecursive()~.  You should not use any
+   loops in this version of the function, you will calculate the
+   $n^{th}$ Fibonacci number by recursively calling the
+   ~nthFibonacciRecursive()~ function itself in the appropriate manner
+   in order to calculate the correct term of the sequence.
 
-
-
-
-1. Write a function named ~rollDice()~.  This function takes no
-   parameters as input.  It will return a single integer value in the
-   range from 1 to 6.  The function should use the rand()
-   system call to generate a random number, and then scale the
-   number to the appropriate range [1,6] and return it.
-
-2. Write a function call ~simulateDiceGame()~.  This function will
-   take a single integer called ~numTrials~ as the input.  This is the
-   number of pairs of dice it is to simulate rolling.  You should
-   implement rolling ~numTrials~ pairs of dice by writing a for loop
-   that uses an index that ranges from 1 up to ~numTrials~.  You need
-   to call your ~rollDice()~ function two times, to simulate rolling 2
-   pairs of dice.  You then need to sum up the values of the two
-   random dice rolls you receive.  You need to keep track of the
-   number of trials whose sum is either 7 or 11, by for example
-   declaring a variable called ~successes~ that is initially 0, and
-   that is incremented by 1 each time the sum of the two dice rolls is
-   as indicated.  The result of your ~simulateDiceGame()~ function should
-   be a single floating point number, between [0.0, 1.0], that is the
-   result of dividing the number of successes, by the total number of
-   simulated dice throwing trials that were performed.
-
-3. In your ~main()~ function, prompt the user to enter two values.
-   First of all, ask the user to enter a random number to use as the
-   seed for the srand() function.  Use the value entered to seed the
-   random number generator.  Then ask the user to enter the number of
-   trials to run. Using this number of trials values, call your
-   ~simulateDiceGame()~ with this number of trials, and get back the
-   resulting ratio.  This ratio should represent an estimate of the
-   probability of throwing a 7 or an 11 when rolling 2 dice.
+3. In your ~main()~ function, prompt the user to enter a value for $n$.
+   You should then call each of your two different implementations, and
+   display the result of their calculation of the $n^{th}$ term of the
+   Fibonacci sequence, which if you implement the two different versions
+   correctly, should always give the same result.  Be careful of using
+   large values of $n$, as the recursive implementation especially may
+   take quite a while to calculate in cases of large $n$.
 
 Your program output should look something close to the following when I
 run your program:
