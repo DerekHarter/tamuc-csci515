@@ -6,9 +6,9 @@
  * @date   February 5, 2015
  * @assg   Assg 05
  *
- * @description Calculate the n^th term of the Fibonacci series.  We implement
- *    the algorithm to calculate this term using both an iterative approach and
- *    a recursive approach.
+ * @description Calculate the binomial coefficient, using a direct and 
+ *    a recursive algorithm.  The binomial coefficient is a way of counting
+ *    the number of combinations when choosing i elements from a set of n items.
  */
 #include <iostream>
 #include <iomanip>
