@@ -37,6 +37,33 @@ Coin tossCoin()
 }
 
 
+/** random number in range
+ * Generate a random number within a range.  We take two integer parameters as input
+ * a and b, the beginning and end of the range.  We will generate a random number
+ * and scale it to be within the indicated range, and return it.  This function
+ * returns integer values with an equal probability of returning any value within
+ * the range.  This function is inclusive, thus the a and b begin and end of range
+ * can also be returned by this function.
+ *
+ * @param a an integer, the beginning of the range within which to generate a random value.
+ * @param b an integer, the end of the range within which to generate a random value.
+ * 
+ * @returns int An integer value within range a to b, e.g. a <= return <= b
+ */
+Coin tossCoin()
+{
+  // use rand to generate a random number, use mod to change range into 2 values, 0 or 1
+  if (rand() % 2 == 0)
+  {
+    return HEADS;
+  }
+  else
+  {
+    return TAILS;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
