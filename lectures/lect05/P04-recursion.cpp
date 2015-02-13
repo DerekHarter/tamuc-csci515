@@ -116,6 +116,8 @@ int main()
   }
 
   // Test Fibonacci sequence
+  cout << "Fibonacci sequence" << endl;
+  cout << "------------------" << endl;
   cout << setw(2) << right << "n"
        << setw(10) << right << "iterative"
        << setw(10) << right << "recursive" << endl;
