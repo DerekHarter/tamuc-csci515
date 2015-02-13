@@ -21,14 +21,14 @@ using namespace std;
  */
 int factorial(n)
 {
-  int f = 1;
+  int res = 1;
 
   for (int i = 1; i <= n; i++)
   {
-    f = f * i;
+    res = res * i;
   }
 
-  return f;
+  return res;
 }
 
 
