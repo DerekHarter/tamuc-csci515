@@ -43,11 +43,11 @@
 
 ** Recursion
 
+
+* Third Session (12:40 - 1:40)
 ** Function Call Stack
 - Example, functions A(), B() and C()
 - Recursive
 - Some advice/examples on using the Visual Studio debugger.
 
-
-* Third Session (12:40 - 1:40)
 
