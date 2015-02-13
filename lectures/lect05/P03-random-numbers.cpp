@@ -55,6 +55,7 @@ int randomRange(int a, int b)
   int val;
 
   // first generate a value in range 0 to RAND_MAX
+  val = rand();
 }
 
 
