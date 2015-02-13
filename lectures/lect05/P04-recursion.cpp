@@ -149,7 +149,7 @@ int main()
   {
     cout << setw(2) << right << n
 	 << setw(10) << right << nthFibonacciIterative(n)
-	 << setw(10) << right << factorialRecursive(n) << endl;
+	 << setw(10) << right << nthFibonacciRecursive(n) << endl;
   }
 
 }
