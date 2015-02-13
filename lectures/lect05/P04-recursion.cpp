@@ -33,6 +33,26 @@ int factorialIterative(int n)
 }
 
 
+/** factorial (recursive)
+ * Calculate the factorial of an integer number n, e.g. n!
+ *
+ * @param n An integer number to find factorial of.
+ *
+ * @returns int The factorial of n, n!
+ */
+int factorialRecursive(int n)
+{
+  if (n == 0)
+  {
+    return 1;
+  }
+  else
+  {
+    return n * factorialRecursive(n-1);
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
