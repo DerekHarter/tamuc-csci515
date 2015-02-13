@@ -121,7 +121,7 @@ int main()
   cout << setw(2) << right << "n"
        << setw(10) << right << "iterative"
        << setw(10) << right << "recursive" << endl;
-  for (int n=0; n <= 10; i++)
+  for (int n=0; n <= 10; n++)
   {
     cout << setw(2) << right << n
 	 << setw(10) << right << nthFibonacciIterative(i)
