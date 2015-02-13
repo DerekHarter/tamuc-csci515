@@ -47,7 +47,6 @@ in the field of computational sciences.
 * _Mandatory_ Textbook
 /C++ How to Program (7th Edition)/, by Paul J. Deitel & Harvey M. Deitel, ISBN-13: 978 0136117261
 
-
 * Evaluation (Tentative)
 Your grade for the course will be based on the following (approximate) percentages:
 
@@ -156,7 +155,6 @@ completing the course.
 Quizzes: Unannounced pop-quizzes may be given in class and/or online
 through eCollege to help ensure students stay up with assigned
 material.
-
 
 * Course Schedule (Preliminary)
 
