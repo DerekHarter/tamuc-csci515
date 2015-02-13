@@ -19,7 +19,7 @@ using namespace std;
  *
  * @returns int The factorial of n, n!
  */
-int factorial(n)
+int factorialIterative(n)
 {
   int res = 1;
 
@@ -43,4 +43,9 @@ int factorial(n)
  */
 int main()
 {
+  // Test factorial functions
+  for (int i=0; i <= 10; i++)
+  {
+    cout << i << " " << factorialIterative(i) << endl;
+  }
 }
