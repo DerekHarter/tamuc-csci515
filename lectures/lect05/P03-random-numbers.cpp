@@ -118,4 +118,7 @@ int main()
   {
     cout << randomRange(1, 5) << endl;
   }
+
+  // Example of generate floating point values in range from 0.0 to 1.0
+  
 }
