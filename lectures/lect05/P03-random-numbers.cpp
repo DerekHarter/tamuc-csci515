@@ -50,17 +50,11 @@ Coin tossCoin()
  * 
  * @returns int An integer value within range a to b, e.g. a <= return <= b
  */
-Coin tossCoin()
+int randomRange(int a, int b)
 {
-  // use rand to generate a random number, use mod to change range into 2 values, 0 or 1
-  if (rand() % 2 == 0)
-  {
-    return HEADS;
-  }
-  else
-  {
-    return TAILS;
-  }
+  int val;
+
+  // first generate a value in range 0 to RAND_MAX
 }
 
 
