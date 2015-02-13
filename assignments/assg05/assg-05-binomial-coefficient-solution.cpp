@@ -14,19 +14,25 @@
 using namespace std;
 
 
-/** nth term of Fibonacci series (iterative)
- * Calculate the n^th term of the Fibonacci series.  Implement the
- * calculation using an iterative approach (use a loop).  We take a single
- * integer n as input, which is the term we are to calculate, and return the
- * nth term of the series as an integer for our result.
+/** factorial
+ * Calculate the factorial of a number n!.  We implement this calculation
+ * using an iterative method.
  *
- * @param n An integer value, the term of the series we are to
- *     caclualte and return.  n must be >= 0, a positive term.
+ * @param n An integer value, the number we are to compute the
+ *     factorial of.  n must be >= 0.  0! is defined to be 1.
  *
- * @returns int The nth Fibonacci term
+ * @returns int Returns n! = n * n-1 * n-2 * ... * 1
  */
-int nthFibonacciIterative(int n)
+int factorial(int n)
 {
+  int f = 1;  // the result we will return
+
+  for (int i=1; i <= n; i++)
+  {
+    f = f * i;
+  }
+
+  return f;
 }
 
 
