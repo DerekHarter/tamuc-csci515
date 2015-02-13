@@ -75,6 +75,16 @@ int randomRange(int a, int b)
  */
 float randomUniform()
 {
+  int val;
+  float res;
+
+  // first generate a random int in range 0 to RAND_MAX
+  val = rand();
+
+  // we can convert to a float by dividing by RAND_MAX
+  float res = (float)val / (float)RAND_MAX;
+
+  return res;
 }
 
 
