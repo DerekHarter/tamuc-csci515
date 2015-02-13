@@ -62,4 +62,21 @@ int main()
   }
 
   // flipping a coin
+  // lets flip 10 coins at random and count up the results
+  int numHeads;
+  int numTails;
+  
+  numHeads = numTails = 0;
+  for (int i=0; i < 10; i++)
+  {
+    if (tossCoin() == HEADS)
+    {
+      numHeads++;
+    }
+    else
+    {
+      numTails++;
+    }
+  }
+  cout << "After 10 coin tosses, we got " << numHeads << " Heads and " << numTails << " tails." << endl;
 }
