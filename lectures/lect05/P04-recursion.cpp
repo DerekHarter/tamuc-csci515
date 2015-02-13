@@ -53,6 +53,29 @@ int factorialRecursive(int n)
 }
 
 
+/** n^th Fibonacci number (iterative)
+ * Calculate the nth term of the Fibonacci series using an iterative method.  The
+ * Fibonacci sequence is defined as:
+ *     0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+ *     where x_n = x_{n-1} + x_{n-2}
+ *
+ * @param n An integer, the term n we are to calculate.
+ *
+ * @returns int The n^th Fibonacci number in the sequence
+ */
+int factorialIterative(int n)
+{
+  int res = 1;
+
+  for (int i = 1; i <= n; i++)
+  {
+    res = res * i;
+  }
+
+  return res;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
