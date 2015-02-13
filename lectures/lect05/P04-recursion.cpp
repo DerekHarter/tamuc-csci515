@@ -68,7 +68,6 @@ int main()
   cout << setw(2) << right << "n"
        << setw(10) << right << "iterative"
        << setw(10) << right << "recursive" << endl;
-  
   for (int i=0; i <= 10; i++)
   {
     cout << setw(2) << right << i
