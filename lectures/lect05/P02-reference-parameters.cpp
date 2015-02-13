@@ -43,4 +43,10 @@ void swap(int& x, int& y)
  */
 int main()
 {
+  int v1 = 32;
+  int v2 = 48;
+
+  cout << "Before swapping v1=" << v1 << " v2 = " << v2 << endl;
+  swap(v1, v2);
+  cout << "After  swapping v1=" << v1 << " v2 = " << v2 << endl;
 }
