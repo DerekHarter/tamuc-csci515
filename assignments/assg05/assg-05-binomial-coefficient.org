@@ -59,7 +59,29 @@ $$
 {n \choose i} = {n-1 \choose i-1} + {n-1 \choose i}
 $$
 
+You can think of this as a recursive function that takes two parameters
+$n$ and $i$, and computes the answer recursively by adding together
+two smaller subproblems.  For this recursive definition of the
+binomial coefficient, the base cases are:
 
+$$
+{n \choose 0} = {n \choose n} = 1
+$$
+
+We have already seen why $n$ items choose $n$ elements will always
+be 1.  The other base case is used by definition, and simply means
+that there is only 1 way of choosing no items from a set (e.g. you
+don't choose).
+
+In this assignment you will write 3 functions.  You need to first of
+all write a function to compute the number of combinations of $n$
+items choosing $i$ elements directly using our first formula
+(involving factorials).  You should also (re)create the factorial
+function (that we developed in class) that you will call from this
+function to compute factorials of numbers.  You will also implement a
+recursive version of calculating the number of calculations, using the
+recursive definition of the binomial coefficient and the base cases
+given above.
 
 
 Perform the following tasks:
