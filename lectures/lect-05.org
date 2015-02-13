@@ -51,7 +51,7 @@
 
 ** Recursion
 - A function that calls itself (either directly or indirectly).
-- Some problems are much more easily (succintly) stated or solved as a
+- Some problems are much more easily (succinctly) stated or solved as a
   recursive relationship.
 - *base case(s)* are extremely important.  All recursive functions must have 
   1 or more base cases.  The base cases are the cases that are directly solvable.
