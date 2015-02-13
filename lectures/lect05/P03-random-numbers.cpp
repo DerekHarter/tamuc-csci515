@@ -13,23 +13,26 @@
 using namespace std;
 
 
-/** swap values
- * Swap the values of two given parameters.  An example where pass by reference is needed
- * in order to do the task in a clean and simple manner.  This function does not return
- * a result, the result occurs because we switch the values of the two reference parameters.
+// global declarations
+enum Coin {HEADS, TAILS};
+
+
+/** toss a coin
+ * Perform a random (fair) coin toss.  Use enumerated type to define our coin toss result.
+ * This function returns either HEADS or TAILS randomly, with equal probability.
  *
- * @param x a reference to an integer value to be swapped with some other
- * @param y a reference to an integer value, the other value to be swapped.
- * 
- * @returns void This function does not return a result.
+ * @returns Coin Either HEADS or TAILS at random simulating a random coin toss
  */
-void swap(int& x, int& y)
+Coin tossCoin()
 {
-  int tmp;
-  
-  tmp = x;
-  x = y;
-  y = tmp;
+  if (rand() % 2 == 0)
+  {
+    return HEADS;
+  }
+  else
+  {
+    return TAILS;
+  }
 }
 
 
@@ -45,7 +48,8 @@ void swap(int& x, int& y)
 int main()
 {
   int seed;
-  
+
+  // setting the pseudo-random generator seed
   cout << "Enter a seed value to seed pseudo-random generator with: ";
   cin >> seed;
   srand(seed);
@@ -55,4 +59,6 @@ int main()
   {
     cout << rand() << endl;
   }
+
+  // flipping a coin
 }
