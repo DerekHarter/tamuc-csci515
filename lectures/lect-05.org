@@ -32,7 +32,15 @@
   changes to it will be accessible to the caller when the function
   returns.
 
-** Random Library
+** Random Number Generation
+- ~rand()~ and ~srand()~ functions
+- Included in the C standard library <cstdlib> <stdlib.h>
+- RAND_MAX
+- How do we flip a coin sided die?
+- Write a function that flips a coin.
+- Write a function that returns random number in arbitrary range.
+- How do we generate a floating point number randomly?
+- Write a function generate a float over range 0.0 to 1.0 with uniform probability.
 
 
 
