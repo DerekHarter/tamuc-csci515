@@ -86,28 +86,31 @@ given above.
 
 Perform the following tasks:
 
-1. Write a function called ~nthFibonacciIterative()~.  This version of
-   the function takes a single integer as input, and returns an
-   integer as its result, as already mentioned.  You should implement
-   this function using a loop (when needed) to calculate the $n^{th}$
-   Fibonacci number.
+1. Write a function called ~factorial()~.  This function should take a
+   single integer as its parameter, and it will compute the factorial
+   $n!$ of the value and return it as its result.
 
-2. Write a second function that will also calculate the $n^{th}$ term
-   in the Fibonacci sequence.  But your second function will do this
-   using a recursive implementation.  Your recursive implementation
-   should be called ~nthFibonacciRecursive()~.  You should not use any
-   loops in this version of the function, you will calculate the
-   $n^{th}$ Fibonacci number by recursively calling the
-   ~nthFibonacciRecursive()~ function itself in the appropriate manner
-   in order to calculate the correct term of the sequence.
+1. Write a function called ~countCombinationsDirectly()~.  This
+   function will compute the number of combinations that result from
+   choosing $i$ elements from a set of $n$ items.  The function should
+   take two integer values as its parameters $n$ and $i$, which will
+   be integers >= 0.  The function should directly compute the number
+   of combinations, using the equation involving factorials of $n$ and
+   $i$.  The function will return a single integer as its result.
 
-3. In your ~main()~ function, prompt the user to enter a value for $n$.
-   You should then call each of your two different implementations, and
-   display the result of their calculation of the $n^{th}$ term of the
-   Fibonacci sequence, which if you implement the two different versions
-   correctly, should always give the same result.  Be careful of using
-   large values of $n$, as the recursive implementation especially may
-   take quite a while to calculate in cases of large $n$.
+2. Write a second function called ~countCombinationsRecursive()~.
+   This function will also count the number of combinations of
+   choosing $i$ elements from a set of $n$ items.  However, you need
+   to implement this calculation as a recursive function, using the
+   recursive definition and two base cases given above.  Your function
+   will take the same two integer parameters $n$ and $i$ with values
+   >= 0, and will return an integer result, the count of the number of
+   combinations from $n$ choose $i$ items.
+
+3. In your ~main()~ function, prompt the user to enter a value for $n$
+   the number of items in a set to choose from, and $i$, the number of
+   items to select from that set.  You will calculate the number of
+   combinations using both of your methods, and display the result.
 
 Your program output should look something close to the following when I
 run your program.  I have run the program multiple times, so that you
