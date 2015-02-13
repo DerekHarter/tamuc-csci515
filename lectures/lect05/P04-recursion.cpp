@@ -6,7 +6,7 @@
  * @date   February 5, 2015
  * @assg   Lecture 04, P02 User Defined Functions
  *
- * @description Example of using the c standard library random number generator functions.
+ * @description Example of iterative and recursive function implementations of effective procedures.
  */
 #include <iostream>
 using namespace std;
