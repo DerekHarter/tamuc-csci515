@@ -27,6 +27,29 @@ using namespace std;
  *
  * @returns int The nth Fibonacci term
  */
+int nthFibonacciIterative(int n)
+{
+  int nMinus1 = 0;
+  int nMinus2 = 1;
+  int nthTerm;
+  
+  // The base cases x_0 and x_1
+  if (n == 0)
+  {
+    return 0;
+  }
+  if (n == 1)
+  {
+    return 1;
+  }
+
+  for (int i=2; i <= n; i++)
+  {
+    nthTerm = nMinus1 + nMinus2;
+  }
+
+  return nthTerm;
+}
 
 
 /** main entry point
