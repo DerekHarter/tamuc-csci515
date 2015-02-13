@@ -97,7 +97,7 @@ int main()
 
   // Display the results
   cout << "The number of combinations (determined directly) of " << n << " choose " << i " is: "
-       << countCombinationsDirectly(n, i);
+       << countCombinationsDirectly(n, i) << endl;
   
   // clean up and return 0 to indicate successful completion
   return 0;
