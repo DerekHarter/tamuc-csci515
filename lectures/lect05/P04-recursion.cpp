@@ -75,8 +75,8 @@ int nthFibonacciIterative(int n)
   }
 
   int nth;
-  int nMinusOne = 0;
-  int nMinusTwo = 1;
+  int nMinusTwo = 0;
+  int nMinusOne = 1;
   for (int i = 2; i <= n; i++)
   {
     // calculate the ith term (2,3,...)
