@@ -50,7 +50,18 @@
 * Second Session (11:45 - 12:30)
 
 ** Recursion
-
+- A function that calls itself (either directly or indirectly).
+- Some problems are much more easily (succintly) stated or solved as a
+  recursive relationship.
+- *base case(s)* are extremely important.  All recursive functions must have 
+  1 or more base cases.  The base cases are the cases that are directly solvable.
+  These are the pieces we know the answer to, or can determine easily.
+- The recursive cases then are those that we don't know directly, but that we solve
+  usually by breaking apart the problem, and specifying/solving in terms of easier
+  subparts.  We can call our function itself on these smaller subproblems, and combine
+  the answer in some way to solve the more complex problem.  This is the
+  *recursive call* or the *recursion step*.
+- 
 
 * Third Session (12:40 - 1:40)
 ** Function Call Stack
