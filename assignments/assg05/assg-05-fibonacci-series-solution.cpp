@@ -23,7 +23,7 @@ using namespace std;
  * nth term of the series as an integer for our result.
  *
  * @param n An integer value, the term of the series we are to
- * caclualte and return.
+ *     caclualte and return.  n must be >= 0, a positive term.
  *
  * @returns int The nth Fibonacci term
  */
@@ -71,7 +71,9 @@ int nthFibonacciIterative(int n)
  */
 int main()
 {
+  int n;
 
+  cout << "Enter n (an integer >= 0) "
   // clean up and return 0 to indicate successful completion
   return 0;
 }
