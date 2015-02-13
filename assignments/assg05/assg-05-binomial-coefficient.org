@@ -25,7 +25,7 @@ selecting $i$ items out of a set of $n$ elements.  For example, if we
 have $3$ items ~A, B, C~, there are 3 ways to choose 1 element from
 the items: choose A, or choose B or choose C.  There are also 3 ways
 to choose 2 elements from the items: AB, AC, BC.  There is only 1 way
-to choose 3 elements form a set of 3 items: ABC. When we choose
+to choose 3 elements from a set of 3 items: ABC. When we choose
 2 elements from a set of 3 items, we normally speak of this as
 3 select 2, and mathematically we write this as a binomial coefficient
 
