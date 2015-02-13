@@ -63,16 +63,31 @@ int factorialRecursive(int n)
  *
  * @returns int The n^th Fibonacci number in the sequence
  */
-int factorialIterative(int n)
+int nthFibonacciIterative(int n)
 {
-  int res = 1;
-
-  for (int i = 1; i <= n; i++)
+  if (n == 0)
   {
-    res = res * i;
+    return 0;
+  }
+  if (n == 1)
+  {
+    return 1;
   }
 
-  return res;
+  int nth = 0;
+  int nMinusOne = 0;
+  int nMinusTwo = 1;
+  for (int i = 2; i <= n; i++)
+  {
+    // calculate the ith term (2,3,...)
+    nth = nMinusOne + nMinusTwo;
+
+    // save two previous terms for next iteration
+    nMinusTwo = nMinusOne;
+    nMinusOne = nth;
+  }
+
+  return nth;
 }
 
 
