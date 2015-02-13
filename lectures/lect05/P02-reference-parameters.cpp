@@ -12,6 +12,26 @@
 using namespace std;
 
 
+/** swap values
+ * Swap the values of two given parameters.  An example where pass by reference is needed
+ * in order to do the task in a clean and simple manner.  This function does not return
+ * a result, the result occurs because we switch the values of the two reference parameters.
+ *
+ * @param x a reference to an integer value to be swapped with some other
+ * @param y a reference to an integer value, the other value to be swapped.
+ * 
+ * @returns void This function does not return a result.
+ */
+void swap(int& x, int& y)
+{
+  int tmp;
+  
+  tmp = x;
+  x = y;
+  y = tmp;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
