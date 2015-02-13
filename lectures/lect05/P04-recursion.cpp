@@ -44,8 +44,14 @@ int factorialIterative(int n)
 int main()
 {
   // Test factorial functions
+  cout << setw(2) << right << "n"
+       << " "
+       << setw(10) << left << "iterative" << endl;
+  
   for (int i=0; i <= 10; i++)
   {
-    cout << i << " " << factorialIterative(i) << endl;
+    cout << setw(2) << right << i
+	 << " "
+	 << " " << factorialIterative(i) << endl;
   }
 }
