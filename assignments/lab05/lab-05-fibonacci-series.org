@@ -119,9 +119,9 @@ submitted by the due date will be considered for evaluation.
 
 ** Program Style
 
-Your programs must conform to the style and formatting guidelines given for this course.
-The following is a list of the guidelines that are required for the lab to be submitted
-this week.
+Your programs must conform to the style and formatting guidelines
+given for this course.  The following is a list of the guidelines that
+are required for the assignment to be submitted this week.
 
 1. The file header for the file with your name and program information
   and the function header for your main function must be present, and
