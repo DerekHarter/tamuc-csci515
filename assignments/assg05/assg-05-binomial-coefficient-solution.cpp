@@ -11,9 +11,23 @@
  *    the number of combinations when choosing i elements from a set of n items.
  */
 #include <iostream>
-#include <iomanip>
-#include <cstdlib>
 using namespace std;
+
+
+/** nth term of Fibonacci series (iterative)
+ * Calculate the n^th term of the Fibonacci series.  Implement the
+ * calculation using an iterative approach (use a loop).  We take a single
+ * integer n as input, which is the term we are to calculate, and return the
+ * nth term of the series as an integer for our result.
+ *
+ * @param n An integer value, the term of the series we are to
+ *     caclualte and return.  n must be >= 0, a positive term.
+ *
+ * @returns int The nth Fibonacci term
+ */
+int nthFibonacciIterative(int n)
+{
+}
 
 
 /** nth term of Fibonacci series (iterative)
