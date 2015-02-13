@@ -72,10 +72,17 @@ int countCombinationsDirectly(int n, int i)
  *
  * @returns int The number of combinations from choosing i elements from a set of n
  */
-int countCombinationsRecursively(int n)
+int countCombinationsRecursively(int n, int i)
 {
+  if ((i == 0) || (i == n))
+  {
+    return 1;
+  }
+  else
+  {
+    return countCombinationsRecursively(n-1, i-1) + countCombinationsRecursively(n-1, i);
+  }
 
-  return 0;
 }
 
 
