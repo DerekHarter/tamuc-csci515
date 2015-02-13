@@ -60,12 +60,17 @@ int countCombinationsDirectly(int n, int i)
 
 
 /** count combinations recursively
- * x
+ * Calculate the number of combinations from a set of n items when
+ * choosing i elements form the set.  We use the recursive definition
+ * of the binomial coefficient to calculate this value recursively.
  *
- * @param n An integer value, the term of the series we are to
- *     caclualte and return.  n must be >= 0, a positive term.
+ * @param n An integer value, the number of items in the set to choose from.
+ *     n should be >= 0, a positive number.
+ * @param i An integer value, the number of elements to choose from the set.
+ *     i should be >=0, a positive value, n choose 0 and n choose n are
+ *     defined to have 1 combination.
  *
- * @returns int The nth Fibonacci term
+ * @returns int The number of combinations from choosing i elements from a set of n
  */
 int countCombinationsRecursively(int n)
 {
