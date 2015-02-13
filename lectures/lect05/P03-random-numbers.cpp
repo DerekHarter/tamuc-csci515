@@ -114,8 +114,8 @@ int main()
   
   // Example of function to return random number in range from a to b
   cout << "Random range, from 1 to 5" << endl;
-  for (int i=0; i < 10; i++)
+  for (int i=0; i < 100; i++)
   {
-    cout << randomRange(1, 5) << endl;
+    cout << randomRange(-5, 5) << endl;
   }
 }
