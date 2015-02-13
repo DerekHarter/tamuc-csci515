@@ -51,8 +51,11 @@ int factorial(int n)
  */
 int countCombinationsDirectly(int n, int i)
 {
+  int numCombinations;
 
-  return nthTerm;
+  numCombinations = factorial(n) / (factorial(i) * factorial(n - i));
+
+  return numCombinations;
 }
 
 
