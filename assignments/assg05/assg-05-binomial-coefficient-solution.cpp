@@ -82,7 +82,6 @@ int countCombinationsRecursively(int n, int i)
   {
     return countCombinationsRecursively(n-1, i-1) + countCombinationsRecursively(n-1, i);
   }
-
 }
 
 
