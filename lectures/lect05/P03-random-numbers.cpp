@@ -25,6 +25,7 @@ enum Coin {HEADS, TAILS};
  */
 Coin tossCoin()
 {
+  // use rand to generate a random number, use mod to change range into 2 values, 0 or 1
   if (rand() % 2 == 0)
   {
     return HEADS;
