@@ -89,6 +89,12 @@ int main()
   int n;
   int i;
 
+  // test factorial
+  for (int i=0; i<=5; i++)
+  {
+    cout << "Factorial " << i << " : " << factorial(i) << endl;
+  }
+  
   // ask user for the size of set and the number of items to choose
   cout << "Enter n (an integer >= 0), the number of items in a set to choose from: ";
   cin >> n;
