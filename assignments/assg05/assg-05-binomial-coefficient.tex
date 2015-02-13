@@ -1,4 +1,4 @@
-% Created 2015-02-13 Fri 12:03
+% Created 2015-02-13 Fri 12:15
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -95,38 +95,62 @@ $$
 {n \choose i} = {n-1 \choose i-1} + {n-1 \choose i}
 $$
 
+You can think of this as a recursive function that takes two parameters
+$n$ and $i$, and computes the answer recursively by adding together
+two smaller subproblems.  For this recursive definition of the
+binomial coefficient, the base cases are:
 
+$$
+{n \choose 0} = {n \choose n} = 1
+$$
+
+We have already seen why $n$ items choose $n$ elements will always
+be 1.  The other base case is used by definition, and simply means
+that there is only 1 way of choosing no items from a set (e.g. you
+don't choose).
+
+In this assignment you will write 3 functions.  You need to first of
+all write a function to compute the number of combinations of $n$
+items choosing $i$ elements directly using our first formula
+(involving factorials).  You should also (re)create the factorial
+function (that we developed in class) that you will call from this
+function to compute factorials of numbers.  You will also implement a
+recursive version of calculating the number of calculations, using the
+recursive definition of the binomial coefficient and the base cases
+given above.
 
 
 Perform the following tasks:
 
 \begin{enumerate}
-\item Write a function called \verb~nthFibonacciIterative()~.  This version of
-   the function takes a single integer as input, and returns an
-   integer as its result, as already mentioned.  You should implement
-   this function using a loop (when needed) to calculate the $n^{th}$
-   Fibonacci number.
-\item Write a second function that will also calculate the $n^{th}$ term
-   in the Fibonacci sequence.  But your second function will do this
-   using a recursive implementation.  Your recursive implementation
-   should be called \verb~nthFibonacciRecursive()~.  You should not use any
-   loops in this version of the function, you will calculate the
-   $n^{th}$ Fibonacci number by recursively calling the
-   \verb~nthFibonacciRecursive()~ function itself in the appropriate manner
-   in order to calculate the correct term of the sequence.
-\item In your \verb~main()~ function, prompt the user to enter a value for $n$.
-   You should then call each of your two different implementations, and
-   display the result of their calculation of the $n^{th}$ term of the
-   Fibonacci sequence, which if you implement the two different versions
-   correctly, should always give the same result.  Be careful of using
-   large values of $n$, as the recursive implementation especially may
-   take quite a while to calculate in cases of large $n$.
+\item Write a function called \verb~factorial()~.  This function should take a
+   single integer as its parameter, and it will compute the factorial
+   $n!$ of the value and return it as its result.
+\item Write a function called \verb~countCombinationsDirectly()~.  This
+   function will compute the number of combinations that result from
+   choosing $i$ elements from a set of $n$ items.  The function should
+   take two integer values as its parameters $n$ and $i$, which will
+   be integers >= 0.  The function should directly compute the number
+   of combinations, using the equation involving factorials of $n$ and
+   $i$.  The function will return a single integer as its result.
+\item Write a second function called \verb~countCombinationsRecursive()~.
+   This function will also count the number of combinations of
+   choosing $i$ elements from a set of $n$ items.  However, you need
+   to implement this calculation as a recursive function, using the
+   recursive definition and two base cases given above.  Your function
+   will take the same two integer parameters $n$ and $i$ with values
+   >= 0, and will return an integer result, the count of the number of
+   combinations from $n$ choose $i$ items.
+\item In your \verb~main()~ function, prompt the user to enter a value for $n$
+   the number of items in a set to choose from, and $i$, the number of
+   items to select from that set.  You will calculate the number of
+   combinations using both of your methods, and display the result.
 \end{enumerate}
 
 Your program output should look something close to the following when I
 run your program.  I have run the program multiple times, so that you
-can also see some examples of correct output for some larger values
-of $n$:
+can also see some examples of correct output for some different values
+of $n$ and $i$:
 
 
 \begin{verbatim}

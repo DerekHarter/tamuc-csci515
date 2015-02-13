@@ -114,8 +114,8 @@ Perform the following tasks:
 
 Your program output should look something close to the following when I
 run your program.  I have run the program multiple times, so that you
-can also see some examples of correct output for some larger values
-of $n$:
+can also see some examples of correct output for some different values
+of $n$ and $i$:
 
 #+begin_example
 $ assg05
