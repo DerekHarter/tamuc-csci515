@@ -104,10 +104,13 @@ int main()
   cout << "Enter n (an integer >= 0), and I will calculate the n^th" << endl
        << "Fibonacci term for you using two different methods: ";
   cin >> n;
+  cout << endl;
 
   cout << n << " term of the Fibonacci series, using iterative method: "
        << nthFibonacciIterative(n) << endl;
-  
+  cout << n << " term of the Fibonacci series, using recursive method: "
+       << nthFibonacciRecursive(n) << endl;
+
   // clean up and return 0 to indicate successful completion
   return 0;
 }
