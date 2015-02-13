@@ -89,16 +89,16 @@ int main()
   int n;
   int i;
 
-  cout << "Enter n (an integer >= 0), and I will calculate the n^th" << endl
-       << "Fibonacci term for you using two different methods: ";
+  // ask user for the size of set and the number of items to choose
+  cout << "Enter n (an integer >= 0), the number of items in a set to choose from: ";
   cin >> n;
-  cout << endl;
+  cout << "Enter i (an integer >= 0), the number of elements to select from the set: ";
+  cin >> i;
 
-  cout << n << " term of the Fibonacci series, using iterative method: "
-       << nthFibonacciIterative(n) << endl;
-  cout << n << " term of the Fibonacci series, using recursive method: "
-       << nthFibonacciRecursive(n) << endl;
-
+  // Display the results
+  cout << "The number of combinations (determined directly) of " << n << " choose " << i " is: "
+       << countCombinationsDirectly(n, i);
+  
   // clean up and return 0 to indicate successful completion
   return 0;
 }
