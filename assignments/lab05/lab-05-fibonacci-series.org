@@ -52,11 +52,11 @@ were asked to calculate.
 
 Perform the following tasks:
 
-1. Write a function called ~nthFibonacciIterative()~.  This version
-   takes a single integer as input, and returns an integer as its
-   result, as already mentioned.  You should implement this function
-   using a loop (when needed) to calculate the $n^{th}$ Fibonacci
-   number.
+1. Write a function called ~nthFibonacciIterative()~.  This version of
+   the function takes a single integer as input, and returns an
+   integer as its result, as already mentioned.  You should implement
+   this function using a loop (when needed) to calculate the $n^{th}$
+   Fibonacci number.
 
 The second function you will create will also calculate the $n^{th}$
 term in the Fibonacci sequence, but you are to do this using a
