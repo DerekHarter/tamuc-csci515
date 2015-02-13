@@ -46,6 +46,8 @@ int nthFibonacciIterative(int n)
   for (int i=2; i <= n; i++)
   {
     nthTerm = nMinus1 + nMinus2;
+    nMinus2 = nMinus1;
+    nMinus1 = nthTerm;
   }
 
   return nthTerm;
