@@ -29,8 +29,8 @@ using namespace std;
  */
 int nthFibonacciIterative(int n)
 {
-  int nMinus1 = 0;
-  int nMinus2 = 1;
+  int nMinus1;
+  int nMinus2;
   int nthTerm;
   
   // The base cases x_0 and x_1
@@ -43,9 +43,14 @@ int nthFibonacciIterative(int n)
     return 1;
   }
 
+  // Calculate interative the 2,3,...,nth term by adding two previous terms
+  nMinus2 = 0;
+  nMinus1 = 1;
   for (int i=2; i <= n; i++)
   {
     nthTerm = nMinus1 + nMinus2;
+
+    // remember the two previous terms, for next iteration
     nMinus2 = nMinus1;
     nMinus1 = nthTerm;
   }
