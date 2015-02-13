@@ -34,8 +34,11 @@
 
 ** Random Number Generation
 - ~rand()~ and ~srand()~ functions
-- Included in the C standard library <cstdlib> <stdlib.h>
-- RAND_MAX
+- Included in the C standard library ~<cstdlib>~ ~<stdlib.h>~
+- ~RAND_MAX~
+- ~rand()~ generates an integer from 0 to max
+- ~srand()~ setting the seed.
+- Random number generator function is *pseudo random*, a sequence
 - How do we flip a coin sided die?
 - Write a function that flips a coin.
 - Write a function that returns random number in arbitrary range.
