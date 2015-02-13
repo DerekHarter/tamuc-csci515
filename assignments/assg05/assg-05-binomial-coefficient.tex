@@ -1,4 +1,4 @@
-% Created 2015-02-13 Fri 11:56
+% Created 2015-02-13 Fri 12:01
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -66,10 +66,27 @@ to choose 3 elements form a set of 3 items: ABC. When we choose
 3 select 2, and mathematically we write this as a binomial coefficient
 
 $$
-{3 \choose 2}
+{3 \choose 2} = 3
 $$
 
+Where the result of the binomial coefficient is to count up the number of
+combinations we will have for $n$ items when we select $i$ elements.  As
+another example, just to make this clear, if we have a set of 4 items, and
+we choose 2 elements, we get: AB, AC, AD, BC, BD, CD = 6:
 
+$$
+{4 \choose 2} = 6
+$$
+
+Mathematically we can compute directly the number of combinations for
+$n$ choose $i$ using factorials:
+
+$$
+{n \choose i} = \frac{n!}{i! (n - i)!}
+$$
+
+Where $!$ represents the factorial of a number, as we discussed in
+class.
 
 
 
