@@ -56,6 +56,8 @@ int randomRange(int a, int b)
 
   // first generate a value in range 0 to RAND_MAX
   val = rand();
+
+  // now we scale the value
 }
 
 
@@ -82,7 +84,8 @@ int main()
   {
     cout << rand() << endl;
   }
-
+  cout << "RAND_MAX is " << RAND_MAX << endl;
+  
   // flipping a coin
   // lets flip 10 coins at random and count up the results
   int numHeads;
