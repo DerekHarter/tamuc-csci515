@@ -62,6 +62,7 @@
   the answer in some way to solve the more complex problem.  This is the
   *recursive call* or the *recursion step*.
 - Example, calculate the factorial of a number
+- Write an iterative function to calculate factorial first.
 - Write recursive function to calculate factorial.
 - Example, the Fibonacci sequence
 - Write a recursive function to calculate Fibonacci sequence
