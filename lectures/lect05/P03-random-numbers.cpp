@@ -37,7 +37,7 @@ Coin tossCoin()
 }
 
 
-/** random number in range
+/** random int in range a to b
  * Generate a random number within a range.  We take two integer parameters as input
  * a and b, the beginning and end of the range.  We will generate a random number
  * and scale it to be within the indicated range, and return it.  This function
@@ -64,6 +64,17 @@ int randomRange(int a, int b)
   val = val + a; // number is now scaled from a to b
 
   return val;
+}
+
+
+/** random float in range 0.0 to 1.0
+ * Generate a random floating point number.  Here we generate random floats
+ * in the range from 0.0 to 1.0 (inclusive) with equal probability (uniform probability).
+ * 
+ * @returns float A randomly generated floating point number in range [0.0, 1.0]
+ */
+int randomUniform(int a, int b)
+{
 }
 
 
