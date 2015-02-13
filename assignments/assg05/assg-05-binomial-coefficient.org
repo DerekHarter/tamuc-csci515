@@ -154,9 +154,10 @@ The number of combinations (determined recursively) of 10 choose 6 is: 210
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions (~main~,
-~nthFibonacciIterative~, ~nthFibonacciRecursive~) have function
-headers preceding them that document the purpose of the functions, and
-the input parameters and return value of the function.
+~factorial~, ~countCombinationsDirectly~,
+~countcombinationsRecursively~) have function headers preceding them
+that document the purpose of the functions, and the input parameters
+and return value of the function.
 
 * Assignment Submission
 
