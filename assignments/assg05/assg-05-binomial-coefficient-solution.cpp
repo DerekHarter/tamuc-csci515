@@ -36,44 +36,21 @@ int factorial(int n)
 }
 
 
-/** nth term of Fibonacci series (iterative)
- * Calculate the n^th term of the Fibonacci series.  Implement the
- * calculation using an iterative approach (use a loop).  We take a single
- * integer n as input, which is the term we are to calculate, and return the
- * nth term of the series as an integer for our result.
+/** count combinations directly
+ * Calculate the number of combinations from a set of n items when
+ * choosing i elements from the set.  We use the binomial coefficient
+ * to directly calculate the number of combinations that are present.
  *
- * @param n An integer value, the term of the series we are to
- *     caclualte and return.  n must be >= 0, a positive term.
+ * @param n An integer value, the number of items in the set to choose from.
+ *     n should be >= 0, a positive number
+ * @param i An integer value, the number of elements to choose from the set.
+ *     i should be >= 0, a positive value, n choose 0 and n choose n are
+ *     defined to have 1 combination.
  *
- * @returns int The nth Fibonacci term
+ * @returns int The number of combinations from choosing i elements from a set of n
  */
-int nthFibonacciIterative(int n)
+int countCombinationsDirectly(int n, int i)
 {
-  int nMinus1;
-  int nMinus2;
-  int nthTerm;
-  
-  // The base cases x_0 and x_1
-  if (n == 0)
-  {
-    return 0;
-  }
-  if (n == 1)
-  {
-    return 1;
-  }
-
-  // Calculate interative the 2,3,...,nth term by adding two previous terms
-  nMinus2 = 0;
-  nMinus1 = 1;
-  for (int i=2; i <= n; i++)
-  {
-    nthTerm = nMinus1 + nMinus2;
-
-    // remember the two previous terms, for next iteration
-    nMinus2 = nMinus1;
-    nMinus1 = nthTerm;
-  }
 
   return nthTerm;
 }
