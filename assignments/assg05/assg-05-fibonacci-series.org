@@ -76,9 +76,42 @@ Perform the following tasks:
    take quite a while to calculate in cases of large $n$.
 
 Your program output should look something close to the following when I
-run your program:
+run your program.  I have run the program multiple times, so that you
+can also see some examples of correct output for some larger values
+of $n$:
 
 #+begin_example
+$ assg05
+Enter n (an integer >= 0), and I will calculate the n^th
+Fibonacci term for you using two different methods: 0
+
+0 term of the Fibonacci series, using iterative method: 0
+0 term of the Fibonacci series, using recursive method: 0
+
+$ assg05
+Enter n (an integer >= 0), and I will calculate the n^th
+Fibonacci term for you using two different methods: 1
+
+1 term of the Fibonacci series, using iterative method: 1
+1 term of the Fibonacci series, using recursive method: 1
+
+$ assg05
+Enter n (an integer >= 0), and I will calculate the n^th
+Fibonacci term for you using two different methods: 8
+
+8 term of the Fibonacci series, using iterative method: 21
+8 term of the Fibonacci series, using recursive method: 21
+
+$ assg05
+Enter n (an integer >= 0), and I will calculate the n^th
+Fibonacci term for you using two different methods: 10
+
+10 term of the Fibonacci series, using iterative method: 55
+10 term of the Fibonacci series, using recursive method: 55
+
+$ assg05
+Enter n (an integer >= 0), and I will calculate the n^th
+Fibonacci term for you using two different methods: 35
 #+end_example
 
 
