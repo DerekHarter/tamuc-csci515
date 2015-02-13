@@ -112,6 +112,10 @@ Fibonacci term for you using two different methods: 10
 $ assg05
 Enter n (an integer >= 0), and I will calculate the n^th
 Fibonacci term for you using two different methods: 35
+
+35 term of the Fibonacci series, using iterative method: 9227465
+35 term of the Fibonacci series, using recursive method: 9227465
+
 #+end_example
 
 
