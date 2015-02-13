@@ -138,6 +138,8 @@ int main()
 	 << setw(10) << right << factorialIterative(n)
 	 << setw(10) << right << factorialRecursive(n) << endl;
   }
+  cout << endl;
+  
 
   // Test Fibonacci sequence
   cout << "Fibonacci sequence" << endl;
