@@ -181,8 +181,8 @@ submitted by the due date will be considered for evaluation.
 1. 40+ pts. Your recursive implementation must perform its calculation using
    recursion.  You must have the correct base cases defined.  Your function must
    of course correctly compute the number of combinations.
-1. 10+ pts. You must prompt the user for $n$ in main, and correctly display
-   the returned results form your function as shown.
+1. 10+ pts. You must prompt the user for $n$ and $i$ in main, and correctly display
+   the returned results form your functions as shown.
 
 
 ** Program Style
