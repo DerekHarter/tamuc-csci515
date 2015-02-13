@@ -18,15 +18,23 @@
 - Become more familiar with implementing mathematical series on a computer.
 
 * Description
-In this assignment we will write a recursive function to calculate what
-is known as the binomial coefficient.  The binomial coefficient is a very
-useful quantity, it allows us to count the number of ways of selecting
-$i$ items out of a set of $n$ elements.  For example, if we
-have $3$ items ~A, B, C~, there are 3 ways to chose 1 item from the 3:
+In this assignment we will write a recursive function to calculate
+what is known as the binomial coefficient.  The binomial coefficient
+is a very useful quantity, it allows us to count the number of ways of
+selecting $i$ items out of a set of $n$ elements.  For example, if we
+have $3$ items ~A, B, C~, there are 3 ways to choose 1 element from
+the items: choose A, or choose B or choose C.  There are also 3 ways
+to choose 2 elements from the items: AB, AC, BC.  There is only 1 way
+to choose 3 elements form a set of 3 items: ABC. When we choose
+2 elements from a set of 3 items, we normally speak of this as
+3 select 2, and mathematically we write this as a binomial coefficient
 
 $$
-A, B, C
+{3 \choose 2}
 $$
+
+
+
 
 
 
