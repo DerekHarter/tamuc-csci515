@@ -7,7 +7,16 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** 
+** Introduction to Arrays
+An array is a consecutive group of memory locations that all have the
+same type.  When you declare an array, C will allocate a block of memory
+large enough to hold all of the values of the type you ask for.  You access
+the elements of the array by using a subscript or index.
+
+- Declaring an array
+- Indexing an array
+- Arrays in C are indexed *STARTING AT 0*
+- 
 
 * Second Session (11:45 - 12:30)
 
