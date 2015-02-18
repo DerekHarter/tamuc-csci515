@@ -62,5 +62,5 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 - Creating a histogram of elements, bucket size, etc.
 
 * Third Session (12:40 - 1:40)
-
+** Passing Arrays to Functions
 
