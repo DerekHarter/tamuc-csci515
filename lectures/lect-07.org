@@ -1,0 +1,66 @@
+#+TITLE:     Lecture 07 Notes
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2015 <2015-02-18 Wed>
+#+DESCRIPTION: Lecture 07 Notes.
+#+OPTIONS:   H:4 num:t toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
+* First Session (11 - 11:40)
+** Introduction to Arrays
+An array is a consecutive group of memory locations that all have the
+same type.  When you declare an array, C will allocate a block of memory
+large enough to hold all of the values of the type you ask for.  You access
+the elements of the array by using a subscript or index.
+
+- Declaring an array
+
+#+begin_example
+type arrayName[arraySize];
+#+end_example
+
+- Indexing an array
+- Arrays in C are indexed *STARTING AT 0* (0 based indexing)
+- The size of the array like int c[10] is 10 items, indexed from 0 to 9.
+- When accessing all of the elements of an array, always use an indexed
+  controlled for loop, and always index the loop from 0 up to N, like this:
+
+#+begin_code CPP
+int c[10];
+
+for (int i = 0; i < 10; i++)
+{
+}
+#+end_code
+
+- It is good practice to declare a constant, and use it wherever you are
+  referencing your array.
+
+#+begin_code CPP
+const int ARRAY_SIZE = 10;
+int c[ARRAY_SIZE];
+
+for (int i = 0; i < ARRAY_SIZE; i++)
+{
+}
+#+end_code
+
+- This way, if you need to change the size of the array and code
+  processing the array elements, you change 1 single location, and all
+  of the code will work correctly.
+
+
+* Second Session (11:45 - 12:30)
+** Examples of Using Arrays
+- Initializing with a loop
+- Specify array size with a defined constant (always do this).
+- Summing the elements of an array
+- Finding the minimum of the values of an array
+- Finding the maximum of the values of an array
+- Finding the average of the elements of an array
+- Using elements of array as a counter
+- Creating a histogram of elements, bucket size, etc.
+
+* Third Session (12:40 - 1:40)
+
+
