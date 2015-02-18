@@ -1,8 +1,8 @@
-#+TITLE:     Lecture 05 Notes
+#+TITLE:     Lecture 06 Notes
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2015 <2015-02-13 Fri>
-#+DESCRIPTION: Lecture 05 Notes.
+#+DATE:      CSci 515 Spring 2015 <2015-02-18 Wed>
+#+DESCRIPTION: Lecture 06 Notes.
 #+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
@@ -45,7 +45,6 @@
 - Write a function that returns random number in arbitrary range.
 - How do we generate a floating point number randomly?
 - Write a function generate a float over range 0.0 to 1.0 with uniform probability.
-
 
 * Second Session (11:45 - 12:30)
 
