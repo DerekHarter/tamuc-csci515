@@ -19,7 +19,7 @@
 
 * Description
 In this lab we will write a program to answer a simple question from
-probability.  The question is, if I roll 2 dices, what is the probability
+probability.  The question is, if I roll 2 dice, what is the probability
 of rolling a sum of either a 7 or 11 if I add up the faces of the 2 dice
 rolled.
 
