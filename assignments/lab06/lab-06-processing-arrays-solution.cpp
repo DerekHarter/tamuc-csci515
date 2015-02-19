@@ -150,7 +150,7 @@ int main()
   displayArrayValues(values, beginRange, endRange);
 
   // Calculate and display the average:
-  cout << "The average value of the array is: " << calculateArrayAverage(values, NUM_VALUES);
+  cout << "The average value of the array is: " << calculateArrayAverage(values, NUM_VALUES) << endl;
 
   //
   return 0;
