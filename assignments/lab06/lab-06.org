@@ -12,10 +12,10 @@
 | Due: | In Lab, Wednesday February 25, by 4:05 pm (lab end time) |
 
 * Objectives
-- More practice writing C functions
-- Use standard library rand() functions to implement random simulations
-- Practice creating user defined functions that break problems into smaller pieces
-- Learn about rescaling ranges of values.
+- Learn about declaring, accessing and processing array elements
+- Practice passing arrays to and from functions.
+- Process arrays element by element to calculate statistical properties of the data
+- Learn about summarizing and visualizing the results from processing arrays of data
 
 * Description
 In this lab we will write a program to answer a simple question from
