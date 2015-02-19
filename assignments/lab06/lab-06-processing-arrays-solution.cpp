@@ -19,7 +19,7 @@ using namespace std;
 
 // global constants, used to determine array properties
 const int NUM_VALUES = 50;
-const string INPUT_FILE = "lab-06-float-array.txt";
+const string INPUT_FILE_NAME = "lab-06-float-array.txt";
 
 
 /** read in file of floats
