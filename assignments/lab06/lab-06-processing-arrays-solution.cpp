@@ -22,10 +22,18 @@ const int NUM_ITEMS_IN_FILE = 50;
 const string INPUT_FILE = "lab-06-float-array.txt";
 
 
-/** roll a dice
- * Roll a single dice.  Return a random number in the range [1, 6] (inclusive)
+/** read in file of floats
+ * Read in a file of floating point values into the array provided as
+ * input to this function.  Arrays are passed by references, thus by
+ * reading the values into the array, the values will be available to the
+ * caller of this function.
  *
- * @returns int The randomly rolled dice, an integer in the range [1, 6]
+ * @param values An array of floats, passed by reference.  This function assumes
+ *    array has been correctly created of correct size to hold all of the values
+ *    from the file we read them in from.
+ *
+ * @returns void No explicit return value, but array values read in are returned in
+ *    the values array that is passed to this function.
  */
 int rollDice()
 {
