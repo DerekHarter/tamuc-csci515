@@ -125,7 +125,8 @@ this week.
   your source code. (Don't forget about the Visual Studio Format
   Selection command).
 1. You must not have any statements that are hacks in order to keep
-  your terminal from closing when your program exits.
+   your terminal from closing when your program exits (e.g. no calls
+   to system() ).
 1. You must have a single space before and after each binary operator.
 1. You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
