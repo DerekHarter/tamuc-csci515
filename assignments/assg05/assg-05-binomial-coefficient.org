@@ -33,10 +33,11 @@ $$
 {3 \choose 2} = 3
 $$
 
-Where the result of the binomial coefficient is to count up the number of
-combinations we will have for $n$ items when we select $i$ elements.  As
-another example, just to make this clear, if we have a set of 4 items, and
-we choose 2 elements, we get: AB, AC, AD, BC, BD, CD = 6:
+Where the result of the binomial coefficient is to count up the number
+of combinations we will have for $n$ items when we select $i$
+elements.  As another example, just to make this clear, if we have a
+set of 4 items, ABCD, and we choose 2 elements from the set, we get:
+AB, AC, AD, BC, BD, CD = 6:
 
 $$
 {4 \choose 2} = 6
