@@ -3,12 +3,13 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
- * @date   February 5, 2015
- * @assg   Lab 05
+ * @date   February 19, 2015
+ * @assg   Lab 06
  *
- * @description Simulate a game of dice.  Roll pairs of dice and count up
- *    the number of rolls where the sum is a 7 or an 11.  Use this to
- *    approximate the expected probability of rolling a 7 or an 11.
+ * @description Example of processing arrays.  We write functions to display selected
+ *    portions of an array, and to determine the average of the values in an
+ *    array.  This program also contains an example of a function that reads in the
+ *    values from a file into an array of floats for processing by the other functions.
  */
 #include <iostream>
 #include <iomanip>
