@@ -86,8 +86,13 @@ void readArrayFromFile(float values[], int size, string inputFileName)
  *
  * @returns void Results printed to standard output as a side effect.
  */
-void (float values[], int size, string inputFileName)
+void displayArrayValues(float values[], int beginRange, int endRange)
 {
+  for (int idx = beginRange; idx <= endRange; i++)
+  {
+    cout << "value[" << setw(3) << idx << "] "
+	 << setw(12) setprecision(8) << values[idx] << endl;
+  }
 }
 
 
