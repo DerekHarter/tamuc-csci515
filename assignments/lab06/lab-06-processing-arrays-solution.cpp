@@ -17,6 +17,11 @@
 using namespace std;
 
 
+// global constants, used to determine array properties
+const int NUM_ITEMS_IN_FILE = 50;
+const string INPUT_FILE = "lab-06-float-array.txt";
+
+
 /** roll a dice
  * Roll a single dice.  Return a random number in the range [1, 6] (inclusive)
  *
@@ -25,40 +30,6 @@ using namespace std;
 int rollDice()
 {
   return (rand() % 6) + 1;
-}
-
-
-/** simulate rolling pairs of dice game
- * Simulate rolling a pair of dice.  We perform a number of simulations of this
- * experiment (provided as input to the function).  We keep track of the number
- * of trials in which the sum of our pairs of dice was either a 7 or an 11.  The
- * ratio of the number of trials that added up to this sum, divided by the total
- * number of trials tried is returned (e.g. the estimated probability of rolling)
- * either a 7 or an 11.
- *
- * @param numTrials An integer value, the number of dice throwing experiments to try.
- *
- * @returns float The ratio of the number of trials that summed up to 7 or 11 among the
- *     total number of trials we ran.
- */
-float simulateDiceGame(int numTrials)
-{
-  int successes = 0;
-  int sum;
-
-  for (int trial = 1; trial <= numTrials; trial++)
-  {
-    // roll a pair of dice
-    sum = rollDice() + rollDice();
-
-    // test if the sum was a 7 or an 11
-    if ( (sum == 7) || (sum == 11) )
-    {
-      successes++;
-    }
-  }
-
-  return float(successes) / float(numTrials);
 }
 
 
@@ -74,26 +45,5 @@ float simulateDiceGame(int numTrials)
  */
 int main()
 {
-  int seed;
-  int numTrials;
-  float prob;
-
-  // initialize seed to some known starting point
-  cout << "Enter a seed with which to initialize the random number generator: ";
-  cin >> seed;
-  srand(seed);
-  cout << endl;
-
-  // Ask user for number of trials to perform, and do the experiment
-  cout << "I will simulate rolling a pair of dice and estimate the probability" << endl;
-  cout << "of rolling a 7 or an 11.  Enter the number of trials to run: ";
-  cin >> numTrials;
-  prob = simulateDiceGame(numTrials);
-
-  cout << endl;
-  cout << "I tried " << numTrials << " experiments.  The estimated probability" << endl;
-  cout << "of rolling a 7 or an 11 is: " << setprecision(16) << prob << endl;
-
-  // clean up and return 0 to indicate successful completion
-  return 0;
+  float values[];
 }
