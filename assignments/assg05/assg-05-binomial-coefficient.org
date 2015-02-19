@@ -80,7 +80,7 @@ items choosing $i$ elements directly using our first formula
 (involving factorials).  You should also (re)create the factorial
 function (that we developed in class) that you will call from this
 function to compute factorials of numbers.  You will also implement a
-recursive version of calculating the number of calculations, using the
+recursive version of calculating the number of combinations, using the
 recursive definition of the binomial coefficient and the base cases
 given above.
 
