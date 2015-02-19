@@ -22,15 +22,10 @@
 In this lab you will be given a function, and an example of how to
 call the function, that will read in an array of values from a
 file. You will be processing arrays of floating point values.  You
-will write two function to process the elements in an array.  In the
-first function, you will pass in an array, and a begin and end range.
-This function will display the values in the array, formatted on
-standard output as specified below.  Your other function will take an
-array, and will calculate the average of the values in the array.
-This function will return this average as its result.  This second
-functions expects an array of floats as input, and returns the average
-as a floating point result.
-
+will write one function to display the elements in an array.  In the
+function, you will pass in an array, and a begin and end range.  This
+function will display the values in the array, formatted on standard
+output as specified below.
 
 Perform the following tasks:
 
