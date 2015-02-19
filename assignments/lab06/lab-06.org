@@ -97,15 +97,15 @@ time in order to receive credit.
 1. 40+ pts.  Your program must have the 2 required named functions,
    that accept the required input parameters and return the required
    values (if any).
-1. 20+ pts. Your dice rolling function must return a random value within the
-   correct range each time it is called.
-1. 20+ pts. Your dice simulation function must correctly perform the number of indicated
-   trials, and count up the successful trials from all of the trials performed,
-   and return the correct probability ratio.  Your ratio must be correct.
-1. 20+ pts. You should prompt the user for the number of trials to
-   perform in your ~main()~ function, and display the results.  The
-   interaction with your program should be as shown in the example
-   output above.
+1. 20+ pts. Your ~displayArrayValues~ function must correctly format
+   the displayed output on standard output.  Your program should work
+   if the begin and end range are equal, and should show now output
+   when begin is greater than the end specified.
+1. 20+ pts. Your ~calculateArrayAverage~ function must calculate the
+   average of all of the values specified correctly, and return this
+   result.
+1. 20+ pts. Your main function must prompt the user as specified, and
+   display the output formatted correctly as shown.
 
 
 ** Program Style
