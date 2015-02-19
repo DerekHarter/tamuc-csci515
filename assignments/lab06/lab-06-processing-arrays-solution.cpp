@@ -44,7 +44,7 @@ void readArrayFromFile(float values[], int size, string inputFileName)
   ifstream inputFile;
   float value;
   int idx;
-  
+
   // open file, test to ensure it opens properly
   inputFile.open(inputFileName);
   if (!inputFile)
