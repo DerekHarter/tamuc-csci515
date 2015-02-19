@@ -106,7 +106,7 @@ void displayArrayValues(float values[], int beginRange, int endRange)
  *
  * @returns float The average of the values in the array
  */
-void calculateArrayAverage(float values[], int size)
+float calculateArrayAverage(float values[], int size)
 {
   float sum;
 
