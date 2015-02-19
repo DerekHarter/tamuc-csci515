@@ -48,7 +48,7 @@ Perform the following tasks:
    ~endRange~ then only 1 value will be displayed.  If ~beginRange~ >
    ~endRange~ then no values will be output. Your function does not
    return anything, so it is a void function.  Instead your function
-   displays it output to standard out, and it should be formatted to
+   displays its output to standard out, and it should be formatted to
    look exactly like this output:
 
 3. Write a function called ~calculateArrayAverage~.  This function will
