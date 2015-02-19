@@ -18,22 +18,6 @@
 - Learn about summarizing and visualizing the results from processing arrays of data
 
 * Description
-In this lab we will write a program to answer a simple question from
-probability.  The question is, if I roll 2 dice, what is the probability
-of rolling a sum of either a 7 or 11 if I add up the faces of the 2 dice
-rolled.
-
-You will first of all create a function that will return a random
-number between 1 and 6 when called that simulates the rolling of a
-single dice.  Then you will write another function to implement the
-simulation of the dice game.  The simulation should roll N pairs of
-dice, and keep track of the number of times M out of the N rolls that
-the sum of the two dice was either a 7 or an 11.  The function will
-return this result M/N as a floating point ratio of the result (make
-sure you avoid integer division problems when returning the result).
-For example, if we roll 1000 pairs of dice, and it comes up with a 7
-or an 11 on 676 out of those 1000 trials, then the function will
-return 676 / 1000 = 0.676
 
 
 Perform the following tasks:
