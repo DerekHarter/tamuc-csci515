@@ -111,11 +111,11 @@ int main()
   float values[NUM_VALUES];
   int beginRange;
   int endRange;
-  
+
   // load the values from a file into our array
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
 
-  // display some values
+  // display some values from the array
   cout << "I will display a range of values from our array." << endl;
   cout << "Enter index to start at: ";
   cin >> beginRange;
