@@ -148,4 +148,10 @@ int main()
   cout << "Enter index to end at: ";
   cin >> endRange;
   displayArrayValues(values, beginRange, endRange);
+
+  // Calculate and display the average:
+  cout << "The average value of the array is: " << calculateArrayAverage(values, NUM_VALUES);
+
+  //
+  return 0;
 }
