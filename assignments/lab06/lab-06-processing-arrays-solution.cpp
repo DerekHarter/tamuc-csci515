@@ -73,6 +73,24 @@ void readArrayFromFile(float values[], int size, string inputFileName)
 }
 
 
+/** display array values
+ * Display values in an array in a given range.  We indicate the
+ * indices and format the values to give a uniform, nice appearance
+ * on standard output.
+ *
+ * @param values An array of floats, passed by reference.
+ * @param beginRange An integer parameter, the first index of range of values
+ *    to be printed.
+ * @param endRange An integer parameter, the last index of range of values to be
+ *    printed.
+ *
+ * @returns void Results printed to standard output as a side effect.
+ */
+void (float values[], int size, string inputFileName)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
