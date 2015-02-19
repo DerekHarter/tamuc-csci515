@@ -113,4 +113,6 @@ int main()
   // load the values from a file into our array
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
 
+  // display some values
+  displayArrayValues(values, 5, 20);
 }
