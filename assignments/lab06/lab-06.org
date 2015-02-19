@@ -18,7 +18,9 @@
 - Learn about summarizing and visualizing the results from processing arrays of data
 
 * Description
-
+In this lab you will be given a function that reads in an array from a file and
+returns it.   You will write two functions that process the array and analyze the
+data in the array. 
 
 Perform the following tasks:
 
