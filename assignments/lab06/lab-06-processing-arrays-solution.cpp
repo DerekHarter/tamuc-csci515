@@ -109,10 +109,17 @@ void displayArrayValues(float values[], int beginRange, int endRange)
 int main()
 {
   float values[NUM_VALUES];
-
+  int beginRange;
+  int endRange;
+  
   // load the values from a file into our array
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
 
   // display some values
-  displayArrayValues(values, 5, 20);
+  cout << "I will display a range of values from our array." << endl;
+  cout << "Enter index to start at: ";
+  cin >> beginRange;
+  cout << "Enter index to end at: ";
+  cin >> endRange;
+  displayArrayValues(values, beginRange, endRange);
 }
