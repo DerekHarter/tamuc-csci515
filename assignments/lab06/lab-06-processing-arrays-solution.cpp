@@ -58,8 +58,11 @@ void readArrayFromFile(float values[], int size, string inputFileName)
   idx = 0;
   while (inputFile >> value)
   {
-    values[idx++] = value;
+    values[idx] = value;
+
+    // increment index for next read
     // be safe, don't read too many values past end of array
+    idx++;
     if (idx >= size)
     {
       break;
