@@ -12,8 +12,8 @@
  *    values from a file into an array of floats for processing by the other functions.
  */
 #include <iostream>
+#include <fstream>
 #include <iomanip>
-#include <cstdlib>
 using namespace std;
 
 
@@ -41,7 +41,7 @@ const string INPUT_FILE = "lab-06-float-array.txt";
  */
 void readArrayFromFile(float values[], int size, string inputFile)
 {
-
+  
 }
 
 
