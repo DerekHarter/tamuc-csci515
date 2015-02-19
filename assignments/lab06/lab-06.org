@@ -15,45 +15,56 @@
 - Learn about declaring, accessing and processing array elements
 - Practice passing arrays to and from functions.
 - Process arrays element by element to calculate statistical properties of the data
-- Learn about summarizing and visualizing the results from processing arrays of data
+- Learn about summarizing the results from processing arrays of data
 
 * Description
-In this lab you will be given a function that reads in an array from a file and
-returns it.   You will write two functions that process the array and analyze the
-data in the array. 
+In this lab you will be given a function, and an example of how to call the function, that will
+read in an array of values from a file. You will be processing arrays of floating point values.
+You will write two function to process the elements in an array.  In the first function, you
+will pass in an array, and a begin and end range.  This function will display the values
+in the array, formatted on standard output as specified below.  Your other function will
+take an array, and will calculate the average of the values in the array.  This function will
+return this average as its result.  This second functions expects an array of floats as input,
+and returns the average as a floating point result.
+
 
 Perform the following tasks:
 
-1. Write a function named ~rollDice()~.  This function takes no
-   parameters as input.  It will return a single integer value in the
-   range from 1 to 6.  The function should use the rand()
-   system call to generate a random number, and then scale the
-   number to the appropriate range [1,6] and return it.
+1. Start with the given template code for this lab, which contains one
+   function already written for you, and an example of calling that
+   function.  This function reads in an array of floating point values
+   from a file.  As we learned in class, since arrays are passed by
+   reference by default, specifying the array to be read in to the
+   function, causes the values to be filled in and returned to the
+   caller in the given array.
 
-2. Write a function call ~simulateDiceGame()~.  This function will
-   take a single integer called ~numTrials~ as the input.  This is the
-   number of pairs of dice it is to simulate rolling.  You should
-   implement rolling ~numTrials~ pairs of dice by writing a for loop
-   that uses an index that ranges from 1 up to ~numTrials~.  You need
-   to call your ~rollDice()~ function two times, to simulate rolling 2
-   pairs of dice.  You then need to sum up the values of the two
-   random dice rolls you receive.  You need to keep track of the
-   number of trials whose sum is either 7 or 11, by for example
-   declaring a variable called ~successes~ that is initially 0, and
-   that is incremented by 1 each time the sum of the two dice rolls is
-   as indicated.  The result of your ~simulateDiceGame()~ function should
-   be a single floating point number, between [0.0, 1.0], that is the
-   result of dividing the number of successes, by the total number of
-   simulated dice throwing trials that were performed.
+2. Write a function called ~displayArrayValues~.  This function will
+   take an array of floats as its first parameter, and a ~beginRange~
+   and ~endRange~ as its second and third parameters.  These
+   parameters are of type int, and they will be used to specify the
+   beginning index and end index of values to be displayed from the
+   array.  These values should be >= 0, and the ~endRange~ should be
+   less than the size of the input array.  If ~beginRange~ ==
+   ~endRange~ then only 1 value will be displayed.  If ~beginRange~ >
+   ~endRange~ then no values will be output. Your function does not
+   return anything, so it is a void function.  Instead your function
+   displays it output to standard out, and it should be formatted to
+   look exactly like this output:
 
-3. In your ~main()~ function, prompt the user to enter two values.
-   First of all, ask the user to enter a random number to use as the
-   seed for the srand() function.  Use the value entered to seed the
-   random number generator.  Then ask the user to enter the number of
-   trials to run. Using this number of trials values, call your
-   ~simulateDiceGame()~ with this number of trials, and get back the
-   resulting ratio.  This ratio should represent an estimate of the
-   probability of throwing a 7 or an 11 when rolling 2 dice.
+3. Write a function called ~calculateArrayAverage~.  This function will
+   take an array of floats as its first parameter, and an int ~size~ which
+   is the number of elements in the array.  This function will return
+   a floating point result.  The function should calculate the average
+   of all of the values in the array in the indexes from 0 to size - 1
+   and return this average as the result of calling the function.
+
+4. In your main program, you should leave the code alone that reads in
+   the array values from the file.  After the array is read in, you
+   should first prompt the user for a begin and end range, and call the
+   ~displayArrayValues~ function to display the values in the array in
+   that range.  Then you should use the ~calculateArrayAverage~ function
+   to calculate the average of the values in the array, and display
+   this result.
 
 Your program output should look something close to the following when I
 run your program:
