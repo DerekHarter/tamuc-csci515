@@ -39,9 +39,9 @@ const string INPUT_FILE = "lab-06-float-array.txt";
  * @returns void No explicit return value, but array values read in are returned in
  *    the values array that is passed to this function.
  */
-void readArrayFromFile(float values[], int size, string inputFile)
+void readArrayFromFile(float values[], int size, string inputFileName)
 {
-  
+  ifstream inputFile;
 }
 
 
