@@ -82,5 +82,8 @@ void readArrayFromFile(float values[], int size, string inputFileName)
  */
 int main()
 {
-  float values[];
+  float values[NUM_VALUES];
+
+  readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
+  
 }
