@@ -14,18 +14,22 @@
 * Objectives
 - Learn about declaring, accessing and processing array elements
 - Practice passing arrays to and from functions.
-- Process arrays element by element to calculate statistical properties of the data
-- Learn about summarizing the results from processing arrays of data
+- See examples of using file I/O to read date into arrays for processing
+- Practice I/O formatting
+- Learn about indexing into arrays in ranges.
 
 * Description
-In this lab you will be given a function, and an example of how to call the function, that will
-read in an array of values from a file. You will be processing arrays of floating point values.
-You will write two function to process the elements in an array.  In the first function, you
-will pass in an array, and a begin and end range.  This function will display the values
-in the array, formatted on standard output as specified below.  Your other function will
-take an array, and will calculate the average of the values in the array.  This function will
-return this average as its result.  This second functions expects an array of floats as input,
-and returns the average as a floating point result.
+In this lab you will be given a function, and an example of how to
+call the function, that will read in an array of values from a
+file. You will be processing arrays of floating point values.  You
+will write two function to process the elements in an array.  In the
+first function, you will pass in an array, and a begin and end range.
+This function will display the values in the array, formatted on
+standard output as specified below.  Your other function will take an
+array, and will calculate the average of the values in the array.
+This function will return this average as its result.  This second
+functions expects an array of floats as input, and returns the average
+as a floating point result.
 
 
 Perform the following tasks:
