@@ -96,6 +96,21 @@ void displayArrayValues(float values[], int beginRange, int endRange)
 }
 
 
+/** calculate array average
+ * Calculate the average of the values in an array.  We are given the
+ * array and its size.  We compute the average of all values, and return
+ * this value as our result.
+ *
+ * @param values An array of floats, passed by reference.
+ * @param size The size of the array.
+ *
+ * @returns float The average of the values in the array
+ */
+void calculateArrayAverage(float values[], int size)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
