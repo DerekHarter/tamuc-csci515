@@ -42,6 +42,15 @@ const string INPUT_FILE = "lab-06-float-array.txt";
 void readArrayFromFile(float values[], int size, string inputFileName)
 {
   ifstream inputFile;
+
+  // open file, test to ensure it opens properly
+  inputFile.open(inputFileName);
+  if (!inputFile)
+  {
+    cerr << "Error: readArrayFromFile: could not open file for reading named: "
+	 << inputFileName << endl;
+    exit(0);
+  }
 }
 
 
