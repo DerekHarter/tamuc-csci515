@@ -61,7 +61,7 @@ void readArrayFromFile(float values[], int size, string inputFileName)
     values[idx] = value;
 
     // increment index for next read
-    // be safe, don't read too many values past end of array
+    // be safe, if array is now full, stop reading
     idx++;
     if (idx >= size)
     {
