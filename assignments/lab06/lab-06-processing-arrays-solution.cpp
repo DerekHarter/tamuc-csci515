@@ -84,6 +84,7 @@ int main()
 {
   float values[NUM_VALUES];
 
+  // load the values from a file into our array
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
-  
+
 }
