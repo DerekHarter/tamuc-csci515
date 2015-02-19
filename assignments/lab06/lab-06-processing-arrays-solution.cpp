@@ -42,7 +42,9 @@ const string INPUT_FILE = "lab-06-float-array.txt";
 void readArrayFromFile(float values[], int size, string inputFileName)
 {
   ifstream inputFile;
-
+  float value;
+  int idx;
+  
   // open file, test to ensure it opens properly
   inputFile.open(inputFileName);
   if (!inputFile)
@@ -51,6 +53,20 @@ void readArrayFromFile(float values[], int size, string inputFileName)
 	 << inputFileName << endl;
     exit(0);
   }
+
+  // read in the data
+  idx = 0;
+  while (inputFile >> value)
+  {
+    values[idx++] = value;
+    // be safe, don't read too many values past end of array
+    if (idx >= size)
+    {
+      break;
+    }
+  }
+
+  // values are returned in the array passed by reference
 }
 
 
