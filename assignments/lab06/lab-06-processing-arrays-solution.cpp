@@ -26,11 +26,15 @@ const string INPUT_FILE = "lab-06-float-array.txt";
  * Read in a file of floating point values into the array provided as
  * input to this function.  Arrays are passed by references, thus by
  * reading the values into the array, the values will be available to the
- * caller of this function.
+ * caller of this function.  This function opens up and reads the values
+ * from the file, one line at a time.
  *
  * @param values An array of floats, passed by reference.  This function assumes
  *    array has been correctly created of correct size to hold all of the values
  *    from the file we read them in from.
+ * @param size Both the size of the array given, and the number of value to read
+ *    in from the file.
+ * @param filename The name of the file to read our array values from.
  *
  * @returns void No explicit return value, but array values read in are returned in
  *    the values array that is passed to this function.
