@@ -187,13 +187,20 @@ float findAverage(float values[], int size)
  *
  * @returns float The standard deviation of the values in the array
  */
-float findAverage(float values[], int size)
+float findStandardDeviation(float values[], int size)
 {
-  float sum;
   float average;
+  float sum;
+  
+  // get the average of the values
+  average = findAverage(values, size);
 
-  sum = findSum(values, size);
-  average = sum / (float)size;
+  // calculate the sum of the squared differences
+  sum = 0.0;
+  for (int idx = 0; idx < size; idx++)
+  {
+    
+  }
 
   return average;
 }
