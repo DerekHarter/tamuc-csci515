@@ -1,4 +1,4 @@
-% Created 2015-02-19 Thu 18:54
+% Created 2015-02-19 Thu 18:55
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -117,18 +117,19 @@ is as follows:
 $$
    \sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}
    $$
-Here $\mu$ represents the average of the values in the array, and $x_i$ is
-mathematical notation that basically represents the elements of our array
-indexed from $0$ up to $N-1$.  So to find the standard deviation, you
-have to subtract each value in the array from the average value and
-square this difference.  You add up all of the squared differences, and
-divide the result by $N$.  This value, finally, you take the
-square root of.  This is, by definition, the standard deviation
-of the values in the array.  For this function, you should use the
-\verb~findAverage~ function to get the average ($\mu$), and then
-you need to loop through all of the values in the array to 
-square the difference, sum them up, and then divide by $N$ and
-finally take the square root.  You will want to use the \verb~pow()~
+Here $\mu$ represents the average of the values in the array (which
+you can obtain from the \verb~findAverage~ function), and $x_i$ is
+mathematical notation that basically represents the elements of our
+array indexed from $0$ up to $N-1$.  So to find the standard
+deviation, you have to subtract each value in the array from the
+average value and square this difference.  You add up all of the
+squared differences, and divide the result by $N$.  This value,
+finally, you take the square root of.  This is, by definition, the
+standard deviation of the values in the array.  For this function,
+you should use the \verb~findAverage~ function to get the average
+($\mu$), and then you need to loop through all of the values in the
+array to square the difference, sum them up, and then divide by $N$
+and finally take the square root.  You will want to use the \verb~pow()~
 method from the \verb~cmath~ library in order to do the squaring and
 square root calculations.
 
