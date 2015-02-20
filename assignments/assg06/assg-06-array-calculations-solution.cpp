@@ -128,6 +128,34 @@ float findMaximumValue(float values[], int size)
 }
 
 
+/** find sum
+ * Find the sum of all of the values in an array of floats.  We are
+ * given the array and the size of the array as input.  We return the
+ * sum of all of the value as the result of this function.
+ *
+ * @param values An array of floats, passed by reference.
+ * @param size The size of the array we are searching.
+ *
+ * @returns float The maximum value in the array
+ */
+float findMaximumValue(float values[], int size)
+{
+  float maximum;
+
+  // We initialize maximum to the first value, then search values 1..size-1 for larger ones
+  maximum = values[0];
+  for (int idx = 1; idx < size; idx++)
+  {
+    if (values[idx] > maximum)
+    {
+      maximum = values[idx];
+    }
+  }
+
+  return maximum;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
