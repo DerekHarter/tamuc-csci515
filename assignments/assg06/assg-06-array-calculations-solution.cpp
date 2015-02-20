@@ -147,7 +147,7 @@ int main()
 
   // display the results from processing our array of values
   cout << "Minimum: " << setw(10) << fixed << setprecision(8) << findMinimumValue(values, NUM_VALUES) << endl;
-  cout << "Maximum: " << setw(10) << fixed << setprecision(8) << findMinimumValue(values, NUM_VALUES) << endl;
+  cout << "Maximum: " << setw(10) << fixed << setprecision(8) << findMaximumValue(values, NUM_VALUES) << endl;
   
   //  Return 0 to indicate program terminated successfully
   return 0;
