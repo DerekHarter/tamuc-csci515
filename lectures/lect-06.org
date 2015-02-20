@@ -15,9 +15,9 @@ the elements of the array by using a subscript or index.
 
 - Declaring an array
 
-#+begin_example
+#+begin_src c
 type arrayName[arraySize];
-#+end_example
+#+end_src
 
 - Indexing an array
 - Arrays in C are indexed *STARTING AT 0* (0 based indexing)
@@ -25,25 +25,25 @@ type arrayName[arraySize];
 - When accessing all of the elements of an array, always use an indexed
   controlled for loop, and always index the loop from 0 up to N, like this:
 
-#+begin_code CPP
+#+begin_src c
 int c[10];
 
 for (int i = 0; i < 10; i++)
 {
 }
-#+end_code
+#+end_src
 
 - It is good practice to declare a constant, and use it wherever you are
   referencing your array.
 
-#+begin_code CPP
+#+begin_src c
 const int ARRAY_SIZE = 10;
 int c[ARRAY_SIZE];
 
 for (int i = 0; i < ARRAY_SIZE; i++)
 {
 }
-#+end_code
+#+end_src
 
 - This way, if you need to change the size of the array and code
   processing the array elements, you change 1 single location, and all
