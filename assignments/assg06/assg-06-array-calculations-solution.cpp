@@ -120,11 +120,11 @@ float findMaximumValue(float values[], int size)
   {
     if (values[idx] > minimum)
     {
-      minimum = values[idx];
+      maximum = values[idx];
     }
   }
 
-  return minimum;
+  return maximum;
 }
 
 
