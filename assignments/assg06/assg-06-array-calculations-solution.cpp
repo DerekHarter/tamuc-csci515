@@ -144,7 +144,7 @@ float findSum(float values[], int size)
 
   // Initialily sum is 0.0, then we add up all of the values in the array
   // using a running sum
-  sum = 0.0
+  sum = 0.0;
   for (int idx = 0; idx < size; idx++)
   {
     sum += values[ids];
