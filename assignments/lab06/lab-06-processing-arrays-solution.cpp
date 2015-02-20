@@ -91,7 +91,7 @@ void displayArrayValues(float values[], int beginRange, int endRange)
   for (int idx = beginRange; idx <= endRange; idx++)
   {
     cout << "value[" << setw(3) << idx << "] "
-	 << setw(12) << setprecision(8) << values[idx] << endl;
+	 << setw(12) << fixed << setprecision(8) << values[idx] << endl;
   }
 }
 
