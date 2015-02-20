@@ -57,7 +57,7 @@ Perform the following tasks:
    we will look at some ways we can encapsulate this repeated bit of
    functionality into a function or abstraction.
 
-3. Write a function called ~findSumValues~.  This function takes an
+3. Write a function called ~findSum~.  This function takes an
    array of floats as its first parameter, and the size of the array
    as its second parameter.  This function again is almost a complete
    repeat of the previous two function, but in this case you need to
@@ -65,6 +65,29 @@ Perform the following tasks:
    the values in the array.  This function returns a float value,
    which should be the sum of all of the values in the given input
    array.
+
+4. Write a function called ~findAverage~.  This function takes
+   an array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function will calculate the average
+   of the values in the input array, and return this average (a float)
+   as its result.  The average is calculated by taking the sum of the
+   values and dividing this by the total number of values.  Thus
+   your implementation of this function *MUST* use the ~findSumValue~
+   function to calculate the sum, then compute the average from
+   (reusing) this functions result.  Thus this function will be quite a
+   bit different from the previous 3 functions, as you are reusing the
+   sum function as a black box in order to calculate an average.
+
+5. Write a function called ~findStandardDeviation~.  As with all of the
+   previous functions, this function takes an array of floats as its
+   first parameter, and the size of the array as its second parameter.
+   This function will calculate the standard deviation of the values
+   in the given input array.  The formula to calculate the standard deviation
+   is as follows:
+
+$$
+\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}
+$$
 
 3. In your ~main()~ function, prompt the user to enter a value for $n$.
    You should then call each of your two different implementations, and
