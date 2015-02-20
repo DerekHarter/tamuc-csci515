@@ -84,10 +84,10 @@ Perform the following tasks:
    This function will calculate the standard deviation of the values
    in the given input array.  The formula to calculate the standard deviation
    is as follows:
-
 $$
-\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}
+\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}
 $$
+   Here $\mu$ represents the average of the values in the array
 
 3. In your ~main()~ function, prompt the user to enter a value for $n$.
    You should then call each of your two different implementations, and
