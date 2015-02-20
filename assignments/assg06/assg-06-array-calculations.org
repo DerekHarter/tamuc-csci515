@@ -39,20 +39,32 @@ deviation of the values in the array.
 
 Perform the following tasks:
 
-1. Write a function called ~nthFibonacciIterative()~.  This version of
-   the function takes a single integer as input, and returns an
-   integer as its result, as already mentioned.  You should implement
-   this function using a loop (when needed) to calculate the $n^{th}$
-   Fibonacci number.
+1. Write a function called ~findMinimumValue~.  This function takes
+   an array of floats as its first parameter, and the size of the
+   array as its second parameter.  This function should search through
+   all of the values in the array and return the value that is the
+   smallest (the minimum) in the array.
 
-2. Write a second function that will also calculate the $n^{th}$ term
-   in the Fibonacci sequence.  But your second function will do this
-   using a recursive implementation.  Your recursive implementation
-   should be called ~nthFibonacciRecursive()~.  You should not use any
-   loops in this version of the function, you will calculate the
-   $n^{th}$ Fibonacci number by recursively calling the
-   ~nthFibonacciRecursive()~ function itself in the appropriate manner
-   in order to calculate the correct term of the sequence.
+2. Write a function called ~findMaximumValue~.  This function takes an
+   array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function should search through all
+   of the values in the array and return the value that is the largest
+   (the maximum) in the array.  This function is basically almost an
+   exact repeat of the previous function, except for one small change.
+   In general, repeating code like this is a bad idea, but for this
+   assignment simply repeat your logic and make the one small change
+   to find the maximum instead of the minimum.  Later in this course
+   we will look at some ways we can encapsulate this repeated bit of
+   functionality into a function or abstraction.
+
+3. Write a function called ~findSumValues~.  This function takes an
+   array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function again is almost a complete
+   repeat of the previous two function, but in this case you need to
+   add a variable to keep track of and calculate the running ~sum~ of
+   the values in the array.  This function returns a float value,
+   which should be the sum of all of the values in the given input
+   array.
 
 3. In your ~main()~ function, prompt the user to enter a value for $n$.
    You should then call each of your two different implementations, and
