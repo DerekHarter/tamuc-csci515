@@ -1,4 +1,4 @@
-% Created 2015-02-19 Thu 19:32
+% Created 2015-02-20 Fri 13:13
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,38 +7,44 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
+\usepackage{soul}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
+\usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
 \usepackage{minted}
 \usepackage{minted}
 \usemintedstyle{default}
-\author{CSci 515 Spring 2015}
-\date{\textit{<2015-02-19 Thu>}}
+\providecommand{\alert}[1]{\textbf{#1}}
+
 \title{Assg 06: Calculations on Arrays}
+\author{CSci 515 Spring 2015}
+\date{2015-02-19}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Assg 06},
-  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
 \begin{document}
 
 \maketitle
 
+
 \section*{Dates:}
 \label{sec-1}
+
+
 \begin{center}
 \begin{tabular}{ll}
-Due: & Tuesday March 3, by Midnight\\
+ Due:  &  Tuesday March 3, by Midnight  \\
 \end{tabular}
 \end{center}
 \section*{Objectives}
 \label{sec-2}
+
 \begin{itemize}
 \item More practice writing C functions that take arrays as parameters
 \item More work on declaring, indexing and processing arrays.
@@ -47,6 +53,7 @@ Due: & Tuesday March 3, by Midnight\\
 \end{itemize}
 \section*{Description}
 \label{sec-3}
+
 In our lab for this week, you were given a template that reads in an array
 of floating point values from a file and saves them in to an array for processing.
 For this assignment, you need to start with the same template.
@@ -60,9 +67,9 @@ In this assignment you will be writing 5 functions to process the data
 in your \verb~values~ array.  Your functions will find the minimum value in
 an array, the maximum value in an array, the average of the values in
 an array, the sum of the values in an array, and the standard deviation
-of the values in an array.  All 4 of these functions take the array,
+of the values in an array.  All 5 of these functions take the array,
 and an integer parameter indicating the size of the array, as input
-parameters to them.  All 4 of these function return a floating point
+parameters to them.  All 5 of these function return a floating point
 result, which is the result of finding or calculating the minimum /
 maximum / average / sum / standard deviation of the values in the array.
 
@@ -70,79 +77,75 @@ Perform the following tasks:
 
 \begin{enumerate}
 \item Write a function called \verb~findMinimumValue~.  This function takes
-an array of floats as its first parameter, and the size of the
-array as its second parameter.  This function should search through
-all of the values in the array and return the value that is the
-smallest (the minimum) in the array.
-
+   an array of floats as its first parameter, and the size of the
+   array as its second parameter.  This function should search through
+   all of the values in the array and return the value that is the
+   smallest (the minimum) in the array.
 \item Write a function called \verb~findMaximumValue~.  This function takes an
-array of floats as its first parameter, and the size of the array
-as its second parameter.  This function should search through all
-of the values in the array and return the value that is the largest
-(the maximum) in the array.  This function is basically almost an
-exact repeat of the previous function, except for one small change.
-In general, repeating code like this is a bad idea, but for this
-assignment simply repeat your logic and make the one small change
-to find the maximum instead of the minimum.  Later in this course
-we will look at some ways we can encapsulate this repeated bit of
-functionality into a function or abstraction.
-
+   array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function should search through all
+   of the values in the array and return the value that is the largest
+   (the maximum) in the array.  This function is basically almost an
+   exact repeat of the previous function, except for one small change.
+   In general, repeating code like this is a bad idea, but for this
+   assignment simply repeat your logic and make the one small change
+   to find the maximum instead of the minimum.  Later in this course
+   we will look at some ways we can encapsulate this repeated bit of
+   functionality into a function or abstraction.
 \item Write a function called \verb~findSum~.  This function takes an
-array of floats as its first parameter, and the size of the array
-as its second parameter.  This function again is almost a complete
-repeat of the previous two function, but in this case you need to
-add a variable to keep track of and calculate the running \verb~sum~ of
-the values in the array.  This function returns a float value,
-which should be the sum of all of the values in the given input
-array.
-
+   array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function again is almost a complete
+   repeat of the previous two function, but in this case you need to
+   add a variable to keep track of and calculate the running \verb~sum~ of
+   the values in the array.  This function returns a float value,
+   which should be the sum of all of the values in the given input
+   array.
 \item Write a function called \verb~findAverage~.  This function takes
-an array of floats as its first parameter, and the size of the array
-as its second parameter.  This function will calculate the average
-of the values in the input array, and return this average (a float)
-as its result.  The average is calculated by taking the sum of the
-values and dividing this by the total number of values.  Thus
-your implementation of this function \textbf{MUST} use the \verb~findSumValue~
-function to calculate the sum, then compute the average from
-(reusing) this functions result.  Thus this function will be quite a
-bit different from the previous 3 functions, as you are reusing the
-sum function as a black box in order to calculate an average.
-
+   an array of floats as its first parameter, and the size of the array
+   as its second parameter.  This function will calculate the average
+   of the values in the input array, and return this average (a float)
+   as its result.  The average is calculated by taking the sum of the
+   values and dividing this by the total number of values.  Thus
+   your implementation of this function \textbf{MUST} use the \verb~findSumValue~
+   function to calculate the sum, then compute the average from
+   (reusing) this functions result.  Thus this function will be quite a
+   bit different from the previous 3 functions, as you are reusing the
+   sum function as a black box in order to calculate an average.
 \item Write a function called \verb~findStandardDeviation~.  As with all of the
-previous functions, this function takes an array of floats as its
-first parameter, and the size of the array as its second parameter.
-This function will calculate the standard deviation of the values
-in the given input array.  The formula to calculate the standard deviation
-is as follows:
-$$
+   previous functions, this function takes an array of floats as its
+   first parameter, and the size of the array as its second parameter.
+   This function will calculate the standard deviation of the values
+   in the given input array.  The formula to calculate the standard deviation
+   is as follows:
+   $$
    \sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}
    $$
-Here $\mu$ represents the average of the values in the array (which
-you can obtain from the \verb~findAverage~ function), and $x_i$ is
-mathematical notation that basically represents the elements of our
-array indexed from $0$ up to $N-1$.  So to find the standard
-deviation, you have to subtract each value in the array from the
-average value and square this difference.  You add up all of the
-squared differences, and divide the result by $N$.  This value,
-finally, you take the square root of.  This is, by definition, the
-standard deviation of the values in the array.  For this function,
-you should use the \verb~findAverage~ function to get the average
-($\mu$), and then you need to loop through all of the values in the
-array to square the difference, sum them up, and then divide by $N$
-and finally take the square root.  You will want to use the \verb~pow()~
-method from the \verb~cmath~ library in order to do the squaring and
-square root calculations.
-
+   Here $\mu$ represents the average of the values in the array (which
+   you can obtain from the \verb~findAverage~ function), and $x_i$ is
+   mathematical notation that basically represents the elements of our
+   array indexed from $0$ up to $N-1$.  So to find the standard
+   deviation, you have to subtract each value in the array from the
+   average value and square this difference.  You add up all of the
+   squared differences, and divide the result by $N$.  This value,
+   finally, you take the square root of.  This is, by definition, the
+   standard deviation of the values in the array.  For this function,
+   you should use the \verb~findAverage~ function to get the average
+   ($\mu$), and then you need to loop through all of the values in the
+   array to square the difference, sum them up, and then divide by $N$
+   and finally take the square root.  You will want to use the \verb~pow()~
+   method from the \verb~cmath~ library in order to do the squaring and
+   square root calculations.
 \item In your \verb~main()~ function, modify the code at the beginning as
-already described, to read in the 100 values from the file provided
-for assignment 06.  Then use your 5 functions to calculate the
-minimum, maximum, sum, average and standard deviation of the values
-in the loaded array.
+   already described, to read in the 100 values from the file provided
+   for assignment 06.  Then use your 5 functions to calculate the
+   minimum, maximum, sum, average and standard deviation of the values
+   in the loaded array.
 \end{enumerate}
 
 Your program output should look exactly like the following when I run
 your program. These are the correct calculated values for the given
 file of 100 floating point values you will use for this assignment.
+
 
 \begin{verbatim}
 Minimum:  0.00479889
@@ -161,33 +164,34 @@ the input parameters and return value of the function.
 \section*{Assignment Submission}
 \label{sec-4}
 
+
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the assignment to the eCollege dropbox named
 \verb~Assg 06 Array Calculations~ created for this submission.  Work
 submitted by the due date will be considered for evaluation.
 \section*{Requirements and Grading Rubrics}
 \label{sec-5}
-
 \subsection*{Program Execution, Output and Functional Requirements}
 \label{sec-5-1}
 
+
 \begin{enumerate}
 \item Your program must compile, run and produce some sort of output to be
-graded. 0 if not satisfied.
+  graded. 0 if not satisfied.
 \item 40+ pts.  Your program must the first 4 functions described.
 \item 40+ pts. Each of the first 4 functions must correctly calculate the desired
-value of the given input array.  Your average function must reuse the sum
-function to perform its calculation.
+   value of the given input array.  Your average function must reuse the sum
+   function to perform its calculation.
 \item 20+ pts. You must correctly modify the original template to read from the new
-input file for assignment 06, with 100 elements in the array.  Don't use
-magic numbers, modify the global constants to do this correctly.
+   input file for assignment 06, with 100 elements in the array.  Don't use
+   magic numbers, modify the global constants to do this correctly.
 \item 5 extra credit pts. Your program should correctly implement the calculation to
-determine the standard deviation.  Your standard deviation function must reuse
-the average function in doing its calculation.
+   determine the standard deviation.  Your standard deviation function must reuse
+   the average function in doing its calculation.
 \end{enumerate}
-
 \subsection*{Program Style}
 \label{sec-5-2}
+
 
 Your programs must conform to the style and formatting guidelines
 given for this course.  The following is a list of the guidelines that
@@ -195,36 +199,36 @@ are required for the assignment to be submitted this week.
 
 \begin{enumerate}
 \item The file header for the file with your name and program information
-and the function header for your main function must be present, and
-filled out correctly.
+  and the function header for your main function must be present, and
+  filled out correctly.
 \item A function header must be present for all functions you define.
-You must document the purpose, input parameters and return values
-of all functions.  Your function headers must be formatted exactly
-as shown in the style guidelines for the class.
+   You must document the purpose, input parameters and return values
+   of all functions.  Your function headers must be formatted exactly
+   as shown in the style guidelines for the class.
 \item You must indent your code correctly and have no embedded tabs in
-your source code. (Don't forget about the Visual Studio Format
-Selection command).
+  your source code. (Don't forget about the Visual Studio Format
+  Selection command).
 \item You must not have any statements that are hacks in order to keep
-your terminal from closing when your program exits (e.g. no calls
-to system() ).
+   your terminal from closing when your program exits (e.g. no calls
+   to system() ).
 \item You must have a single space before and after each binary operator.
 \item You must have a single blank line after the end of your declaration
-of variables at the top of a function, before the first code
-statement.
+  of variables at the top of a function, before the first code
+  statement.
 \item You must have a single blank space after , and \verb~;~ operators used as a
-separator in lists of variables, parameters or other control
-structures.
+  separator in lists of variables, parameters or other control
+  structures.
 \item You must have opening \verb~{~ and closing \verb~}~ for control statement blocks
-on their own line, indented correctly for the level of the control
-statement block.
+  on their own line, indented correctly for the level of the control
+  statement block.
 \item All control statement blocks (if, for, while, etc.) must have \verb~{~
-\verb~}~ enclosing them, even when they are not strictly necessary
-(when there is only 1 statement in the block).
+   \verb~}~ enclosing them, even when they are not strictly necessary
+   (when there is only 1 statement in the block).
 \item You should attempt to use meaningful variable and function names in
-your program, for program clarity.  Of course, when required, you
-must name functions, parameters and variables as specified in the
-assignments.  Variable and function names must conform to correct
-\verb~camelCaseNameingConvention~ .
+   your program, for program clarity.  Of course, when required, you
+   must name functions, parameters and variables as specified in the
+   assignments.  Variable and function names must conform to correct
+   \verb~camelCaseNameingConvention~ .
 \end{enumerate}
 
 Failure to conform to any of these formatting and programming practice
@@ -235,5 +239,5 @@ assignment). Failure to follow other class/textbook programming
 guidelines may result in a loss of points, especially for those
 programming practices given in our Deitel textbook that have been in
 our required reading so far.
-% Emacs 24.3.1 (Org mode 8.2.4)
+
 \end{document}

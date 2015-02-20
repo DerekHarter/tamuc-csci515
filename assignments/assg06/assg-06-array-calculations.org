@@ -31,9 +31,9 @@ In this assignment you will be writing 5 functions to process the data
 in your ~values~ array.  Your functions will find the minimum value in
 an array, the maximum value in an array, the average of the values in
 an array, the sum of the values in an array, and the standard deviation
-of the values in an array.  All 4 of these functions take the array,
+of the values in an array.  All 5 of these functions take the array,
 and an integer parameter indicating the size of the array, as input
-parameters to them.  All 4 of these function return a floating point
+parameters to them.  All 5 of these function return a floating point
 result, which is the result of finding or calculating the minimum /
 maximum / average / sum / standard deviation of the values in the array.
 
