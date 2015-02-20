@@ -166,6 +166,7 @@ float findSum(float values[], int size)
  */
 float findAverage(float values[], int size)
 {
+  float sum;
   float average;
 
   sum = findSum(values, size);
