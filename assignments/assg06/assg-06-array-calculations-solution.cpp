@@ -176,6 +176,29 @@ float findAverage(float values[], int size)
 }
 
 
+/** find standard deviation
+ * Find the standard deviation of all of the values in an array of
+ * floats.  We are given the array and the size of the array as input.
+ * We return the std of all of the value as the result of this
+ * function.
+ *
+ * @param values An array of floats, passed by reference.
+ * @param size The size of the array we are searching.
+ *
+ * @returns float The standard deviation of the values in the array
+ */
+float findAverage(float values[], int size)
+{
+  float sum;
+  float average;
+
+  sum = findSum(values, size);
+  average = sum / (float)size;
+
+  return average;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
