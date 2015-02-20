@@ -147,7 +147,7 @@ float findSum(float values[], int size)
   sum = 0.0;
   for (int idx = 0; idx < size; idx++)
   {
-    sum += values[ids];
+    sum += values[idx];
   }
 
   return sum;
