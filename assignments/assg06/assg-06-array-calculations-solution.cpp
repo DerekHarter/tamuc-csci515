@@ -199,6 +199,8 @@ int main()
        << setw(12) << fixed << setprecision(8) << findMaximumValue(values, NUM_VALUES) << endl;
   cout << setw(9) << right << "Sum:"
        << setw(12) << fixed << setprecision(8) << findSum(values, NUM_VALUES) << endl;
+  cout << setw(9) << right << "Average:"
+       << setw(12) << fixed << setprecision(8) << findAverage(values, NUM_VALUES) << endl;
 
   //  Return 0 to indicate program terminated successfully
   return 0;
