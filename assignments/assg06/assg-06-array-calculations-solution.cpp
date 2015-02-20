@@ -72,26 +72,31 @@ void readArrayFromFile(float values[], int size, string inputFileName)
 }
 
 
-/** display array values
- * Display values in an array in a given range.  We indicate the
- * indices and format the values to give a uniform, nice appearance
- * on standard output.
+/** find minimum value
+ * Find the minimum value in an array of floats.  We are given the array
+ * and the size of the array as input.  We return the minimum value as the
+ * result of this function.
  *
  * @param values An array of floats, passed by reference.
- * @param beginRange An integer parameter, the first index of range of values
- *    to be printed.
- * @param endRange An integer parameter, the last index of range of values to be
- *    printed.
+ * @param size The size of the array we are searching.
  *
- * @returns void Results printed to standard output as a side effect.
+ * @returns float The minimum value in the array
  */
-void displayArrayValues(float values[], int beginRange, int endRange)
+float findMinimumValue(float values[], int size)
 {
-  for (int idx = beginRange; idx <= endRange; idx++)
+  float minimum;
+
+  // We initialize minimum to the first value, then search values 1..size-1 for smaller ones
+  minimum = values[0];
+  for (int idx = 1; idx < size; idx++)
   {
-    cout << "values[" << setw(3) << setfill('0') << idx << "] "
-	 << setw(10) << fixed << showpoint << setprecision(8) << values[idx] << endl;
+    if (values[idx] < minimum)
+    {
+      minimum = values[idx];
+    }
   }
+
+  return minimum;
 }
 
 
