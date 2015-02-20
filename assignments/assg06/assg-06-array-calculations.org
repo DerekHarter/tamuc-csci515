@@ -1,21 +1,21 @@
-#+TITLE:     Assg 05: Fibonacci Series
+#+TITLE:     Assg 06: Calculations on Arrays
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
-#+DATE:      <2015-02-11 Wed>
-#+DESCRIPTION: Assg 05
+#+DATE:      <2015-02-19 Thu>
+#+DESCRIPTION: Assg 06
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday February 24, by Midnight |
+| Due: | Tuesday March 3, by Midnight |
 
 * Objectives
-- More practice writing C functions
-- Learn about implementing algorithms using iteration and recursion.
-- Practice writing a recursive function.
-- Become more familiar with implementing mathematical series on a computer.
+- More practice writing C functions that take arrays as parameters
+- More work on declaring, indexing and processing arrays.
+- Learn about performing calculations over arrays of values.
+- More examples of breaking problems into subproblems using functions.
 
 * Description
 In this assignment we will write two versions of functions that will
