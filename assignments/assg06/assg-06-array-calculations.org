@@ -103,16 +103,22 @@ Perform the following tasks:
    method from the ~cmath~ library in order to do the squaring and
    square root calculations.
 
-6. In your ~main()~ function, modify the code at the beginning
-   as already described, to read in the 100 values from the
-   file provided for assignment 06.  Then use your 5 functions to calculate
-   the minimum, maximum, sum, average and standard deviation of the values
-   in the loaded array. 
+6. In your ~main()~ function, modify the code at the beginning as
+   already described, to read in the 100 values from the file provided
+   for assignment 06.  Then use your 5 functions to calculate the
+   minimum, maximum, sum, average and standard deviation of the values
+   in the loaded array.
 
-Your program output should look something close to the following when I
-run your program. 
+Your program output should look exactly like the following when I run
+your program. These are the correct calculated values for the given
+file of 100 floating point values you will use for this assignment.
 
 #+begin_example
+ Minimum:  0.00479889
+ Maximum:  0.99799562
+     Sum: 50.07558441
+ Average:  0.50075585
+     Std:  0.27921614
 #+end_example
 
 
