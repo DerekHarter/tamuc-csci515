@@ -112,48 +112,12 @@ Your program output should look something close to the following when I
 run your program. 
 
 #+begin_example
-$ assg05
-Enter n (an integer >= 0), and I will calculate the n^th
-Fibonacci term for you using two different methods: 0
-
-0 term of the Fibonacci series, using iterative method: 0
-0 term of the Fibonacci series, using recursive method: 0
-
-$ assg05
-Enter n (an integer >= 0), and I will calculate the n^th
-Fibonacci term for you using two different methods: 1
-
-1 term of the Fibonacci series, using iterative method: 1
-1 term of the Fibonacci series, using recursive method: 1
-
-$ assg05
-Enter n (an integer >= 0), and I will calculate the n^th
-Fibonacci term for you using two different methods: 8
-
-8 term of the Fibonacci series, using iterative method: 21
-8 term of the Fibonacci series, using recursive method: 21
-
-$ assg05
-Enter n (an integer >= 0), and I will calculate the n^th
-Fibonacci term for you using two different methods: 10
-
-10 term of the Fibonacci series, using iterative method: 55
-10 term of the Fibonacci series, using recursive method: 55
-
-$ assg05
-Enter n (an integer >= 0), and I will calculate the n^th
-Fibonacci term for you using two different methods: 35
-
-35 term of the Fibonacci series, using iterative method: 9227465
-35 term of the Fibonacci series, using recursive method: 9227465
-
 #+end_example
 
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
-and required.  Make sure that all of your functions (~main~,
-~nthFibonacciIterative~, ~nthFibonacciRecursive~) have function
+and required.  Make sure that all of your functions have function
 headers preceding them that document the purpose of the functions, and
 the input parameters and return value of the function.
 
