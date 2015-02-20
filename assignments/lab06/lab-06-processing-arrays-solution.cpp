@@ -51,7 +51,7 @@ void readArrayFromFile(float values[], int size, string inputFileName)
   {
     cerr << "Error: readArrayFromFile: could not open file for reading named: "
 	 << inputFileName << endl;
-    exit(0);
+    exit(1);
   }
 
   // read in the data
