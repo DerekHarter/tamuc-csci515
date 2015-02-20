@@ -48,13 +48,15 @@ Perform the following tasks:
    ~endRange~ then no values will be output. Your function does not
    return anything, so it is a void function.  Instead your function
    displays its output to standard out, and it should be formatted to
-   look exactly like this output:
+   look exactly like the output shown below.  *HINT*: you may need to
+   use the ~setw()~, ~setprecision()~, ~setfill()~ and ~fixed~ I/O
+   manipulators to get the output formatted exactly as shown.
 
 3. In your main program, you should leave the code alone that reads in
    the array values from the file.  After the array is read in, you
-   should first prompt the user for a begin and end range, and call the
-   ~displayArrayValues~ function to display the values in the array in
-   that range.  
+   should first prompt the user for a begin and end range, and call
+   the ~displayArrayValues~ function to display the values in the
+   array in that range.
 
 Your program output should look something close to the following when I
 run your program:
