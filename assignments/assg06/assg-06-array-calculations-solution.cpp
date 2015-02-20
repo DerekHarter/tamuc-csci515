@@ -172,9 +172,9 @@ int main()
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
 
   // display the results from processing our array of values
-  cout << setw(12) << right << "Minimum: "
+  cout << setw(12) << right << "Minimum:"
        << setw(12) << fixed << setprecision(8) << findMinimumValue(values, NUM_VALUES) << endl;
-  cout << setw(12) << right << "Maximum: "
+  cout << setw(12) << right << "Maximum:"
        << setw(12) << fixed << setprecision(8) << findMaximumValue(values, NUM_VALUES) << endl;
   cout << setw(12) << right << "Sum:"
        << setw(12) << fixed << setprecision(8) << findSum(values, NUM_VALUES) << endl;
