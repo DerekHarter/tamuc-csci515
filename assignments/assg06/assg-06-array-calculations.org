@@ -18,37 +18,24 @@
 - More examples of breaking problems into subproblems using functions.
 
 * Description
-In this assignment we will write two versions of functions that will
-compute the Fibonacci series.  The Fibonacci series is a well studied
-series that displays exponential growth.  You may have run across this
-series before, the initial values in the Fibonacci series are:
+In our lab for this week, you were given a template that reads in an array
+of floating point values from a file and saves them in to an array for processing.
+For this assignment, you need to start with the same template.
 
-$$
-0, 1, 1, 2, 3, 5, 8, 13, 21, ...
-$$
+For this assignment, I have provided a different file off 100 floating
+point values, named ~assg-06-float-array.txt~.  Modify the constants and
+code in the original template for lab 06 to read in the 100 values
+from this file into your array named ~values~.
 
-where each value is the sum of the proceeding two values in the series
-(and the first two values represent the base cases).  Mathematically
-we can represent the series as a recursive relationship:
-
-$$
-x_n = x_{n-1} + x_{n-2}, \quad x_0 = 0, \quad x_1 = 1
-$$
-
-This recursive expression basically says that we can calculate the
-$n^{th}$ value of the Fibonacci series by adding the $n-1$ and $n-2$
-values in the sequence together, and that the base cases are when $n=0$
-then the value of the series is $0$ and when $n=1$ the value of the
-series is $1$.
-
-In this assignment you need to write two functions that calculate
-and return the $nth$ value of the Fibonacci series.  The functions
-will take a single integer parameter $n$ as input.  If $n$ is 0, you
-should return 0, and if $n$ is 1 you should return 1.  For all other
-values of $n>1$ you should calculate the value to return as given
-above and return it.  Your functions will return a single integer
-as their result, which will be the $n^{th}$ Fibonacci number they
-were asked to calculate.
+In this assignment you will be writing 4 function to process the data
+in your ~values~ array.  Your function will find the minimum value in
+an array, the maximum value in an array, the average of the values in
+an array, and the standard deviation of the values in an array.  All 4
+of these function take the array, and an integer parameter indicating
+the size of the array, as input parameters to them.  All 4 of these
+function return a floating point result, which is the result of
+finding/calculating the minimum / maximum / average / standard
+deviation of the values in the array.
 
 Perform the following tasks:
 
