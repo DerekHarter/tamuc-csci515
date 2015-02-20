@@ -89,20 +89,27 @@ $$
 $$
    Here $\mu$ represents the average of the values in the array, and $x_i$ is
    mathematical notation that basically represents the elements of our array
-   indexed from $0$ up to $N-1$.
+   indexed from $0$ up to $N-1$.  So to find the standard deviation, you
+   have to subtract each value in the array from the average value and
+   square this difference.  You add up all of the squared differences, and
+   divide the result by $N$.  This value, finally, you take the
+   square root of.  This is, by definition, the standard deviation
+   of the values in the array.  For this function, you should use the
+   ~findAverage~ function to get the average ($\mu$), and then
+   you need to loop through all of the values in the array to 
+   square the difference, sum them up, and then divide by $N$ and
+   finally take the square root.  You will want to use the ~pow()~
+   method from the ~cmath~ library in order to do the squaring and
+   square root calculations.
 
-3. In your ~main()~ function, prompt the user to enter a value for $n$.
-   You should then call each of your two different implementations, and
-   display the result of their calculation of the $n^{th}$ term of the
-   Fibonacci sequence, which if you implement the two different versions
-   correctly, should always give the same result.  Be careful of using
-   large values of $n$, as the recursive implementation especially may
-   take quite a while to calculate in cases of large $n$.
+6. In your ~main()~ function, modify the code at the beginning
+   as already described, to read in the 100 values from the
+   file provided for assignment 06.  Then use your 5 functions to calculate
+   the minimum, maximum, sum, average and standard deviation of the values
+   in the loaded array. 
 
 Your program output should look something close to the following when I
-run your program.  I have run the program multiple times, so that you
-can also see some examples of correct output for some larger values
-of $n$:
+run your program. 
 
 #+begin_example
 $ assg05
