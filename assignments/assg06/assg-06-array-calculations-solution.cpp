@@ -192,6 +192,7 @@ float findStandardDeviation(float values[], int size)
 {
   float average;
   float sum;
+  float std;
   
   // get the average of the values
   average = findAverage(values, size);
