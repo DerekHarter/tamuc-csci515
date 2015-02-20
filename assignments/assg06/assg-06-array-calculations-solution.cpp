@@ -200,10 +200,13 @@ float findStandardDeviation(float values[], int size)
   sum = 0.0;
   for (int idx = 0; idx < size; idx++)
   {
-    
+    sum += pow(values[idx] - average, 2.0)
   }
 
-  return average;
+  // average and take square root of the sum squared differences
+  std = pow(sum / (float)size, 0.5);
+
+  return std;
 }
 
 
