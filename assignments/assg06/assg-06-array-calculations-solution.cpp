@@ -4,12 +4,11 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   February 19, 2015
- * @assg   Lab 06
+ * @assg   Assg 06
  *
- * @description Example of processing arrays.  We write functions to display selected
- *    portions of an array, and to determine the average of the values in an
- *    array.  This program also contains an example of a function that reads in the
- *    values from a file into an array of floats for processing by the other functions.
+ * @description Examples of performing calculations on and with arrays.  All functions take an
+ *    array (and the size of the array) as inputs.  The functions perform a calculation on the
+ *    values in the array, and return the result as a single floating point result value.
  */
 #include <iostream>
 #include <fstream>
