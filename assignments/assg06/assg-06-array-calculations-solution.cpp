@@ -117,6 +117,9 @@ int main()
   // load the values from a file into our array
   readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
 
+  // display the results from processing our array of values
+  cout << "Minimum: " << setw(10) << fixed << setprecision(8) << findMinimumValue(values, NUM_VALUES);
+  
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
