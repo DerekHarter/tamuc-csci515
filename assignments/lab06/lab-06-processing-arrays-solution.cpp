@@ -96,32 +96,6 @@ void displayArrayValues(float values[], int beginRange, int endRange)
 }
 
 
-/** calculate array average
- * Calculate the average of the values in an array.  We are given the
- * array and its size.  We compute the average of all values, and return
- * this value as our result.
- *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array.
- *
- * @returns float The average of the values in the array
- */
-float calculateArrayAverage(float values[], int size)
-{
-  float sum;
-
-  // find the sum of all of the values in array
-  sum = 0.0;
-  for (int idx = 0; idx < size; idx++)
-  {
-    sum += values[idx];
-  }
-
-  // calculate and return the average
-  return sum / (float) size;
-}
-
-
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
@@ -149,9 +123,6 @@ int main()
   cin >> endRange;
   displayArrayValues(values, beginRange, endRange);
 
-  // Calculate and display the average:
-  cout << "The average value of the array is: " << calculateArrayAverage(values, NUM_VALUES) << endl;
-
-  //
+  //  Return 0 to indicate program terminated successfully
   return 0;
 }
