@@ -162,21 +162,16 @@ float findSum(float values[], int size)
  * @param values An array of floats, passed by reference.
  * @param size The size of the array we are searching.
  *
- * @returns float The sum of the values in the array
+ * @returns float The average of the values in the array
  */
-float findSum(float values[], int size)
+float findAverage(float values[], int size)
 {
-  float sum;
+  float average;
 
-  // Initialily sum is 0.0, then we add up all of the values in the array
-  // using a running sum
-  sum = 0.0;
-  for (int idx = 0; idx < size; idx++)
-  {
-    sum += values[idx];
-  }
+  sum = findSum(values, size);
+  average = sum / (float)size;
 
-  return sum;
+  return average;
 }
 
 
