@@ -118,7 +118,7 @@ float findMaximumValue(float values[], int size)
   maximum = values[0];
   for (int idx = 1; idx < size; idx++)
   {
-    if (values[idx] < minimum)
+    if (values[idx] > minimum)
     {
       minimum = values[idx];
     }
