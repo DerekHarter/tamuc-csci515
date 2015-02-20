@@ -62,6 +62,20 @@ Your program output should look something close to the following when I
 run your program:
 
 #+begin_example
+I will display a range of values from our array.
+Enter index to start at: 5
+Enter index to end at: 15
+value[005] 0.52743745
+value[006] 0.58105505
+value[007] 0.16465282
+value[008] 0.28310502
+value[009] 0.59936452
+value[010] 0.87698799
+value[011] 0.34905022
+value[012] 0.03936137
+value[013] 0.22738582
+value[014] 0.59080577
+value[015] 0.87810069
 #+end_example
 
 
