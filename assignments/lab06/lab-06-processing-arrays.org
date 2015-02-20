@@ -29,13 +29,13 @@ output as specified below.
 
 Perform the following tasks:
 
-1. Start with the given template code for this lab, which contains one
-   function already written for you, and an example of calling that
-   function.  This function reads in an array of floating point values
-   from a file.  As we learned in class, since arrays are passed by
-   reference by default, specifying the array to be read in to the
-   function, causes the values to be filled in and returned to the
-   caller in the given array.
+1. Start with the given template code for this lab (download from
+   eCollege), which contains one function already written for you, and
+   an example of calling that function.  This function reads in an
+   array of floating point values from a file.  As we learned in
+   class, since arrays are passed by reference by default, specifying
+   the array to be read in to the function, causes the values to be
+   filled in and returned to the caller in the given array.
 
 2. Write a function called ~displayArrayValues~.  This function will
    take an array of floats as its first parameter, and a ~beginRange~
