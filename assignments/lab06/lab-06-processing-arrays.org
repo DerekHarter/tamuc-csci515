@@ -84,17 +84,14 @@ time in order to receive credit.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 40+ pts.  Your program must have the 2 required named functions,
-   that accept the required input parameters and return the required
+1. 40+ pts.  Your program must have the required named function,
+   that accepts the required input parameters and return the required
    values (if any).
-1. 20+ pts. Your ~displayArrayValues~ function must correctly format
+1. 30+ pts. Your ~displayArrayValues~ function must correctly format
    the displayed output on standard output.  Your program should work
    if the begin and end range are equal, and should show now output
    when begin is greater than the end specified.
-1. 20+ pts. Your ~calculateArrayAverage~ function must calculate the
-   average of all of the values specified correctly, and return this
-   result.
-1. 20+ pts. Your main function must prompt the user as specified, and
+1. 30+ pts. Your main function must prompt the user as specified, and
    display the output formatted correctly as shown.
 
 
