@@ -21,7 +21,7 @@ type arrayName[arraySize];
 
 - Indexing an array
 - Arrays in C are indexed *STARTING AT 0* (0 based indexing)
-- The size of the array like int ~c[10]~ is 10 items, indexed from 0 to 9.
+- The size of the array like ~int c[10]~ is 10 items, indexed from 0 to 9.
 - When accessing all of the elements of an array, always use an indexed
   controlled for loop, and always index the loop from 0 up to N, like this:
 
