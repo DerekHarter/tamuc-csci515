@@ -43,7 +43,7 @@ int randomRange(int beginRange, int endRange)
  */
 int main()
 {
-  const int ARRAY_SIZE = 1000;
+  const int ARRAY_SIZE = 500;
   int values[ARRAY_SIZE];
 
   // Lets initialize the array with values in 0 to 9
