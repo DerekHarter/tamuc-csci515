@@ -22,22 +22,21 @@ using namespace std;
  */
 int main()
 {
-  int x;
-  int y;
-  
-  myGlobalVariable = 5;
-  x = 10;
-  y = aFunction(x);
+  // Declare an array
+  int c[10];
 
-  cout << "x = " << x << endl;
-  cout << "y = " << y << endl;
-  cout << "myGlobalVariable = " << myGlobalVariable << endl;
+  // index an array
+  c[0] = 5;
+  c[1] = 10;
+  c[10] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
 
-  if (x < y)
+  // loop to initialize an array
+  // always, ALWAYS, ALWAYs index starting at 0, up to (but not including)
+  // the max value.  Arrays in c are always index from 0 to N-1
+  for (int idx = 0; idx < 10; idx++)
   {
-    int y = -9999;
-    cout << "y = " << y << endl;
+    c[idx] = 0;
   }
+
   
-  cout << "y = " << y << endl;
 }
