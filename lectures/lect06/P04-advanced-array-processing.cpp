@@ -11,6 +11,23 @@
 #include <iostream>
 using namespace std;
 
+
+/** random integer in range
+ * Create a random integer in the range from beginRange to endRange
+ * (inclusive)
+ *
+ * @param beginRange an integer, the beginning of the range within
+ *    which to generate a random number
+ * @param endRange an integer, the end of the range
+ *
+ * @returns An int value.  A number in range [beginRange, endRange]
+ *    inclusive
+ */
+int main()
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
