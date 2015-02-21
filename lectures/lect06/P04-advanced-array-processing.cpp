@@ -45,14 +45,14 @@ int main()
   const int ARRAY_SIZE = 1000;
   int values[ARRAY_SIZE];
 
-  // Lets initialize the array with values in 0 to 50
+  // Lets initialize the array with values in 0 to 9
   // but with an unequal distribution (sum of 5 random numbers in range 0-10)
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
     int sum = 0;
-    for (int r = 1; r <= 5; r++)
+    for (int r = 1; r <=3; r++)
     {
-      sum += randomRange(0, 10);
+      sum += randomRange(0, 3);
     }
     values[idx] = sum;
   }
