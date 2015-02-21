@@ -4,9 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 06, P01 Array declarations and indexing
+ * @assg   Lecture 06, P02 Array declarations and indexing
  *
- * @description Array creation, indexing.
+ * @description Using const declarations to avoid MAGIC NUMBERS
  */
 #include <iostream>
 using namespace std;
