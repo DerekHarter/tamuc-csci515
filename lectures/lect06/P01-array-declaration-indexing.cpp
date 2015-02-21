@@ -4,32 +4,12 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 04, P02 User Defined Functions
+ * @assg   Lecture 06, P01 Array declarations and indexing
  *
- * @description Variable scoping rules, global, local, block level
+ * @description Array creation, indexing.
  */
 #include <iostream>
 using namespace std;
-
-
-int myGlobalVariable; // a global variable, usually not a good idea to use these
-const int MAX_VALUE = 1234; // global constants, however, are often useful
-
-
-/** a function
- * A generic function.  Takes a single integer parameter as input, and returns
- * an integer as its result.
- *
- * @param x An integer input to our function.
- *
- * @returns An int value.  
- */
-int aFunction(int x)
-{
-  myGlobalVariable = 42;
-  x = 25;
-  return 32;
-}
 
 /** main entry point
  * The main entry point for this program.  Execution
