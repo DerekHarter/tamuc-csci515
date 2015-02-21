@@ -44,7 +44,7 @@ int randomRange(int beginRange, int endRange)
  */
 int main()
 {
-  const int ARRAY_SIZE = 50000;
+  const int ARRAY_SIZE = 500000;
   int values[ARRAY_SIZE];
 
   // Lets initialize the array with values in 0 to 9
@@ -83,7 +83,7 @@ int main()
     cout << setw(3) << setfill('0') <<  idx << ":";
 
     // print bar of astericks to represent historgam
-    for (int stars = 0; stars < hist[idx]/10; stars++)
+    for (int stars = 0; stars < hist[idx]/100; stars++)
     {
       cout << "*";
     }
