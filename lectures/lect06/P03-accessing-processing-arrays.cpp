@@ -9,6 +9,7 @@
  * @description Examples of intializing, and processing values in an array.
  */
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 /** main entry point
