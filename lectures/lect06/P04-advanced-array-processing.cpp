@@ -52,15 +52,15 @@ int main()
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
     int sum = 0;
-    for (int r = 1; r <=3; r++)
+    for (int r = 1; r <=5; r++)
     {
-      sum += randomRange(0, 3);
+      sum += randomRange(0, 20);
     }
     values[idx] = sum;
   }
 
   // Create another array to count items with value 0,1,2,...,9
-  const int MAX_VALUE = 10;
+  const int MAX_VALUE = 100;
   int hist[MAX_VALUE];
 
   // initialize array to 0
