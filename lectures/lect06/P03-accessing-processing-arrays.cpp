@@ -58,5 +58,11 @@ int main()
   }
   cout << "The minimum value in the array is: " << minimum << endl;
 
-  
+  // Sum up the values in the array, use a variable to keep a running total
+  int sum = 0;
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+    sum += c[idx];
+  }
+  cout << "The sum of the values in the array is: " << sum << endl;
 }
