@@ -23,8 +23,11 @@ using namespace std;
  * @returns An int value.  A number in range [beginRange, endRange]
  *    inclusive
  */
-int main()
+int randomRange(int beginRange, int endRange)
 {
+  int scale = endRange - beginRange;
+  int val = rand() % scale + 1; // value in range 0 to scale
+  return val + beginRange; // return value in range beginRange to endRange
 }
 
 
