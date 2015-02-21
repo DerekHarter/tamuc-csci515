@@ -46,4 +46,17 @@ int main()
   {
     cout << "c[" << idx << "] = " << c[idx] << endl;
   }
+
+  // What is the minimum value in the array?
+  int minimum = c[0]; // initialy the smallest we have seen is the first value
+  for (int idx = 1; idx < ARRAY_SIZE; idx++) // note where we start search
+  {
+    if (c[idx] < minimum)
+    {
+      minimum = c[idx];
+    }
+  }
+  cout << "The minimum value in the array is: " << minimum << endl;
+
+  
 }
