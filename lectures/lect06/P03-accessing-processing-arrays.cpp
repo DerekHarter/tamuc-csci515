@@ -41,5 +41,9 @@ int main()
     c[idx] = (rand() % 20) + 1;
   }
 
-  
+  // Lets display all of the values in the array
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+    cout << "c[" << idx << "] = " << c[idx] << endl;
+  }
 }
