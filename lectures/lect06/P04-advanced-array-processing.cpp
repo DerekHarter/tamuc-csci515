@@ -79,7 +79,7 @@ int main()
   for (int idx = 0; idx < MAX_VALUE; idx++)
   {
     // output bar label
-    cout << idx << ":";
+    cout << setw(3) << setfill('0') <<  idx << ":";
 
     // print bar of astericks to represent historgam
     for (int stars = 0; stars < hist[idx]; stars++)
