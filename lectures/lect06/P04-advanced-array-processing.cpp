@@ -57,5 +57,33 @@ int main()
     values[idx] = sum;
   }
 
-  // Create another array to 
+  // Create another array to count items with value 0,1,2,...,9
+  const inst MAX_VALUE = 10;
+  int hist[MAX_VALUE];
+
+  // initialize array to 0
+  for (int idx = 0; idx < MAX_VALUE; idx++)
+  {
+    hist[idx] = 0;
+  }
+
+  // count frequence of values
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+    hist[values[idx]] += 1;
+  }
+
+  // Display a histogram of the frequency
+  for (int idx = 0; idx < MAX_VALUE; idx++)
+  {
+    // output bar label
+    cout << idx << ":";
+
+    // print bar of astericks to represent historgam
+    for (int stars = 0; stars < hist[idx]; stars++)
+    {
+      cout << "*";
+    }
+    cout << endl;
+  }
 }
