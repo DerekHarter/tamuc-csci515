@@ -26,8 +26,8 @@ using namespace std;
  */
 int randomRange(int beginRange, int endRange)
 {
-  int scale = endRange - beginRange;
-  int val = rand() % scale + 1; // value in range 0 to scale
+  int scale = endRange - beginRange + 1;
+  int val = rand() % scale; // value in range 0 to scale
   return val + beginRange; // return value in range beginRange to endRange
 }
 
