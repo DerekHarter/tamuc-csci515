@@ -48,6 +48,7 @@ int main()
 
   // Lets initialize the array with values in 0 to 9
   // but with an unequal distribution (sum of 5 random numbers in range 0-10)
+  srand(time(0));
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
     int sum = 0;
