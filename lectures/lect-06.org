@@ -62,4 +62,7 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 
 * Third Session (12:40 - 1:40)
 ** Passing Arrays to Functions
-
+- Arrays are passed to function by reference (by default)
+- *ALWAYS* pass the array and the size to function to process an
+  array.  Makes function self-contained, does not depend on any
+  globals.
