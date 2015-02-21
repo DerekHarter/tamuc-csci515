@@ -42,7 +42,7 @@ int randomRange(int beginRange, int endRange)
  */
 int main()
 {
-  const int ARRAY_SIZE = 100;
+  const int ARRAY_SIZE = 1000;
   int values[ARRAY_SIZE];
 
   // Lets initialize the array with values in 0 to 50
@@ -54,5 +54,8 @@ int main()
     {
       sum += randomRange(0, 10);
     }
+    values[idx] = sum;
   }
+
+  // Create another array to 
 }
