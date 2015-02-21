@@ -26,7 +26,7 @@ int main()
   // to always use a constant to define array size, and iterate over
   // Declare an array
   const int ARRAY_SIZE = 10;
-  int c[ARRAY_SIZE];;
+  int c[ARRAY_SIZE];
 
   // index an array
   c[0] = 5;
@@ -36,7 +36,7 @@ int main()
   // loop to initialize an array
   // always, ALWAYS, ALWAYs index starting at 0, up to (but not including)
   // the max value.  Arrays in c are always index from 0 to N-1
-  for (int idx = 0; idx < 10; idx++)
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
     c[idx] = 0;
   }
