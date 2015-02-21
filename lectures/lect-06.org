@@ -54,7 +54,6 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 - Initializing with a loop
 - Specify array size with a defined constant (always do this).
 - Finding the minimum of the values of an array
-- Finding the average of the elements of an array
 - Sum the values of an array
 - Using elements of array as a counter
 - Creating a histogram of elements, bucket size, etc.
