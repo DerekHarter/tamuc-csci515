@@ -28,16 +28,18 @@ int main()
   const int ARRAY_SIZE = 100;
   int c[ARRAY_SIZE];
 
-  // index an array
-  c[0] = 5;
-  c[1] = 10;
-  c[10] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
-
-  // loop to initialize an array
-  // always, ALWAYS, ALWAYs index starting at 0, up to (but not including)
-  // the max value.  Arrays in c are always index from 0 to N-1
+  // Lets initialize all of the values to 0
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
     c[idx] = 0;
   }
+
+  // Lets initialize all of the values to random integers in range
+  // 1 to 20
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+    c[idx] = (rand() % 20) + 1;
+  }
+
+  
 }
