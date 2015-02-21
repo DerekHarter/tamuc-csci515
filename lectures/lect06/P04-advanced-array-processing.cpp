@@ -60,7 +60,7 @@ int main()
   }
 
   // Create another array to count items with value 0,1,2,...,9
-  const int MAX_VALUE = 100;
+  const int MAX_VALUE = 101;
   int hist[MAX_VALUE];
 
   // initialize array to 0
