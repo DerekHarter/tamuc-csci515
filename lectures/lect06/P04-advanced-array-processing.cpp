@@ -9,6 +9,7 @@
  * @description Some examples of some more advanced array processing.
  */
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 
