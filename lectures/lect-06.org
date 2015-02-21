@@ -55,6 +55,8 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 - Specify array size with a defined constant (always do this).
 - Finding the minimum of the values of an array
 - Sum the values of an array
+
+** More advanced examples
 - Using elements of array as a counter
 - Creating a histogram of elements, bucket size, etc.
 
