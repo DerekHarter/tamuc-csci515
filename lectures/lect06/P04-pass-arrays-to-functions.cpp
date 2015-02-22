@@ -164,7 +164,7 @@ void findMinimum(int values[], int size)
     // whenever we see a smaller value, remember it instead
     if (values[idx] < minimum)
     {
-      minimum = values[ids]; 
+      minimum = values[idx]; 
     }
   }
 
