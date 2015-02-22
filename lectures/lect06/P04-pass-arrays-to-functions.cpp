@@ -61,7 +61,7 @@ void initArrayToZeros(int values[], int size)
  *
  * @returns void, but as side effect we display array values to stdout.
  */
-void initArrayToZeros(int values[], int size)
+void displayArray(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
