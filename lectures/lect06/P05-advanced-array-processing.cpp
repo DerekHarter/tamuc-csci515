@@ -194,8 +194,12 @@ void displayArrayHistogram(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    cout << "freq[" << setw(3) << setfill('0') << right << idx << "] : "
-	 << setw(5) << setfill(' ') << right << values[idx] << endl;
+    cout << "freq[" << setw(3) << setfill('0') << right << idx << "] : ";
+    for (int stars = 0; stars < values[idx]; stars++)
+    {
+      cout << "*";
+    }
+    cout << endl;
   }
 }
 
