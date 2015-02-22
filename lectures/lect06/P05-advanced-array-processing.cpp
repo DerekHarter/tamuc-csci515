@@ -17,6 +17,95 @@
 using namespace std;
 
 
+/** Display Array
+ * Display all of the values of an integer array to standard output.
+ *
+ * @param values An array of integers, allocated but not initialized.
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect we display array values to stdout.
+ */
+void displayArray(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << "values[" << setw(3) << setfill('0') << right << idx << "] = "
+	 << setw(5) << setfill(' ') << right << values[idx] << endl;
+  }
+}
+
+
+/** Initialize Array
+ * Initialize all values of the given integer array to the given parameters.  We
+ * use a default parameter for the initializer.  By default we initialze the array
+ * to 0.  The array is passed by reference, thus our initialization of the array is
+ * available to the caller of the functions.
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and the initialized values are passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * @param initializer An int value, by defualt we initialize array to 0.
+ *
+ * @returns void, but as side effect array values is initialized to the initialize
+ *    parameter, which is 0 by default.
+ */
+void initArray(int values[], int size, int initializer = 0)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = initializer;
+  }
+}
+
+
+/** random integer in range
+ * Create a random integer in the range from beginRange to endRange
+ * (inclusive)
+ *
+ * @param beginRange an integer, the beginning of the range within
+ *    which to generate a random number
+ * @param endRange an integer, the end of the range
+ *
+ * @returns An int value.  A number in range [beginRange, endRange]
+ *    inclusive
+ */
+int randomRange(int beginRange, int endRange)
+{
+  int scale = endRange - beginRange + 1;
+  int val = rand() % scale; // value in range 0 to scale
+  return val + beginRange; // return value in range beginRange to endRange
+}
+
+
+/** Initialize Array to Random Value
+ * Initialize all values of the given integer array to a random value.
+ * We are given the begin and end range of the values (inclusive) which
+ * specify the range of the random number we are to generate.  Arrays are
+ * passed by reference, thus our initialization of the array to random
+ * values will be passed back and available to the caller.
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * @param beginRange an integer value, the beginning of the range we are to use
+ *    when generating random initial values (inclusive).
+ * @param endRange an integer value, the end of the range we are to use
+ *    when generating random initial values (inclusive)
+ *
+ * @returns void, but as side effect array values are initialized to a random
+ *    integer in the range [beginRange, endRange] inclusive.
+ */
+void initArrayToRandomRange(int values[], int size, int beginRange, int endRange)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = randomRange(beginRange, endRange);
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
