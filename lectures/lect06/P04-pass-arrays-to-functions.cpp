@@ -146,6 +146,24 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
 }
 
 
+/** Find minimum value
+ * Search an integer array for the minimum value.  This function
+ * returns the minimum value found in the given array.
+ *
+ * @param values An array of integers, allocated but not initialized.  
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns int The minimum value in the given array.
+ */
+void findMinimum(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = randomRange(beginRange, endRange);
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
