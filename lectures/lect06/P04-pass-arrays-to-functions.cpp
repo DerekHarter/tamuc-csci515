@@ -34,6 +34,25 @@ int randomRange(int beginRange, int endRange)
 }
 
 
+/** Initialize 0
+ * Initialize the given integer array to all 0 values
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and 0's passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * 
+ * @returns void, but as side effect array values is initialized to 0.
+ */
+void initArrayToZeros(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = 0;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -51,7 +70,7 @@ int main()
   // initialize array to 0
 
   // display array
-  
+
   // initialize array to 1
 
   // function to initialize array to given parameters
