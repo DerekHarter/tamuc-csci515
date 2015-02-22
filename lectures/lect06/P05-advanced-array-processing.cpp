@@ -20,7 +20,7 @@ using namespace std;
 /** Display Array
  * Display all of the values of an integer array to standard output.
  *
- * @param values An array of integers, allocated but not initialized.
+ * @param values An array of integers, the values to be displayed.
  * @param size The maximum size of the array, an integer value
  *
  * @returns void, but as side effect we display array values to stdout.
@@ -176,6 +176,26 @@ void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int
     // more defensive
     // assert(value >= 0 && value <= maxValue)
     frequencyArray[value] += 1;
+  }
+}
+
+
+/** Display Array Histogram
+ * Display a histogram for the given input array values.  We assume that the
+ * array represents a frequency table.  We use * to create a bar for each
+ * frequency.  Histogram is terminal based and vertically aligned.
+ *
+ * @param values An array of integers, 
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect we display array values to stdout.
+ */
+void displayArray(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << "values[" << setw(3) << setfill('0') << right << idx << "] = "
+	 << setw(5) << setfill(' ') << right << values[idx] << endl;
   }
 }
 
