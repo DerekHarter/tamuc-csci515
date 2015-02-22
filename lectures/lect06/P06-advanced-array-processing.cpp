@@ -163,7 +163,8 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
  * @returns void, but as side effect the frequency counts of the inputArray will
  *    be calculated and returned to the caller.
  */
-void calculateFrequencyProbabilityOfArray(int inputArray[], int size, float probabilityArray[], int maxValue)
+void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
+					  float probabilityArray[], int maxValue)
 {
   // initialize frequencyArray to 0
   initArray(frequencyArray, maxValue + 1);
