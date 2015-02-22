@@ -102,13 +102,14 @@ void initArrayToOnes(int values[], int size)
  * @param size The maximum size of the array, an integer value
  * @param initializer An int value, by defualt we initialize array to 0.
  *
- * @returns void, but as side effect array values is initialized to 1.
+ * @returns void, but as side effect array values is initialized to the initialize
+ *    parameter, which is 0 by default.
  */
-void initArrayToOnes(int values[], int size)
+void initArrayToOnes(int values[], int size, int initializer = 0)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = 1;
+    values[idx] = initializer;
   }
 }
 
