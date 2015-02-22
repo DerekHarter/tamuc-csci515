@@ -166,7 +166,7 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
 void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
 					  float probabilityArray[], int maxValue)
 {
-  // initialize probabilityArray to 0
+  // initialize probabilityArray to 0.0
   initArray(frequencyArray, maxValue + 1);
 
   // count up frequency of each value seen in the input array
