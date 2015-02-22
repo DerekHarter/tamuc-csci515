@@ -26,7 +26,7 @@ using namespace std;
  *    passed by references, so when we initialize the array, all values are
  *    overwritten and 0's passed back to caller.
  * @param size The maximum size of the array, an integer value
- * 
+ *
  * @returns void, but as side effect array values is initialized to 0.
  */
 void initArrayToZeros(int values[], int size)
@@ -41,7 +41,7 @@ void initArrayToZeros(int values[], int size)
 /** Display Array
  * Display all of the values of an integer array to standard output.
  *
- * @param values An array of integers, allocated but not initialized. 
+ * @param values An array of integers, allocated but not initialized.
  * @param size The maximum size of the array, an integer value
  *
  * @returns void, but as side effect we display array values to stdout.
