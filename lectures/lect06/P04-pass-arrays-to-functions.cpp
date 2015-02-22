@@ -34,7 +34,7 @@ int randomRange(int beginRange, int endRange)
 }
 
 
-/** Initialize 0
+/** Initialize to 0
  * Initialize the given integer array to all 0 values
  *
  * @param values An array of integers, allocated but not initialized.  Arrays are
@@ -43,6 +43,23 @@ int randomRange(int beginRange, int endRange)
  * @param size The maximum size of the array, an integer value
  * 
  * @returns void, but as side effect array values is initialized to 0.
+ */
+void initArrayToZeros(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = 0;
+  }
+}
+
+
+/** Display Array
+ * Display all of the values of an integer array to standard output.
+ *
+ * @param values An array of integers, allocated but not initialized. 
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect we display array values to stdout.
  */
 void initArrayToZeros(int values[], int size)
 {
