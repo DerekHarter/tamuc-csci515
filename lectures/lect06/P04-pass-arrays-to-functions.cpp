@@ -68,7 +68,8 @@ int main()
   int values[ARRAY_SIZE];
 
   // initialize array to 0
-
+  initArrayToZeros(values, ARRAY_SIZE);
+  
   // display array
 
   // initialize array to 1
