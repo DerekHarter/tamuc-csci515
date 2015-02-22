@@ -249,8 +249,4 @@ int main()
   // Display result as a histogram
   cout << "---- Frequency histogram of dice rolls" << endl;
   displayArrayHistogram(rollFrequency, MAX_ROLL+1);
-
-  // We can normalize the frequency result, to get a probability from 0.0 to 1.0
-  float rollProbability[MAX_ROLL+1];
-  frequencyToProbability(rollFrequency, rollProbability, NUM_TRIALS, MAX_ROLl);
 }
