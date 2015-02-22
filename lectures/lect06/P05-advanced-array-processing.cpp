@@ -156,6 +156,7 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
  *    calculated frequencies will be returned to the caller.
  *    NOTE: this array MUST be allocated correctly to hold [MAX+1] values, so
  *    that we can index and count the values in input from [0, MAX]
+ * @param maxValue The maximum value
  *
  * @returns void, but as side effect the frequency counts of the inputArray will
  *    be calculated and returned to the caller.
@@ -169,6 +170,8 @@ void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int
   for (int idx = 0; idx < size; idx++)
   {
     int value = inputArray[idx];
+    // if value > maxValue ERROR, we probably should halt and display error message, if being
+    // more defensive
     frequencyArray[value] += 1;
   }
 }
