@@ -32,7 +32,7 @@ int main()
   c[10] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
 
   // loop to initialize an array
-  // always, ALWAYS, ALWAYs index starting at 0, up to (but not including)
+  // always, ALWAYS, ALWAYS index starting at 0, up to (but not including)
   // the max value.  Arrays in c are always index from 0 to N-1
   for (int idx = 0; idx < 10; idx++)
   {
