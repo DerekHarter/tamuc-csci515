@@ -135,6 +135,38 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
 }
 
 
+/** calculate frequency of elements
+ * Count up the frequency of unique elements occurring in the input array.
+ * This function takes an input array of values.  The values in the input
+ * array must be constrained to have values in range from [0, MAX].  This
+ * function accepts a second array to hold the result of the frequency
+ * counts.  This array must be of size frequencyResult[MAX+1] so that we
+ * can count up the frequence of the values from 0 to MAX inclusive.
+ * The result of counting up the frequency of observed values is returned
+ * in the result array.
+ *
+ * @param inputArray An array of integers, with values in range [0, MAX].  We will count
+ *   the frequence of each value of the inputArray.
+ * @param size The size of the inputArray, the number of values in the array that we
+ *   process in this function.
+ * @param frequencyArray An array that is used to hold the calculated frequency
+ *    of the values in the input array.  Arrays are passed by reference, so we
+ *    initialize this array to 0's and then calculate the frequence of each
+ *    value seen in the input array.  Since array is passed by reference, the
+ *    calculated frequencies will be returned to the caller.
+ *
+ * @returns void, but as side effect the frequency counts of the inputArray will
+ *    be calculated and returned to the caller.
+ */
+void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    sumArray[idx] = inputArray1[idx] + inputArray2[idx];
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
