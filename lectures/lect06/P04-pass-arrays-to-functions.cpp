@@ -45,49 +45,7 @@ int randomRange(int beginRange, int endRange)
  */
 int main()
 {
-  const int ARRAY_SIZE = 500000;
+  const int ARRAY_SIZE = 10;
   int values[ARRAY_SIZE];
 
-  // Lets initialize the array with values in 0 to 9
-  // but with an unequal distribution (sum of 5 random numbers in range 0-10)
-  srand(time(0));
-  for (int idx = 0; idx < ARRAY_SIZE; idx++)
-  {
-    int sum = 0;
-    for (int r = 1; r <=5; r++)
-    {
-      sum += randomRange(0, 20);
-    }
-    values[idx] = sum;
-  }
-
-  // Create another array to count items with value 0,1,2,...,9
-  const int MAX_VALUE = 101;
-  int hist[MAX_VALUE];
-
-  // initialize array to 0
-  for (int idx = 0; idx < MAX_VALUE; idx++)
-  {
-    hist[idx] = 0;
-  }
-
-  // count frequence of values
-  for (int idx = 0; idx < ARRAY_SIZE; idx++)
-  {
-    hist[values[idx]] += 1;
-  }
-
-  // Display a histogram of the frequency
-  for (int idx = 0; idx < MAX_VALUE; idx++)
-  {
-    // output bar label
-    cout << setw(3) << setfill('0') <<  idx << ":";
-
-    // print bar of astericks to represent historgam
-    for (int stars = 0; stars < hist[idx]/100; stars++)
-    {
-      cout << "*";
-    }
-    cout << endl;
-  }
 }
