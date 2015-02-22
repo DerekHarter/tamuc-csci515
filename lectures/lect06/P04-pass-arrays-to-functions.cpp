@@ -157,10 +157,18 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
  */
 void findMinimum(int values[], int size)
 {
-  for (int idx = 0; idx < size; idx++)
+  int minimum = values[0];  // initially the smalles we have seen is the first value
+
+  for (int idx = 1; idx < size; idx++) // look at values 1 to size-1
   {
-    values[idx] = randomRange(beginRange, endRange);
+    // whenever we see a smaller value, remember it instead
+    if (values[idx] < minimum)
+    {
+      minimum = values[ids]; 
+    }
   }
+
+  return minimum;
 }
 
 
