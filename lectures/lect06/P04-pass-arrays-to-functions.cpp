@@ -48,4 +48,15 @@ int main()
   const int ARRAY_SIZE = 10;
   int values[ARRAY_SIZE];
 
+  // initialize array to 0
+
+  // display array
+  
+  // initialize array to 1
+
+  // function to initialize array to given parameters
+
+  // initialize array to random value
+
+  
 }
