@@ -90,6 +90,28 @@ void initArrayToOnes(int values[], int size)
 }
 
 
+/** Initialize Array
+ * Initialize all values of the given integer array to the given parameters.  We
+ * use a default parameter for the initializer.  By default we initialze the array
+ * to 0.  The array is passed by reference, thus our initialization of the array is
+ * available to the caller of the functions.
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and 1's passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect array values is initialized to 1.
+ */
+void initArrayToOnes(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = 1;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -119,6 +141,7 @@ int main()
   cout << endl;
 
   // function to initialize array to given parameters
+  // an example of a function with default arguments
 
   // initialize array to random value
 
