@@ -200,7 +200,7 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
     // if value > maxValue ERROR, we probably should halt and display error message, if being
     // more defensive
     // assert(value >= 0 && value <= maxValue)
-    frequencyArray[value] += 1;
+    probabilityArray[value] += 1.0;
   }
 }
 
