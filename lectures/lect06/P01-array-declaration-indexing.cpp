@@ -4,9 +4,10 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 06, P01 Array declarations and indexing
+ * @assg   Lecture 06, P01 Array declarations, indexing, initialization
  *
- * @description Array creation, indexing.
+ * @description Examples of declaring and initializing an array.  Discussion of array indexing
+ *    and conventions for (safely) accessing/declaring arrays.
  */
 #include <iostream>
 using namespace std;
