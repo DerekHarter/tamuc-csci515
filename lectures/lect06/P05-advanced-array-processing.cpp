@@ -218,7 +218,11 @@ int main()
   const int MAX_ROLL = 12; 
   int rollFrequency[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
   countFrequencyOfArray(diceSum, NUM_TRIALS, rollFrequency, MAX_ROLL);
-  cout << "---- Frequence table of dice rolls" << endl;
+  cout << "---- Frequency table of dice rolls" << endl;
   displayArray(rollFrequency, MAX_ROLL+1);
 
+  // Display result as a histogram
+  cout << "---- Frequency histogram of dice rolls" << endl;
+  displayArrayHistogram(rollFrequency, MAX_ROLL+1);
+  
 }
