@@ -90,9 +90,10 @@ int main()
 
   // display array
   displayArray(values, ARRAY_SIZE);
-  
-  // initialize array to 1
 
+  // initialize array to 1
+  initArrayToOnes(values, ARRAY_SIZE);
+  
   // function to initialize array to given parameters
 
   // initialize array to random value
