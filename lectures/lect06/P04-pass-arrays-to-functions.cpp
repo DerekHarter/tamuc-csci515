@@ -109,7 +109,7 @@ void initArrayToOnes(int values[], int size)
  * @returns void, but as side effect array values is initialized to the initialize
  *    parameter, which is 0 by default.
  */
-void initArrayToOnes(int values[], int size, int initializer = 0)
+void initArray(int values[], int size, int initializer = 0)
 {
   for (int idx = 0; idx < size; idx++)
   {
