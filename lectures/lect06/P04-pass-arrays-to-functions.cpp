@@ -100,6 +100,7 @@ void initArrayToOnes(int values[], int size)
  *    passed by references, so when we initialize the array, all values are
  *    overwritten and 1's passed back to caller.
  * @param size The maximum size of the array, an integer value
+ * @param initializer An int value, by defualt we initialize array to 0.
  *
  * @returns void, but as side effect array values is initialized to 1.
  */
