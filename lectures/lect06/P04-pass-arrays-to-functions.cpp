@@ -65,7 +65,8 @@ void displayArray(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = 0;
+    cout << "values[" << setw(3) << setfill('0') << right << idx << "] = "
+	 << values[ids] << endl;
   }
 }
 
