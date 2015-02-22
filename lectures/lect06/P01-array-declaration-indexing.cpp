@@ -39,5 +39,15 @@ int main()
     c[idx] = 0;
   }
 
+  // Can use an initializer list when declaring arrays, though not common
+  // in real programs
+  int d[5] = {0, 1, 2, 3, 4};
+
+  // Basic loop to access first 5 values in c and d
+  for (int idx = 0; idx < 5; idx++)
+  {
+    cout << "c[" << idx << "] = " << c[idx]
+	 << "d[" << idx << "] = " << d[idx] << endl;
+  }
   
 }
