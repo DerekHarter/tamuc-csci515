@@ -188,7 +188,6 @@ int main()
   cout << endl;
 
   // initialize array to random value
-  initArrayToRandomRange(values, ARRAY_SIZE, 1, 6);
   int s = time(0);
   cout << "seed:" << s << endl;
   srand(s);  // seed random generate with time in ms, e.g. a random starting point
@@ -197,6 +196,7 @@ int main()
   srand(s);
   
   cout << "--------- initArrayToRandomRange()" << endl;
+  initArrayToRandomRange(values, ARRAY_SIZE, 1, 6);
   displayArray(values, ARRAY_SIZE);
   cout << endl;
 
