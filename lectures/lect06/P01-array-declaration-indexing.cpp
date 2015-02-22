@@ -46,7 +46,7 @@ int main()
   // Basic loop to access first 5 values in c and d
   for (int idx = 0; idx < 5; idx++)
   {
-    cout << "c[" << idx << "] = " << c[idx]
+    cout << "c[" << idx << "] = " << c[idx] << " "
 	 << "d[" << idx << "] = " << d[idx] << endl;
   }
   
