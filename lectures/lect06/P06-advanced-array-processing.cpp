@@ -59,6 +59,30 @@ void initArray(int values[], int size, int initializer = 0)
 }
 
 
+/** Initialize Float Array
+ * Initialize all values of the given float array to the given parameters.  We
+ * use a default parameter for the initializer.  By default we initialze the array
+ * to 0.  The array is passed by reference, thus our initialization of the array is
+ * available to the caller of the functions.
+ *
+ * @param values An array of floats, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and the initialized values are passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * @param initializer An float value, by defualt we initialize array to 0.0.
+ *
+ * @returns void, but as side effect array values is initialized to the initialize
+ *    parameter, which is 0 by default.
+ */
+void initFloatArray(float values[], int size, float initializer = 0.0)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = initializer;
+  }
+}
+
+
 /** random integer in range
  * Create a random integer in the range from beginRange to endRange
  * (inclusive)
