@@ -108,6 +108,7 @@ int main()
   initArrayToZeros(values, ARRAY_SIZE);
 
   // display array
+  cout << "--------- initArrayToZeros()" << endl;
   displayArray(values, ARRAY_SIZE);
 
   // initialize array to 1
