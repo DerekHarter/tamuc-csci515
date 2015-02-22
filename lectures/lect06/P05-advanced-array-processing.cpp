@@ -160,11 +160,16 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
  * @returns void, but as side effect the frequency counts of the inputArray will
  *    be calculated and returned to the caller.
  */
-void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[])
+void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int maxValue)
 {
+  // initialize frequencyArray to 0
+  initArray(frequencyArray, maxValue + 1);
+
+  // count up frequence of each value seen in the input array
   for (int idx = 0; idx < size; idx++)
   {
-    sumArray[idx] = inputArray1[idx] + inputArray2[idx];
+    int value = inputArray[idx];
+    frequencyArray[value] += 1;
   }
 }
 
