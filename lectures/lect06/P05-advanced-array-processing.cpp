@@ -215,9 +215,9 @@ int main()
   displayArray(diceSum, NUM_TRIALS);
 
   // our first question, what are the counts of each possible sum 2-12?
-  const int MAX_ROLL = 13; // 12 - 1, since arrays are indexed up to size+1, we don't use index 0 or 1
-  int rollFrequency[MAX_ROLL];
-  countFrequencyOfArray(diceSum, NUM_TRIALS, rollFrequency, 12);
+  const int MAX_ROLL = 12; 
+  int rollFrequency[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
+  countFrequencyOfArray(diceSum, NUM_TRIALS, rollFrequency, MAX_ROLL);
   cout << "---- Frequence table of dice rolls" << endl;
   displayArray(rollFrequency, MAX_ROLL);
 
