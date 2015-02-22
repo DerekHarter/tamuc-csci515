@@ -221,5 +221,5 @@ int main()
   cout << endl;
 
   // function to find minimum
-
+  cout << "The minimum value in the array is: " << findMinimum(values, ARRAY_SIZE) << endl;
 }
