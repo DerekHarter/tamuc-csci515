@@ -39,7 +39,7 @@ int main()
   // index an array
   c[0] = 5;
   c[1] = 10;
-  c[7] = 42;
+  c[ARRAY_SIZE - 2] = 42;
 
   // what do we have in the array now?
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
