@@ -195,6 +195,7 @@ void displayArrayHistogram(int values[], int size)
   for (int idx = 0; idx < size; idx++)
   {
     cout << "freq[" << setw(3) << setfill('0') << right << idx << "] : ";
+    // display a values[idx] number of * as the bar
     for (int stars = 0; stars < values[idx]; stars++)
     {
       cout << "*";
