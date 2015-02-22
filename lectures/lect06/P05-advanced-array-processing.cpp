@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 06, P04 Advanced Array Processing
+ * @assg   Lecture 06, P05 Advanced Array Processing
  *
  * @description Some examples of some more advanced array processing.  The dice throwing
  *   game simulation.  Simulate throwing a pair of dice.  Count up the number of the sums
