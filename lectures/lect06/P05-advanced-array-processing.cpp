@@ -172,6 +172,7 @@ void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int
     int value = inputArray[idx];
     // if value > maxValue ERROR, we probably should halt and display error message, if being
     // more defensive
+    // assert(value >= 0 && value <= maxValue)
     frequencyArray[value] += 1;
   }
 }
