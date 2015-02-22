@@ -141,7 +141,7 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = ;
+    values[idx] = randomRange(beginRange, endRange);
   }
 }
 
