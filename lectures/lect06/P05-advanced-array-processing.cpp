@@ -165,7 +165,7 @@ void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int
   // initialize frequencyArray to 0
   initArray(frequencyArray, maxValue + 1);
 
-  // count up frequence of each value seen in the input array
+  // count up frequency of each value seen in the input array
   for (int idx = 0; idx < size; idx++)
   {
     int value = inputArray[idx];
