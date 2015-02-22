@@ -25,7 +25,7 @@ int main()
   // DO NOT use magic numbers in programs, it is good practice
   // to always use a constant to define array size, and iterate over
   // Declare an array
-  const int ARRAY_SIZE = 10;
+  const int ARRAY_SIZE = 20;
   int c[ARRAY_SIZE];
 
   // loop to initialize an array
