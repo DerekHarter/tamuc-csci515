@@ -49,5 +49,13 @@ int main()
     cout << "c[" << idx << "] = " << c[idx] << " "
 	 << "d[" << idx << "] = " << d[idx] << endl;
   }
-  
+
+  // ERROR ERROR Danger Will Robinson!
+  // Its is very bad to try and access past the end of an array
+  for (int idx = 0; idx < 10; idx++)
+  {
+    cout << "c[" << idx << "] = " << c[idx] << " "
+	 << "d[" << idx << "] = " << d[idx] << endl;
+  }
+
 }
