@@ -202,6 +202,12 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
     // assert(value >= 0 && value <= maxValue)
     probabilityArray[value] += 1.0;
   }
+
+  // normalize all frequencies to a probability value in range [0.0, 1.0]
+  for (int idx = 0; idx < maxValue; idx++)
+  {
+    probabilityArray[idx] = probabilityArray[idx] / (float)size);
+  }
 }
 
 
