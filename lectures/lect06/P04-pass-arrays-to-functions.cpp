@@ -155,7 +155,7 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
  *
  * @returns int The minimum value in the given array.
  */
-void findMinimum(int values[], int size)
+int findMinimum(int values[], int size)
 {
   int minimum = values[0];  // initially the smalles we have seen is the first value
 
