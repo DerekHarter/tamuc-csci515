@@ -159,7 +159,8 @@ int main()
   displayArray(values, ARRAY_SIZE);
   cout << endl;
 
-
   // initialize array to random value
 
+  // function to find minimum
+  
 }
