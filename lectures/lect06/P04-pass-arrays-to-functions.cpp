@@ -87,9 +87,10 @@ int main()
 
   // initialize array to 0
   initArrayToZeros(values, ARRAY_SIZE);
-  
-  // display array
 
+  // display array
+  displayArray(values, ARRAY_SIZE);
+  
   // initialize array to 1
 
   // function to initialize array to given parameters
