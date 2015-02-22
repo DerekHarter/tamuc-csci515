@@ -130,7 +130,7 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray, int
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = randomRange(beginRange, endRange);
+    sumArray[idx] = inputArray1[idx] + inputArray2[idx];
   }
 }
 
