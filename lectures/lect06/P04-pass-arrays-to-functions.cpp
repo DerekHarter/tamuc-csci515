@@ -101,7 +101,7 @@ void initArrayToOnes(int values[], int size)
  */
 int main()
 {
-  const int ARRAY_SIZE = 10;
+  const int ARRAY_SIZE = 5;
   int values[ARRAY_SIZE];
 
   // initialize array to 0
