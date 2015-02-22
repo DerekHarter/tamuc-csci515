@@ -189,6 +189,7 @@ int main()
 
   // initialize array to random value
   initArrayToRandomRange(values, ARRAY_SIZE, 1, 6);
+  srand(time(0));
   cout << "--------- initArrayToRandomRange()" << endl;
   displayArray(values, ARRAY_SIZE);
   cout << endl;
