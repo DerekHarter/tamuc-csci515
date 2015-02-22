@@ -144,6 +144,11 @@ int main()
 
   // function to initialize array to given parameters
   // an example of a function with default arguments
+  initArray(values, ARRAY_SIZE);
+  cout << "--------- initArrayTo(), using defualt 0 parameters" << endl;
+  displayArray(values, ARRAY_SIZE);
+  cout << endl;
+
 
   // initialize array to random value
 
