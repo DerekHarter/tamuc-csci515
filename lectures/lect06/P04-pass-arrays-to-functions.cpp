@@ -102,6 +102,31 @@ void initArrayToOnes(int values[], int size)
  *
  * @param values An array of integers, allocated but not initialized.  Arrays are
  *    passed by references, so when we initialize the array, all values are
+ *    overwritten and the initialized values are passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * @param initializer An int value, by defualt we initialize array to 0.
+ *
+ * @returns void, but as side effect array values is initialized to the initialize
+ *    parameter, which is 0 by default.
+ */
+void initArray(int values[], int size, int initializer = 0)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = initializer;
+  }
+}
+
+
+/** Initialize Array to Random Value
+ * Initialize all values of the given integer array to a random value.
+ * We are given the begin and end range of the values (inclusive) which
+ * specify the range of the random number we are to generate.  Arrays are
+ * passed by reference, thus our initialization of the array to random
+ * values will be passed back and available to the caller.
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
  *    overwritten and 1's passed back to caller.
  * @param size The maximum size of the array, an integer value
  * @param initializer An int value, by defualt we initialize array to 0.
