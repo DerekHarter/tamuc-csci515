@@ -161,10 +161,11 @@ int main()
   displayArray(dice1, NUM_TRIALS);
   cout << "----- Dice 2, trials 1 to N" << endl;
   displayArray(dice2, NUM_TRIALS);
-
+  cout << endl;
+  
   // ok, what we really need is the sum of 2 dice
   int diceSum[NUM_TRIALS];
   sumElementsOfArrays(dice1, dice2, diceSum, NUM_TRIALS);
-  
+  cout << ""
 
 }
