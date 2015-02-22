@@ -19,25 +19,6 @@ using namespace std;
 //void initArray(int values[], int size, int initializer = 0)
 
 
-/** random integer in range
- * Create a random integer in the range from beginRange to endRange
- * (inclusive)
- *
- * @param beginRange an integer, the beginning of the range within
- *    which to generate a random number
- * @param endRange an integer, the end of the range
- *
- * @returns An int value.  A number in range [beginRange, endRange]
- *    inclusive
- */
-int randomRange(int beginRange, int endRange)
-{
-  int scale = endRange - beginRange + 1;
-  int val = rand() % scale; // value in range 0 to scale
-  return val + beginRange; // return value in range beginRange to endRange
-}
-
-
 /** Initialize to 0
  * Initialize the given integer array to all 0 values
  *
@@ -118,6 +99,25 @@ void initArray(int values[], int size, int initializer = 0)
 }
 
 
+/** random integer in range
+ * Create a random integer in the range from beginRange to endRange
+ * (inclusive)
+ *
+ * @param beginRange an integer, the beginning of the range within
+ *    which to generate a random number
+ * @param endRange an integer, the end of the range
+ *
+ * @returns An int value.  A number in range [beginRange, endRange]
+ *    inclusive
+ */
+int randomRange(int beginRange, int endRange)
+{
+  int scale = endRange - beginRange + 1;
+  int val = rand() % scale; // value in range 0 to scale
+  return val + beginRange; // return value in range beginRange to endRange
+}
+
+
 /** Initialize Array to Random Value
  * Initialize all values of the given integer array to a random value.
  * We are given the begin and end range of the values (inclusive) which
@@ -134,14 +134,14 @@ void initArray(int values[], int size, int initializer = 0)
  * @param endRange an integer value, the end of the range we are to use
  *    when generating random initial values (inclusive)
  *
- * @returns void, but as side effect array values is initialized to the initialize
- *    parameter, which is 0 by default.
+ * @returns void, but as side effect array values are initialized to a random
+ *    integer in the range [beginRange, endRange] inclusive.
  */
-void initArray(int values[], int size, int )
+void initArrayToRandomRange(int values[], int size, int beginRange, int endRange)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = initializer;
+    values[idx] = ;
   }
 }
 
