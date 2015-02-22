@@ -117,4 +117,19 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
  */
 int main()
 {
+  // Array to hold a series of simulated random dice throws
+  const int NUM_TRIALS = 3;
+  int dice1[NUM_TRIALS];
+  int dice2[NUM_TRIALS];
+
+  // roll random dice
+  initArrayToRandomRange(dice1, NUM_TRIALS, 1, 6);
+  initArrayToRandomRange(dice2, NUM_TRIALS, 1, 6);
+
+  // display the results
+  cout << "----- Dice 1, trials 1 to N" << endl;
+  displayArray(dice1, NUM_TRIALS);
+  cout << "----- Dice 2, trials 1 to N" << endl;
+  displayArray(dice2, NUM_TRIALS);
+
 }
