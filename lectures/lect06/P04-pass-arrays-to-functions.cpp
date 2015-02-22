@@ -188,6 +188,10 @@ int main()
   cout << endl;
 
   // initialize array to random value
+  initArrayToRandomRange(values, ARRAY_SIZE, 1, 6);
+  cout << "--------- initArrayTo(), using 42 for initializer" << endl;
+  displayArray(values, ARRAY_SIZE);
+  cout << endl;
 
   // function to find minimum
   
