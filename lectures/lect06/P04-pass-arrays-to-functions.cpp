@@ -79,7 +79,7 @@ void displayArray(int values[], int size)
  *    overwritten and 1's passed back to caller.
  * @param size The maximum size of the array, an integer value
  * 
- * @returns void, but as side effect array values is initialized to 0.
+ * @returns void, but as side effect array values is initialized to 1.
  */
 void initArrayToOnes(int values[], int size)
 {
