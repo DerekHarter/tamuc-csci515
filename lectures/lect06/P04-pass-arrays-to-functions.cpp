@@ -16,7 +16,7 @@ using namespace std;
 
 
 // function prototypes
-void initArray(int values[], int size, int initializer = 0)
+//void initArray(int values[], int size, int initializer = 0)
 
 
 /** random integer in range
