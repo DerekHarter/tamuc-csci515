@@ -156,7 +156,9 @@ void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], i
  *    calculated frequencies will be returned to the caller.
  *    NOTE: this array MUST be allocated correctly to hold [MAX+1] values, so
  *    that we can index and count the values in input from [0, MAX]
- * @param maxValue The maximum value
+ * @param maxValue The maximum value that should be seen in the inputArray.  Thus function
+ *    requires all values in the inputArray to be constrained to be in range [0, maxValue]
+ *    inclusive.
  *
  * @returns void, but as side effect the frequency counts of the inputArray will
  *    be calculated and returned to the caller.
