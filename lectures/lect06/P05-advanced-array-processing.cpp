@@ -172,8 +172,8 @@ int main()
   // our first question, what are the counts of each possible sum 2-12?
   const int MAX_ROLL = 13; // 12 - 1, since arrays are indexed up to size+1, we don't use index 0 or 1
   int rollFrequency[MAX_ROLL];
-  countFrequency(diceSum, NUM_TRIALS, rollFrequency);
+  countFrequencyOfArray(diceSum, NUM_TRIALS, rollFrequency);
   cout << "---- Frequence table of dice rolls" << endl;
   displayArray(rollFrequency, MAX_ROLL);
-  
+
 }
