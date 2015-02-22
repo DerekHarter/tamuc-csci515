@@ -123,6 +123,7 @@ int main()
   int dice2[NUM_TRIALS];
 
   // roll random dice
+  srand(time(0)); // initialize to different starting seed based on current time
   initArrayToRandomRange(dice1, NUM_TRIALS, 1, 6);
   initArrayToRandomRange(dice2, NUM_TRIALS, 1, 6);
 
