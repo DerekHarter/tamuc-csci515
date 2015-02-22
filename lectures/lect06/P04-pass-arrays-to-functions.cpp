@@ -112,6 +112,7 @@ int main()
 
   // initialize array to 1
   initArrayToOnes(values, ARRAY_SIZE);
+  displayArray(values, ARRAY_SIZE);
   
   // function to initialize array to given parameters
 
