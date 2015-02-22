@@ -153,6 +153,12 @@ int main()
   displayArray(values, ARRAY_SIZE);
   cout << endl;
 
+  // override the default parameters
+  initArray(values, ARRAY_SIZE, 42);
+  cout << "--------- initArrayTo(), using 42 for initializer" << endl;
+  displayArray(values, ARRAY_SIZE);
+  cout << endl;
+
 
   // initialize array to random value
 
