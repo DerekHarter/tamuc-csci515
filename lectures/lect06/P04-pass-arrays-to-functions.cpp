@@ -189,7 +189,7 @@ int main()
 
   // initialize array to random value
   initArrayToRandomRange(values, ARRAY_SIZE, 1, 6);
-  cout << "--------- initArrayTo(), using 42 for initializer" << endl;
+  cout << "--------- initArrayToRandomRange()" << endl;
   displayArray(values, ARRAY_SIZE);
   cout << endl;
 
