@@ -190,7 +190,7 @@ void countFrequencyOfArray(int inputArray[], int size, int frequencyArray[], int
  *
  * @returns void, but as side effect we display array values to stdout.
  */
-void displayArray(int values[], int size)
+void displayArrayHistogram(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
