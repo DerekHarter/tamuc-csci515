@@ -192,6 +192,10 @@ int main()
   int s = time(0);
   cout << "seed:" << s << endl;
   srand(s);  // seed random generate with time in ms, e.g. a random starting point
+  cout << "Enter seed: ";
+  cin >> s;
+  srand(s);
+  
   cout << "--------- initArrayToRandomRange()" << endl;
   displayArray(values, ARRAY_SIZE);
   cout << endl;
