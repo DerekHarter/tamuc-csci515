@@ -106,6 +106,35 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
 }
 
 
+/** Sum two arrays
+ * Sum up all of the corresponding elements of two arrays.
+ * We are passed the two arrays (of integers) as the first two parameters
+ * and an (integer) array as the third parameter to hold the results.
+ * We sum up the corresponding values of the two input arrays and put
+ * the result into the output array.  Arrays are passed by reference, so
+ * the calculated sum put into the output array will be visible to the caller.
+ * This function does not change the value of either of the first two
+ * input arrays.
+ *
+ * @param inputArray1 An array of integers, the first array we will cacluate sums from.
+ * @param inputArray2 An array of integers, the second array we will calculate sums from.
+ * @param sumArray An array of integers.  Each element i of the array will be set
+ *    to sumArray[i] = array1[i] + array2[i], e.g. the sum of corresponding elements.
+ * @param size The size of the array(s) we are processing.  All arrays must be of
+ *    equal size for this function.
+ *
+ * @returns void, but as side effect corresponding elements of the input arrays
+ *    integer in the range [beginRange, endRange] inclusive.
+ */
+void sumElementsOfArrays(int values[], int size, int beginRange, int endRange)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = randomRange(beginRange, endRange);
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
