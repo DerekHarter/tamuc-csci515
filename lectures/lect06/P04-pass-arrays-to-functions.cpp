@@ -110,10 +110,13 @@ int main()
   // display array
   cout << "--------- initArrayToZeros()" << endl;
   displayArray(values, ARRAY_SIZE);
-
+  cout << endl;
+  
   // initialize array to 1
   initArrayToOnes(values, ARRAY_SIZE);
+  cout << "--------- initArrayToOnes()" << endl;
   displayArray(values, ARRAY_SIZE);
+  cout << endl;
   
   // function to initialize array to given parameters
 
