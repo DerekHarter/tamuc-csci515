@@ -167,7 +167,7 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
 					  float probabilityArray[], int maxValue)
 {
   // initialize probabilityArray to 0.0
-  initArray(frequencyArray, maxValue + 1);
+  initFloatArray(frequencyArray, maxValue + 1);
 
   // count up frequency of each value seen in the input array
   for (int idx = 0; idx < size; idx++)
