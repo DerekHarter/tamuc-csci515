@@ -71,6 +71,25 @@ void displayArray(int values[], int size)
 }
 
 
+/** Initialize to 1
+ * Initialize the given integer array to all 1 values
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and 1's passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * 
+ * @returns void, but as side effect array values is initialized to 0.
+ */
+void initArrayToOnes(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = 1;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
