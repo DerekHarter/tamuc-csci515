@@ -126,7 +126,7 @@ void initArrayToRandomRange(int values[], int size, int beginRange, int endRange
  * @returns void, but as side effect corresponding elements of the input arrays
  *    are summed together and returned in the sumArray
  */
-void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray, int size)
+void sumElementsOfArrays(int inputArray1[], int inputArray2[], int sumArray[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
