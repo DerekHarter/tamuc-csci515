@@ -127,14 +127,17 @@ void initArray(int values[], int size, int initializer = 0)
  *
  * @param values An array of integers, allocated but not initialized.  Arrays are
  *    passed by references, so when we initialize the array, all values are
- *    overwritten and 1's passed back to caller.
+ *    overwritten and passed back to caller.
  * @param size The maximum size of the array, an integer value
- * @param initializer An int value, by defualt we initialize array to 0.
+ * @param beginRange an integer value, the beginning of the range we are to use
+ *    when generating random initial values (inclusive).
+ * @param endRange an integer value, the end of the range we are to use
+ *    when generating random initial values (inclusive)
  *
  * @returns void, but as side effect array values is initialized to the initialize
  *    parameter, which is 0 by default.
  */
-void initArray(int values[], int size, int initializer = 0)
+void initArray(int values[], int size, int )
 {
   for (int idx = 0; idx < size; idx++)
   {
