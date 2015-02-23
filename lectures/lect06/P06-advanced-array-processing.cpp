@@ -291,7 +291,7 @@ int main()
   // our first question, what are the probabilityof each possible sum 2-12?
   const int MAX_ROLL = 12;
   float rollProbability[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
-  calcFrequencyProbabilityOfArray(diceSum, NUM_TRIALS, rollProbability, MAX_ROLL);
+  calculateFrequencyProbabilityOfArray(diceSum, NUM_TRIALS, rollProbability, MAX_ROLL);
   cout << "---- Frequency table of dice rolls" << endl;
   displayFloatArray(rollProbability MAX_ROLL+1);
 
