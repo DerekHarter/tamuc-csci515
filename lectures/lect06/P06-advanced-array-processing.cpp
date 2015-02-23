@@ -271,7 +271,7 @@ void displayArrayHistogram(float values[], int size)
 int main()
 {
   // Array to hold a series of simulated random dice throws
-  const int NUM_TRIALS = 200000;
+  const int NUM_TRIALS = 300000;
   int dice1[NUM_TRIALS];
   int dice2[NUM_TRIALS];
 
