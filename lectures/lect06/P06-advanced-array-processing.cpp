@@ -245,12 +245,12 @@ void displayArrayHistogram(int values[], int size)
   {
     cout << "prob[" << setw(3) << setfill('0') << right << idx << "] : ";
     cout << setw(6) << fixed << setprecision(4) << right << values[idx] << " :";
+
     // display a values[idx] number of * as the bar
+    float threshold = 0.0;
+    const float THRESHOLD_INC = 0.1;
+    while (values[idx] < )
     
-    for (int stars = 0; stars < values[idx]; stars++)
-    {
-      cout << "*";
-    }
     cout << endl;
   }
 }
