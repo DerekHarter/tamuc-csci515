@@ -35,6 +35,24 @@ void displayArray(int values[], int size)
 }
 
 
+/** Display Array of Floats
+ * Display all of the values of an array of floatsto standard output.
+ *
+ * @param values An array of floats, the values to be displayed.
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect we display array values to stdout.
+ */
+void displayFloatArray(float values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << "values[" << setw(3) << setfill('0') << right << idx << "] = "
+	 << setw(5) << setfill(' ') << right << values[idx] << endl;
+  }
+}
+
+
 /** Initialize Array
  * Initialize all values of the given integer array to the given parameters.  We
  * use a default parameter for the initializer.  By default we initialze the array
