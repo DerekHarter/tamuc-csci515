@@ -239,7 +239,7 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
  *
  * @returns void, but as side effect we display array values to stdout.
  */
-void displayArrayHistogram(int values[], int size)
+void displayArrayHistogram(float values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
