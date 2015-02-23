@@ -248,7 +248,7 @@ void displayArrayHistogram(float values[], int size)
 
     // display a values[idx] number of * as the bar
     float threshold = 0.0;
-    const float THRESHOLD_INC = 0.001;
+    const float THRESHOLD_INC = 0.01;
     while (values[idx] > threshold)
     {
       cout << "*";
@@ -271,7 +271,7 @@ void displayArrayHistogram(float values[], int size)
 int main()
 {
   // Array to hold a series of simulated random dice throws
-  const int NUM_TRIALS = 1000000;
+  const int NUM_TRIALS = 100000;
   int dice1[NUM_TRIALS];
   int dice2[NUM_TRIALS];
 
