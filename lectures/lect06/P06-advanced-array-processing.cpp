@@ -234,7 +234,7 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
  * array represents a frequency probability value.  We use * to create a bar for each
  * frequency.  Histogram is terminal based and vertically aligned.
  *
- * @param values An array of integers, 
+ * @param values An array of floats. 
  * @param size The maximum size of the array, an integer value
  *
  * @returns void, but as side effect we display array values to stdout.
