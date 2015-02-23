@@ -302,5 +302,5 @@ int main()
 
   // Display result as a histogram
   cout << "---- Frequency histogram of dice rolls" << endl;
-  displayArrayHistogram(rollFrequency, MAX_ROLL+1);
+  displayArrayHistogram(rollProbability, MAX_ROLL+1);
 }
