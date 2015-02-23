@@ -270,12 +270,12 @@ int main()
   cout << "---- Sum of the two dice 3 for N trials" << endl;
   displayArray(diceSum, NUM_TRIALS);
 
-  // our first question, what are the counts of each possible sum 2-12?
+  // our first question, what are the probabilityof each possible sum 2-12?
   const int MAX_ROLL = 12;
-  int rollFrequency[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
-  countFrequencyOfArray(diceSum, NUM_TRIALS, rollFrequency, MAX_ROLL);
+  float rollProbability[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
+  calcFrequencyProbabilityOfArray(diceSum, NUM_TRIALS, rollProbability, MAX_ROLL);
   cout << "---- Frequency table of dice rolls" << endl;
-  displayArray(rollFrequency, MAX_ROLL+1);
+  displayArray(rollProbability MAX_ROLL+1);
 
   // Display result as a histogram
   cout << "---- Frequency histogram of dice rolls" << endl;
