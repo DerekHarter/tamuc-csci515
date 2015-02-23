@@ -231,7 +231,7 @@ void calculateFrequencyProbabilityOfArray(int inputArray[], int size,
 
 /** Display Array Histogram
  * Display a histogram for the given input array values.  We assume that the
- * array represents a frequency table.  We use * to create a bar for each
+ * array represents a frequency probability value.  We use * to create a bar for each
  * frequency.  Histogram is terminal based and vertically aligned.
  *
  * @param values An array of integers, 
