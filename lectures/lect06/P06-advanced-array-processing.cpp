@@ -293,7 +293,7 @@ int main()
   float rollProbability[MAX_ROLL+1]; // need MAX_ROLL + 1 so can index from 0 up to 12
   calculateFrequencyProbabilityOfArray(diceSum, NUM_TRIALS, rollProbability, MAX_ROLL);
   cout << "---- Frequency table of dice rolls" << endl;
-  displayFloatArray(rollProbability MAX_ROLL+1);
+  displayFloatArray(rollProbability, MAX_ROLL+1);
 
   // Display result as a histogram
   cout << "---- Frequency histogram of dice rolls" << endl;
