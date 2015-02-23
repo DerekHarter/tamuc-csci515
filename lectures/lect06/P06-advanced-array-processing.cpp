@@ -249,8 +249,11 @@ void displayArrayHistogram(int values[], int size)
     // display a values[idx] number of * as the bar
     float threshold = 0.0;
     const float THRESHOLD_INC = 0.1;
-    while (values[idx] < )
-    
+    while (values[idx] < threshold)
+    {
+      cout << "*";
+      threshold += THRESHOLD_INC;
+    }
     cout << endl;
   }
 }
