@@ -133,5 +133,8 @@ int main()
   int tmp = values[headIndex];
   values[headIndex] = values[swapIndex];
   values[swapIndex] = tmp;
-  
+  cout << "Swapped values at index: " << headIndex << " and: " << swapIndex << "--------" << endl;
+  cout << " size = " << size << endl;
+  displayArray(values, NUM_VALUES);
+  cout << endl;
 }
