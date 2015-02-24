@@ -126,4 +126,12 @@ int main()
   cout << " size = " << size << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
+
+  // swap the element at index 5 with the head element
+  swapIndex = 5;
+  headIndex = 0;
+  int tmp = values[headIndex];
+  values[headIndex] = values[swapIndex];
+  values[swapIndex] = tmp;
+  
 }
