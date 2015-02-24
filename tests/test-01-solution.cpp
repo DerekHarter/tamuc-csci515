@@ -40,6 +40,7 @@ int main()
 	 cout << "I generated a 1!" << endl;
       }
    }
+   cout << endl;
 
   //  Return 0 to indicate program terminated successfully
   return 0;
