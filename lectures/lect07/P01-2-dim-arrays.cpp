@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 07, P02 Intro to 2-D arrays
+ * @assg   Lecture 07, P01 Intro to 2-D arrays
  *
  * @description Examples of declaring and initializing a 2-D array
  */
