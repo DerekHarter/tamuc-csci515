@@ -58,7 +58,7 @@ void loadExperimentArray(string experimentFileName,
   {
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
-      experimentPositions[record][dim] = 0.0;
+      experimentFile >> experimentPositions[record][dim];
     }
   }
 }
