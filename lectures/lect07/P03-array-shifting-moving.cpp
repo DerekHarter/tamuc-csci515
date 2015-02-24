@@ -4,10 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 07, P02 Processing 2-D arrays using functions
+ * @assg   Lecture 07, P03 Examples of shifting and moving
  *
- * @description Examples of more advanced processing of 2-D arrays
- *   using functions to read from files, and calculated and display
- *   results.
+ * @description Examples of operations on arrays that add and remove
+ *   elements.  Shifting, moving, swapping, adding, deleting.
  */
 #include <iostream>
