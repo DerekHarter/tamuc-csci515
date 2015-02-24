@@ -122,7 +122,7 @@ int main()
   cout << "----- Task 4 -----" << endl;
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
-     
+     cout << values[idx] << endl;
   }
   
   //  Return 0 to indicate program terminated successfully
