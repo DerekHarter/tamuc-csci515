@@ -7,14 +7,23 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
+** Multidimensional Arrays
+
+- Two-dimensional arrays represent *TABLES* of values
+- Tables are a very fundamental data structure/concept.  Represent
+  the basic type of a relational database, for example.
+- Information arranged in rows and columns (we have seen this before
+  in our lab where we looked at DSV separated data).
+- 
+
+
+* Second Session (11:45 - 12:30)
 ** More array Operations
 - Shifting elements in an array
 - Add element to an array
 - Remove element from an array
 
-* Second Session (11:45 - 12:30)
 
 * Third Session (12:40 - 1:40)
-** Multidimensional Arrays
 
 
