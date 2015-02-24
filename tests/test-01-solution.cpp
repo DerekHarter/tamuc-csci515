@@ -9,6 +9,7 @@
  * @description Example solution of Text 01
  */
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 
