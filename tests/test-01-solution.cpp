@@ -56,7 +56,7 @@ int main()
   }
   while (inputFile >> value)
   {
-     cout << "Read value from file: " << value
+     cout << "Read value from file: " << value;
   }
   cout << endl;
   
