@@ -47,7 +47,7 @@ float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
 - Function to initialize our 2-D array
 
 #+begin_src c
-void initArray(float values[][NUM_DIMENSIONS], int size)
+void initExperimentArray(float values[][NUM_DIMENSIONS], int size)
 {
   // iterate over all of the rows/records of the array
   for (int record = 0; record < size; record++)
