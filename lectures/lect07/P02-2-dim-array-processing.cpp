@@ -177,12 +177,7 @@ void displayExperimentDistances(float distances[], int numDistances)
   for (int record = 0; record < numDistances; record++)
   {
     cout << setw(3) << right << setfill('0') << record + 1 << " ";
-    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
-    {
-      cout << setw(7) << fixed << setprecision(4) << setfill(' ')
-	   << experimentPositions[record][dim]
-	   << " ";
-    }
+    cout << setw(7) << right << setfill(' ') << distances[record];
     cout << endl; // newline at end of the current record
   }
 }
