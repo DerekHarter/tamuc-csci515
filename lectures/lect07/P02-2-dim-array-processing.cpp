@@ -86,9 +86,9 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 {
   // display a header
   cout << setfill (' ') << setw(4) << left << "Rec "
-       << setw(6) << right << "X" << " "
-       << setw(6) << right << "Y" << " "
-       << setw(6) << right << "Z"
+       << setw(7) << right << "X" << " "
+       << setw(7) << right << "Y" << " "
+       << setw(7) << right << "Z"
        << endl;
 
   for (int record = 0; record < numRecordings; record++)
@@ -96,7 +96,7 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
     cout << setw(3) << right << setfill('0') << record << " ";
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
-      cout << setw(6) << fixed << setprecision(4)
+      cout << setw(7) << fixed << setprecision(4)
 	   << experimentPositions[record][dim]
 	   << " ";
     }
