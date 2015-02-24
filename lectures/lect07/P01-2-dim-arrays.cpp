@@ -30,4 +30,13 @@ int main()
   // Each experiment records a 3-dimensional position of a particle
   // for multiple recordings during the experiment
   float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
+
+  // We initialize a 2-D array using 2 (nested) loops
+  for (int record = 0; record < NUM_RECORDINGS; record++)
+  {
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      experimentPositions[record][dim] = 0.0;
+    }
+  }
 }
