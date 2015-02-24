@@ -31,6 +31,20 @@ const int NUM_DIMENSIONS = 3; // number of columns in table
 float experimentPositions[NUM_RECORDS][NUM_DIMENSIONS];
 #+end_src
 
+- For 1-D arrays, the size of the array was not required by compiler
+  when passing array (by reference) to a function.  Though we always
+  specified the size of the array as the next parameter for our functions.
+
+- For 2-D arrays, the number of rows (the first dimension) is still not
+  required by compiler, though again we will almost always pass this
+  information in to the function because it is needed to process the
+  2-D array.
+- However, the compiler needs the number of columns to be specified, 
+  because reasons.
+  - reasons: arrays are stored using row major ordering, thus we need to
+    know the number of columns in order to correctly calculate item
+    position.
+
 
 * Second Session (11:45 - 12:30)
 ** More array Operations
