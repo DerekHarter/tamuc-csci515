@@ -9,7 +9,7 @@ NUM_FEATURES = 3
 #print "%d" % NUM_FEATURES
 x,y,z = np.random.normal(0.0, 1.0, (NUM_FEATURES,))
 for idx in range(1, NUM_LINES+1):
-    xd,yd,zd = np.random.normal(0.0, 0.05, (NUM_FEATURES,))
+    xd,yd,zd = np.random.normal(0.0, 0.01, (NUM_FEATURES,))
     x += xd
     y += yd
     z += zd
