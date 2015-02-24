@@ -35,6 +35,23 @@ float calculateHypotenuse(float a, float b)
 }
 
 
+/** Init array to negative of index
+ * Initialize the array to the negative of the indiex, e.g. a[0] = 0, a[1] = -1
+ * a[2] = -2, etc.  We are given the array and the number of elements in the
+ * array as input parameters.  Since the array is passed by reference,
+ * we initialize and return the result of this initialization to the caller.
+ *
+ * @param values An array of integers, uninitialized
+ * @param size The number of elements in the array allocated but not yet initialized.
+ *
+ * @returns void, But as a side effect, the values in the array will be
+ *    initialized.
+ */
+void initNegative(int values[], int size)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
