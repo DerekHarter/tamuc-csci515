@@ -80,8 +80,11 @@ int main()
   {
     values[idx] = idx;
   }
+  cout << "Initial Array (with extra space) -------------" << endl;
+  cout << "size = " << size << endl;
   displayArray(values, NUM_VALUES);
-
+  cout << endl;
+  
   // add an element at index 4
   // first shift elements from 4 up to 5, 5 up to 6, etc
   for (int idx = 5; idx < size + 1; idx++)
@@ -89,6 +92,7 @@ int main()
     values[idx] = values[idx - 1]; // shift values up by 1 index
   }
   values[4] = 42;
+  cout << "Inserted value at index 4 ---------"
   displayArray(values, NUM_VALUES);
   
 }
