@@ -109,7 +109,7 @@ int main()
   // make sure size of array decreases, since we now removed a value
   size--;
   cout << "Deleted value at index 8 -------" << endl;
-  cout << size = " << " << size << endl;
+  cout << " size = " << size << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
 }
