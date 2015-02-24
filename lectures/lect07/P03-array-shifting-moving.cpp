@@ -128,8 +128,8 @@ int main()
   cout << endl;
 
   // swap the element at index 5 with the head element
-  swapIndex = 5;
-  headIndex = 0;
+  int swapIndex = 5;
+  int headIndex = 0;
   int tmp = values[headIndex];
   values[headIndex] = values[swapIndex];
   values[swapIndex] = tmp;
