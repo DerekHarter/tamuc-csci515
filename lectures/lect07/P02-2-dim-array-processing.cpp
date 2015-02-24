@@ -48,7 +48,9 @@ void loadExperimentArray(string experimentFileName,
   // test we found and opend file successfully
   if (!experimentFile)
   {
-    
+    cerr << "ERROR: could not find and open file name: "
+	 << experimentFileName << endl;
+    exit(1);
   }
 
   // Read the data from the input file
