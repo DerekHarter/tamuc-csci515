@@ -10,6 +10,7 @@
  *   elements.  Shifting, moving, swapping, adding, deleting.
  */
 #include <iostream>
+using namespace std;
 
 
 /** Display Array
