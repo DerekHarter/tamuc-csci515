@@ -69,4 +69,12 @@ int main()
   const int NUM_VALUES = 20;
   int values[NUM_VALUES];
   initArray(values, NUM_VALUES);
+
+  // However, actual number of values is 10, so we can shift things around some
+  size = 10;
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = idx;
+  }
+  displayArray(values, size);
 }
