@@ -106,6 +106,31 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 }
 
 
+/** Calculate Trial Distances
+ * Calculate the distances between successive trials.  We are
+ * given the 2-D table of experimental positions, and 
+ * a 1-D array that will hold the result of calculating the
+ * distances between subsequent trials.
+ *
+ * @param experimentPositions The 2-D array of experiment positions
+ *   we are to initialize.
+ * @param size The number of recordings (the number of rows) in the
+ *   experiment.
+ * @param distances An array of size-1 float elements, will hold the
+ *   results of calculating the distances between subsequent positions
+ *   in the experimentPositions data.
+ *
+ * @returns void.  However, we return the result of calculating the
+ *   distances of subsequent trials in the experimenta positions in
+ *   the distances array.
+ */
+void calculateTrialDistances(float experimentPositions[][NUM_DIMENSIONS],
+			     int numRecordings,
+			     float distances[])
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
