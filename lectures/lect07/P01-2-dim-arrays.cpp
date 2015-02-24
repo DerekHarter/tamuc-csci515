@@ -40,6 +40,18 @@ int main()
     }
   }
 
+  // We access/display the values in a 2-D array again using
+  // a nested loop
+  for (int record = 0; record < NUM_RECORDINGS; record++)
+  {
+    cout << "Rec " << setw(3) << setfill('0') << record << ":"
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+	   << setw(6) << fixed << setprecision(4) <<
+      experimentPositions[record][dim] = 0.0;
+    }
+  }
+
   // 2-D arrays in C are organized in memory using row ordering
   // Compiler does not need the number of rows, put it needs
   // to know/specify the number of columns.
