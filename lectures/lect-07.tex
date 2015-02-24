@@ -1,0 +1,91 @@
+% Created 2015-02-24 Tue 13:47
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\author{Derek Harter}
+\date{CSci 515 Spring 2015 \textit{<2015-02-18 Wed>}}
+\title{Lecture 07 Notes}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lecture 07 Notes.},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
+\begin{document}
+
+\maketitle
+
+\section{First Session (11 - 11:40)}
+\label{sec-1}
+\subsection{Multidimensional Arrays}
+\label{sec-1-1}
+
+\begin{itemize}
+\item Two-dimensional arrays represent \textbf{TABLES} of values
+\item Tables are a very fundamental data structure/concept.  Represent
+the basic type of a relational database, for example.
+\item Information arranged in rows and columns (we have seen this before
+in our lab where we looked at DSV separated data).
+\item By convention, the first identifier for a 2-D array specifies the
+table's row, and the second identifier specifies the column.
+\item This makes sense, as the row is the \textbf{record} or \textbf{trial} of a table
+e.g. it is the set of related information.
+\item The column is a particular attribute or piece of information about
+a record or trial.
+\item So, to initialize a 2-D array:
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+const int NUM_RECORDINGS = 5; // number of rows in table
+const int NUM_DIMENSIONS = 3; // number of columns in table
+
+// Each recording records a 3-dimensional position of a particle in
+// our experiment
+float experimentPositions[NUM_RECORDS][NUM_DIMENSIONS];
+\end{minted}
+
+\begin{itemize}
+\item For 1-D arrays, the size of the array was not required by compiler
+when passing array (by reference) to a function.  Though we always
+specified the size of the array as the next parameter for our functions.
+
+\item For 2-D arrays, the number of rows (the first dimension) is still not
+required by compiler, though again we will almost always pass this
+information in to the function because it is needed to process the
+2-D array.
+\item However, the compiler needs the number of columns to be specified, 
+because reasons.
+\begin{itemize}
+\item reasons: arrays are stored using row major ordering, thus we need to
+know the number of columns in order to correctly calculate item
+position.
+\end{itemize}
+\item 
+\end{itemize}
+\section{Second Session (11:45 - 12:30)}
+\label{sec-2}
+\subsection{More array Operations}
+\label{sec-2-1}
+\begin{itemize}
+\item Shifting elements in an array
+\item Add element to an array
+\item Remove element from an array
+\end{itemize}
+
+\section{Third Session (12:40 - 1:40)}
+\label{sec-3}
+% Emacs 24.3.1 (Org mode 8.2.4)
+\end{document}
