@@ -71,8 +71,8 @@ int main()
   const int NUM_VALUES = 20;
   int values[NUM_VALUES];
 
-  // initially whole array is initialize do 0
-  initArray(values, NUM_VALUES);
+  // initially whole array is initialize do -9999
+  initArray(values, NUM_VALUES, -9999);
 
   // However, actual number of values is 10, so we can shift things around some
   int size = 10;
@@ -80,5 +80,7 @@ int main()
   {
     values[idx] = idx;
   }
-  displayArray(values, size);
+  displayArray(values, NUM_VALUES);
+
+  
 }
