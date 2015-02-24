@@ -28,7 +28,8 @@ Perform the following tasks:
    random number between 1 and 4, and display the random number to
    standard output.  If the number is a 1, display a special message
    "I generated a 1!".  The output from this task and loop in your
-   main function should look like the following output:
+   main function should look like the first part of the example
+   output given below.
 
 2. After the previous task in your main function, write code to
    perform the following task.  I have given you a file named
@@ -37,7 +38,9 @@ Perform the following tasks:
    controlled loop, read in the values from the file and
    display the values to standard output.  Your sentinel
    controlled loops should simply be a while loop that executes
-   until the read from the file fails.
+   until the read from the file fails.  The output from
+   reading the give file will be exactly as given in 
+   the example output shown below.
 
 3. Write a function named ~calculateHypotenuse~.  The function 
    will take two floating point values as parameters, named ~a~
