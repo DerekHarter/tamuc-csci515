@@ -37,6 +37,13 @@ const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
 int initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 			int numRecordings)
 {
+  for (int record = 0; record < numRecordings; record++)
+  {
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      experimentPositions[record][dim] = 0.0;
+    }
+  }
 }
 
 
@@ -77,10 +84,11 @@ int main()
     }
     cout << endl; // newline at end of the current record
   }
-
+  cout << endl;
+  
   // 2-D arrays in C are organized in memory using row ordering
   // Compiler does not need the number of rows, put it needs
   // to know/specify the number of columns.
-  initExperimentTable(experimentPositions, NUM_RECORDINGS);
+  initExperimentArray(experimentPositions, NUM_RECORDINGS);
   //displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 }
