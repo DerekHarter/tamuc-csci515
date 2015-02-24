@@ -54,7 +54,7 @@ void initArray(float values[][NUM_DIMENSIONS], int size)
   {
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
-      values[record][dim] = 0.0
+      values[record][dim] = 0.0;
     }
   }
 }
@@ -66,6 +66,7 @@ void initArray(float values[][NUM_DIMENSIONS], int size)
 - Read 2-D array from file of DSV values
 - Display 2-D array as a table
 - Process 2-D array
+
 ** Three and higher-dimensional arrays
 
 
