@@ -14,7 +14,13 @@
   the basic type of a relational database, for example.
 - Information arranged in rows and columns (we have seen this before
   in our lab where we looked at DSV separated data).
-- 
+- By convention, the first identifier for a 2-D array specifies the
+  table's row, and the second identifier specifies the column.
+- This makes sense, as the row is the *record* or *trial* of a table
+  e.g. it is the set of related inforamtion.
+- The column is a particular attribute or piece of information about
+  a record or trial.
+
 
 
 * Second Session (11:45 - 12:30)
