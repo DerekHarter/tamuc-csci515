@@ -24,23 +24,34 @@ using namespace std;
  */
 int main()
 {
-   // task 1
-   int seed;
-   int r;
+  // task 1
+  int seed;
+  int r;
 
-   cout << "Task 1: Enter a seed value: ";
-   cin >> seed;
-   srand(seed);
-   for (int idx = 0; idx < 10; idx++)
-   {
-      r = random() % 4 + 1;
-      cout << idx << ": " << r << endl;
-      if (r == 1)
-      {
-	 cout << "I generated a 1!" << endl;
-      }
-   }
-   cout << endl;
+  cout << "Task 1: Enter a seed value: ";
+  cin >> seed;
+  srand(seed);
+  for (int idx = 0; idx < 10; idx++)
+  {
+    r = random() % 4 + 1;
+    cout << idx << ": " << r << endl;
+    if (r == 1)
+    {
+       cout << "I generated a 1!" << endl;
+    }
+  }
+  cout << endl;
+
+  // task 2
+  const string inputFileName = "test-01-data.txt";
+  ifstream inputFile(inputFileName);
+
+  if (!inputFile)
+  {
+     cerr << "ERROR: could not open file named: " << inputFileName << endl;
+     exit(1);
+  }
+
 
   //  Return 0 to indicate program terminated successfully
   return 0;
