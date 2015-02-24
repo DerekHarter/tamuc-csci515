@@ -29,7 +29,7 @@ int main()
   int seed;
   int r;
 
-  cout << "----- Task 1" << endl;
+  cout << "----- Task 1 -----" << endl;
   cout << "Enter a seed value: ";
   cin >> seed;
   srand(seed);
@@ -49,7 +49,7 @@ int main()
   ifstream inputFile(inputFileName);
   int value;
 
-  cout << "----- Task 2:" << endl;
+  cout << "----- Task 2 ----- << endl;
   if (!inputFile)
   {
      cerr << "ERROR: could not open file named: " << inputFileName << endl;
