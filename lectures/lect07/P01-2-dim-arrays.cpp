@@ -52,7 +52,7 @@ int main()
 	   << experimentPositions[record][dim]
 	   << " ";
     }
-    cout << endl;
+    cout << endl; // newline at end of the current record
   }
 
   // 2-D arrays in C are organized in memory using row ordering
