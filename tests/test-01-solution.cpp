@@ -3,13 +3,10 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
- * @date   February 19, 2015
- * @assg   Lab 06
+ * @date   February 24, 2015
+ * @assg   Test 01
  *
- * @description Example of processing arrays.  We write functions to display selected
- *    portions of an array, and to determine the average of the values in an
- *    array.  This program also contains an example of a function that reads in the
- *    values from a file into an array of floats for processing by the other functions.
+ * @description Example solution of Text 01
  */
 #include <iostream>
 #include <fstream>
