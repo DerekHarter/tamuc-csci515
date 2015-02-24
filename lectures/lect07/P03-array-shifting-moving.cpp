@@ -99,7 +99,7 @@ int main()
   cout << "size = " << size << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
-  
+
   // delete the item at index 8
   // in this case, we can simply shift down item at index 9 to 8, etc.
   for (int idx = 9; idx < size; idx++)
