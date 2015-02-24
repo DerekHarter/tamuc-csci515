@@ -46,13 +46,20 @@ int main()
   // task 2
   const string inputFileName = "test-01-data.txt";
   ifstream inputFile(inputFileName);
+  int value;
 
+  cout << "Task 2:" << endl;
   if (!inputFile)
   {
      cerr << "ERROR: could not open file named: " << inputFileName << endl;
      exit(1);
   }
-
+  while (inputFile >> value)
+  {
+     cout << "Read value from file: " << value
+  }
+  cout << endl;
+  
 
   //  Return 0 to indicate program terminated successfully
   return 0;
