@@ -112,4 +112,18 @@ int main()
   cout << " size = " << size << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
+
+  // ok delete the item at index 3 now, should look similar to previous
+  // but I use a variable to hold the initial index
+  int deleteIndex = 3;
+  for (int idx = deleteIndex + 1; idx < size; idx++)
+  {
+    values[idx - 1] = values[idx];
+  }
+  // make sure size of array decreases, since we now removed a value
+  size--;
+  cout << "Deleted value at index: " << deleteIndex << "-------" << endl;
+  cout << " size = " << size << endl;
+  displayArray(values, NUM_VALUES);
+  cout << endl;
 }
