@@ -20,7 +20,14 @@
   e.g. it is the set of related inforamtion.
 - The column is a particular attribute or piece of information about
   a record or trial.
+- So, to initialize a 2-D array:
 
+#+begin_src c
+const int NUM_TRIALS = 5;    // number of rows in table
+const int NUM_DIMENSIONS = 3; // number of columns in table
+
+float 
+#+end_src
 
 
 * Second Session (11:45 - 12:30)
