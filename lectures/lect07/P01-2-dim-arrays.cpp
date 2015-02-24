@@ -39,4 +39,9 @@ int main()
       experimentPositions[record][dim] = 0.0;
     }
   }
+
+  // 2-D arrays in C are organized in memory using row ordering
+  // Compiler does not need the number of rows, put it needs
+  // to know/specify the number of columns.
+  initExperiment()
 }
