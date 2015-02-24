@@ -97,6 +97,7 @@ int main()
   {
      values[idx] = 0;
   }
+  initNegative(values, ARRAY_SIZE);
 
   //  Return 0 to indicate program terminated successfully
   return 0;
