@@ -26,7 +26,7 @@
 const int NUM_TRIALS = 5;    // number of rows in table
 const int NUM_DIMENSIONS = 3; // number of columns in table
 
-float 
+float experimentPositions[NUM_TRIALS][NUM_DIMENSIONS];
 #+end_src
 
 
