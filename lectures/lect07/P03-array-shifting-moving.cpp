@@ -12,6 +12,48 @@
 #include <iostream>
 
 
+/** Display Array
+ * Display all of the values of an integer array to standard output.
+ *
+ * @param values An array of integers, allocated but not initialized.
+ * @param size The maximum size of the array, an integer value
+ *
+ * @returns void, but as side effect we display array values to stdout.
+ */
+void displayArray(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << "values[" << setw(3) << setfill('0') << right << idx << "] = "
+	 << setw(5) << setfill(' ') << right << values[idx] << endl;
+  }
+}
+
+
+/** Initialize Array
+ * Initialize all values of the given integer array to the given parameters.  We
+ * use a default parameter for the initializer.  By default we initialze the array
+ * to 0.  The array is passed by reference, thus our initialization of the array is
+ * available to the caller of the functions.
+ *
+ * @param values An array of integers, allocated but not initialized.  Arrays are
+ *    passed by references, so when we initialize the array, all values are
+ *    overwritten and the initialized values are passed back to caller.
+ * @param size The maximum size of the array, an integer value
+ * @param initializer An int value, by defualt we initialize array to 0.
+ *
+ * @returns void, but as side effect array values is initialized to the initialize
+ *    parameter, which is 0 by default.
+ */
+void initArray(int values[], int size, int initializer = 0)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = initializer;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -24,5 +66,7 @@
 int main()
 {
   // create an array of 20 elements, initilized to 0
-  
+  const int NUM_VALUES = 20;
+  int values[NUM_VALUES];
+  initArray(values, NUM_VALUES);
 }
