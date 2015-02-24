@@ -126,4 +126,7 @@ int main()
   // to know/specify the number of columns.
   loadExperimentArray(experimentFileName, experimentPositions, NUM_RECORDINGS);
   displayExperimentArray(experimentPositions, NUM_RECORDINGS);
+
+  // Process 2-D array, determine distance traveled between subsequent recordings
+  float distance[NUM_RECORDINGS-1];
 }
