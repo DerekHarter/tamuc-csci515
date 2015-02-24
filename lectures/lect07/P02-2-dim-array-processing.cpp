@@ -111,6 +111,6 @@ int main()
   // 2-D arrays in C are organized in memory using row ordering
   // Compiler does not need the number of rows, put it needs
   // to know/specify the number of columns.
-  initExperimentArray(experimentPositions, NUM_RECORDINGS);
-  displayExperimentArray(experimentPositions, NUM_RECORDINGS);
+  loadExperimentArray(experimentFileName, experimentPositions, NUM_RECORDINGS);
+  //displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 }
