@@ -28,6 +28,9 @@ using namespace std;
  */
 float calculateHypotenuse(float a, float b)
 {
+   float c;
+   c = sqrt(pow(a, 2.0) + pow(b, 2.0));
+   return c;
 }
 
 
