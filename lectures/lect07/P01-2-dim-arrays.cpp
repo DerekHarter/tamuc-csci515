@@ -4,10 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 06, P01 Array declarations, indexing, initialization
+ * @assg   Lecture 07, P02 Intro to 2-D arrays
  *
- * @description Examples of declaring and initializing an array.  Discussion of array indexing
- *    and conventions for (safely) accessing/declaring arrays.
+ * @description Examples of declaring and initializing a 2-D array
  */
 #include <iostream>
 using namespace std;
