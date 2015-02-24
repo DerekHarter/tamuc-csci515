@@ -132,7 +132,7 @@ void calculateTrialDistances(float experimentPositions[][NUM_DIMENSIONS],
   float x1, y1, z1;
   float distance;
   
-  for (int record = 0; record < numRecordings-1; record++)
+  for (int record = 0; record < numRecordings-1; record++) // subtle, look at the indexes
   {
     // current position
     x1 = experimentPositions[record + 1][0];
