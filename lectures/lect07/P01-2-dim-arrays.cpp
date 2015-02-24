@@ -27,4 +27,7 @@ const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
  */
 int main()
 {
+  // Each experiment records a 3-dimensional position of a particle
+  // for multiple recordings during the experiment
+  float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
 }
