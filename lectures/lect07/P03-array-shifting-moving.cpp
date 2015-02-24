@@ -23,4 +23,6 @@
  */
 int main()
 {
+  // create an array of 20 elements, initilized to 0
+  
 }
