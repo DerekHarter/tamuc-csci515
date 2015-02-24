@@ -156,6 +156,40 @@ void calculateTrialDistances(float experimentPositions[][NUM_DIMENSIONS],
 }
 
 
+/** Display Experiment Distances
+ * Display the array of calcualted distances for the experiment.
+ *
+ * @param distances An array of floats, the distances between
+ *   subsequent trials in the experiment.
+ * @param numDistances The number of distances between trials.  This will
+ *   be equal to the NUM_RECORDINGS-1
+ *
+ * @returns void.  However, the values in the distances
+ *   array are formatted and displayed on standard output.
+ */
+void displayExperimentDistances(float distances[], int numDistances)
+{
+  // display a header
+  cout << setfill (' ') << setw(4) << left << "Rec "
+       << setw(7) << right << "X" << " "
+       << setw(7) << right << "Y" << " "
+       << setw(7) << right << "Z"
+       << endl;
+
+  for (int record = 0; record < numRecordings; record++)
+  {
+    cout << setw(3) << right << setfill('0') << record << " ";
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      cout << setw(7) << fixed << setprecision(4) << setfill(' ')
+	   << experimentPositions[record][dim]
+	   << " ";
+    }
+    cout << endl; // newline at end of the current record
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
