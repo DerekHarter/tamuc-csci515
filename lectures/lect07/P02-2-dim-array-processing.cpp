@@ -128,6 +128,30 @@ void calculateTrialDistances(float experimentPositions[][NUM_DIMENSIONS],
 			     int numRecordings,
 			     float distances[])
 {
+  float x0, y0, z0;
+  float x1, y1, z1;
+  float distance;
+  
+  for (int record = 0; record < numRecordings-1; record++)
+  {
+    // current position
+    x1 = experimentPositions[record + 1][0];
+    y1 = experimentPositions[record + 1][1];
+    z1 = experimentPositions[record + 1][2];
+
+    // previous position
+    x0 = experimentPositions[record][0];
+    y0 = experimentPositions[record][1];
+    z0 = experimentPositions[record][2];
+
+    // calculate distance
+    distance = pow(x1 - x0, 2.0) + pow(y1 - y0, 2.0) + pow(z1 - z0, 2.0);
+    distance = sqrt(distance);
+
+    // save the result
+    distances[record] = distance;
+  }
+
 }
 
 
