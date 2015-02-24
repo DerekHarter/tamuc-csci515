@@ -10,3 +10,17 @@
  *   elements.  Shifting, moving, swapping, adding, deleting.
  */
 #include <iostream>
+
+
+/** main entry point
+ * The main entry point for this program.  Execution
+ * of this program will begin with this function.
+ *
+ * @returns An int value.  By default, if we don't specify a return or
+ *           exit value, 0 is returned to indicate successful program
+ *           completion.  A non-zero value indicates an error or
+ *           problem with execution.
+ */
+int main()
+{
+}
