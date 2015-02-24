@@ -67,7 +67,7 @@ void initArray(int values[], int size, int initializer = 0)
  */
 int main()
 {
-  // create an array of 20 elements, initilized to 0
+  // create an array that can potentially hold 20 elements
   const int NUM_VALUES = 20;
   int values[NUM_VALUES];
 
