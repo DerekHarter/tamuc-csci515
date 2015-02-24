@@ -31,7 +31,8 @@ const int NUM_DIMENSIONS = 3;  // number of columns/attributes in table
  * @param experimentPositions The 2-D array of experiment positions
  *   we are to initialize.
  * @param size The number of recordings (the number of rows) in the
- *   experiment.
+ *   file we are loading, also the number of rows that the
+ *   array can hold that is passed to us.
  *
  * @returns void.  However, since arrays are passed by reference,
  *   as a side effect we initialize the experimentPositions table
