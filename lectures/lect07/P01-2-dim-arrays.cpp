@@ -66,6 +66,20 @@ void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 			    int numRecordings)
 {
+  // display a header
+  cout << setw(4) << left << "Rec "
+       << setw(6) << right << "X"
+       << setw(6) << right << "Y"
+       << setw(6) << right << "Z"
+       << endl;
+    
+  for (int record = 0; record < numRecordings; record++)
+  {
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      experimentPositions[record][dim] = 0.0;
+    }
+  }
 }
 
 
