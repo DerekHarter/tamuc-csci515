@@ -10,5 +10,5 @@ NUM_FEATURES = 3
 for idx in range(1, NUM_LINES+1):
     features = np.random.normal(0.0, 0.1, (NUM_FEATURES,))
     for f in features:
-        print "%0.8f" % f,
+        print "%10.8f" % f,
     print ""
