@@ -49,6 +49,10 @@ float calculateHypotenuse(float a, float b)
  */
 void initNegative(int values[], int size)
 {
+   for (int idx = 0; idx < size; idx++)
+   {
+      values[idx] = -idx;
+   }
 }
 
 
