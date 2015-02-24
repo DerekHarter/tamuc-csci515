@@ -85,8 +85,10 @@ int main()
 
   // task 3
   cout << "----- Task 3 -----" << endl;
+  float c;
+  c = calculateHypotenuse(3.0, 4.0);
+  cout << "Hypotenuse of triangle with sides 3 and 4: " << c << endl;
 
-  
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
