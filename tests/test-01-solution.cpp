@@ -109,7 +109,8 @@ int main()
   float c;
   c = calculateHypotenuse(3.0, 4.0);
   cout << "Hypotenuse of triangle with sides 3 and 4: " << c << endl;
-
+  cout << endl;
+  
   // task 4
   const int ARRAY_SIZE = 10;
   int values[ARRAY_SIZE];
