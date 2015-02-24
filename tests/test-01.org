@@ -125,11 +125,11 @@ the input parameters and return value of the function.
 
 * Test Submission
 
-An eCollege dropbox has been created for this test.  You should
-upload your version of the test by the end of test time to the eCollege
-dropbox named ~Test 01~.  Work submitted by the end
-of lab will be considered, but after the lab ends you may no longer
-submit work, so make sure you submit your best effort by the lab end
+An eCollege dropbox has been created for this test.  You should upload
+your version of the test by the end of test time to the eCollege
+dropbox named ~Test 01~.  Work submitted by the end of the allotted
+time will be considered, but after the test ends you may no longer
+submit work, so make sure you submit your best effort by the end
 time in order to receive credit.
 
 * Requirements and Grading Rubrics
