@@ -74,20 +74,46 @@ Your program output should look something close to the following when I
 run your program:
 
 #+begin_example
-I will display a range of values from our array.
-Enter index to start at: 5
-Enter index to end at: 15
-values[005] 0.52743745
-values[006] 0.58105505
-values[007] 0.16465282
-values[008] 0.28310502
-values[009] 0.59936452
-values[010] 0.87698799
-values[011] 0.34905022
-values[012] 0.03936137
-values[013] 0.22738582
-values[014] 0.59080577
-values[015] 0.87810069
+----- Task 1 -----
+Enter a seed value: 42
+0: 3
+1: 1
+I generated a 1!
+2: 2
+3: 2
+4: 1
+I generated a 1!
+5: 3
+6: 2
+7: 1
+I generated a 1!
+8: 4
+9: 4
+
+----- Task 2 -----
+Read value from file: 3
+Read value from file: 1
+Read value from file: 42
+Read value from file: 9
+Read value from file: 11
+Read value from file: 12
+Read value from file: 7
+
+----- Task 3 -----
+Hypotenuse of triangle with sides 3 and 4: 5
+
+----- Task 4 -----
+0
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+
 #+end_example
 
 

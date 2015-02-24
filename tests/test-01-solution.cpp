@@ -125,6 +125,7 @@ int main()
   {
      cout << values[idx] << endl;
   }
+  cout << endl;
   
   //  Return 0 to indicate program terminated successfully
   return 0;
