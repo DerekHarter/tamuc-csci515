@@ -34,7 +34,8 @@ const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
  *   as a side effect we initialize the experimentPositions table
  *   of values to 0.0 and return to the caller.
  */
-int main()
+int initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
+			int numRecordings)
 {
 }
 
