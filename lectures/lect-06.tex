@@ -1,4 +1,4 @@
-% Created 2015-02-19 Thu 19:52
+% Created 2015-02-23 Mon 18:56
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -79,6 +79,8 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 \item This way, if you need to change the size of the array and code
 processing the array elements, you change 1 single location, and all
 of the code will work correctly.
+\item And when I say good practice, read that to mean you SHOULD ALWAYS
+be doing this for assignments for this class.
 \end{itemize}
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
@@ -86,17 +88,34 @@ of the code will work correctly.
 \label{sec-2-1}
 \begin{itemize}
 \item Initializing with a loop
-\item Specify array size with a defined constant (always do this).
-\item Summing the elements of an array
+\item Initialize to random values.
+\item Display all the values in an array.
 \item Finding the minimum of the values of an array
-\item Finding the maximum of the values of an array
-\item Finding the average of the elements of an array
-\item Using elements of array as a counter
-\item Creating a histogram of elements, bucket size, etc.
+\item Sum the values of an array
 \end{itemize}
 \section{Third Session (12:40 - 1:40)}
 \label{sec-3}
 \subsection{Passing Arrays to Functions}
 \label{sec-3-1}
+\begin{itemize}
+\item Arrays are passed to function by reference (by default)
+\item \textbf{ALWAYS} pass the array and the size to function to process an
+array.  Makes function self-contained, does not depend on any
+globals.
+\end{itemize}
+\subsection{Advanced Array Processing}
+\label{sec-3-2}
+\begin{itemize}
+\item Revisit our dice game example from a previous lab.
+\item Randomly initialize to range [1, 6]
+\item Example, pass (2) arrays as input and an array to hold the result.
+\item Count frequency of values.
+\item In statistics, combinations of uniformly occurring randomness cause 
+normally distributed probabilities.  This is an example (central limit
+theorem).
+\item A histogram is simply a bar chart of frequencies of occurring
+outcomes in some experiment.  In our experiment, the possible
+outcomes are sums from 2 to 12.
+\end{itemize}
 % Emacs 24.3.1 (Org mode 8.2.4)
 \end{document}

@@ -67,3 +67,13 @@ for (int i = 0; i < ARRAY_SIZE; i++)
   globals.
 
 ** Advanced Array Processing
+- Revisit our dice game example from a previous lab.
+- Randomly initialize to range [1, 6]
+- Example, pass (2) arrays as input and an array to hold the result.
+- Count frequency of values.
+- In statistics, combinations of uniformly occurring randomness cause 
+  normally distributed probabilities.  This is an example (central limit
+  theorem).
+- A histogram is simply a bar chart of frequencies of occurring
+  outcomes in some experiment.  In our experiment, the possible
+  outcomes are sums from 2 to 12.
