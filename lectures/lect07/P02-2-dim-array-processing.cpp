@@ -128,5 +128,8 @@ int main()
   displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 
   // Process 2-D array, determine distance traveled between subsequent recordings
-  float distance[NUM_RECORDINGS-1];
+  float distances[NUM_RECORDINGS-1];
+  calculateTrialDistances(experimentPositions, NUM_RECORDINGS, distances);
+  //displayExperimentDistances(distances, NUM_RECORDINGS-1);
+  
 }
