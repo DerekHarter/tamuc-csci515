@@ -60,8 +60,11 @@ int main()
      cout << "Read value from file: " << value << endl;
   }
   cout << endl;
-  
 
+  // task 3
+  cout << "----- Task 3 -----" << endl;
+
+  
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
