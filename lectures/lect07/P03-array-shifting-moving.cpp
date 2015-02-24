@@ -10,6 +10,7 @@
  *   elements.  Shifting, moving, swapping, adding, deleting.
  */
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 
@@ -69,10 +70,12 @@ int main()
   // create an array of 20 elements, initilized to 0
   const int NUM_VALUES = 20;
   int values[NUM_VALUES];
+
+  // initially whole array is initialize do 0
   initArray(values, NUM_VALUES);
 
   // However, actual number of values is 10, so we can shift things around some
-  size = 10;
+  int size = 10;
   for (int idx = 0; idx < size; idx++)
   {
     values[idx] = idx;
