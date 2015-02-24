@@ -75,7 +75,7 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
     
   for (int record = 0; record < numRecordings; record++)
   {
-    cout << setw(3) << left << setfill('0') << record << " ";
+    cout << setw(3) << right << setfill('0') << record << " ";
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
       cout << setw(6) << fixed << setprecision(4)
