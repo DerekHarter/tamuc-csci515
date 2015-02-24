@@ -75,5 +75,5 @@ void initExperimentArray(float values[][NUM_DIMENSIONS], int size)
 - Shifting elements in an array
 - Add element to an array
 - Remove element from an array
-
+- Swap element with first element
 
