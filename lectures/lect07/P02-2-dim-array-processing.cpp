@@ -18,7 +18,7 @@ using namespace std;
 // global constant declarations
 const int NUM_RECORDINGS = 50; // number of rows/records/experiments in table
 const int NUM_DIMENSIONS = 3;  // number of columns/attributes in table
-
+const string experimentFileName = "exp-data.txt";
 
 /** Load Experiment Array
  * Load the 2-D table of experiment recordings from a file.  This
