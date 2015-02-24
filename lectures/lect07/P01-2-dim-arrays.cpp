@@ -17,6 +17,20 @@ const int NUM_RECORDINGS = 5; // number of rows/records/experiments in table
 const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
 
 
+/** Initialize Experiment Array
+ * Initialize t
+ * of this program will begin with this function.
+ *
+ * @returns An int value.  By default, if we don't specify a return or
+ *           exit value, 0 is returned to indicate successful program
+ *           completion.  A non-zero value indicates an error or
+ *           problem with execution.
+ */
+int main()
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -58,6 +72,6 @@ int main()
   // 2-D arrays in C are organized in memory using row ordering
   // Compiler does not need the number of rows, put it needs
   // to know/specify the number of columns.
-  initExperimentArray(experimentPositions, NUM_RECORDINGS);
+  initExperimentTable(experimentPositions, NUM_RECORDINGS);
   //displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 }
