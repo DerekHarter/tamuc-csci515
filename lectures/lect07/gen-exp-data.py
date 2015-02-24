@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Generate a suitable set of data for the Lab 03 assignment.
+"""Generate a suitable set of data for the lecture 07 example
 """
 import numpy as np
 import sys
