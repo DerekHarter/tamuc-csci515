@@ -30,26 +30,30 @@ Perform the following tasks:
    "I generated a 1!".  The output from this task and loop in your
    main function should look like the following output:
 
-2. Write a function called ~displayArrayValues~.  This function will
-   take an array of floats as its first parameter, and a ~beginRange~
-   and ~endRange~ as its second and third parameters.  These
-   parameters are of type int, and they will be used to specify the
-   beginning index and end index of values to be displayed from the
-   array.  These values should be >= 0, and the ~endRange~ should be
-   less than the size of the input array.  If ~beginRange~ ==
-   ~endRange~ then only 1 value will be displayed.  If ~beginRange~ >
-   ~endRange~ then no values will be output. Your function does not
-   return anything, so it is a void function.  Instead your function
-   displays its output to standard out, and it should be formatted to
-   look exactly like the output shown below.  *HINT*: you may need to
-   use the ~setw()~, ~setprecision()~, ~setfill()~ and ~fixed~ I/O
-   manipulators to get the output formatted exactly as shown.
+2. After the previous task in your main function, write code to
+   perform the following task.  I have given you a file named
+   "test-01-data.txt".  This file has a single integer value
+   one each line.  Open this file, and inside of a sentinel 
+   controlled loop, read in the values from the file and
+   display the values to standard output.  Your sentinel
+   controlled loops should simply be a while loop that executes
+   until the read from the file fails.
 
-3. In your main program, you should leave the code alone that reads in
-   the array values from the file.  After the array is read in, you
-   should first prompt the user for a begin and end range, and call
-   the ~displayArrayValues~ function to display the values in the
-   array in that range.
+3. Write a function named ~calculateHypotenuse~.  The function 
+   will take two floating point values as parameters, named ~a~
+   and ~b~.  The function should calculate the hypotenuse of 
+   a right triangle using the ~a~ and ~b~ parameters, according
+   to this formula:
+$$
+c = \sqrt{a^2 + b^2}
+$$
+  e.g. the hypotenuse is the square root of adding together the
+  square of a and b.  This value should be calculated and returned
+  (as a floating point result) as a result of calling your function.
+  In your main function, show an example of calling your function with
+  values of $3.0$ and $4.0$ for the ~a~ and ~b~ parameters.
+
+4. Write a function named
 
 Your program output should look something close to the following when I
 run your program:
