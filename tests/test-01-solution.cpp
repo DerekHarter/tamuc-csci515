@@ -13,6 +13,24 @@
 using namespace std;
 
 
+
+/** calculate hypotenuse of right triangle
+ * Calculate the hypotenuse of a right triangle.  We are given floating point
+ * parameters a and b, which represent the lengths of the 2 sides around the
+ * right angle.  We calculate and return the length of the hypotenuse
+ * of the indicated right triangle.
+ *
+ * @param a float, side a of a right triangle
+ * @param b float, side b of a right triangle
+ *
+ * @returns float, The length of side c the hypotenuse of the indicated right
+ *           triangle with sides of length a and b.
+ */
+float calculateHypotenuse(float a, float b)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
