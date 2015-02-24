@@ -37,7 +37,7 @@ int main()
       cout << idx << ": " << r << endl;
       if (r == 1)
       {
-	 cout "I generated a 1!" << endl;
+	 cout << "I generated a 1!" << endl;
       }
    }
 
