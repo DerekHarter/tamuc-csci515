@@ -7,8 +7,7 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** Multidimensional Arrays
-
+** Two-Dimensional Arrays
 - Two-dimensional arrays represent *TABLES* of values
 - Tables are a very fundamental data structure/concept.  Represent
   the basic type of a relational database, for example.
@@ -28,7 +27,7 @@ const int NUM_DIMENSIONS = 3; // number of columns in table
 
 // Each recording records a 3-dimensional position of a particle in
 // our experiment
-float experimentPositions[NUM_RECORDS][NUM_DIMENSIONS];
+float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
 #+end_src
 
 - For 1-D arrays, the size of the array was not required by compiler
