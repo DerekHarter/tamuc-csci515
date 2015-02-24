@@ -35,10 +35,11 @@ const int NUM_DIMENSIONS = 3;  // number of columns/attributes in table
  *   array can hold that is passed to us.
  *
  * @returns void.  However, since arrays are passed by reference,
- *   as a side effect we initialize the experimentPositions table
- *   of values to 0.0 and return to the caller.
+ *   as a side effect we load the data from the file into the
+ *   passed in array.
  */
-void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
+void loadExperimentArray(string experimentFileName,
+                         float experimentPositions[][NUM_DIMENSIONS],
 			 int numRecordings)
 {
   for (int record = 0; record < numRecordings; record++)
