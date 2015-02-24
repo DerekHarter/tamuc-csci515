@@ -77,8 +77,11 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
   {
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
-      experimentPositions[record][dim] = 0.0;
+      cout << setw(6) << fixed << setprecision(4)
+	   << experimentPositions[record][dim]
+	   << " ";
     }
+    cout << endl; // newline at end of the current record
   }
 }
 
