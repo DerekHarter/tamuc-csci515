@@ -93,8 +93,9 @@ int main()
   }
   // do the actual insertion at index 4
   values[4] = 42;
+  // and make sure size of array increases, since we have now inserted a value
   size++;
-  cout << "Inserted value at index 4 ---------";
+  cout << "Inserted value at index 4 ---------" << endl;
   cout << "size = " << size << endl;
   displayArray(values, NUM_VALUES);
   
