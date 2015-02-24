@@ -180,6 +180,6 @@ int main()
   // Process 2-D array, determine distance traveled between subsequent recordings
   float distances[NUM_RECORDINGS-1];
   calculateTrialDistances(experimentPositions, NUM_RECORDINGS, distances);
-  //displayExperimentDistances(distances, NUM_RECORDINGS-1);
+  displayExperimentDistances(distances, NUM_RECORDINGS-1);
   
 }
