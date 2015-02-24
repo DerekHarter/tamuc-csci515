@@ -84,7 +84,7 @@ int main()
 
   // add an element at index 4
   // first shift elements from 4 up to 5, 5 up to 6, etc
-  for (ind idx = 5; idx < size + 1; idx++)
+  for (int idx = 5; idx < size + 1; idx++)
   {
     values[idx] = values[idx - 1]; // shift values up by 1 index
   }
