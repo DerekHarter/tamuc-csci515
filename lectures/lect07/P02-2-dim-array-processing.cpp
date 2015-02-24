@@ -43,6 +43,15 @@ void loadExperimentArray(string experimentFileName,
                          float experimentPositions[][NUM_DIMENSIONS],
 			 int numRecordings)
 {
+  ifstream experimentFile(experimentFileName);
+
+  // test we found and opend file successfully
+  if (!experimentFile)
+  {
+    
+  }
+
+  // Read the data from the input file
   for (int record = 0; record < numRecordings; record++)
   {
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
