@@ -43,9 +43,13 @@ float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
   - reasons: arrays are stored using row major ordering, thus we need to
     know the number of columns in order to correctly calculate item
     position.
-- 
 
 * Second Session (11:45 - 12:30)
+** Example of processing a 2-D array
+- Initialize 2-D array
+- Read 2-D array from file of DSV values
+- Display 2-D array as a table
+- Process 2-D array
 ** Three and higher-dimensional arrays
 
 
