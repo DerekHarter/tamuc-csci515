@@ -59,12 +59,12 @@ void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
  * @param size The number of recordings (the number of rows) in the
  *   experiment.
  *
- * @returns void.  However, since arrays are passed by reference,
- *   as a side effect we initialize the experimentPositions table
- *   of values to 0.0 and return to the caller.
+ * @returns void.  However, the values in the experiment array
+ *   table are formatted and displayed as a table on standard
+ *   output.
  */
 void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
-			int numRecordings)
+			    int numRecordings)
 {
 }
 
