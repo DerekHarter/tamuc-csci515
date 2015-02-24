@@ -68,8 +68,8 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
 {
   // display a header
   cout << setfill (' ') << setw(4) << left << "Rec "
-       << setw(6) << right << "X "
-       << setw(6) << right << "Y "
+       << setw(6) << right << "X" << " "
+       << setw(6) << right << "Y" << " "
        << setw(6) << right << "Z"
        << endl;
     
