@@ -76,4 +76,4 @@ for (int i = 0; i < ARRAY_SIZE; i++)
   theorem).
 - A histogram is simply a bar chart of frequencies of occurring
   outcomes in some experiment.  In our experiment, the possible
-  outcomes are sums from 2 to 12.[]
+  outcomes are sums from 2 to 12.
