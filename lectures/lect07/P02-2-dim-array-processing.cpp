@@ -14,6 +14,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cstdlib>
+#include <cmath>
 using namespace std;
 
 // global constant declarations
