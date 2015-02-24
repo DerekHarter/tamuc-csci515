@@ -92,7 +92,9 @@ int main()
     values[idx] = values[idx - 1]; // shift values up by 1 index
   }
   values[4] = 42;
-  cout << "Inserted value at index 4 ---------"
+  size++;
+  cout << "Inserted value at index 4 ---------";
+  cout << "size = " << size << endl;
   displayArray(values, NUM_VALUES);
   
 }
