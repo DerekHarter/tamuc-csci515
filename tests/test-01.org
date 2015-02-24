@@ -20,13 +20,15 @@ the past 7 weeks.
 
 Perform the following tasks:
 
-1. Start with the given template code for this lab (download from
-   eCollege), which contains one function already written for you, and
-   an example of calling that function.  This function reads in an
-   array of floating point values from a file.  As we learned in
-   class, since arrays are passed by reference by default, specifying
-   the array to be read in to the function, causes the values to be
-   filled in and returned to the caller in the given array.
+1. In the main function of your program, write a statement that
+   prompts the user for a seed value.  Seed the C standard library
+   random number generator with this seed value using the ~srand~
+   standard library function.  Write an index controlled loop that
+   uses an index to execute 10 times.  Inside of your loop, generate a
+   random number between 1 and 4, and display the random number to
+   standard output.  If the number is a 1, display a special message
+   "I generated a 1!".  The output from this task and loop in your
+   main function should look like the following output:
 
 2. Write a function called ~displayArrayValues~.  This function will
    take an array of floats as its first parameter, and a ~beginRange~
