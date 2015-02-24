@@ -82,5 +82,13 @@ int main()
   }
   displayArray(values, NUM_VALUES);
 
+  // add an element at index 4
+  // first shift elements from 4 up to 5, 5 up to 6, etc
+  for (ind idx = 5; idx < size + 1; idx++)
+  {
+    values[idx] = values[idx - 1]; // shift values up by 1 index
+  }
+  values[4] = 42;
+  displayArray(values, NUM_VALUES);
   
 }
