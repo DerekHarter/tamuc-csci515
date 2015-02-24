@@ -93,7 +93,10 @@ int main()
   const int ARRAY_SIZE = 10;
   int values[ARRAY_SIZE];
 
-
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+     values[idx] = 0;
+  }
 
   //  Return 0 to indicate program terminated successfully
   return 0;
