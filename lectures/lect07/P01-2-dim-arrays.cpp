@@ -9,6 +9,7 @@
  * @description Examples of declaring and initializing a 2-D array
  */
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // global constant declarations
@@ -51,6 +52,7 @@ int main()
 	   << experimentPositions[record][dim]
 	   << " ";
     }
+    cout << endl;
   }
 
   // 2-D arrays in C are organized in memory using row ordering
