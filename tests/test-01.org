@@ -9,23 +9,14 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday February 25, by 4:05 pm (lab end time) |
-
-* Objectives
-- Learn about declaring, accessing and processing array elements
-- Practice passing arrays to and from functions.
-- See examples of using file I/O to read date into arrays for processing
-- Practice I/O formatting
-- Learn about indexing into arrays in ranges.
+| Due: | In Lab, Wednesday March 4, by 4:05 pm (lab end time) |
 
 * Description
-In this lab you will be given a function, and an example of how to
-call the function, that will read in an array of values from a
-file. You will be processing arrays of floating point values.  You
-will write one function to display the elements in an array.  In the
-function, you will pass in an array, and a begin and end range.  This
-function will display the values in the array, formatted on standard
-output as specified below.
+You have 2 hours (our regularly scheduled lab time) to complete the
+following tasks.  Create a single file, named test01.cpp, in a visual
+studio project called Test01.  Set up the Visual Studio projects using
+the normal settings for our class and labs, as we have practiced for
+the past 7 weeks.
 
 Perform the following tasks:
 
