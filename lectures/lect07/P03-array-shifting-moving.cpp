@@ -91,6 +91,7 @@ int main()
   {
     values[idx] = values[idx - 1]; // shift values up by 1 index
   }
+  // do the actual insertion at index 4
   values[4] = 42;
   size++;
   cout << "Inserted value at index 4 ---------";
