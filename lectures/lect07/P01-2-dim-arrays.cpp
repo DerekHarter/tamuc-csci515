@@ -44,17 +44,18 @@ int main()
   // a nested loop
   for (int record = 0; record < NUM_RECORDINGS; record++)
   {
-    cout << "Rec " << setw(3) << setfill('0') << record << ":"
+    cout << "Rec " << setw(3) << setfill('0') << record << ": ";
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
-	   << setw(6) << fixed << setprecision(4) <<
-      experimentPositions[record][dim] = 0.0;
+      cout << setw(6) << fixed << setprecision(4)
+	   << experimentPositions[record][dim]
+	   << " ";
     }
   }
 
   // 2-D arrays in C are organized in memory using row ordering
   // Compiler does not need the number of rows, put it needs
   // to know/specify the number of columns.
-  initExperimentArray(experimentPositions, NUM_RECORDINGS);
-  displayExperimentArray(experimentPositions, NUM_RECORDINGS);
+  //initExperimentArray(experimentPositions, NUM_RECORDINGS);
+  //displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 }
