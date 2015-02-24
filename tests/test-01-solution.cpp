@@ -90,7 +90,11 @@ int main()
   cout << "Hypotenuse of triangle with sides 3 and 4: " << c << endl;
 
   // task 4
-  
+  const int ARRAY_SIZE = 10;
+  int values[ARRAY_SIZE];
+
+
+
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
