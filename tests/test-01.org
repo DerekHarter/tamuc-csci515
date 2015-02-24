@@ -47,9 +47,9 @@ Perform the following tasks:
    and ~b~.  The function should calculate the hypotenuse of 
    a right triangle using the ~a~ and ~b~ parameters, according
    to this formula:
-$$
-c = \sqrt{a^2 + b^2}
-$$
+  $$
+  c = \sqrt{a^2 + b^2}
+  $$
   e.g. the hypotenuse is the square root of adding together the
   square of a and b.  This value should be calculated and returned
   (as a floating point result) as a result of calling your function.
