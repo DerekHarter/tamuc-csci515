@@ -4,9 +4,11 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   February 5, 2015
- * @assg   Lecture 07, P02 Intro to 2-D arrays
+ * @assg   Lecture 07, P02 Processing 2-D arrays using functions
  *
- * @description Examples of declaring and initializing a 2-D array
+ * @description Examples of more advanced processing of 2-D arrays
+ *   using functions to read from files, and calculated and display
+ *   results.
  */
 #include <iostream>
 #include <iomanip>
@@ -72,7 +74,7 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
        << setw(6) << right << "Y" << " "
        << setw(6) << right << "Z"
        << endl;
-    
+
   for (int record = 0; record < numRecordings; record++)
   {
     cout << setw(3) << right << setfill('0') << record << " ";
