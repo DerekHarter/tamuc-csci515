@@ -17,14 +17,22 @@ const int NUM_RECORDINGS = 5; // number of rows/records/experiments in table
 const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
 
 
-/** Initialize Experiment Array
- * Initialize t
- * of this program will begin with this function.
+/** Initialize Experiment Table
+ * Initialize the 2-D table of experiment recordings.
+ * This functions takes a (passed by reference) 2-D table
+ * of experiment recordings.  All of the values in all columns
+ * of the table are initialized to 0.0.  The table is a 2-D array
+ * of floating point values, with 3-columns, representing 3 dimensions
+ * (x,y,z) of a position of some item recorded during an experiment.
  *
- * @returns An int value.  By default, if we don't specify a return or
- *           exit value, 0 is returned to indicate successful program
- *           completion.  A non-zero value indicates an error or
- *           problem with execution.
+ * @param experimentPositions The 2-D array of experiment positions
+ *   we are to initialize.
+ * @param size The number of recordings (the number of rows) in the
+ *   experiment.
+ *
+ * @returns void.  However, since arrays are passed by reference,
+ *   as a side effect we initialize the experimentPositions table
+ *   of values to 0.0 and return to the caller.
  */
 int main()
 {
