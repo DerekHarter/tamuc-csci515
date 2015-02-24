@@ -29,7 +29,8 @@ int main()
   int seed;
   int r;
 
-  cout << "----- Task 1: Enter a seed value: ";
+  cout << "----- Task 1" << endl;
+  cout << "Enter a seed value: ";
   cin >> seed;
   srand(seed);
   for (int idx = 0; idx < 10; idx++)
