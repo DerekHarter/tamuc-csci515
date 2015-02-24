@@ -43,6 +43,22 @@ float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
   - reasons: arrays are stored using row major ordering, thus we need to
     know the number of columns in order to correctly calculate item
     position.
+- 2-D arrays require a nested loop (2 loops) to process/init
+- Function to initialize our 2-D array
+
+#+begin_src c
+void initArray(float values[][NUM_DIMENSIONS], int size)
+{
+  // iterate over all of the rows/records of the array
+  for (int record = 0; record < size; record++)
+  {
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      values[record][dim] = 0.0
+    }
+  }
+}
+#+end_src
 
 * Second Session (11:45 - 12:30)
 ** Example of processing a 2-D array
