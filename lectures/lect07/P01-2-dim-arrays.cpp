@@ -17,7 +17,7 @@ const int NUM_RECORDINGS = 5; // number of rows/records/experiments in table
 const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
 
 
-/** Initialize Experiment Table
+/** Initialize Experiment Array
  * Initialize the 2-D table of experiment recordings.
  * This functions takes a (passed by reference) 2-D table
  * of experiment recordings.  All of the values in all columns
@@ -34,8 +34,8 @@ const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
  *   as a side effect we initialize the experimentPositions table
  *   of values to 0.0 and return to the caller.
  */
-int initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
-			int numRecordings)
+void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
+			 int numRecordings)
 {
   for (int record = 0; record < numRecordings; record++)
   {
@@ -44,6 +44,28 @@ int initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
       experimentPositions[record][dim] = 0.0;
     }
   }
+}
+
+
+/** Display Experiment Array
+ * Display the 2-D table of experiment recordings.  This functions
+ * takes a 2-D table of experiment recordings.  This function does
+ * not return a result, but as a side effect it display the
+ * values in the experiment array table as a table on standard
+ * output
+ *
+ * @param experimentPositions The 2-D array of experiment positions
+ *   we are to initialize.
+ * @param size The number of recordings (the number of rows) in the
+ *   experiment.
+ *
+ * @returns void.  However, since arrays are passed by reference,
+ *   as a side effect we initialize the experimentPositions table
+ *   of values to 0.0 and return to the caller.
+ */
+void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
+			int numRecordings)
+{
 }
 
 
