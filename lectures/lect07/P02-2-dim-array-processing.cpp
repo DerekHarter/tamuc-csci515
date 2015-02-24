@@ -171,14 +171,12 @@ void displayExperimentDistances(float distances[], int numDistances)
 {
   // display a header
   cout << setfill (' ') << setw(4) << left << "Rec "
-       << setw(7) << right << "X" << " "
-       << setw(7) << right << "Y" << " "
-       << setw(7) << right << "Z"
+       << setw(7) << right << "Dist" << " "
        << endl;
 
-  for (int record = 0; record < numRecordings; record++)
+  for (int record = 0; record < numDistances; record++)
   {
-    cout << setw(3) << right << setfill('0') << record << " ";
+    cout << setw(3) << right << setfill('0') << record + 1 << " ";
     for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
     {
       cout << setw(7) << fixed << setprecision(4) << setfill(' ')
