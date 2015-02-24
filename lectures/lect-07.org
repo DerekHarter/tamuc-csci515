@@ -17,16 +17,18 @@
 - By convention, the first identifier for a 2-D array specifies the
   table's row, and the second identifier specifies the column.
 - This makes sense, as the row is the *record* or *trial* of a table
-  e.g. it is the set of related inforamtion.
+  e.g. it is the set of related information.
 - The column is a particular attribute or piece of information about
   a record or trial.
 - So, to initialize a 2-D array:
 
 #+begin_src c
-const int NUM_TRIALS = 5;    // number of rows in table
+const int NUM_RECORDINGS = 5; // number of rows in table
 const int NUM_DIMENSIONS = 3; // number of columns in table
 
-float experimentPositions[NUM_TRIALS][NUM_DIMENSIONS];
+// Each recording records a 3-dimensional position of a particle in
+// our experiment
+float experimentPositions[NUM_RECORDS][NUM_DIMENSIONS];
 #+end_src
 
 
