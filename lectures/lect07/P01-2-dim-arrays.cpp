@@ -11,6 +11,11 @@
 #include <iostream>
 using namespace std;
 
+// global constant declarations
+const int NUM_RECORDINGS = 5; // number of rows/records/experiments in table
+const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -22,39 +27,4 @@ using namespace std;
  */
 int main()
 {
-  // Declare an array
-  int c[10];
-
-  // index an array
-  c[0] = 5;
-  c[1] = 10;
-  c[10] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
-
-  // loop to initialize an array
-  // always, ALWAYS, ALWAYS index starting at 0, up to (but not including)
-  // the max value.  Arrays in c are always index from 0 to N-1
-  for (int idx = 0; idx < 10; idx++)
-  {
-    c[idx] = 0;
-  }
-
-  // Can use an initializer list when declaring arrays, though not common
-  // in real programs
-  int d[5] = {0, 1, 2, 3, 4};
-
-  // Basic loop to access first 5 values in c and d
-  for (int idx = 0; idx < 5; idx++)
-  {
-    cout << "c[" << idx << "] = " << c[idx] << " "
-	 << "d[" << idx << "] = " << d[idx] << endl;
-  }
-
-  // ERROR ERROR Danger Will Robinson!
-  // Its is very bad to try and access past the end of an array
-  for (int idx = 0; idx < 10; idx++)
-  {
-    cout << "c[" << idx << "] = " << c[idx] << " "
-	 << "d[" << idx << "] = " << d[idx] << endl;
-  }
-
 }
