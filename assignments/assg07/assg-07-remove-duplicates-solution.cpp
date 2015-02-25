@@ -18,27 +18,24 @@ using namespace std;
 
 
 /** Initialize array to random range
- * Initialize an array to values 
- * and the size of the array as input.  We return the minimum value as the
- * result of this function.
+ * Initialize an array of integers to values within a random range.
+ * We are given the array (and its size), and the begin and end of the
+ * range.
  *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array we are searching.
+ * @param values An array of integers, passed by reference.
+ * @param size The size of the array we initializing.
+ * @param beginRange An integer, the beginning of the range
+ * @param endRange An integer, the end of the range
  *
- * @returns float The minimum value in the array
+ * @returns void Nothing is explicitly returned, but as a side effect
+ *   of calling this function, the array of values is initialized to
+ *   a random value in the range [beginRange, endRange] (inclusive)
  */
-float findMinimumValue(float values[], int size)
+void initRandomRange(int values[], int size, int beginRange, int endRange)
 {
-  float minimum;
-
   // We initialize minimum to the first value, then search values 1..size-1 for smaller ones
-  minimum = values[0];
-  for (int idx = 1; idx < size; idx++)
+  for (int idx = 0; idx < size; idx++)
   {
-    if (values[idx] < minimum)
-    {
-      minimum = values[idx];
-    }
   }
 
   return minimum;
