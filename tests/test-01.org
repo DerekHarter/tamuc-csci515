@@ -22,11 +22,11 @@ Perform the following tasks:
 
 1. In the main function of your program, write an index controlled
    loop that uses an index to execute 10 times.  Inside of your loop,
-   generate a random number between 1 and 4, and display the random
-   number to standard output.  If the number is a 1, display a special
-   message "I generated a 1!".  The output from this task and loop in
-   your main function should look like the first part of the example
-   output given below.
+   generate a random number between 1 and 4 (inclusive), and display
+   the random number to standard output.  If the number is a 1,
+   display a special message "I generated a 1!".  The output from this
+   task and loop in your main function should look like the first part
+   of the example output given below.
 
 2. After the previous task in your main function, write code to
    perform the following task.  I have given you a file named
