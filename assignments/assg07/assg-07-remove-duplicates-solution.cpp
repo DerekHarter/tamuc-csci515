@@ -59,7 +59,7 @@ void displayArrayValues(int values[], int size)
 {
   for (int idx = beginRange; idx <= endRange; idx++)
   {
-    cout << "values[" << setw(3) << setfill('0') << idx << "] "
+    cout << "[" << setw(3) << setfill('0') << idx << "] "
 	 << setw(10) << fixed << showpoint << setprecision(8) << values[idx] << endl;
   }
 }
