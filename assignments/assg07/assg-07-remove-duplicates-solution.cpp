@@ -121,9 +121,13 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
  */
 int findUniqueValues(int values[], int size, int uniques[])
 {
-  int uniqueSize = 0;
+  int uniqueSize;
   int value;
-  
+
+  // Look at all values in the input array, insert them into uniques
+  // if they are not already there.  Initially the uniques array
+  // is empty.
+  uniqueSize = 0;
   for (int idx = 0; idx < size; idx++)
   {
     value = values[idx];
