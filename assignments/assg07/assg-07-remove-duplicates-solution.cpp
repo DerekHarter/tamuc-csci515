@@ -70,7 +70,7 @@ void displayArray(int values[], int size)
  *
  * @returns void Results printed to standard output as a side effect.
  */
-bool searchForValue(int values[], int size)
+bool searchForValue(int values[], int size, int valueToSearchFor)
 {
 }
 
