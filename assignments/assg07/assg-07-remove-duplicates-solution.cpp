@@ -115,8 +115,9 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
  *   passed by reference, so when we create it it will be returned
  *   to the caller of this function.
  *
- * @returns bool True if the value is found in the array, False
- *   othersies.
+ * @returns int The size of the unique values array that is
+ *   created.  This can be as small as 0, to as large as
+ *   size, the original size of the input array.
  */
 int findUniqueValues(int values[], int size, int uniques[])
 {
