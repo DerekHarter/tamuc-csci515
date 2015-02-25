@@ -35,7 +35,7 @@ Perform the following tasks:
    read in the values from the file and display the values to standard
    output.  Your sentinel controlled loops should simply be a while
    loop that executes until the read from the file fails.  The output
-   from reading the give file will be exactly as given in the example
+   from reading the file will be exactly as given in the example
    output shown below.
 
 3. Write a function named ~calculateHypotenuse~.  The function will
