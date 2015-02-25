@@ -1,4 +1,4 @@
-% Created 2015-02-24 Tue 13:47
+% Created 2015-02-25 Wed 09:36
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -30,9 +30,8 @@
 
 \section{First Session (11 - 11:40)}
 \label{sec-1}
-\subsection{Multidimensional Arrays}
+\subsection{Two-Dimensional Arrays}
 \label{sec-1-1}
-
 \begin{itemize}
 \item Two-dimensional arrays represent \textbf{TABLES} of values
 \item Tables are a very fundamental data structure/concept.  Represent
@@ -54,7 +53,7 @@ const int NUM_DIMENSIONS = 3; // number of columns in table
 
 // Each recording records a 3-dimensional position of a particle in
 // our experiment
-float experimentPositions[NUM_RECORDS][NUM_DIMENSIONS];
+float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
 \end{minted}
 
 \begin{itemize}
@@ -73,19 +72,53 @@ because reasons.
 know the number of columns in order to correctly calculate item
 position.
 \end{itemize}
-\item 
+\item 2-D arrays require a nested loop (2 loops) to process/init
+\item Function to initialize our 2-D array
+\end{itemize}
+
+\begin{minted}[linenos=true,frame=lines,numbersep=5pt,fontsize=\footnotesize]{c}
+void initExperimentArray(float values[][NUM_DIMENSIONS], int size)
+{
+  // iterate over all of the rows/records of the array
+  for (int record = 0; record < size; record++)
+  {
+    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
+    {
+      values[record][dim] = 0.0;
+    }
+  }
+}
+\end{minted}
+\subsection{Two-Dimensional Array Layout in Memory}
+\label{sec-1-2}
+\begin{itemize}
+\item Show example of 2-D array in memory using debugger.
 \end{itemize}
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
-\subsection{More array Operations}
+\subsection{Example of processing a 2-D array}
 \label{sec-2-1}
+\begin{itemize}
+\item Initialize 2-D array
+\item Read 2-D array from file of DSV values
+\item Display 2-D array as a table
+\item Process 2-D array
+\end{itemize}
+\subsection{Three and higher-dimensional arrays}
+\label{sec-2-2}
+\begin{itemize}
+\item Allocate a 3-D array.
+\item Initialize a 3-D array using 3 nested loops.
+\end{itemize}
+\section{Third Session (12:40 - 1:40)}
+\label{sec-3}
+\subsection{Array operations that modify size of array}
+\label{sec-3-1}
 \begin{itemize}
 \item Shifting elements in an array
 \item Add element to an array
 \item Remove element from an array
+\item Swap element with first element
 \end{itemize}
-
-\section{Third Session (12:40 - 1:40)}
-\label{sec-3}
 % Emacs 24.3.1 (Org mode 8.2.4)
 \end{document}
