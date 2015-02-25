@@ -121,23 +121,23 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
  */
 int findUniqueValues(int values[], int size, int uniques[])
 {
-  int uniqueSize;
+  int uniquesSize;
   int value;
 
   // Look at all values in the input array, insert them into uniques
   // if they are not already there.  Initially the uniques array
   // is empty.
-  uniqueSize = 0;
+  uniquesSize = 0;
   for (int idx = 0; idx < size; idx++)
   {
     value = values[idx];
     // if the uniques array does not contain the value, we
     // add it to the end of the uniques
-    if (!searchForValue(uniques, uniqueSize, value))
+    if (!searchForValue(uniques, uniquesSize, value))
     {
-      uniques[uniqueSize] = value;
+      uniques[uniquesSize] = value;
       // size of uniques has now increased by 1
-      uniqueSize++;
+      uniquesSize++;
     }
   }
 
