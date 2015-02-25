@@ -45,7 +45,7 @@ float findMinimumValue(float values[], int size)
 }
 
 
-/** display array values
+/** display array
  * Display values in an array in a given range.  We indicate the
  * indices and format the values to give a uniform, nice appearance
  * on standard output.
@@ -55,7 +55,7 @@ float findMinimumValue(float values[], int size)
  *
  * @returns void Results printed to standard output as a side effect.
  */
-void displayArrayValues(int values[], int size)
+void displayArray(int values[], int size)
 {
   for (int idx = beginRange; idx <= endRange; idx++)
   {
