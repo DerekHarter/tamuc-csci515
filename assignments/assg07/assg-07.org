@@ -96,14 +96,16 @@ Perform the following tasks:
    its result e.g. the size of the array after removing all
    duplicates.
 
-3. Write a function called ~findSum~.  This function takes an
-   array of floats as its first parameter, and the size of the array
-   as its second parameter.  This function again is almost a complete
-   repeat of the previous two function, but in this case you need to
-   add a variable to keep track of and calculate the running ~sum~ of
-   the values in the array.  This function returns a float value,
-   which should be the sum of all of the values in the given input
-   array.
+3. In your main function, declare an array of integers called ~values~
+   of size 10.  Initialize all of the values in this array to random
+   integers in the range from 0 to 4.  Declare another array called
+   ~uniques~ of 10 integers.  Use your ~removeDuplicates~ functions to
+   remove any duplicate values, and remember to get the new size of
+   the ~uniques~ array from the function, after duplicates have been
+   removed.
+
+4. Display the values array before duplicates were removed, and the uniques
+
 
 4. Write a function called ~findAverage~.  This function takes
    an array of floats as its first parameter, and the size of the array
