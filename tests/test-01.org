@@ -133,10 +133,9 @@ time in order to receive credit.
    (most) all of the standard class style/formatting guidelines that
    we have been practicing and using in our labs and assignments for
    this course.
-1. 20+ pts. Your ~displayArrayValues~ function must correctly format
-   the displayed output on standard output.  Your program should work
-   if the begin and end range are equal, and should show now output
-   when begin is greater than the end specified.
+1. 20 pts. Task 1.  You must use an index controlled for loop, and
+   have an if statement.  Your output for this task must be as
+   shown in the example output.
 1. 20+ pts.  You must use I/O formatting to correctly display the
    output index ranges of the arrays as shown.  
 1. 20+ pts. Your main function must prompt the user as specified, and
