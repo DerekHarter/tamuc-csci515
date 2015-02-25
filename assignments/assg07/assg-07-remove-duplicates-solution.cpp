@@ -17,8 +17,8 @@ using namespace std;
 
 
 
-/** find minimum value
- * Find the minimum value in an array of floats.  We are given the array
+/** Initialize array to random range
+ * Initialize an array to values 
  * and the size of the array as input.  We return the minimum value as the
  * result of this function.
  *
