@@ -54,7 +54,7 @@ void initRandomRange(int values[], int size, int beginRange, int endRange)
  */
 void displayArray(int values[], int size)
 {
-  for (int idx = beginRange; idx <= endRange; idx++)
+  for (int idx = 0; idx < size; idx++)
   {
     cout << "[" << setw(3) << setfill('0') << idx << "] "
 	 << setw(10) << fixed << showpoint << setprecision(8) << values[idx] << endl;
