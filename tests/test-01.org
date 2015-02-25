@@ -125,8 +125,9 @@ time in order to receive credit.
 
 ** Program Execution, Output and Functional Requirements
 
-1. Your program must compile, run and produce some sort of output to be
-  graded. 0 if not satisfied.
+1. Your program must compile, run and produce some sort of output to
+   be graded. You will loose at least 1/3 of the total points (33) if
+   your program does not compile and run when submitted.
 1. 40+ pts.  Your program must have the required named function,
    that accepts the required input parameters and return the required
    values (if any).
