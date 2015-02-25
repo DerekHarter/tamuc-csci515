@@ -61,6 +61,12 @@ int main()
   int values[10];
   int uniques[10];
 
+  // initialize to random values
+  srand(time(0));
+  for (int idx = 0; idx < ARRAY_SIZE; idx++)
+  {
+    values[idx] = 
+  }
   
   //  Return 0 to indicate program terminated successfully
   return 0;
