@@ -85,14 +85,14 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
     {
       // the first occurrence we find, we have our answer
       // and we return immediately
-      return True;
+      return true;
     }
   }
 
   // if we look at all the values and get to this point, then
   // we failed to find the value being searched for, so
   // we return a False answer
-  return False;
+  return false;
 }
 
 
