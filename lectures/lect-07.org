@@ -69,7 +69,6 @@ void initExperimentArray(float values[][NUM_DIMENSIONS], int size)
 
 ** Three and higher-dimensional arrays
 
-
 * Third Session (12:40 - 1:40)
 ** Array operations that modify size of array
 - Shifting elements in an array
