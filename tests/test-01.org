@@ -128,9 +128,11 @@ time in order to receive credit.
 1. Your program must compile, run and produce some sort of output to
    be graded. You will loose at least 1/3 of the total points (33) if
    your program does not compile and run when submitted.
-1. 40+ pts.  Your program must have the required named function,
-   that accepts the required input parameters and return the required
-   values (if any).
+1. 10 pts (1 letter grade).  Up to 1 letter grade will be awarded for
+   formatting and style issues for the test.  Your program must meet
+   (most) all of the standard class style/formatting guidelines that
+   we have been practicing and using in our labs and assignments for
+   this course.
 1. 20+ pts. Your ~displayArrayValues~ function must correctly format
    the displayed output on standard output.  Your program should work
    if the begin and end range are equal, and should show now output
