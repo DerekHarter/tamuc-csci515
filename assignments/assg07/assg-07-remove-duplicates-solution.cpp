@@ -136,6 +136,8 @@ int findUniqueValues(int values[], int size, int uniques[])
       uniqueSize++;
     }
   }
+
+  return uniqueSize;
 }
 
 /** main entry point
