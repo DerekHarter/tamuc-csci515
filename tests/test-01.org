@@ -54,17 +54,16 @@ Perform the following tasks:
 
 4. Create an array of integers of size $10$ named values.  Initialize
    all of values to $0$ in a loop in your main function.  Create a
-   function named ~initNegative~ that takes an array of integers
-   and a size as its two input parameters.  This will be a void
-   function (it will return no result).  This functions
-   should initialize each value to be equal to the negative
-   of the index, e.g. the value at index $0$ will be $0$, the
-   value at index $1$ will be $-1$, the value at index $2$ will be
-   $-2$, etc.  Show an example of calling your function in your
-   ~main()~ function.  In your main function, write a loop that
-   displays the contents of the array after calling your ~initNegative~
-   function.  An example of the output from this task is shown
-   below as the last part of the example output.
+   function named ~initNegative~ that takes an array of integers and a
+   size as its two input parameters.  This will be a void function (it
+   will return no result).  This functions should initialize each
+   value to be equal to the negative of the index, e.g. the value at
+   index $0$ will be $0$, the value at index $1$ will be $-1$, the
+   value at index $2$ will be $-2$, etc.  Show an example of calling
+   your function in your ~main()~ function.  In your main function,
+   write a loop that displays the contents of the array after calling
+   your ~initNegative~ function.  An example of the output from this
+   task is shown below as the last part of the example output.
 
 Your program output should look something close to the following when I
 run your program:
