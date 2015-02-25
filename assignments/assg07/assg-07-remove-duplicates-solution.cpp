@@ -80,10 +80,8 @@ int main()
 
   // initialize to random values
   srand(time(0));
-  for (int idx = 0; idx < ARRAY_SIZE; idx++)
-  {
-    values[idx] = rand() % 5; // value in range 0 to 4
-  }
+  initRandomRange(values, ARRAY_SIZE, 0, 4);
+  displayArray(values, ARRAY_SIZE);
   
   //  Return 0 to indicate program terminated successfully
   return 0;
