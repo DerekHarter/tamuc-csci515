@@ -168,6 +168,10 @@ int main()
   displayArray(values, ARRAY_SIZE);
   cout << endl;
 
+  // create the array of uniques from the input values
+  int uniquesSize;
+  uniquesSize = findUniqueValues(values, ARRAY_SIZE, uniques);
+  
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
