@@ -131,19 +131,20 @@ submitted by the due date will be considered for evaluation.
 
 ** Program Execution, Output and Functional Requirements
 
-1. Your program must compile, run and produce some sort of output to be
-  graded. 0 if not satisfied.
-1. 35+ pts.  Your implementation of the ~searchForValue~ function must be correct
-   and must use the correct parameters and return the correct return type as
-   specified above for the assignment. 
-1. 45+ pts. Your implementation of the ~removeDuplicates~ function must be correct.
-   The function should take the stated parameters as input.  The function must
-   return an integer value, the size of the output array after duplicates were
-   found and removed.  The function must perform its task correctly.
-1. 20+ pts. You should create the ~values~ and ~uniques~ arrays in your ~main()~
-   function as specified.  Your ~values~ array should be initialized with random
-   values.  Your output for your program should look exactly as shown in the
-   example output.
+1. Your program must compile, run and produce some sort of output to
+   be graded. 0 if not satisfied.
+1. 35+ pts.  Your implementation of the ~searchForValue~ function must
+   be correct and must use the correct parameters and return the
+   correct return type as specified above for the assignment.
+1. 45+ pts. Your implementation of the ~removeDuplicates~ function
+   must be correct.  The function should take the stated parameters as
+   input.  The function must return an integer value, the size of the
+   output array after duplicates were found and removed.  The function
+   must perform its task correctly.
+1. 20+ pts. You should create the ~values~ and ~uniques~ arrays in
+   your ~main()~ function as specified.  Your ~values~ array should be
+   initialized with random values.  Your output for your program
+   should look exactly as shown in the example output.
 
 
 ** Program Style
