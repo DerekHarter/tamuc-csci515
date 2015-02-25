@@ -80,7 +80,7 @@ Perform the following tasks:
    in the array and so there is no possibility that you can find the
    value that is being asked to search for.
 
-2. Write a function called ~removeDuplicates~.  This functions
+2. Write a function called ~findUniqueValues~.  This functions
    takes an input array of int values, and the size of the array
    as its first two parameters.  You should also pass another
    array of int values as a third parameter.  This array should
