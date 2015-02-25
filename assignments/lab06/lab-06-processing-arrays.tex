@@ -1,4 +1,4 @@
-% Created 2015-02-19 Thu 18:02
+% Created 2015-02-25 Wed 09:38
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -34,7 +34,7 @@
 \label{sec-1}
 \begin{center}
 \begin{tabular}{ll}
-Due: & In Lab, Wednesday February 25, by 4:05 pm (lab end time)\\
+Due: & In Lab, Wednesday March 4, by 4:05 pm (lab end time)\\
 \end{tabular}
 \end{center}
 \section*{Objectives}
@@ -78,17 +78,37 @@ less than the size of the input array.  If \verb~beginRange~ ==
 \verb~endRange~ then no values will be output. Your function does not
 return anything, so it is a void function.  Instead your function
 displays its output to standard out, and it should be formatted to
-look exactly like this output:
+look exactly like the output shown below.  \textbf{HINT}: you may need to
+use the \verb~setw()~, \verb~setprecision()~, \verb~setfill()~ and \verb~fixed~ I/O
+manipulators to get the output formatted exactly as shown.
 
 \item In your main program, you should leave the code alone that reads in
 the array values from the file.  After the array is read in, you
-should first prompt the user for a begin and end range, and call the
-\verb~displayArrayValues~ function to display the values in the array in
-that range.
+should first prompt the user for a begin and end range, and call
+the \verb~displayArrayValues~ function to display the values in the
+array in that range.
 \end{enumerate}
 
 Your program output should look something close to the following when I
 run your program:
+
+\begin{verbatim}
+I will display a range of values from our array.
+Enter index to start at: 5
+Enter index to end at: 15
+values[005] 0.52743745
+values[006] 0.58105505
+values[007] 0.16465282
+values[008] 0.28310502
+values[009] 0.59936452
+values[010] 0.87698799
+values[011] 0.34905022
+values[012] 0.03936137
+values[013] 0.22738582
+values[014] 0.59080577
+values[015] 0.87810069
+\end{verbatim}
+
 
 \textbf{NOTE}: Now that our programs have more functions than just the
 \verb~main()~ function, the use of the function headers becomes meaningful
