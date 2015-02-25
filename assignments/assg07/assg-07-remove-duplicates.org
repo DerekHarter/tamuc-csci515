@@ -89,8 +89,8 @@ Perform the following tasks:
    this array will end up being simply a copy of the original
    array.  This function should copy over the values from
    the input array into the output array, but as described above
-   it should only copy over unique values (duplicates will)
-   not be copied to the output array.  The resulting size of
+   it should only copy over unique values (duplicates will
+   not be copied to the output array).  The resulting size of
    the array can be smaller than the input array.  Thus this
    function should return the size of the output array as
    its result e.g. the size of the array after removing all
