@@ -78,6 +78,21 @@ void displayArray(int values[], int size)
  */
 bool searchForValue(int values[], int size, int valueToSearchFor)
 {
+  // We search sequentially for the value
+  for (int idx = 0; idx < size; idx++)
+  {
+    if (values[idx] == valueToSearchFor)
+    {
+      // the first occurrence we find, we have our answer
+      // and we return immediately
+      return True;
+    }
+  }
+
+  // if we look at all the values and get to this point, then
+  // we failed to find the value being searched for, so
+  // we return a False answer
+  return False;
 }
 
 
