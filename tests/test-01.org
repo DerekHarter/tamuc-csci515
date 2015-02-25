@@ -16,7 +16,7 @@ You have 2 hours (our regularly scheduled lab time) to complete the
 following tasks.  Create a single file, named test01.cpp, in a visual
 studio project called Test01.  Set up the Visual Studio projects using
 the normal settings for our class and labs, as we have practiced for
-the past 7 weeks. 
+the past 7 weeks.
 
 Perform the following tasks:
 
