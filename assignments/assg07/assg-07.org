@@ -41,16 +41,44 @@ values in the array
 2
 #+end_example
 
+The general idea or algorithm that is easiest to implement to solve
+this task is as follows.  Iterate through each value in the input
+array.  For each value in the input, first see if it already exists in
+the output array, and if it doesn't then copy it to the output array.
+Of course, if it already exists in the output array, then you will do
+nothing.
 
+In order to implement this algorithm, it would be nice to have a
+function that takes an array as input and searches the array to
+determine if a value is in the array or not.  This function should
+return True if the value is in the array, and False otherwise.  This
+function should be able to handle an array of size 0, and the answer
+when searching for a value in an array with nothing yet in it would be
+False, e.g. the value is not yet present in the array.
 
+Given this search function that can handle searching in an empty
+array, the implementation of the copying from the input to the
+output array, checking for duplicates, becomes relatively
+straightforward.  You simply need to start with the output array
+being empty (with a size of 0).  For every value in the input array,
+you simply perform the search, and if it is not in the output array,
+you put it on the end of the array, and increase the size of the array
+by 1.  The result, after iterating through the whole input array, should
+be to only copy the values the first time they are seen to the output
+array.
 
 Perform the following tasks:
 
-1. Write a function called ~findMinimumValue~.  This function takes
-   an array of floats as its first parameter, and the size of the
-   array as its second parameter.  This function should search through
-   all of the values in the array and return the value that is the
-   smallest (the minimum) in the array.
+1. Write a function called ~searchForValue~.  This function takes
+   an array of int and the size of the array as its parameters.  This
+   function also takes a third parameter, an int, which is the value to
+   search for.  This function returns a boolean result of True if the
+   value being searched for is in the given array, and False if the
+   value is not in the array.  If you pass in an empty array (e.g. an
+   array of size 0), the function should still work.  If the array is
+   empty then of course the answer is False, since there are no values
+   in the array and so there is no possibility that you can find the
+   value that is being asked to search for.
 
 2. Write a function called ~findMaximumValue~.  This function takes an
    array of floats as its first parameter, and the size of the array
