@@ -79,8 +79,10 @@ int main()
   // initialize to random values
   srand(time(0));
   initRandomRange(values, ARRAY_SIZE, 0, 4);
+  cout << "----- Values array (with duplicates):" << endl;
   displayArray(values, ARRAY_SIZE);
-  
+  cout << endl;
+
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
