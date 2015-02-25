@@ -34,11 +34,11 @@ using namespace std;
 void initRandomRange(int values[], int size, int beginRange, int endRange)
 {
   // We initialize minimum to the first value, then search values 1..size-1 for smaller ones
+  int scale = endRange - beginRange;
   for (int idx = 0; idx < size; idx++)
   {
+    values[idx] = 
   }
-
-  return minimum;
 }
 
 
