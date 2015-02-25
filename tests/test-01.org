@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday March 4, by 4:05 pm (lab end time) |
+| Due: | In Lab, Wednesday March 11, by 4:05 pm (lab end time) |
 
 * Description
 You have 2 hours (our regularly scheduled lab time) to complete the
