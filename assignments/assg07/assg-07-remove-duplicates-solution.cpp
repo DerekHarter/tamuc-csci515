@@ -45,6 +45,26 @@ float findMinimumValue(float values[], int size)
 }
 
 
+/** display array values
+ * Display values in an array in a given range.  We indicate the
+ * indices and format the values to give a uniform, nice appearance
+ * on standard output.
+ *
+ * @param values An array of ints, passed by reference.
+ * @param size An integer, the number of values in the array.
+ *
+ * @returns void Results printed to standard output as a side effect.
+ */
+void displayArrayValues(int values[], int size)
+{
+  for (int idx = beginRange; idx <= endRange; idx++)
+  {
+    cout << "values[" << setw(3) << setfill('0') << idx << "] "
+	 << setw(10) << fixed << showpoint << setprecision(8) << values[idx] << endl;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
