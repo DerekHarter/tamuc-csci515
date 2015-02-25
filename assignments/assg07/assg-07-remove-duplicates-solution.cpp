@@ -141,7 +141,8 @@ int findUniqueValues(int values[], int size, int uniques[])
     }
   }
 
-  return uniqueSize;
+  // Retrun size of the created uniques array to the caller
+  return uniquesSize;
 }
 
 /** main entry point
