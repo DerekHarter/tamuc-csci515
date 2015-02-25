@@ -96,18 +96,24 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
 }
 
 
-/** search for value
- * Search the given array for a particular value.  We are given
- * an array of integers (and its size).  We search for a
- * particular value and return True if we find the value in
- * the array, or False otherwise.  This functions correctly
- * handles an empty array as input (e.g. size = 0, we return
- * False, could not find the value in the array).
+/** find unique values
+ * Search a given input array of integers for unique values.  We
+ * copy over unique values into a result array.  The unique
+ * array that results should only have unique values from the
+ * original input array (e.g. all duplicates will be removed).
+ * This function returns the size of the unique array that is
+ * created.  This size can be the same size as the original
+ * array (if it contains no duplicate values), or as small as 0
+ * (if the original array we are given is empty, we return an
+ * empty array as result).
  *
- * @param values An array of ints, passed by reference.
- * @param size An integer, the number of values in the array.
- * @param valueToSearchFor An integer, the value to search for in
- *   the input array.
+ * @param values An array of ints, the array to search as input
+ *   to remove duplicates and find unique values from.
+ * @param size An integer, the number of values in the input array.
+ * @param uniques An array of sufficient size to hold the
+ *   unique values we find in the input array.  This array is
+ *   passed by reference, so when we create it it will be returned
+ *   to the caller of this function.
  *
  * @returns bool True if the value is found in the array, False
  *   othersies.
