@@ -171,7 +171,10 @@ int main()
   // create the array of uniques from the input values
   int uniquesSize;
   uniquesSize = findUniqueValues(values, ARRAY_SIZE, uniques);
-  
+  cout << "----- Uniques array (duplicates removed):" << endl;
+  displayArray(uniques, uniquesSize);
+  cout << endl;
+
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
