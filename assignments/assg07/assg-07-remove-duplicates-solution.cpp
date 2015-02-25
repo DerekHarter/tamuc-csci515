@@ -16,61 +16,6 @@
 using namespace std;
 
 
-// global constants, used to determine array properties
-const int NUM_VALUES = 100;
-const string INPUT_FILE_NAME = "assg-06-float-array.txt";
-
-
-/** read in file of floats
- * Read in a file of floating point values into the array provided as
- * input to this function.  Arrays are passed by references, thus by
- * reading the values into the array, the values will be available to the
- * caller of this function.  This function opens up and reads the values
- * from the file, one line at a time.
- *
- * @param values An array of floats, passed by reference.  This function assumes
- *    array has been correctly created of correct size to hold all of the values
- *    from the file we read them in from.
- * @param size Both the size of the array given, and the number of value to read
- *    in from the file.
- * @param filename The name of the file to read our array values from.
- *
- * @returns void No explicit return value, but array values read in are returned in
- *    the values array that is passed to this function.
- */
-void readArrayFromFile(float values[], int size, string inputFileName)
-{
-  ifstream inputFile;
-  float value;
-  int idx;
-
-  // open file, test to ensure it opens properly
-  inputFile.open(inputFileName);
-  if (!inputFile)
-  {
-    cerr << "Error: readArrayFromFile: could not open file for reading named: "
-	 << inputFileName << endl;
-    exit(1);
-  }
-
-  // read in the data
-  idx = 0;
-  while (inputFile >> value)
-  {
-    values[idx] = value;
-
-    // increment index for next read
-    // be safe, if array is now full, stop reading
-    idx++;
-    if (idx >= size)
-    {
-      break;
-    }
-  }
-
-  // values are returned in the array passed by reference
-}
-
 
 /** find minimum value
  * Find the minimum value in an array of floats.  We are given the array
@@ -100,116 +45,6 @@ float findMinimumValue(float values[], int size)
 }
 
 
-/** find maximum value
- * Find the maximum value in an array of floats.  We are given the array
- * and the size of the array as input.  We return the maximum value as the
- * result of this function.
- *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array we are searching.
- *
- * @returns float The maximum value in the array
- */
-float findMaximumValue(float values[], int size)
-{
-  float maximum;
-
-  // We initialize maximum to the first value, then search values 1..size-1 for larger ones
-  maximum = values[0];
-  for (int idx = 1; idx < size; idx++)
-  {
-    if (values[idx] > maximum)
-    {
-      maximum = values[idx];
-    }
-  }
-
-  return maximum;
-}
-
-
-/** find sum
- * Find the sum of all of the values in an array of floats.  We are
- * given the array and the size of the array as input.  We return the
- * sum of all of the value as the result of this function.
- *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array we are searching.
- *
- * @returns float The sum of the values in the array
- */
-float findSum(float values[], int size)
-{
-  float sum;
-
-  // Initialily sum is 0.0, then we add up all of the values in the array
-  // using a running sum
-  sum = 0.0;
-  for (int idx = 0; idx < size; idx++)
-  {
-    sum += values[idx];
-  }
-
-  return sum;
-}
-
-
-/** find average
- * Find the average of all of the values in an array of floats.  We are
- * given the array and the size of the array as input.  We return the
- * average of all of the value as the result of this function.
- *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array we are searching.
- *
- * @returns float The average of the values in the array
- */
-float findAverage(float values[], int size)
-{
-  float sum;
-  float average;
-
-  sum = findSum(values, size);
-  average = sum / (float)size;
-
-  return average;
-}
-
-
-/** find standard deviation
- * Find the standard deviation of all of the values in an array of
- * floats.  We are given the array and the size of the array as input.
- * We return the std of all of the value as the result of this
- * function.
- *
- * @param values An array of floats, passed by reference.
- * @param size The size of the array we are searching.
- *
- * @returns float The standard deviation of the values in the array
- */
-float findStandardDeviation(float values[], int size)
-{
-  float average;
-  float sum;
-  float std;
-
-  // get the average of the values
-  average = findAverage(values, size);
-
-  // calculate the sum of the squared differences
-  sum = 0.0;
-  for (int idx = 0; idx < size; idx++)
-  {
-    sum += pow(values[idx] - average, 2.0);
-  }
-
-  // average and take square root of the sum squared differences
-  std = pow(sum / (float)size, 0.5);
-
-  return std;
-}
-
-
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
@@ -222,23 +57,11 @@ float findStandardDeviation(float values[], int size)
  */
 int main()
 {
-  float values[NUM_VALUES];
+  const int ARRAY_SIZE = 10;
+  int values[10];
+  int uniques[10];
 
-  // load the values from a file into our array
-  readArrayFromFile(values, NUM_VALUES, INPUT_FILE_NAME);
-
-  // display the results from processing our array of values
-  cout << setw(9) << right << "Minimum:"
-       << setw(12) << fixed << setprecision(8) << findMinimumValue(values, NUM_VALUES) << endl;
-  cout << setw(9) << right << "Maximum:"
-       << setw(12) << fixed << setprecision(8) << findMaximumValue(values, NUM_VALUES) << endl;
-  cout << setw(9) << right << "Sum:"
-       << setw(12) << fixed << setprecision(8) << findSum(values, NUM_VALUES) << endl;
-  cout << setw(9) << right << "Average:"
-       << setw(12) << fixed << setprecision(8) << findAverage(values, NUM_VALUES) << endl;
-  cout << setw(9) << right << "Std:"
-       << setw(12) << fixed << setprecision(8) << findStandardDeviation(values, NUM_VALUES) << endl;
-
+  
   //  Return 0 to indicate program terminated successfully
   return 0;
 }
