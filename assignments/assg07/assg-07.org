@@ -132,7 +132,7 @@ the input parameters and return value of the function.
 
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the assignment to the eCollege dropbox named
-~Assg 06 Array Calculations~ created for this submission.  Work
+~Assg 07~ created for this submission.  Work
 submitted by the due date will be considered for evaluation.
 
 * Requirements and Grading Rubrics
