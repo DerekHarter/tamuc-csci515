@@ -1,4 +1,4 @@
-#+TITLE:     Assg 07: 
+#+TITLE:     Assg 07: Remove Duplicates from Array
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-19 Thu>
