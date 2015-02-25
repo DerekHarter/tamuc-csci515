@@ -133,16 +133,17 @@ submitted by the due date will be considered for evaluation.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 40+ pts.  Your program must the first 4 functions described.
-1. 40+ pts. Each of the first 4 functions must correctly calculate the desired
-   value of the given input array.  Your average function must reuse the sum
-   function to perform its calculation.
-1. 20+ pts. You must correctly modify the original template to read from the new
-   input file for assignment 06, with 100 elements in the array.  Don't use
-   magic numbers, modify the global constants to do this correctly.
-1. 5 extra credit pts. Your program should correctly implement the calculation to
-   determine the standard deviation.  Your standard deviation function must reuse
-   the average function in doing its calculation.
+1. 35+ pts.  Your implementation of the ~searchForValue~ function must be correct
+   and must use the correct parameters and return the correct return type as
+   specified above for the assignment. 
+1. 45+ pts. Your implementation of the ~removeDuplicates~ function must be correct.
+   The function should take the stated parameters as input.  The function must
+   return an integer value, the size of the output array after duplicates were
+   found and removed.  The function must perform its task correctly.
+1. 20+ pts. You should create the ~values~ and ~uniques~ arrays in your ~main()~
+   function as specified.  Your ~values~ array should be initialized with random
+   values.  Your output for your program should look exactly as shown in the
+   example output.
 
 
 ** Program Style
