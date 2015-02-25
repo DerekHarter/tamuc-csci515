@@ -65,7 +65,7 @@ int main()
   srand(time(0));
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
-    values[idx] = rand() % 5; 
+    values[idx] = rand() % 5; // value in range 0 to 4
   }
   
   //  Return 0 to indicate program terminated successfully
