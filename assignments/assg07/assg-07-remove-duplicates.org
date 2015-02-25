@@ -111,6 +111,24 @@ Your program output should look exactly like the following when I run
 your program. 
 
 #+begin_example
+----- Values array (with duplicates):
+[000]     3
+[001]     4
+[002]     4
+[003]     4
+[004]     1
+[005]     0
+[006]     0
+[007]     2
+[008]     1
+[009]     3
+
+----- Uniques array (duplicates removed):
+[000]     3
+[001]     4
+[002]     1
+[003]     0
+[004]     2
 #+end_example
 
 
