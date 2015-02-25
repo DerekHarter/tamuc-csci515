@@ -112,12 +112,6 @@ Hypotenuse of triangle with sides 3 and 4: 5
 #+end_example
 
 
-*NOTE*: Now that our programs have more functions than just the
-~main()~ function, the use of the function headers becomes meaningful
-and required.  Make sure that all of your functions have function
-headers preceding them that document the purpose of the functions, and
-the input parameters and return value of the function.
-
 * Test Submission
 
 An eCollege dropbox has been created for this test.  You should upload
