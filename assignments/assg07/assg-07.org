@@ -104,51 +104,8 @@ Perform the following tasks:
    the ~uniques~ array from the function, after duplicates have been
    removed.
 
-4. Display the values array before duplicates were removed, and the uniques
-
-
-4. Write a function called ~findAverage~.  This function takes
-   an array of floats as its first parameter, and the size of the array
-   as its second parameter.  This function will calculate the average
-   of the values in the input array, and return this average (a float)
-   as its result.  The average is calculated by taking the sum of the
-   values and dividing this by the total number of values.  Thus
-   your implementation of this function *MUST* use the ~findSum~
-   function to calculate the sum, then compute the average from
-   (reusing) this functions result.  Thus this function will be quite a
-   bit different from the previous 3 functions, as you are reusing the
-   sum function as a black box in order to calculate an average.
-
-5. Write a function called ~findStandardDeviation~.  As with all of the
-   previous functions, this function takes an array of floats as its
-   first parameter, and the size of the array as its second parameter.
-   This function will calculate the standard deviation of the values
-   in the given input array.  The formula to calculate the standard deviation
-   is as follows:
-   $$
-   \sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}
-   $$
-   Here $\mu$ represents the average of the values in the array (which
-   you can obtain from the ~findAverage~ function), and $x_i$ is
-   mathematical notation that basically represents the elements of our
-   array indexed from $0$ up to $N-1$.  So to find the standard
-   deviation, you have to subtract each value in the array from the
-   average value and square this difference.  You add up all of the
-   squared differences, and divide the result by $N$.  This value,
-   finally, you take the square root of.  This is, by definition, the
-   standard deviation of the values in the array.  For this function,
-   you should use the ~findAverage~ function to get the average
-   ($\mu$), and then you need to loop through all of the values in the
-   array to square the difference, sum them up, and then divide by $N$
-   and finally take the square root.  You will want to use the ~pow()~
-   method from the ~cmath~ library in order to do the squaring and
-   square root calculations.
-
-6. In your ~main()~ function, modify the code at the beginning as
-   already described, to read in the 100 values from the file provided
-   for assignment 06.  Then use your 5 functions to calculate the
-   minimum, maximum, sum, average and standard deviation of the values
-   in the loaded array.
+4. Display the ~values~ array and the ~uniques~ arrays to standard
+   output.  An example of the output you should display is given below.
 
 Your program output should look exactly like the following when I run
 your program. These are the correct calculated values for the given
