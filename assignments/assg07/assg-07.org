@@ -12,30 +12,37 @@
 | Due: | Tuesday March 17, by Midnight |
 
 * Objectives
-- More practice writing C functions that take arrays as parameters
-- More work on declaring, indexing and processing arrays.
-- Learn about performing calculations over arrays of values.
-- More examples of breaking problems into subproblems using functions.
+- Practice declaring and using arrays.
+- More practice writing functions that take arrays as parameters and
+  process them.
+- Look at shifting values in arrays.
 
 * Description
-In our lab for this week, you were given a template that reads in an array
-of floating point values from a file and saves them in to an array for processing.
-For this assignment, you need to start with the same template.
+In this assignment, we want to solve the following task.  We need to design
+and implement a function that will take an array of integers as input, and
+will return a new array with only the unique values from the original
+input array (e.g. a new array without any duplicate items).  For example,
+if we had the following values in an array of size 5:
 
-For this assignment, I have provided a different file off 100 floating
-point values, named ~assg-06-float-array.txt~.  Modify the constants and
-code in the original template for lab 06 to read in the 100 values
-from this file into your array named ~values~.
+#+begin_example
+1
+3
+2
+3
+2
+#+end_example
 
-In this assignment you will be writing 5 functions to process the data
-in your ~values~ array.  Your functions will find the minimum value in
-an array, the maximum value in an array, the average of the values in
-an array, the sum of the values in an array, and the standard deviation
-of the values in an array.  All 5 of these functions take the array,
-and an integer parameter indicating the size of the array, as input
-parameters to them.  All 5 of these function return a floating point
-result, which is the result of finding or calculating the minimum /
-maximum / average / sum / standard deviation of the values in the array.
+The result would be a new array of size 3, with only the following unique
+values in the array
+
+#+begin_example
+1
+3
+2
+#+end_example
+
+
+
 
 Perform the following tasks:
 
