@@ -4,11 +4,10 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   February 19, 2015
- * @assg   Assg 06
+ * @assg   Assg 07
  *
- * @description Examples of performing calculations on and with arrays.  All functions take an
- *    array (and the size of the array) as inputs.  The functions perform a calculation on the
- *    values in the array, and return the result as a single floating point result value.
+ * @description Implement function to search for and remove duplicates from an
+ *   array.
  */
 #include <iostream>
 #include <fstream>
