@@ -37,7 +37,7 @@ void initRandomRange(int values[], int size, int beginRange, int endRange)
   int scale = endRange - beginRange;
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = 
+    values[idx] = (rand() % scale) + beginRange;
   }
 }
 
