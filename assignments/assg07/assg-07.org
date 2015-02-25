@@ -70,7 +70,7 @@ array.
 Perform the following tasks:
 
 1. Write a function called ~searchForValue~.  This function takes
-   an array of int and the size of the array as its parameters.  This
+   an array of ints and the size of the array as its parameters.  This
    function also takes a third parameter, an int, which is the value to
    search for.  This function returns a boolean result of True if the
    value being searched for is in the given array, and False if the
