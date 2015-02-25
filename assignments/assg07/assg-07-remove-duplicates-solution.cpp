@@ -96,6 +96,26 @@ bool searchForValue(int values[], int size, int valueToSearchFor)
 }
 
 
+/** search for value
+ * Search the given array for a particular value.  We are given
+ * an array of integers (and its size).  We search for a
+ * particular value and return True if we find the value in
+ * the array, or False otherwise.  This functions correctly
+ * handles an empty array as input (e.g. size = 0, we return
+ * False, could not find the value in the array).
+ *
+ * @param values An array of ints, passed by reference.
+ * @param size An integer, the number of values in the array.
+ * @param valueToSearchFor An integer, the value to search for in
+ *   the input array.
+ *
+ * @returns bool True if the value is found in the array, False
+ *   othersies.
+ */
+int findUniqueValues(int values[], int size, int uniques[])
+{
+}
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
