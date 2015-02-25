@@ -65,8 +65,8 @@ Perform the following tasks:
    your ~initNegative~ function.  An example of the output from this
    task is shown below as the last part of the example output.
 
-Your program output should look something close to the following when I
-run your program:
+Your program output for the 4 previous tasks should look something
+close to the following when I run your program:
 
 #+begin_example
 ----- Task 1 -----
