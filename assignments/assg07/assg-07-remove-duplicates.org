@@ -51,10 +51,10 @@ nothing.
 In order to implement this algorithm, it would be nice to have a
 function that takes an array as input and searches the array to
 determine if a value is in the array or not.  This function should
-return True if the value is in the array, and False otherwise.  This
+return true if the value is in the array, and false otherwise.  This
 function should be able to handle an array of size 0, and the answer
 when searching for a value in an array with nothing yet in it would be
-False, e.g. the value is not yet present in the array.
+false, e.g. the value is not yet present in the array.
 
 Given this search function that can handle searching in an empty
 array, the implementation of the copying from the input to the
