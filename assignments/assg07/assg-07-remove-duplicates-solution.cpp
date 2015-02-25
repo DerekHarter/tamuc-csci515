@@ -34,7 +34,7 @@ using namespace std;
 void initRandomRange(int values[], int size, int beginRange, int endRange)
 {
   // We initialize minimum to the first value, then search values 1..size-1 for smaller ones
-  int scale = endRange - beginRange;
+  int scale = endRange - beginRange + 1;
   for (int idx = 0; idx < size; idx++)
   {
     values[idx] = (rand() % scale) + beginRange;
