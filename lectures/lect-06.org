@@ -51,6 +51,10 @@ for (int i = 0; i < ARRAY_SIZE; i++)
 - And when I say good practice, read that to mean you SHOULD ALWAYS
   be doing this for assignments for this class.
 
+** Arrays and Memory Allocation
+- Show example of array allocated in memory in Debugger.
+- Difference between an array of char, and an array of int.
+
 * Second Session (11:45 - 12:30)
 ** Examples of Using Arrays
 - Initializing with a loop
