@@ -80,17 +80,21 @@ Perform the following tasks:
    in the array and so there is no possibility that you can find the
    value that is being asked to search for.
 
-2. Write a function called ~findMaximumValue~.  This function takes an
-   array of floats as its first parameter, and the size of the array
-   as its second parameter.  This function should search through all
-   of the values in the array and return the value that is the largest
-   (the maximum) in the array.  This function is basically almost an
-   exact repeat of the previous function, except for one small change.
-   In general, repeating code like this is a bad idea, but for this
-   assignment simply repeat your logic and make the one small change
-   to find the maximum instead of the minimum.  Later in this course
-   we will look at some ways we can encapsulate this repeated bit of
-   functionality into a function or abstraction.
+2. Write a function called ~removeDuplicates~.  This functions
+   takes an input array of int values, and the size of the array
+   as its first two parameters.  You should also pass another
+   array of int values as a third parameter.  This array should
+   be allocated to be the same size as the input array, since
+   potentially in the worst case, if there are no duplicates,
+   this array will end up being simply a copy of the original
+   array.  This function should copy over the values from
+   the input array into the output array, but as described above
+   it should only copy over unique values (duplicates will)
+   not be copied to the output array.  The resulting size of
+   the array can be smaller than the input array.  Thus this
+   function should return the size of the output array as
+   its result e.g. the size of the array after removing all
+   duplicates.
 
 3. Write a function called ~findSum~.  This function takes an
    array of floats as its first parameter, and the size of the array
