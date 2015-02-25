@@ -16,7 +16,7 @@ You have 2 hours (our regularly scheduled lab time) to complete the
 following tasks.  Create a single file, named test01.cpp, in a visual
 studio project called Test01.  Set up the Visual Studio projects using
 the normal settings for our class and labs, as we have practiced for
-the past 7 weeks.
+the past 7 weeks. 
 
 Perform the following tasks:
 
@@ -33,28 +33,24 @@ Perform the following tasks:
 
 2. After the previous task in your main function, write code to
    perform the following task.  I have given you a file named
-   "test-01-data.txt".  This file has a single integer value
-   on each line.  Open this file, and inside of a sentinel 
-   controlled loop, read in the values from the file and
-   display the values to standard output.  Your sentinel
-   controlled loops should simply be a while loop that executes
-   until the read from the file fails.  The output from
-   reading the give file will be exactly as given in 
-   the example output shown below.
+   "test-01-data.txt".  This file has a single integer value on each
+   line.  Open this file, and inside of a sentinel controlled loop,
+   read in the values from the file and display the values to standard
+   output.  Your sentinel controlled loops should simply be a while
+   loop that executes until the read from the file fails.  The output
+   from reading the give file will be exactly as given in the example
+   output shown below.
 
-3. Write a function named ~calculateHypotenuse~.  The function 
-   will take two floating point values as parameters, named ~a~
-   and ~b~.  The function should calculate the hypotenuse of 
-   a right triangle using the ~a~ and ~b~ parameters, according
-   to this formula:
-  $$
-  c = \sqrt{a^2 + b^2}
-  $$
-  e.g. the hypotenuse is the square root of adding together the
-  square of a and b.  This value should be calculated and returned
-  (as a floating point result) as a result of calling your function.
-  In your main function, show an example of calling your function with
-  values of $3.0$ and $4.0$ for the ~a~ and ~b~ parameters.
+3. Write a function named ~calculateHypotenuse~.  The function will
+   take two floating point values as parameters, named ~a~ and ~b~.
+   The function should calculate the hypotenuse of a right triangle
+   using the ~a~ and ~b~ parameters, according to this formula: $$ c =
+   \sqrt{a^2 + b^2} $$ e.g. the hypotenuse is the square root of
+   adding together the square of a and b.  This value should be
+   calculated and returned (as a floating point result) as a result of
+   calling your function.  In your main function, show an example of
+   calling your function with values of $3.0$ and $4.0$ for the ~a~
+   and ~b~ parameters.
 
 4. Create an array of integers of size $10$ named values.  Initialize
    all of values to $0$ in a loop in your main function.  Create a
