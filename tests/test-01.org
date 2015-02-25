@@ -58,11 +58,12 @@ Perform the following tasks:
    will return no result).  This functions should initialize each
    value to be equal to the negative of the index, e.g. the value at
    index $0$ will be $0$, the value at index $1$ will be $-1$, the
-   value at index $2$ will be $-2$, etc.  Show an example of calling
-   your function in your ~main()~ function.  In your main function,
-   write a loop that displays the contents of the array after calling
-   your ~initNegative~ function.  An example of the output from this
-   task is shown below as the last part of the example output.
+   value at index $2$ will be $-2$, etc.  Call your function in
+   ~main()~ to initialize the array.  In ~main~, after initializing
+   the array, write a loop that displays the contents of the array
+   after calling your ~initNegative~ function.  An example of the
+   output from this task is shown below as the last part of the
+   example output.
 
 Your program output for the 4 previous tasks should look something
 close to the following when I run your program:
