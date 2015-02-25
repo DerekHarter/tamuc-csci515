@@ -108,15 +108,9 @@ Perform the following tasks:
    output.  An example of the output you should display is given below.
 
 Your program output should look exactly like the following when I run
-your program. These are the correct calculated values for the given
-file of 100 floating point values you will use for this assignment.
+your program. 
 
 #+begin_example
- Minimum:  0.00479889
- Maximum:  0.99799562
-     Sum: 50.07558441
- Average:  0.50075585
-     Std:  0.27921614
 #+end_example
 
 
