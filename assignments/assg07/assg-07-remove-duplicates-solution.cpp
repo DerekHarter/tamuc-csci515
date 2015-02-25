@@ -60,6 +60,21 @@ void displayArray(int values[], int size)
 }
 
 
+/** display array
+ * Display values in an array in a given range.  We indicate the
+ * indices and format the values to give a uniform, nice appearance
+ * on standard output.
+ *
+ * @param values An array of ints, passed by reference.
+ * @param size An integer, the number of values in the array.
+ *
+ * @returns void Results printed to standard output as a side effect.
+ */
+bool searchForValue(int values[], int size)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
