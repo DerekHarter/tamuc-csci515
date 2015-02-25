@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday February 25, by 4:05 pm (lab end time) |
+| Due: | In Lab, Wednesday March 4, by 4:05 pm (lab end time) |
 
 * Objectives
 - Learn about declaring, accessing and processing array elements
