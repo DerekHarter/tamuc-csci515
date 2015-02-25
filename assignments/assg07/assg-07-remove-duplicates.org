@@ -72,11 +72,11 @@ Perform the following tasks:
 1. Write a function called ~searchForValue~.  This function takes
    an array of ints and the size of the array as its parameters.  This
    function also takes a third parameter, an int, which is the value to
-   search for.  This function returns a ~bool~ result of True if the
-   value being searched for is in the given array, and False if the
+   search for.  This function returns a ~bool~ result of true if the
+   value being searched for is in the given array, and false if the
    value is not in the array.  If you pass in an empty array (e.g. an
    array of size 0), the function should still work.  If the array is
-   empty then of course the answer is False, since there are no values
+   empty then of course the answer is false, since there are no values
    in the array and so there is no possibility that you can find the
    value that is being asked to search for.
 
