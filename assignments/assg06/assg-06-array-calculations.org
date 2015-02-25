@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday March 3, by Midnight |
+| Due: | Tuesday March 10, by Midnight |
 
 * Objectives
 - More practice writing C functions that take arrays as parameters
