@@ -29,7 +29,7 @@ int main()
   // index an array
   c[0] = 5;
   c[1] = 10;
-  c[10] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
+  c[12] = 22; // ERROR access beyond bounds of array, NO BAD PROGRAMMER
 
   // loop to initialize an array
   // always, ALWAYS, ALWAYS index starting at 0, up to (but not including)
