@@ -105,7 +105,7 @@ time in order to receive credit.
    values (if any).
 1. 20+ pts. Your ~displayArrayValues~ function must correctly format
    the displayed output on standard output.  Your program should work
-   if the begin and end range are equal, and should show now output
+   if the begin and end range are equal, and should show no output
    when begin is greater than the end specified.
 1. 20+ pts.  You must use I/O formatting to correctly display the
    output index ranges of the arrays as shown.  
