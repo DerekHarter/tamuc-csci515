@@ -17,6 +17,6 @@
 - Insertion Sort
 
 * Third Session (12:40 - 1:40)
-
+** Multidimensional Arrays
 
 
