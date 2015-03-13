@@ -12,6 +12,25 @@
 #include <iomanip>
 using namespace std;
 
+
+/** Generate Random Integer in Range
+ * Generate a random integer.  We generate the integer in the
+ * range [beginRange, endRange] inclusive.
+ * @param beginRange int The beginning of range inclusive to generate
+ *   a random number within.
+ * @param endRange int The end of the range for our random numbers.
+ *
+ * @returns int A random integer in the range [beginRange, endRange]
+ */
+int randomRange(int beginRange, int endRange)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = randomRange(beginRange, endRange);
+  }
+}
+
+
 /** Randomly Initialize Array
  * Initialize an array of integers to random values within
  * some indicated range.  Array is passed by reference, so
