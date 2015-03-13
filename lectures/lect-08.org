@@ -13,14 +13,14 @@
 ** Sorting Arrays
 - Bubble Sort
 - Insertion Sort
+- Merge Sort
 
 * Second Session (11:45 - 12:30)
 ** Searching Arrays
 - Binary Search
 
-** Introduction to Analysis of Algorithms
 
 * Third Session (12:40 - 1:40)
-
+** Introduction to Analysis of Algorithms
 
 
