@@ -22,5 +22,7 @@
 
 * Third Session (12:40 - 1:40)
 ** Introduction to Analysis of Algorithms
-
+- Big O notation
+- Time and Space
+- Relative growth as a function of the size $N$ of input.
 
