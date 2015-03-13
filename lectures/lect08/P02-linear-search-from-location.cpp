@@ -155,7 +155,8 @@ int main()
 
     // search for the indicated value
     cout << "The value: " << searchValue << " was found at indexes: ";
-    while (index = linearSearch(values, NUM_VALUES, searchValue) != NOT_FOUND)
+    index = 0; // start searching at beginning of array
+    while (index = linearSearch(values, NUM_VALUES, searchValue, index) != NOT_FOUND)
     {
       cout << setw(3) << setfill('0') << index << " ";
     }
