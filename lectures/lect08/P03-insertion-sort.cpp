@@ -144,6 +144,17 @@ int main()
   // set seed to a different value based on current time and initialize array to set or random values
   srand(time(0));
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
+  cout << "Array, before being sorted:" << endl;
   displayArray(values, NUM_VALUES);
+  cout << endl;
 
+  // sort the array using some method
+  insertionSort(values, NUM_VALUES);
+  
+  // and display it again
+  cout << "Array, after being sorted sorted:" << endl;
+  displayArray(values, NUM_VALUES);
+  cout << endl;
+
+  return 0;
 }
