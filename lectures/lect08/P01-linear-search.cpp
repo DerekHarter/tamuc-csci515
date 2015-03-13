@@ -32,12 +32,9 @@ using namespace std;
  */
 void initExperimentArray(int values[], int size, int beginRange, int endRange)
 {
-  for (int record = 0; record < numRecordings; record++)
+  for (int idx = 0; idx < size; idx++)
   {
-    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
-    {
-      experimentPositions[record][dim] = 0.0;
-    }
+    values[idx] = randomRange(beginRange, endRange);
   }
 }
 
