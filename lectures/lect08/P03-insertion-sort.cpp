@@ -83,19 +83,20 @@ void displayArray(int values[], int size)
 }
 
 
-/** 
- * Perform a linear search of an array of integers.  We search for the indicated key
- * and return the index where whe find that key.
+/** Insertion Sort
+ * Sort an array of integers using an Insertion sort.  Insertion sort works in this manner.
+ * We first look at the element at index 1.  If it is out of order with element 0, we insert
+ * it at index 0.  We then look at the element at index 2 and insert it into the correct location
+ * of the sorted part of the list 0-1.  We then repeat by looking at index 3 and inserting into
+ * the elements 0-2, etc untill we are at the last item.  Insertion sort is very inefficient, it is
+ * an O(N^2) algorithm.
  *
- * @param values An array of integers.  The array to be searched.
- * @param size int The size of the array to search
- * @param searchValue int The value to search for
- * @param startLocation int The index to begin the search from.  Useful to
- *   continue a search from a previous result to find repeated values in array.
- *   By default we start searching at index 0.
+ * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
+ *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
  *
- * @returns int The index in the array where the value is found.  If the
- *   search value is not found in the array, we return NOT_FOUND
+ * @returns void Nothing is returned explicitly but as a result of calling this function the array
+ *   that is passed in will be sorted into ascending order.
  */
 int linearSearch(int values[], int size, int searchValue, int startLocation = 0)
 {
