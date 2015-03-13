@@ -98,14 +98,20 @@ void displayArray(int values[], int size)
  * @returns int The index in the array where the value is found.  If the
  *   search value is not found in the array, we return NOT_FOUND
  */
-void displayArray(int values[], int size)
+int linearSearch(int values[], int size, int searchValue)
 {
+  // look for first occurence of the searchValue in array using linear search
   for (int idx = 0; idx < size; idx++)
   {
-    cout << setw(3) << setfill('0') << idx << ": "
-	 << setw(3) << setfill(' ') << values[idx]
-	 << endl;
+    if (values[idx] == searchValue)
+    {
+      // we found it, return the location where it was found
+      return idx;
+    }
   }
+
+  // else we searched everywhere and failed to find it, so return NOT_FOUND
+  return NOT_FOUND;
 }
 
 
