@@ -52,7 +52,7 @@ int randomRange(int beginRange, int endRange)
  *   as a side effect we initialize the array to random values
  *   in range [beginRange, endRange] inclusive and return them.
  */
-void initExperimentArray(int values[], int size, int beginRange, int endRange)
+void initRandomRange(int values[], int size, int beginRange, int endRange)
 {
   for (int idx = 0; idx < size; idx++)
   {
@@ -72,4 +72,8 @@ void initExperimentArray(int values[], int size, int beginRange, int endRange)
  */
 int main()
 {
+  const int NUM_VALUES = 10;
+  int values[NUM_VALUES];
+
+  
 }
