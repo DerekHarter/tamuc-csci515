@@ -138,7 +138,7 @@ void insertionSort(int values[], int size)
  */
 int main()
 {
-  const int NUM_VALUES = 20;
+  const int NUM_VALUES = 10;
   int values[NUM_VALUES];
 
   // set seed to a different value based on current time and initialize array to set or random values
