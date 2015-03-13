@@ -150,7 +150,7 @@ int main()
 
   // sort the array using some method
   insertionSort(values, NUM_VALUES);
-  
+
   // and display it again
   cout << "Array, after being sorted sorted:" << endl;
   displayArray(values, NUM_VALUES);
