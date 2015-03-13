@@ -130,7 +130,7 @@ int linearSearch(int values[], int size, int searchValue, int startLocation = 0)
  */
 int main()
 {
-  const int NUM_VALUES = 10;
+  const int NUM_VALUES = 20;
   int values[NUM_VALUES];
 
   // set seed to a different value based on current time and initialize array to set or random values
