@@ -102,5 +102,24 @@ int main()
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
   displayArray(values, NUM_VALUES);
 
+  // Let the user search the array:
+  int key = 0;
+  int index;
   
+  while (key != -1)
+  {
+    // get a value to search for
+    cout << "Enter a value and I will search for it in the array (-1 to quit): ";
+    cin >> key;
+
+    // stop asking user for more values when they indicate they are done
+    if (key == -1)
+    {
+      break;
+    }
+
+    // search for the indicated value
+    index = linearSearch(values, NUM_VALUES, key);
+    cout << "The value: " << key << " is first found at index: " << index << endl;
+  }
 }
