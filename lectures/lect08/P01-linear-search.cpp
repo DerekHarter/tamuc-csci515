@@ -3,10 +3,10 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
- * @date   February 5, 2015
- * @assg   Lecture 07, P01 Intro to 2-D arrays
+ * @date   March 5, 2015
+ * @assg   Lecture 08, P01 Linear Search
  *
- * @description Examples of declaring and initializing a 2-D array
+ * @description Example of performing a simple linear search in an array.
  */
 #include <iostream>
 #include <iomanip>
