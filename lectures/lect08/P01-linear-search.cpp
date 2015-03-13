@@ -76,7 +76,9 @@ void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = randomRange(beginRange, endRange);
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << setw(3) << setfill(' ') << values[idx]
+	 << 
   }
 }
 
