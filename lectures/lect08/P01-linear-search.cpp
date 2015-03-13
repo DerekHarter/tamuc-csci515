@@ -52,7 +52,7 @@ int randomRange(int beginRange, int endRange)
  *   as a side effect we initialize the array to random values
  *   in range [beginRange, endRange] inclusive and return them.
  */
-void initRandomRange(int values[], int size, int beginRange, int endRange)
+void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
 {
   for (int idx = 0; idx < size; idx++)
   {
