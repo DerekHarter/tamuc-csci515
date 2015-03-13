@@ -25,7 +25,11 @@ using namespace std;
 int randomRange(int beginRange, int endRange)
 {
   int scale;
+
+  // Determine the magnitude of the scale between begin and end of range
   scale = endRange - beginRange + 1;
+
+  // Generate the number in range [beginRange, endRange] and return it
   return rand() % scale + beginRange;
 }
 
