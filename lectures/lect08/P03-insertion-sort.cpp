@@ -6,15 +6,11 @@
  * @date   March 13, 2015
  * @assg   Lecture 08, P03 Insertion Sort
  *
- * @description An implementation of the O(N^2) insertion sort from out textbook.
+ * @description An implementation of various sorting algorithms.
  */
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
-
-// constant used as flag to indicated value not found in search
-const int NOT_FOUND = -1;
 
 
 /** Generate Random Integer in Range
@@ -87,7 +83,7 @@ void displayArray(int values[], int size)
 }
 
 
-/** Linear Search
+/** 
  * Perform a linear search of an array of integers.  We search for the indicated key
  * and return the index where whe find that key.
  *
@@ -137,29 +133,4 @@ int main()
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
   displayArray(values, NUM_VALUES);
 
-  // Let the user search the array:
-  int searchValue = 0;
-  int index;
-  while (searchValue != -9999)
-  {
-    // get a value to search for
-    cout << "Enter a value and I will search for all occurances of it in the array (-9999 to quit): ";
-    cin >> searchValue;
-
-    // stop asking user for more values when they indicate they are done
-    if (searchValue == -9999)
-    {
-      break;
-    }
-
-    // search for the indicated value
-    cout << "The value: " << searchValue << " was found at indexes: ";
-    index = linearSearch(values, NUM_VALUES, searchValue, 0);
-    while ( index != NOT_FOUND)
-    {
-      cout << setw(3) << setfill('0') << index << " ";
-      index = linearSearch(values, NUM_VALUES, searchValue, index + 1); // search at location just past last hit
-    }
-    cout << endl;
-  }
 }
