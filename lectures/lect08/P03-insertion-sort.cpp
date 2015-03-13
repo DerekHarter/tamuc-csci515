@@ -90,9 +90,9 @@ void displayArray(int values[], int size)
  * then look at the element at index 2 and insert it into the correct
  * location of the sorted part of the list 0-1 by swapping it down
  * until it is at its correct location.  We then repeat by looking at
- * index 3 and inserting into the elements 0-2, etc untill we are at
- * the last item.  Insertion sort is very inefficient, it is an O(N^2)
- * algorithm.
+ * index 3 and inserting into the elements 0-2 by swaping down until
+ * it is in order, etc untill we are at the last item.  Insertion sort
+ * is very inefficient, it is an O(N^2) algorithm.
  *
  * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
  *   is sorted in place in memory.  The array is sorted in ascending order.
