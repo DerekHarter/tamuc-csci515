@@ -159,6 +159,7 @@ int main()
     while (index = linearSearch(values, NUM_VALUES, searchValue, index) != NOT_FOUND)
     {
       cout << setw(3) << setfill('0') << index << " ";
+      index++; // start next search at the location just past where we found this value
     }
     cout << endl;
   }
