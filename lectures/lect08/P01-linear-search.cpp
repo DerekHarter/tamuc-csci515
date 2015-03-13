@@ -12,30 +12,25 @@
 #include <iomanip>
 using namespace std;
 
-// global constant declarations
-const int NUM_RECORDINGS = 5; // number of rows/records/experiments in table
-const int NUM_DIMENSIONS = 3; // number of columns/attributes in table
-
-
-/** Initialize Experiment Array
- * Initialize the 2-D table of experiment recordings.
- * This functions takes a (passed by reference) 2-D table
- * of experiment recordings.  All of the values in all columns
- * of the table are initialized to 0.0.  The table is a 2-D array
- * of floating point values, with 3-columns, representing 3 dimensions
- * (x,y,z) of a position of some item recorded during an experiment.
+/** Randomly Initialize Array
+ * Initialize an array of integers to random values within
+ * some indicated range.  Array is passed by reference, so
+ * the initialization of the array elements will be accessible
+ * to the caller of this function.
  *
- * @param experimentPositions The 2-D array of experiment positions
- *   we are to initialize.
- * @param size The number of recordings (the number of rows) in the
- *   experiment.
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
+ * @param beginRange int The beginning of range inclusive to generate
+ *   a random number within.
+ * @param endRange int The end of the range for our random numbers.
  *
  * @returns void.  However, since arrays are passed by reference,
- *   as a side effect we initialize the experimentPositions table
- *   of values to 0.0 and return to the caller.
+ *   as a side effect we initialize the array to random values
+ *   in range [beginRange, endRange] inclusive and return them.
  */
-void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
-			 int numRecordings)
+void initExperimentArray(int values[], int size, int beginRange, int endRange)
 {
   for (int record = 0; record < numRecordings; record++)
   {
@@ -43,46 +38,6 @@ void initExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
     {
       experimentPositions[record][dim] = 0.0;
     }
-  }
-}
-
-
-/** Display Experiment Array
- * Display the 2-D table of experiment recordings.  This functions
- * takes a 2-D table of experiment recordings.  This function does
- * not return a result, but as a side effect it display the
- * values in the experiment array table as a table on standard
- * output
- *
- * @param experimentPositions The 2-D array of experiment positions
- *   we are to initialize.
- * @param size The number of recordings (the number of rows) in the
- *   experiment.
- *
- * @returns void.  However, the values in the experiment array
- *   table are formatted and displayed as a table on standard
- *   output.
- */
-void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
-			    int numRecordings)
-{
-  // display a header
-  cout << setfill (' ') << setw(4) << left << "Rec "
-       << setw(6) << right << "X" << " "
-       << setw(6) << right << "Y" << " "
-       << setw(6) << right << "Z"
-       << endl;
-    
-  for (int record = 0; record < numRecordings; record++)
-  {
-    cout << setw(3) << right << setfill('0') << record << " ";
-    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
-    {
-      cout << setw(6) << fixed << setprecision(4)
-	   << experimentPositions[record][dim]
-	   << " ";
-    }
-    cout << endl; // newline at end of the current record
   }
 }
 
@@ -98,37 +53,4 @@ void displayExperimentArray(float experimentPositions[][NUM_DIMENSIONS],
  */
 int main()
 {
-  // Each experiment records a 3-dimensional position of a particle
-  // for multiple recordings during the experiment
-  float experimentPositions[NUM_RECORDINGS][NUM_DIMENSIONS];
-
-  // We initialize a 2-D array using 2 (nested) loops
-  for (int record = 0; record < NUM_RECORDINGS; record++)
-  {
-    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
-    {
-      experimentPositions[record][dim] = 0.0;
-    }
-  }
-
-  // We access/display the values in a 2-D array again using
-  // a nested loop
-  for (int record = 0; record < NUM_RECORDINGS; record++)
-  {
-    cout << "Rec " << setw(3) << setfill('0') << record << ": ";
-    for (int dim = 0; dim < NUM_DIMENSIONS; dim++)
-    {
-      cout << setw(6) << fixed << setprecision(4)
-	   << experimentPositions[record][dim]
-	   << " ";
-    }
-    cout << endl; // newline at end of the current record
-  }
-  cout << endl;
-  
-  // 2-D arrays in C are organized in memory using row ordering
-  // Compiler does not need the number of rows, put it needs
-  // to know/specify the number of columns.
-  initExperimentArray(experimentPositions, NUM_RECORDINGS);
-  displayExperimentArray(experimentPositions, NUM_RECORDINGS);
 }
