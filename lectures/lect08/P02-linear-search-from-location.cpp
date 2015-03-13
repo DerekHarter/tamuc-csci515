@@ -94,15 +94,18 @@ void displayArray(int values[], int size)
  *
  * @param values An array of integers.  The array to be searched.
  * @param size int The size of the array to search
- * @param searchValue in The value to search for
+ * @param searchValue int The value to search for
+ * @param startLocation int The index to begin the search from.  Useful to
+ *   continue a search from a previous result to find repeated values in array.
+ *   By default we start searching at index 0.
  *
  * @returns int The index in the array where the value is found.  If the
  *   search value is not found in the array, we return NOT_FOUND
  */
-int linearSearch(int values[], int size, int searchValue)
+int linearSearch(int values[], int size, int searchValue, int startLocation = 0)
 {
   // look for first occurence of the searchValue in array using linear search
-  for (int idx = 0; idx < size; idx++)
+  for (int idx = startLocation; idx < size; idx++)
   {
     if (values[idx] == searchValue)
     {
