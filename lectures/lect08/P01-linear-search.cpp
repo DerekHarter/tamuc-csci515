@@ -13,6 +13,10 @@
 using namespace std;
 
 
+// constant used as flag to indicated value not found in search
+const int NOT_FOUND = -1;
+
+
 /** Generate Random Integer in Range
  * Generate a random integer.  We generate the integer in the
  * range [beginRange, endRange] inclusive.
@@ -117,7 +121,6 @@ void displayArray(int values[], int size)
 int main()
 {
   const int NUM_VALUES = 10;
-  const int NOT_FOUND = -1;
   int values[NUM_VALUES];
 
   // set seed to a different value based on current time and initialize array to set or random values
