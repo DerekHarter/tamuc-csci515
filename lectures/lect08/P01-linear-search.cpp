@@ -24,10 +24,9 @@ using namespace std;
  */
 int randomRange(int beginRange, int endRange)
 {
-  for (int idx = 0; idx < size; idx++)
-  {
-    values[idx] = randomRange(beginRange, endRange);
-  }
+  int scale;
+  scale = endRange - beginRange + 1;
+  return rand() % scale + beginRange;
 }
 
 
