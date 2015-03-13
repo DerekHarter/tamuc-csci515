@@ -93,10 +93,10 @@ void displayArray(int values[], int size)
  *
  * @param values An array of integers.  The array to be searched.
  * @param size int The size of the array to search
- * @param 
+ * @param searchValue in The value to search for
  *
- * @returns void.  However, as a side effect we display the
- *   values in the array to standard output.
+ * @returns int The index in the array where the value is found.  If the
+ *   search value is not found in the array, we return NOT_FOUND
  */
 void displayArray(int values[], int size)
 {
