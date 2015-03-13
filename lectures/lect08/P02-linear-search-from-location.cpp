@@ -155,11 +155,11 @@ int main()
 
     // search for the indicated value
     cout << "The value: " << searchValue << " was found at indexes: ";
-    index = 0; // start searching at beginning of array
-    while (index = linearSearch(values, NUM_VALUES, searchValue, index) != NOT_FOUND)
+    index = linearSearch(values, NUM_VALUES, searchValue, 0);
+    while ( index != NOT_FOUND)
     {
       cout << setw(3) << setfill('0') << index << " ";
-      index++; // start next search at the location just past where we found this value
+      index = linearSearch(values, NUM_VALUES, searchValue, index + 1); // search at location just past last hit
     }
     cout << endl;
   }
