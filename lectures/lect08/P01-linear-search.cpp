@@ -97,6 +97,7 @@ int main()
   const int NUM_VALUES = 10;
   int values[NUM_VALUES];
 
+  srand(time(0));
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
   displayArray(values, NUM_VALUES);
 }
