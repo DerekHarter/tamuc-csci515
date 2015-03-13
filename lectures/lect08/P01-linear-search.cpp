@@ -141,6 +141,14 @@ int main()
 
     // search for the indicated value
     index = linearSearch(values, NUM_VALUES, searchValue);
-    cout << "The value: " << searchValue << " is first found at index: " << index << endl;
+    cout << "The value: " << searchValue;
+    if (value >= 0)
+    {
+      cout << " is first found at index: " << index << endl;
+    }
+    else
+    {
+      cout << " is NOT in the array" << endl;
+    }
   }
 }
