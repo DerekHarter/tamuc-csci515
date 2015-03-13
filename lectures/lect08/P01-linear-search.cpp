@@ -152,7 +152,7 @@ int main()
     // search for the indicated value
     index = linearSearch(values, NUM_VALUES, searchValue);
     cout << "The value: " << searchValue;
-    if (value == NOT_FOUND)
+    if (index == NOT_FOUND)
     {
       cout << " is NOT in the array" << endl;
     }
