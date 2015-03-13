@@ -144,7 +144,7 @@ int main()
     cin >> searchValue;
 
     // stop asking user for more values when they indicate they are done
-    if (searchValue == -1)
+    if (searchValue == -9999)
     {
       break;
     }
@@ -152,13 +152,13 @@ int main()
     // search for the indicated value
     index = linearSearch(values, NUM_VALUES, searchValue);
     cout << "The value: " << searchValue;
-    if (value != -1)
+    if (value == NOT_FOUND)
     {
-      cout << " is first found at index: " << index << endl;
+      cout << " is NOT in the array" << endl;
     }
     else
     {
-      cout << " is NOT in the array" << endl;
+      cout << " is first found at index: " << index << endl;
     }
   }
 }
