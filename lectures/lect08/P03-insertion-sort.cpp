@@ -84,12 +84,15 @@ void displayArray(int values[], int size)
 
 
 /** Insertion Sort
- * Sort an array of integers using an Insertion sort.  Insertion sort works in this manner.
- * We first look at the element at index 1.  If it is out of order with element 0, we insert
- * it at index 0.  We then look at the element at index 2 and insert it into the correct location
- * of the sorted part of the list 0-1.  We then repeat by looking at index 3 and inserting into
- * the elements 0-2, etc untill we are at the last item.  Insertion sort is very inefficient, it is
- * an O(N^2) algorithm.
+ * Sort an array of integers using an Insertion sort.  Insertion sort
+ * works in this manner.  We first look at the element at index 1.  If
+ * it is out of order with element 0, we insert it at index 0.  We
+ * then look at the element at index 2 and insert it into the correct
+ * location of the sorted part of the list 0-1 by swapping it down
+ * until it is at its correct location.  We then repeat by looking at
+ * index 3 and inserting into the elements 0-2, etc untill we are at
+ * the last item.  Insertion sort is very inefficient, it is an O(N^2)
+ * algorithm.
  *
  * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
  *   is sorted in place in memory.  The array is sorted in ascending order.
@@ -100,6 +103,13 @@ void displayArray(int values[], int size)
  */
 void insertionSort(int values[], int size)
 {
+  int valueToInsert;
+  int 
+  for (int nextIndexToInsert = 1; nextItemToInsert < size; nextItemToInsert++)
+  {
+    valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
+    int 
+  }
 }
 
 
