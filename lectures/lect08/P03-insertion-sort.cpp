@@ -100,18 +100,6 @@ void displayArray(int values[], int size)
  */
 void insertionSort(int values[], int size)
 {
-  // look for first occurence of the searchValue in array using linear search
-  for (int idx = startLocation; idx < size; idx++)
-  {
-    if (values[idx] == searchValue)
-    {
-      // we found it, return the location where it was found
-      return idx;
-    }
-  }
-
-  // else we searched everywhere and failed to find it, so return NOT_FOUND
-  return NOT_FOUND;
 }
 
 
