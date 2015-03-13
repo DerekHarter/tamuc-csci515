@@ -104,11 +104,25 @@ void displayArray(int values[], int size)
 void insertionSort(int values[], int size)
 {
   int valueToInsert;
-  int 
+  int swapLocation;
   for (int nextIndexToInsert = 1; nextItemToInsert < size; nextItemToInsert++)
   {
     valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
-    int 
+    swapLocation = nextIndexToInsert; 
+
+    // test the swapLocation with the item one index lower in the array.  As long as the
+    // item we are examining is greater than the value we are trying to insert, we shift
+    // it up.  
+    while ( (swapLocation > 0) && (values[swapLocation - 1] > valueToInsert) )
+    {
+      // shift elements one slot
+      values[swapLocation] = values[swapLocation - 1];
+      swapLocation--;
+    }
+
+    // We shifted all of the items up that needed to be moved, now we insert at is
+    // correct location
+    values[swapLocation] = valueToInsert;
   }
 }
 
