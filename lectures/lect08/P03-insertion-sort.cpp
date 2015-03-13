@@ -105,7 +105,7 @@ void insertionSort(int values[], int size)
 {
   int valueToInsert;
   int swapLocation;
-  for (int nextIndexToInsert = 1; nextItemToInsert < size; nextItemToInsert++)
+  for (int nextIndexToInsert = 1; nextIndexToInsert < size; nextIndexToInsert++)
   {
     valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
     swapLocation = nextIndexToInsert; 
