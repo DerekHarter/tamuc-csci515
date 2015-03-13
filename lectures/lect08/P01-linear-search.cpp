@@ -78,7 +78,7 @@ void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
   {
     cout << setw(3) << setfill('0') << idx << ": "
 	 << setw(3) << setfill(' ') << values[idx]
-	 << 
+	 << clf;
   }
 }
 
