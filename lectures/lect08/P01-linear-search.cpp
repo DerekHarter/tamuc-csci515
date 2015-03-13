@@ -72,7 +72,7 @@ void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
  * @returns void.  However, as a side effect we display the
  *   values in the array to standard output.
  */
-void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
+void displayArray(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
