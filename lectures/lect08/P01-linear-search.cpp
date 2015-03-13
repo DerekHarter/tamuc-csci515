@@ -61,6 +61,26 @@ void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
 }
 
 
+/** Display Array
+ * Display all of the values in the indicated array of integers.
+ *
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
+ *
+ * @returns void.  However, as a side effect we display the
+ *   values in the array to standard output.
+ */
+void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    values[idx] = randomRange(beginRange, endRange);
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
