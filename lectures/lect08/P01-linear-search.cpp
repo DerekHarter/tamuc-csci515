@@ -126,9 +126,9 @@ int main()
   displayArray(values, NUM_VALUES);
 
   // Let the user search the array:
-  int key = 0;
+  int searchKey = 0;
   int index;
-  while (key != -1)
+  while (searchKey != -1)
   {
     // get a value to search for
     cout << "Enter a value and I will search for it in the array (-1 to quit): ";
