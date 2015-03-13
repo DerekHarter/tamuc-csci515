@@ -98,7 +98,7 @@ void displayArray(int values[], int size)
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
  *   that is passed in will be sorted into ascending order.
  */
-int linearSearch(int values[], int size, int searchValue, int startLocation = 0)
+void insertionSort(int values[], int size)
 {
   // look for first occurence of the searchValue in array using linear search
   for (int idx = startLocation; idx < size; idx++)
