@@ -144,7 +144,7 @@ int main()
   while (searchValue != -9999)
   {
     // get a value to search for
-    cout << "Enter a value and I will search for it in the array (-9999 to quit): ";
+    cout << "Enter a value and I will search for all occurances of it in the array (-9999 to quit): ";
     cin >> searchValue;
 
     // stop asking user for more values when they indicate they are done
@@ -154,15 +154,11 @@ int main()
     }
 
     // search for the indicated value
-    index = linearSearch(values, NUM_VALUES, searchValue);
-    cout << "The value: " << searchValue;
-    if (index == NOT_FOUND)
+    cout << "The value: " << searchValue << " was found at indexes: ";
+    while (index = linearSearch(values, NUM_VALUES, searchValue) != NOT_FOUND)
     {
-      cout << " is NOT in the array" << endl;
+      cout << setw(3) << setfill('0') << index << " ";
     }
-    else
-    {
-      cout << " is first found at index: " << index << endl;
-    }
+    cout << endl;
   }
 }
