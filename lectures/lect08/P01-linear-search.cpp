@@ -87,10 +87,9 @@ void displayArray(int values[], int size)
  * Perform a linear search of an array of integers.  We search for the indicated key
  * and return the index where whe find that key.
  *
- * @param values An array of integers.  Arrays are passed by value
- *   so when we initialize this array to random values, the
- *   initialized values will be passed to the caller.
- * @param size int The size of the array to initialize.
+ * @param values An array of integers.  The array to be searched.
+ * @param size int The size of the array to search
+ * @param 
  *
  * @returns void.  However, as a side effect we display the
  *   values in the array to standard output.
@@ -128,10 +127,10 @@ int main()
   // Let the user search the array:
   int searchValue = 0;
   int index;
-  while (searchValue != -1)
+  while (searchValue != -9999)
   {
     // get a value to search for
-    cout << "Enter a value and I will search for it in the array (-1 to quit): ";
+    cout << "Enter a value and I will search for it in the array (-9999 to quit): ";
     cin >> searchValue;
 
     // stop asking user for more values when they indicate they are done
