@@ -142,7 +142,7 @@ int main()
     // search for the indicated value
     index = linearSearch(values, NUM_VALUES, searchValue);
     cout << "The value: " << searchValue;
-    if (value >= 0)
+    if (value != -1)
     {
       cout << " is first found at index: " << index << endl;
     }
