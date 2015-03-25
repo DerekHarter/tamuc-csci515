@@ -150,7 +150,7 @@ int findMinimumInSubarray(int values[], int start, int size)
  */
 void swapArrayLocations(int values[], int loc1, int loc2)
 {
-  tmp = values[loc1];
+  int tmp = values[loc1];
   values[loc1] = values[loc2];
   values[loc2] = tmp;
 }
