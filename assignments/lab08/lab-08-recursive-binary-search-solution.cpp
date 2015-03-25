@@ -156,6 +156,7 @@ int binarySearchRecursive(int values[], int low, int high, int searchValue)
   }
 
   // calculate midpoint
+  int mid;
   mid = (low + high) / 2;
 
   // base case, successful search
