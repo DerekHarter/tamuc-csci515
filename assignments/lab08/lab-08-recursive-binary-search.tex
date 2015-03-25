@@ -1,4 +1,4 @@
-% Created 2015-03-25 Wed 14:19
+% Created 2015-03-25 Wed 14:20
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -62,13 +62,11 @@ algorithm is:
 
 \begin{itemize}
 \item Recursive condition: Calculate the midpoint of the current array and
-\end{itemize}
-compare the value to the search value.  If the value is greater than
-the search value, recursively call the function on the subarray
-to the left of the midpoint.  If the value is less than the search
-value, recursively call the function on the subarray to the right of the
-midpoint.
-\begin{itemize}
+  compare the value to the search value.  If the value is greater than
+  the search value, recursively call the function on the subarray to
+  the left of the midpoint.  If the value is less than the search
+  value, recursively call the function on the subarray to the right of
+  the midpoint.
 \item Base case 1: If the value is equal to the search item, we found it
   so return the midpoint.
 \item Base case 2: If the subarray is empty, return a failure.
@@ -78,7 +76,7 @@ A specific description of the function/tasks to perform may make this
 clearer.  You need to write a single function for this lab called
 \verb~binarySearchRecursive~.  This function takes an array of integers,
 and two indexes as its input parameters \verb~low~ and \verb~high~.  It also
-takes and integer value which is the value to search for within the
+takes an integer value which is the value to search for within the
 indicated portion of the array.  As in class, the \verb~low~ and \verb~high~
 represent the indexs of the unsearched portion of the array.  The
 function can implement a binary search recursively by performing the
@@ -89,7 +87,7 @@ following steps:
    search has failed (base case 2).  In this case, return -1 to
    indicate a failure of the search.
 \item Calculate the midpoint location between \verb~low~ and \verb~high~ in the
-   same was as was done in class.
+   same way as was done in class.
 \item If the value at the midpoint is equal to the value being searched for
    then return the midpoint location.
 \item If the value at the midpoint is greater than the value being searched for

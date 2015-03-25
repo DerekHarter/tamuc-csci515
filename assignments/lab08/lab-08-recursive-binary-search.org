@@ -25,11 +25,11 @@ easily described as a recursive algorithm.  The basic idea of the
 algorithm is:
 
 - Recursive condition: Calculate the midpoint of the current array and
-compare the value to the search value.  If the value is greater than
-the search value, recursively call the function on the subarray
-to the left of the midpoint.  If the value is less than the search
-value, recursively call the function on the subarray to the right of the
-midpoint.
+  compare the value to the search value.  If the value is greater than
+  the search value, recursively call the function on the subarray to
+  the left of the midpoint.  If the value is less than the search
+  value, recursively call the function on the subarray to the right of
+  the midpoint.
 - Base case 1: If the value is equal to the search item, we found it
   so return the midpoint.
 - Base case 2: If the subarray is empty, return a failure.
