@@ -149,36 +149,30 @@ void insertionSort(int values[], int size)
  */
 int binarySearchRecursive(int values[], int low, int high, int searchValue)
 {
-  // low and high are the current unsearched portion of the array
-  int low = 0;
-  int high = size - 1; // because last valid index is at size-1
-  int mid;
-
-  // As long is there is stuff remaining to be searched, keep looking
-  while (low <= high)
+  // base case, fail if nothing left to search
+  if (low > high)
   {
-    // find midpoint
-    mid = (low + high) / 2;
-
-    // determine if we found the item
-    if (values[mid] == searchValue)
-    {
-      // search succeeded, return the location where we found the value
-      return mid;
-    }
-
-    // set new low/high to reflect new unsearched subarray partition
-    if (searchValue < values[mid])
-    {
-      high = mid - 1;
-    }
-    else
-    {
-      low = mid + 1;
-    }
+    return NOT_FOUND;
   }
 
-  return NOT_FOUND;
+  // calculate midpoint
+  mid = (low + high) / 2;
+
+  // base case, successful search
+  if (values[mid] == searchValue)
+  {
+    return mid;
+  }
+
+  // recursive cases
+  if (searchValue < values[mid])
+  {
+    return binarySearchRecursive(values, low, mid-1, searchValue)
+  }
+  else
+  {
+    return binarySearchRecursive(values, mid+1, high, searchValue)
+  }
 }
 
 
