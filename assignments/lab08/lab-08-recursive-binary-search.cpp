@@ -129,9 +129,9 @@ void insertionSort(int values[], int size)
 }
 
 
-/** Binary Search 
+/** Recursive Binary Search 
  * Search an array of sorted items using a binary search.  This is
- * an iterative implementation of the search.  This functions
+ * a recursive implementation of the search.  This functions
  * takes a sorted array of integers, and the size of the array as
  * input parameters.  This function takes a third value, the item
  * to search for in the array.  The funciton returns the index of
@@ -147,7 +147,7 @@ void insertionSort(int values[], int size)
  * @returns int NOT_FOUND if the search fails, or else the integer
  *   index location of the searchValue in the array.
  */
-int binarySearch(int values[], int low, int high, int searchValue)
+int binarySearchRecursive(int values[], int low, int high, int searchValue)
 {
   // low and high are the current unsearched portion of the array
   int low = 0;
