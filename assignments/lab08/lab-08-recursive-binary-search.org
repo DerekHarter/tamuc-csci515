@@ -36,7 +36,7 @@ midpoint.
 
 A specific description of the function/tasks to perform may make this
 clearer.  You need to write a single function for this lab called
-~binarySearchRecursive~.  This function takes and array of integers,
+~binarySearchRecursive~.  This function takes an array of integers,
 and two indexes as its input parameters ~low~ and ~high~.  It also
 takes and integer value which is the value to search for within the
 indicated portion of the array.  As in class, the ~low~ and ~high~
