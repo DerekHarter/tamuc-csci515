@@ -147,7 +147,7 @@ void insertionSort(int values[], int size)
  * @returns int NOT_FOUND if the search fails, or else the integer
  *   index location of the searchValue in the array.
  */
-int binarySearch(int values[], int size, int searchValue)
+int binarySearch(int values[], int low, int high, int searchValue)
 {
   // low and high are the current unsearched portion of the array
   int low = 0;
