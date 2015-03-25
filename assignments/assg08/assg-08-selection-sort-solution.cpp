@@ -198,7 +198,7 @@ int main()
   cout << endl;
 
   // sort the array using some method
-  int location = findMinimumInSubarray(values, 0, NUM_VALUES);
+  int location = findMinimumInSubarray(values, 5, NUM_VALUES);
   cout << "Minimum at location: " << location << endl;
   //insertionSort(values, NUM_VALUES);
 
