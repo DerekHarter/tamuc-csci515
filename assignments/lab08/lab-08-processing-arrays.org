@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday March 4, by 4:05 pm (lab end time) |
+| Due: | In Lab, Wednesday March 25, by 4:05 pm (lab end time) |
 
 * Objectives
 - Become more familiar with performing searches and sorts.
@@ -29,7 +29,7 @@ compare the value to the search value.  If the value is greater than
 the search value, recursively call the function on the subarray
 to the left of the midpoint.  If the value is less than the search
 value, recursively call the function on the subarray to the right of the
-midpoint.  
+midpoint.
 - Base case 1: If the value is equal to the search item, we found it
   so return the midpoint.
 - Base case 2: If the subarray is empty, return a failure.
