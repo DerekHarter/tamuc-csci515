@@ -145,7 +145,7 @@ void insertionSort(int values[], int size)
  * @returns int NOT_FOUND if the search fails, or else the integer
  *   index location of the searchValue in the array.
  */
-void insertionSort(int values[], int size, int searchValue)
+int binarySearch(int values[], int size, int searchValue)
 {
 }
 
