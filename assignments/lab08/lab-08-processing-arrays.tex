@@ -1,4 +1,4 @@
-% Created 2015-03-25 Wed 09:25
+% Created 2015-03-25 Wed 09:44
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,7 +20,7 @@
 \usemintedstyle{default}
 \providecommand{\alert}[1]{\textbf{#1}}
 
-\title{Lab 08: Restricted Binary Search}
+\title{Lab 08: Recursive Binary Search}
 \author{CSci 515 Spring 2015}
 \date{2015-02-18}
 \hypersetup{
@@ -39,82 +39,76 @@
 
 \begin{center}
 \begin{tabular}{ll}
- Due:  &  In Lab, Wednesday March 4, by 4:05 pm (lab end time)  \\
+ Due:  &  In Lab, Wednesday March 25, by 4:05 pm (lab end time)  \\
 \end{tabular}
 \end{center}
 \section*{Objectives}
 \label{sec-2}
 
 \begin{itemize}
-\item Learn about declaring, accessing and processing array elements
+\item Become more familiar with performing searches and sorts.
 \item Practice passing arrays to and from functions.
-\item See examples of using file I/O to read date into arrays for processing
-\item Practice I/O formatting
-\item Learn about indexing into arrays in ranges.
 \end{itemize}
 \section*{Description}
 \label{sec-3}
 
-In this lab you will be given a function, and an example of how to
-call the function, that will read in an array of values from a
-file. You will be processing arrays of floating point values.  You
-will write one function to display the elements in an array.  In the
-function, you will pass in an array, and a begin and end range.  This
-function will display the values in the array, formatted on standard
-output as specified below.
+In class today we gave an example of a binary search implementation
+using a straight forward iterative approach.  We kept track of the
+unsearched region of the array, and calculated the midpoint, and
+decided on a comparison with that midpoint whether to search to the
+lower or upper part of the array.  Binary search can also be fairly
+easily described as a recursive algorithm.  The basic idea of the
+algorithm is:
 
-Perform the following tasks:
+\begin{itemize}
+\item Recursive condition: Calculate the midpoint of the current array and
+\end{itemize}
+compare the value to the search value.  If the value is greater than
+the search value, recursively call the function on the subarray
+to the left of the midpoint.  If the value is less than the search
+value, recursively call the function on the subarray to the right of the
+midpoint.
+\begin{itemize}
+\item Base case 1: If the value is equal to the search item, we found it
+  so return the midpoint.
+\item Base case 2: If the subarray is empty, return a failure.
+\end{itemize}
+
+A specific description of the function/tasks to perform may make this
+clearer.  You need to write a single function for this lab called
+\verb~binarySearchRecursive~.  This function takes and array of integers,
+and two indexes as its input parameters \verb~low~ and \verb~high~.  It also
+takes and integer value which is the value to search for within the
+indicated portion of the array.  As in class, the \verb~low~ and \verb~high~
+represent the indexs of the unsearched portion of the array.  The
+function can implement a binary search recursively by performing the
+following steps:
 
 \begin{enumerate}
-\item Start with the given template code for this lab (download from
-   eCollege), which contains one function already written for you, and
-   an example of calling that function.  This function reads in an
-   array of floating point values from a file.  As we learned in
-   class, since arrays are passed by reference by default, specifying
-   the array to be read in to the function, causes the values to be
-   filled in and returned to the caller in the given array.
-\item Write a function called \verb~displayArrayValues~.  This function will
-   take an array of floats as its first parameter, and a \verb~beginRange~
-   and \verb~endRange~ as its second and third parameters.  These
-   parameters are of type int, and they will be used to specify the
-   beginning index and end index of values to be displayed from the
-   array.  These values should be >= 0, and the \verb~endRange~ should be
-   less than the size of the input array.  If \verb~beginRange~ ==
-   \verb~endRange~ then only 1 value will be displayed.  If \verb~beginRange~ >
-   \verb~endRange~ then no values will be output. Your function does not
-   return anything, so it is a void function.  Instead your function
-   displays its output to standard out, and it should be formatted to
-   look exactly like the output shown below.  \textbf{HINT}: you may need to
-   use the \verb~setw()~, \verb~setprecision()~, \verb~setfill()~ and \verb~fixed~ I/O
-   manipulators to get the output formatted exactly as shown.
-\item In your main program, you should leave the code alone that reads in
-   the array values from the file.  After the array is read in, you
-   should first prompt the user for a begin and end range, and call
-   the \verb~displayArrayValues~ function to display the values in the
-   array in that range.
+\item If \verb~low~ > \verb~high~ then there is nothing left to search and the
+   search has failed (base case 2).  In this case, return -1 to
+   indicate a failure of the search.
+\item Calculate the midpoint location between \verb~low~ and \verb~high~ in the
+   same was as was done in class.
+\item If the value at the midpoint is equal to the value being searched for
+   then return the midpoint location.
+\item If the value at the midpoint is greater than the value being searched for
+   then call \verb~binarySearchRecursive~ with \verb~low~ and \verb~midpoint~ - 1 (e.g. 
+   search the lower subportion of the array recursively).
+\item If the value at the midpoint is less than the value being search for 
+   then call \verb~binarySearchRecursive~ with \verb~midpoint~ + 1 and \verb~high~.
 \end{enumerate}
 
 Your program output should look something close to the following when I
 run your program:
 
 
-\begin{verbatim}
-I will display a range of values from our array.
-Enter index to start at: 5
-Enter index to end at: 15
-values[005] 0.52743745
-values[006] 0.58105505
-values[007] 0.16465282
-values[008] 0.28310502
-values[009] 0.59936452
-values[010] 0.87698799
-values[011] 0.34905022
-values[012] 0.03936137
-values[013] 0.22738582
-values[014] 0.59080577
-values[015] 0.87810069
-\end{verbatim}
-
+In your \verb~main~ function, show an example of calling your recursive
+binary search.  Create an array of 10 values, presorted (you can use a
+static initializer to do this, or create an array of random values and
+copy and use a sort function from class today).  Then call your
+recursive binary search on your array of 10 values, and show that it
+finds the location of the item being searched for.
 
 \textbf{NOTE}: Now that our programs have more functions than just the
 \verb~main()~ function, the use of the function headers becomes meaningful
@@ -140,17 +134,13 @@ time in order to receive credit.
 \begin{enumerate}
 \item Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-\item 40+ pts.  Your program must have the required named function,
+\item 50+ pts.  Your program must have the required named function,
    that accepts the required input parameters and return the required
    values (if any).
-\item 20+ pts. Your \verb~displayArrayValues~ function must correctly format
-   the displayed output on standard output.  Your program should work
-   if the begin and end range are equal, and should show no output
-   when begin is greater than the end specified.
-\item 20+ pts.  You must use I/O formatting to correctly display the
-   output index ranges of the arrays as shown.
-\item 20+ pts. Your main function must prompt the user as specified, and
-   display the output formatted correctly as shown.
+\item 20+ pts. The function must be implemented correctly.  The function
+   must be working.
+\item 30+ pts. Your main function must create an array and demonstrate
+   calling the recursive binary search function correctly.
 \end{enumerate}
 \subsection*{Program Style}
 \label{sec-5-2}
