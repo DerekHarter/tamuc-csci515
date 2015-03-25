@@ -169,7 +169,7 @@ int binarySearch(int values[], int size, int searchValue)
     }
 
     // set new low/high to reflect new unsearched subarray partition
-    if (searchValue < mid)
+    if (searchValue < values[mid])
     {
       high = mid - 1;
     }
