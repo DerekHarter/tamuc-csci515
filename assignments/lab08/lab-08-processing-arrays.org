@@ -34,57 +34,41 @@ midpoint.
   so return the midpoint.
 - Base case 2: If the subarray is empty, return a failure.
 
-Perform the following tasks:
+A specific description of the function/tasks to perform may make this
+clearer.  You need to write a single function for this lab called
+~binarySearchRecursive~.  This function takes and array of integers,
+and two indexes as its input parameters ~low~ and ~high~.  It also
+takes and integer value which is the value to search for within the
+indicated portion of the array.  As in class, the ~low~ and ~high~
+represent the indexs of the unsearched portion of the array.  The
+function can implement a binary search recursively by performing the
+following steps:
 
-1. Start with the given template code for this lab (download from
-   eCollege), which contains one function already written for you, and
-   an example of calling that function.  This function reads in an
-   array of floating point values from a file.  As we learned in
-   class, since arrays are passed by reference by default, specifying
-   the array to be read in to the function, causes the values to be
-   filled in and returned to the caller in the given array.
-
-2. Write a function called ~displayArrayValues~.  This function will
-   take an array of floats as its first parameter, and a ~beginRange~
-   and ~endRange~ as its second and third parameters.  These
-   parameters are of type int, and they will be used to specify the
-   beginning index and end index of values to be displayed from the
-   array.  These values should be >= 0, and the ~endRange~ should be
-   less than the size of the input array.  If ~beginRange~ ==
-   ~endRange~ then only 1 value will be displayed.  If ~beginRange~ >
-   ~endRange~ then no values will be output. Your function does not
-   return anything, so it is a void function.  Instead your function
-   displays its output to standard out, and it should be formatted to
-   look exactly like the output shown below.  *HINT*: you may need to
-   use the ~setw()~, ~setprecision()~, ~setfill()~ and ~fixed~ I/O
-   manipulators to get the output formatted exactly as shown.
-
-3. In your main program, you should leave the code alone that reads in
-   the array values from the file.  After the array is read in, you
-   should first prompt the user for a begin and end range, and call
-   the ~displayArrayValues~ function to display the values in the
-   array in that range.
+1. If ~low~ > ~high~ then there is nothing left to search and the
+   search has failed (base case 2).  In this case, return -1 to
+   indicate a failure of the search.
+2. Calculate the midpoint location between ~low~ and ~high~ in the
+   same was as was done in class.
+3. If the value at the midpoint is equal to the value being searched for
+   then return the midpoint location.
+4. If the value at the midpoint is greater than the value being searched for
+   then call ~binarySearchRecursive~ with ~low~ and ~midpoint~ - 1 (e.g. 
+   search the lower subportion of the array recursively).
+5. If the value at the midpoint is less than the value being search for 
+   then call ~binarySearchRecursive~ with ~midpoint~ + 1 and ~high~.
 
 Your program output should look something close to the following when I
 run your program:
 
 #+begin_example
-I will display a range of values from our array.
-Enter index to start at: 5
-Enter index to end at: 15
-values[005] 0.52743745
-values[006] 0.58105505
-values[007] 0.16465282
-values[008] 0.28310502
-values[009] 0.59936452
-values[010] 0.87698799
-values[011] 0.34905022
-values[012] 0.03936137
-values[013] 0.22738582
-values[014] 0.59080577
-values[015] 0.87810069
 #+end_example
 
+In your ~main~ function, show an example of calling your recursive
+binary search.  Create an array of 10 values, presorted (you can use a
+static initializer to do this, or create an array of random values and
+copy and use a sort function from class today).  Then call your
+recursive binary search on your array of 10 values, and show that it
+finds the location of the item being searched for.
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
