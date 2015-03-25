@@ -64,6 +64,61 @@ run the program twice so we can see an example of a successful and a
 failed search.
 
 #+begin_example
+$ ./lab08
+Array, before being sorted:
+000:  10
+001:  11
+002:  13
+003:   1
+004:  14
+005:   9
+006:   1
+007:  13
+008:   7
+009:   4
+
+Array, after being sorted sorted:
+000:   1
+001:   1
+002:   4
+003:   7
+004:   9
+005:  10
+006:  11
+007:  13
+008:  13
+009:  14
+
+Enter a value and I will search for it in the array: 9
+I found the value at location: 4
+
+$ ./lab08
+Array, before being sorted:
+000:  19
+001:   7
+002:  15
+003:  10
+004:   3
+005:  11
+006:   4
+007:  13
+008:  16
+009:  16
+
+Array, after being sorted sorted:
+000:   3
+001:   4
+002:   7
+003:  10
+004:  11
+005:  13
+006:  15
+007:  16
+008:  16
+009:  19
+
+Enter a value and I will search for it in the array: 5
+Search failed, value: 5 not located in array
 #+end_example
 
 In your ~main~ function, show an example of calling your recursive
