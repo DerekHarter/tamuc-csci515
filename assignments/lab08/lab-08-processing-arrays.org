@@ -1,4 +1,4 @@
-#+TITLE:     Lab 08: Restricted Binary Search
+#+TITLE:     Lab 08: Recursive Binary Search
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-18 Wed>
@@ -12,20 +12,27 @@
 | Due: | In Lab, Wednesday March 4, by 4:05 pm (lab end time) |
 
 * Objectives
-- Learn about declaring, accessing and processing array elements
+- Become more familiar with performing searches and sorts.
 - Practice passing arrays to and from functions.
-- See examples of using file I/O to read date into arrays for processing
-- Practice I/O formatting
-- Learn about indexing into arrays in ranges.
 
 * Description
-In this lab you will be given a function, and an example of how to
-call the function, that will read in an array of values from a
-file. You will be processing arrays of floating point values.  You
-will write one function to display the elements in an array.  In the
-function, you will pass in an array, and a begin and end range.  This
-function will display the values in the array, formatted on standard
-output as specified below.
+In class today we gave an example of a binary search implementation
+using a straight forward iterative approach.  We kept track of the
+unsearched region of the array, and calculated the midpoint, and
+decided on a comparison with that midpoint whether to search to the
+lower or upper part of the array.  Binary search can also be fairly
+easily described as a recursive algorithm.  The basic idea of the
+algorithm is:
+
+- Recursive condition: Calculate the midpoint of the current array and
+compare the value to the search value.  If the value is greater than
+the search value, recursively call the function on the subarray
+to the left of the midpoint.  If the value is less than the search
+value, recursively call the function on the subarray to the right of the
+midpoint.  
+- Base case 1: If the value is equal to the search item, we found it
+  so return the midpoint.
+- Base case 2: If the subarray is empty, return a failure.
 
 Perform the following tasks:
 
