@@ -28,7 +28,7 @@ elements, $n - 1$ passes must be made, and for each subarray $n - 1$
 comparisons must be made to find the smallest value.
 
 In this assignment you are to implement the selection sort algorithm.
-To support the insertion sort, you will also (re)implement two helper
+To support the selection sort, you will also (re)implement two helper
 functions that work on arrays (and which we have seen examples of
 before in class).  In particular, you need to create a function that,
 given an array and two indexes will swap the values between the two
