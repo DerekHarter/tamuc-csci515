@@ -4,9 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   March 13, 2015
- * @assg   Lecture 08, P03 Insertion Sort
+ * @assg   Lecture 08, P04 Binary Search 
  *
- * @description An implementation of various sorting algorithms.
+ * @description An implementation of an iterative binary search.
  */
 #include <iostream>
 #include <iomanip>
