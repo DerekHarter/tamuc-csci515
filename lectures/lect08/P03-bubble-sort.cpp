@@ -99,28 +99,22 @@ void displayArray(int values[], int size)
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
  *   that is passed in will be sorted into ascending order.
  */
-void insertionSort(int values[], int size)
+void bubbleSort(int values[], int size)
 {
-  int valueToInsert;
-  int swapLocation;
-  for (int nextIndexToInsert = 1; nextIndexToInsert < size; nextIndexToInsert++)
+  // outer loop, perform N passes
+  for (int pass = 0; pass < size; pass++)
   {
-    valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
-    swapLocation = nextIndexToInsert; 
-
-    // test the swapLocation with the item one index lower in the array.  As long as the
-    // item we are examining is greater than the value we are trying to insert, we shift
-    // it up.  
-    while ( (swapLocation > 0) && (values[swapLocation - 1] > valueToInsert) )
+    // inner loop, bubble up items from index 0 up to size-pass-1 index
+    for (int idx = 0; idx < (size - pass - 1); idx++)
     {
-      // shift elements one slot
-      values[swapLocation] = values[swapLocation - 1];
-      swapLocation--;
+      // if the values are out of order, swap them
+      if (values[idx] > values[idx + 1])
+      {
+	int tmp = values[idx];
+	values[idx] = values[idx + 1];
+	values[idx + 1] = tmp;
+      }
     }
-
-    // We shifted all of the items up that needed to be moved, now we insert at is
-    // correct location
-    values[swapLocation] = valueToInsert;
   }
 }
 
