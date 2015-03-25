@@ -76,7 +76,7 @@ Perform the following tasks:
    sort function to sort the values in the array, and then display the contents of 
    your array on standard output.
 
-Your program output should look exactly like the following when I run
+Your program output should look something like the following when I run
 your program. 
 
 #+begin_example
