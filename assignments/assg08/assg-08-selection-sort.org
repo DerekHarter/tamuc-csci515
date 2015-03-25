@@ -55,9 +55,9 @@ Perform the following tasks:
 
 2. Write a function called ~swapArrayLocations~.  This functions takes
    an array of ints.  It should then take two integer parameters,
-   which represent two indexes into the array.  The function should
-   swap the values in the two indicated locations as a result of
-   calling the function.  This function does not return an explicit
+   which represent two (valid) indexes into the array.  The function
+   should swap the values in the two indicated locations as a result
+   of calling the function.  This function does not return an explicit
    result (it is a void function) but as a side effect, the indicated
    locations will be swapped after this function is called.
 
