@@ -151,7 +151,7 @@ int binarySearch(int values[], int size, int searchValue)
 {
   // low and high are the current unsearched portion of the array
   int low = 0;
-  int high = size;
+  int high = size - 1; // because last valid index is at size-1
   int mid;
 
   // As long is there is stuff remaining to be searched, keep looking
