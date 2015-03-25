@@ -3,10 +3,10 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
- * @date   March 13, 2015
- * @assg   Lecture 08, P04 Binary Search 
+ * @date   March 25, 2015
+ * @assg   Lab 08
  *
- * @description An implementation of an iterative binary search.
+ * @description Implement the binary search as a recursive function call.
  */
 #include <iostream>
 #include <iomanip>
