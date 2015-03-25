@@ -127,6 +127,29 @@ void insertionSort(int values[], int size)
 }
 
 
+/** Binary Search 
+ * Search an array of sorted items using a binary search.  This is
+ * an iterative implementation of the search.  This functions
+ * takes a sorted array of integers, and the size of the array as
+ * input parameters.  This function takes a third value, the item
+ * to search for in the array.  The funciton returns the index of
+ * the location where the item was found, or NOT_FOUND if the
+ * search failed to find the item.
+ *
+ * @param values An array of integers.  The array to be searched.
+ *   This array must be presorted before calling this function, or
+ *   else the results will be unpredictable.
+ * @param size int The size of the array to sort.
+ * @param searchValue int The value to search for in the array.
+ *
+ * @returns int NOT_FOUND if the search fails, or else the integer
+ *   index location of the searchValue in the array.
+ */
+void insertionSort(int values[], int size, int searchValue)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
