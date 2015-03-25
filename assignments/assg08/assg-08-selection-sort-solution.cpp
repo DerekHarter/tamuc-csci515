@@ -108,7 +108,7 @@ void displayArray(int values[], int size)
  * @returns int The index/location of the minimum value in the
  *   subportion of the array from start to size-1
  */
-int findMinimumInSubarray(int values[], int size, int start)
+int findMinimumInSubarray(int values[], int start, int size)
 {
   // first of all, declare that the initial value is the minimum we have seen so far
   int minIndex = start;
