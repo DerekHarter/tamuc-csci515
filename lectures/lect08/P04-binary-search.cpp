@@ -12,7 +12,7 @@
 #include <iomanip>
 using namespace std;
 
-const int NOT_FOUND = -1;
+const int NOT_FOUND = -1; // indicates a failed search
 
 
 /** Generate Random Integer in Range
