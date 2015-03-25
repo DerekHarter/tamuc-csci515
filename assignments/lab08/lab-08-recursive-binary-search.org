@@ -50,7 +50,7 @@ following steps:
 2. Calculate the midpoint location between ~low~ and ~high~ in the
    same way as was done in class.
 3. If the value at the midpoint is equal to the value being searched for
-   then return the midpoint location.
+   then return the midpoint location (base case 1).
 4. If the value at the midpoint is greater than the value being searched for
    then call ~binarySearchRecursive~ with ~low~ and ~midpoint~ - 1 (e.g. 
    search the lower subportion of the array recursively).

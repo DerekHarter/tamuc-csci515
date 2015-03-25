@@ -1,4 +1,4 @@
-% Created 2015-03-25 Wed 14:20
+% Created 2015-03-25 Wed 14:21
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -89,7 +89,7 @@ following steps:
 \item Calculate the midpoint location between \verb~low~ and \verb~high~ in the
    same way as was done in class.
 \item If the value at the midpoint is equal to the value being searched for
-   then return the midpoint location.
+   then return the midpoint location (base case 1).
 \item If the value at the midpoint is greater than the value being searched for
    then call \verb~binarySearchRecursive~ with \verb~low~ and \verb~midpoint~ - 1 (e.g. 
    search the lower subportion of the array recursively).
