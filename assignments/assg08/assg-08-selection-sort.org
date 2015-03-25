@@ -23,7 +23,7 @@ Then the smallest element is swapped with the first element of the
 array.  The process is repeated for the subarray beginning with the
 second element of the array on the second pass.  Each pass of the
 array results in one element being swapped into its proper location.
-This algorithm is also an $O(N^2)$ algorithm, for an array of $n$
+This algorithm is also an $O(n^2)$ algorithm, for an array of $n$
 elements, $n - 1$ passes must be made, and for each subarray $n - 1$
 comparisons must be made to find the smallest value.
 
