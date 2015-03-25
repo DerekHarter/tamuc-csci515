@@ -92,6 +92,27 @@ void displayArray(int values[], int size)
 }
 
 
+/** Find minimum in subarray
+ * Find the minimum vaue in a portion of an array of integers.  We
+ * are given the array and its size, and a start index where we
+ * are to begin the search from.  We search all values from the start
+ * index to the end of the array, and return the location of the
+ * minimum integer value as our result.
+ *
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
+ * @param start int The index to begin searching for the minimum at.
+ *
+ * @returns int The index/location of the minimum value in the
+ *   subportion of the array from start to size-1
+ */
+void insertionSort(int values[], int size)
+{
+}
+
+
 /** Insertion Sort
  * Sort an array of integers using an Insertion sort.  Insertion sort
  * works in this manner.  We first look at the element at index 1.  If
