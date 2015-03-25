@@ -175,28 +175,18 @@ void swapArrayLocations(int values[], int loc1, int loc2)
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
  *   that is passed in will be sorted into ascending order.
  */
-void insertionSort(int values[], int size)
+void selectionSort(int values[], int size)
 {
-  int valueToInsert;
-  int swapLocation;
-  for (int nextIndexToInsert = 1; nextIndexToInsert < size; nextIndexToInsert++)
+  // perform size passes, to ensure all values get selected and swapped
+  // to their correct location
+  for (int swapLocation = 0; swapLocation < size; swapLocation++)
   {
-    valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
-    swapLocation = nextIndexToInsert; 
+    // search for location of minimum value in array from current
+    // swapLocation to the end of the array
+    int selectedValueLocation = findMinimunInSubarray(values, swapLocation, size);
 
-    // test the swapLocation with the item one index lower in the array.  As long as the
-    // item we are examining is greater than the value we are trying to insert, we shift
-    // it up.  
-    while ( (swapLocation > 0) && (values[swapLocation - 1] > valueToInsert) )
-    {
-      // shift elements one slot
-      values[swapLocation] = values[swapLocation - 1];
-      swapLocation--;
-    }
-
-    // We shifted all of the items up that needed to be moved, now we insert at is
-    // correct location
-    values[swapLocation] = valueToInsert;
+    // and swap the selected value to the beginning of the unsorte part
+    swapArrayLocations(values, swapLocation, selecteValueLocation);
   }
 }
 
