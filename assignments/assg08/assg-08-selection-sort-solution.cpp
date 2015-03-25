@@ -198,12 +198,14 @@ int main()
   cout << endl;
 
   // sort the array using some method
-  insertionSort(values, NUM_VALUES);
+  int location = findMinimumInSubarray(values, 0, NUM_VALUES);
+  cout << "Minimum at location: " << location << endl;
+  //insertionSort(values, NUM_VALUES);
 
   // and display it again
-  cout << "Array, after being sorted sorted:" << endl;
-  displayArray(values, NUM_VALUES);
-  cout << endl;
+  //cout << "Array, after being sorted sorted:" << endl;
+  //displayArray(values, NUM_VALUES);
+  //cout << endl;
 
   return 0;
 }
