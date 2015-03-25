@@ -168,11 +168,11 @@ int binarySearchRecursive(int values[], int low, int high, int searchValue)
   // recursive cases
   if (searchValue < values[mid])
   {
-    return binarySearchRecursive(values, low, mid-1, searchValue)
+    return binarySearchRecursive(values, low, mid-1, searchValue);
   }
   else
   {
-    return binarySearchRecursive(values, mid+1, high, searchValue)
+    return binarySearchRecursive(values, mid+1, high, searchValue);
   }
 }
 
