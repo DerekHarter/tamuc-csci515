@@ -209,7 +209,7 @@ int main()
 
   cout << "Enter a value and I will search for it in the array: ";
   cin >> searchValue;
-  location = binarySearch(values, NUM_VALUES, searchValue);
+  location = binarySearchRecursive(values, 0, NUM_VALUES-1, searchValue);
   if (location == NOT_FOUND)
   {
     cout << "Search failed, value: " << searchValue << " not located in array" << endl;
