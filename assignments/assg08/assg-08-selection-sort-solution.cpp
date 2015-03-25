@@ -103,8 +103,9 @@ void displayArray(int values[], int size)
  * it is in order, etc untill we are at the last item.  Insertion sort
  * is very inefficient, it is an O(N^2) algorithm.
  *
- * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
- *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
  * @param size int The size of the array to sort.
  *
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
