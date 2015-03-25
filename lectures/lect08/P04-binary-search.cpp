@@ -149,6 +149,20 @@ void insertionSort(int values[], int size)
  */
 int binarySearch(int values[], int size, int searchValue)
 {
+  // low and high are the current unsearched portion of the array
+  int low = 0;
+  int high = size;
+  int mid;
+
+  // As long is there is stuff remaining to be searched, keep looking
+  while (low >= high)
+  {
+    // find midpoint
+    // determine if we found the item
+    // set new low/high to reflect new unsearched subarray partition
+  }
+
+  return NOT_FOUND;
 }
 
 
