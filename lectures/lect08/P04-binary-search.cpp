@@ -159,8 +159,7 @@ int binarySearch(int values[], int size, int searchValue)
   {
     // find midpoint
     mid = (low + high) / 2;
-    cout << low << " "  << mid << " " << high << endl;
-    
+
     // determine if we found the item
     if (values[mid] == searchValue)
     {
