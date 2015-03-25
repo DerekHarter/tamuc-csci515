@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
  * @date   February 19, 2015
- * @assg   Assg 07
+ * @assg   Assg 08
  *
  * @description Implement function to search for and remove duplicates from an
  *   array.
