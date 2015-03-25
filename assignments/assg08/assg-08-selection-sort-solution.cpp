@@ -110,7 +110,24 @@ void displayArray(int values[], int size)
  */
 int findMinimunInSubarray(int values[], int size, int start)
 {
-  
+  // first of all, declare that the initial value is the minimum we have seen so far
+  int minIndex = start;
+  int minValue = values[start];
+
+  // now look at all of the rest of the value in the array and try and find ones
+  // that are smaller
+  for (int idx = start + 1; idx < size; idx++)
+  {
+    // if it is smaller than our current minimum, remembre it instead
+    if (values[idx] < minValue)
+    {
+      minValue = values[idx];
+      minIndex = idx;
+    }
+  }
+
+  // return the location where we found the smallest value
+  return minIndex;
 }
 
 
