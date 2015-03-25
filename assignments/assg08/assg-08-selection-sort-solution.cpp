@@ -183,10 +183,10 @@ void selectionSort(int values[], int size)
   {
     // search for location of minimum value in array from current
     // swapLocation to the end of the array
-    int selectedValueLocation = findMinimunInSubarray(values, swapLocation, size);
+    int selectedValueLocation = findMinimumInSubarray(values, swapLocation, size);
 
     // and swap the selected value to the beginning of the unsorted part
-    swapArrayLocations(values, swapLocation, selecteValueLocation);
+    swapArrayLocations(values, swapLocation, selectedValueLocation);
   }
 }
 
