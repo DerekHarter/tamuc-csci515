@@ -108,8 +108,9 @@ void displayArray(int values[], int size)
  * @returns int The index/location of the minimum value in the
  *   subportion of the array from start to size-1
  */
-void insertionSort(int values[], int size)
+int findMinimunInSubarray(int values[], int size, int start)
 {
+  
 }
 
 
