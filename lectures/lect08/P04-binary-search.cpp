@@ -195,7 +195,9 @@ int main()
 {
   const int NUM_VALUES = 10;
   int values[NUM_VALUES];
-
+  int searchValue;
+  int location;
+  
   // set seed to a different value based on current time and initialize array to set or random values
   srand(time(0));
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
@@ -210,6 +212,18 @@ int main()
   cout << "Array, after being sorted sorted:" << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
+
+  cout << "Enter a value and I will search for it in the array: ";
+  cin >> searchValue;
+  location = binarySearch(values, NUM_VALUES, searchValue);
+  if (location == NOT_FOUND)
+  {
+    cout << "Search failed, value: " << searchValue << " not located in array" << endl;
+  }
+  else
+  {
+    cout << "I found the value at location: " << location << endl;
+  }
 
   return 0;
 }
