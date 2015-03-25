@@ -25,3 +25,9 @@
 - Time and Space
 - Relative growth as a function of the size $N$ of input.
 
+| *Algorithm*    | *Best case*  | *Expected*   | *Worst case* |
+| Bubble sort    | $O(N^2)$     | $O(N^2)$     | $O(N^2)$     |
+| Insertion sort | $O(N^2)$     | $O(N^2)$     | $O(N^2)$     |
+| Merge Sort     | $O(N log N)$ | $O(N log N)$ | $O(N log N)$ |
+| Linear search  | $O(1)$       | $O(N)$       | $O(N)        |
+| Binary search  | $O(1)$       | $O(log N)$   | $O(log N)$   |
