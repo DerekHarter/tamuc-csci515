@@ -83,16 +83,14 @@ void displayArray(int values[], int size)
 }
 
 
-/** Insertion Sort
- * Sort an array of integers using an Insertion sort.  Insertion sort
- * works in this manner.  We first look at the element at index 1.  If
- * it is out of order with element 0, we insert it at index 0.  We
- * then look at the element at index 2 and insert it into the correct
- * location of the sorted part of the list 0-1 by swapping it down
- * until it is at its correct location.  We then repeat by looking at
- * index 3 and inserting into the elements 0-2 by swaping down until
- * it is in order, etc untill we are at the last item.  Insertion sort
- * is very inefficient, it is an O(N^2) algorithm.
+/** Bubble Sort
+ * Sort an array of integers using a Bubble sort.  Bubblesort works in this manner.
+ * On the first pass we start at index 0 and compare successive items.  We
+ * swap the items if they are out of order.  The result is that on the first
+ * pass, the largest item will be "bubbled up" to the largest index.  On the
+ * next pass, we do the same thing, but since the last item is alredy bubbled
+ * into place, we only pass through the N-1 items.  We do this for N passes.
+ * Bubble sort is very inefficient, it is an O(N^2) algorithm.
  *
  * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
  *   is sorted in place in memory.  The array is sorted in ascending order.
