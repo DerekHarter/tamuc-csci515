@@ -12,6 +12,8 @@
 #include <iomanip>
 using namespace std;
 
+const int NOT_FOUND = -1;
+
 
 /** Generate Random Integer in Range
  * Generate a random integer.  We generate the integer in the
