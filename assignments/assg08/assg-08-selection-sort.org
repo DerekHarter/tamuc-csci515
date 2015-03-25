@@ -9,100 +9,60 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday March 24, by Midnight |
+| Due: | Tuesday March 31, by Midnight |
 
 * Objectives
-- Practice declaring and using arrays.
-- More practice writing functions that take arrays as parameters and
-  process them.
-- Look at shifting values in arrays.
+- Implement a sorting algorithm
+- Practice using arrays.
+- Implement and use a swap function
+- More practice with passing arrays to functions.
 
 * Description
-In this assignment, we want to solve the following task.  We need to design
-and implement a function that will take an array of integers as input, and
-will return a new array with only the unique values from the original
-input array (e.g. a new array without any duplicate items).  For example,
-if we had the following values in an array of size 5:
+A selection sort searches an array looking for the smallest element.
+Then the smallest element is swapped with the first element of the
+array.  The process is repeated for the subarray beginning with the
+second element of the array on the second pass.  Each pass of the
+array results in one element being swapped into ints proper location.
+This algorithm is also an $O(N^2)$ algorithm, for an array of $n$
+elements, $n - 1$ passes must be made, and for each subarray $n - 1$
+comparisons must be made to find the smallest value.
 
-#+begin_example
-1
-3
-2
-3
-2
-#+end_example
+In this assignment you are to implement the insertion sort algorithm.
+To support the insertion sort, you will also (re)implement two helper
+functions that work on arrays (and which we have seen examples of
+before in class).  In particular, you need to create a function that,
+given an array and two indexes will swap the values between the two
+indexes.  And you need to implement a function that will search an
+array, from some beginning start position, and return the location of
+the minimum value found in the array after that position.  With these
+two functions implemented, you should be able to write the insertion
+sort function that calls these two helper functions, in order to find
+the minimum value and then swap it into place.
 
-The result would be a new array of size 3, with only the following unique
-values in the array
 
-#+begin_example
-1
-3
-2
-#+end_example
-
-The general idea or algorithm that is easiest to implement to solve
-this task is as follows.  Iterate through each value in the input
-array.  For each value in the input, first see if it already exists in
-the output array, and if it doesn't then copy it to the output array.
-Of course, if it already exists in the output array, then you will do
-nothing.
-
-In order to implement this algorithm, it would be nice to have a
-function that takes an array as input and searches the array to
-determine if a value is in the array or not.  This function should
-return true if the value is in the array, and false otherwise.  This
-function should be able to handle an array of size 0, and the answer
-when searching for a value in an array with nothing yet in it would be
-false, e.g. the value is not yet present in the array.
-
-Given this search function that can handle searching in an empty
-array, the implementation of the copying from the input to the
-output array, checking for duplicates, becomes relatively
-straightforward.  You simply need to start with the output array
-being empty (with a size of 0).  For every value in the input array,
-you simply perform the search, and if it is not in the output array,
-you put it on the end of the array, and increase the size of the array
-by 1.  The result, after iterating through the whole input array, should
-be to only copy the values the first time they are seen to the output
-array.
 
 Perform the following tasks:
 
-1. Write a function called ~searchForValue~.  This function takes
-   an array of ints and the size of the array as its parameters.  This
-   function also takes a third parameter, an int, which is the value to
-   search for.  This function returns a ~bool~ result of true if the
-   value being searched for is in the given array, and false if the
-   value is not in the array.  If you pass in an empty array (e.g. an
-   array of size 0), the function should still work.  If the array is
-   empty then of course the answer is false, since there are no values
-   in the array and so there is no possibility that you can find the
-   value that is being asked to search for.
+1. Write a function called ~findMinimumInSubarray~.  This function
+   takes an array of ints as its first parameter and an integer
+   parameter indicating the size of the array.  The third parameter is
+   an integer position which indicates the location to start searching
+   within the array.  This function should return a single integer.
+   The returned value should be the index location of the minimum
+   value in the subarray that was searched.  You will use this
+   location in your sorting function to swap the minimum value into
+   its proper place.
 
-2. Write a function called ~findUniqueValues~.  This functions
-   takes an input array of int values, and the size of the array
-   as its first two parameters.  You should also pass another
-   array of int values as a third parameter.  This array should
-   be allocated to be the same size as the input array, since
-   potentially in the worst case, if there are no duplicates,
-   this array will end up being simply a copy of the original
-   array.  This function should copy over the values from
-   the input array into the output array, but as described above
-   it should only copy over unique values (duplicates will
-   not be copied to the output array).  The resulting size of
-   the array can be smaller than the input array.  Thus this
-   function should return the size of the output array as
-   its result e.g. the size of the array after removing all
-   duplicates.
+2. Write a function called ~swapArrayLocations~.  This functions takes
+   an array of ints.  It should then take two integer parameters,
+   which represent two indexes into the array.  The function should
+   swap the values in the two indicated locations as a result of
+   calling the function.  This function does not return an explicit
+   result (it is a void function) but as a side effect, the indicated
+   locations will be swapped after this function is called.
 
-3. In your main function, declare an array of integers called ~values~
-   of size 10.  Initialize all of the values in this array to random
-   integers in the range from 0 to 4.  Declare another array called
-   ~uniques~ of 10 integers.  Use your ~removeDuplicates~ functions to
-   remove any duplicate values, and remember to get the new size of
-   the ~uniques~ array from the function, after duplicates have been
-   removed.
+3. Write an implementation of the selection sorting algorithm. 
+   Name your function ~selectionSort~.  This function
 
 4. Display the ~values~ array and the ~uniques~ arrays to standard
    output.  An example of the output you should display is given below.
