@@ -156,16 +156,16 @@ void swapArrayLocations(int values[], int loc1, int loc2)
 }
 
 
-/** Insertion Sort
- * Sort an array of integers using an Insertion sort.  Insertion sort
- * works in this manner.  We first look at the element at index 1.  If
- * it is out of order with element 0, we insert it at index 0.  We
- * then look at the element at index 2 and insert it into the correct
- * location of the sorted part of the list 0-1 by swapping it down
- * until it is at its correct location.  We then repeat by looking at
- * index 3 and inserting into the elements 0-2 by swaping down until
- * it is in order, etc untill we are at the last item.  Insertion sort
- * is very inefficient, it is an O(N^2) algorithm.
+/** Selection Sort
+ * Sort an array of integers using a Selection sort.  Selection sort
+ * works in the following manner.  We start by considering the entire
+ * array to be unsorted.  We find the minimum value in the unsorted
+ * portion and swap it into the first location of the unsorted portion
+ * of the array.  Now the minimum has been moved to its correct loction
+ * and we consider all values after this now sorted value as the now
+ * unsorted portion of the array.  Performing N passes of this method
+ * will insure all values are found and swapped to their correct location
+ * Selection sort is an O(N^2) algorithm.
  *
  * @param values An array of integers.  The array to be sorted.  The
  *   array is passed by reference and is sorted in place in memory.
