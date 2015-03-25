@@ -155,7 +155,7 @@ int binarySearch(int values[], int size, int searchValue)
   int mid;
 
   // As long is there is stuff remaining to be searched, keep looking
-  while (low >= high)
+  while (low <= high)
   {
     // find midpoint
     mid = (low + high) / 2;
