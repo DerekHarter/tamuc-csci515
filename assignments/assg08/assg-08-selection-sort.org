@@ -35,7 +35,7 @@ given an array and two indexes will swap the values between the two
 indexes.  And you need to implement a function that will search an
 array, from some beginning start position, and return the location of
 the minimum value found in the array after that position.  With these
-two functions implemented, you should be able to write the insertion
+two functions implemented, you should be able to write the selection
 sort function that calls these two helper functions, in order to find
 the minimum value and then swap it into place.
 
