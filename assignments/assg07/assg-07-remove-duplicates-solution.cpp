@@ -20,166 +20,148 @@ using namespace std;
 
 
 
-/** Initialize array to random range
- * Initialize an array of integers to values within a random range.
- * We are given the array (and its size), and the begin and end of the
- * range.
+/** Generate Random Integer in Range
+ * Generate a random integer.  We generate the integer in the
+ * range [beginRange, endRange] inclusive.
+ * @param beginRange int The beginning of range inclusive to generate
+ *   a random number within.
+ * @param endRange int The end of the range for our random numbers.
  *
- * @param values An array of integers, passed by reference.
- * @param size The size of the array we initializing.
- * @param beginRange An integer, the beginning of the range
- * @param endRange An integer, the end of the range
- *
- * @returns void Nothing is explicitly returned, but as a side effect
- *   of calling this function, the array of values is initialized to
- *   a random value in the range [beginRange, endRange] (inclusive)
+ * @returns int A random integer in the range [beginRange, endRange]
  */
-void initRandomRange(int values[], int size, int beginRange, int endRange)
+int randomRange(int beginRange, int endRange)
 {
-  // We initialize minimum to the first value, then search values 1..size-1 for smaller ones
-  int scale = endRange - beginRange + 1;
+  int scale;
+
+  // Determine the magnitude of the scale between begin and end of range
+  scale = endRange - beginRange + 1;
+
+  // Generate the number in range [beginRange, endRange] and return it
+  return rand() % scale + beginRange;
+}
+
+
+/** Randomly Initialize Array
+ * Initialize an array of integers to random values within
+ * some indicated range.  Array is passed by reference, so
+ * the initialization of the array elements will be accessible
+ * to the caller of this function.
+ *
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
+ * @param beginRange int The beginning of range inclusive to generate
+ *   a random number within.
+ * @param endRange int The end of the range for our random numbers.
+ *
+ * @returns void.  However, since arrays are passed by reference,
+ *   as a side effect we initialize the array to random values
+ *   in range [beginRange, endRange] inclusive and return them.
+ */
+void initArrayRandomRange(int values[], int size, int beginRange, int endRange)
+{
   for (int idx = 0; idx < size; idx++)
   {
-    values[idx] = (rand() % scale) + beginRange;
+    values[idx] = randomRange(beginRange, endRange);
   }
 }
 
 
-/** display array
- * Display values in an array in a given range.  We indicate the
- * indices and format the values to give a uniform, nice appearance
- * on standard output.
+/** Display Array
+ * Display all of the values in the indicated array of integers.
  *
- * @param values An array of ints, passed by reference.
- * @param size An integer, the number of values in the array.
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
  *
- * @returns void Results printed to standard output as a side effect.
+ * @returns void.  However, as a side effect we display the
+ *   values in the array to standard output.
  */
 void displayArray(int values[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
-    cout << "[" << setw(3) << setfill('0') << idx << "] "
-	 << setw(5) << setfill(' ') << values[idx] << endl;
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << setw(3) << setfill(' ') << values[idx]
+	 << endl;
   }
 }
 
 
-/** search for value
- * Search the given array for a particular value.  We are given
- * an array of integers (and its size).  We search for a
- * particular value and return True if we find the value in
- * the array, or False otherwise.  This functions correctly
- * handles an empty array as input (e.g. size = 0, we return
- * False, could not find the value in the array).
+/** Insertion Sort
+ * Sort an array of integers using an Insertion sort.  Insertion sort
+ * works in this manner.  We first look at the element at index 1.  If
+ * it is out of order with element 0, we insert it at index 0.  We
+ * then look at the element at index 2 and insert it into the correct
+ * location of the sorted part of the list 0-1 by swapping it down
+ * until it is at its correct location.  We then repeat by looking at
+ * index 3 and inserting into the elements 0-2 by swaping down until
+ * it is in order, etc untill we are at the last item.  Insertion sort
+ * is very inefficient, it is an O(N^2) algorithm.
  *
- * @param values An array of ints, passed by reference.
- * @param size An integer, the number of values in the array.
- * @param valueToSearchFor An integer, the value to search for in
- *   the input array.
+ * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
+ *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
  *
- * @returns bool True if the value is found in the array, False
- *   othersies.
+ * @returns void Nothing is returned explicitly but as a result of calling this function the array
+ *   that is passed in will be sorted into ascending order.
  */
-bool searchForValue(int values[], int size, int valueToSearchFor)
+void insertionSort(int values[], int size)
 {
-  // We search sequentially for the value
-  for (int idx = 0; idx < size; idx++)
+  int valueToInsert;
+  int swapLocation;
+  for (int nextIndexToInsert = 1; nextIndexToInsert < size; nextIndexToInsert++)
   {
-    if (values[idx] == valueToSearchFor)
-    {
-      // the first occurrence we find, we have our answer
-      // and we return immediately
-      return true;
-    }
-  }
+    valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
+    swapLocation = nextIndexToInsert; 
 
-  // if we look at all the values and get to this point, then
-  // we failed to find the value being searched for, so
-  // we return a False answer
-  return false;
+    // test the swapLocation with the item one index lower in the array.  As long as the
+    // item we are examining is greater than the value we are trying to insert, we shift
+    // it up.  
+    while ( (swapLocation > 0) && (values[swapLocation - 1] > valueToInsert) )
+    {
+      // shift elements one slot
+      values[swapLocation] = values[swapLocation - 1];
+      swapLocation--;
+    }
+
+    // We shifted all of the items up that needed to be moved, now we insert at is
+    // correct location
+    values[swapLocation] = valueToInsert;
+  }
 }
 
-
-/** find unique values
- * Search a given input array of integers for unique values.  We
- * copy over unique values into a result array.  The unique
- * array that results should only have unique values from the
- * original input array (e.g. all duplicates will be removed).
- * This function returns the size of the unique array that is
- * created.  This size can be the same size as the original
- * array (if it contains no duplicate values), or as small as 0
- * (if the original array we are given is empty, we return an
- * empty array as result).
- *
- * @param values An array of ints, the array to search as input
- *   to remove duplicates and find unique values from.
- * @param size An integer, the number of values in the input array.
- * @param uniques An array of sufficient size to hold the
- *   unique values we find in the input array.  This array is
- *   passed by reference, so when we create it it will be returned
- *   to the caller of this function.
- *
- * @returns int The size of the unique values array that is
- *   created.  This can be as small as 0, to as large as
- *   size, the original size of the input array.
- */
-int findUniqueValues(int values[], int size, int uniques[])
-{
-  int uniquesSize;
-  int value;
-
-  // Look at all values in the input array, insert them into uniques
-  // if they are not already there.  Initially the uniques array
-  // is empty.
-  uniquesSize = 0;
-  for (int idx = 0; idx < size; idx++)
-  {
-    value = values[idx];
-    // if the uniques array does not contain the value, we
-    // add it to the end of the uniques
-    if (!searchForValue(uniques, uniquesSize, value))
-    {
-      uniques[uniquesSize] = value;
-      // size of uniques has now increased by 1
-      uniquesSize++;
-    }
-  }
-
-  // Retrun size of the created uniques array to the caller
-  return uniquesSize;
-}
 
 /** main entry point
  * The main entry point for this program.  Execution
- * of this program will beigin with this function.
+ * of this program will begin with this function.
  *
  * @returns An int value.  By default, if we don't specify a return or
  *           exit value, 0 is returned to indicate successful program
  *           completion.  A non-zero value indicates an error or
- *           problem with execution.  Summary information is calculated
- *           while processing the individual lines of input.
+ *           problem with execution.
  */
 int main()
 {
-  const int ARRAY_SIZE = 10;
-  int values[10];
-  int uniques[10];
+  const int NUM_VALUES = 10;
+  int values[NUM_VALUES];
 
-  // initialize to random values
+  // set seed to a different value based on current time and initialize array to set or random values
   srand(time(0));
-  initRandomRange(values, ARRAY_SIZE, 0, 4);
-  cout << "----- Values array (with duplicates):" << endl;
-  displayArray(values, ARRAY_SIZE);
+  initArrayRandomRange(values, NUM_VALUES, 1, 20);
+  cout << "Array, before being sorted:" << endl;
+  displayArray(values, NUM_VALUES);
   cout << endl;
 
-  // create the array of uniques from the input values
-  int uniquesSize;
-  uniquesSize = findUniqueValues(values, ARRAY_SIZE, uniques);
-  cout << "----- Uniques array (duplicates removed):" << endl;
-  displayArray(uniques, uniquesSize);
+  // sort the array using some method
+  insertionSort(values, NUM_VALUES);
+
+  // and display it again
+  cout << "Array, after being sorted sorted:" << endl;
+  displayArray(values, NUM_VALUES);
   cout << endl;
 
-  //  Return 0 to indicate program terminated successfully
   return 0;
 }
