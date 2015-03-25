@@ -6,8 +6,13 @@
  * @date   February 19, 2015
  * @assg   Assg 08
  *
- * @description Implement function to search for and remove duplicates from an
- *   array.
+ * @description Implement a selection sort.  Implement basic
+ *   helper functions to search for a minimum value in a subportion
+ *   of an array, and to swap two values in an array.  Since the
+ *   selection sort works by finding the minimum value in the
+ *   unsorted portion of an array and then swapping it into its
+ *   correct position, we demonstrate implementing the sort by using
+ *   these two small functions to do a lot of the hard work.
  */
 #include <iostream>
 #include <iomanip>
