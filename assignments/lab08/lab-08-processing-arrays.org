@@ -1,4 +1,4 @@
-#+TITLE:     Lab 06: Processing Arrays
+#+TITLE:     Lab 08: Processing Arrays
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-18 Wed>
