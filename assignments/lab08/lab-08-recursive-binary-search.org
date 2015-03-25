@@ -57,8 +57,11 @@ following steps:
 5. If the value at the midpoint is less than the value being search for 
    then call ~binarySearchRecursive~ with ~midpoint~ + 1 and ~high~.
 
-Your program output should look something close to the following when I
-run your program:
+Your program output should look something close to the following when
+I run your program.  In this example, I prompt the user for a value to
+search for and then display the location where the item was found.  I
+run the program twice so we can see an example of a successful and a
+failed search.
 
 #+begin_example
 #+end_example
