@@ -131,6 +131,31 @@ int findMinimumInSubarray(int values[], int start, int size)
 }
 
 
+/** Swap array locations
+ * Swap two locations in a given array.  We are given two valid
+ * indexes into an integer array.  We swap the two values in the
+ * indicated locations.  Since the array is passed by reference
+ * the result of performing the swap will be visible to the caller
+ * after this function returns.
+ *
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
+ * @param loc1 int The first location to be involved in the swap
+ * @param loc2 int The other location to be involved in the swap
+ *
+ * @returns void This function does not return anything explcitly
+ *   but as a result of calling this function, values[loc1] and
+ *   values[loc2] will be swapped after returning.
+ */
+void swapArrayLocations(int values[], int loc1, int loc2)
+{
+  tmp = values[loc1];
+  values[loc1] = values[loc2];
+  values[loc2] = tmp;
+}
+
+
 /** Insertion Sort
  * Sort an array of integers using an Insertion sort.  Insertion sort
  * works in this manner.  We first look at the element at index 1.  If
