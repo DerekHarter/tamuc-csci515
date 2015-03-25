@@ -1,8 +1,8 @@
-#+TITLE:     Lab 08: Processing Arrays
+#+TITLE:     Lab 08: Restricted Binary Search
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-18 Wed>
-#+DESCRIPTION: Lab 06 Processing Arrays
+#+DESCRIPTION: Lab 08 Restricted Binary Search
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
