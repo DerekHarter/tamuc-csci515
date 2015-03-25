@@ -80,6 +80,50 @@ Your program output should look exactly like the following when I run
 your program. 
 
 #+begin_example
+$ ./assg08
+Array, before being sorted:
+000:   7
+001:  10
+002:   3
+003:  10
+004:  14
+005:   1
+006:   6
+007:   8
+008:  20
+009:   8
+010:   6
+011:  10
+012:  19
+013:  16
+014:  16
+015:  17
+016:  16
+017:   1
+018:  13
+019:  19
+
+Array, after being sorted sorted:
+000:   1
+001:   1
+002:   3
+003:   6
+004:   6
+005:   7
+006:   8
+007:   8
+008:  10
+009:  10
+010:  10
+011:  13
+012:  14
+013:  16
+014:  16
+015:  16
+016:  17
+017:  19
+018:  19
+019:  20
 #+end_example
 
 
