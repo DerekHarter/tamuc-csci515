@@ -19,7 +19,6 @@
 ** Searching Arrays
 - Binary Search
 
-
 * Third Session (12:40 - 1:40)
 ** Introduction to Analysis of Algorithms
 - Big O notation
