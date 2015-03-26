@@ -14,7 +14,6 @@
 using namespace std;
 
 
-
 /** Initialize array to random range
  * Initialize an array of integers to values within a random range.
  * We are given the array (and its size), and the begin and end of the
@@ -144,6 +143,7 @@ int findUniqueValues(int values[], int size, int uniques[])
   // Retrun size of the created uniques array to the caller
   return uniquesSize;
 }
+
 
 /** main entry point
  * The main entry point for this program.  Execution
