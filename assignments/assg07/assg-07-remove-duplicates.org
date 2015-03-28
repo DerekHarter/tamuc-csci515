@@ -99,7 +99,7 @@ Perform the following tasks:
 3. In your main function, declare an array of integers called ~values~
    of size 10.  Initialize all of the values in this array to random
    integers in the range from 0 to 4.  Declare another array called
-   ~uniques~ of 10 integers.  Use your ~removeDuplicates~ functions to
+   ~uniques~ of 10 integers.  Use your ~findUniqueValues~ functions to
    remove any duplicate values, and remember to get the new size of
    the ~uniques~ array from the function, after duplicates have been
    removed.
