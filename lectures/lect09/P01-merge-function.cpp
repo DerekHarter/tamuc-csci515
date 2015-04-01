@@ -112,14 +112,10 @@ void merge(int values[], int begin, int mid, int end)
  */
 int main()
 {
-  const int NUM_VALUES = 10;
-  int values[NUM_VALUES];
+  const int NUM_VALUES = 6;
+  int values[NUM_VALUES] = {3, 5, 9, 2, 7, 8};
 
-  // set seed to a different value based on current time and
-  // initialize array to set or random values
-  srand(time(0));
-  initArrayRandomRange(values, NUM_VALUES, 1, 20);
-  cout << "Array, before being sorted:" << endl;
+  cout << "Array, before being merged:" << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
 
