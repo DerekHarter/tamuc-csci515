@@ -90,12 +90,13 @@ void displayArray(int values[], int size)
  * @param values An array of integers.  The array to be sorted.  The
  *   array is passed by reference and is sorted in place in memory.
  *   The array is sorted in ascending order.
- * @param begin int The beginning element/index of the subarray in the array of values
- *   we are to sort.
- * @param end int The ending element/index of the subarray in the array of values.
+ * @param begin int The beginning element/index of the subarray in the
+ *   array of values we are to sort.  @param end int The ending
+ *   element/index of the subarray in the array of values.
  *
- * @returns void Nothing is returned explicitly but as a result of calling this function the array
- *   that is passed in will be sorted into ascending order.
+ * @returns void Nothing is returned explicitly but as a result of
+ *   calling this function the array that is passed in will be sorted
+ *   into ascending order.
  */
 void mergeSort(int values[], int begin, int end)
 {
