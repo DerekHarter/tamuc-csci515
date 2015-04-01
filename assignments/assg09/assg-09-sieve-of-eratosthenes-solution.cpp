@@ -80,7 +80,8 @@ int main()
   const int NUM_PRIMES_TO_TEST = 10;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
-  initValuesToTrue(primes, NUM_PRIMES_TO_TEST);
+  initValuesToTrue(isPrime, NUM_PRIMES_TO_TEST);
+  displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
   
   // return 0 to indicate successful program completion
   return 0;
