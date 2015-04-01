@@ -1,15 +1,15 @@
-#+TITLE:     Lab 08: Recursive Binary Search
+#+TITLE:     Lab 09: 
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-02-18 Wed>
-#+DESCRIPTION: Lab 08 Restricted Binary Search
+#+DESCRIPTION: Lab 09 
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | In Lab, Wednesday March 25, by 4:05 pm (lab end time) |
+| Due: | In Lab, Wednesday April 1, by 4:05 pm (lab end time) |
 
 * Objectives
 - Become more familiar with performing searches and sorts.
@@ -138,7 +138,7 @@ the input parameters and return value of the function.
 
 An eCollege dropbox has been created for this lab.  You should
 upload your version of the lab by the end of lab time to the eCollege
-dropbox named ~Lab 08 Recursive Binary Search~.  Work submitted by the end
+dropbox named ~Lab 09~.  Work submitted by the end
 of lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
