@@ -52,7 +52,7 @@ void initValuesToTrue(bool values[], int size)
  * @returns void.  However, as a side effect we display all of the
  *   prime integers indicated by the passed in primes bool array.
  */
-void displayArray(int values[], int size)
+void displayPrimeNumbers(bool primes[], int size)
 {
   for (int idx = 0; idx < size; idx++)
   {
