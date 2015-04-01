@@ -14,6 +14,7 @@
 #include <cstdlib>
 using namespace std;
 
+const int MAX_SIZE = 10;
 
 /** Display Array
  * Display all of the values in the indicated array of integers.
@@ -37,8 +38,8 @@ void displayArray(int values[], int size)
 }
 
 
-/** Merge Sort
- * Sort an array of integers using a merge sort.  
+/** Merge Subarrays
+ * Merge two sorted subportions of an array.
  *
  * @param values An array of integers.  The array to be sorted.  The
  *   array is passed by reference and is sorted in place in memory.
