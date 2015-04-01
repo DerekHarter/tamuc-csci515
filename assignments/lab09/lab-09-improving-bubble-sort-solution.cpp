@@ -216,14 +216,14 @@ int main()
   const int NUM_VALUES = 8;
   int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
 
-  cout << "Before calling bubbleSort2:" << endl;
+  cout << "Before calling bubbleSortV1:" << endl;
   displayArray(almostSorted, NUM_VALUES);
   cout << endl;
 
-  bubbleSort2(almostSorted, NUM_VALUES);
+  bubbleSortV1(almostSorted, NUM_VALUES);
   cout << endl;
   
-  cout << "After calling bubbleSort2:" << endl;
+  cout << "After calling bubbleSortV1:" << endl;
   displayArray(almostSorted, NUM_VALUES);
   cout << endl;
 
