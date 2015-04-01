@@ -14,6 +14,8 @@
 using namespace std;
 
 
+const int MAX_ARRAY_SIZE = 10;
+
 /** Generate Random Integer in Range
  * Generate a random integer.  We generate the integer in the
  * range [beginRange, endRange] inclusive.
