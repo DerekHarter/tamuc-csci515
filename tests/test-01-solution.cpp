@@ -98,10 +98,8 @@ int main()
     cerr << "ERROR: could not open file named: " << inputFileName << endl;
     exit(1);
   }
-  //while (inputFile >> value)
-  while (!inputFile.eof())
+  while (inputFile >> value)
   {
-    inputFile >> value;
     cout << "Read value from file: " << value << endl;
   }
   cout << endl;
