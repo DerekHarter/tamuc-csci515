@@ -89,7 +89,7 @@ output statements inside of the ~bubbleSortV1()~ and ~bubbleSortV2()~
 functions, displaying information about the passes, swaps done, etc.
 #+begin_example
 $ ./lab09
-Before calling bubbleSort2:
+Before calling bubbleSortV1:
 000:   3
 001:   5
 002:   7
@@ -103,7 +103,7 @@ bubbleSort2() pass:0 number of swaps performed:3
 bubbleSort2() pass:1 number of swaps performed:1
 bubbleSort2() pass:2 number of swaps performed:0
 
-After calling bubbleSort2:
+After calling bubbleSortV1:
 000:   3
 001:   5
 002:   7
