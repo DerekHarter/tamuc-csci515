@@ -229,7 +229,7 @@ int main()
   cout << endl;
 
   // sort the array using some method
-  mergeSort(values, 0, NUM_VALUES-1);
+  mergeSort(values, 0, NUM_VALUES);
 
   // and display it again
   cout << "Array, after being sorted sorted:" << endl;
