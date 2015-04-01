@@ -36,16 +36,21 @@ void initValuesToTrue(bool values[], int size)
 }
 
 
-/** Display Array
- * Display all of the values in the indicated array of integers.
+/** Display primes
+ * Display discovered primes.  This function expects an array of
+ * booleans and this arrays size as its parameters.  This function
+ * will be called after an algorithm has been turn that sets the index
+ * of all prime numbers in the boolean array to true, and all other
+ * indexes to false.  This function displays the list of discovered
+ * prime numbers to standard output.
  *
- * @param values An array of integers.  Arrays are passed by value
- *   so when we initialize this array to random values, the
- *   initialized values will be passed to the caller.
- * @param size int The size of the array to initialize.
+ * @param primes An array of boolean values.  All true values
+ *   in the array represent index/integers that are prime.  All
+ *   false values are non-primes.  We only display the prime numbers.
+ * @param size int The size of the array of primes.
  *
- * @returns void.  However, as a side effect we display the
- *   values in the array to standard output.
+ * @returns void.  However, as a side effect we display all of the
+ *   prime integers indicated by the passed in primes bool array.
  */
 void displayArray(int values[], int size)
 {
