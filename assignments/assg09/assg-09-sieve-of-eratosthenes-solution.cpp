@@ -141,10 +141,8 @@ int main()
   const int NUM_PRIMES_TO_TEST = 100;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
-  initValuesToTrue(isPrime, NUM_PRIMES_TO_TEST);
-  displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
-
-  setMultiplesToFalse(isPrime, NUM_PRIMES_TO_TEST, 2);
+  // run the sieve
+  sieveOfEratosthenes(isPrime, NUM_PRIMES_TO_TEST);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
   // return 0 to indicate successful program completion
