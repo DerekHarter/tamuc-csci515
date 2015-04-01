@@ -127,8 +127,9 @@ void bubbleSort(int values[], int size)
  * ended up not performing any swaps, it means we have detected that
  * the array is sorted, thus we terminate early.
  *
- * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
- *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
  * @param size int The size of the array to sort.
  *
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
