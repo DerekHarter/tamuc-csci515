@@ -39,17 +39,27 @@ void displayArray(int values[], int size)
 
 
 /** Merge Subarrays
- * Merge two sorted subportions of an array.
+ * Merge two sorted subportions of an array.  We are given an array, and
+ * the begin index, mid index and end index.  The values from begin up
+ * to mid-1 are sorted, and the values from mid to end-1 are sorted.  We
+ * will merge the two subportions of the array into one.  This can be
+ * done linearly, using a temporary bit of storage space.  We copy values
+ * from the original array to the temporary storage, taking from subportion
+ * low or high as needed.  Once done, we copy the temporary (merged) values
+ * back to the original location in our given array.
  *
- * @param values An array of integers.  The array to be sorted.  The
- *   array is passed by reference and is sorted in place in memory.
- *   The array is sorted in ascending order.
- * @param begin int The beginning element/index of the subarray in the array of values
+ * @param values An array of integers.  We expect the contents of the array
+ *   to contain two subportions, that are to be merged together.
+ * @param begin int The beginning index of the subarray in the array of values
  *   we are to sort.
- * @param end int The ending element/index of the subarray in the array of values.
+ * @param mid int The midpoint between the two sorted subportions.  Values
+ *   from begin to mid-1 are one subportion of the array, and from mid to
+ *   end-1 are the other subportion.
+ * @param end int The ending index of the subarray of values to be sorted.
  *
- * @returns void Nothing is returned explicitly but as a result of calling this function the array
- *   that is passed in will be sorted into ascending order.
+ * @returns void Nothing is returned explicitly but as a result of
+ *   calling this function the array that is passed in will be sorted
+ *   into ascending order.
  */
 void merge(int values[], int begin, int end)
 {
