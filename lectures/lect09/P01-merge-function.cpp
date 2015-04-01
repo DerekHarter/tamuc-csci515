@@ -61,7 +61,7 @@ void displayArray(int values[], int size)
  *   calling this function the subportions indicated by begin, mid and
  *   end will be merged into a single sorted subarray.
  */
-void merge(int values[], int begin, int end)
+void merge(int values[], int begin, int mid, int end)
 {
 }
 
