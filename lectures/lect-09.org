@@ -86,15 +86,15 @@ the leading term $n^2$.
 The following table shows some of the orders of growth that appear most commonly
 in algorithm analysis, in increasing order of badness.
 
-| Order of Growth                 | Name                    |
-|---------------------------------+-------------------------|
-| $O(1)$                          | Constant                |
-| $O(\mathrm{log_b} \; n)$        | logarithmic (for any b) |
-| $O(n)$                          | linear                  |
-| $O(n \; n \mathrm{log_b} \; n)$ | "en log en"             |
-| $O(n^2)$                        | quadratic               |
-| $O(n^3)$                        | cubic                   |
-| $O(c^n)$                        | exponential (for any c) |
+| Order of Growth               | Name                    |
+|-------------------------------+-------------------------|
+| $O(1)$                        | Constant                |
+| $O(\mathrm{log_b} \; n)$      | logarithmic (for any b) |
+| $O(n)$                        | linear                  |
+| $O(n \; \mathrm{log_b} \; n)$ | "en log en"             |
+| $O(n^2)$                      | quadratic               |
+| $O(n^3)$                      | cubic                   |
+| $O(c^n)$                      | exponential (for any c) |
 
 
 - Big O notation
