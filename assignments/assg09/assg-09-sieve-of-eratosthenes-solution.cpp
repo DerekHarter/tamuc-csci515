@@ -77,8 +77,8 @@ void displayPrimeNumbers(bool isPrime[], int size)
  */
 int main()
 {
-  const int NUM_PRIMES_TO_TEST = 1000;
-  bool primes[NUM_PRIMES_TO_TEST];
+  const int NUM_PRIMES_TO_TEST = 10;
+  bool isPrime[NUM_PRIMES_TO_TEST];
 
   initValuesToTrue(primes, NUM_PRIMES_TO_TEST);
   
