@@ -56,25 +56,25 @@ iterate up to on the next pass.
 Perform the following tasks:
 
 1. Implement the first optimization described.  Start by copying the
-first version of the ~bubbleSort()~ function to a new function named
-~bubbleSort2()~.  In your ~bubbleSort2()~ function, implement the
-optimization that causes the sorting to stop anytime the inner loop
-detects it makes a pass without any swaps occurring.  As a hint, and
-to prepare to do the next task, you might want to try counting the
-number of swaps that occur, and/or keep track of the last item
-swapped.  You would start this count/location out at 0 in both cases,
-and if it is 0 after the inner loop iteration, it means no swaps
-occurred.
+   first version of the ~bubbleSort()~ function to a new function
+   named ~bubbleSort2()~.  In your ~bubbleSort2()~ function, implement
+   the optimization that causes the sorting to stop anytime the inner
+   loop detects it makes a pass without any swaps occurring.  As a
+   hint, and to prepare to do the next task, you might want to try
+   counting the number of swaps that occur, and/or keep track of the
+   last item swapped.  You would start this count/location out at 0 in
+   both cases, and if it is 0 after the inner loop iteration, it means
+   no swaps occurred.
 
-2. Implement the second optimization described.  Start by copying
-the clean first version of the ~bubbleSort()~ function to a new
-function named ~bubbleSort3()~ (don't use your modification for part 1
-here, do this optimization from scratch).  Implement the idea that you
-keep track of the location where the last swap occurs, and on the next
-pass in the inner loop you only bubble up to this location.  If you
-check when this location becomes 0, to get out of the outer loop you
-will then also have the equivalent of the first optimization you
-worked on.
+2. Implement the second optimization described.  Start by copying the
+   clean first version of the ~bubbleSort()~ function to a new
+   function named ~bubbleSort3()~ (don't use your modification for
+   part 1 here, do this optimization from scratch).  Implement the
+   idea that you keep track of the location where the last swap
+   occurs, and on the next pass in the inner loop you only bubble up
+   to this location.  If you check when this location becomes 0, to
+   get out of the outer loop you will then also have the equivalent of
+   the first optimization you worked on.
 
 #+begin_example
 #+end_example

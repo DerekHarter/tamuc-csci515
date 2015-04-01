@@ -1,4 +1,4 @@
-% Created 2015-03-31 Tue 23:37
+% Created 2015-03-31 Tue 23:39
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -86,28 +86,26 @@ Perform the following tasks:
 
 \begin{enumerate}
 \item Implement the first optimization described.  Start by copying the
-\end{enumerate}
-first version of the \verb~bubbleSort()~ function to a new function named
-\verb~bubbleSort2()~.  In your \verb~bubbleSort2()~ function, implement the
-optimization that causes the sorting to stop anytime the inner loop
-detects it makes a pass without any swaps occurring.  As a hint, and
-to prepare to do the next task, you might want to try counting the
-number of swaps that occur, and/or keep track of the last item
-swapped.  You would start this count/location out at 0 in both cases,
-and if it is 0 after the inner loop iteration, it means no swaps
-occurred.
+first version of the \verb~bubbleSort()~ function to a new function
+named \verb~bubbleSort2()~.  In your \verb~bubbleSort2()~ function, implement
+the optimization that causes the sorting to stop anytime the inner
+loop detects it makes a pass without any swaps occurring.  As a
+hint, and to prepare to do the next task, you might want to try
+counting the number of swaps that occur, and/or keep track of the
+last item swapped.  You would start this count/location out at 0 in
+both cases, and if it is 0 after the inner loop iteration, it means
+no swaps occurred.
 
-\begin{enumerate}
-\item Implement the second optimization described.  Start by copying
+\item Implement the second optimization described.  Start by copying the
+clean first version of the \verb~bubbleSort()~ function to a new
+function named \verb~bubbleSort3()~ (don't use your modification for
+part 1 here, do this optimization from scratch).  Implement the
+idea that you keep track of the location where the last swap
+occurs, and on the next pass in the inner loop you only bubble up
+to this location.  If you check when this location becomes 0, to
+get out of the outer loop you will then also have the equivalent of
+the first optimization you worked on.
 \end{enumerate}
-the clean first version of the \verb~bubbleSort()~ function to a new
-function named \verb~bubbleSort3()~ (don't use your modification for part 1
-here, do this optimization from scratch).  Implement the idea that you
-keep track of the location where the last swap occurs, and on the next
-pass in the inner loop you only bubble up to this location.  If you
-check when this location becomes 0, to get out of the outer loop you
-will then also have the equivalent of the first optimization you
-worked on.
 
 In your \verb~main~ function, show an example of calling your versions of
 the \verb~bubbleSort()~ functions.  To test that your optimizations are
