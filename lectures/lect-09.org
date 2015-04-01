@@ -102,10 +102,11 @@ in algorithm analysis, in increasing order of badness.
 - Why is Bubble Sort $O(n^2)$?
 
 ** Sorting Arrays
-- Bubble Sort
-- Insertion Sort
 - Merge Sort
-
+  - A function to merge two sorted subarrays together.
+  - Using merge() function, solve sort recursively, (array of size 1, sorted base
+    case, array of size > 2 divide in 2, recursive call on subparts, merge the sorted
+    subparts).
 
 * Third Session (12:40 - 1:40)
 
