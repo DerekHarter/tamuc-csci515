@@ -205,11 +205,11 @@ void bubbleSortV2(int values[], int size)
 	swapLocation = idx;
       }
     }
-  }
 
-  // give debugging/performance information
-  cout << "bubbleSortV2() pass:" << pass << " last swap location:" << swapLocation << endl;
-  pass++;
+    // give debugging/performance information
+    cout << "bubbleSortV2() pass:" << pass << " last swap location:" << swapLocation << endl;
+    pass++;
+  }
 }
 
 
