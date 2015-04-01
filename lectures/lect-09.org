@@ -98,7 +98,8 @@ in algorithm analysis, in increasing order of badness.
 
 * Second Session (11:45 - 12:30)
 ** Searching Algorithms
-- Why is Binary Search $O(\mathrm{log}_2 \; n)
+- Why is Binary Search $O(\mathrm{log}_2 \; n)$?
+
 ** Sorting Arrays
 - Bubble Sort
 - Insertion Sort
