@@ -44,7 +44,7 @@ void initValuesToTrue(bool values[], int size)
  * indexes to false.  This function displays the list of discovered
  * prime numbers to standard output.
  *
- * @param primes An array of boolean values.  All true values
+ * @param isPrime An array of boolean values.  All true values
  *   in the array represent index/integers that are prime.  All
  *   false values are non-primes.  We only display the prime numbers.
  * @param size int The size of the array of primes.
@@ -52,14 +52,17 @@ void initValuesToTrue(bool values[], int size)
  * @returns void.  However, as a side effect we display all of the
  *   prime integers indicated by the passed in primes bool array.
  */
-void displayPrimeNumbers(bool primes[], int size)
+void displayPrimeNumbers(bool isPrime[], int size)
 {
-  for (int idx = 0; idx < size; idx++)
+  cout << "Primes in range 2 to " << size << ": "
+  for (int number = 0; number < size; number++)
   {
-    cout << setw(3) << setfill('0') << idx << ": "
-	 << setw(3) << setfill(' ') << values[idx]
-	 << endl;
+    if (isPrime[number])
+    {
+      cout << number << " ";
+    }
   }
+  cout << endl;
 }
 
 
