@@ -82,7 +82,7 @@ int main()
     cout << idx << ": " << r << endl;
     if (r == 1)
     {
-       cout << "I generated a 1!" << endl;
+      cout << "I generated a 1!" << endl;
     }
   }
   cout << endl;
@@ -95,12 +95,14 @@ int main()
   cout << "----- Task 2 -----" << endl;
   if (!inputFile)
   {
-     cerr << "ERROR: could not open file named: " << inputFileName << endl;
-     exit(1);
+    cerr << "ERROR: could not open file named: " << inputFileName << endl;
+    exit(1);
   }
-  while (inputFile >> value)
+  //while (inputFile >> value)
+  while (!inputFile.eof())
   {
-     cout << "Read value from file: " << value << endl;
+    inputFile >> value;
+    cout << "Read value from file: " << value << endl;
   }
   cout << endl;
 
