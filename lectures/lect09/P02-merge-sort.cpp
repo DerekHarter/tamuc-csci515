@@ -184,6 +184,25 @@ void merge(int values[], int begin, int mid, int end)
  */
 void mergeSort(int values[], int begin, int end)
 {
+  int size = end - begin;
+  
+  // base case, for size 0 or 1 subarray it is already sorted, so do nothing
+  if (size < 2)
+  {
+    return;
+  }
+
+  // Otherwise recursive case.  Calculate midpoint of the current subarray.
+  int mid = (begin + end) / 2;
+
+  // sort the lower part recursively
+  mergeSort(values, begin, mid);
+
+  // sort the upper part recursively
+  mergeSort(values, mid, end);
+
+  // merge the now sorted subarrays
+  merge(values, begin, mid, end);
 }
 
 
