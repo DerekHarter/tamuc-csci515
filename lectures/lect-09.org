@@ -7,23 +7,19 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** Searching arrays
-- Linear Search
+** Introduction to Analysis of Algorithms
+- Big O notation
+- Time and Space
+- Relative growth as a function of the size $N$ of input.
 
+* Second Session (11:45 - 12:30)
 ** Sorting Arrays
 - Bubble Sort
 - Insertion Sort
 - Merge Sort
 
-* Second Session (11:45 - 12:30)
-** Searching Arrays
-- Binary Search
 
 * Third Session (12:40 - 1:40)
-** Introduction to Analysis of Algorithms
-- Big O notation
-- Time and Space
-- Relative growth as a function of the size $N$ of input.
 
 | *Algorithm*    | *Best case*  | *Expected*   | *Worst case* |
 | Bubble sort    | $O(N^2)$     | $O(N^2)$     | $O(N^2)$     |
