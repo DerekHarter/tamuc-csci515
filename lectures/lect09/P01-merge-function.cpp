@@ -120,8 +120,8 @@ void merge(int values[], int begin, int mid, int end)
  */
 int main()
 {
-  const int NUM_VALUES = 6;
-  int values[NUM_VALUES] = {3, 5, 9, 2, 7, 8};
+  const int NUM_VALUES = 2;
+  int values[NUM_VALUES] = {1, 5};
 
   cout << "Array, before being merged:" << endl;
   displayArray(values, NUM_VALUES);
