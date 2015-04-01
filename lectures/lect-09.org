@@ -96,11 +96,6 @@ in algorithm analysis, in increasing order of badness.
 | $O(n^3)$                      | cubic                   |
 | $O(c^n)$                      | exponential (for any c) |
 
-
-- Big O notation
-- Time and Space
-- Relative growth as a function of the size $N$ of input.
-
 * Second Session (11:45 - 12:30)
 ** Sorting Arrays
 - Bubble Sort
