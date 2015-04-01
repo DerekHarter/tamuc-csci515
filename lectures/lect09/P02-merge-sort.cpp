@@ -4,9 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   March 13, 2015
- * @assg   Lecture 08, P03 Insertion Sort
+ * @assg   Lecture 09, P02 Merge Sort
  *
- * @description An implementation of various sorting algorithms.
+ * @description An implementation of the Merge Sort
  */
 #include <iostream>
 #include <iomanip>
