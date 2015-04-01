@@ -17,7 +17,7 @@ application, if often will go from being feasible to compute, to
 impossible.
 
 - The practical goal if analysis of algorithms is to predict the
-  perormance of different algorithms, as a function of the input size,
+  performance of different algorithms, as a function of the input size,
   in order to guide design decisions.
 - The goal is to make meaningful comparisons between algorithms, but
   some problems:
@@ -31,7 +31,6 @@ impossible.
   as a function of problem size.  Compare functions *asymptotically* 
   as the problem size increases.
 
-** Order of Growth
 Suppose you have analyzed two algorithms and expressed their run times in
 terms of the size of the input: Algorithm A takes $100n + 1$ steps
 to solve a problem with size $n$; Algorithm B takes $n^2 + n + 1$ steps.
@@ -48,6 +47,55 @@ The following table shows run time of algorithms for different problem sizes:
 |    100 | 10 001      | 10 101      |
 |  1 000 | 100 001     | 1 001 001   |
 | 10 000 | 1 000 001   | $> 10^{10}$ |
+
+At $n = 10$ Algorithm A looks pretty bad, it takes 10 times longer
+than B.  But for $n = 100$ they are about the same, and for larger
+values of $n$, Algorithm A will be much better.  
+
+The fundamental reason is that for large values of $n$, any function
+that contains an $n^2$ term will grow faster than a function whose
+leading term is $n$.  The *leading term* is the term with the
+highest exponent.
+
+For Algorithm A the leading term has a large coefficient, 100, which
+is why B does better than A for small $n$. But regardless of constant
+coefficients like this, there will always be some point, some value of
+$n$ where $a n^2 > b n$.
+
+The same argument applies to the non-leading terms, which is why we
+can ignore the $n + 1$ part of the $n^2$ algorithm B.  Even if the
+run time of Algorithm A were $n + 1000000$, it would still do better
+than Algorithm B for sufficiently large $n$.
+
+In general we expect an algorithm with a smaller leading term to be
+a better algorithm for large problems, but for smaller problems there
+may be a *crossover point* where another algorithm is better.
+
+** Order of Growth and the Big-Oh $O()$ Notation
+ 
+An *order of growth* is a set of functions whose asymptotic growth behavior
+is considered equivalent.  For example, $2n$, $100n$ and $n + 1$ belong to
+the same order of growth, which is written $O(n)$ in *Big-Oh notation* and
+often called *linear* because every function in the set grows linearly with
+$n$.
+
+All functions with the leading term $n^2$ belong to the $O(n^2)$;
+they are *quadratic*, which is a fancy word for functions with
+the leading term $n^2$.
+
+The following table shows some of the orders of growth that appear most commonly
+in algorithm analysis, in increasing order of badness.
+
+| Order of Growth                 | Name                    |
+|---------------------------------+-------------------------|
+| $O(1)$                          | Constant                |
+| $O(\mathrm{log_b} \; n)$        | logarithmic (for any b) |
+| $O(n)$                          | linear                  |
+| $O(n \; n \mathrm{log_b} \; n)$ | "en log en"             |
+| $O(n^2)$                        | quadratic               |
+| $O(n^3)$                        | cubic                   |
+| $O(c^n)$                        | exponential (for any c) |
+
 
 - Big O notation
 - Time and Space
