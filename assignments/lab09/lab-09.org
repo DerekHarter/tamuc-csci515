@@ -53,117 +53,37 @@ positions.  In the next pass we only need to consider numbers
 swap location, you can use this to be the maximum location to
 iterate up to on the next pass.
 
-In class today we gave an example of a binary search implementation
-using a straight forward iterative approach.  We kept track of the
-unsearched region of the array, and calculated the midpoint, and
-decided on a comparison with that midpoint whether to search to the
-lower or upper part of the array.  Binary search can also be fairly
-easily described as a recursive algorithm.  The basic idea of the
-algorithm is:
+Perform the following tasks:
 
-- Recursive condition: Calculate the midpoint of the current array and
-  compare the value to the search value.  If the value is greater than
-  the search value, recursively call the function on the subarray to
-  the left of the midpoint.  If the value is less than the search
-  value, recursively call the function on the subarray to the right of
-  the midpoint.
-- Base case 1: If the value is equal to the search item, we found it
-  so return the midpoint.
-- Base case 2: If the subarray is empty, return a failure.
+1. Implement the first optimization described.  Start by copying the
+first version of the ~bubbleSort()~ function to a new function named
+~bubbleSort2()~.  In your ~bubbleSort2()~ function, implement the
+optimization that causes the sorting to stop anytime the inner loop
+detects it makes a pass without any swaps occurring.  As a hint, and
+to prepare to do the next task, you might want to try counting the
+number of swaps that occur, and/or keep track of the last item
+swapped.  You would start this count/location out at 0 in both cases,
+and if it is 0 after the inner loop iteration, it means no swaps
+occurred.
 
-A specific description of the function/tasks to perform may make this
-clearer.  You need to write a single function for this lab called
-~binarySearchRecursive~.  This function takes an array of integers,
-and two indexes as its input parameters ~low~ and ~high~.  It also
-takes an integer value which is the value to search for within the
-indicated portion of the array.  As in class, the ~low~ and ~high~
-represent the indexs of the unsearched portion of the array.  The
-function can implement a binary search recursively by performing the
-following steps:
-
-1. If ~low~ > ~high~ then there is nothing left to search and the
-   search has failed (base case 2).  In this case, return -1 to
-   indicate a failure of the search.
-2. Calculate the midpoint location between ~low~ and ~high~ in the
-   same way as was done in class.
-3. If the value at the midpoint is equal to the value being searched for
-   then return the midpoint location (base case 1).
-4. If the value at the midpoint is greater than the value being searched for
-   then call ~binarySearchRecursive~ with ~low~ and ~midpoint~ - 1 (e.g. 
-   search the lower subportion of the array recursively).
-5. If the value at the midpoint is less than the value being search for 
-   then call ~binarySearchRecursive~ with ~midpoint~ + 1 and ~high~.
-
-Your program output should look something close to the following when
-I run your program.  In this example, I prompt the user for a value to
-search for and then display the location where the item was found.  I
-run the program twice so we can see an example of a successful and a
-failed search.
+2. Implement the second optimization described.  Start by copying
+the clean first version of the ~bubbleSort()~ function to a new
+function named ~bubbleSort3()~ (don't use your modification for part 1
+here, do this optimization from scratch).  Implement the idea that you
+keep track of the location where the last swap occurs, and on the next
+pass in the inner loop you only bubble up to this location.  If you
+check when this location becomes 0, to get out of the outer loop you
+will then also have the equivalent of the first optimization you
+worked on.
 
 #+begin_example
-$ ./lab08
-Array, before being sorted:
-000:  10
-001:  11
-002:  13
-003:   1
-004:  14
-005:   9
-006:   1
-007:  13
-008:   7
-009:   4
-
-Array, after being sorted sorted:
-000:   1
-001:   1
-002:   4
-003:   7
-004:   9
-005:  10
-006:  11
-007:  13
-008:  13
-009:  14
-
-Enter a value and I will search for it in the array: 9
-I found the value at location: 4
-
-$ ./lab08
-Array, before being sorted:
-000:  19
-001:   7
-002:  15
-003:  10
-004:   3
-005:  11
-006:   4
-007:  13
-008:  16
-009:  16
-
-Array, after being sorted sorted:
-000:   3
-001:   4
-002:   7
-003:  10
-004:  11
-005:  13
-006:  15
-007:  16
-008:  16
-009:  19
-
-Enter a value and I will search for it in the array: 5
-Search failed, value: 5 not located in array
 #+end_example
 
-In your ~main~ function, show an example of calling your recursive
-binary search.  Create an array of 10 values, presorted (you can use a
-static initializer to do this, or create an array of random values and
-copy and use a sort function from class today).  Then call your
-recursive binary search on your array of 10 values, and show that it
-finds the location of the item being searched for.
+In your ~main~ function, show an example of calling your versions of
+the ~bubbleSort()~ functions.  To test that your optimizations are
+working, demonstrate passing in a small, already sorted array, and
+check using the debugger that the function is performing as you
+expect.
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
