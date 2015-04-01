@@ -171,23 +171,8 @@ void bubbleSort2(int values[], int size)
  */
 int main()
 {
-  const int NUM_VALUES = 10;
-  int values[NUM_VALUES];
-
-  // set seed to a different value based on current time and initialize array to set or random values
-  srand(time(0));
-  initArrayRandomRange(values, NUM_VALUES, 1, 20);
-  cout << "Array, before being sorted:" << endl;
-  displayArray(values, NUM_VALUES);
-  cout << endl;
-
-  // sort the array using some method
-  bubbleSort(values, NUM_VALUES);
-
-  // and display it again
-  cout << "Array, after being sorted sorted:" << endl;
-  displayArray(values, NUM_VALUES);
-  cout << endl;
+  const int NUM_VALUES = 8;
+  int almostSorted[NUM_VALUES] = {3, 5, 7, 18, 10, 11, 15, 9};
 
   return 0;
 }
