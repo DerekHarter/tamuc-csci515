@@ -128,7 +128,7 @@ int main()
   cout << endl;
 
   // merge the array 
-  merge(values, 0, 3, 6);
+  merge(values, 0, 1, 2);
 
   // and display it again
   cout << "Array, after being merged:" << endl;
