@@ -224,6 +224,7 @@ void bubbleSortV2(int values[], int size)
  */
 int main()
 {
+  // test V1 bubble sort optimizations
   const int NUM_VALUES = 8;
   int almostSorted1[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
 
@@ -233,7 +234,22 @@ int main()
 
   bubbleSortV1(almostSorted1, NUM_VALUES);
   cout << endl;
-  
+
+  cout << "After calling bubbleSortV1:" << endl;
+  displayArray(almostSorted1, NUM_VALUES);
+  cout << endl;
+
+  // test V2 bubble sort optimizations
+  const int NUM_VALUES = 8;
+  int almostSorted2[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
+
+  cout << "Before calling bubbleSortV2:" << endl;
+  displayArray(almostSorted1, NUM_VALUES);
+  cout << endl;
+
+  bubbleSortV1(almostSorted1, NUM_VALUES);
+  cout << endl;
+
   cout << "After calling bubbleSortV1:" << endl;
   displayArray(almostSorted1, NUM_VALUES);
   cout << endl;
