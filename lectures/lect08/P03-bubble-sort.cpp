@@ -134,9 +134,10 @@ void bubbleSort(int values[], int size)
  */
 void bubbleSort2(int values[], int size)
 {
+  int pass = 0;
   int numSwaps;
   
-  // outer loop, perform N passes
+  // outer loop, perform passes until swapping doesn't occur
   int numSwaps = 1; // ensure that we make at least 1 pass through outer loop
   while (numSwaps != 0)
   {
@@ -152,6 +153,8 @@ void bubbleSort2(int values[], int size)
 	values[idx + 1] = tmp;
 	numSwaps++;
       }
+      cout << "bubbleSort2: pass=" << pass << " number of swaps performed=" << numSwaps << endl;
+      pass++;
     }
   }
 }
