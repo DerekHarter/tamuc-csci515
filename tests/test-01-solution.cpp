@@ -73,9 +73,9 @@ int main()
   int r;
 
   cout << "----- Task 1 -----" << endl;
-  cout << "Enter a seed value: ";
-  cin >> seed;
-  srand(seed);
+  //cout << "Enter a seed value: ";
+  //cin >> seed;
+  //srand(seed);
   for (int idx = 0; idx < 10; idx++)
   {
     r = random() % 4 + 1;
