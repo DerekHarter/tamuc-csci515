@@ -40,12 +40,13 @@ Which algorithm is "better" in terms of time complexity (number of steps)?
 
 The following table shows run time of algorithms for different problem sizes:
 
-| Input  | Run time of | Run time of |
-| size   | Algorithm A | Algorithm B |
+|  Input | Run time of | Run time of |
+|   size | Algorithm A | Algorithm B |
 |--------+-------------+-------------|
-| 10     | 1 001       | 111         |
-| 100    | 10 001      | 10 101      |
-| 1 000  | 100 001     | 1 001 001   |
+|    <r> | <r>         | <r>         |
+|     10 | 1 001       | 111         |
+|    100 | 10 001      | 10 101      |
+|  1 000 | 100 001     | 1 001 001   |
 | 10 000 | 1 000 001   | $> 10^{10}$ |
 
 - Big O notation
