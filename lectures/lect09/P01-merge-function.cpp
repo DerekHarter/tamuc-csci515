@@ -63,6 +63,41 @@ void displayArray(int values[], int size)
  */
 void merge(int values[], int begin, int mid, int end)
 {
+  int tmpStorage[MAX_ARRAY_SIZE];
+  int size;
+  int lowerIndex;
+  int upperIndex;
+  int tmpIndex;
+
+  // We iterate through the temporary storage from 0 to size-1 of
+  // the combined subarrays.  We copy either from the lower subarray
+  // or the upper subarray as appropriate
+  lowerIndex = begin;
+  upperIndex = mid;
+  size = end - begin;  // size of combined lower and upper subarrays
+  for (tmpIndex = 0; tmpIndex < size; tmpIndex++)
+  {
+    // if lower subarray already copied, get next item from upper array
+    if (lowerIndex == mid)
+    {
+      tmpStorage[tmpIndex] = values[upperIndex++];
+    }
+    // else if upper subarray already copied, get next item from lower array
+    else if (upperIndex == end)
+    {
+      tmpStorage[tmpIndex] = values[lowerIndex++];
+    }
+    // else get next item based on comparing which item is smallest at
+    // the current location of the lower and upper parts
+    else if (values[lowerIndex] < values[upperIndex])
+    {
+      tmpStorage[tmpIndex] = values[lowerIndex++];
+    }
+    else
+    {
+      tmpStorage[tmpIndex] = values[upperIndex++];
+    }
+  }
 }
 
 
