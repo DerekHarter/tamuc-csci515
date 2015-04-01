@@ -58,8 +58,8 @@ void displayArray(int values[], int size)
  * @param end int The ending index of the subarray of values to be sorted.
  *
  * @returns void Nothing is returned explicitly but as a result of
- *   calling this function the array that is passed in will be sorted
- *   into ascending order.
+ *   calling this function the subportions indicated by begin, mid and
+ *   end will be merged into a single sorted subarray.
  */
 void merge(int values[], int begin, int end)
 {
