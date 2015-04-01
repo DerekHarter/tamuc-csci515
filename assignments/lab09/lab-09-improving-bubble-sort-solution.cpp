@@ -240,7 +240,6 @@ int main()
   cout << endl;
 
   // test V2 bubble sort optimizations
-  const int NUM_VALUES = 8;
   int almostSorted2[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
 
   cout << "Before calling bubbleSortV2:" << endl;
