@@ -94,6 +94,37 @@ void setMultiplesToFalse(bool isPrime[], int size, int base)
 }
 
 
+/** find primes in range
+ * Find all prime numbers in the range from 2 to a given max N.
+ * Use the Sieve of Eratosthenes algorithm to search for primes.
+ * In this algorithm, we search for multiples of prime numbers
+ * and eliminate them as known primes.  This functions takes an
+ * array of boolean values, and the size of the array, which also
+ * indicates the size N to seach for primes up to.  As a side
+ * effect, upon return from this function, all prime number
+ * indexes will be set to  true in the boolean array, and all
+ * non primes will be false.
+ *
+ * @param isPrime An array of boolean values, uninitialized.
+ * @param size int The size of the array of primes.
+ *
+ * @returns void.  However, as a side effect when this function
+ *   returns all indexes of prime numbers will be true, and all
+ *   others will be false.
+ */
+void setMultiplesToFalse(bool isPrime[], int size, int base)
+{
+  int multiple = base + base; // initial multiple to set to false
+
+  // iterate through all the multiples of the base
+  while (multiple < size)
+  {
+    isPrime[multiple] = false;
+    multiple += base;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
