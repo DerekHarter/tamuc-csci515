@@ -214,17 +214,17 @@ void bubbleSortV2(int values[], int size)
 int main()
 {
   const int NUM_VALUES = 8;
-  int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
+  int almostSorted1[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
 
   cout << "Before calling bubbleSortV1:" << endl;
-  displayArray(almostSorted, NUM_VALUES);
+  displayArray(almostSorted1, NUM_VALUES);
   cout << endl;
 
-  bubbleSortV1(almostSorted, NUM_VALUES);
+  bubbleSortV1(almostSorted1, NUM_VALUES);
   cout << endl;
   
   cout << "After calling bubbleSortV1:" << endl;
-  displayArray(almostSorted, NUM_VALUES);
+  displayArray(almostSorted1, NUM_VALUES);
   cout << endl;
 
   // return 0 to indicate successful completion.
