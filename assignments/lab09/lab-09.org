@@ -106,13 +106,11 @@ time in order to receive credit.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 50+ pts.  Your program must have the required named function,
+1. 50+ pts.  Your program must have the required 2 named function,
    that accepts the required input parameters and return the required
    values (if any).
-1. 20+ pts. The function must be implemented correctly.  The function
-   must be working.
-1. 30+ pts. Your main function must create an array and demonstrate
-   calling the recursive binary search function correctly.
+1. 50+ pts. The functions must implement the described improvements
+   to the bubble sort algorithm and work.
 
 
 ** Program Style
