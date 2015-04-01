@@ -153,7 +153,7 @@ void bubbleSort2(int values[], int size)
 	values[idx + 1] = tmp;
 	numSwaps++;
       }
-      cout << "bubbleSort2: pass=" << pass << " number of swaps performed=" << numSwaps << endl;
+      cout << "bubbleSort2() pass:" << pass << " number of swaps performed:" << numSwaps << endl;
       pass++;
     }
   }
