@@ -121,7 +121,7 @@ void merge(int values[], int begin, int mid, int end)
 int main()
 {
   const int NUM_VALUES = 2;
-  int values[NUM_VALUES] = {1, 5};
+  int values[NUM_VALUES] = {5, 1};
 
   cout << "Array, before being merged:" << endl;
   displayArray(values, NUM_VALUES);
