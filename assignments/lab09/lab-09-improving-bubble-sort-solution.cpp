@@ -187,7 +187,7 @@ void bubbleSortV2(int values[], int size)
 {
   int pass;
   int swapLocation;
-  
+
   // outer loop, perform passes until swapping doesn't occur (swap location is 0)
   pass = 0;
   swapLocation = size - 1; // ensure that first time inner loop goes all the way to end.
