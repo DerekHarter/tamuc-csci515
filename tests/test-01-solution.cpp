@@ -119,13 +119,13 @@ int main()
 
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
-     values[idx] = 0;
+    values[idx] = 0;
   }
   initNegative(values, ARRAY_SIZE);
   cout << "----- Task 4 -----" << endl;
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
   {
-     cout << values[idx] << endl;
+    cout << values[idx] << endl;
   }
   cout << endl;
 
