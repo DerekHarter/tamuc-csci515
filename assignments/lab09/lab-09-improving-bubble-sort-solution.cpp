@@ -138,10 +138,11 @@ void bubbleSort(int values[], int size)
  */
 void bubbleSortV1(int values[], int size)
 {
-  int pass = 0;
+  int pass;
   int numSwaps;
 
   // outer loop, perform passes until swapping doesn't occur
+  pass = 0;
   numSwaps = 1; // ensure that we make at least 1 pass through outer loop
   while (numSwaps != 0)
   {
@@ -184,6 +185,9 @@ void bubbleSortV1(int values[], int size)
  */
 void bubbleSortV2(int values[], int size)
 {
+  int pass = 0;
+  int swapLocation;
+  
   // outer loop, perform N passes
   for (int pass = 0; pass < size; pass++)
   {
