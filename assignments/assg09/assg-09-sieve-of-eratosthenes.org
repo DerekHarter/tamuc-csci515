@@ -84,6 +84,10 @@ Perform the following tasks:
    integers, and display the results using your ~displayPrimeNumbers()~
    function.
 
+Here is an example output from running a correct assignment to find the
+primes in the range from 2 to 100.  You can find lists of primes online
+if you want to further test if your program is working, for example
+here: https://primes.utm.edu/lists/small/1000.txt.
 
 #+begin_example
 #+end_example
