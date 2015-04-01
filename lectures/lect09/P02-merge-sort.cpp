@@ -158,14 +158,25 @@ void merge(int values[], int begin, int mid, int end)
 
 
 /** Merge Sort
- * Sort an array of integers using a merge sort.  
+ * Sort an array of integers using a merge sort.  Merge sort is a
+ * divide and conquer algorithm.  In the worst case, Merge sort will
+ * take O(n log n) time, though it does requires O(2n) space.  Merge
+ * sort is defined as a recursive function in this implementation.  If
+ * we are asked to mergeSort() an array of size 0 or 1, by definition
+ * it is already sorted, and we simply return.  Otherwise, we split
+ * the given array in half, call mergeSort() on each half subarray,
+ * then merge the resulting subarrays using an external method that
+ * merges sorted subarrays.  This method takes an integer array of
+ * values, and a begin and end index indicating the subportion of the
+ * array of values to be sorted.
  *
  * @param values An array of integers.  The array to be sorted.  The
  *   array is passed by reference and is sorted in place in memory.
  *   The array is sorted in ascending order.
  * @param begin int The beginning element/index of the subarray in the
- *   array of values we are to sort.  @param end int The ending
- *   element/index of the subarray in the array of values.
+ *   array of values we are to sort.
+ * @param end int The ending element/index of the subarray in the
+ *   array of values.
  *
  * @returns void Nothing is returned explicitly but as a result of
  *   calling this function the array that is passed in will be sorted
