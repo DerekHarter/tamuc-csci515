@@ -123,7 +123,7 @@ int main()
   cout << endl;
 
   // sort the array using some method
-  mergeSort(values, NUM_VALUES);
+  mergeSort(values, 0, NUM_VALUES-1);
 
   // and display it again
   cout << "Array, after being sorted sorted:" << endl;
