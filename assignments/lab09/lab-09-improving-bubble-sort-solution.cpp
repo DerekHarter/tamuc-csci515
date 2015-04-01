@@ -194,6 +194,7 @@ void bubbleSortV2(int values[], int size)
   while (swapLocation != -1)
   {
     // inner loop, bubble up items from index 0 up to size-pass-1 index
+    swapLocation = -1; // reset location, so we accurately determine where swap occurs
     for (int idx = 0; idx < (size - pass - 1); idx++)
     {
       // if the values are out of order, swap them
