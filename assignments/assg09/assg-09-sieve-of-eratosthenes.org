@@ -90,8 +90,14 @@ if you want to further test if your program is working, for example
 here: https://primes.utm.edu/lists/small/1000.txt.
 
 #+begin_example
+$ ./assg09
+Discovered primes in range 2 to 100: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
 #+end_example
 
+As a final test of your work, and to demonstrate that the sieve
+algorithm is really quite efficient, find the largest prime number
+that is $\le 1 000 000$ (1 million).  Report which number you found as
+a comment when you submit your assignment 09 to the eCollege dropbox.
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
