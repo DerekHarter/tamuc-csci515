@@ -66,6 +66,34 @@ void displayPrimeNumbers(bool isPrime[], int size)
 }
 
 
+/** multiples of N to false
+ * This function takes an array of boolean values (and its size) and
+ * some base number called base.  All multiples of this base will
+ * be set to false in the boolean array (not including base itself).
+ * For example, if base=2, then we will set isPrime[4] = false,
+ * isPrime[6] = false, etc.
+ *
+ * @param isPrime An array of boolean values. 
+ * @param size int The size of the array of primes.
+ * @param base int The base number that we are to search for
+ *   multiples of and set them to false in the array.
+ *
+ * @returns void.  However, as a side effect all multiples of the
+ *   base number will have their values set to false.
+ */
+void setMultiplesToFalse(bool isPrime[], int size, int base)
+{
+  int multiple = base + base; // initiale multiple to set to false
+
+  // iterate through all the multiples of the base
+  while (multiple < size)
+  {
+    isPrime[multiple] = false;
+    multiple += base;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
