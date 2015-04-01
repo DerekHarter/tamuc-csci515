@@ -109,9 +109,9 @@ in algorithm analysis, in increasing order of badness.
 
 * Third Session (12:40 - 1:40)
 
-| *Algorithm*    | *Best case*        | *Expected*      | *Worst case*       |
-| Bubble sort    | $O(n^2)$           | $O(n^2)$        | $O(n^2)$           |
-| Insertion sort | $O(n^2)$           | $O(n^2)$        | $O(n^2)$           |
-| Merge Sort     | $O(n \; log \; n)$ | $O(n \; log n)$ | $O(n \; log \; n)$ |
-| Linear search  | $O(1)$             | $O(n)$          | $O(n)              |
-| Binary search  | $O(1)$             | $O(log \; n)$   | $O(log \; n)$      |
+| *Algorithm*    | *Best case*        | *Expected*         | *Worst case*       |
+| Bubble sort    | $O(n^2)$           | $O(n^2)$           | $O(n^2)$           |
+| Insertion sort | $O(n^2)$           | $O(n^2)$           | $O(n^2)$           |
+| Merge Sort     | $O(n \; log \; n)$ | $O(n \; log \; n)$ | $O(n \; log \; n)$ |
+| Linear search  | $O(1)$             | $O(n)$             | $O(n)              |
+| Binary search  | $O(1)$             | $O(log \; n)$      | $O(log \; n)$      |
