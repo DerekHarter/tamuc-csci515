@@ -141,7 +141,7 @@ int main()
   const int NUM_PRIMES_TO_TEST = 100;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
-  // run the sieve
+  // run the sieve and display results
   sieveOfEratosthenes(isPrime, NUM_PRIMES_TO_TEST);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
