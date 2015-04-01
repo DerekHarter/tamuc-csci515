@@ -172,7 +172,7 @@ void bubbleSort2(int values[], int size)
 int main()
 {
   const int NUM_VALUES = 8;
-  int almostSorted[NUM_VALUES] = {3, 5, 7, 18, 10, 11, 15, 9};
+  int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 10, 11, 15};
 
   return 0;
 }
