@@ -116,7 +116,8 @@ int main()
   const int NUM_VALUES = 10;
   int values[NUM_VALUES];
 
-  // set seed to a different value based on current time and initialize array to set or random values
+  // set seed to a different value based on current time and
+  // initialize array to set or random values
   srand(time(0));
   initArrayRandomRange(values, NUM_VALUES, 1, 20);
   cout << "Array, before being sorted:" << endl;
