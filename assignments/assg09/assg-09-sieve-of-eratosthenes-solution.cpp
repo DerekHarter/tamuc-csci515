@@ -83,7 +83,7 @@ void displayPrimeNumbers(bool isPrime[], int size)
  */
 void setMultiplesToFalse(bool isPrime[], int size, int base)
 {
-  int multiple = base + base; // initiale multiple to set to false
+  int multiple = base + base; // initial multiple to set to false
 
   // iterate through all the multiples of the base
   while (multiple < size)
@@ -109,6 +109,9 @@ int main()
   bool isPrime[NUM_PRIMES_TO_TEST];
 
   initValuesToTrue(isPrime, NUM_PRIMES_TO_TEST);
+  displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
+
+  setMultiplesToFalse(isPrime, NUM_PRIMES_TO_TEST, 2);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
   // return 0 to indicate successful program completion
