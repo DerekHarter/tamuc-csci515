@@ -115,10 +115,6 @@ int main()
   const int ARRAY_SIZE = 10;
   int values[ARRAY_SIZE];
 
-  for (int idx = 0; idx < ARRAY_SIZE; idx++)
-  {
-    values[idx] = 0;
-  }
   initNegative(values, ARRAY_SIZE);
   cout << "----- Task 4 -----" << endl;
   for (int idx = 0; idx < ARRAY_SIZE; idx++)
