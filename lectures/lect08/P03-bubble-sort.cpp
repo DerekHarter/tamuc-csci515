@@ -119,6 +119,39 @@ void bubbleSort(int values[], int size)
 }
 
 
+/** Bubble Sort v2
+ * Sort an array of integers using a Bubble sort.  In this second version we add the following
+ * optimization.  Within the inner iteration/pass through the array, we keep track of how
+ * many swaps are performed.  If, after completing this inner loop, we ended up not performing
+ * any swaps, it means we have detected that the array is sorted, thus we terminate early.
+ *
+ * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
+ *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
+ *
+ * @returns void Nothing is returned explicitly but as a result of calling this function the array
+ *   that is passed in will be sorted into ascending order.
+ */
+void bubbleSort2(int values[], int size)
+{
+  // outer loop, perform N passes
+  for (int pass = 0; pass < size; pass++)
+  {
+    // inner loop, bubble up items from index 0 up to size-pass-1 index
+    for (int idx = 0; idx < (size - pass - 1); idx++)
+    {
+      // if the values are out of order, swap them
+      if (values[idx] > values[idx + 1])
+      {
+	int tmp = values[idx];
+	values[idx] = values[idx + 1];
+	values[idx + 1] = tmp;
+      }
+    }
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
