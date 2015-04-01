@@ -85,7 +85,7 @@ expect.
 An example of output you might generate.  In both cases I used static
 initialization of an array of 8 integers to create an almost sorted
 array.  Then passed this array to the sorting algorithms.  I have some
-output statements inside of the ~bubblesort2()~ and ~bubbleSort3()~
+output statements inside of the ~bubbleSortV1()~ and ~bubbleSortV2()~
 functions, displaying information about the passes, swaps done, etc.
 #+begin_example
 $ ./lab09
