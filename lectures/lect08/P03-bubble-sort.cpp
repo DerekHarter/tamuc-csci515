@@ -134,10 +134,14 @@ void bubbleSort(int values[], int size)
  */
 void bubbleSort2(int values[], int size)
 {
+  int numSwaps;
+  
   // outer loop, perform N passes
-  for (int pass = 0; pass < size; pass++)
+  int numSwaps = 1; // ensure that we make at least 1 pass through outer loop
+  while (numSwaps != 0)
   {
     // inner loop, bubble up items from index 0 up to size-pass-1 index
+    numSwaps = 0; // reset count, so we accurately determine number of swaps performed
     for (int idx = 0; idx < (size - pass - 1); idx++)
     {
       // if the values are out of order, swap them
@@ -146,6 +150,7 @@ void bubbleSort2(int values[], int size)
 	int tmp = values[idx];
 	values[idx] = values[idx + 1];
 	values[idx + 1] = tmp;
+	numSwaps++;
       }
     }
   }
