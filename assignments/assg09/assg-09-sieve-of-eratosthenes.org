@@ -112,18 +112,12 @@ submitted by the due date will be considered for evaluation.
 
 1. Your program must compile, run and produce some sort of output to
    be graded. 0 if not satisfied.
-1. 50+ pts.  Your implementation of the two helper functions must be
-   correct, and the functions must work as described.  This is half of
-   your grade, so if you are having trouble getting the sort to work,
-   make sure you at least have these simple helper functions written
-   and working correctly.
-1. 40+ pts. Your selection sort implementation must work.  The
-   selection sort algorithm must be implemented as described in our
-   assignment description.
-1. 10+ pts. Your main function should create and initialize the
-   desired array of random integers as described.  After calling your
-   sort function, your program should display the contents of the
-   array of integers to standard output.
+1. 60+ pts. For the correct implementation of the three helper functions.
+1. 30+ pts. For implementing the Sieve of Eratosthenes algorithm and functions
+   correctly, and using the functions as described above.
+1. 10+ pts. Your main function should create the array of boolean values
+   and demonstrate using your functions to find and display the primes in
+   the first 10,000 integers.
 
 
 ** Program Style
