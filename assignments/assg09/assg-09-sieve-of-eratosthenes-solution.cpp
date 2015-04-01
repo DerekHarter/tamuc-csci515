@@ -82,7 +82,7 @@ int main()
 
   initValuesToTrue(isPrime, NUM_PRIMES_TO_TEST);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
-  
+
   // return 0 to indicate successful program completion
   return 0;
 }
