@@ -175,9 +175,14 @@ int main()
   int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 10, 11, 15};
 
   cout << "Before calling bubbleSort2:" << endl;
+  displayArray(almostSorted, NUM_VALUES);
+  cout << endl;
+
   bubbleSort2(almostSorted, NUM_VALUES);
+
   cout << "After calling bubbleSort2:";
   displayArray(almostSorted, NUM_VALUES);
+  cout << endl;
   
   return 0;
 }
