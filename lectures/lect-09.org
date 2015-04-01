@@ -89,14 +89,16 @@ in algorithm analysis, in increasing order of badness.
 | Order of Growth               | Name                    |
 |-------------------------------+-------------------------|
 | $O(1)$                        | Constant                |
-| $O(\mathrm{log_b} \; n)$      | logarithmic (for any b) |
+| $O(\mathrm{log}_b \; n)$      | logarithmic (for any b) |
 | $O(n)$                        | linear                  |
-| $O(n \; \mathrm{log_b} \; n)$ | "en log en"             |
+| $O(n \; \mathrm{log}_b \; n)$ | "en log en"             |
 | $O(n^2)$                      | quadratic               |
 | $O(n^3)$                      | cubic                   |
 | $O(c^n)$                      | exponential (for any c) |
 
 * Second Session (11:45 - 12:30)
+** Searching Algorithms
+- Why is Binary Search $O(\mathrm{log}_2 \; n)
 ** Sorting Arrays
 - Bubble Sort
 - Insertion Sort
