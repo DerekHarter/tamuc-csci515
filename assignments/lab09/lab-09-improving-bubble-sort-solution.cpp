@@ -132,8 +132,9 @@ void bubbleSort(int values[], int size)
  *   The array is sorted in ascending order.
  * @param size int The size of the array to sort.
  *
- * @returns void Nothing is returned explicitly but as a result of calling this function the array
- *   that is passed in will be sorted into ascending order.
+ * @returns void Nothing is returned explicitly but as a result of
+ *   calling this function the array that is passed in will be sorted
+ *   into ascending order.
  */
 void bubbleSortV1(int values[], int size)
 {
