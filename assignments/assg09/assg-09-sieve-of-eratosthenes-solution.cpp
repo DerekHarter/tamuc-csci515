@@ -55,7 +55,7 @@ void initValuesToTrue(bool values[], int size)
 void displayPrimeNumbers(bool isPrime[], int size)
 {
   cout << "Primes in range 2 to " << size << ": "
-  for (int number = 0; number < size; number++)
+  for (int number = 2; number < size; number++)
   {
     if (isPrime[number])
     {
