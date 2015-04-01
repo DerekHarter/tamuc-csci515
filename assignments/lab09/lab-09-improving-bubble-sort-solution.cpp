@@ -227,7 +227,7 @@ int main()
 {
   // test V1 bubble sort optimizations
   const int NUM_VALUES = 8;
-  int almostSorted1[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
+  int almostSorted1[NUM_VALUES] = {7, 5, 3, 9, 10, 11, 15, 18};
 
   cout << "Before calling bubbleSortV1:" << endl;
   displayArray(almostSorted1, NUM_VALUES);
