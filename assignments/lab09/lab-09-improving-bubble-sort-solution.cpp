@@ -155,7 +155,7 @@ void bubbleSort2(int values[], int size)
       }
     }
 
-    // debugging/performance information
+    // give debugging/performance information
     cout << "bubbleSort2() pass:" << pass << " number of swaps performed:" << numSwaps << endl;
     pass++;
   }
