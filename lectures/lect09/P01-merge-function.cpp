@@ -51,7 +51,7 @@ void displayArray(int values[], int size)
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
  *   that is passed in will be sorted into ascending order.
  */
-void mergeSort(int values[], int begin, int end)
+void merge(int values[], int begin, int end)
 {
 }
 
