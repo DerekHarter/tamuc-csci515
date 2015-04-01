@@ -114,13 +114,15 @@ void setMultiplesToFalse(bool isPrime[], int size, int base)
  */
 void sieveOfEratosthenes(bool isPrime[], int size)
 {
-  int multiple = base + base; // initial multiple to set to false
+  // step 1, initialze all elements to true
+  initValuesToTrue(isPrime, size);
 
-  // iterate through all the multiples of the base
-  while (multiple < size)
+  for (int prime = 2; prime < size; prime++)
   {
-    isPrime[multiple] = false;
-    multiple += base;
+    if (isPrime[prime])
+    {
+      setMultiplesToFalse(isPrime, size, prime);
+    }
   }
 }
 
@@ -136,7 +138,7 @@ void sieveOfEratosthenes(bool isPrime[], int size)
  */
 int main()
 {
-  const int NUM_PRIMES_TO_TEST = 10;
+  const int NUM_PRIMES_TO_TEST = 100;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
   initValuesToTrue(isPrime, NUM_PRIMES_TO_TEST);
