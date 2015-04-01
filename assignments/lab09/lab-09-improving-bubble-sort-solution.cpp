@@ -174,7 +174,7 @@ void bubbleSort2(int values[], int size)
 int main()
 {
   const int NUM_VALUES = 8;
-  int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 10, 11, 15};
+  int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 10, 4, 15};
 
   cout << "Before calling bubbleSort2:" << endl;
   displayArray(almostSorted, NUM_VALUES);
