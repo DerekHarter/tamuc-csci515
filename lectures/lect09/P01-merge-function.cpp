@@ -119,11 +119,11 @@ int main()
   displayArray(values, NUM_VALUES);
   cout << endl;
 
-  // sort the array using some method
-  mergeSort(values, 0, NUM_VALUES-1);
+  // merge the array 
+  merge(values, 0, 3, 6);
 
   // and display it again
-  cout << "Array, after being sorted sorted:" << endl;
+  cout << "Array, after being merged:" << endl;
   displayArray(values, NUM_VALUES);
   cout << endl;
 
