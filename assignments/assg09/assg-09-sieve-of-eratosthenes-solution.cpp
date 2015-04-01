@@ -15,6 +15,50 @@
 using namespace std;
 
 
+/** Init bool array to true values
+ * Initialize an array of boolean values to all true.  We are given an
+ * array of booleans, and the size of the array.
+ *
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
+ *
+ * @returns void.  However, as a side effect we display the
+ *   values in the array to standard output.
+ */
+void displayArray(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << setw(3) << setfill(' ') << values[idx]
+	 << endl;
+  }
+}
+
+
+/** Display Array
+ * Display all of the values in the indicated array of integers.
+ *
+ * @param values An array of integers.  Arrays are passed by value
+ *   so when we initialize this array to random values, the
+ *   initialized values will be passed to the caller.
+ * @param size int The size of the array to initialize.
+ *
+ * @returns void.  However, as a side effect we display the
+ *   values in the array to standard output.
+ */
+void displayArray(int values[], int size)
+{
+  for (int idx = 0; idx < size; idx++)
+  {
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << setw(3) << setfill(' ') << values[idx]
+	 << endl;
+  }
+}
+
 
 /** main entry point
  * The main entry point for this program.  Execution
