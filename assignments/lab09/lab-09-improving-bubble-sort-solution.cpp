@@ -182,7 +182,7 @@ int main()
 
   bubbleSort2(almostSorted, NUM_VALUES);
 
-  cout << "After calling bubbleSort2:";
+  cout << "After calling bubbleSort2:" << endl;
   displayArray(almostSorted, NUM_VALUES);
   cout << endl;
 
