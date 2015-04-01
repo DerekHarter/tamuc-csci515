@@ -12,10 +12,19 @@
 | Due: | In Lab, Wednesday April 1, by 4:05 pm (lab end time) |
 
 * Objectives
-- Become more familiar with performing searches and sorts.
-- Practice passing arrays to and from functions.
+- Practice using arrays.
+- Become familiar with details of sorting algorithms.
+- Learn more about analyzing the time complexity of algorithms.
 
 * Description
+There are several improvements / tweaks that can be done to the basic
+bubble sort sorting algorithm we looked at last week that improve it
+somewhat.  Start this lab by copying the final version of the bubble
+sort (P03-bubble-sort.cpp) from last weeks lectures.  Then make the
+following two improvements to the basic bubble sort.
+
+1.
+
 In class today we gave an example of a binary search implementation
 using a straight forward iterative approach.  We kept track of the
 unsearched region of the array, and calculated the midpoint, and
