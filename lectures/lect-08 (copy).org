@@ -1,0 +1,33 @@
+#+TITLE:     Lecture 08 Notes
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2015 <2015-02-18 Wed>
+#+DESCRIPTION: Lecture 08 Notes.
+#+OPTIONS:   H:4 num:t toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
+* First Session (11 - 11:40)
+** Searching arrays
+- Linear Search
+
+** Sorting Arrays
+- Bubble Sort
+- Insertion Sort
+- Merge Sort
+
+* Second Session (11:45 - 12:30)
+** Searching Arrays
+- Binary Search
+
+* Third Session (12:40 - 1:40)
+** Introduction to Analysis of Algorithms
+- Big O notation
+- Time and Space
+- Relative growth as a function of the size $N$ of input.
+
+| *Algorithm*    | *Best case*  | *Expected*   | *Worst case* |
+| Bubble sort    | $O(N^2)$     | $O(N^2)$     | $O(N^2)$     |
+| Insertion sort | $O(N^2)$     | $O(N^2)$     | $O(N^2)$     |
+| Merge Sort     | $O(N log N)$ | $O(N log N)$ | $O(N log N)$ |
+| Linear search  | $O(1)$       | $O(N)$       | $O(N)        |
+| Binary search  | $O(1)$       | $O(log N)$   | $O(log N)$   |
