@@ -136,7 +136,7 @@ void bubbleSort2(int values[], int size)
 {
   int pass = 0;
   int numSwaps;
-  
+
   // outer loop, perform passes until swapping doesn't occur
   int numSwaps = 1; // ensure that we make at least 1 pass through outer loop
   while (numSwaps != 0)
