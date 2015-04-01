@@ -119,47 +119,6 @@ void bubbleSort(int values[], int size)
 }
 
 
-/** Bubble Sort v2
- * Sort an array of integers using a Bubble sort.  In this second version we add the following
- * optimization.  Within the inner iteration/pass through the array, we keep track of how
- * many swaps are performed.  If, after completing this inner loop, we ended up not performing
- * any swaps, it means we have detected that the array is sorted, thus we terminate early.
- *
- * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
- *   is sorted in place in memory.  The array is sorted in ascending order.
- * @param size int The size of the array to sort.
- *
- * @returns void Nothing is returned explicitly but as a result of calling this function the array
- *   that is passed in will be sorted into ascending order.
- */
-void bubbleSort2(int values[], int size)
-{
-  int pass = 0;
-  int numSwaps;
-
-  // outer loop, perform passes until swapping doesn't occur
-  int numSwaps = 1; // ensure that we make at least 1 pass through outer loop
-  while (numSwaps != 0)
-  {
-    // inner loop, bubble up items from index 0 up to size-pass-1 index
-    numSwaps = 0; // reset count, so we accurately determine number of swaps performed
-    for (int idx = 0; idx < (size - pass - 1); idx++)
-    {
-      // if the values are out of order, swap them
-      if (values[idx] > values[idx + 1])
-      {
-	int tmp = values[idx];
-	values[idx] = values[idx + 1];
-	values[idx + 1] = tmp;
-	numSwaps++;
-      }
-      cout << "bubbleSort2() pass:" << pass << " number of swaps performed:" << numSwaps << endl;
-      pass++;
-    }
-  }
-}
-
-
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -171,18 +130,23 @@ void bubbleSort2(int values[], int size)
  */
 int main()
 {
-  const int NUM_VALUES = 8;
-  int almostSorted[NUM_VALUES] = {3, 5, 7, 9, 18, 10, 11, 15};
+  const int NUM_VALUES = 10;
+  int values[NUM_VALUES];
 
-  cout << "Before calling bubbleSort2:" << endl;
-  displayArray(almostSorted, NUM_VALUES);
+  // set seed to a different value based on current time and initialize array to set or random values
+  srand(time(0));
+  initArrayRandomRange(values, NUM_VALUES, 1, 20);
+  cout << "Array, before being sorted:" << endl;
+  displayArray(values, NUM_VALUES);
   cout << endl;
 
-  bubbleSort2(almostSorted, NUM_VALUES);
+  // sort the array using some method
+  bubbleSort(values, NUM_VALUES);
 
-  cout << "After calling bubbleSort2:";
-  displayArray(almostSorted, NUM_VALUES);
+  // and display it again
+  cout << "Array, after being sorted sorted:" << endl;
+  displayArray(values, NUM_VALUES);
   cout << endl;
-  
+
   return 0;
 }
