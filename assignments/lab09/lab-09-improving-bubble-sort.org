@@ -92,18 +92,43 @@ $ ./lab09
 Before calling bubbleSortV1:
 000:   3
 001:   5
-002:   7
+002:  13
 003:   9
 004:  18
 005:  11
 006:  10
 007:  15
 
-bubbleSortV1() pass:0 number of swaps performed:3
-bubbleSortV1() pass:1 number of swaps performed:1
-bubbleSortV1() pass:2 number of swaps performed:0
+bubbleSortV1() pass:0 number of swaps performed:4
+bubbleSortV1() pass:1 number of swaps performed:2
+bubbleSortV1() pass:2 number of swaps performed:1
+bubbleSortV1() pass:3 number of swaps performed:0
 
 After calling bubbleSortV1:
+000:   3
+001:   5
+002:   9
+003:  10
+004:  11
+005:  13
+006:  15
+007:  18
+
+Before calling bubbleSortV2:
+000:   7
+001:   5
+002:   3
+003:   9
+004:  10
+005:  11
+006:  15
+007:  18
+
+bubbleSortV2() pass:0 last swap location:1
+bubbleSortV2() pass:1 last swap location:0
+bubbleSortV2() pass:2 last swap location:-1
+
+After calling bubbleSortV2:
 000:   3
 001:   5
 002:   7
@@ -112,7 +137,6 @@ After calling bubbleSortV1:
 005:  11
 006:  15
 007:  18
-
 #+end_example
 
 
