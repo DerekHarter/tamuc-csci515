@@ -112,7 +112,7 @@ void setMultiplesToFalse(bool isPrime[], int size, int base)
  *   returns all indexes of prime numbers will be true, and all
  *   others will be false.
  */
-void setMultiplesToFalse(bool isPrime[], int size, int base)
+void sieveOfEratosthenes(bool isPrime[], int size)
 {
   int multiple = base + base; // initial multiple to set to false
 
