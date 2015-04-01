@@ -88,6 +88,31 @@ array.  Then passed this array to the sorting algorithms.  I have some
 output statements inside of the ~bubblesort2()~ and ~bubbleSort3()~
 functions, displaying information about the passes, swaps done, etc.
 #+begin_example
+$ ./lab09
+Before calling bubbleSort2:
+000:   3
+001:   5
+002:   7
+003:   9
+004:  18
+005:  11
+006:  10
+007:  15
+
+bubbleSort2() pass:0 number of swaps performed:3
+bubbleSort2() pass:1 number of swaps performed:1
+bubbleSort2() pass:2 number of swaps performed:0
+
+After calling bubbleSort2:
+000:   3
+001:   5
+002:   7
+003:   9
+004:  10
+005:  11
+006:  15
+007:  18
+
 #+end_example
 
 
