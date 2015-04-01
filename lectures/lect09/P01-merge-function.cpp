@@ -14,7 +14,7 @@
 #include <cstdlib>
 using namespace std;
 
-const int MAX_SIZE = 10;
+const int MAX_ARRAY_SIZE = 10;
 
 /** Display Array
  * Display all of the values in the indicated array of integers.
