@@ -99,9 +99,9 @@ Before calling bubbleSortV1:
 006:  10
 007:  15
 
-bubbleSort2() pass:0 number of swaps performed:3
-bubbleSort2() pass:1 number of swaps performed:1
-bubbleSort2() pass:2 number of swaps performed:0
+bubbleSortV1() pass:0 number of swaps performed:3
+bubbleSortV1() pass:1 number of swaps performed:1
+bubbleSortV1() pass:2 number of swaps performed:0
 
 After calling bubbleSortV1:
 000:   3
