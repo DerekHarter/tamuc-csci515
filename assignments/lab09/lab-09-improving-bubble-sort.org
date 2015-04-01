@@ -76,14 +76,20 @@ Perform the following tasks:
    get out of the outer loop you will then also have the equivalent of
    the first optimization you worked on.
 
-#+begin_example
-#+end_example
-
 In your ~main~ function, show an example of calling your versions of
 the ~bubbleSort()~ functions.  To test that your optimizations are
 working, demonstrate passing in a small, already sorted array, and
 check using the debugger that the function is performing as you
 expect.
+
+An example of output you might generate.  In both cases I used static
+initialization of an array of 8 integers to create an almost sorted
+array.  Then passed this array to the sorting algorithms.  I have some
+output statements inside of the ~bubblesort2()~ and ~bubbleSort3()~
+functions, displaying information about the passes, swaps done, etc.
+#+begin_example
+#+end_example
+
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
