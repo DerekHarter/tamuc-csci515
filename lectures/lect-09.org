@@ -16,7 +16,7 @@ can't fit into the size of primary memory for a supercomputing
 application, if often will go from being feasible to compute, to
 impossible.
 
-- The practical goal if analysis of algorithms is to predict the
+- The practical goal of analysis of algorithms is to predict the
   performance of different algorithms, as a function of the input size,
   in order to guide design decisions.
 - The goal is to make meaningful comparisons between algorithms, but

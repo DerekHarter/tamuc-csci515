@@ -1,4 +1,4 @@
-% Created 2015-03-31 Tue 21:20
+% Created 2015-04-01 Wed 10:37
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,31 +7,35 @@
 \usepackage{longtable}
 \usepackage{float}
 \usepackage{wrapfig}
-\usepackage{rotating}
-\usepackage[normalem]{ulem}
-\usepackage{amsmath}
+\usepackage{soul}
 \usepackage{textcomp}
 \usepackage{marvosym}
 \usepackage{wasysym}
+\usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
 \usepackage{minted}
-\author{Derek Harter}
-\date{CSci 515 Spring 2015 \textit{<2015-03-31 Tue>}}
+\providecommand{\alert}[1]{\textbf{#1}}
+
 \title{Lecture 09 Notes}
+\author{Derek Harter}
+\date{2015-03-31}
 \hypersetup{
   pdfkeywords={},
   pdfsubject={Lecture 09 Notes.},
-  pdfcreator={Emacs 24.3.1 (Org mode 8.2.4)}}
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
 \begin{document}
 
 \maketitle
+
 
 \section{First Session (11 - 11:40)}
 \label{sec-1}
 \subsection{Introduction to Analysis of Algorithms}
 \label{sec-1-1}
+
 Analysis of algorithms is a branch of computer science that studies
 the performance of algorithms, especially their run time and space
 requirements.  Most classes tend to emphasize the run time complexity,
@@ -41,43 +45,46 @@ application, if often will go from being feasible to compute, to
 impossible.
 
 \begin{itemize}
-\item The practical goal if analysis of algorithms is to predict the
-performance of different algorithms, as a function of the input size,
-in order to guide design decisions.
+\item The practical goal of analysis of algorithms is to predict the
+  performance of different algorithms, as a function of the input size,
+  in order to guide design decisions.
 \item The goal is to make meaningful comparisons between algorithms, but
-some problems:
+  some problems:
 \begin{itemize}
 \item The relative performance might depend on characteristics of hardware.
-Alg 1 faster machine A, Alg 2 faster machine B.  Specify a machine model.
+    Alg 1 faster machine A, Alg 2 faster machine B.  Specify a machine model.
 \item Relative performance might depend on details of dataset.  Thus usually
-look at best, worst and average case behavior.
+    look at best, worst and average case behavior.
 \item Relative importance depends on the size of the input.  A sorting
-algorithm will be slower for a small list than for a very large one.
+    algorithm will be slower for a small list than for a very large one.
 \end{itemize}
 \item Usual solution for last: specify run time (or number of operations)
-as a function of problem size.  Compare functions \textbf{asymptotically} 
-as the problem size increases.
+  as a function of problem size.  Compare functions \textbf{asymptotically} 
+  as the problem size increases.
 \end{itemize}
 
 Suppose you have analyzed two algorithms and expressed their run times in
 terms of the size of the input: Algorithm A takes $100n + 1$ steps
 to solve a problem with size $n$; Algorithm B takes $n^2 + n + 1$ steps.
 
-Which algorithm is "better" in terms of time complexity (number of steps)?
+Which algorithm is ``better'' in terms of time complexity (number of steps)?
 
 The following table shows run time of algorithms for different problem sizes:
 
+
 \begin{center}
-\begin{tabular}{rrr}
-Input & Run time of & Run time of\\
-size & Algorithm A & Algorithm B\\
+\begin{tabular}{lll}
+ Input   &  Run time of  &  Run time of  \\
+ size    &  Algorithm A  &  Algorithm B  \\
 \hline
-10 & 1 001 & 111\\
-100 & 10 001 & 10 101\\
-1 000 & 100 001 & 1 001 001\\
-10 000 & 1 000 001 & $> 10^{10}$\\
+ 10      &  1 001        &  111          \\
+ 100     &  10 001       &  10 101       \\
+ 1 000   &  100 001      &  1 001 001    \\
+ 10 000  &  1 000 001    &  $> 10^{10}$  \\
 \end{tabular}
 \end{center}
+
+
 
 At $n = 10$ Algorithm A looks pretty bad, it takes 10 times longer
 than B.  But for $n = 100$ they are about the same, and for larger
@@ -104,6 +111,7 @@ may be a \textbf{crossover point} where another algorithm is better.
 \subsection{Order of Growth and the Big-Oh $O()$ Notation}
 \label{sec-1-2}
 
+ 
 An \textbf{order of growth} is a set of functions whose asymptotic growth behavior
 is considered equivalent.  For example, $2n$, $100n$ and $n + 1$ belong to
 the same order of growth, which is written $O(n)$ in \textbf{Big-Oh notation} and
@@ -117,47 +125,55 @@ the leading term $n^2$.
 The following table shows some of the orders of growth that appear most commonly
 in algorithm analysis, in increasing order of badness.
 
+
 \begin{center}
 \begin{tabular}{ll}
-Order of Growth & Name\\
+ Order of Growth                &  Name                     \\
 \hline
-$O(1)$ & Constant\\
-$O(\mathrm{log}_b \; n)$ & logarithmic (for any b)\\
-$O(n)$ & linear\\
-$O(n \; \mathrm{log}_b \; n)$ & "en log en"\\
-$O(n^2)$ & quadratic\\
-$O(n^3)$ & cubic\\
-$O(c^n)$ & exponential (for any c)\\
+ $O(1)$                         &  Constant                 \\
+ $O(\mathrm{log}_b \; n)$       &  logarithmic (for any b)  \\
+ $O(n)$                         &  linear                   \\
+ $O(n \; \mathrm{log}_b \; n)$  &  ``en log en''            \\
+ $O(n^2)$                       &  quadratic                \\
+ $O(n^3)$                       &  cubic                    \\
+ $O(c^n)$                       &  exponential (for any c)  \\
 \end{tabular}
 \end{center}
 \section{Second Session (11:45 - 12:30)}
 \label{sec-2}
 \subsection{Searching Algorithms}
 \label{sec-2-1}
+
 \begin{itemize}
 \item Why is Binary Search $O(\mathrm{log}_2 \; n)$?
 \item Why is Bubble Sort $O(n^2)$?
 \end{itemize}
 \subsection{Sorting Arrays}
 \label{sec-2-2}
-\begin{itemize}
-\item Bubble Sort
-\item Insertion Sort
-\item Merge Sort
-\end{itemize}
 
+\begin{itemize}
+\item Merge Sort
+\begin{itemize}
+\item A function to merge two sorted subarrays together.
+\item Using merge() function, solve sort recursively, (array of size 1, sorted base
+    case, array of size > 2 divide in 2, recursive call on subparts, merge the sorted
+    subparts).
+\end{itemize}
+\end{itemize}
 \section{Third Session (12:40 - 1:40)}
 \label{sec-3}
 
+
+
 \begin{center}
 \begin{tabular}{llll}
-\textbf{Algorithm} & \textbf{Best case} & \textbf{Expected} & \textbf{Worst case}\\
-Bubble sort & $O(N^2)$ & $O(N^2)$ & $O(N^2)$\\
-Insertion sort & $O(N^2)$ & $O(N^2)$ & $O(N^2)$\\
-Merge Sort & $O(N log N)$ & $O(N log N)$ & $O(N log N)$\\
-Linear search & $O(1)$ & $O(N)$ & \$O(N)\\
-Binary search & $O(1)$ & $O(log N)$ & $O(log N)$\\
+ \textbf{Algorithm}  &  \textbf{Best case}  &  \textbf{Expected}   &  \textbf{Worst case}  \\
+ Bubble sort         &  $O(n^2)$            &  $O(n^2)$            &  $O(n^2)$             \\
+ Insertion sort      &  $O(n^2)$            &  $O(n^2)$            &  $O(n^2)$             \\
+ Merge Sort          &  $O(n \; log \; n)$  &  $O(n \; log \; n)$  &  $O(n \; log \; n)$   \\
+ Linear search       &  $O(1)$              &  $O(n)$              &  \$O(n)               \\
+ Binary search       &  $O(1)$              &  $O(log \; n)$       &  $O(log \; n)$        \\
 \end{tabular}
 \end{center}
-% Emacs 24.3.1 (Org mode 8.2.4)
+
 \end{document}
