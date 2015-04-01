@@ -98,6 +98,14 @@ void merge(int values[], int begin, int mid, int end)
       tmpStorage[tmpIndex] = values[upperIndex++];
     }
   }
+
+  // After above, we have merged to temporay storage, so now copy back
+  // to original storage
+  lowerIndex = begin;
+  for (tmpIndex = 0, lowerIndex = begin; tmpIndex < size; tmpIndex++, lowerIndex++)
+  {
+    values[lowerIndex] = tmpStorage[tmpIndex];
+  }
 }
 
 
