@@ -83,47 +83,21 @@ void displayArray(int values[], int size)
 }
 
 
-/** Insertion Sort
- * Sort an array of integers using an Insertion sort.  Insertion sort
- * works in this manner.  We first look at the element at index 1.  If
- * it is out of order with element 0, we insert it at index 0.  We
- * then look at the element at index 2 and insert it into the correct
- * location of the sorted part of the list 0-1 by swapping it down
- * until it is at its correct location.  We then repeat by looking at
- * index 3 and inserting into the elements 0-2 by swaping down until
- * it is in order, etc untill we are at the last item.  Insertion sort
- * is very inefficient, it is an O(N^2) algorithm.
+/** Merge Sort
+ * Sort an array of integers using a merge sort.  
  *
- * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
- *   is sorted in place in memory.  The array is sorted in ascending order.
- * @param size int The size of the array to sort.
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
+ * @param begin int The beginning element/index of the subarray in the array of values
+ *   we are to sort.
+ * @param end int The ending element/index of the subarray in the array of values.
  *
  * @returns void Nothing is returned explicitly but as a result of calling this function the array
  *   that is passed in will be sorted into ascending order.
  */
-void insertionSort(int values[], int size)
+void mergeSort(int values[], int begin, int end)
 {
-  int valueToInsert;
-  int swapLocation;
-  for (int nextIndexToInsert = 1; nextIndexToInsert < size; nextIndexToInsert++)
-  {
-    valueToInsert = values[nextIndexToInsert];  // store the value we are inserting
-    swapLocation = nextIndexToInsert; 
-
-    // test the swapLocation with the item one index lower in the array.  As long as the
-    // item we are examining is greater than the value we are trying to insert, we shift
-    // it up.  
-    while ( (swapLocation > 0) && (values[swapLocation - 1] > valueToInsert) )
-    {
-      // shift elements one slot
-      values[swapLocation] = values[swapLocation - 1];
-      swapLocation--;
-    }
-
-    // We shifted all of the items up that needed to be moved, now we insert at is
-    // correct location
-    values[swapLocation] = valueToInsert;
-  }
 }
 
 
