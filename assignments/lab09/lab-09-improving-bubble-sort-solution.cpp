@@ -244,14 +244,14 @@ int main()
   int almostSorted2[NUM_VALUES] = {3, 5, 7, 9, 18, 11, 10, 15};
 
   cout << "Before calling bubbleSortV2:" << endl;
-  displayArray(almostSorted1, NUM_VALUES);
+  displayArray(almostSorted2, NUM_VALUES);
   cout << endl;
 
-  bubbleSortV1(almostSorted1, NUM_VALUES);
+  bubbleSortV2(almostSorted2, NUM_VALUES);
   cout << endl;
 
-  cout << "After calling bubbleSortV1:" << endl;
-  displayArray(almostSorted1, NUM_VALUES);
+  cout << "After calling bubbleSortV2:" << endl;
+  displayArray(almostSorted2, NUM_VALUES);
   cout << endl;
 
   // return 0 to indicate successful completion.
