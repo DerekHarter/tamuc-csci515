@@ -23,7 +23,35 @@ somewhat.  Start this lab by copying the final version of the bubble
 sort (P03-bubble-sort.cpp) from last weeks lectures.  Then make the
 following two improvements to the basic bubble sort.
 
-1.
+First of all, the best case behavior of the basic bubble sort is
+$O(n^2)$.  Basically, even if the values are already sorted, as
+currently implemented, the outer and inner loops will both always run
+approximately $n$ times.  However, it is unnecessary to continue
+running the outer loop if/when the array of values has become sorted.
+An easy way to determine if the values are sorted is to keep track in
+the inner loop of weather or not any swaps occur.  In other words in
+the inner loop simply keep a flag or count of the number of swaps.  If
+it ever happens that no swaps occur, then it must mean that the values
+are sorted, and we can stop.  In the best case, after adding this
+improvement, if you give bubble sort an already sorted list, it will
+simply go through the inner loop 1 time, see the values are sorted,
+and then stop.
+
+For your second improvement you will perform something related, but a
+little bit trickier.  It can happen that large portions of the end of
+the array have become sorted during the bubble sort.  Our current
+implementation does take advantage of the fact that on the first pass
+the largest item will be bubbled up to the last position, so it only
+performs the necessary iterations in the inner loop keeping track of
+which items have been sorted.  But, as we did before, we can try and
+keep track of the location where the last swap occurs during the inner
+loop.  For example, let ~values[idx]~ and ~values[idx+1]~ be the 
+last two values swapped on a pass.  Then surely the values
+~values[idx+1]~ to ~values[size-1]~ are already in their final
+positions.  In the next pass we only need to consider numbers
+~values[0]~ to ~values[idx-1]~.  If you keep track of the last
+swap location, you can use this to be the maximum location to
+iterate up to on the next pass.
 
 In class today we gave an example of a binary search implementation
 using a straight forward iterative approach.  We kept track of the
