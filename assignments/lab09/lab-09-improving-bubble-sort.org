@@ -57,7 +57,7 @@ Perform the following tasks:
 
 1. Implement the first optimization described.  Start by copying the
    first version of the ~bubbleSort()~ function to a new function
-   named ~bubbleSort2()~.  In your ~bubbleSort2()~ function, implement
+   named ~bubbleSortV1()~.  In your ~bubbleSortV1()~ function, implement
    the optimization that causes the sorting to stop anytime the inner
    loop detects it makes a pass without any swaps occurring.  As a
    hint, and to prepare to do the next task, you might want to try
@@ -68,7 +68,7 @@ Perform the following tasks:
 
 2. Implement the second optimization described.  Start by copying the
    clean first version of the ~bubbleSort()~ function to a new
-   function named ~bubbleSort3()~ (don't use your modification for
+   function named ~bubbleSortV2()~ (don't use your modification for
    part 1 here, do this optimization from scratch).  Implement the
    idea that you keep track of the location where the last swap
    occurs, and on the next pass in the inner loop you only bubble up
@@ -77,7 +77,7 @@ Perform the following tasks:
    the first optimization you worked on.
 
 In your ~main~ function, show an example of calling your versions of
-the ~bubbleSort()~ functions.  To test that your optimizations are
+the ~bubbleSort~ functions.  To test that your optimizations are
 working, demonstrate passing in a small, already sorted array, and
 check using the debugger that the function is performing as you
 expect.
