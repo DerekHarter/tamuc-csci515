@@ -138,7 +138,7 @@ void sieveOfEratosthenes(bool isPrime[], int size)
  */
 int main()
 {
-  const int NUM_PRIMES_TO_TEST = 9000000;
+  const int NUM_PRIMES_TO_TEST = 8500000;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
   // run the sieve and display results
