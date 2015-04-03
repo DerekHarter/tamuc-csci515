@@ -146,6 +146,7 @@ int main()
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
   cout << "sizeof(bool): " << sizeof(bool) << endl;
+  cout << "sizeof(isPrime array)" << sizeof(isPrime) << endl;
   // return 0 to indicate successful program completion
   return 0;
 }
