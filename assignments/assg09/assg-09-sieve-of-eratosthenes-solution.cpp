@@ -119,11 +119,11 @@ void sieveOfEratosthenes(bool isPrime[], int size)
 
   // setp 2, iterate through candidates, set multiples of
   // found primes to be false, starting with 2
-  for (int prime = 2; prime < size; prime++)
+  for (int number = 2; number < size; number++)
   {
-    if (isPrime[prime])
+    if (isPrime[number])
     {
-      setMultiplesToFalse(isPrime, size, prime);
+      setMultiplesToFalse(isPrime, size, number);
     }
   }
 }
