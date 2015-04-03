@@ -145,6 +145,7 @@ int main()
   sieveOfEratosthenes(isPrime, NUM_PRIMES_TO_TEST);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
+  cout << "sizeof(bool): " << sizeof(bool) << endl;
   // return 0 to indicate successful program completion
   return 0;
 }
