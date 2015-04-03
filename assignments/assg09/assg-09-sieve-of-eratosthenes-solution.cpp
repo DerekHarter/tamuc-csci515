@@ -140,15 +140,13 @@ void sieveOfEratosthenes(bool isPrime[], int size)
  */
 int main()
 {
-  const int NUM_PRIMES_TO_TEST = 8400000;
+  const int NUM_PRIMES_TO_TEST = 10000;
   bool isPrime[NUM_PRIMES_TO_TEST];
 
   // run the sieve and display results
   sieveOfEratosthenes(isPrime, NUM_PRIMES_TO_TEST);
   displayPrimeNumbers(isPrime, NUM_PRIMES_TO_TEST);
 
-  cout << "sizeof(bool): " << sizeof(bool) << endl;
-  cout << "sizeof(isPrime array)" << sizeof(isPrime) << endl;
   // return 0 to indicate successful program completion
   return 0;
 }
