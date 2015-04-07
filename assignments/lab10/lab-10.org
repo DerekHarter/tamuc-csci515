@@ -12,132 +12,56 @@
 | Due: | In Lab, Wednesday April 8, by 4:05 pm (lab end time) |
 
 * Objectives
-- Practice using arrays.
-- Become familiar with details of sorting algorithms.
-- Learn more about analyzing the time complexity of algorithms.
+- Get practice in declaring structs and enums user defined
+  types.
+- Become familiar with defining arrays of structs.
+- Learn how to pass arrays of structs to functions and process
+  the structs.
 
 * Description
-There are several improvements / tweaks that can be done to the basic
-bubble sort sorting algorithm we looked at last week that improve it
-somewhat.  Start this lab by copying the final version of the bubble
-sort (P03-bubble-sort.cpp) from last weeks lectures.  Then make the
-following two improvements to the basic bubble sort.
+In this lab we will create a basic data structure to represent
+an array of standard playing cards.  A deck of playing
+cards contains 52 cards.  There are 4 different suits
+in a standard deck of cards (HEARTS, DIAMONDS, CLUBS, SPADES).
+For each suite there is one card each of 13 possible face
+values (ACE, DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+TEN, JACK, QUEEN, KING).  You will define enumerated types
+to represent the possible suits and face values that cards
+can have.  Then you need to define a ~struct~ to represent
+a single playing card. Each individual playing card has
+a single suit, and is of some particular face value.
 
-First of all, the best case behavior of the basic bubble sort is
-$O(n^2)$.  Basically, even if the values are already sorted, as
-currently implemented, the outer and inner loops will both always run
-approximately $n$ times.  However, it is unnecessary to continue
-running the outer loop if/when the array of values has become sorted.
-An easy way to determine if the values are sorted is to keep track in
-the inner loop of weather or not any swaps occur.  In other words in
-the inner loop simply keep a flag or count of the number of swaps.  If
-it ever happens that no swaps occur, then it must mean that the values
-are sorted, and we can stop.  In the best case, after adding this
-improvement, if you give bubble sort an already sorted list, it will
-simply go through the inner loop 1 time, see the values are sorted,
-and then stop.
-
-For your second improvement you will perform something related, but a
-little bit trickier.  It can happen that large portions of the end of
-the array have become sorted during the bubble sort.  Our current
-implementation does take advantage of the fact that on the first pass
-the largest item will be bubbled up to the last position, so it only
-performs the necessary iterations in the inner loop keeping track of
-which items have been sorted.  But, as we did before, we can try and
-keep track of the location where the last swap occurs during the inner
-loop.  For example, let ~values[idx]~ and ~values[idx+1]~ be the 
-last two values swapped on a pass.  Then surely the values
-~values[idx+1]~ to ~values[size-1]~ are already in their final
-positions.  In the next pass we only need to consider numbers
-~values[0]~ to ~values[idx-1]~.  If you keep track of the last
-swap location, you can use this to be the maximum location to
-iterate up to on the next pass.
+Once you have defined your user defined types to represent a card, we
+will simulate the creation of a deck of cards.  You will write a
+function that initializes an array of 52 Card structures to a standard
+deck of cards.
 
 Perform the following tasks:
 
-1. Implement the first optimization described.  Start by copying the
-   first version of the ~bubbleSort()~ function to a new function
-   named ~bubbleSortV1()~.  In your ~bubbleSortV1()~ function, implement
-   the optimization that causes the sorting to stop anytime the inner
-   loop detects it makes a pass without any swaps occurring.  As a
-   hint, and to prepare to do the next task, you might want to try
-   counting the number of swaps that occur, and/or keep track of the
-   last item swapped.  You would start this count/location out at 0 in
-   both cases, and if it is 0 after the inner loop iteration, it means
-   no swaps occurred.
+1. Define enumerated types called Suit and Face.  Define each ~enum~
+   using the list of discrete possible values shown above.
 
-2. Implement the second optimization described.  Start by copying the
-   clean first version of the ~bubbleSort()~ function to a new
-   function named ~bubbleSortV2()~ (don't use your modification for
-   part 1 here, do this optimization from scratch).  Implement the
-   idea that you keep track of the location where the last swap
-   occurs, and on the next pass in the inner loop you only bubble up
-   to this location.  If you check when this location becomes 0, to
-   get out of the outer loop you will then also have the equivalent of
-   the first optimization you worked on.
+2. Declare a ~struct~ called Card.  Using your Suit and Face
+   enumerated type, define the Card type to represent
+   a single card.
 
-In your ~main~ function, show an example of calling your versions of
-the ~bubbleSort~ functions.  To test that your optimizations are
-working, demonstrate passing in a small, already sorted array, and
-check using the debugger that the function is performing as you
-expect.
+3. Write a function called ~initDeckOfCards~.  This function will
+   expect an array of Card structures as input.  It will assume that
+   the array has been initialized to hold exactly 52 cards, thus you
+   do not need to pass in the size of this array to the function.  The
+   function should initialize the array of 52 cards
+   correctly. (e.g. one of each possible Face/Suit combination in the
+   deck).
 
-An example of output you might generate.  In both cases I used static
-initialization of an array of 8 integers to create an almost sorted
-array.  Then passed this array to the sorting algorithms.  I have some
-output statements inside of the ~bubbleSortV1()~ and ~bubbleSortV2()~
-functions, displaying information about the passes, swaps done, etc.
-#+begin_example
-$ ./lab09
-Before calling bubbleSortV1:
-000:   3
-001:   5
-002:  13
-003:   9
-004:  18
-005:  11
-006:  10
-007:  15
+4. In your main function, show an example of declaring an array of
+   52 Card structures.  Demonstrate calling your init function to
+   initialize your array of cards.
 
-bubbleSortV1() pass:0 number of swaps performed:4
-bubbleSortV1() pass:1 number of swaps performed:2
-bubbleSortV1() pass:2 number of swaps performed:1
-bubbleSortV1() pass:3 number of swaps performed:0
+5. If you have time, and for extra credit, in main display the
+   52 resulting cards from your deck.  Or even better, create
+   a function called ~displayDeckOfCards~ that takes an array
+   of cards and displays them.
 
-After calling bubbleSortV1:
-000:   3
-001:   5
-002:   9
-003:  10
-004:  11
-005:  13
-006:  15
-007:  18
-
-Before calling bubbleSortV2:
-000:   7
-001:   5
-002:   3
-003:   9
-004:  10
-005:  11
-006:  15
-007:  18
-
-bubbleSortV2() pass:0 last swap location:1
-bubbleSortV2() pass:1 last swap location:0
-bubbleSortV2() pass:2 last swap location:-1
-
-After calling bubbleSortV2:
-000:   3
-001:   5
-002:   7
-003:   9
-004:  10
-005:  11
-006:  15
-007:  18
-#+end_example
 
 
 *NOTE*: Now that our programs have more functions than just the
