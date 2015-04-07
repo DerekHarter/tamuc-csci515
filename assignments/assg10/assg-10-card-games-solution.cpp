@@ -158,4 +158,5 @@ int main()
 
   initDeckOfCards(deck);
   displayDeckOfCards(deck, 0, 4);
+  shuffleDeckOfCards(deck);
 }
