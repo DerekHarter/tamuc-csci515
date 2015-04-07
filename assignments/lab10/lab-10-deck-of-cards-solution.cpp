@@ -20,7 +20,7 @@ enum Face {DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, 
 struct Card
 {
   Suit suit;
-  Face value;
+  Face face;
 };
 
 /** main entry point
