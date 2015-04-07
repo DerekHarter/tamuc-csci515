@@ -7,7 +7,7 @@
  * @assg   Lecture 10, P03 Using functions with structures
  *
  * @description Examples of passing structures to functions and
- *    returning them from from functions.
+ *    returning them from functions.
  */
 #include <iostream>
 #include <iomanip>
