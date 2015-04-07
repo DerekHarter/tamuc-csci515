@@ -73,7 +73,7 @@ void loadIrisData(IrisSample irisSamples)
  */
 int main()
 {
-  Iris irisSamples[MAX_SAMPLES];
+  IrisSample irisSamples[MAX_SAMPLES];
 
   // load the iris flower data from file
   loadIrisData(irisSamples);
