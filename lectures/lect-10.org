@@ -29,7 +29,13 @@ struct Trial
 }; // don't forget the semicolon
 #+end_src
 
-
+- By convention, always use an initial upper case letter for user
+  defined types.  In the previous example, ~Trial~ is a user defined
+  type (an experimental trial record for a single participant).
+- Usually a ~struct~ definition should be done globally, it usually
+  doesn't make sense to have a new data type that is only defined
+  inside of a single local function scope.
+  
 * Second Session (11:45 - 12:30)
 ** Another header
 
