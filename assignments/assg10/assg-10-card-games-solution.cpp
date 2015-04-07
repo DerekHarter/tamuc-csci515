@@ -160,6 +160,21 @@ void displayDeckOfCards(Card deck[], int begin, int end)
  */
 void shuffleDeckOfCards(Card deck[])
 {
+  for (int idx = 0; idx < CARDS_IN_DECK; idx++)
+  {
+    Card c = deck[idx]; // the current card to randomly swap
+    Card tmp = c; // Copy the card to a temporary location
+
+    // randomly select another card to swap with
+    int anotherIndex = rand() % CARDS_IN_DECK;
+
+    // copy the random card to current location
+    deck[idx] = deck[anotherIndex];
+
+    // now copy our temporary copy of the card we are swapping to the
+    // random location
+    deck[anotherIndex] = tmp;
+  }
 }
 
 
