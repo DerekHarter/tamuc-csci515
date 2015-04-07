@@ -141,7 +141,7 @@ int main()
   loadIrisData(irisSamples);
 
   // display first 10 samples, to ensure we loaded properly
-  displayIrisSamples(irisSamples, 0, 10);
+  //displayIrisSamples(irisSamples, 0, 10);
 
   // return 0 to indicate successfull completion.
   return 0;
