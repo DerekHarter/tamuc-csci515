@@ -234,7 +234,12 @@ void highestDrawFour(Card deck[])
   // Test players 1 up to number of players, to find one with a better card
   for (int otherPlayer = 1; otherPlayer < NUM_PLAYERS; otherPlayer++)
   {
-    
+    // test if the card is higher than the current winner
+    if ( isCardHigher(deck[otherPlayer], winningCard) )
+    {
+      winningCard = deck[otherPlayer];
+      winningPlayer = otherPlayer;
+    }
   }
 }
 
