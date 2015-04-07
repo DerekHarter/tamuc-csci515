@@ -41,6 +41,7 @@ struct Trial
   built-in type.
 - Use ~.~ with name of field to access fields for reading or writing to fields in
   an allocated structure.
+- Can use a comma separated list initializer, as we with arrays.
 
 * Second Session (11:45 - 12:30)
 ** Another header
