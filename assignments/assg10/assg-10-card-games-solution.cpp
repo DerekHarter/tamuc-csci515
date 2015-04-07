@@ -65,19 +65,14 @@ void initDeckOfCards(Card deck[])
  */
 void displayDeckOfCards(Card deck[], int begin, int end)
 {
-  int idx;
-
-  // I will use the fact that by default the values in enum are ints from 0 to last
-  idx = 0;
-  for (int suit = SPADES; suit <= HEARTS; suit++)
+  for (int idx = begin; idx < end; idx++)
   {
-    for (int face = DEUCE; face <= ACE; face++)
-    {
-      deck[idx].suit = (Suit)suit;
-      deck[idx].face = (Face)face;
-      idx++;
-    }
+    Card c = deck[idx]; // The current card
+
+    // Determine strings for Face/Suit to display nicely
+    
   }
+
 }
 
 /** main entry point
