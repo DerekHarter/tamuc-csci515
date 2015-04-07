@@ -57,6 +57,8 @@ void initDeckOfCards(Card deck[])
  * display in the deck.  We display these cards to standard output.
  *
  * @param deck An array of 52 Card items.
+ * @param begin The begin index of the cards to display (inclusive)
+ * @param end The end index of the cards to display (not included)
  *
  * @returns void But as a side effect we display indicated cards on standard
  *   output.
