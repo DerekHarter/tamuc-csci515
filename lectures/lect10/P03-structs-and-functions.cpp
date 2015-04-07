@@ -4,7 +4,7 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   April 5, 2015
- * @assg   Lecture 10, P02 User Defined Types
+ * @assg   Lecture 10, P03 Using functions with structures
  *
  * @description More example and discussion of what it means to define
  *    new variable types for the language.
