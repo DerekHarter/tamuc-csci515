@@ -13,6 +13,7 @@
 #include <iomanip>
 #include <cstdlib>
 #include <string>
+#include <fstream>
 using namespace std;
 
 
@@ -30,6 +31,7 @@ struct IrisSample
 
 // At maximum we will load and process 150 samples of our data
 const int MAX_SAMPLES = 150;
+const string irisDataFileName = "iris.csv";
 
 
 /** Display experiment trial
@@ -44,6 +46,9 @@ const int MAX_SAMPLES = 150;
  */
 void loadIrisData(IrisSample samples)
 {
+  string speciesString;
+
+  while ()
 }
 
 
