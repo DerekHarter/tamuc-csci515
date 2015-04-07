@@ -62,4 +62,7 @@ void initDeckOfCards(Card deck[])
 int main()
 {
   Card deck[CARDS_IN_DECK];
+
+  initDeckOfCards();
+  
 }
