@@ -67,6 +67,24 @@ void loadIrisData(IrisSample irisSamples[])
     irisSamples[idx].petalLength = petalLength;
     irisSamples[idx].petalWidth = petalWidth;
 
+    // convert species string to correct type
+    if (speciesString == "Iris-setosa")
+    {
+      irisSamples[idx].species = SETOSA;
+    }
+    else if (speciesString == "Iris-versicolor")
+    {
+      irisSamples[idx].species = VERSICOLOR;
+    }
+    else if (speciesString == "Iris-virginica")
+    {
+      irisSamples[idx].species = VIRGINICA;
+    }
+    else
+    {
+      
+    }
+
     // increment index for next record read, test if we exceed maximum records
     idx++;
     if (idx >= MAX_SAMPLES)
