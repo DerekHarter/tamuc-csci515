@@ -924,4 +924,423 @@ empty@sfcnt ... edef external@font {mandatory@arg
                                                   space atthe @tempdimb }
 l.50 \subsection{Defining a \verb~struct~}
                                           
-The control seque
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font OML/cmm/m/it/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `OMS/cmsy/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font OMS/cmsy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `OMX/cmex/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font OMX/cmex/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `U/wasy/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font U/wasy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `U/lasy/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font U/lasy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `U/msa/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font U/msa/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Undefined control sequence.
+extract@sizefn ... >#2>set@size@funct@args #1@nil 
+                                                  let sizefn@info @empty els...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+empty@sfcnt ...@empty else @tempdimb optional@arg 
+                                                  @tempdimb #1{Fontspace sha...
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Fontspace shapespace `U/msb/m/n'space willspace be
+(Font)space space space space space space space space space space space space s
+pace space scaledspace tospace sizespace 10.95pt on input line 50.
+
+! Undefined control sequence.
+empty@sfcnt ... edef external@font {mandatory@arg 
+                                                  space atthe @tempdimb }
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Font U/msb/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
+<to be read again> 
+                   relax 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Math formula deleted: Insufficient symbol fonts.
+<inserted text> $
+                 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+Sorry, but I can't typeset math unless \textfont 2
+and \scriptfont 2 and \scriptscriptfont 2 have all
+the \fontdimen values needed in math symbol fonts.
+
+! Undefined control sequence.
+<argument> \Hy@tempa 
+                     
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \HyPsd@CheckCatcodes has an extra }.
+<inserted text> 
+                \par 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\global \let \Hy@tempa \HyPsd@String 
+! Paragraph ended before \HyPsd@CheckCatcodes was complete.
+<to be read again> 
+                   \par 
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+<argument> \Hy@tempa 
+                     
+l.50 \subsection{Defining a \verb~struct~}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+\@empty \HyPsd@End \Hy@tempa \expandafter \HyPsd@Subst \expandafter {\ETC.
+! Paragraph ended before \HyPsd@RemoveMask was complete.
+<to be read again> 
+                   \par 
+l.58 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \end doesn't match its definition.
+l.59 \end{
+          document}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Extra }, or forgotten \endgroup.
+l.59 \end{document}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+! Emergency stop.
+<*> ...ass/spring2015/csci515/lectures/lect-10.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 8356 strings out of 495028
+ 117075 string characters out of 6181498
+ 193990 words of memory out of 5000000
+ 11413 multiletter control sequences out of 15000+600000
+ 16228 words of font info for 50 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 31i,6n,37p,300b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
