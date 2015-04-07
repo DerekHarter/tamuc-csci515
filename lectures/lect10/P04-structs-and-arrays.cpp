@@ -35,13 +35,14 @@ const string irisDataFileName = "iris.csv";
 
 
 /** Load Iris Flower data
- * Load the iris flower data from file.  File is a comma separated delimiter formatted
- * file of recorded flower information.  We load the data into the provided array
- * of IrisSample records.  This array is passed by reference, thus the loaded
- * data is accessible to the caller of this function.
+ * Load the iris flower data from file.  File is a comma separated
+ * delimiter formatted file of recorded flower information.  We load
+ * the data into the provided array of IrisSample records.  This array
+ * is passed by reference, thus the loaded data is accessible to the
+ * caller of this function.
  *
- * @param irisSamples An array of IrisSample records, large enough to hold all of the
- *   data we will attempt to read in from the file.
+ * @param irisSamples An array of IrisSample records, large enough to
+ *   hold all of the data we will attempt to read in from the file.
  *
  * @returns void, nothing is returned explicitly, but as a side effect
  *    read in the values from the data file into the given array of
