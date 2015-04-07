@@ -24,6 +24,19 @@ struct Card
   Face face;
 };
 
+
+/** Initialize Deck of Cards
+ * Initialize an array of Card structures.  This initializes
+ * assumes a standard deck size of 52 cards, and initialzes deck with all
+ * 52 combinations of 4 suits with 13 face values.
+ *
+ * @returns void But as a side effect the deck of cards is initialized.
+ */
+int main()
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
