@@ -174,13 +174,17 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 int main()
 {
   IrisSample irisSamples[MAX_SAMPLES];
-
+  int numSamples;
+  
   // load the iris flower data from file
-  loadIrisData(irisSamples);
+  numSamples = loadIrisData(irisSamples);
 
   // display first 10 samples, to ensure we loaded properly
   displayIrisSamples(irisSamples, 45, 55);
 
+  float avgLength;
+  // calculate average petal length for each species and display
+  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, MAX_SAMPLES)
   // return 0 to indicate successfull completion.
   return 0;
 }
