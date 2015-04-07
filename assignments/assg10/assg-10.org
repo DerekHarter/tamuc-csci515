@@ -113,12 +113,11 @@ submitted by the due date will be considered for evaluation.
 
 1. Your program must compile, run and produce some sort of output to
    be graded. 0 if not satisfied.
-1. 60+ pts. For the correct implementation of the three helper functions.
-1. 30+ pts. For implementing the Sieve of Eratosthenes algorithm and functions
-   correctly, and using the functions as described above.
-1. 10+ pts. Your main function should create the array of boolean values
-   and demonstrate using your functions to find and display the primes in
-   the first 10,000 integers.
+1. 20+ pts. For the correct implementation of the function to display the
+   cards as described.
+1. 30+ pts. For correctly implementing the deck shuffling function.
+1. 40+ pts. For correctly implementing the draw four game as described.
+1. 10+ pts. For displaying the output of the game as described.
 
 
 ** Program Style
