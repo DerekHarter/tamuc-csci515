@@ -125,7 +125,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
        << setw(5) << "PetL"
        << setw(5) << "PetW"
        << endl;
-  
+
   // display all of the indicated records
   for (int idx = begin; idx < end; idx++)
   {
