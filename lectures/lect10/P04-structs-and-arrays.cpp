@@ -121,6 +121,8 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
   {
     IrisSample s = irisSamples[idx];
     string speciesString;
+
+    // convert type to string for display
     if (s.species == SETOSA)
     {
       speciesString = "Setosa";
@@ -138,6 +140,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
       speciesString = "UNKNOWN/ERROR";
     }
 
+    // display the record
     cout << setw(3)  << setfill('0') << idx
          << setw(10) << setfill(' ') << right << speciesString 
 	 << setw(5)  << setfill(' ') << setprecision(2) << fixed << showpoint << s.sepalLength
