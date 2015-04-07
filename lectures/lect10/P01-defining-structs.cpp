@@ -38,8 +38,26 @@ int main()
 {
   Trial t;
 
+  // initialize the fields
   t.participantName = "Derek Harter";
+  t.gender = "Male";
+  t.reactionTime = 2.8;
+  t.numberOfPresses = 3;
+
+  // access the fields
   cout << "Participant: " << t.participantName << endl;
+  cout << "Gender:      " << t.gender << endl;
+  cout << "Reaction Time: " << t.reactionTime << endl;
+  cout << "Number of Presses: " << t.numberOfPresses << endl;
+  cout << endl;
+
+  // initialize using a list of initializers
+  t = {"Susan Smith", "Female", 3.7, 2};
+  cout << "Participant: " << t.participantName << endl;
+  cout << "Gender:      " << t.gender << endl;
+  cout << "Reaction Time: " << t.reactionTime << endl;
+  cout << "Number of Presses: " << t.numberOfPresses << endl;
+  cout << endl;
 
   // return 0 to indicate successfull completion.
   return 0;
