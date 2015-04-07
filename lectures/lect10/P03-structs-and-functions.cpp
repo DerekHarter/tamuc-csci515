@@ -48,6 +48,44 @@ void displayTrial(Trial trial)
 }
 
 
+/** Display experiment trial
+ * Given an experimental trial, format and display its fields/values
+ * to standard output.
+ *
+ * @param trial An experiment Trial record.
+ *
+ * @returns void, nothing is returned explicitly, but as a side
+ *    effect we display the fields of the experimental trial to
+ *    standard output.
+ */
+void displayTrial(Trial trial)
+{
+  // display the fields
+  cout << "      Participant: " << trial.participantName << endl;
+  cout << "           Gender: " << (trial.gender == MALE ? "Male" : "Female") << endl;
+  cout << "    Reaction Time: " << trial.reactionTime << endl;
+  cout << "Number of Presses: " << trial.numberOfPresses << endl;
+  cout << endl;
+}
+
+
+/** Conduct experiment trial
+ * Conduct a (simulated) experimental trial.  Gather data, and return
+ * gathered data record as a Trial structure.
+ *
+ * @returns Trial The experimental trial data we recorded.
+ */
+void displayTrial(Trial trial)
+{
+  // display the fields
+  cout << "      Participant: " << trial.participantName << endl;
+  cout << "           Gender: " << (trial.gender == MALE ? "Male" : "Female") << endl;
+  cout << "    Reaction Time: " << trial.reactionTime << endl;
+  cout << "Number of Presses: " << trial.numberOfPresses << endl;
+  cout << endl;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
