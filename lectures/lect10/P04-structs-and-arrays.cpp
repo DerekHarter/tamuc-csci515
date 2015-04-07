@@ -42,7 +42,7 @@ const int MAX_SAMPLES = 150;
  *    effect we display the fields of the experimental trial to
  *    standard output.
  */
-void loadIrisData(IrisSample samples, )
+void loadIrisData(IrisSample samples)
 {
 }
 
