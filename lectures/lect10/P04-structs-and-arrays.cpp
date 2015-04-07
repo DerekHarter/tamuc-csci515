@@ -102,6 +102,24 @@ void loadIrisData(IrisSample irisSamples[])
 }
 
 
+/** Display Iris Samples
+ * Given an array of IrisSample records, display the data for the
+ * indicated records on standard output.
+ *
+ * @param irisSamples An array of loaded IrisSample records.
+ * @param begin An int, the beginning index of the data to display
+ * @param end An int, the ending index of the data we are to display
+ *    (noninclusive).
+ *
+ * @returns void, nothing is returned explicitly, but as a side effect
+ *    we display the indicated records from the samples to standard
+ *    output.
+ */
+void displayIrisSamples(IrisSample irisSamples[])
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
