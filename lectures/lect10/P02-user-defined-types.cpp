@@ -4,10 +4,10 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   April 5, 2015
- * @assg   Lecture 10, P01 Defining structs
+ * @assg   Lecture 10, P02 User Defined Types
  *
- * @description Declare a structure data type to hold experiment trial data.
- *    Show example of initializing the structure.
+ * @description More example and discussion of what it means to define
+ *    new variable types for the language.
  */
 #include <iostream>
 #include <iomanip>
