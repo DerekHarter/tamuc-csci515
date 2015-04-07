@@ -15,6 +15,7 @@ using namespace std;
 
 
 // User defined Card type
+const int CARDS_IN_DECK = 52;
 enum Suit {SPADES, CLUBS, DIAMONDS, HEARTS};
 enum Face {DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
 struct Card
@@ -34,4 +35,5 @@ struct Card
  */
 int main()
 {
+  Card deck
 }
