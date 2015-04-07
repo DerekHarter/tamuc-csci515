@@ -162,6 +162,27 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 }
 
 
+/** Calculate avg petal length of species
+ * Calculate the average petal length for a particular species of flower.
+ * We are given a table of IrisSample records containing the data, and
+ * the number of records in the table.  The data contains measurements from
+ * several species of flower.  We are also given a particular
+ * species type as a parameter.  We calculate the average petal length
+ * only for the flower of the given species in the data table.
+ *
+ * @param irisSamples An array of loaded IrisSample records.
+ * @param numSamples int The total number of records in the data table
+ * @param species IrisSpecies The species we are to extract data for
+ *    and calculate averages of petal lengths.
+ *
+ * @returns float The average petal length of the flower in the data
+ *    table of the indicated species.
+ */
+void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
