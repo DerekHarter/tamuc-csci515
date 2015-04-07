@@ -8,6 +8,14 @@
 
 * First Session (11 - 11:40)
 ** Structures in C
+- ~struct~ are *aggregrate* data types - they can be built using
+  elements of primitive types.
+- ~struct~ are basically a *record*, a row of a database or table.
+- ~struct~ are an example of a *user defined type*.  Like ~enum~ they
+  allow.
+- In this course we don't cover object oriented analysis and design,
+  but basically classes in C++ are ~struct~ user defined types with
+  associated methods that operate on the new type.
 
 ** Defining a struct
 
