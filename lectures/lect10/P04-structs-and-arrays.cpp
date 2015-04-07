@@ -178,7 +178,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
  * @returns float The average petal length of the flower in the data
  *    table of the indicated species.
  */
-void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
+float calculateAveragePetalLengthForSpecies(IrisSample irisSamples[], int numSamples, IrisSpecies species)
 {
 }
 
