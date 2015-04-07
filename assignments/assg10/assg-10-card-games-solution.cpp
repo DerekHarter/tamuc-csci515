@@ -178,6 +178,40 @@ void shuffleDeckOfCards(Card deck[])
 }
 
 
+/** Higher Card
+ * Compare two Card items, named card1 and card2, to determine which
+ * is the higher card.  We use the rule that first sorts cards by
+ * their suit where HEARTS beats DIAMONDS beats CLUBS beats
+ * SPADES.  If the two cards have the same suite, then the value
+ * of the card face determines the winner.  This function returns
+ * a boolean result of True if card1 is the higher card, and False
+ * if it is card2.
+ *
+ * @param card1 A Card item
+ * @param card2 Another Card to be compared with the first
+ *
+ * @returns bool true if card1 is higher than card2, false otherwise
+ */
+bool isCardHigher(Card card1, Card card2)
+{
+  // if the suit of card1 beats the suit of card2, it is higher
+  if (card1.suit > card2.suit)
+  {
+    return true;
+  }
+  // if the suit is smaller, then it is lower
+  else if (card1.suit < card2.suit)
+  {
+    return false;
+  }
+  // otherwise suits are equal, so simply return face comparison
+  else if (card1.suit == card2.suit)
+  {
+    return card1.face > card2.face;
+  }
+}
+
+
 /** Game of High Cards
  * Play a game of high cards between four players.  In this case, we define
  * high card first by suit where HEARTS beats DIAMONDS beats CLUBS beats
