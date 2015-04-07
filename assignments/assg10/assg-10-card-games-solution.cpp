@@ -229,7 +229,7 @@ void highestDrawFour(Card deck[])
 {
   const int NUM_PLAYERS = 4; // we hard code to play 4 players, but we could change this to a parameter
   int winningPlayer = 0;  // Keep track of the winning player
-  Card winnigCard = deck[winningPlayer]; // start by assuming player 0 is winner
+  Card winningCard = deck[winningPlayer]; // start by assuming player 0 is winner
 
   // Test players 1 up to number of players, to find one with a better card
   for (int otherPlayer = 1; otherPlayer < NUM_PLAYERS; otherPlayer++)
