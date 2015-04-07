@@ -36,6 +36,11 @@ struct Trial
   doesn't make sense to have a new data type that is only defined
   inside of a single local function scope.
   
+** Allocating and accessing a struct
+- Declare a variable (or array) of the new type, just as you would any
+  built-in type.
+- Use ~.~ with name of field to access fields for reading or writing.
+
 * Second Session (11:45 - 12:30)
 ** Another header
 
