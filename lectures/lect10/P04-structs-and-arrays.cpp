@@ -57,8 +57,16 @@ void loadIrisData(IrisSample irisSamples[])
   }
 
   // if file was opened successfully, read in data a line at a times
+  float sepalLength, sepalWidth, petalLength, petalWidth;
   string speciesString;
-  //while ()
+  int idx = 0;
+  while (inputDataFile >> sepalLength >> sepalWidth >> petalLength >> petalWidth >> speciesString)
+  {
+    irisSamples[idx].sepalLength = sepalLength;
+    irisSamples[idx].sepalWidth = sepalWidth;
+    irisSamples[idx].petalLength = petalLength;
+    irisSamples[idx].petalWidth = petalWidth;
+  }
 }
 
 
