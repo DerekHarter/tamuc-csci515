@@ -70,7 +70,75 @@ void displayDeckOfCards(Card deck[], int begin, int end)
     Card c = deck[idx]; // The current card
 
     // Determine strings for Face/Suit to display nicely
-    
+    // determine the suit, convert to string for display purposes
+    string suitString;
+    switch (c.suit)
+    {
+      case SPADES:
+	suitString = "Spades";
+	break;
+      case CLUBS:
+	suitString = "Clubs";
+	break;
+      case DIAMONDS:
+	suitString = "Diamonds";
+	break;
+      case HEARTS:
+	suitString = "Hearts";
+	break;
+    }
+
+    // determine the face value, convert to string
+    string faceString;
+    switch (c.face)
+    {
+      case DEUCE:
+	faceString = "Deuce";
+	break;
+      case THREE:
+	faceString = "Three";
+	break;
+      case FOUR:
+	faceString = "Four";
+	break;
+      case FIVE:
+	faceString = "Five";
+	break;
+      case SIX:
+	faceString = "Six";
+	break;
+      case SEVEN:
+	faceString = "Seven";
+	break;
+      case EIGHT:
+	faceString = "Eight";
+	break;
+      case NINE:
+	faceString = "Nine";
+	break;
+      case TEN:
+	faceString = "Ten";
+	break;
+      case JACK:
+	faceString = "Jack";
+	break;
+      case QUEEN:
+	faceString = "Queen";
+	break;
+      case KING:
+	faceString = "King";
+	break;
+      case ACE:
+	faceString = "Ace";
+	break;
+    }
+
+    // display the card
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << setw(5) << setfill(' ') << faceString
+	 << " of "
+	 << setw(10) << setfill(' ') << suitString
+	 << endl;
   }
 
 }
