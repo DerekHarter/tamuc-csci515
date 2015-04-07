@@ -64,5 +64,33 @@ int main()
   Card deck[CARDS_IN_DECK];
 
   initDeckOfCards(deck);
-  
+
+  for (int idx = 0; idx < CARDS_IN_DECK; idx++)
+  {
+    Card c = deck[idx];
+
+    cout << setw(3) << setfill('0') << idx;
+
+    // determine the suit, convert to string for display purposes
+    string suitString;
+    switch (c.suit)
+    {
+      case SPADES:
+	suitString = "Spades";
+	break;
+      case CLUBS:
+	suitString = "Clubs";
+	break;
+      case DIAMONDS:
+	suitString = "Diamonds";
+	break;
+      case HEARTS:
+	suitString = "Hearts";
+	break;
+    }
+      
+      
+    string faceString;
+    
+  }
 }
