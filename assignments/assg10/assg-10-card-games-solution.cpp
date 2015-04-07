@@ -188,7 +188,8 @@ void shuffleDeckOfCards(Card deck[])
  *
  * @param deck An array of Card items, preshuffled.
  *
- * @returns void But as a side effect the deck of cards is shuffled after return
+ * @returns void But as a side effect we display the winner of the highest card
+ *    draws among the 4 players.
  */
 void highestDrawFour(Card deck[])
 {
