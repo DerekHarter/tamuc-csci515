@@ -17,37 +17,6 @@
 - Learn to process arrays of structs.
 
 * Description
-We have seen a brute force algorithm or two for testing whether or not
-a given integer is a prime or not.  Recall that a prime number is any
-integer this is only evenly divisible by itself and 1.  
-
-The Sieve of Eratosthenes is a method of finding prime numbers that
-is much more efficient than the brute force method we have seen.
-The algorithm operates as follows:
-
-1. Create an array of boolean variables with all elements initialized
-   to true.  Array elements with prime subscripts will remain true
-   after the algorithm finishes.  All other array elements will
-   eventually be set to false.  We will ignore the elements at index 0
-   and 1 in this exercise.
-2. Starting with array subscript 2, every time an array element is
-   found whose value is true, loop through the remainder of the array
-   and set to false every element whose subscript is a multiple of the
-   subscript for the element with a true value.  For array subscript
-   2, all elements beyond 2 in the array that are multiples of 2 will
-   be set to false (subscripts 4, 6, 8, 10, etc.); for array subscript 
-   3, all elements beyond 3 in the array that are multiples of 3 will be
-   set to false (subscripts 6, 9, 12, 15, etc.); and so on.  After
-   array subscript 3, when you check array subscript 4 you will find it
-   is false (since it was set to false by the multiples of 2 pass), thus
-   you won't set multiples of 4, etc.
-
-When this process is complete, the array elements that are still set
-to true indicate that the subscript is a prime number.  This algorithm
-is much more efficient at finding all prime numbers in some range from
-2 up to $N$ than checking each individual integer using a brute force method
-as we have done before.  In fact, it is close to $O(N)$ to check for primes
-in the range $2 ... N$.
 
 Perform the following tasks:
 
