@@ -19,7 +19,7 @@ using namespace std;
 // Data for a single experimental trial
 enum IrisSpecies {SETOSA, VERSICOLOR, VIRGINICA};
 
-struct Iris
+struct IrisSample
 {
   float sepalLength; // cm
   float sepalWidth;  // cm
@@ -27,6 +27,21 @@ struct Iris
   float petalWidth;  // cm
   IrisSpecies species;
 };
+
+
+/** Display experiment trial
+ * Given an experimental trial, format and display its fields/values
+ * to standard output.
+ *
+ * @param trial An experiment Trial record.
+ *
+ * @returns void, nothing is returned explicitly, but as a side
+ *    effect we display the fields of the experimental trial to
+ *    standard output.
+ */
+void loadIrisData(Iris)
+{
+}
 
 
 /** main entry point
