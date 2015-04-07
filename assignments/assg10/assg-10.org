@@ -1,8 +1,8 @@
-#+TITLE:     Assg 10: 
+#+TITLE:     Assg 10: Iris Data Processing
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-04-07 Tue>
-#+DESCRIPTION: Assg 10
+#+DESCRIPTION: Assg 10: Shuffling Cards
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
@@ -17,42 +17,27 @@
 - Learn to process arrays of structs.
 
 * Description
+In this assignment you will extend your lab 10 work.  If you did not
+complete the structure and enums defining your Card data type, or the
+function to initialize the deck of cards in the lab, you should finish
+those parts from the lab first.
+
+You will add the following functionality to your deck of cards
+simulation.  You will add a display function that can be used to
+display the cards in an array of cards.  You will also add a shuffle
+function, to shuffle up the deck of cards.  Finally you will add
+a function that will play a simple game with the deck of cards.
 
 Perform the following tasks:
 
-1. Create a function called ~initValuesToTrue()~.  This function should
-   take an array of booleans, and the size of the array as its input
-   parameters.  It should initialize all of the values in the boolean 
-   array to ~true~ as a result of calling the function.
-2. Create a function called ~setMultiplesToFalse()~.  This function
-   performs the part in step 2 of the algorithm above.  This function
-   should take an array of boolean values, and the size of the array.
-   It should also take a third parameter, and integer index or
-   multiple.  As we described above, for example, if the multiple is
-   2, it shouldn't set the value at index 2 to ~false~ in the array,
-   but it should set all multiples in of 2 in the array to ~false~,
-   e.g. the values at index 4, 6, 8, ...  up to the size of the
-   boolean array.
-3. Create a function called ~sieveOfEratosthenes()~.  This function
-   will implement the above described algorithm.  It should take
-   an array of booleans, and the size of the array as its only 2 parameters.
-   The function should first call the ~initValuesToTrue()~ function, to
-   ensure that it starts out with all ~true~ values in the array in
-   order to perform step 1.  It should then iterate over all the
-   indexes in the array, from 2 up to the size of the array, and as
-   described, any index that it finds still marked ~true~, it should
-   use the ~setMultiplesToFalse()~ function to mark all subsequent
-   multiples of that index to be ~false~.
-4. Create a function called ~displayPrimeNumbers()~.  This function
-   will again take an array of boolean values, and the size of the
-   array.  It is assumed this is the resulting array obtained after
-   calling your Sieve of Eratosthenes function.  Display all of
-   the values that were determined to be primes from 2 to the size
-   to standard output.  An example of the desired output is shown below.
-5. In your main function, create a boolean array of size 10,000.  Call your
-   ~sieveOfEratosthenes()~ function to find the primes in the first 10,000
-   integers, and display the results using your ~displayPrimeNumbers()~
-   function.
+1. Create a function called ~displayCards~.  This function should take
+   an array of your Cards, and a begin and end index.  The function
+   should display the cards in the indicated index range to standard
+   output.  The begin index is inclusive, but the end index is not
+   inclusive, so if asked to display cards from begin index 0 to end
+   index 5, it will display the cards at indexes 0, 1, 2, 3 and 4.
+   See the example output below for how the output should be
+   displayed.
 
 Here is an example output from running a correct assignment to find the
 primes in the range from 2 to 100.  You can find lists of primes online
