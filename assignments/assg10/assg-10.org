@@ -12,8 +12,9 @@
 | Due: | Tuesday April 14, by Midnight |
 
 * Objectives
-- Practice using advanced array logic.
-- More practice with passing arrays to functions.
+- Get more practice defining and using structures.
+- Practice using arrays of structs as basic tables.
+- Learn to process arrays of structs.
 
 * Description
 We have seen a brute force algorithm or two for testing whether or not
