@@ -218,18 +218,26 @@ int main()
 {
   IrisSample irisSamples[MAX_SAMPLES];
   int numSamples;
-  
+
   // load the iris flower data from file
   numSamples = loadIrisData(irisSamples);
   cout << "We successfully loaded " << numSamples << " samples from data file" << endl;
-  
+
   // display first 10 samples, to ensure we loaded properly
   displayIrisSamples(irisSamples, 45, 55);
 
-  float avgLength;
   // calculate average petal length for each species and display
-  //avgLength = calculateAveragePetalLengthForSpecies(irisSamples, MAX_SAMPLES)
+  float avgLength;
+  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, SETOSA);
+  cout << "Average petal length of Setosa species:     " << setprecision(4) << fixed << avgLength << endl;
+
+  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, VERSICOLOR);
+  cout << "Average petal length of Versicolor species: " << setprecision(4) << fixed << avgLength << endl;
+
+  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, VERSICOLOR);
+  cout << "Average petal length of Versicolor species: " << setprecision(4) << fixed << avgLength << endl;
   
+
   // return 0 to indicate successfull completion.
   return 0;
 }
