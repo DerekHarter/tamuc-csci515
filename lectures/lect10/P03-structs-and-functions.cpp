@@ -75,7 +75,7 @@ void displayTrial(Trial trial)
  *
  * @returns Trial The experimental trial data we recorded.
  */
-void displayTrial(Trial trial)
+Trial conductTrial()
 {
   // display the fields
   cout << "      Participant: " << trial.participantName << endl;
