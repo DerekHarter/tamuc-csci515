@@ -37,6 +37,9 @@ struct Trial
 int main()
 {
   Trial t;
+
+  t.participantName = "Derek Harter";
+  cout << "Participant: " << t.participantName << endl;
   
   // return 0 to indicate successfull completion.
   return 0;
