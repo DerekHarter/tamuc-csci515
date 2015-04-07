@@ -178,14 +178,15 @@ void shuffleDeckOfCards(Card deck[])
 }
 
 
-/** Shuffle Deck of Cards
- * Shuffle an array of Card structures.  This functions
- * assumes a standard deck size of 52 cards, and that the array of cards has
- * already been correctly initilized.  This shuffle works by iterating through
- * every position in the deck, and picking another position to swap with
- * at random.  The result should be a well shuffled deck of cards.
+/** Game of High Cards
+ * Play a game of high cards between four players.  In this case, we define
+ * high card first by suit where HEARTS beats DIAMONDS beats CLUBS beats
+ * SPADES.  If 2 or more players have equally high suites, then the value
+ * of the card face determines the winner.  This function takes a shuffled
+ * deck of standard cards (52 cards in the deck) as its first and only
+ * parameter.
  *
- * @param deck An array of Card items.
+ * @param deck An array of Card items, preshuffled.
  *
  * @returns void But as a side effect the deck of cards is shuffled after return
  */
