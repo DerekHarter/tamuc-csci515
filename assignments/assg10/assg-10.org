@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday April 7, by Midnight |
+| Due: | Tuesday April 14, by Midnight |
 
 * Objectives
 - Practice using advanced array logic.
