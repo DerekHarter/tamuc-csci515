@@ -61,7 +61,8 @@ Trial conductTrial()
 
   // gather personal information first
   cout << "Enter participant name: ";
-  cin >> trial.participantName;
+  getline(cin, trial.participantName);
+
   cout << "Enter participant gender (M/F): ";
   string genderString;
   cin >> genderString;
