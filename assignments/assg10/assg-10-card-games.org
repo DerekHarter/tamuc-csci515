@@ -1,8 +1,8 @@
-#+TITLE:     Assg 10: Iris Data Processing
+#+TITLE:     Assg 10: Card Games
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-04-07 Tue>
-#+DESCRIPTION: Assg 10: Shuffling Cards
+#+DESCRIPTION: Assg 10: Card Games
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
