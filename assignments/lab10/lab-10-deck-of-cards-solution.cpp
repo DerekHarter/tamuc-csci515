@@ -42,8 +42,8 @@ void initDeckOfCards(Card deck[])
   {
     for (int face = DEUCE; face <= ACE; face++)
     {
-      deck[idx].suit = suit;
-      deck[idx].face = face;
+      deck[idx].suit = (Suit)suit;
+      deck[idx].face = (Face)face;
       idx++;
     }
   }
