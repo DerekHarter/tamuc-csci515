@@ -77,6 +77,27 @@ void displayTrial(Trial trial)
  */
 Trial conductTrial()
 {
+  Trial trial;
+  
+  // gather personal information first
+  cout << "Enter participant name: ";
+  cin >> trial.participantName;
+  cout << "Enter participant gender (M/F): ";
+  string genderString;
+  cin >> genderString;
+  if (genderString == "M")
+  {
+    trial.gender = MALE;
+  }
+  else if (genderString == "F")
+  {
+    trial.gender = FEMALE;
+  }
+  else
+  {
+    cerr << "ERROR: enter either M or F" << endl;
+    exit(1);
+  }
   // display the fields
   cout << "      Participant: " << trial.participantName << endl;
   cout << "           Gender: " << (trial.gender == MALE ? "Male" : "Female") << endl;
