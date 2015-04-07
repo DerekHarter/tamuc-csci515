@@ -111,6 +111,10 @@ int main()
   t = {"Susan Smith", FEMALE, 3.7, 2};
   displayTrial(t);
 
+  // call function to gather data and return
+  t = conductTrial();
+  displayTrial(t);
+  
   // return 0 to indicate successfull completion.
   return 0;
 }
