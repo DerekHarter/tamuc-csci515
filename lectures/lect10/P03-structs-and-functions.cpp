@@ -100,7 +100,7 @@ Trial conductTrial()
   }
 
   // Simulate gathering participant data
-  cout << "Press the x button as fast as you can for 1 second..." << endl;
+  cout << "Press the x button as fast as you can for 1 second... (simulation)" << endl;
   trial.reactionTime = (rand() / RAND_MAX) * 200.0; // 0.0 to 200.0 ms at random
   trial.numberOfPresses = (rand() % 4); // 0 to 3 presses at random
 
