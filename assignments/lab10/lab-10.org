@@ -74,7 +74,7 @@ the input parameters and return value of the function.
 
 An eCollege dropbox has been created for this lab.  You should upload
 your version of the lab by the end of lab time to the eCollege dropbox
-named ~Lab 09 Improving Bubble Sort~.  Work submitted by the end of
+named ~Lab 10 Deck of Cards~.  Work submitted by the end of
 lab will be considered, but after the lab ends you may no longer
 submit work, so make sure you submit your best effort by the lab end
 time in order to receive credit.
