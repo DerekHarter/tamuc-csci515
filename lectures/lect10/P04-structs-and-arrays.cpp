@@ -28,6 +28,9 @@ struct IrisSample
   IrisSpecies species;
 };
 
+// At maximum we will load and process 150 samples of our data
+const int MAX_SAMPLES = 150;
+
 
 /** Display experiment trial
  * Given an experimental trial, format and display its fields/values
@@ -39,7 +42,7 @@ struct IrisSample
  *    effect we display the fields of the experimental trial to
  *    standard output.
  */
-void loadIrisData(Iris)
+void loadIrisData(IrisSample samples, )
 {
 }
 
@@ -55,7 +58,6 @@ void loadIrisData(Iris)
  */
 int main()
 {
-  const int MAX_SAMPLES = 150;
   Iris irisSamples[MAX_SAMPLES];
 
   // load the iris flower data from file
