@@ -48,7 +48,7 @@ int main()
 
   // access the fields
   cout << "      Participant: " << t.participantName << endl;
-  cout << "           Gender: " << t.gender << endl;
+  cout << "           Gender: " << (t.gender == MALE ? "Male" : "Female") << endl;
   cout << "    Reaction Time: " << t.reactionTime << endl;
   cout << "Number of Presses: " << t.numberOfPresses << endl;
   cout << endl;
