@@ -19,7 +19,7 @@
 
 ** Defining a struct
 
-#+begin_src c
+#+begin_src C
 struct Trial
 {
    string name;
