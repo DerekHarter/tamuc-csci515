@@ -261,6 +261,6 @@ int main()
 
   initDeckOfCards(deck);
   shuffleDeckOfCards(deck);
-  displayDeckOfCards(deck, 0, CARDS_IN_DECK);
-  //highestDrawFour(deck);
+  displayDeckOfCards(deck, 0, 4);
+  highestDrawFour(deck);
 }
