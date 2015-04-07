@@ -794,7 +794,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 41.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -804,7 +804,7 @@ a \relax \hbox {}#I\catcode `\ \active \<let>-command \csname\endcsname
 ! Paragraph ended before \HyPsd@@ProtectSpacesFi was complete.
 <to be read again> 
                    \par 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -813,7 +813,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \Hy@tempa ...\par \<def>-command \csname\endcsname
                                                   \<let>-command \do \catcod...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -824,7 +824,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \<
              
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -835,7 +835,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> \<
              
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -846,7 +846,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \Hy@tempa ...roup \<def>-command \csname\endcsname
                                                   }\<>-\@ifnextchar ~struct~
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -857,7 +857,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \Hy@tempa ...d \csname\endcsname}\<>-\@ifnextchar 
                                                   ~struct~
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -868,7 +868,7 @@ and I'll forget about whatever was undefined.
 ! Use of \HyPsd@RemoveMask doesn't match its definition.
 \Hy@tempa ->\par 
                  \<def>-command \<let>-command \catcode `\ \<>-\\ \173\175\0...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -878,7 +878,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Missing number, treated as zero.
 <to be read again> 
                    G
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -887,7 +887,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -895,7 +895,7 @@ you left one out. Proceed, with fingers crossed.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -906,7 +906,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -917,12 +917,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `OML/cmm/m/it'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -933,7 +933,7 @@ and I'll forget about whatever was undefined.
 ! Font OML/cmm/m/it/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -944,7 +944,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -955,7 +955,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -966,12 +966,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `OMS/cmsy/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -982,7 +982,7 @@ and I'll forget about whatever was undefined.
 ! Font OMS/cmsy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -993,7 +993,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1004,7 +1004,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1015,12 +1015,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `OMX/cmex/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1031,7 +1031,7 @@ and I'll forget about whatever was undefined.
 ! Font OMX/cmex/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -1042,7 +1042,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1053,7 +1053,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1064,12 +1064,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `U/wasy/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1080,7 +1080,7 @@ and I'll forget about whatever was undefined.
 ! Font U/wasy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -1091,7 +1091,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1102,7 +1102,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1113,12 +1113,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `U/lasy/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1129,7 +1129,7 @@ and I'll forget about whatever was undefined.
 ! Font U/lasy/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -1140,7 +1140,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1151,7 +1151,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1162,12 +1162,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `U/msa/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1178,7 +1178,7 @@ and I'll forget about whatever was undefined.
 ! Font U/msa/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -1189,7 +1189,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Undefined control sequence.
 extract@sizefn ... >#2>set@size@funct@args #1@nil 
                                                   let sizefn@info @empty els...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1200,7 +1200,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 empty@sfcnt ...@empty else @tempdimb optional@arg 
                                                   @tempdimb #1{Fontspace sha...
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1211,12 +1211,12 @@ and I'll forget about whatever was undefined.
 
 LaTeX Font Warning: Fontspace shapespace `U/msb/m/n'space willspace be
 (Font)space space space space space space space space space space space space s
-pace space scaledspace tospace sizespace 10.95pt on input line 50.
+pace space scaledspace tospace sizespace 10.95pt on input line 38.
 
 ! Undefined control sequence.
 empty@sfcnt ... edef external@font {mandatory@arg 
                                                   space atthe @tempdimb }
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1227,7 +1227,7 @@ and I'll forget about whatever was undefined.
 ! Font U/msb/m/n/10.95=at10 not loadable: Metric (TFM) file not found.
 <to be read again> 
                    relax 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I wasn't able to read the size data for this font,
 so I will ignore the font specification.
@@ -1238,7 +1238,7 @@ e.g., type `I\font<same font id>=<substitute font name>'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1249,7 +1249,7 @@ my insertion and my current dilemma will both disappear.
 ! Math formula deleted: Insufficient symbol fonts.
 <inserted text> $
                  
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 Sorry, but I can't typeset math unless \textfont 2
 and \scriptfont 2 and \scriptscriptfont 2 have all
@@ -1258,7 +1258,7 @@ the \fontdimen values needed in math symbol fonts.
 ! Undefined control sequence.
 <argument> \Hy@tempa 
                      
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1269,7 +1269,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \HyPsd@CheckCatcodes has an extra }.
 <inserted text> 
                 \par 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -1283,7 +1283,7 @@ Runaway argument?
 ! Paragraph ended before \HyPsd@CheckCatcodes was complete.
 <to be read again> 
                    \par 
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -1292,7 +1292,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 <argument> \Hy@tempa 
                      
-l.50 \subsection{Defining a \verb~struct~}
+l.38 \subsection{Defining a \verb~struct~}
                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1305,14 +1305,14 @@ Runaway argument?
 ! Paragraph ended before \HyPsd@RemoveMask was complete.
 <to be read again> 
                    \par 
-l.58 
+l.46 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 ! Use of \end doesn't match its definition.
-l.59 \end{
+l.47 \end{
           document}
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -1320,7 +1320,7 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 ! Extra }, or forgotten \endgroup.
-l.59 \end{document}
+l.47 \end{document}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1336,11 +1336,11 @@ deleted material, e.g., by typing `I$}'.
 
  
 Here is how much of TeX's memory you used:
- 8356 strings out of 495028
- 117075 string characters out of 6181498
- 193990 words of memory out of 5000000
- 11413 multiletter control sequences out of 15000+600000
- 16228 words of font info for 50 fonts, out of 8000000 for 9000
+ 8349 strings out of 495028
+ 116987 string characters out of 6181498
+ 192990 words of memory out of 5000000
+ 11409 multiletter control sequences out of 15000+600000
+ 14790 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  31i,6n,37p,300b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
