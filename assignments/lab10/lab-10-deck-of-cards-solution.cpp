@@ -32,8 +32,21 @@ struct Card
  *
  * @returns void But as a side effect the deck of cards is initialized.
  */
-int main()
+void initDeckOfCards(Card deck[])
 {
+  int idx;
+
+  // I will use the fact that by default the values in enum are ints from 0 to last
+  idx = 0;
+  for (int suit = SPADES; suit <= HEARTS; suit++)
+  {
+    for (int face = DEUCE; face <= ACE; face++)
+    {
+      deck[idx].suit = suit;
+      deck[idx].face = face;
+      idx++;
+    }
+  }
 }
 
 
