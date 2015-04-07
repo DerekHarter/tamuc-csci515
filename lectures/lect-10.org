@@ -64,7 +64,7 @@ struct Trial
   whole record of values).
 - *NOTE*: ~struct~ can potentially be very large, so can be inefficient to
   pass stucture by value (which is copied).  So sometimes might want to
-  pass by reference instead.
+  pass by reference instead when large.
 
 ** Arrays of structures
 
