@@ -46,7 +46,7 @@ const string irisDataFileName = "iris.csv";
  *
  * @returns int We return the number of samples loaded into the array.
  */
-void loadIrisData(IrisSample irisSamples[])
+int loadIrisData(IrisSample irisSamples[])
 {
   ifstream inputDataFile;
 
