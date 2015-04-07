@@ -93,7 +93,7 @@ void loadIrisData(IrisSample irisSamples[])
 
     // increment index for next record read, test if we exceed maximum records
     idx++;
-    if (idx >= MAX_SAMPLES)
+    if (idx > MAX_SAMPLES)
     {
       cerr << "ERROR: loadIrisData(): exceeded maximum records" << endl;
       exit(1);
