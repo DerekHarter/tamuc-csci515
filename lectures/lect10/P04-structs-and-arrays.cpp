@@ -52,7 +52,7 @@ void loadIrisData(IrisSample irisSamples[])
   inputDataFile.open(irisDataFileName);
   if (!inputDataFile)
   {
-    cerr << "ERROR: could not find file for loading: " << irisDataFileName << endl;
+    cerr << "ERROR: loadIrisData(): could not find file for loading: " << irisDataFileName << endl;
     exit(1);
   }
 
@@ -66,6 +66,14 @@ void loadIrisData(IrisSample irisSamples[])
     irisSamples[idx].sepalWidth = sepalWidth;
     irisSamples[idx].petalLength = petalLength;
     irisSamples[idx].petalWidth = petalWidth;
+
+    // increment index for next record read, test if we exceed maximum records
+    idx++;
+    if (idx >= MAX_SAMPLES)
+    {
+      cout << "ERROR: loadIrisData(): exceeded maximum records" << endl;
+      exit(1);
+    }
   }
 }
 
