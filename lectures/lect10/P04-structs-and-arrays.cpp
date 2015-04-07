@@ -117,6 +117,16 @@ void loadIrisData(IrisSample irisSamples[])
  */
 void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 {
+  // display a header
+  cout << setw(3) << "IDX"
+       << setw(10) << "Species"
+       << setw(5) << "SepL"
+       << setw(5) << "SepW"
+       << setw(5) << "PetL"
+       << setw(5) << "PetW"
+       << endl;
+  
+  // display all of the indicated records
   for (int idx = begin; idx < end; idx++)
   {
     IrisSample s = irisSamples[idx];
