@@ -83,6 +83,20 @@ Here is an example output from running a correct implementation of
 this assignment.
 
 #+begin_example
+$ ./assg10 
+000: Queen of Hearts
+001: Deuce of Diamonds
+002:  Five of Hearts
+003:   Ten of Hearts
+highestDrawFour(): winning player: 0
+
+$ ./assg10 
+000:  Four of Spades
+001: Three of Spades
+002:  King of Diamonds
+003:   Ace of Hearts
+highestDrawFour(): winning player: 3
+
 #+end_example
 
 *HINT*: Finding the highest card in the game described can be a bit
