@@ -157,5 +157,5 @@ int main()
   Card deck[CARDS_IN_DECK];
 
   initDeckOfCards(deck);
-  displayDeckOfCards(deck, 0, 4);
+  displayDeckOfCards(deck, 0, CARDS_IN_DECK);
 }
