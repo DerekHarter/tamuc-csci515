@@ -56,7 +56,7 @@ int main()
   // initialize using a list of initializers
   t = {"Susan Smith", FEMALE, 3.7, 2};
   cout << "      Participant: " << t.participantName << endl;
-  cout << "           Gender: " << t.gender << endl;
+  cout << "           Gender: " << (t.gender == MALE ? "Male" : "Female") << endl;
   cout << "    Reaction Time: " << t.reactionTime << endl;
   cout << "Number of Presses: " << t.numberOfPresses << endl;
   cout << endl;
