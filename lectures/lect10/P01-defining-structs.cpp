@@ -6,13 +6,23 @@
  * @date   April 5, 2015
  * @assg   Lecture 10, P01 Defining structs
  *
- * @description Implement function to merge two sorted subportions of an
- *    array.
+ * @description Declare a structure data type to hold experiment trial data.
+ *    Show example of initializing the structure.
  */
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
 using namespace std;
+
+
+// Data for a single experimental trial
+struct Trial
+{
+  string participantName;
+  string gender;
+  float reactionTime;  // in ms
+  int numberOfPresses; // number of times button was pressed
+};
 
 
 /** main entry point
