@@ -16,10 +16,12 @@ using namespace std;
 
 
 // Data for a single experimental trial
+enum Gender {MALE, FEMALE};
+
 struct Trial
 {
   string participantName;
-  string gender;
+  Gender gender;
   float reactionTime;  // in ms
   int numberOfPresses; // number of times button was pressed
 };
