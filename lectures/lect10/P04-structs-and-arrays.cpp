@@ -66,8 +66,6 @@ void loadIrisData(IrisSample irisSamples[])
   int idx = 0;
   while (inputDataFile >> sepalLength >> sepalWidth >> petalLength >> petalWidth >> speciesString)
   {
-    cout << idx << " " << sepalLength << " " << sepalWidth << endl;
-    
     // process and record flower data
     irisSamples[idx].sepalLength = sepalLength;
     irisSamples[idx].sepalWidth = sepalWidth;
