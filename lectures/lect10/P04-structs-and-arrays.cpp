@@ -119,7 +119,8 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 {
   for (int idx = begin; idx < end; idx++)
   {
-    cout << idx << " " << irisSamples[idx].sepalLength << endl;
+    cout << setw(3) << setfill('0') << idx
+	 << " " << irisSamples[idx].sepalLength << endl;
   }
 }
 
