@@ -21,10 +21,11 @@ enum IrisSpecies {SETOSA, VERSICOLOR, VIRGINICA};
 
 struct Iris
 {
-  string participantName;
-  Gender gender;
-  float reactionTime;  // in ms
-  int numberOfPresses; // number of times button was pressed
+  float sepalLength; // cm
+  float sepalWidth;  // cm
+  float petalLength; // cm
+  float petalWidth;  // cm
+  IrisSpecies species;
 };
 
 
