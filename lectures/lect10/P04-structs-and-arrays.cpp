@@ -31,7 +31,7 @@ struct IrisSample
 
 // At maximum we will load and process 150 samples of our data
 const int MAX_SAMPLES = 150;
-const string irisDataFileName = "iris.csv";
+const string irisDataFileName = "iris.csvv";
 
 
 /** Display experiment trial
