@@ -158,7 +158,7 @@ void displayDeckOfCards(Card deck[], int begin, int end)
  *
  * @returns void But as a side effect the deck of cards is shuffled after return
  */
-void initDeckOfCards(Card deck[])
+void shuffleDeckOfCards(Card deck[])
 {
 }
 
