@@ -37,7 +37,7 @@ struct Trial
  *    effect we display the fields of the experimental trial to
  *    standard output.
  */
-void displayTrial()
+void displayTrial(Trial trial)
 {
 }
 
