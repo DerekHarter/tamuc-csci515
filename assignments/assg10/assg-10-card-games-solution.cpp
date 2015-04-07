@@ -63,7 +63,7 @@ void initDeckOfCards(Card deck[])
  * @returns void But as a side effect we display indicated cards on standard
  *   output.
  */
-void displayDeckOfCards(Card deck[])
+void displayDeckOfCards(Card deck[], int begin, int end)
 {
   int idx;
 
