@@ -44,9 +44,7 @@ const string irisDataFileName = "iris.csv";
  * @param irisSamples An array of IrisSample records, large enough to
  *   hold all of the data we will attempt to read in from the file.
  *
- * @returns void, nothing is returned explicitly, but as a side effect
- *    read in the values from the data file into the given array of
- *    IrisSample records.
+ * @returns int We return the number of samples loaded into the array.
  */
 void loadIrisData(IrisSample irisSamples[])
 {
