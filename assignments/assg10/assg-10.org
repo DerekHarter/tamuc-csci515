@@ -30,30 +30,69 @@ a function that will play a simple game with the deck of cards.
 
 Perform the following tasks:
 
-1. Create a function called ~displayCards~.  This function should take
-   an array of your Cards, and a begin and end index.  The function
-   should display the cards in the indicated index range to standard
-   output.  The begin index is inclusive, but the end index is not
-   inclusive, so if asked to display cards from begin index 0 to end
-   index 5, it will display the cards at indexes 0, 1, 2, 3 and 4.
-   See the example output below for how the output should be
+1. Create a function called ~displayDeckOfCards~.  This function
+   should take an array of your Cards, and a begin and end index.  The
+   function should display the cards in the indicated index range to
+   standard output.  The begin index is inclusive, but the end index
+   is not inclusive, so if asked to display cards from begin index 0
+   to end index 5, it will display the cards at indexes 0, 1, 2, 3
+   and 4.  See the example output below for how the output should be
    displayed.
 
-Here is an example output from running a correct assignment to find the
-primes in the range from 2 to 100.  You can find lists of primes online
-if you want to further test if your program is working, for example
-here: https://primes.utm.edu/lists/small/1000.txt.
+2. Create a function called ~shuffleDeckOfCards~.  This functions
+   should take an array of 52 Card structures.  It will expect
+   the cards to have already been created/initialized.  This function
+   should shuffle up the cards randomly, using the following
+   algorithm.  Iterate through all of the cards from index 0 up to
+   52.  For each index, choose another index at random in the range
+   from 0 up to 52.  Then swap the Card at the current index of the
+   cards array with the Card at the randomly generated index.  For
+   example, the first time through the loop the current index will be
+   0.  Lets say you choose random index 15 to swap with.  Then you
+   will swap Card 0 with Card 15 (make sure you use a temporary
+   variable to perform the swap).  The result of doing this swap with
+   a random card for every index in the array should be a well and
+   randomly shuffled deck of cards.
+
+3. Create a function called ~highestDrawFour~.  This function will
+   take an array of (randomly shuffled) cards as its input.  The
+   task is to simulate 4 players drawing 4 cards from the desk.  
+   Player 0 is given the card at index 0, Player 1 the card at
+   index 1, etc.  You determine the winner in this manner.  The
+   suit of the card is the most important attribute.  
+   HEARTS beats DIAMONDS beats CLUBS beats SPADES.  For example,
+   if none of the 4 players has a HEARTS, but only 1 player has
+   a DIAMONDS, then the player with DIAMONDS wins.  If 2 or more
+   players have eqivalent best suits (for example, two players had
+   DIAMONDS in the previous example), then you need to fall back
+   on the face of the cards.  In this case an ACE beats KING beats
+   QUEEN beats JACK etc all the way down to a DEUCE (ACE is highest
+   card, followed by the face cards, then the number cards by rank).
+   Your function should display a message to standard output about
+   which player of the 4 (Player 0, Player 1, Player 2 or Player 3)
+   is the winner.
+
+4. In your main function, create a deck of cards and initialize it.
+   Then use your shuffle function to shuffle the deck of cards, and
+   use your display function to display the 4 top cards from the
+   shuffled deck.  Finally call your ~highestDrawFour~ function
+   to play a game with the top 4 cards, which should cause
+   the winning player of the game to be displayed.
+
+Here is an example output from running a correct implementation of
+this assignment.
 
 #+begin_example
-$ ./assg09
-Discovered primes in range 2 to 100: 2 3 5 7 11 13 17 19 23 29 
-  31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
 #+end_example
 
-As a final test of your work, and to demonstrate that the sieve
-algorithm is really quite efficient, find the largest prime number
-that is $\le 1 000 000$ (1 million).  Report which number you found as
-a comment when you submit your assignment 09 to the eCollege dropbox.
+*HINT*: Finding the highest card in the game described can be a bit
+tricky.  Here is my suggestion on how to do it.  Create a function
+that simply compares two cards, passed in as a parameter to the
+function.  The function should return a bool of True if the first card
+wins over the second card according to the rules, and a False if the
+second card is the winner.  With this function you can first compare
+Player 0 and Player 1 card to see which one wins, the compare the
+winner of this came to Player 2, etc.
 
 *NOTE*: Now that our programs have more functions than just the
 ~main()~ function, the use of the function headers becomes meaningful
