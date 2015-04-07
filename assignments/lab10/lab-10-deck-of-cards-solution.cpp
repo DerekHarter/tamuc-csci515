@@ -69,7 +69,7 @@ int main()
   {
     Card c = deck[idx];
 
-    cout << setw(3) << setfill('0') << idx;
+    cout << setw(3) << setfill('0') << idx << ": ";
 
     // determine the suit, convert to string for display purposes
     string suitString;
