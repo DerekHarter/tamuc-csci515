@@ -44,7 +44,7 @@ const string irisDataFileName = "iris.csv";
  *    effect we display the fields of the experimental trial to
  *    standard output.
  */
-void loadIrisData(IrisSample irisSamples)
+void loadIrisData(IrisSample irisSamples[])
 {
   ifstream inputDataFile;
 
