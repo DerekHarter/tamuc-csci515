@@ -137,7 +137,7 @@ void displayDeckOfCards(Card deck[], int begin, int end)
     cout << setw(3) << setfill('0') << idx << ": "
 	 << setw(5) << setfill(' ') << faceString
 	 << " of "
-	 << setw(10) << setfill(' ') << suitString
+	 << left << setfill(' ') << suitString
 	 << endl;
   }
 
