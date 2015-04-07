@@ -52,6 +52,30 @@ void initDeckOfCards(Card deck[])
 }
 
 
+/** Display Cards in Deck
+ * We are given a deck of cards, and a begin and end index of cards to
+ * display in the deck.  We display these cards to standard output.
+ *
+ * @returns void But as a side effect we display indicated cards on standard
+ *   output.
+ */
+void displayDeckOfCards(Card deck[])
+{
+  int idx;
+
+  // I will use the fact that by default the values in enum are ints from 0 to last
+  idx = 0;
+  for (int suit = SPADES; suit <= HEARTS; suit++)
+  {
+    for (int face = DEUCE; face <= ACE; face++)
+    {
+      deck[idx].suit = (Suit)suit;
+      deck[idx].face = (Face)face;
+      idx++;
+    }
+  }
+}
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
