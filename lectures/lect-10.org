@@ -55,6 +55,13 @@ struct Trial
 
 * Second Session (11:45 - 12:30)
 ** Using structures with functions
+- Structure elements can be accessed individually if needed, and used or passed
+  to function separately.
+- However, a ~struct~ is a new data type, so we can create functions that take
+  the ~struct~ as a parameter.
+- We can even have functions that return ~struct~ as result, thus this is one
+  way to create functions that return more than 1 value (e.g. to return a
+  whole record of values).
 
 ** Arrays of structures
 
