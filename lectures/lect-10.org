@@ -7,7 +7,7 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** Structure Definitions
+** Structures in C
 
 - ~struct~ are *aggregrate* data types - they can be built using
   elements of primitive types.
@@ -17,6 +17,11 @@
 - In this course we don't cover object oriented analysis and design,
   but basically classes in C++ are ~struct~ user defined types with
   associated methods that operate on the new type.
+
+** Defining a ~struct~
+
+#+begin_example C
+#+end_example
 
 * Second Session (11:45 - 12:30)
 ** 
