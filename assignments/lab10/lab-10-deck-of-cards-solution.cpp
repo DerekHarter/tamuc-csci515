@@ -63,6 +63,6 @@ int main()
 {
   Card deck[CARDS_IN_DECK];
 
-  initDeckOfCards();
+  initDeckOfCards(deck);
   
 }
