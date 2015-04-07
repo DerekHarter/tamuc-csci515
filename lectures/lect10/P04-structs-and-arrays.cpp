@@ -83,14 +83,15 @@ void loadIrisData(IrisSample irisSamples[])
     }
     else
     {
-      
+      cerr << "ERROR: loadIrisData(): unknown flower species type: " << speciesString << endl;
+      exit(1);
     }
 
     // increment index for next record read, test if we exceed maximum records
     idx++;
     if (idx >= MAX_SAMPLES)
     {
-      cout << "ERROR: loadIrisData(): exceeded maximum records" << endl;
+      cerr << "ERROR: loadIrisData(): exceeded maximum records" << endl;
       exit(1);
     }
   }
