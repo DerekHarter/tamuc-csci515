@@ -42,7 +42,7 @@ int main()
 
   // initialize the fields
   t.participantName = "Derek Harter";
-  t.gender = "Male";
+  t.gender = MALE;
   t.reactionTime = 2.8;
   t.numberOfPresses = 3;
 
