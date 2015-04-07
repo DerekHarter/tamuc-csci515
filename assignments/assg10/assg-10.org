@@ -88,7 +88,7 @@ this assignment.
 *HINT*: Finding the highest card in the game described can be a bit
 tricky.  Here is my suggestion on how to do it.  Create a function
 that simply compares two cards, passed in as a parameter to the
-function.  The function should return a bool of True if the first card
+function.  The function should return a ~bool~ of True if the first card
 wins over the second card according to the rules, and a False if the
 second card is the winner.  With this function you can first compare
 Player 0 and Player 1 card to see which one wins, the compare the
