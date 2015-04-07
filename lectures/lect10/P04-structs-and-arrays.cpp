@@ -99,6 +99,8 @@ void loadIrisData(IrisSample irisSamples[])
       exit(1);
     }
   }
+
+  return idx;
 }
 
 
