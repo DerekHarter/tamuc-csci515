@@ -39,6 +39,12 @@ struct Trial
  */
 void displayTrial(Trial trial)
 {
+  // display the fields
+  cout << "      Participant: " << trial.participantName << endl;
+  cout << "           Gender: " << (trial.gender == MALE ? "Male" : "Female") << endl;
+  cout << "    Reaction Time: " << trial.reactionTime << endl;
+  cout << "Number of Presses: " << trial.numberOfPresses << endl;
+  cout << endl;
 }
 
 
