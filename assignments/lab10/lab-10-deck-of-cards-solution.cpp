@@ -122,5 +122,5 @@ int main()
     // display the card
     cout << setw(3) << setfill('0') << idx << ": "
 	 << faceString " of " << suitString << endl;
-}
+  }
 }
