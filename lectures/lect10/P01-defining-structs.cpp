@@ -45,17 +45,17 @@ int main()
   t.numberOfPresses = 3;
 
   // access the fields
-  cout << "Participant: " << t.participantName << endl;
-  cout << "Gender:      " << t.gender << endl;
-  cout << "Reaction Time: " << t.reactionTime << endl;
+  cout << "Participant:       " << t.participantName << endl;
+  cout << "Gender:            " << t.gender << endl;
+  cout << "Reaction Time:     " << t.reactionTime << endl;
   cout << "Number of Presses: " << t.numberOfPresses << endl;
   cout << endl;
 
   // initialize using a list of initializers
   t = {"Susan Smith", "Female", 3.7, 2};
-  cout << "Participant: " << t.participantName << endl;
-  cout << "Gender:      " << t.gender << endl;
-  cout << "Reaction Time: " << t.reactionTime << endl;
+  cout << "Participant:       " << t.participantName << endl;
+  cout << "Gender:            " << t.gender << endl;
+  cout << "Reaction Time:     " << t.reactionTime << endl;
   cout << "Number of Presses: " << t.numberOfPresses << endl;
   cout << endl;
 
