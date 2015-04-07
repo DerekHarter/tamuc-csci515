@@ -47,8 +47,18 @@ const string irisDataFileName = "iris.csv";
 void loadIrisData(IrisSample samples)
 {
   string speciesString;
+  ifstream inputDataFile;
 
-  while ()
+  // open file for loading
+  inputDataFile.open(irisDataFileName);
+  if (!inputDataFile)
+  {
+    cerr << "ERROR: could not find file for loading: " << irisDataFileName << endl;
+    exit(1);
+  }
+
+  // if file was opened successfully, read in data a line at a times
+  //while ()
 }
 
 
