@@ -35,5 +35,5 @@ struct Card
  */
 int main()
 {
-  Card deck
+  Card deck[CARDS_IN_DECK];
 }
