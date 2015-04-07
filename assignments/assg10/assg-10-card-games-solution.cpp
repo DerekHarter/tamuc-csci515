@@ -241,6 +241,8 @@ void highestDrawFour(Card deck[])
       winningPlayer = otherPlayer;
     }
   }
+
+  cout << "highestDrawFour(): winning player: " << winningPlayer << endl;
 }
 
 
