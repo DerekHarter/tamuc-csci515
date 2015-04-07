@@ -44,7 +44,9 @@ struct Trial
 - Can use a comma separated list initializer, as we with arrays.
 
 * Second Session (11:45 - 12:30)
-** Another header
+** Using structures with functions
+
+** Arrays of structures
 
 * Third Session (12:40 - 1:40)
 
