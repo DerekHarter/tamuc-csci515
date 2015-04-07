@@ -46,7 +46,6 @@ const string irisDataFileName = "iris.csv";
  */
 void loadIrisData(IrisSample samples)
 {
-  string speciesString;
   ifstream inputDataFile;
 
   // open file for loading
@@ -58,6 +57,7 @@ void loadIrisData(IrisSample samples)
   }
 
   // if file was opened successfully, read in data a line at a times
+  string speciesString;
   //while ()
 }
 
