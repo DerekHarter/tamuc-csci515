@@ -32,6 +32,9 @@ struct Card
  * assumes a standard deck size of 52 cards, and initialzes deck with all
  * 52 combinations of 4 suits with 13 face values.
  *
+ * @param deck An array of Card items, large enough to hold a standard 52
+ *    card deck, that we will initialize.
+ *
  * @returns void But as a side effect the deck of cards is initialized.
  */
 void initDeckOfCards(Card deck[])
