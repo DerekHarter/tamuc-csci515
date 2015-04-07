@@ -178,7 +178,8 @@ int main()
   
   // load the iris flower data from file
   numSamples = loadIrisData(irisSamples);
-
+  cout << "We successfully loaded " << numSamples << "from data file" << endl;
+  
   // display first 10 samples, to ensure we loaded properly
   displayIrisSamples(irisSamples, 45, 55);
 
