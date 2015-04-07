@@ -4,9 +4,10 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   March 25, 2015
- * @assg   Lab 09
+ * @assg   Lab 10
  *
- * @description Make minor improvements to the bubble sort algorithm.
+ * @description Simulate creation of a deck of cards.  Demonstrate user
+ *    defined data types for a Card, and create an array of such Card types.
  */
 #include <iostream>
 #include <iomanip>
