@@ -115,8 +115,12 @@ void loadIrisData(IrisSample irisSamples[])
  *    we display the indicated records from the samples to standard
  *    output.
  */
-void displayIrisSamples(IrisSample irisSamples[])
+void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 {
+  for (int idx = begin; idx < end; idx++)
+  {
+    cout << idx << " " << irisSamples[idx].sepalLength << endl;
+  }
 }
 
 
