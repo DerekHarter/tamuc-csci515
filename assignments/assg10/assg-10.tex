@@ -1,4 +1,4 @@
-% Created 2015-04-07 Tue 15:34
+% Created 2015-04-07 Tue 16:13
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,12 +20,12 @@
 \usemintedstyle{default}
 \providecommand{\alert}[1]{\textbf{#1}}
 
-\title{Assg 10:}
+\title{Assg 10: Iris Data Processing}
 \author{CSci 515 Spring 2015}
-\date{2015-02-19}
+\date{2015-04-07}
 \hypersetup{
   pdfkeywords={},
-  pdfsubject={Assg 10},
+  pdfsubject={Assg 10: Shuffling Cards},
   pdfcreator={Emacs Org-mode version 7.9.3f}}
 
 \begin{document}
@@ -39,107 +39,97 @@
 
 \begin{center}
 \begin{tabular}{ll}
- Due:  &  Tuesday April 7, by Midnight  \\
+ Due:  &  Tuesday April 14, by Midnight  \\
 \end{tabular}
 \end{center}
 \section*{Objectives}
 \label{sec-2}
 
 \begin{itemize}
-\item Practice using advanced array logic.
-\item More practice with passing arrays to functions.
+\item Get more practice defining and using structures.
+\item Practice using arrays of structs as basic tables.
+\item Learn to process arrays of structs.
 \end{itemize}
 \section*{Description}
 \label{sec-3}
 
-We have seen a brute force algorithm or two for testing whether or not
-a given integer is a prime or not.  Recall that a prime number is any
-integer this is only evenly divisible by itself and 1.  
+In this assignment you will extend your lab 10 work.  If you did not
+complete the structure and enums defining your Card data type, or the
+function to initialize the deck of cards in the lab, you should finish
+those parts from the lab first.
 
-The Sieve of Eratosthenes is a method of finding prime numbers that
-is much more efficient than the brute force method we have seen.
-The algorithm operates as follows:
-
-\begin{enumerate}
-\item Create an array of boolean variables with all elements initialized
-   to true.  Array elements with prime subscripts will remain true
-   after the algorithm finishes.  All other array elements will
-   eventually be set to false.  We will ignore the elements at index 0
-   and 1 in this exercise.
-\item Starting with array subscript 2, every time an array element is
-   found whose value is true, loop through the remainder of the array
-   and set to false every element whose subscript is a multiple of the
-   subscript for the element with a true value.  For array subscript
-   2, all elements beyond 2 in the array that are multiples of 2 will
-   be set to false (subscripts 4, 6, 8, 10, etc.); for array subscript 
-   3, all elements beyond 3 in the array that are multiples of 3 will be
-   set to false (subscripts 6, 9, 12, 15, etc.); and so on.  After
-   array subscript 3, when you check array subscript 4 you will find it
-   is false (since it was set to false by the multiples of 2 pass), thus
-   you won't set multiples of 4, etc.
-\end{enumerate}
-
-When this process is complete, the array elements that are still set
-to true indicate that the subscript is a prime number.  This algorithm
-is much more efficient at finding all prime numbers in some range from
-2 up to $N$ than checking each individual integer using a brute force method
-as we have done before.  In fact, it is close to $O(N)$ to check for primes
-in the range $2 ... N$.
+You will add the following functionality to your deck of cards
+simulation.  You will add a display function that can be used to
+display the cards in an array of cards.  You will also add a shuffle
+function, to shuffle up the deck of cards.  Finally you will add
+a function that will play a simple game with the deck of cards.
 
 Perform the following tasks:
 
 \begin{enumerate}
-\item Create a function called \verb~initValuesToTrue()~.  This function should
-   take an array of booleans, and the size of the array as its input
-   parameters.  It should initialize all of the values in the boolean 
-   array to \verb~true~ as a result of calling the function.
-\item Create a function called \verb~setMultiplesToFalse()~.  This function
-   performs the part in step 2 of the algorithm above.  This function
-   should take an array of boolean values, and the size of the array.
-   It should also take a third parameter, and integer index or
-   multiple.  As we described above, for example, if the multiple is
-   2, it shouldn't set the value at index 2 to \verb~false~ in the array,
-   but it should set all multiples in of 2 in the array to \verb~false~,
-   e.g. the values at index 4, 6, 8, \ldots{}  up to the size of the
-   boolean array.
-\item Create a function called \verb~sieveOfEratosthenes()~.  This function
-   will implement the above described algorithm.  It should take
-   an array of booleans, and the size of the array as its only 2 parameters.
-   The function should first call the \verb~initValuesToTrue()~ function, to
-   ensure that it starts out with all \verb~true~ values in the array in
-   order to perform step 1.  It should then iterate over all the
-   indexes in the array, from 2 up to the size of the array, and as
-   described, any index that it finds still marked \verb~true~, it should
-   use the \verb~setMultiplesToFalse()~ function to mark all subsequent
-   multiples of that index to be \verb~false~.
-\item Create a function called \verb~displayPrimeNumbers()~.  This function
-   will again take an array of boolean values, and the size of the
-   array.  It is assumed this is the resulting array obtained after
-   calling your Sieve of Eratosthenes function.  Display all of
-   the values that were determined to be primes from 2 to the size
-   to standard output.  An example of the desired output is shown below.
-\item In your main function, create a boolean array of size 10,000.  Call your
-   \verb~sieveOfEratosthenes()~ function to find the primes in the first 10,000
-   integers, and display the results using your \verb~displayPrimeNumbers()~
-   function.
+\item Create a function called \verb~displayDeckOfCards~.  This function
+   should take an array of your Cards, and a begin and end index.  The
+   function should display the cards in the indicated index range to
+   standard output.  The begin index is inclusive, but the end index
+   is not inclusive, so if asked to display cards from begin index 0
+   to end index 5, it will display the cards at indexes 0, 1, 2, 3
+   and 4.  See the example output below for how the output should be
+   displayed.
+\item Create a function called \verb~shuffleDeckOfCards~.  This functions
+   should take an array of 52 Card structures.  It will expect
+   the cards to have already been created/initialized.  This function
+   should shuffle up the cards randomly, using the following
+   algorithm.  Iterate through all of the cards from index 0 up to
+\begin{enumerate}
+\item For each index, choose another index at random in the range
+\end{enumerate}
+from 0 up to 52.  Then swap the Card at the current index of the
+   cards array with the Card at the randomly generated index.  For
+   example, the first time through the loop the current index will be
+\begin{enumerate}
+\item Lets say you choose random index 15 to swap with.  Then you
+\end{enumerate}
+will swap Card 0 with Card 15 (make sure you use a temporary
+   variable to perform the swap).  The result of doing this swap with
+   a random card for every index in the array should be a well and
+   randomly shuffled deck of cards.
+\item Create a function called \verb~highestDrawFour~.  This function will
+   take an array of (randomly shuffled) cards as its input.  The
+   task is to simulate 4 players drawing 4 cards from the desk.  
+   Player 0 is given the card at index 0, Player 1 the card at
+   index 1, etc.  You determine the winner in this manner.  The
+   suit of the card is the most important attribute.  
+   HEARTS beats DIAMONDS beats CLUBS beats SPADES.  For example,
+   if none of the 4 players has a HEARTS, but only 1 player has
+   a DIAMONDS, then the player with DIAMONDS wins.  If 2 or more
+   players have eqivalent best suits (for example, two players had
+   DIAMONDS in the previous example), then you need to fall back
+   on the face of the cards.  In this case an ACE beats KING beats
+   QUEEN beats JACK etc all the way down to a DEUCE (ACE is highest
+   card, followed by the face cards, then the number cards by rank).
+   Your function should display a message to standard output about
+   which player of the 4 (Player 0, Player 1, Player 2 or Player 3)
+   is the winner.
+\item In your main function, create a deck of cards and initialize it.
+   Then use your shuffle function to shuffle the deck of cards, and
+   use your display function to display the 4 top cards from the
+   shuffled deck.  Finally call your \verb~highestDrawFour~ function
+   to play a game with the top 4 cards, which should cause
+   the winning player of the game to be displayed.
 \end{enumerate}
 
-Here is an example output from running a correct assignment to find the
-primes in the range from 2 to 100.  You can find lists of primes online
-if you want to further test if your program is working, for example
-here: \href{https://primes.utm.edu/lists/small/1000.txt}{https://primes.utm.edu/lists/small/1000.txt}.
+Here is an example output from running a correct implementation of
+this assignment.
 
 
-\begin{verbatim}
-$ ./assg09
-Discovered primes in range 2 to 100: 2 3 5 7 11 13 17 19 23 29 
-  31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
-\end{verbatim}
-
-As a final test of your work, and to demonstrate that the sieve
-algorithm is really quite efficient, find the largest prime number
-that is $\le 1 000 000$ (1 million).  Report which number you found as
-a comment when you submit your assignment 09 to the eCollege dropbox.
+\textbf{HINT}: Finding the highest card in the game described can be a bit
+tricky.  Here is my suggestion on how to do it.  Create a function
+that simply compares two cards, passed in as a parameter to the
+function.  The function should return a \verb~bool~ of True if the first card
+wins over the second card according to the rules, and a False if the
+second card is the winner.  With this function you can first compare
+Player 0 and Player 1 card to see which one wins, the compare the
+winner of this came to Player 2, etc.
 
 \textbf{NOTE}: Now that our programs have more functions than just the
 \verb~main()~ function, the use of the function headers becomes meaningful
@@ -163,12 +153,11 @@ submitted by the due date will be considered for evaluation.
 \begin{enumerate}
 \item Your program must compile, run and produce some sort of output to
    be graded. 0 if not satisfied.
-\item 60+ pts. For the correct implementation of the three helper functions.
-\item 30+ pts. For implementing the Sieve of Eratosthenes algorithm and functions
-   correctly, and using the functions as described above.
-\item 10+ pts. Your main function should create the array of boolean values
-   and demonstrate using your functions to find and display the primes in
-   the first 10,000 integers.
+\item 20+ pts. For the correct implementation of the function to display the
+   cards as described.
+\item 30+ pts. For correctly implementing the deck shuffling function.
+\item 40+ pts. For correctly implementing the draw four game as described.
+\item 10+ pts. For displaying the output of the game as described.
 \end{enumerate}
 \subsection*{Program Style}
 \label{sec-5-2}
