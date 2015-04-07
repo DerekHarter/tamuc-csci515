@@ -69,8 +69,6 @@ int main()
   {
     Card c = deck[idx];
 
-    cout << setw(3) << setfill('0') << idx << ": ";
-
     // determine the suit, convert to string for display purposes
     string suitString;
     switch (c.suit)
@@ -120,5 +118,9 @@ int main()
       case ACE:
 	faceString = "Ace";
     }
-  }
+
+    // display the card
+    cout << setw(3) << setfill('0') << idx << ": "
+	 << faceString " of " << suitString << endl;
+}
 }
