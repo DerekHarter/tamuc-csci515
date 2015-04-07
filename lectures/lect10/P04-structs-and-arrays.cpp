@@ -17,9 +17,9 @@ using namespace std;
 
 
 // Data for a single experimental trial
-enum Gender {MALE, FEMALE};
+enum IrisSpecies {SETOSA, VERSICOLOR, VIRGINICA};
 
-struct Trial
+struct Iris
 {
   string participantName;
   Gender gender;
