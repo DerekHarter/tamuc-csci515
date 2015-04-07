@@ -88,9 +88,37 @@ int main()
 	suitString = "Hearts";
 	break;
     }
-      
-      
+
+    // determine the face value, convert to string
     string faceString;
-    
+    switch (c.face)
+    {
+      case DEUCE:
+	faceString = "Deuce";
+      case THREE:
+	faceString = "Three";
+      case FOUR:
+	faceString = "Four";
+      case FIVE:
+	faceString = "Five";
+      case SIX:
+	faceString = "Six";
+      case SEVEN:
+	faceString = "Seven";
+      case EIGHT:
+	faceString = "Eight";
+      case NINE:
+	faceString = "Nine";
+      case TEN:
+	faceString = "Ten";
+      case JACK:
+	faceString = "Jack";
+      case QUEEN:
+	faceString = "Queen";
+      case KING:
+	faceString = "King";
+      case ACE:
+	faceString = "Ace";
+    }
   }
 }
