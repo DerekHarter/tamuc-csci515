@@ -139,6 +139,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
     }
     
     cout << setw(3) << setfill('0') << idx
+         << setw(10 << right << speciesString 
 	 << setw(5) << setfill(' ') << setprecision(2) << fixed << showpoint << s.sepalLength
 	 << setw(5) << setfill(' ') << setprecision(2) << fixed << showpoint << s.sepalWidth
 	 << setw(5) << setfill(' ') << setprecision(2) << fixed << showpoint << s.petalLength
