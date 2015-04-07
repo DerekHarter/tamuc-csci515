@@ -178,6 +178,22 @@ void shuffleDeckOfCards(Card deck[])
 }
 
 
+/** Shuffle Deck of Cards
+ * Shuffle an array of Card structures.  This functions
+ * assumes a standard deck size of 52 cards, and that the array of cards has
+ * already been correctly initilized.  This shuffle works by iterating through
+ * every position in the deck, and picking another position to swap with
+ * at random.  The result should be a well shuffled deck of cards.
+ *
+ * @param deck An array of Card items.
+ *
+ * @returns void But as a side effect the deck of cards is shuffled after return
+ */
+void highestDrawFour(Card deck[])
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
