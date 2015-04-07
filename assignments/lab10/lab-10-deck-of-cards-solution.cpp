@@ -93,30 +93,43 @@ int main()
     {
       case DEUCE:
 	faceString = "Deuce";
+	break;
       case THREE:
 	faceString = "Three";
+	break;
       case FOUR:
 	faceString = "Four";
+	break;
       case FIVE:
 	faceString = "Five";
+	break;
       case SIX:
 	faceString = "Six";
+	break;
       case SEVEN:
 	faceString = "Seven";
+	break;
       case EIGHT:
 	faceString = "Eight";
+	break;
       case NINE:
 	faceString = "Nine";
+	break;
       case TEN:
 	faceString = "Ten";
+	break;
       case JACK:
 	faceString = "Jack";
+	break;
       case QUEEN:
 	faceString = "Queen";
+	break;
       case KING:
 	faceString = "King";
+	break;
       case ACE:
 	faceString = "Ace";
+	break;
     }
 
     // display the card
