@@ -66,21 +66,11 @@ int main()
   t.gender = MALE;
   t.reactionTime = 2.8;
   t.numberOfPresses = 3;
-
-  // access the fields
-  cout << "      Participant: " << t.participantName << endl;
-  cout << "           Gender: " << (t.gender == MALE ? "Male" : "Female") << endl;
-  cout << "    Reaction Time: " << t.reactionTime << endl;
-  cout << "Number of Presses: " << t.numberOfPresses << endl;
-  cout << endl;
+  displayTrial(t);
 
   // initialize using a list of initializers
   t = {"Susan Smith", FEMALE, 3.7, 2};
-  cout << "      Participant: " << t.participantName << endl;
-  cout << "           Gender: " << (t.gender == MALE ? "Male" : "Female") << endl;
-  cout << "    Reaction Time: " << t.reactionTime << endl;
-  cout << "Number of Presses: " << t.numberOfPresses << endl;
-  cout << endl;
+  displayTrial(t);
 
   // return 0 to indicate successfull completion.
   return 0;
