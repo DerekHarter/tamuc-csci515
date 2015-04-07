@@ -22,7 +22,7 @@
 
 
 * Second Session (11:45 - 12:30)
-** 
+** Another header
 
 * Third Session (12:40 - 1:40)
 
