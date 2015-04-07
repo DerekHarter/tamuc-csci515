@@ -27,6 +27,21 @@ struct Trial
 };
 
 
+/** Display experiment trial
+ * Given an experimental trial, format and display its fields/values
+ * to standard output.
+ *
+ * @param trial An experiment Trial record.
+ *
+ * @returns void, nothing is returned explicitly, but as a side
+ *    effect we display the fields of the experimental trial to
+ *    standard output.
+ */
+void displayTrial()
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
