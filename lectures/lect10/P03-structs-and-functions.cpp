@@ -78,7 +78,7 @@ void displayTrial(Trial trial)
 Trial conductTrial()
 {
   Trial trial;
-  
+
   // gather personal information first
   cout << "Enter participant name: ";
   cin >> trial.participantName;
@@ -98,12 +98,13 @@ Trial conductTrial()
     cerr << "ERROR: enter either M or F" << endl;
     exit(1);
   }
-  // display the fields
-  cout << "      Participant: " << trial.participantName << endl;
-  cout << "           Gender: " << (trial.gender == MALE ? "Male" : "Female") << endl;
-  cout << "    Reaction Time: " << trial.reactionTime << endl;
-  cout << "Number of Presses: " << trial.numberOfPresses << endl;
-  cout << endl;
+
+  // Simulate gathering participant data
+  cout << "Press the x button as fast as you can for 1 second..." << endl;
+  trial.reactionTime = (rand() / RAND_MAX) * 200.0; // 0.0 to 200.0 ms at random
+  trial.numberOfPresses = (rand() % 4); // 0 to 3 presses at random
+
+  return trial;
 }
 
 
