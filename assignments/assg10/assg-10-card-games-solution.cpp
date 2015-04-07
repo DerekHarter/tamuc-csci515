@@ -260,6 +260,7 @@ int main()
   Card deck[CARDS_IN_DECK];
 
   initDeckOfCards(deck);
+  srand(time(0)); // always shuffle with different random shuffle
   shuffleDeckOfCards(deck);
   displayDeckOfCards(deck, 0, 4);
   highestDrawFour(deck);
