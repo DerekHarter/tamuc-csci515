@@ -62,6 +62,7 @@ void loadIrisData(IrisSample irisSamples[])
   int idx = 0;
   while (inputDataFile >> sepalLength >> sepalWidth >> petalLength >> petalWidth >> speciesString)
   {
+    // process and record flower data
     irisSamples[idx].sepalLength = sepalLength;
     irisSamples[idx].sepalWidth = sepalWidth;
     irisSamples[idx].petalLength = petalLength;
