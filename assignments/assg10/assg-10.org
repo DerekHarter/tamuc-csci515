@@ -63,7 +63,7 @@ Perform the following tasks:
    HEARTS beats DIAMONDS beats CLUBS beats SPADES.  For example,
    if none of the 4 players has a HEARTS, but only 1 player has
    a DIAMONDS, then the player with DIAMONDS wins.  If 2 or more
-   players have eqivalent best suits (for example, two players had
+   players have equivalent best suits (for example, two players had
    DIAMONDS in the previous example), then you need to fall back
    on the face of the cards.  In this case an ACE beats KING beats
    QUEEN beats JACK etc all the way down to a DEUCE (ACE is highest
