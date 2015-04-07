@@ -119,7 +119,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 {
   // display a header
   cout << setw(3) << "IDX"
-       << setw(10) << "Species"
+       << setw(11) << "Species"
        << setw(5) << "SepL"
        << setw(5) << "SepW"
        << setw(5) << "PetL"
@@ -152,7 +152,7 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
 
     // display the record
     cout << setw(3)  << setfill('0') << idx
-         << setw(10) << setfill(' ') << right << speciesString 
+         << setw(11) << setfill(' ') << right << speciesString 
 	 << setw(5)  << setfill(' ') << setprecision(2) << fixed << showpoint << s.sepalLength
 	 << setw(5)  << setfill(' ') << setprecision(2) << fixed << showpoint << s.sepalWidth
 	 << setw(5)  << setfill(' ') << setprecision(2) << fixed << showpoint << s.petalLength
