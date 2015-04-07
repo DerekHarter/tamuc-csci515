@@ -6,8 +6,8 @@
  * @date   April 5, 2015
  * @assg   Lecture 10, P03 Using functions with structures
  *
- * @description More example and discussion of what it means to define
- *    new variable types for the language.
+ * @description Examples of passing structures to functions and
+ *    returning them from from functions.
  */
 #include <iostream>
 #include <iomanip>
