@@ -1,4 +1,4 @@
-#+TITLE:     Lab 10: 
+#+TITLE:     Lab 10: Deck of Cards
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-04-07 Tue>
