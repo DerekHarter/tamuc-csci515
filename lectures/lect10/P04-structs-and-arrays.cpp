@@ -234,7 +234,7 @@ int main()
   avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, VERSICOLOR);
   cout << "Average petal length of Versicolor species: " << setprecision(4) << fixed << avgLength << endl;
 
-  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, VERSICOLOR);
+  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, numSamples, VIRGINICA);
   cout << "Average petal length of Versicolor species: " << setprecision(4) << fixed << avgLength << endl;
   
 
