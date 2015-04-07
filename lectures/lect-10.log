@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.3)  7 APR 2015 12:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.3)  7 APR 2015 12:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1305,48 +1305,14 @@ Runaway argument?
 ! Paragraph ended before \HyPsd@RemoveMask was complete.
 <to be read again> 
                    \par 
-l.52 
+l.57 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Use of \begin doesn't match its definition.
-l.55 \begin{
-            verbatim}
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
-
-! Extra }, or forgotten \endgroup.
-l.55 \begin{verbatim}
-                     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 ! Use of \end doesn't match its definition.
-l.63 \end{
-          verbatim}
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
-
-! Extra }, or forgotten \endgroup.
-l.63 \end{verbatim}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Use of \end doesn't match its definition.
-l.70 \end{
+l.58 \end{
           document}
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -1354,7 +1320,7 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 ! Extra }, or forgotten \endgroup.
-l.70 \end{document}
+l.58 \end{document}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
