@@ -185,7 +185,8 @@ int main()
 
   float avgLength;
   // calculate average petal length for each species and display
-  avgLength = calculateAveragePetalLengthForSpecies(irisSamples, MAX_SAMPLES)
+  //avgLength = calculateAveragePetalLengthForSpecies(irisSamples, MAX_SAMPLES)
+  
   // return 0 to indicate successfull completion.
   return 0;
 }
