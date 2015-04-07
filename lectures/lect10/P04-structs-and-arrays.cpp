@@ -180,6 +180,28 @@ void displayIrisSamples(IrisSample irisSamples[], int begin, int end)
  */
 float calculateAveragePetalLengthForSpecies(IrisSample irisSamples[], int numSamples, IrisSpecies species)
 {
+  int numSamplesOfSpecies;
+  float petalLengthSum;
+
+  // linearly search through the table for flowers of indicated species,
+  // keep a running track of the number of samples found, and the total petal
+  // length so we can calculate average.
+  numSamplesOfSpecies = 0;
+  petalLengthSum = 0.0;
+  for (int idx = 0; idx < numSamples; idx++)
+  {
+    IrisSample sample = irisSamples[idx];
+    // if the current sample is of the correct species, update running totals
+    if (sample.species == species)
+    {
+      numSamplesOfSpecies++;
+      petalLengthSum += sample.petalLength;
+    }
+  }
+
+  // calculate the average and return it
+  float averagePetalLength = petalLengthSum / (float)numSamplesOfSpecies;
+  return averagePetalLength;
 }
 
 
