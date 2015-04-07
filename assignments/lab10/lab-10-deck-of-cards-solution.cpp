@@ -16,7 +16,12 @@ using namespace std;
 
 // User defined Card type
 enum Suit {SPADES, CLUBS, DIAMONDS, HEARTS};
-enum Face {};
+enum Face {DEUCE, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
+struct Card
+{
+  Suit suit;
+  Face value;
+};
 
 /** main entry point
  * The main entry point for this program.  Execution
