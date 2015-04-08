@@ -97,6 +97,13 @@ $ ./assg10
 003:   Ace of Hearts
 highestDrawFour(): winning player: 3
 
+$ ./assg10 
+000:  Five of Spades
+001:  Jack of Spades
+002: Three of Diamonds
+003:  Nine of Clubs
+highestDrawFour(): winning player: 2
+
 #+end_example
 
 *HINT*: Finding the highest card in the game described can be a bit
