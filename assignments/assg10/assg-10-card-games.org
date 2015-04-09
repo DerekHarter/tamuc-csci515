@@ -40,15 +40,15 @@ Perform the following tasks:
    displayed.
 
 2. Create a function called ~shuffleDeckOfCards~.  This functions
-   should take an array of 52 Card structures.  It will expect
-   the cards to have already been created/initialized.  This function
-   should shuffle up the cards randomly, using the following
-   algorithm.  Iterate through all of the cards from index 0 up to
-   52.  For each index, choose another index at random in the range
+   should take an array of Card structures (of size 52).  It will
+   expect the cards to have already been created/initialized.  This
+   function should shuffle up the cards randomly, using the following
+   algorithm.  Iterate through all of the cards from index 0 up to 52.
+   For each index, choose another index at random in the range
    from 0 up to 52.  Then swap the Card at the current index of the
    cards array with the Card at the randomly generated index.  For
-   example, the first time through the loop the current index will be
-   0.  Lets say you choose random index 15 to swap with.  Then you
+   example, the first time through the loop the current index will be 0.
+   Lets say you choose random index 15 to swap with.  Then you
    will swap Card 0 with Card 15 (make sure you use a temporary
    variable to perform the swap).  The result of doing this swap with
    a random card for every index in the array should be a well and
