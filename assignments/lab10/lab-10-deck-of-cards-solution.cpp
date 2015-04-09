@@ -41,7 +41,7 @@ void initDeckOfCards(Card deck[])
   cout << "initDeckOfCards: idx=" << idx << endl;
   for (Suit suit = SPADES; suit <= HEARTS; suit = (Suit)((int)suit + 1) ) 
   {
-    for (Face face = DEUCE; face <= ACE; (Face)((int)face + 1) )
+    for (Face face = DEUCE; face <= ACE; face = (Face)((int)face + 1) )
     {
       cout << "initDeckOfCards: idx=" << idx << endl;
       deck[idx].suit = suit;
