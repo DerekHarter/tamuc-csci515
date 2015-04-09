@@ -38,10 +38,12 @@ void initDeckOfCards(Card deck[])
 
   // I will use the fact that by default the values in enum are ints from 0 to last
   idx = 0;
+  cout << "initDeckOfCards: idx=" << idx << endl;
   for (Suit suit = SPADES; suit <= HEARTS; suit = (Suit)((int)suit + 1) ) 
   {
     for (Face face = DEUCE; face <= ACE; (Face)((int)face + 1) )
     {
+      cout << "initDeckOfCards: idx=" << idx << endl;
       deck[idx].suit = suit;
       deck[idx].face = face;
       idx++;
