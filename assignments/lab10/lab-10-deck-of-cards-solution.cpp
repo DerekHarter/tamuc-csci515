@@ -40,7 +40,7 @@ void initDeckOfCards(Card deck[])
   idx = 0;
   for (Suit suit = SPADES; suit <= HEARTS; suit = (Suit)((int)suit + 1) ) 
   {
-    for (Face face = DEUCE; face <= ACE; face++)
+    for (Face face = DEUCE; face <= ACE; (Face)((int)face + 1) )
     {
       deck[idx].suit = suit;
       deck[idx].face = face;
