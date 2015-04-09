@@ -38,12 +38,12 @@ void initDeckOfCards(Card deck[])
 
   // I will use the fact that by default the values in enum are ints from 0 to last
   idx = 0;
-  for (int suit = SPADES; suit <= HEARTS; suit++)
+  for (Suit suit = SPADES; suit <= HEARTS; suit++)
   {
-    for (int face = DEUCE; face <= ACE; face++)
+    for (Face face = DEUCE; face <= ACE; face++)
     {
-      deck[idx].suit = (Suit)suit;
-      deck[idx].face = (Face)face;
+      deck[idx].suit = suit;
+      deck[idx].face = face;
       idx++;
     }
   }
