@@ -1,4 +1,4 @@
-#+TITLE:     Lecture 10 Notes
+#+TITLE:     Lecture 11 Notes
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 515 Spring 2015 <2015-04-07 Tue>
@@ -51,7 +51,6 @@ struct Trial
   of allowable values.  You should always define an enum type when
   using a discrete qualitative variable, for readability and to reduce
   errors.
-
 
 * Second Session (11:45 - 12:30)
 ** Using structures with functions
