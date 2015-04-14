@@ -89,7 +89,7 @@ int x = 3;
 x = *yPtr + 5;
 #+end_src
 - Dereference to write value to reference memory location
-#+begin_src
+#+begin_src C
 *yPtr = 9; // assign value 9 to location referenced in yPtr (e.g. to variable y)
 cout << *yPtr << endl;
 cout << y << endl;
