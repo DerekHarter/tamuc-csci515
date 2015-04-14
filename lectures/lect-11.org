@@ -99,6 +99,12 @@ cout << y << endl;
 cin >> *yPtr;
 #+end_src
 
+** Memory Addresses, again
+- Lets look at the actual values in one of our pointer variables
+#+begin_src C
+
+#+end_src
+
 * Third Session (12:40 - 1:40)
 ** Pass by Reference
 
