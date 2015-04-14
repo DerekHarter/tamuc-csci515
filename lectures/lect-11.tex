@@ -1,0 +1,257 @@
+% Created 2015-04-14 Tue 14:55
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Lecture 11 Notes}
+\author{Derek Harter}
+\date{2015-04-07}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lecture 10 Notes.},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+
+\section{First Session (11 - 11:40)}
+\label{sec-1}
+\subsection{Refresher on memory concepts}
+\label{sec-1-1}
+
+\begin{itemize}
+\item Memory consists of a sequence of numbered addresses (each holding 1 byte of information)
+\item Addresses can be accessed randomly (Random Access Memory).  It
+  takes the same amount of time to access any particular address in
+  primary memory (O(1), or constant time).
+\item When you declare a variable in C, you allocate memory at some
+  particular address in memory to hold the value you assign to the
+  variable.
+\item The type of the variable determines the size, or number of bytes
+  of memory, needed to hold the variable.
+\item The type also determines the interpretation of the bit pattern in
+  memory of those bytes.
+\end{itemize}
+\subsection{Pointers Introduction}
+\label{sec-1-2}
+
+\begin{itemize}
+\item A declared variable actually is associated with a memory address.  In C compiler, 
+  a look up table translates every variable name reference to the associated address when
+  creating the machine code.
+\item Pointer variables contain \textbf{memory addresses} as their values.
+\item \textbf{Pointer variables contain MEMORY ADDRESSES as their values.}
+\item We use pointers indirectly. \textbf{indirect referencing}
+\item We dereference a pointer, in order to access the value it is pointing too.
+\item Confusing for some people, a pointer variable holds a memory address, but we still
+  associate a type with a pointer variable.
+\begin{itemize}
+\item Because, when we dereference a pointer variable, we need to know
+    how to interpret the bit pattern in memory that it is pointing
+    too.
+\end{itemize}
+\end{itemize}
+\subsection{Pointer Variables}
+\label{sec-1-3}
+
+\begin{itemize}
+\item Pointers, like any other variable, must be declared before they can be used.
+\end{itemize}
+
+\begin{verbatim}
+int count;
+int* countPtr;
+
+double x;
+double* xPtr;
+\end{verbatim}
+\begin{itemize}
+\item Do not declare multiple pointer variables using single line declaration. Always
+  declare pointers on their own line.
+\item It is good practice to use Ptr on name of variable, to indicate they
+  are pointer variables.
+\item Please follow our class convention, and put the * next to type, to indicate it is
+  a pointer to the indicated type.
+\item Pointers must be initialized before they can be used (like any other variable).
+\begin{itemize}
+\item It is a common, and \textbf{very bad not to ever be done} error to try and dereference
+    an uninitialized pointer.  Bad things will happen, don't do it.
+\end{itemize}
+\item Pointers can be initialized to 0 or NULL, but \textbf{never dereference a null pointer}.
+\end{itemize}
+\section{Second Session (11:45 - 12:30)}
+\label{sec-2}
+\subsection{Pointer Operators: Address of Operator}
+\label{sec-2-1}
+
+\begin{itemize}
+\item How do we initialize a pointer?
+\item Well obviously, pointers hold memory addresses, so we have to initialize with a memory address.
+\item How do we found out memory address of interest?
+\item use \verb~&~ operator.  Read as the \textbf{address of} operator.
+\end{itemize}
+
+\begin{verbatim}
+int y = 5;
+int* yPtr;
+
+yPtr = &y; // assign address of y to yPtr
+\end{verbatim}
+\begin{itemize}
+\item As we just did to initialize y to an integer value when declaraing, we can also initialize
+  a pointer variable in declaration, thus:
+\end{itemize}
+
+\begin{verbatim}
+int y = 5;
+int* yPtr = &y;
+\end{verbatim}
+\subsection{Pointer Operators: dereference operator}
+\label{sec-2-2}
+
+\begin{itemize}
+\item Ok we can declare a pointer, and point it at something.  What use is that?
+\item When a pointer is validly referencing memory, we can derefrence it
+  and use the dereferenced location anywhere we could use a simple variable
+  of the given type.
+\item Derefernce to read value out and display it.  Operator \verb~*~ is the \textbf{dereference} operator.
+\end{itemize}
+
+\begin{verbatim}
+cout << *yPtr << endl;
+\end{verbatim}
+\begin{itemize}
+\item Can dereference to read value out, and use it in any arbitray expression
+\end{itemize}
+
+\begin{verbatim}
+int x = 3;
+x = *yPtr + 5;
+\end{verbatim}
+\begin{itemize}
+\item Dereference to write value to reference memory location
+\end{itemize}
+
+\begin{verbatim}
+*yPtr = 9; // assign value 9 to location referenced in yPtr (e.g. to variable y)
+cout << *yPtr << endl;
+cout << y << endl;
+\end{verbatim}
+\begin{itemize}
+\item Can also assign value using IOstream input
+\end{itemize}
+
+\begin{verbatim}
+cin >> *yPtr;
+\end{verbatim}
+\subsection{Memory Addresses, again}
+\label{sec-2-3}
+
+\begin{itemize}
+\item Lets look at the actual values in one of our pointer variables
+\end{itemize}
+
+\begin{verbatim}
+int a;     // a is an integer
+int* aPtr; // aPtr will point to the a integer
+
+a = 7;
+*aPtr = &a;
+
+cout << "The address of a is " << aPtr << endl;
+\end{verbatim}
+\begin{itemize}
+\item Also, remember that \verb~&~ and \verb~*~ (address of and dereference operators) are inverses 
+  of one another.
+\end{itemize}
+\subsection{sizeof operator}
+\label{sec-2-4}
+
+\begin{itemize}
+\item We have seen examples of this.  Can be used to determine number of bytes
+  a variable is using.
+\item Can be used for arrays.
+\item In C and typed languages, the type of a variable is tied to its size, each particular
+  type needs some number of bytes of memory to represent values of that type.
+\item The sizeof a pointer variable will depend on the size used to represent and hold memory
+  addresses on the machine you are running.  But typically it is 4 bytes (32 bits) on
+  32-bit architectures or 8 bytes (64 bits) on 64-bit architecture.
+\end{itemize}
+\section{Third Session (12:40 - 1:40)}
+\label{sec-3}
+\subsection{Pass by Reference}
+\label{sec-3-1}
+
+\begin{itemize}
+\item Pass by reference used not to be built in to C language.
+\item But you can pass by reference by passing pointer parameters.
+\item They are equivalent, function parameters declared as pass by reference
+  are set to pass in a pointer (a memory reference).  Only difference is
+  that a reference variable in a function is dereferenced for you behind the
+  scenes.
+\end{itemize}
+\subsection{Multiple Indirection}
+\label{sec-3-2}
+
+\begin{itemize}
+\item Pointer dereferences can be chained together, to create multiple levels of
+  reference/dereference.
+\item This can be useful in many cases, e.g. an array of pointers to structures, that have pointers
+  to link to other structures.  We will see more of this when we look at data structures using
+  pointers to create links between items.
+\item As an example, lets use 2 levels of reference.
+\end{itemize}
+
+\begin{verbatim}
+int x;
+int* xPtr = &x;
+int** xPtrPtr = &xPtr;
+
+**xPtrPtr = 42;
+cout << x;
+\end{verbatim}
+\subsection{Pointers to Structs and Struct Members}
+\label{sec-3-3}
+
+\begin{itemize}
+\item Structs have a special operator used to reference members of a struct pointed to
+  by a pointer reference.
+\item This was so commonly done, the operator \verb~->~ was developed.  Read as \textbf{pointer to member}.
+\end{itemize}
+
+\begin{verbatim}
+struct Trial
+{
+   string name;
+   string gender;
+   float reactionTime; // ms
+   int numberOfPresses;
+}; // don't forget the semicolon
+
+Trial t;
+Trial* tPtr;
+
+tPtr = &t;
+t->name = "Jane Student";
+t->gender = "Female";
+t->reactionTime = 42;
+\end{verbatim}
+
+\end{document}

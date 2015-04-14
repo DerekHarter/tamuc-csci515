@@ -95,19 +95,77 @@ cout << *yPtr << endl;
 cout << y << endl;
 #+end_src
 - Can also assign value using IOstream input
-#+begin_src
+#+begin_src C
 cin >> *yPtr;
 #+end_src
 
 ** Memory Addresses, again
 - Lets look at the actual values in one of our pointer variables
 #+begin_src C
+int a;     // a is an integer
+int* aPtr; // aPtr will point to the a integer
 
+a = 7;
+*aPtr = &a;
+
+cout << "The address of a is " << aPtr << endl;
 #+end_src
+- Also, remember that ~&~ and ~*~ (address of and dereference operators) are inverses 
+  of one another. 
+
+** sizeof operator
+- We have seen examples of this.  Can be used to determine number of bytes
+  a variable is using. 
+- Can be used for arrays.
+- In C and typed languages, the type of a variable is tied to its size, each particular
+  type needs some number of bytes of memory to represent values of that type.
+- The sizeof a pointer variable will depend on the size used to represent and hold memory
+  addresses on the machine you are running.  But typically it is 4 bytes (32 bits) on
+  32-bit architectures or 8 bytes (64 bits) on 64-bit architecture.
 
 * Third Session (12:40 - 1:40)
 ** Pass by Reference
+- Pass by reference used not to be built in to C language.
+- But you can pass by reference by passing pointer parameters.
+- They are equivalent, function parameters declared as pass by reference
+  are set to pass in a pointer (a memory reference).  Only difference is
+  that a reference variable in a function is dereferenced for you behind the
+  scenes.
 
 ** Multiple Indirection
+- Pointer dereferences can be chained together, to create multiple levels of
+  reference/dereference.
+- This can be useful in many cases, e.g. an array of pointers to structures, that have pointers
+  to link to other structures.  We will see more of this when we look at data structures using
+  pointers to create links between items.
+- As an example, lets use 2 levels of reference.
+#+begin_src C
+int x;
+int* xPtr = &x;
+int** xPtrPtr = &xPtr;
+
+**xPtrPtr = 42;
+cout << x;
+#+end_src
 
 ** Pointers to Structs and Struct Members
+- Structs have a special operator used to reference members of a struct pointed to
+  by a pointer reference.
+- This was so commonly done, the operator ~->~ was developed.  Read as *pointer to member*.
+#+begin_src C
+struct Trial
+{
+   string name;
+   string gender;
+   float reactionTime; // ms
+   int numberOfPresses;
+}; // don't forget the semicolon
+
+Trial t;
+Trial* tPtr;
+
+tPtr = &t;
+t->name = "Jane Student";
+t->gender = "Female";
+t->reactionTime = 42;
+#+end_src

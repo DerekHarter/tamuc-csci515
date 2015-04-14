@@ -1,0 +1,200 @@
+% Created 2015-04-14 Tue 15:52
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage{minted}
+\usemintedstyle{default}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Lab 11: Pointer Paramters and Struct Pointers}
+\author{CSci 515 Spring 2015}
+\date{2015-04-14}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lab 11},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Dates:}
+\label{sec-1}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ Due:  &  In Lab, Wednesday April 15, by 4:05 pm (lab end time)  \\
+\end{tabular}
+\end{center}
+\section*{Objectives}
+\label{sec-2}
+
+\begin{itemize}
+\item Become familiar with creating and using pointer variables.
+\item Pass pointers to a function.
+\item Get practice using structs with pointers.
+\end{itemize}
+\section*{Description}
+\label{sec-3}
+
+In this lab you will practice using pointers.  We will create
+some functions that you will pass pointer parameters too
+in order to perform some tasks.
+
+Perform the following tasks:
+
+\begin{enumerate}
+\item Create a function called \verb~maxInFirst~.  This function will take two
+   float pointer variables as its only parameters.  This is a void
+   function, so it doesn't return anything explicitly.  The purpose of
+   this function is to determine which of the two values pointed to is
+   larger, and make sure that the largest of the two is at the memory
+   location pointed to by the first parameter.  So if the value
+   pointed to by the first parameter is already the largest, then this
+   function does nothing.  But if the second pointer value referenced
+   is the larger, then this function needs to swap these two values.
+\item Declare a \verb~struct~ called \verb~Employee~.  The Employee \verb~struct~ should
+   have a name field, of type string, and a salary field, of type
+   float.
+\item Write a function called \verb~initializeEmployee~.  This function
+   will take a pointer to an Employee \verb~struct~ as its only parameter.
+   This will be a void function, so it will not return anything
+   explicitly.  Have this function prompt the user interactively
+   (inside of the function) for an employee name and a floating
+   point salary.  You should initialize the fields of the \verb~struct~
+   that is passed in as a pointer parameter using the values
+   input by the user.
+\item In your main function show an example of calling each of your two 
+   functions.  For the \verb~maxInFirst~ function, make sure you demonstrate
+   calling it two times, one time demonstrating when the values need
+   to be swapped, and one time when they done.  Also create an
+   Employee variable instance in your main function, and initialize it
+   by calling your \verb~initializeEmployee~ function.  Display the two
+   fields after the function returns from initializing them.
+\end{enumerate}
+
+Example output is shown below.  You should prompt for the employee
+name inside of your function, and display the resulting fields after
+returning from calling the initialization function.
+
+
+
+\begin{verbatim}
+Before calling maxInFirst: f1 = 42.42 f2 = 18.18
+After  calling maxInFirst: f1 = 42.42 f2 = 18.18
+Before calling maxInFirst: f1 = 9.9 f2 = 23.23
+After  calling maxInFirst: f1 = 23.23 f2 = 9.9
+
+Employee Name  : Derek Harter
+Employee Salary: 32567.15
+After initialization Name: Derek Harter salary: 32567.15
+\end{verbatim}
+
+\textbf{NOTE}: Now that our programs have more functions than just the
+\verb~main()~ function, the use of the function headers becomes meaningful
+and required.  Make sure that all of your functions have function
+headers preceding them that document the purpose of the functions, and
+the input parameters and return value of the function.
+\section*{Lab Submission}
+\label{sec-4}
+
+
+An eCollege dropbox has been created for this lab.  You should upload
+your version of the lab by the end of lab time to the eCollege dropbox
+named \verb~Lab 11 Pointers and Structs~.  Work submitted by the end of
+lab will be considered, but after the lab ends you may no longer
+submit work, so make sure you submit your best effort by the lab end
+time in order to receive credit.
+\section*{Requirements and Grading Rubrics}
+\label{sec-5}
+\subsection*{Program Execution, Output and Functional Requirements}
+\label{sec-5-1}
+
+
+\begin{enumerate}
+\item Your program must compile, run and produce some sort of output to be
+  graded. 0 if not satisfied.
+\item 33+ pts.  You must declare the enumerated and struct types as
+   specified.
+\item 33+ pts.  Your program must have the required initialization named
+   function, that accepts the required input parameters and return the
+   required values (if any).  The function must initialize the
+   array of cards correctly.
+\item 33+ pts. You should demonstrate creating an array of your Card
+   structures, and calling your initialization function in \verb~main~.
+\item 5+ extra credit pts.  Display the resulting deck of cards on
+   standard output.  Use a function that takes the array of cards
+   for the full 5 points, and displays strings for the face/suit
+   (not integer values).
+\end{enumerate}
+\subsection*{Program Style}
+\label{sec-5-2}
+
+
+Your programs must conform to the style and formatting guidelines given for this course.
+The following is a list of the guidelines that are required for the lab to be submitted
+this week.
+
+\begin{enumerate}
+\item The file header for the file with your name and program information
+  and the function header for your main function must be present, and
+  filled out correctly.
+\item A function header must be present for all functions you define.
+   You must document the purpose, input parameters and return values
+   of all functions.  Your function headers must be formatted exactly
+   as shown in the style guidelines for the class.
+\item You must indent your code correctly and have no embedded tabs in
+  your source code. (Don't forget about the Visual Studio Format
+  Selection command).
+\item You must not have any statements that are hacks in order to keep
+   your terminal from closing when your program exits (e.g. no calls
+   to system() ).
+\item You must have a single space before and after each binary operator.
+\item You must have a single blank line after the end of your declaration
+  of variables at the top of a function, before the first code
+  statement.
+\item You must have a single blank space after , and \verb~;~ operators used as a
+  separator in lists of variables, parameters or other control
+  structures.
+\item You must have opening \verb~{~ and closing \verb~}~ for control statement blocks
+  on their own line, indented correctly for the level of the control
+  statement block.
+\item All control statement blocks (if, for, while, etc.) must have \verb~{~
+   \verb~}~ enclosing them, even when they are not strictly necessary
+   (when there is only 1 statement in the block).
+\item You should attempt to use meaningful variable and function names in
+   your program, for program clarity.  Of course, when required, you
+   must name functions, parameters and variables as specified in the
+   assignments.  Variable and function names must conform to correct
+   \verb~camelCaseNameingConvention~ .
+\item Put the \verb~*~ for pointer variable declarations next to the
+   type declaration, with no space between the type and the \verb~*~.
+   Also please follow the convention of using \verb~Ptr~ at the end of
+   names for pointer variables.
+\end{enumerate}
+
+Failure to conform to any of these formatting and programming practice
+guidelines for this lab will result in at least 1/3 of the points (33)
+for the assignment being removed for each guideline that is not
+followed (up to 3 before getting a 0 for the assignment). Failure to
+follow other class/textbook programming guidelines may result in a
+loss of points, especially for those programming practices given in
+our Deitel textbook that have been in our required reading so far.
+
+\end{document}
