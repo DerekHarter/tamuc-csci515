@@ -17,6 +17,7 @@ using namespace std;
 
 
 // A structure to hold an Integer
+// and a pointer to some other item.
 struct IntegerItem
 {
   int value;
@@ -35,4 +36,25 @@ struct IntegerItem
  */
 int main()
 {
+  IntegerItem a;
+  IntgerItem b;
+  IntegerItem c;
+  IntegerItem d;
+
+  a.value = 5;
+  b.value = 7;
+  c.value = 10;
+  d.value = 15;
+
+  a.nextPtr = &b;
+  b.nextPtr = &c;
+  c.nextPtr = &d;
+  d.nextPtr = &a;
+
+  IntegerItem* aPtr = &a;
+  IntegerItem* cPtr = &c;
+
+  cout << "Two hops on chain away from a: " << aPtr->nextPtr->nextPtr << endl;
+  cout << "Three hops on chain away from c: " << cPtr->nextPtr->nextPtr->nextPtr << endl;
+  cout << "Four hops on chain away from a: " << aPtr->nextPtr->nextPtr->nextPtr->nextPtr << endl;
 }
