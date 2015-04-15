@@ -16,6 +16,12 @@
 using namespace std;
 
 
+// A structure to hold an Integer
+struct IntegerItem
+{
+  int value;
+  ListItem* nextPtr;
+};
 
 
 /** main entry point
