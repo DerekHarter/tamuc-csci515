@@ -21,7 +21,7 @@ using namespace std;
 struct IntegerItem
 {
   int value;
-  ListItem* nextPtr;
+  IntegerItem* nextPtr;
 };
 
 
