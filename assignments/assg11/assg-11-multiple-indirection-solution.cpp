@@ -36,8 +36,26 @@ struct IntegerItem
  */
 int main()
 {
+  // part 1, multiple dereferencing
+  float f;
+  float* fPtr;
+  float** fPtrPtr;
+  float*** fPtrPtrPtr;
+
+  f = 42.42;
+  fPtr = &f;
+  fPtrPtr = &fPtr;
+  fPtrPtrPtr = &fPtrPtr;
+
+  cout << "f = " << f << endl;
+  cout << "*fPtr = " << *fPtr << endl;
+  cout << "**fPtrPtr = " << **fPtrPtr << endl;
+  cout << "***fPtrPtrPtr = " << ***fPtrPtrPtr << endl;
+  cout << endl;
+
+  // part 2, chained pointers in struct
   IntegerItem a;
-  IntgerItem b;
+  IntegerItem b;
   IntegerItem c;
   IntegerItem d;
 
@@ -54,7 +72,9 @@ int main()
   IntegerItem* aPtr = &a;
   IntegerItem* cPtr = &c;
 
-  cout << "Two hops on chain away from a: " << aPtr->nextPtr->nextPtr << endl;
-  cout << "Three hops on chain away from c: " << cPtr->nextPtr->nextPtr->nextPtr << endl;
-  cout << "Four hops on chain away from a: " << aPtr->nextPtr->nextPtr->nextPtr->nextPtr << endl;
+  cout << "The value of a, dereferenced using aPtr and -> operator: " << aPtr->value << endl;
+  cout << "Two hops on chain away from a: " << aPtr->nextPtr->nextPtr->value << endl;
+  cout << "Three hops on chain away from c: " << cPtr->nextPtr->nextPtr->nextPtr->value << endl;
+  cout << "Four hops on chain away from a: " << aPtr->nextPtr->nextPtr->nextPtr->nextPtr->value << endl;
+
 }

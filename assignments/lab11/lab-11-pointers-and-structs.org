@@ -65,8 +65,8 @@ After  calling maxInFirst: f1 = 42.42 f2 = 18.18
 Before calling maxInFirst: f1 = 9.9 f2 = 23.23
 After  calling maxInFirst: f1 = 23.23 f2 = 9.9
 
-Employee Name  : Derek Harter
-Employee Salary: 32567.15
+Enter Employee Name  : Derek Harter
+Enter Employee Salary: 32567.15
 After initialization Name: Derek Harter salary: 32567.15
 #+end_example
 
@@ -91,18 +91,15 @@ time in order to receive credit.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 33+ pts.  You must declare the enumerated and struct types as
+1. 40+ pts.  Your ~maxInFirst~ function must work correctly and take
+   integer pointer parameters as specified.
+1. 10+ pts.  You should have declared the needed structure correctly as
    specified.
-1. 33+ pts.  Your program must have the required initialization named
-   function, that accepts the required input parameters and return the
-   required values (if any).  The function must initialize the
-   array of cards correctly.
-1. 33+ pts. You should demonstrate creating an array of your Card
-   structures, and calling your initialization function in ~main~.
-1. 5+ extra credit pts.  Display the resulting deck of cards on
-   standard output.  Use a function that takes the array of cards
-   for the full 5 points, and displays strings for the face/suit
-   (not integer values).
+1. 40+ pts.  Your ~initializeEmployee~ function works, prompts for
+   input from user in the functions as required, and accepts a pointer
+   to an ~Employee~ struct as its parameters as specified.
+1. 10+ pts. You main function demonstrates correctly invoking the functions
+   and displays the required output from doing so.
 
 
 ** Program Style
