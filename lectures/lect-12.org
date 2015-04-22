@@ -80,7 +80,13 @@ const char* colorPtr = "blue";
 
 * Third Session (12:40 - 1:40)
 ** Arrays of Pointers
+- Arrays may contain pointers (e.g. can have an array of pointers).
+- Useful for dynamically sized structures, or efficiency reasons.
+- A common usage is an array of char*, e.g. an array of old c-style strings
 
+#+begin_src C
+char* colors[] = {"red", "orange", "yellow", "green", "blue", "indigo", "violet" };
+#+end_src
 
 ** Command Line Arguments
 - ~main()~ function is a *function*.  Takes parameters as input and returns result.
@@ -94,4 +100,11 @@ int main(int argc, char* argv[])
 
 
 ** Function Pointers
-
+- A pointer to a function contains a function's address in memory.
+- Can pass pointers to functions as parameters to other functions.
+- Can return function pointers as results from other functions.
+- A useful technique, used extensively in functional programming.
+- For example, can specify a order function for sorting routines, so
+  can change sorting order (ascending, descending, sort by different keys, etc.)
+  without changing logic of the sort function.
+- Used for example in the C standard libraries.

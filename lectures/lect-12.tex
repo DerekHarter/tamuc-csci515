@@ -1,4 +1,4 @@
-% Created 2015-04-21 Tue 16:34
+% Created 2015-04-22 Wed 09:11
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -132,7 +132,43 @@ const char* colorPtr = "blue";
 \label{sec-3}
 \subsection{Arrays of Pointers}
 \label{sec-3-1}
-\subsection{Function Pointers}
+
+\begin{itemize}
+\item Arrays may contain pointers (e.g. can have an array of pointers).
+\item Useful for dynamically sized structures, or efficiency reasons.
+\item A common usage is an array of char*, e.g. an array of old c-style strings
+\end{itemize}
+
+
+\begin{verbatim}
+char* colors[] = {"red", "orange", "yellow", "green", "blue", "indigo", "violet" };
+\end{verbatim}
+\subsection{Command Line Arguments}
 \label{sec-3-2}
+
+\begin{itemize}
+\item \verb~main()~ function is a \textbf{function}.  Takes parameters as input and returns result.
+\item command line arguments given by user at a terminal when execute program.
+\item Passed in through the \verb~argc~ and \verb~argv~ parameters to \verb~main~.
+\item \verb~argv~ is an array of \verb~char*~.  Each pointer points to a string of a parsed command line argument.
+\end{itemize}
+
+
+\begin{verbatim}
+int main(int argc, char* argv[])
+\end{verbatim}
+\subsection{Function Pointers}
+\label{sec-3-3}
+
+\begin{itemize}
+\item A pointer to a function contains a function's address in memory.
+\item Can pass pointers to functions as parameters to other functions.
+\item Can return function pointers as results from other functions.
+\item A useful technique, used extensively in functional programming.
+\item For example, can specify a order function for sorting routines, so
+  can change sorting order (ascending, descending, sort by different keys, etc.)
+  without changing logic of the sort function.
+\item Used for example in the C standard libraries.
+\end{itemize}
 
 \end{document}
