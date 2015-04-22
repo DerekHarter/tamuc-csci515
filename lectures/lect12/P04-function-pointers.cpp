@@ -27,6 +27,37 @@ struct Employee
 };
 
 
+/** Display employees
+ * Display all of the employees in an array of employees.
+ *
+ * @param employees An array of employee structures.
+ * @param numEmployees The number of employees in the list.
+ *
+ * @returns void, but as a side effect we print out the
+ *   employee information to standard output.
+ */
+void displayEmployees(Employee employees[], int numEmployees)
+{
+  cout << "Employees:" << endl;
+  cout << "----------" << endl;
+  for (int idx = 0; idx < numEmployees, idx++)
+  {
+    Employee e = employees[idx];
+    cout << setw(3) << setfill('0') << idx
+	 << setw(15) << setfill(' ') << left << e.name
+	 << setw(9) << fixed << right << e.salary;
+    switch (e.gender)
+    {
+      case MALE:
+	cout << setw(7) << right << "Male";
+      case FEMALE:
+	cout << setw(7) << right << "Female";
+    }
+    cout << endl;
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution of this program
  * will begin with this function.
