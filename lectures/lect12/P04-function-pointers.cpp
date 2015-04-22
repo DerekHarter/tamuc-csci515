@@ -39,6 +39,7 @@ struct Employee
 int main()
 {
   // Create an array of 5 employees, used as example in sorting
+  const int NUM_EMPLOYEES = 5;
   Employee employees[NUM_EMPLOYEES] = {
     {"Smith, Susan",  2123.58, FEMALE},
     {"Harter, Derek", 1024.32, MALE},
