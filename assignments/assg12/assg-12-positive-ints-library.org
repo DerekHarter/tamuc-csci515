@@ -9,7 +9,7 @@
 #+LaTeX_HEADER: \usemintedstyle{default}
 
 * Dates:
-| Due: | Tuesday April 21, by Midnight |
+| Due: | Tuesday April 28, by Midnight |
 
 * Objectives
 - Understand the relationship between arrays and pointers in C
