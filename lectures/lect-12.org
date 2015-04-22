@@ -78,6 +78,10 @@ const char* colorPtr = "blue";
 - For use when passing strings to old-style string processing functions, like ~strlen~ and ~strcpy~.
 - NOTE: compare this method to method you have been taught for passing arrays to functions.
 
+* Third Session (12:40 - 1:40)
+** Arrays of Pointers
+
+
 ** Command Line Arguments
 - ~main()~ function is a *function*.  Takes parameters as input and returns result.
 - command line arguments given by user at a terminal when execute program.
@@ -88,8 +92,6 @@ const char* colorPtr = "blue";
 int main(int argc, char* argv[])
 #+end_src
 
-* Third Session (12:40 - 1:40)
-** Arrays of Pointers
 
 ** Function Pointers
 
