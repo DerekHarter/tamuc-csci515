@@ -1,0 +1,86 @@
+#+TITLE:     Lecture 12 Notes
+#+AUTHOR:    Derek Harter
+#+EMAIL:     derek@harter.pro
+#+DATE:      CSci 515 Spring 2015 <2015-04-21 Tue>
+#+DESCRIPTION: Lecture 12 Notes.
+#+OPTIONS:   H:4 num:t toc:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
+
+* First Session (11 - 11:40)
+** Relationship Between Pointers and Arrays
+- Arrays and pointers are intimately related in C++ and may be used (almost) interchangeably.
+- An array name can be thought of as a constant pointer.
+- Pointers can be used to do any operation involving array sub
+  scripting (using pointer arithmetic, see next).
+
+#+begin_src C
+int b[5]; // create 5-element array of integers
+int* bPtr;
+#+end_src
+
+- Because the array name (without a subscript) is a (constant) pointer
+  to the first element of the array, we can set bPtr to the address of the
+  first element in array b
+
+#+begin_src C
+bPtr = b;
+#+end_src
+
+- equivalent to assignment the address of first element
+
+#+begin_src C
+bPtr = &b[0];
+#+end_src
+
+** Pointer Arithmetic
+- Pointers are valid operands in arithmetic expressions. (e.g. +/-)
+- Not all operators used in these expressions are valid with pointer variables (/? %?)
+- Can increment or decrement a pointer.  Basically like iterating through index of an array.
+- Can add or subtract to a pointer, and can subtract one pointer from another.
+- Pointer arithmetic is usually only sensible in context of processing arrays in memory.
+- For array ~b~ and ~bPtr~, equivalent ways to access the third element
+
+#+begin_src C
+b[3];
+*(bPtr + 3);
+#+end_src
+
+- The 3 is the offset to the pointer.  Both expressions calculate the
+  address that is 3 (integers) past where ~b~ / ~bPtr~ are pointing,
+  and dereference that value.
+- The address of the 3rd element, in eqivalent notation
+
+#+begin_src C
+&b[3];
+bPtr + 3;
+#+end_src
+
+* Second Session (11:45 - 12:30)
+** Character Arrays and Pointer-Based String Processing
+- Old style (legacy) string processing
+- Should probably prefer to use string type whenever possible for new problems
+- However, helps to understand arrays and pointers, and helps if you have old code using old c-style strings
+- A string literal "blue" can be assigned to a string type, and it can
+  be assigned to initialize an array of char for old-style C string
+  processing.
+- If you don't specify array size, the size allocated is inferred from the string literal.
+
+#+begin_src C
+char color[] = "blue";
+const char* colorPtr = "blue";
+#+end_src
+
+- each initialize a variable to a string "blue".
+- Since arrays of characters and a pointer to the beginning of such an
+  array can be used interchangeably, you can do either to create an
+  array of characters.
+- old style C-strings use an implicit flag character, the null character ~'\0'~ as string terminator.
+- For use when passing strings to old-style string processing functions, like ~strlen~ and ~strcpy~.
+- NOTE: compare this method to method you have been taught for passing arrays to functions.
+
+
+* Third Session (12:40 - 1:40)
+** Arrays of Pointers
+
+** Function Pointers
+

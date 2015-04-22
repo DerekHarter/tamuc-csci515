@@ -1,0 +1,138 @@
+% Created 2015-04-21 Tue 16:34
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Lecture 12 Notes}
+\author{Derek Harter}
+\date{2015-04-21}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lecture 12 Notes.},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+
+\section{First Session (11 - 11:40)}
+\label{sec-1}
+\subsection{Relationship Between Pointers and Arrays}
+\label{sec-1-1}
+
+\begin{itemize}
+\item Arrays and pointers are intimately related in C++ and may be used (almost) interchangeably.
+\item An array name can be thought of as a constant pointer.
+\item Pointers can be used to do any operation involving array sub
+  scripting (using pointer arithmetic, see next).
+\end{itemize}
+
+
+\begin{verbatim}
+int b[5]; // create 5-element array of integers
+int* bPtr;
+\end{verbatim}
+
+\begin{itemize}
+\item Because the array name (without a subscript) is a (constant) pointer
+  to the first element of the array, we can set bPtr to the address of the
+  first element in array b
+\end{itemize}
+
+
+\begin{verbatim}
+bPtr = b;
+\end{verbatim}
+
+\begin{itemize}
+\item equivalent to assignment the address of first element
+\end{itemize}
+
+
+\begin{verbatim}
+bPtr = &b[0];
+\end{verbatim}
+\subsection{Pointer Arithmetic}
+\label{sec-1-2}
+
+\begin{itemize}
+\item Pointers are valid operands in arithmetic expressions. (e.g. +/-)
+\item Not all operators used in these expressions are valid with pointer variables (/? \%?)
+\item Can increment or decrement a pointer.  Basically like iterating through index of an array.
+\item Can add or subtract to a pointer, and can subtract one pointer from another.
+\item Pointer arithmetic is usually only sensible in context of processing arrays in memory.
+\item For array \verb~b~ and \verb~bPtr~, equivalent ways to access the third element
+\end{itemize}
+
+
+\begin{verbatim}
+b[3];
+*(bPtr + 3);
+\end{verbatim}
+
+\begin{itemize}
+\item The 3 is the offset to the pointer.  Both expressions calculate the
+  address that is 3 (integers) past where \verb~b~ / \verb~bPtr~ are pointing,
+  and dereference that value.
+\item The address of the 3rd element, in eqivalent notation
+\end{itemize}
+
+
+\begin{verbatim}
+&b[3];
+bPtr + 3;
+\end{verbatim}
+\section{Second Session (11:45 - 12:30)}
+\label{sec-2}
+\subsection{Character Arrays and Pointer-Based String Processing}
+\label{sec-2-1}
+
+\begin{itemize}
+\item Old style (legacy) string processing
+\item Should probably prefer to use string type whenever possible for new problems
+\item However, helps to understand arrays and pointers, and helps if you have old code using old c-style strings
+\item A string literal ``blue'' can be assigned to a string type, and it can
+  be assigned to initialize an array of char for old-style C string
+  processing.
+\item If you don't specify array size, the size allocated is inferred from the string literal.
+\end{itemize}
+
+
+\begin{verbatim}
+char color[] = "blue";
+const char* colorPtr = "blue";
+\end{verbatim}
+
+\begin{itemize}
+\item each initialize a variable to a string ``blue''.
+\item Since arrays of characters and a pointer to the beginning of such an
+  array can be used interchangeably, you can do either to create an
+  array of characters.
+\item old style C-strings use an implicit flag character, the null character \~{}'\0'\~{} as string terminator.
+\item For use when passing strings to old-style string processing functions, like \verb~strlen~ and \verb~strcpy~.
+\item NOTE: compare this method to method you have been taught for passing arrays to functions.
+\end{itemize}
+\section{Third Session (12:40 - 1:40)}
+\label{sec-3}
+\subsection{Arrays of Pointers}
+\label{sec-3-1}
+\subsection{Function Pointers}
+\label{sec-3-2}
+
+\end{document}
