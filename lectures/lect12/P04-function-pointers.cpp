@@ -16,6 +16,14 @@
 #include <cstring>
 using namespace std;
 
+enum Gender {MALE, FEMALE}; 
+struct Employee
+{
+  string name;
+  float salary;
+  Gender gender;
+};
+
 
 /** main entry point
  * The main entry point for this program.  Execution of this program
