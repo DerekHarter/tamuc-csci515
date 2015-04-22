@@ -16,6 +16,8 @@
 #include <cstring>
 using namespace std;
 
+
+// A struct to hold records, used to illustrate sorting by different keys
 enum Gender {MALE, FEMALE}; 
 struct Employee
 {
