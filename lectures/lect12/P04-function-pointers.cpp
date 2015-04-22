@@ -38,7 +38,15 @@ struct Employee
  */
 int main()
 {
-
+  // Create an array of 5 employees, used as example in sorting
+  Employee employees[NUM_EMPLOYEES] = {
+    {"Smith, Susan",  2123.58, FEMALE},
+    {"Harter, Derek", 1024.32, MALE},
+    {"Student, Nick",  928.16, MALE},
+    {"Hacker, Sally",  858.25, FEMALE},
+    {"Adams, Ann",    1480.92, FEMALE},
+  };
+  
   // return 0 to indicate successful completion
   return 0;
 }
