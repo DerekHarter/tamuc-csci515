@@ -78,7 +78,6 @@ const char* colorPtr = "blue";
 - For use when passing strings to old-style string processing functions, like ~strlen~ and ~strcpy~.
 - NOTE: compare this method to method you have been taught for passing arrays to functions.
 
-
 * Third Session (12:40 - 1:40)
 ** Arrays of Pointers
 
