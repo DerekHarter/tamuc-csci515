@@ -108,3 +108,4 @@ int main(int argc, char* argv[])
   can change sorting order (ascending, descending, sort by different keys, etc.)
   without changing logic of the sort function.
 - Used for example in the C standard libraries.
+- stdlib.h qsort function and bsearch function use a compare function, return -1, 0 or 1
