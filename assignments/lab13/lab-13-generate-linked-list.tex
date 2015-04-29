@@ -1,4 +1,4 @@
-% Created 2015-04-29 Wed 09:10
+% Created 2015-04-29 Wed 09:50
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -73,7 +73,9 @@ Perform the following tasks:
    value.  This function should return a \verb~Node*~ pointer as its
    result, which will be a pointer to the first node in the
    generated linked list.  The nodes created by the linked list should
-   be generated using dynamic memory allocation.
+   be generated using dynamic memory allocation.  \textbf{NOTE}: you can
+   always assume \verb~numNodes~ >= 1, thus you don't have to deal
+   with worrying about an empty list being generated here.
 \item In your main function, display the returned values from generating
    a list with 15 nodes in it.  You should use a while loop to
    follow the node links, and process and display the value of each
@@ -84,6 +86,11 @@ Perform the following tasks:
 Example output is shown below: 
 
 
+
+\begin{verbatim}
+List of 15 integers:
+4 -> 7 -> 18 -> 16 -> 14 -> 16 -> 7 -> 13 -> 10 -> 2 -> 3 -> 8 -> 11 -> 20 -> 4 -> EOL
+\end{verbatim}
 
 \textbf{NOTE}: Now that our programs have more functions than just the
 \verb~main()~ function, the use of the function headers becomes meaningful

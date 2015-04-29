@@ -1,0 +1,104 @@
+% Created 2015-04-29 Wed 10:32
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{Lecture 13 Notes}
+\author{Derek Harter}
+\date{2015-04-21}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Lecture 13 Notes.},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
+
+\begin{document}
+
+\maketitle
+
+
+\section{First Session (11 - 11:40)}
+\label{sec-1}
+\subsection{Data Structures}
+\label{sec-1-1}
+
+\begin{itemize}
+\item Arrays are fixed-size data structures.
+\item Dynamic data structures can grow and shrink during execution.
+\item Are widely needed and useful.
+\item We will look at linked lists, stacks, queues and trees.
+\end{itemize}
+\subsection{Self-Referential Structures}
+\label{sec-1-2}
+
+\begin{itemize}
+\item A self-referential structure (or class) contains a pointer member that points to a \verb~struct~ of the
+\end{itemize}
+same type.
+\begin{itemize}
+\item For example, a structure that holds an integer element, and can point to other structures
+\end{itemize}
+
+
+\begin{verbatim}
+struct Node
+{
+  int data;
+  Node* nextPtr;
+};
+\end{verbatim}
+
+\begin{itemize}
+\item This user defined type type has 2 members
+\begin{itemize}
+\item A field to hold some data (could be arbitrary, even another struct)
+\item A nextPtr field, which is a pointer to a Node.  Can be used to point to next item in a list, stack, queue or tree.
+\end{itemize}
+\item Self-referential class objects can be linked together to form useful data structures such as lists, queues, stacks and trees.
+\item By convention, we use a NULL pointer to indicate the end of a list or chain of such items (similar to null character in a C
+\end{itemize}
+char array).
+\section{Second Session (11:45 - 12:30)}
+\label{sec-2}
+\subsection{Dynamic Memory Allocation}
+\label{sec-2-1}
+
+\begin{itemize}
+\item Creating and maintaining data structures that can grow or shrink requires dynamic memory allocation.
+\item New operator takes an argument of the type being allocated, and returns a pointer to the new items allocated address.
+\item If no memory available, an exception occurs.
+\item We can dynamically deallocate memory with the corresponding delete operator on a pointer to a dynamically allocated object.
+\end{itemize}
+\section{Third Session (12:40 - 1:40)}
+\label{sec-3}
+\subsection{Linked Lists}
+\label{sec-3-1}
+
+\begin{itemize}
+\item A linked list is a linear collection of self-referential user defined types (\verb~Node~).
+\item The nodes are connected by pointer links.
+\item There is a linear ordering.  There is a first item in a list, which points to the next item, and so on.
+\item The last item in the list (by convention) points to the NULL pointer.  We use the NULL pointer when processing
+  such a list to determine when we have reached the end of the list.  Forgetting to set the NULL pointer
+  for the last item will cause incorrect behavior.
+\end{itemize}
+\subsection{Circular linked lists}
+\label{sec-3-2}
+\subsection{Doubly linked list}
+\label{sec-3-3}
+
+\end{document}

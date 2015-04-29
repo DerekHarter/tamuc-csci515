@@ -11,8 +11,37 @@
  */
 #include <iostream>
 #include <iomanip>
-#include <string>
+#include <cstdlib>
 using namespace std;
+
+
+// The node structure, basic structure used to create
+// linked lists of integer items
+struct Node
+{
+  int data;
+  Node* nextPtr;
+};
+
+
+/** Construct New Node
+ * Dynamically allocate memory for a new Node holding an
+ * integer data item, and return a pointer to this
+ * newly allocated structure.
+ *
+ * @param data An integer, the value to be stored in this
+ *   newly constructed node.
+ *
+ * @returns Node* A pointer to the Node item we just
+ *   dynamically created and initialized.
+ */
+Node* newNode(int data)
+{
+  Node* nodePtr = new Node();
+  nodePtr->data = data;
+  nodePtr->nextPtr = NULL;
+  return nodePtr;
+}
 
 
 /** Generate Random List
@@ -23,24 +52,57 @@ using namespace std;
  * to the linked list.  We return a pointer to the head node
  * of the newly dynamically allocated list of integer items.
  *
- * @param nunNodes An integer, the number of nodes we are to
+ * @param numNodes An integer, the number of nodes we are to
  *   create in our randomly generated list of integer nodes.
+ *   This function assumes numNodes >= 1, it will not generate
+ *   an empty list.
  *
  * @returns Node* A pointer to the head node of the linked
  *    list of integers we create.
  */
-int posintprint(int* posints)
+Node* generateRandomList(int numNodes)
 {
-  cout << "{ ";
-  while (*posints != -1)
+  Node* headPtr = NULL;
+  int data = (rand() % 20) + 1;
+
+  // create the head node, to be returned by this function
+  headPtr = newNode(data);
+
+  // now create numNodes-1 nodes and add to end
+  Node* prevPtr = headPtr;
+  Node* nodePtr = NULL;
+  int idx = 1;
+  while (idx < numNodes)
   {
-    cout << *posints++;
-    if (*posints != -1)
-    {
-      cout << ", ";
-    }
+    data = (rand() % 20) + 1;
+    nodePtr = newNode(data);
+    prevPtr->nextPtr = nodePtr;
+    prevPtr = nodePtr;
+    idx++;
   }
-  cout << " }" << endl;
+
+  return headPtr;
+}
+
+
+/** Display List
+ * Display a linked list of integer values on standard output.
+ *
+ * @param list A Node*, the pointer to the head of the
+ *   list of interger nodes.
+ *
+ * @returns void Nothing is return explicitly, but we display
+ *    the contents of the list to standard output as a result
+ *    of calling this function.
+ */
+void displayList(Node* list)
+{
+  while (list != NULL)
+  {
+    cout << list->data << " -> ";
+    list = list->nextPtr;
+  }
+  cout << "EOL" << endl;
 }
 
 
@@ -55,7 +117,12 @@ int posintprint(int* posints)
  */
 int main()
 {
+  Node* list;
 
+  list = generateRandomList(15);
+  cout << "List of 15 integers:" << endl;
+  displayList(list);
+  
   // return 0 to indicate successful completion
   return 0;
 }
