@@ -166,6 +166,29 @@ float concatenateLists(Node* list1, Node* list2)
 }
 
 
+/** Concatenate Lists
+ * Concatenate two lists to one another.  We are given the head pointer
+ * to two different lists.  This function concatenates the second
+ * list given to the end of the first.  No value is returned
+ * explicitly by this function, but the last item of the first
+ * list will be modified to point to the head of the second list,
+ * thus effectively concatenating the two lists.
+ *
+ * @param list1 A Node*, the pointer to the head of the
+ *   list of interger nodes.
+ * @param list2 A Node*, the pointer to the head of the
+ *   other list of interger nodes, to be concatenated to end
+ *   of the first list.
+ *
+ * @returns void Nothing explicit is returned, but as a result
+ *    of calling this function, the first list will be modified
+ *    to have the second list concatenated on to the end of it.
+ */
+Node* reverseList(Node* list)
+{
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
