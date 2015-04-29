@@ -100,11 +100,10 @@ submitted by the due date will be considered for evaluation.
 
 1. Your program must compile, run and produce some sort of output to
    be graded. 0 if not satisfied.
-1. 20+ pts. For the correct implementation of new functionality in ~postintcmp()~
-   function.
-1. 20+ pts. For the correct implementation of the ~postintcpy()~ function.
-1. 25+ pts. For correctly implementing the ~postintfind()~ function.
-1. 25+ pts. For correctly implementing the ~postintcat()~ function.
+1. 10+ pts. For correct implementation of the ~displayList()~ function.
+1. 20+ pts. For correct implementation of the ~averageList()~ function.
+1. 30+ pts. For correctly implementing the ~concatenateLists()~ function.
+1. 30+ pts. For correctly implementing the ~reverseList()~ function.
 1. 10+ pts. For demonstrating your functions adequately in your ~main()~ function.
 
 ** Program Style
