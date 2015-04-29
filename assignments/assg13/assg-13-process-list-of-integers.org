@@ -79,22 +79,6 @@ Here is an example output from running a correct implementation of
 this assignment:
 
 #+begin_example
-List 1: { 4, 2, 7 }
-List 2: { 4, 2, 7, 3 }
-Result of posintcmp(list1, list2): -1
-Result of posintcmp(list2, list1): 1
-
-List 3 (an empty list with enoough room to hold 10 values): {  }
-After copy of list2 to list3, list3 = { 4, 2, 7, 3 }
-
-Result of searching for 4 in List 2: 0
-Result of searching for 7 in List 2: 2
-Result of searching for 8 in List 2: -1
-
-List 4 has enough room for 10 values, but 
-   currently contains only 4: { 9, 10, 15, 22 }
-Result of concatenating List 2 onto end of 
-   List 4: { 9, 10, 15, 22, 4, 2, 7, 3 }
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
