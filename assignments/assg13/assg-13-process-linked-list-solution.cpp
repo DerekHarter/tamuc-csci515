@@ -160,7 +160,7 @@ float concatenateLists(Node* list1, Node* list2)
   {
     nodePtr = nodePtr->nextPtr;
   }
-  
+
   // point last node to head of list 2
   nodePtr->nextPtr = list2;
 }
