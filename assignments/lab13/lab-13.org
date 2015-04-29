@@ -71,11 +71,11 @@ time in order to receive credit.
 
 1. Your program must compile, run and produce some sort of output to be
   graded. 0 if not satisfied.
-1. 35+ pts.  Your ~posintlen()~ function must work correctly and take
-   a pointer to an array of integers as specified.
-1. 40+ pts.  Your ~posintcmp()~ function works correctly and takes
-   two pointers to arrays of positive integers as specified.
-1. 25+ pts. You main function demonstrates correctly invoking the functions
+1. 40+ Your ~generateRandomList()~ function must work correctly and take the
+   specified input parameters..
+1. 30+ pts.  Your funciton must use dynamic memory allocation to create the
+   correct number of nodes, and set up and return the linked list correctly.
+1. 30+ pts. You main function demonstrates correctly invoking the functions
    and displays the required output from doing so.
 
 
