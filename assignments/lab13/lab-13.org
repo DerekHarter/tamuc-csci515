@@ -1,4 +1,4 @@
-#+TITLE:     Lab 13: 
+#+TITLE:     Lab 13: Generate Linked List
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-04-21 Tue>
