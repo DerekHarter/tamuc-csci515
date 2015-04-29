@@ -118,7 +118,7 @@ void displayList(Node* list)
  * @returns float The average of the values in the list
  *    of integers.
  */
-void averageList(Node* list)
+float averageList(Node* list)
 {
   float sum = 0.0;
   float count = 0.0;
