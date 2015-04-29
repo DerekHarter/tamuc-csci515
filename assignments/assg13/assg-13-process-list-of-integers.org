@@ -90,6 +90,11 @@ List 2:
 After concatenating: 
 3 -> 8 -> 11 -> 20 -> 4 -> 7 -> 1 -> EOL
 
+List before reverse:
+7 -> 13 -> 17 -> 12 -> 9 -> 8 -> 10 -> 3 -> EOL
+List after reverse:
+3 -> 10 -> 8 -> 9 -> 12 -> 17 -> 13 -> 7 -> EOL
+
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
