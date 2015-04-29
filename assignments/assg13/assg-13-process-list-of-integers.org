@@ -12,27 +12,26 @@
 | Due: | Tuesday May 5, by Midnight |
 
 * Objectives
-- Understand the relationship between arrays and pointers in C
-- Use pointers to an array of items, and process them.
-- Get more practice with more advanced sentinel based processing.
+- More practice processing linked lists
+- More practice with dynamic memory allocation
+- More practice with pointers
 
 * Description
-In this assignment you will extend the basic functionality from your
-lab 12 work.  In this assignment, you will be implementing further
-functions that can be used to process pointers to arrays of
-positive integers that are terminated with a ~-1~ sentinel
-character.
+In this lab you will create a couple of functions to process linked lists
+of integer values.  You should use your generation function from the lab
+in order to create randomly generated linked lists to test these functions.
 
 Perform the following tasks:
 
-1. Expand the functionality of your ~posintcmp()~ function to be able
-   to handle arrays of positive integers of differing lengths.  For
-   the ~strlen()~ function, if the string are equal up to position ~n~,
-   but one string is longer than the other, the longer string should
-   be considered as occurring after shorter one.  For example if
-   ~int* p1Ptr = {4, 3, -1}~ and ~int* p2Ptr = {4, 3, 2, -1}~
-   then ~posIntCmp(p1Ptr, p2Ptr)~ should return a ~-1~, and
-   ~posIntCmp(p2Ptr, p1Ptr)~ should return a ~1~.
+1. Create a function called ~averageList()~.  This function should
+   take a pointer to the head node in a linked list of integers as its
+   only parameter.  This function should process all elements in the
+   list, to find their average value and return the result.  Use
+   floating point arithmetic to sum up and average the values, and
+   return a floating point value as the result of this function.  In
+   your ~main()~ function, create a randomly generated list with 10
+   elements, and demonstrate calling this function to find the average
+   of the 10 values in your list.
 
 2. Implement a ~posintcpy()~ function.  This function takes a
    destination as its first parameter and a source as its second
