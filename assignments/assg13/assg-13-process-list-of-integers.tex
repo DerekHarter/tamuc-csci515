@@ -1,152 +1,191 @@
-#+TITLE:     Assg 13: Process List of Integers
-#+AUTHOR:    CSci 515 Spring 2015
-#+EMAIL:     derek@harter.pro
-#+DATE:      <2015-04-21 Tue>
-#+DESCRIPTION: Assg 13: Process List of Integers
-#+OPTIONS:   H:4 num:nil toc:nil
-#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
-#+LATEX_HEADER: \usepackage{minted}
-#+LaTeX_HEADER: \usemintedstyle{default}
+% Created 2015-04-29 Wed 09:26
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\usepackage{minted}
+\usemintedstyle{default}
+\providecommand{\alert}[1]{\textbf{#1}}
 
-* Dates:
-| Due: | Tuesday May 5, by Midnight |
+\title{Assg 13: Process List of Integers}
+\author{CSci 515 Spring 2015}
+\date{2015-04-21}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={Assg 13: Process List of Integers},
+  pdfcreator={Emacs Org-mode version 7.9.3f}}
 
-* Objectives
-- More practice processing linked lists
-- More practice with dynamic memory allocation
-- More practice with pointers
+\begin{document}
 
-* Description
+\maketitle
+
+
+\section*{Dates:}
+\label{sec-1}
+
+
+\begin{center}
+\begin{tabular}{ll}
+ Due:  &  Tuesday May 5, by Midnight  \\
+\end{tabular}
+\end{center}
+\section*{Objectives}
+\label{sec-2}
+
+\begin{itemize}
+\item More practice processing linked lists
+\item More practice with dynamic memory allocation
+\item More practice with pointers
+\end{itemize}
+\section*{Description}
+\label{sec-3}
+
 In this lab you will create a couple of functions to process linked lists
 of integer values.  You should use your generation function from the lab
 in order to create randomly generated linked lists to test these functions.
 
 Perform the following tasks:
 
-1. Implement a function called ~displayList()~.  This function should
+\begin{enumerate}
+\item Implement a function called \verb~displayList()~.  This function should
    take a list of integers as its input and display the list on
    standard output.  Use this function to demonstrate your
    implementations of the following functions.
-
-2. Create a function called ~averageList()~.  This function should
+\item Create a function called \verb~averageList()~.  This function should
    take a pointer to the head node in a linked list of integers as its
    only parameter.  This function should process all elements in the
    list, to find their average value and return the result.  Use
    floating point arithmetic to sum up and average the values, and
    return a floating point value as the result of this function.  In
-   your ~main()~ function, create a randomly generated list with 10
+   your \verb~main()~ function, create a randomly generated list with 10
    elements, display the list, and demonstrate calling this function
    to find the average of the 10 values in your list.
-
-3. Implement a function called ~concatenateLists()~.  This function
+\item Implement a function called \verb~concatenateLists()~.  This function
    will take two linked lists as its input parameters.  This function
    should cause the second linked list that is passed in to be
    concatenated on to the end of the first linked list.  To do this,
-   you need to find the last ~Node~ in the first linked list, then set
+   you need to find the last \verb~Node~ in the first linked list, then set
    its next pointer to point to the head of the second linked list.
    If I were writing this, I might create a small helper function that
    returns the last node in a linked list, called something like
-   ~findLastNode()~, and use this result to implement the concatenate
+   \verb~findLastNode()~, and use this result to implement the concatenate
    operation.  The result of calling this function is that the first
    list will be modified.  Thus this function does not return a new
    result nor create a new list.  But after calling the function, the
    pointer to the first list will now point to the concatenated result
-   of appending the second list.  In your ~main()~ function, create
+   of appending the second list.  In your \verb~main()~ function, create
    two lists of integers of size 4 and 3, display the two lists.  Then
    use the concatentate function and show that the resulting lists are
    concatenated again by displaying the first list.
-
-4. Implement a function called ~reverseList()~.  This function will
+\item Implement a function called \verb~reverseList()~.  This function will
    take a list of integers as input (a singly linked list), and it
    will return a new list.  This function should construct a new list
    that will have all of the items of the original list, but in
-   reverse order.  For example, given the list ~5 -> 3 -> 2 -> NULL~ 
-   this function would return a new list ~2 -> 3 -> 5 -> NULL~.  This
+   reverse order.  For example, given the list \verb~5 -> 3 -> 2 -> NULL~ 
+   this function would return a new list \verb~2 -> 3 -> 5 -> NULL~.  This
    function should not destroy the original list, it needs to dynamically
-   create new ~Node~ items and create a new list, and copy the
+   create new \verb~Node~ items and create a new list, and copy the
    integer values from the original list nodes to the new list
    nodes.  This function will return the pointer to the head of this
-   new list as the result of calling this function.  In your ~main~
+   new list as the result of calling this function.  In your \verb~main~
    function create a list of 8 integers, reverse it, and display
    the original and the reversed list.
-
-5. Demonstrate all of your functions in your ~main()~ function.  Make
+\item Demonstrate all of your functions in your \verb~main()~ function.  Make
    sure you adequately test and demonstrate the correct working of all
    of your functions.
+\end{enumerate}
 
 
 Here is an example output from running a correct implementation of
 this assignment:
 
-#+begin_example
-#+end_example
 
-*NOTE*: Now that our programs have more functions than just the
-~main()~ function, the use of the function headers becomes meaningful
+\textbf{NOTE}: Now that our programs have more functions than just the
+\verb~main()~ function, the use of the function headers becomes meaningful
 and required.  Make sure that all of your functions have function
 headers preceding them that document the purpose of the functions, and
 the input parameters and return value of the function.
+\section*{Assignment Submission}
+\label{sec-4}
 
-* Assignment Submission
 
 An eCollege dropbox has been created for this assignment.  You should
 upload your version of the assignment to the eCollege dropbox named
-~Assg 13 Process List of Integers~ created for this submission.  Work
+\verb~Assg 13 Process List of Integers~ created for this submission.  Work
 submitted by the due date will be considered for evaluation.
+\section*{Requirements and Grading Rubrics}
+\label{sec-5}
+\subsection*{Program Execution, Output and Functional Requirements}
+\label{sec-5-1}
 
-* Requirements and Grading Rubrics
 
-** Program Execution, Output and Functional Requirements
-
-1. Your program must compile, run and produce some sort of output to
+\begin{enumerate}
+\item Your program must compile, run and produce some sort of output to
    be graded. 0 if not satisfied.
-1. 10+ pts. For correct implementation of the ~displayList()~ function.
-1. 20+ pts. For correct implementation of the ~averageList()~ function.
-1. 30+ pts. For correctly implementing the ~concatenateLists()~ function.
-1. 30+ pts. For correctly implementing the ~reverseList()~ function.
-1. 10+ pts. For demonstrating your functions adequately in your ~main()~ function.
+\item 10+ pts. For correct implementation of the \verb~displayList()~ function.
+\item 20+ pts. For correct implementation of the \verb~averageList()~ function.
+\item 30+ pts. For correctly implementing the \verb~concatenateLists()~ function.
+\item 30+ pts. For correctly implementing the \verb~reverseList()~ function.
+\item 10+ pts. For demonstrating your functions adequately in your \verb~main()~ function.
+\end{enumerate}
+\subsection*{Program Style}
+\label{sec-5-2}
 
-** Program Style
 
 Your programs must conform to the style and formatting guidelines
 given for this course.  The following is a list of the guidelines that
 are required for the assignment to be submitted this week.
 
-1. The file header for the file with your name and program information
+\begin{enumerate}
+\item The file header for the file with your name and program information
   and the function header for your main function must be present, and
   filled out correctly.
-1. A function header must be present for all functions you define.
+\item A function header must be present for all functions you define.
    You must document the purpose, input parameters and return values
    of all functions.  Your function headers must be formatted exactly
    as shown in the style guidelines for the class.
-1. You must indent your code correctly and have no embedded tabs in
+\item You must indent your code correctly and have no embedded tabs in
   your source code. (Don't forget about the Visual Studio Format
   Selection command).
-1. You must not have any statements that are hacks in order to keep
+\item You must not have any statements that are hacks in order to keep
    your terminal from closing when your program exits (e.g. no calls
    to system() ).
-1. You must have a single space before and after each binary operator.
-1. You must have a single blank line after the end of your declaration
+\item You must have a single space before and after each binary operator.
+\item You must have a single blank line after the end of your declaration
   of variables at the top of a function, before the first code
   statement.
-1. You must have a single blank space after , and ~;~ operators used as a
+\item You must have a single blank space after , and \verb~;~ operators used as a
   separator in lists of variables, parameters or other control
   structures.
-1. You must have opening ~{~ and closing ~}~ for control statement blocks
+\item You must have opening \verb~{~ and closing \verb~}~ for control statement blocks
   on their own line, indented correctly for the level of the control
   statement block.
-1. All control statement blocks (if, for, while, etc.) must have ~{~
-   ~}~ enclosing them, even when they are not strictly necessary
+\item All control statement blocks (if, for, while, etc.) must have \verb~{~
+   \verb~}~ enclosing them, even when they are not strictly necessary
    (when there is only 1 statement in the block).
-1. You should attempt to use meaningful variable and function names in
+\item You should attempt to use meaningful variable and function names in
    your program, for program clarity.  Of course, when required, you
    must name functions, parameters and variables as specified in the
    assignments.  Variable and function names must conform to correct
-   ~camelCaseNameingConvention~ .
-1. Put the ~*~ for pointer variable declarations next to the
-   type declaration, with no space between the type and the ~*~.
-   Also please follow the convention of using ~Ptr~ at the end of
+   \verb~camelCaseNameingConvention~ .
+\item Put the \verb~*~ for pointer variable declarations next to the
+   type declaration, with no space between the type and the \verb~*~.
+   Also please follow the convention of using \verb~Ptr~ at the end of
    names for pointer variables.
+\end{enumerate}
 
 Failure to conform to any of these formatting and programming practice
 guidelines for this assignment will result in at least 1/3 of the
@@ -157,3 +196,4 @@ guidelines may result in a loss of points, especially for those
 programming practices given in our Deitel textbook that have been in
 our required reading so far.
 
+\end{document}
