@@ -15,18 +15,19 @@
 using namespace std;
 
 
-/** Display a list of positive integers
- * Print out a list of positive integers on standard output. 
- * We are given a pointer to a sentinel terminated array of
- * positive integers.  -1 is used as the sentinel value to 
- * indicate the end of the list.
+/** Generate Random List
+ * Generate and return a linked list of nodes.  The values
+ * contained in the nodes will be randomly generated integers
+ * in the range from 1 to 20.  We are given a parameter,
+ * numNodes, which indicates how many nodes we should create and add
+ * to the linked list.  We return a pointer to the head node
+ * of the newly dynamically allocated list of integer items.
  *
- * @param posints A pointer to a list/array of positive integers.  The
- *   list should be terminated by a -1 for the last value in the list.
+ * @param nunNodes An integer, the number of nodes we are to
+ *   create in our randomly generated list of integer nodes.
  *
- * @returns void  This function does not reutrn an explicit value, but
- *    as a side effect the give list is formatted and displayed on
- *    standard output.
+ * @returns Node* A pointer to the head node of the linked
+ *    list of integers we create.
  */
 int posintprint(int* posints)
 {
