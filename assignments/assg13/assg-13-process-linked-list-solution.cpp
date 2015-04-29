@@ -166,23 +166,17 @@ float concatenateLists(Node* list1, Node* list2)
 }
 
 
-/** Concatenate Lists
- * Concatenate two lists to one another.  We are given the head pointer
- * to two different lists.  This function concatenates the second
- * list given to the end of the first.  No value is returned
- * explicitly by this function, but the last item of the first
- * list will be modified to point to the head of the second list,
- * thus effectively concatenating the two lists.
+/** Reverse a List
+ * Given a list of integer items, create a new list with the same number
+ * of items.  Cause all of the items in the new list to appear in the reverse
+ * order of the items as given in the original list.
  *
- * @param list1 A Node*, the pointer to the head of the
- *   list of interger nodes.
- * @param list2 A Node*, the pointer to the head of the
- *   other list of interger nodes, to be concatenated to end
- *   of the first list.
+ * @param list A Node*, the pointer to the head of the
+ *   list of interger nodes we are to reverse
  *
- * @returns void Nothing explicit is returned, but as a result
- *    of calling this function, the first list will be modified
- *    to have the second list concatenated on to the end of it.
+ * @returns Node* A new list of items of the same size as the original
+ *    list, but items are arranged in reverse sequential order from the
+ *    original list.
  */
 Node* reverseList(Node* list)
 {
