@@ -12,77 +12,42 @@
 | Due: | In Lab, Wednesday April 22, by 4:05 pm (lab end time) |
 
 * Objectives
-- Understand the relationship between arrays and pointers in C
-- Use pointers to an array of items, and process them.
-- Understand better C-string processing by implementing sentinel based processing functions.
+- Use dynamic memory.
+- Manipulate linked lists
+- Practice using pointers
+- Practice processing linked list data structures and following pointers.
 
 * Description
-In this lab we will implement a similar concept to passing arrays of
-characters for string processing by defining an array of (positive)
-integer type.  Arrays of positive integers can be of varying length.
-Since arrays of positive integers must always contain values $v[i] >=
-0$ we can use the value of ~-1~ as a sentinel character.  Thus we will
-not pass array sizes to function that process arrays of positive
-integers, instead all such function will expect that a ~-1~ terminal
-sentinel will be set as the final value for such arrays.  In this lab
-you will implement functions to accept a pointer to an array of
-positive integers, that implement the calculating the length of such
-arrays and comparing if two arrays are equal.
+Using the linked list data structure we developed in class today write
+the following function.  Write a function that creates
+a linked list of randomly generated integers.  This function
+will take a single parameter ~numNodes~ and generate that number of nodes
+in the linked list.  Then you will display the values in the linked
+list.
 
 Perform the following tasks:
 
-1. Create a function called ~posintprint()~.  This function should take
-   a pointer to an array of integers as its first and only argument.
-   This function is a void function, it doesn't display any result.  
-   However, this function should cause the values of the list of positive
-   integers provided to be displayed to standard output as its result.
-   See the example output for how this output should be displayed.
-   (As extra credit, try not to have the last unnecessary ',' printed out).
+1. Create a function called ~generateRandomList()~.  This function
+   should take a single parameter ~numNodes~ as its input.  It
+   will generate a linked list with that number of nodes in it.  The
+   ~Node~ of the linked list will hold a single integer value.  This
+   function should generate a random integer in the range from 1 to
+   20 and initialize each of the nodes it creates with this random
+   value.  This function should return a ~Node*~ pointer as its
+   result, which will be a pointer to the first node in the
+   generated linked list.  The nodes created by the linked list should
+   be generated using dynamic memory allocation.
 
-2. Create a function called ~posintlen()~.  This function should take
-   a pointer to an array of integers as its first and only argument.
-   This function will expect that the array is terminated with the
-   ~-1~ sentinel character correctly.  The function should return
-   an integer value, which is the number of positive integer values
-   that is contained in the array.
+2. In your main function, display the returned values from generating
+   a list with 15 nodes in it.  You should use a while loop to
+   follow the node links, and process and display the value of each
+   ~Node~ item in the list to standard output.  See the example 
+   output for how your results should be formatted.
 
-3. Create a function called ~posintcmp()~.  This function should take
-   a pointer to an array of (positive, ~-1~ terminated) integers as
-   its first and second parameters.  This function should return an
-   integer.  As with the ~strcmp()~ function, this function should
-   compare all corresponding elements of the two arrays of positive
-   integers provided as parameters.  It will return a 0 if all of the
-   elements in both arrays are 0 (you can assume for the lab for today
-   that the two items will be of the same length), and it will return
-   -1 or +1 as appropriate, depending on if the first array is less
-   than or greater than the second at the first position that differs
-   between the two input parameters.
-
-4. In your ~main()~ function make sure you demonstrate your code and
-   perform the following tests.  Test that your ~posintlen()~ function
-   works for lists of length 5 and of length 0.  Test that your 
-   ~posintcmp()~ function returns 0 for 2 equal lists, and +1 and
-   -1 for two unequal lists as appropriate.
-
-Example output is shown below (value between the { and } are being displayed
-by the ~posintprint()~ function for different lists of positive integers): 
+Example output is shown below: 
 
 
 #+begin_example
-List 1: { 5, 3, 8, 2, 7, }
-Length of List 1: 5
-
-List 2: { }
-Length of List 2: 0
-
-List 3: { 4, 2, 9, }
-List 4: { 4, 2, 9, }
-Result of posintcmp(list3, list4): 0
-
-List 3: { 4, 2, 9, }
-List 5: { 4, 2, 7, }
-Result of posintcmp(list3, list5): 1
-Result of posintcmp(list5, list3): -1
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
