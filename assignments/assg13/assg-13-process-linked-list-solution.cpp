@@ -183,7 +183,7 @@ Node* reverseList(Node* list)
   Node* newList = NULL;
   Node* newNode = NULL;
   
-  while (list != NUL)
+  while (list != NULL)
   {
     // create new node with copy of current list data item
     newNode = newNode(list->data);
