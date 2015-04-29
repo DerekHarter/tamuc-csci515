@@ -106,6 +106,29 @@ void displayList(Node* list)
 }
 
 
+/** Average List
+ * Average the values in a linked list of integer data.  We
+ * are given the head node of a linked list of integers, and w
+ * return the floating point value that is the average of the
+ * integer valus in the linked list.
+ *
+ * @param list A Node*, the pointer to the head of the
+ *   list of interger nodes.
+ *
+ * @returns float The average of the values in the list
+ *    of integers.
+ */
+void averageList(Node* list)
+{
+  while (list != NULL)
+  {
+    cout << list->data << " -> ";
+    list = list->nextPtr;
+  }
+  cout << "EOL" << endl;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -120,7 +143,7 @@ int main()
   Node* list;
 
   list = generateRandomList(15);
-  cout << "List of 15 integers:" << endl;
+  cout << "List of 10 integers:" << endl;
   displayList(list);
   
   // return 0 to indicate successful completion
