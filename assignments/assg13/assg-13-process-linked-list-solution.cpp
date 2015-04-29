@@ -148,10 +148,11 @@ float averageList(Node* list)
  *   other list of interger nodes, to be concatenated to end
  *   of the first list.
  *
- * @returns float The average of the values in the list
- *    of integers.
+ * @returns void Nothing explicit is returned, but as a result
+ *    of calling this function, the first list will be modified
+ *    to have the second list concatenated on to the end of it.
  */
-float averageList(Node* list)
+float concatenateLists(Node* list1, Node* list2)
 {
   float sum = 0.0;
   float count = 0.0;
