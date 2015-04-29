@@ -146,11 +146,15 @@ void averageList(Node* list)
 int main()
 {
   Node* list;
+  float average;
 
-  list = generateRandomList(15);
+  // demonstrate using the averageList() function to process list
+  list = generateRandomList(10);
+  average= averageList(list);
   cout << "List of 10 integers:" << endl;
   displayList(list);
-  
+  cout << "Average of list: " << average << endl;
+
   // return 0 to indicate successful completion
   return 0;
 }
