@@ -154,17 +154,15 @@ float averageList(Node* list)
  */
 float concatenateLists(Node* list1, Node* list2)
 {
-  float sum = 0.0;
-  float count = 0.0;
-  
-  while (list != NULL)
+  // find last node in list 1
+  Node* nodePtr = list1;
+  while (nodePtr->nextPtr != NULL)
   {
-    sum += (float)(list->data);
-    count += 1.0;
-    list = list->nextPtr;
+    nodePtr = nodePtr->nextPtr;
   }
-
-  return (sum / count);
+  
+  // point last node to head of list 2
+  nodePtr->nextPtr = list2;
 }
 
 
@@ -197,7 +195,11 @@ int main()
   displayList(list1);
   cout << "List 2:" << endl;
   displayList(list2);
-  
+  concatenateLists(list1, list2);
+  cout << "After concatenating: " << endl;
+  displayList(list1);
+  cout << endl;
+
   // return 0 to indicate successful completion
   return 0;
 }
