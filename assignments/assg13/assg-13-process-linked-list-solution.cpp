@@ -120,12 +120,15 @@ void displayList(Node* list)
  */
 void averageList(Node* list)
 {
+  float sum = 0.0;
+  float count = 0.0;
   while (list != NULL)
   {
-    cout << list->data << " -> ";
-    list = list->nextPtr;
+    sum += (float)(list->data);
+    count += 1.0;
   }
-  cout << "EOL" << endl;
+
+  return (sum / count);
 }
 
 
