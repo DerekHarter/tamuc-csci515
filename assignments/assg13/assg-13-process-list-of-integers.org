@@ -23,6 +23,11 @@ in order to create randomly generated linked lists to test these functions.
 
 Perform the following tasks:
 
+1. Implement a function called ~displayList()~.  This function should
+   take a list of integers as its input and display the list on
+   standard output.  Use this function to demonstrate your
+   implementations of the following functions.
+
 1. Create a function called ~averageList()~.  This function should
    take a pointer to the head node in a linked list of integers as its
    only parameter.  This function should process all elements in the
@@ -30,10 +35,10 @@ Perform the following tasks:
    floating point arithmetic to sum up and average the values, and
    return a floating point value as the result of this function.  In
    your ~main()~ function, create a randomly generated list with 10
-   elements, and demonstrate calling this function to find the average
-   of the 10 values in your list.
+   elements, display the list, and demonstrate calling this function
+   to find the average of the 10 values in your list.
 
-2. Implement a function called ~concatenateLists()~.  This funciton
+2. Implement a function called ~concatenateLists()~.  This function
    will take two linked lists as its input parameters.  This function
    should cause the second linked list that is passed in to be
    concatenated on to the end of the first linked list.  To do this,
@@ -42,17 +47,26 @@ Perform the following tasks:
    If I were writing this, I might create a small helper function that
    returns the last node in a linked list, called something like
    ~findLastNode()~, and use this result to implement the concatenate
-   operation.
+   operation.  The result of calling this function is that the first
+   list will be modified.  Thus this function does not return a new
+   result nor create a new list.  But after calling the function, the
+   pointer to the first list will now point to the concatenated result
+   of appending the second list.  In your ~main()~ function, create
+   two lists of integers of size 4 and 3, display the two lists.  Then
+   use the concatentate function and show that the resulting lists are
+   concatenated again by displaying the first list.
 
-3. Implement a ~posintfind()~.  This function is similar to the
-   ~strchr~ function.  This function takes a pointer to an array of
-   positive integers as its first parameter, and a single integer as
-   its second parameter (the value to be searched for).  This function
-   should perform a linear search of the array of positive integers,
-   and return the index of the first location where the value being
-   searched for is found.  This function will return a ~-1~ if the
-   value being searched for is not found in the array of positive
-   integers.
+3. Implement a function called ~reverseList()~.  This function will
+   take a list of integers as input (a singly linked list), and it
+   will return a new list.  This function should construct a new list
+   that will have all of the items of the original list, but in
+   reverse order.  For example, given the list ~5 -> 3 -> 2 -> NULL~ 
+   this function would return a new list ~2 -> 3 -> 5 -> NULL~.  This
+   function should not destroy the original list, it needs to dynamically
+   create new ~Node~ items and create a new list, and copy the
+   integer values from the original list nodes to the new list
+   nodes.  This function will return the pointer to the head of this
+   new list as the result of calling this function.  
 
 4. Create a function called ~posintcat()~.  This function is similar
    to the ~strcat()~ function.  This function takes two pointers to
