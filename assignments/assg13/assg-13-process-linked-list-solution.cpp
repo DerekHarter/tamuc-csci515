@@ -180,6 +180,20 @@ float concatenateLists(Node* list1, Node* list2)
  */
 Node* reverseList(Node* list)
 {
+  Node* newList = NULL;
+  Node* newNode = NULL;
+  
+  while (list != NUL)
+  {
+    // create new node with copy of current list data item
+    newNode = newNode(list->data);
+
+    // make new node the head of the newList
+    newNode->nextPtr = newList;
+    newList = newNode;
+  }
+
+  return newList;
 }
 
 
