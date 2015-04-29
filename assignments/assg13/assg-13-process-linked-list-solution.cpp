@@ -159,6 +159,10 @@ int main()
   // demonstrate concatentate of two lists
   Node* list1 = generateRandomList(4);
   Node* list2 = generateRandomList(3);
+  cout << "List 1:" << endl;
+  displayList(list1);
+  cout << "List 2:" << endl;
+  displayList(list2);
   
   // return 0 to indicate successful completion
   return 0;
