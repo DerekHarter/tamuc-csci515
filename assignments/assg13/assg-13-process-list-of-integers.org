@@ -79,6 +79,10 @@ Here is an example output from running a correct implementation of
 this assignment:
 
 #+begin_example
+List of 10 integers:
+4 -> 7 -> 18 -> 16 -> 14 -> 16 -> 7 -> 13 -> 10 -> 2 -> EOL
+Average of list: 10.7
+
 #+end_example
 
 *NOTE*: Now that our programs have more functions than just the
