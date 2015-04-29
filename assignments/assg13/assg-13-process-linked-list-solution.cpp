@@ -231,6 +231,15 @@ int main()
   displayList(list1);
   cout << endl;
 
+  // demonstrate revrse list
+  Node* list3 = generateRandomList(8);
+  Node* reverseList = reverseList(list3);
+  cout << "List before reverse:" << endl;
+  displayList(list3);
+  cout << "List after reverse:" << endl;
+  displayList(reverseList);
+  cout << endl;
+  
   // return 0 to indicate successful completion
   return 0;
 }
