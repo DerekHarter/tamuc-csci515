@@ -1,8 +1,8 @@
-#+TITLE:     Assg 12: Positive Ints Library
+#+TITLE:     Assg 13: Process List of Integers
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
 #+DATE:      <2015-04-21 Tue>
-#+DESCRIPTION: Assg 12: Positive Ints Library
+#+DESCRIPTION: Assg 13: Process List of Integers
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
