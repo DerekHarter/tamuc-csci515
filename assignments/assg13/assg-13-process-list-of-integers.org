@@ -33,16 +33,16 @@ Perform the following tasks:
    elements, and demonstrate calling this function to find the average
    of the 10 values in your list.
 
-2. Implement a ~posintcpy()~ function.  This function takes a
-   destination as its first parameter and a source as its second
-   parameter (both of type pointer to an array of positive integers).
-   This function is a void function, it does not return any explicit
-   result.  This function assumes that there is enough space allocated
-   for the destination so that all of the values from the source list
-   can be copied successfully.  This function should cause all of the
-   values from the source array of positive integers to be copied to
-   the destination array space (including the ~-1~ terminating
-   sentinel).
+2. Implement a function called ~concatenateLists()~.  This funciton
+   will take two linked lists as its input parameters.  This function
+   should cause the second linked list that is passed in to be
+   concatenated on to the end of the first linked list.  To do this,
+   you need to find the last ~Node~ in the first linked list, then set
+   its next pointer to point to the head of the second linked list.
+   If I were writing this, I might create a small helper function that
+   returns the last node in a linked list, called something like
+   ~findLastNode()~, and use this result to implement the concatenate
+   operation.
 
 3. Implement a ~posintfind()~.  This function is similar to the
    ~strchr~ function.  This function takes a pointer to an array of
