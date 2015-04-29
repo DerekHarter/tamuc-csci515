@@ -191,6 +191,9 @@ Node* reverseList(Node* list)
     // make new node the head of the newList
     n->nextPtr = newList;
     newList = n;
+
+    // process next node in original list
+    list = list->nextPtr;
   }
 
   return newList;
