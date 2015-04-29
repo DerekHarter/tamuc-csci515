@@ -28,7 +28,7 @@ Perform the following tasks:
    standard output.  Use this function to demonstrate your
    implementations of the following functions.
 
-1. Create a function called ~averageList()~.  This function should
+2. Create a function called ~averageList()~.  This function should
    take a pointer to the head node in a linked list of integers as its
    only parameter.  This function should process all elements in the
    list, to find their average value and return the result.  Use
@@ -38,7 +38,7 @@ Perform the following tasks:
    elements, display the list, and demonstrate calling this function
    to find the average of the 10 values in your list.
 
-2. Implement a function called ~concatenateLists()~.  This function
+3. Implement a function called ~concatenateLists()~.  This function
    will take two linked lists as its input parameters.  This function
    should cause the second linked list that is passed in to be
    concatenated on to the end of the first linked list.  To do this,
@@ -56,7 +56,7 @@ Perform the following tasks:
    use the concatentate function and show that the resulting lists are
    concatenated again by displaying the first list.
 
-3. Implement a function called ~reverseList()~.  This function will
+4. Implement a function called ~reverseList()~.  This function will
    take a list of integers as input (a singly linked list), and it
    will return a new list.  This function should construct a new list
    that will have all of the items of the original list, but in
@@ -66,23 +66,9 @@ Perform the following tasks:
    create new ~Node~ items and create a new list, and copy the
    integer values from the original list nodes to the new list
    nodes.  This function will return the pointer to the head of this
-   new list as the result of calling this function.  
-
-4. Create a function called ~posintcat()~.  This function is similar
-   to the ~strcat()~ function.  This function takes two pointers to
-   arrays of positive integers null terminated with a ~-1~ sentinel
-   character.  This is a void function.  The first parameters works as
-   a source, and the second as the destination.  However, unlike the
-   copy function, this function should concatenate the source array
-   values on to the end of the destination array.  You can assume that
-   the destination array has enough extra allocated space in order to
-   hold the values that will be appended to the end.  For example, if
-   ~int dest[5] = {1, 2, -1}~ and ~int src[] = {3, 4, -1}~, then the
-   result of calling ~posintcat(src, dest)~ will be that ~dest~
-   now has the values ~{1, 2, 3, 4, -1}~.  *Extra Credit:* much of
-   the functionality of this function has already been accomplished
-   in other functions.  Reuse functions like ~posintlen~ and
-   ~posintcpy~ to implement this function.
+   new list as the result of calling this function.  In your ~main~
+   function create a list of 8 integers, reverse it, and display
+   the original and the reversed list.
 
 5. Demonstrate all of your functions in your ~main()~ function.  Make
    sure you adequately test and demonstrate the correct working of all
