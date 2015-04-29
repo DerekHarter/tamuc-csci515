@@ -127,6 +127,7 @@ void averageList(Node* list)
   {
     sum += (float)(list->data);
     count += 1.0;
+    list = list->nextPtr;
   }
 
   return (sum / count);
