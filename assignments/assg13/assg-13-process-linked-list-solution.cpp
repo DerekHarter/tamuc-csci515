@@ -154,7 +154,9 @@ int main()
   cout << "List of 10 integers:" << endl;
   displayList(list);
   cout << "Average of list: " << average << endl;
+  cout << endl;
 
+  //
   // return 0 to indicate successful completion
   return 0;
 }
