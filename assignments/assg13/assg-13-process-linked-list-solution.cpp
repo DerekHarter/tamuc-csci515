@@ -4,9 +4,9 @@
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
  * @date   April 12, 2015
- * @assg   Lab 13
+ * @assg   Assg 13 Linked List Processing
  *
- * @description Create a function to randomly generate a linked list of integer
+ * @description Example functions to process linked lists of integer data.
  *    values.
  */
 #include <iostream>
