@@ -156,7 +156,10 @@ int main()
   cout << "Average of list: " << average << endl;
   cout << endl;
 
-  //
+  // demonstrate concatentate of two lists
+  Node* list1 = generateRandomList(4);
+  Node* list2 = generateRandomList(3);
+  
   // return 0 to indicate successful completion
   return 0;
 }
