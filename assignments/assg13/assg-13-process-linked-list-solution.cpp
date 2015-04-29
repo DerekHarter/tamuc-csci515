@@ -122,6 +122,7 @@ void averageList(Node* list)
 {
   float sum = 0.0;
   float count = 0.0;
+  
   while (list != NULL)
   {
     sum += (float)(list->data);
