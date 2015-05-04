@@ -6,7 +6,7 @@
  * @date   May 5, 2015
  * @assg   Test 02
  *
- * @description Example solution of Text 02
+ * @description Example solution of Test 02
  */
 #include <iostream>
 #include <fstream>
