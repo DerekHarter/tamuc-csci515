@@ -14,6 +14,80 @@
 using namespace std;
 
 
+/** Bubble Sort
+ * Sort an array of integers using a Bubble sort.  Bubblesort works in this manner.
+ * On the first pass we start at index 0 and compare successive items.  We
+ * swap the items if they are out of order.  The result is that on the first
+ * pass, the largest item will be "bubbled up" to the largest index.  On the
+ * next pass, we do the same thing, but since the last item is alredy bubbled
+ * into place, we only pass through the N-1 items.  We do this for N passes.
+ * Bubble sort is very inefficient, it is an O(N^2) algorithm.
+ *
+ * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
+ *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
+ *
+ * @returns void Nothing is returned explicitly but as a result of calling this function the array
+ *   that is passed in will be sorted into ascending order.
+ */
+void bubbleSort(int values[], int size)
+{
+  // outer loop, perform N passes
+  for (int pass = 0; pass < size; pass++)
+  {
+    // inner loop, bubble up items from index 0 up to size-pass-1 index
+    for (int idx = 0; idx < (size - pass - 1); idx++)
+    {
+      // if the values are out of order, swap them
+      if (values[idx] > values[idx + 1])
+      {
+	int tmp = values[idx];
+	values[idx] = values[idx + 1];
+	values[idx + 1] = tmp;
+      }
+    }
+  }
+}
+
+
+/** Bubble Sort
+ * Sort an array of floats using a Bubble sort.  Sort the array into
+ * descending order.  Bubblesort works in this manner.  On the first
+ * pass we start at index 0 and compare successive items.  We swap the
+ * items if they are out of order.  The result is that on the first
+ * pass, the largest item will be "bubbled up" to the largest index.
+ * On the next pass, we do the same thing, but since the last item is
+ * alredy bubbled into place, we only pass through the N-1 items.  We
+ * do this for N passes.  Bubble sort is very inefficient, it is an
+ * O(N^2) algorithm.
+ *
+ * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
+ *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param size int The size of the array to sort.
+ *
+ * @returns void Nothing is returned explicitly but as a result of calling this function the array
+ *   that is passed in will be sorted into ascending order.
+ */
+void bubbleSort(int values[], int size)
+{
+  // outer loop, perform N passes
+  for (int pass = 0; pass < size; pass++)
+  {
+    // inner loop, bubble up items from index 0 up to size-pass-1 index
+    for (int idx = 0; idx < (size - pass - 1); idx++)
+    {
+      // if the values are out of order, swap them
+      if (values[idx] > values[idx + 1])
+      {
+	int tmp = values[idx];
+	values[idx] = values[idx + 1];
+	values[idx + 1] = tmp;
+      }
+    }
+  }
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will beigin with this function.
