@@ -99,16 +99,31 @@ Perform the following tasks:
    array to randomly initialize the fields of all of the ~Data~ items
    with random data.
 
-3. Write a function named ~calculateHypotenuse~.  The function will
-   take two floating point values as parameters, named ~a~ and ~b~.
-   The function should calculate the hypotenuse of a right triangle
-   using the ~a~ and ~b~ parameters, according to this formula: $$ c =
-   \sqrt{a^2 + b^2} $$ e.g. the hypotenuse is the square root of
-   adding together the square of a and b.  This value should be
-   calculated and returned (as a floating point result) as a result of
-   calling your function.  In your main function, show an example of
-   calling your function with values of $3.0$ and $4.0$ for the ~a~
-   and ~b~ parameters.
+3. The following is the simple definition of a self-referential
+   structure we used in class for creating linked lists
+#+begin_src C
+// A self-referential structure
+struct Node
+{
+  int data;
+  Node* nextPtr;
+};
+#+end_src
+   Add this structure definition to your test02.cpp file.  In your
+   ~main()~ function, create a linked list by hand of 4 nodes.  Name
+   the nodes ~node1~, ~node2~, ~node3~ and ~node4~, and initialize
+   them with the integer values 10, 20, 30, 40, respectively.  Also
+   link together the nodes into a linked list, such that ~node1~ is
+   the head node, and it points to ~node2~ which points to ~node3~
+   which points to ~node4~.  ~node4~ should also be correctly
+   initialized to be the final node in the linked list (using the NULL
+   pointer convention).  Create a pointer to a ~Node~ item, and set it
+   so it is pointing to the head ~node1~ of your linked list.  Demonstrate
+   accessing the value in ~node4~ from your pointer to the head node using
+   a single output statement (e.g. starting from your pointer to the head
+   node, follow the nextPtr pointers till you arrive at ~node4~ and then
+   access its value).  An example of the desired output for this task
+   3 is shown in the example output below.
 
 4. Create an array of integers of size $10$ named ~values~.  Create a
    function named ~initNegative~ that takes an array of integers and a
