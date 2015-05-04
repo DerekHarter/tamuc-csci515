@@ -3,10 +3,10 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Gnu C/C++, Emacs
- * @date   February 24, 2015
- * @assg   Test 01
+ * @date   May 5, 2015
+ * @assg   Test 02
  *
- * @description Example solution of Text 01
+ * @description Example solution of Text 02
  */
 #include <iostream>
 #include <fstream>
