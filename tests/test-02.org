@@ -1,8 +1,8 @@
-#+TITLE:     Test 01
+#+TITLE:     Test 02
 #+AUTHOR:    CSci 515 Spring 2015
 #+EMAIL:     derek@harter.pro
-#+DATE:      <2015-02-24 Tue>
-#+DESCRIPTION: Test 01 Spring 2015
+#+DATE:      <2015-05-04 Mon>
+#+DESCRIPTION: Test 02 Spring 2015
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 #+LATEX_HEADER: \usepackage{minted}
@@ -13,10 +13,13 @@
 
 * Description
 You have 2 hours (our regularly scheduled lab time) to complete the
-following tasks.  Create a single file, named test01.cpp, in a visual
-studio project called Test01.  Set up the Visual Studio projects using
+following tasks.  Create a single file, named test02.cpp, in a visual
+studio project called Test02.  Set up the Visual Studio projects using
 the normal settings for our class and labs, as we have practiced for
-the past 7 weeks.
+the past 15 weeks.  The file you submit to eCollege should be the
+resulting test02.cpp.  It should contain only a single ~main()~
+function, and any other functions and code you are asked to write for
+the following tasks.
 
 Perform the following tasks:
 
