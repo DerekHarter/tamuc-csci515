@@ -61,12 +61,14 @@ void bubbleSort(int values[], int size)
  * do this for N passes.  Bubble sort is very inefficient, it is an
  * O(N^2) algorithm.
  *
- * @param values An array of integers.  The array to be sorted.  The array is passed by reference and
- *   is sorted in place in memory.  The array is sorted in ascending order.
+ * @param values An array of integers.  The array to be sorted.  The
+ *   array is passed by reference and is sorted in place in memory.
+ *   The array is sorted in ascending order.
  * @param size int The size of the array to sort.
  *
- * @returns void Nothing is returned explicitly but as a result of calling this function the array
- *   that is passed in will be sorted into ascending order.
+ * @returns void Nothing is returned explicitly but as a result of
+ *   calling this function the array that is passed in will be sorted
+ *   into ascending order.
  */
 void bubbleSort(int values[], int size)
 {
