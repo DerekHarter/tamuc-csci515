@@ -78,7 +78,6 @@ Perform the following tasks:
    after the array has been sorted.  See the example output below for
    how you should format your resulting output for this task 1.
 
-
 2. After the previous task in your main function, write code to
    perform the following task.  I have given you a file named
    "test-01-data.txt".  This file has a single integer value on each
