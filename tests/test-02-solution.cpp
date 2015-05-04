@@ -116,7 +116,7 @@ int main()
 
   bubbleSortFloats(task1Values, TASK1_SIZE);
   cout <, "Task 1: array of floats after sorting:" << endl;
-  for (int idx=0; idx < TASK1_SIZE; ids++)
+  for (int idx=0; idx < TASK1_SIZE; idx++)
   {
     cout << "val[" << idx << "] = " << task1Values[idx] << endl;
   }
