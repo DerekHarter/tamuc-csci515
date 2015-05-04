@@ -73,7 +73,7 @@ void bubbleSort(int values[], int size)
  *   calling this function the array that is passed in will be sorted
  *   into ascending order.
  */
-void bubbleSort(int values[], int size)
+void bubbleSort(float values[], int size)
 {
   // outer loop, perform N passes
   for (int pass = 0; pass < size; pass++)
@@ -82,7 +82,7 @@ void bubbleSort(int values[], int size)
     for (int idx = 0; idx < (size - pass - 1); idx++)
     {
       // if the values are out of order, swap them
-      if (values[idx] > values[idx + 1])
+      if (values[idx] < values[idx + 1])
       {
 	int tmp = values[idx];
 	values[idx] = values[idx + 1];
