@@ -144,44 +144,6 @@ Your program output for the 4 previous tasks should look something
 close to the following when I run your program:
 
 #+begin_example
------ Task 1 -----
-3
-1
-I generated a 1!
-2
-2
-1
-I generated a 1!
-3
-2
-1
-I generated a 1!
-4
-4
-
------ Task 2 -----
-Read value from file: 3
-Read value from file: 1
-Read value from file: 42
-Read value from file: 9
-Read value from file: 11
-Read value from file: 12
-Read value from file: 7
-
------ Task 3 -----
-Hypotenuse of triangle with sides 3 and 4: 5
-
------ Task 4 -----
-0
--1
--2
--3
--4
--5
--6
--7
--8
--9
 
 #+end_example
 
