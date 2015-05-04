@@ -31,7 +31,14 @@ using namespace std;
  */
 int main()
 {
+  // Perform Task 1 here
 
-  //  Return 0 to indicate program terminated successfully
+  // Perform Task 2 here
+
+  // Perform Task 3 here
+
+  // Perform Task 4 here
+
+  // Return 0 to indicate program terminated successfully
   return 0;
 }
