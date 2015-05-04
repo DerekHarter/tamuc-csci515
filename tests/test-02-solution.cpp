@@ -118,7 +118,7 @@ int main()
   cout << "Task 1: array of floats after sorting:" << endl;
   for (int idx=0; idx < TASK1_SIZE; idx++)
   {
-    cout << "val[" << idx << "] = " << task1Values[idx] << endl;
+    cout << "val[" << idx << "] = " << fixed << task1Values[idx] << endl;
   }
 
   // Perform Task 2 here
