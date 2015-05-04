@@ -168,27 +168,17 @@ time in order to receive credit.
    (most) all of the standard class style/formatting guidelines that
    we have been practicing and using in our labs and assignments for
    this course.
-1. 20 pts. Task 1.  You must use an index controlled for loop, and
-   have an if statement.  Your output for this task must be as
-   shown in the example output.
-1. 20 pts.  Task 2.  You must successfully open up and read from the
-   given file.  You should use defensive programming to detect when
-   the file is not opened or found correctly.  You must use a sentinel
-   controlled loop to read all values from the file.  Your output
-   for task 2 must look like that shown in the example output.
-1. 25 pts. Task 3.  You must correctly name and define the function as
-   required for the task.  The function must accept the correct
-   parameters as input, and return the correct result type.  The
-   function must be implemented correctly to perform the desired
-   calculation.
-1. 25 pts.  Task 4. You must correctly name and define the function as
-   required for this task.  The function should take the array and the
-   array size as parameters and initialize the array as specified.
-   You must define the array in your main loop and invoke the function
-   with your array to be initialized.  You should use a defined
-   constant to specify the size of the array in main.  Your should
-   display your array after being initialized, as shown in the example
-   output.
+1. 20 pts. Task 1.  You must successfully modify the sort function as
+   required in task 1 and demonstrate calling it.
+1. 25 pts.  Task 2.  You must define the structure and enumerated type
+   as described.  Your function must work to correctly initialize
+   an array of ~Data~ structures with random values as described.
+1. 20 pts. Task 3.  You must correctly create the indicated linked
+   list by hand as described.  You must demonstrate following
+   pointers to get the value at ~node4~ from the head node as
+   required.
+1. 25 pts.  Task 4. You must correctly define the insert at back
+   function as described, and it must be implemented correctly.
 
 
 ** Program Style
