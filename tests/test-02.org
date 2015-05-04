@@ -101,14 +101,14 @@ Perform the following tasks:
 
 3. The following is the simple definition of a self-referential
    structure we used in class for creating linked lists
-#+begin_src C
-// A self-referential structure
-struct Node
-{
-  int data;
-  Node* nextPtr;
-};
-#+end_src
+   #+begin_src C
+   // A self-referential structure
+   struct Node
+   {
+     int data;
+     Node* nextPtr;
+   };
+   #+end_src
    Add this structure definition to your test02.cpp file.  In your
    ~main()~ function, create a linked list by hand of 4 nodes.  Name
    the nodes ~node1~, ~node2~, ~node3~ and ~node4~, and initialize

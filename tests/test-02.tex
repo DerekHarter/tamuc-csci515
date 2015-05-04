@@ -1,4 +1,4 @@
-% Created 2015-05-04 Mon 10:28
+% Created 2015-05-04 Mon 10:37
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -132,16 +132,32 @@ void bubbleSort(int values[], int size)
    structures, and demonstrate calling your \verb~generateData()~ on this
    array to randomly initialize the fields of all of the \verb~Data~ items
    with random data.
-\item Write a function named \verb~calculateHypotenuse~.  The function will
-   take two floating point values as parameters, named \verb~a~ and \verb~b~.
-   The function should calculate the hypotenuse of a right triangle
-   using the \verb~a~ and \verb~b~ parameters, according to this formula: $$ c =
-   \sqrt{a^2 + b^2} $$ e.g. the hypotenuse is the square root of
-   adding together the square of a and b.  This value should be
-   calculated and returned (as a floating point result) as a result of
-   calling your function.  In your main function, show an example of
-   calling your function with values of $3.0$ and $4.0$ for the \verb~a~
-   and \verb~b~ parameters.
+\item The following is the simple definition of a self-referential
+   structure we used in class for creating linked lists
+
+\begin{verbatim}
+// A self-referential structure
+struct Node
+{
+  int data;
+  Node* nextPtr;
+};
+\end{verbatim}
+   Add this structure definition to your test02.cpp file.  In your
+   \verb~main()~ function, create a linked list by hand of 4 nodes.  Name
+   the nodes \verb~node1~, \verb~node2~, \verb~node3~ and \verb~node4~, and initialize
+   them with the integer values 10, 20, 30, 40, respectively.  Also
+   link together the nodes into a linked list, such that \verb~node1~ is
+   the head node, and it points to \verb~node2~ which points to \verb~node3~
+   which points to \verb~node4~.  \verb~node4~ should also be correctly
+   initialized to be the final node in the linked list (using the NULL
+   pointer convention).  Create a pointer to a \verb~Node~ item, and set it
+   so it is pointing to the head \verb~node1~ of your linked list.  Demonstrate
+   accessing the value in \verb~node4~ from your pointer to the head node using
+   a single output statement (e.g. starting from your pointer to the head
+   node, follow the nextPtr pointers till you arrive at \verb~node4~ and then
+   access its value).  An example of the desired output for this task
+   3 is shown in the example output below.
 \item Create an array of integers of size $10$ named \verb~values~.  Create a
    function named \verb~initNegative~ that takes an array of integers and a
    size as its two input parameters.  This will be a void function (it
