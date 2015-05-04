@@ -111,6 +111,8 @@ void bubbleSort(float values[], int size)
 int main()
 {
   // Perform Task 1 here
+  const int TASK1_SIZE = 5;
+  float task1Values[TASK1_SIZE] = {-3.8, 4.2, 9.7, 2.5, 5.6};
 
   // Perform Task 2 here
 
