@@ -73,7 +73,7 @@ void bubbleSort(int values[], int size)
  *   calling this function the array that is passed in will be sorted
  *   into ascending order.
  */
-void bubbleSort(float values[], int size)
+void bubbleSortFloats(float values[], int size)
 {
   // outer loop, perform N passes
   for (int pass = 0; pass < size; pass++)
