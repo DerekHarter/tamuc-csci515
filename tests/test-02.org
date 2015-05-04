@@ -94,10 +94,14 @@ Perform the following tasks:
    10.0.  For the ~rank~ integer, create a value in the range from 0
    to 10. And generate a random number from 0 to 2 to use to randomly
    pick one of the performance categories for the ~perfCategory~
-   field.  In your main function, create an array of 20 ~Data~
+   field.  In your ~main~ function, create an array of 20 ~Data~
    structures, and demonstrate calling your ~generateData()~ on this
    array to randomly initialize the fields of all of the ~Data~ items
-   with random data.
+   with random data.  In your ~main~ function, after generating the
+   random data, display the speed, rank and perfCategory for the item
+   at index 3 of your array.  See the example output below, but
+   remember since you generate the data randomly, your values for the
+   item at index 3 will of course differ from those shown.
 
 3. The following is the simple definition of a self-referential
    structure we used in class for creating linked lists
@@ -144,6 +148,21 @@ Your program output for the 4 previous tasks should look something
 close to the following when I run your program:
 
 #+begin_example
+Task 1: array of floats after sorting:
+val[0] = 9.7
+val[1] = 5.6
+val[2] = 4.2
+val[3] = 2.5
+val[4] = -3.8
+
+Task 2: values for item at index 3:
+  speed: 8.35223
+  rank: 8
+  perfCategory: 2
+
+Task 3: value of node4, accessed through pointer to head node: 40
+
+Task 4: value of node5, accessed through pointer to head node: 50
 
 #+end_example
 
