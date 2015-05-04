@@ -125,17 +125,20 @@ Perform the following tasks:
    access its value).  An example of the desired output for this task
    3 is shown in the example output below.
 
-4. Create an array of integers of size $10$ named ~values~.  Create a
-   function named ~initNegative~ that takes an array of integers and a
-   size as its two input parameters.  This will be a void function (it
-   will return no result).  This functions should initialize each
-   value to be equal to the negative of the index, e.g. the value at
-   index $0$ will be $0$, the value at index $1$ will be $-1$, the
-   value at index $2$ will be $-2$, etc.  Call your function in
-   ~main()~ to initialize the array.  In ~main~, after initializing
-   the array, write a loop that displays the contents of the array.
-   An example of the output from this task is shown below as the last
-   part of the example output.
+4. Write a function to insert a node into a linked list of nodes at
+   the end of the linked list.  This function should be called
+   ~insertAtBack()~.  This function will take a pointer to the head of
+   a linked list of ~Node~ as the first parameter and to a single
+   unlinked ~Node~ as the second parameter, which will be inserted on
+   the end of the list.  This function should insert the given ~Node~
+   on to the end of the linked list of nodes it is given.  For this
+   test, you can ignore the case were the given list of nodes is
+   empty, and for now just assume you are always given a valid list of
+   nodes with at least 1 node in the list.  In your main function,
+   create a new node called ~node5~ and initilaize it with the
+   value 50.  Demonstrate calling your function in ~main()~ by having
+   it append this node ~node5~ to the end of the list you created by
+   hand in task 3.
 
 Your program output for the 4 previous tasks should look something
 close to the following when I run your program:
