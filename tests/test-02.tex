@@ -1,4 +1,4 @@
-% Created 2015-05-04 Mon 10:12
+% Created 2015-05-04 Mon 10:28
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -112,15 +112,26 @@ void bubbleSort(int values[], int size)
    a loop in your \verb~main()~ function to display the values in the array
    after the array has been sorted.  See the example output below for
    how you should format your resulting output for this task 1.
-\item After the previous task in your main function, write code to
-   perform the following task.  I have given you a file named
-   ``test-01-data.txt''.  This file has a single integer value on each
-   line.  Open this file, and inside of a sentinel controlled loop,
-   read in the values from the file and display the values to standard
-   output.  Your sentinel controlled loops should simply be a while
-   loop that executes until the read from the file fails.  The output
-   from reading the file will be exactly as given in the example
-   output shown below.
+\item Create a structure called \verb~Data~.  This structure should have 3
+   member fields.  The first field is called \verb~speed~, and should be of
+   type float, and the second field is called \verb~rank~ and should be of
+   type int.  The third field is a discrete category variable.  You
+   should define an enumerated type, called \verb~Category~.  The valid
+   categories are \verb~HIGH_PERFORMANCE~, \verb~MID_PERFORMANCE~,
+   \verb~LOW_PERFORMANCE~.  The \verb~Data~ structure should have a third field
+   named \verb~perfCategory~ of type \verb~Category~.  Write a function called
+   \verb~generateData()~ that takes an array of \verb~Data~ items as its first
+   parameter, and an integer variable called \verb~size~ as its second
+   parameter.  This function should initialize all of the fields in
+   each item of the given array of \verb~Data~ items with random values.
+   For the \verb~speed~ float, create a value in the range from 0.0 to
+   10.0.  For the \verb~rank~ integer, create a value in the range from 0
+   to 10. And generate a random number from 0 to 2 to use to randomly
+   pick one of the performance categories for the \verb~perfCategory~
+   field.  In your main function, create an array of 20 \verb~Data~
+   structures, and demonstrate calling your \verb~generateData()~ on this
+   array to randomly initialize the fields of all of the \verb~Data~ items
+   with random data.
 \item Write a function named \verb~calculateHypotenuse~.  The function will
    take two floating point values as parameters, named \verb~a~ and \verb~b~.
    The function should calculate the hypotenuse of a right triangle

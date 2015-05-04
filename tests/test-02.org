@@ -78,15 +78,26 @@ Perform the following tasks:
    after the array has been sorted.  See the example output below for
    how you should format your resulting output for this task 1.
 
-2. After the previous task in your main function, write code to
-   perform the following task.  I have given you a file named
-   "test-01-data.txt".  This file has a single integer value on each
-   line.  Open this file, and inside of a sentinel controlled loop,
-   read in the values from the file and display the values to standard
-   output.  Your sentinel controlled loops should simply be a while
-   loop that executes until the read from the file fails.  The output
-   from reading the file will be exactly as given in the example
-   output shown below.
+2. Create a structure called ~Data~.  This structure should have 3
+   member fields.  The first field is called ~speed~, and should be of
+   type float, and the second field is called ~rank~ and should be of
+   type int.  The third field is a discrete category variable.  You
+   should define an enumerated type, called ~Category~.  The valid
+   categories are ~HIGH_PERFORMANCE~, ~MID_PERFORMANCE~,
+   ~LOW_PERFORMANCE~.  The ~Data~ structure should have a third field
+   named ~perfCategory~ of type ~Category~.  Write a function called
+   ~generateData()~ that takes an array of ~Data~ items as its first
+   parameter, and an integer variable called ~size~ as its second
+   parameter.  This function should initialize all of the fields in
+   each item of the given array of ~Data~ items with random values.
+   For the ~speed~ float, create a value in the range from 0.0 to
+   10.0.  For the ~rank~ integer, create a value in the range from 0
+   to 10. And generate a random number from 0 to 2 to use to randomly
+   pick one of the performance categories for the ~perfCategory~
+   field.  In your main function, create an array of 20 ~Data~
+   structures, and demonstrate calling your ~generateData()~ on this
+   array to randomly initialize the fields of all of the ~Data~ items
+   with random data.
 
 3. Write a function named ~calculateHypotenuse~.  The function will
    take two floating point values as parameters, named ~a~ and ~b~.
