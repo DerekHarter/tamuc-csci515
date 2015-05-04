@@ -27,7 +27,8 @@ Perform the following tasks:
    used in class to sort an array of integers in ascending
    order:
 #+begin_src C
-  /** Bubble Sort Sort an array of integers using a Bubble sort.
+  /** Bubble Sort
+   * Sort an array of integers using a Bubble sort.
    * Bubblesort works in this manner.  On the first pass we start at
    * index 0 and compare successive items.  We swap the items if they
    * are out of order.  The result is that on the first pass, the
