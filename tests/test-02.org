@@ -26,7 +26,7 @@ Perform the following tasks:
 1. Here is an implementation of the ~bubbleSort()~ function we
    used in class to sort an array of integers in ascending
    order:
-#+begin_src C
+   #+begin_src C
   /** Bubble Sort
    * Sort an array of integers using a Bubble sort.
    * Bubblesort works in this manner.  On the first pass we start at
@@ -65,7 +65,7 @@ Perform the following tasks:
       }
     }
   }
-#+end_src
+   #+end_src
    Modify this function to accept an array of floating point values
    instead.  Then modify the function to sort the values in descending
    rather than ascending order (e.g. The largest float should end up
