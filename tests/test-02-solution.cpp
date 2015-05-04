@@ -114,6 +114,13 @@ int main()
   const int TASK1_SIZE = 5;
   float task1Values[TASK1_SIZE] = {-3.8, 4.2, 9.7, 2.5, 5.6};
 
+  bubbleSortFloats(task1Values, TASK1_SIZE);
+  cout <, "Task 1: array of floats after sorting:" << endl;
+  for (int idx=0; idx < TASK1_SIZE; ids++)
+  {
+    cout << "val[" << idx << "] = " << task1Values[idx] << endl;
+  }
+
   // Perform Task 2 here
 
   // Perform Task 3 here
