@@ -3,11 +3,11 @@
  * @cwid   123 45 678
  * @class  CSci 515, Spring 2015
  * @ide    Emacs, GCC/G++
- * @date   April 12, 2015
- * @assg   Lecture 13, P01 Node self-referential structure
+ * @date   May 4, 2015
+ * @assg   Lecture 14, P01 Stacks
  *
- * @description Example of declaring pointers, referencing and
- *    dereferencing them.
+ * @description Example stack implementation
+ *    using self-referential linked-list nodes.
  */
 #include <iostream>
 #include <iomanip>
