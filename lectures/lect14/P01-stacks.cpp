@@ -121,7 +121,10 @@ void printStack(Stack* stack)
   int idx = 1;
   while (node != NULL)
   {
-    
+    cout << setw(3) << idx
+	 << ": "
+	 << node->data
+	 << endl;
   }
   cout << "EOS (end of stack)" << endl;
 }
