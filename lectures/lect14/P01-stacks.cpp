@@ -109,24 +109,21 @@ int pop(Stack* stack)
  *    contents of stack will be displayed on
  *    standard output.
  */
-int pop(Stack* stack)
+void printStack(Stack* stack)
 {
-  // test for pop from empty stack
+  // If stack is empty, indicate this
   if (stack->top == NULL)
   {
-    cerr << "pop: ERROR: attempt to pop from empty stack" << endl;
-    exit(1);
+    cout << "EMPTY" << endl;
   }
 
-  // get the value to return
-  int value = stack->top->data;
-
-  // remove the top node from the stack, and deallocate it
-  Node* nodeToRemove = stack->top;
-  stack->top = stack->top->nextPtr;
-  delete(nodeToRemove);
-
-  return value;
+  Node* node = stack->top;
+  int idx = 1;
+  while (node != NULL)
+  {
+    
+  }
+  cout << "EOS (end of stack)" << endl;
 }
 
 
