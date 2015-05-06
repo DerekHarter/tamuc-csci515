@@ -100,6 +100,36 @@ int pop(Stack* stack)
 }
 
 
+/** print stack
+ * Print the values currently on the stack.
+ *
+ * @param stack A Stack* pointing to an existing stack.
+ *
+ * @returns void Nothing explicitly returned, but
+ *    contents of stack will be displayed on
+ *    standard output.
+ */
+int pop(Stack* stack)
+{
+  // test for pop from empty stack
+  if (stack->top == NULL)
+  {
+    cerr << "pop: ERROR: attempt to pop from empty stack" << endl;
+    exit(1);
+  }
+
+  // get the value to return
+  int value = stack->top->data;
+
+  // remove the top node from the stack, and deallocate it
+  Node* nodeToRemove = stack->top;
+  stack->top = stack->top->nextPtr;
+  delete(nodeToRemove);
+
+  return value;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
