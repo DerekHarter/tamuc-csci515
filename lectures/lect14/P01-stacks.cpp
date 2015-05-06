@@ -43,7 +43,7 @@ Stack* createStack()
 
 
 /** push item on stack
- * Given a stack, and an integer item, create a new node and pust the
+ * Given a stack, and an integer item, create a new node and push the
  * node to the top of the stack.
  *
  * @param stack A Stack* pointing to an existing stack.
@@ -52,6 +52,32 @@ Stack* createStack()
  * @returns void Nothing is returned explicitly, but the
  *    stack will be modified to contain the indicated item on the top
  *    of the stack.
+ */
+void push(Stack* stack, int value)
+{
+  Node* newItem = new Node();
+
+  // create and initialize the new node to be pushed on stack
+  newItem->data = value;
+
+  // push the new node to the top of the stack
+  newItem->next = stack->top;
+  stack->top = newItem;
+}
+
+
+/** pop item from stack
+ * Pop and remove the top item from the stack.  This
+ * function returns an int value, the value of the top
+ * item on the stack.  This function will simply exit
+ * if you try and pop from an empty stack.  The stack
+ * is modified to remove the top node from the stack.
+ *
+ * @param stack A Stack* pointing to an existing stack.
+ *
+ * @returns int The value of the top node on the stack.
+ *    As a side effect the stack will be modified to
+ *    remove the top node from the stack.
  */
 void push(Stack* stack, int value)
 {
