@@ -53,11 +53,16 @@ Stack* createStack()
  *    stack will be modified to contain the indicated item on the top
  *    of the stack.
  */
-Stack* createStack()
+void push(Stack* stack, int value)
 {
-  Stack* stack = new Stack();
-  stack->top = NULL;
-  return stack;
+  Node* newItem = new Node();
+
+  // create and initialize the new node to be pushed on stack
+  newItem->data = value;
+
+  // push the new node to the top of the stack
+  newItem->next = stack->top;
+  stack->top = newItem;
 }
 
 
