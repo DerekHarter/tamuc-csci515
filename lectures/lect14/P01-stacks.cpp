@@ -81,14 +81,12 @@ void push(Stack* stack, int value)
  */
 int pop(Stack* stack)
 {
-  Node* newItem = new Node();
-
-  // create and initialize the new node to be pushed on stack
-  newItem->data = value;
-
-  // push the new node to the top of the stack
-  newItem->next = stack->top;
-  stack->top = newItem;
+  // test for pop from empty stack
+  if (stack->top == NULL)
+  {
+    cerr << "pop: ERROR: attempt to pop from empty stack" << endl;
+    exit(1);
+  }
 }
 
 
