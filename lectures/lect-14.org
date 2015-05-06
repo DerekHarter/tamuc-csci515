@@ -7,8 +7,13 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
-** Data Structures
-- 
+** Stacks
+- A stack is a structure that allows nodes to be added and removed from the top of the stack only.
+- It is last-in-first-out (LIFO) data structure.  The last item you push, will be the first item back
+  out when you pop.
+- One way to implement, is using a linked list, where we provide only 2 operations, `push()~ and ~pop()~
+- Function push() is basically the same as the ~insertAtFront()~ function we have already developed.
+- Function pop() removes item from top
 
 ** Self-Referential Structures
 - A self-referential structure (or class) contains a pointer member that points to a ~struct~ of the
