@@ -49,8 +49,9 @@ Stack* createStack()
  * @param stack A Stack* pointing to an existing stack.
  * @param value The value to be pushed onto the stack.
  *
- * @returns stack A Stack*, the pointer to a newly dynamically
- *           allocated stack item.
+ * @returns void Nothing is returned explicitly, but the
+ *    stack will be modified to contain the indicated item on the top
+ *    of the stack.
  */
 Stack* createStack()
 {
