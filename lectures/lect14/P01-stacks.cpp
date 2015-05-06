@@ -22,6 +22,25 @@ struct Node
   Node* nextPtr;
 };
 
+struct Stack
+{
+  Node* top;
+};
+
+
+/** create empty stack
+ * Create an empty stack and return it.
+ *
+ * @returns stack A Stack*, the pointer to a newly dynamically
+ *           allocated stack item.
+ */
+Stack* createStack()
+{
+  Stack* stack = new Stack();
+  stack->top = NULL;
+  return stack;
+}
+
 
 /** main entry point
  * The main entry point for this program.  Execution
@@ -34,28 +53,7 @@ struct Node
  */
 int main()
 {
-  Node headNode;
-  Node secondNode;
-  Node lastNode;
 
-  // lets create a linked list of 3 integer data values by hand
-  headNode.data = 5;
-  secondNode.data = 10;
-  lastNode.data = 3;
-  headNode.nextPtr = &secondNode;
-  secondNode.nextPtr = &lastNode;
-  lastNode.nextPtr = NULL;
-
-  // lets display them.
-  Node* nodePtr = &headNode;
-
-  while (nodePtr != NULL)
-  {
-    cout << nodePtr->data << " -> ";
-    nodePtr = nodePtr->nextPtr;
-  }
-  cout << "NULL" << endl;
-  
   // retun 0 to indicate successful completion
   return 0;
 }
