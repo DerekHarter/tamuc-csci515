@@ -1,17 +1,14 @@
-#+TITLE:     Lecture 13 Notes
+#+TITLE:     Lecture 14 Notes
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 515 Spring 2015 <2015-04-21 Tue>
-#+DESCRIPTION: Lecture 13 Notes.
+#+DATE:      CSci 515 Spring 2015 <2015-05-06 Wed>
+#+DESCRIPTION: Lecture 14 Notes.
 #+OPTIONS:   H:4 num:t toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
 
 * First Session (11 - 11:40)
 ** Data Structures
-- Arrays are fixed-size data structures.
-- Dynamic data structures can grow and shrink during execution.
-- Are widely needed and useful.
-- We will look at linked lists, stacks, queues and trees.
+- 
 
 ** Self-Referential Structures
 - A self-referential structure (or class) contains a pointer member that points to a ~struct~ of the
@@ -26,29 +23,8 @@ struct Node
 };
 #+end_src
 
-- This user defined type type has 2 members
-  - A field to hold some data (could be arbitrary, even another struct)
-  - A nextPtr field, which is a pointer to a Node.  Can be used to point to next item in a list, stack, queue or tree.
-- Self-referential class objects can be linked together to form useful data structures such as lists, queues, stacks and trees.
-- By convention, we use a NULL pointer to indicate the end of a list or chain of such items (similar to null character in a C 
-char array).
 
 * Second Session (11:45 - 12:30)
-** Dynamic Memory Allocation
-- Creating and maintaining data structures that can grow or shrink requires dynamic memory allocation.
-- New operator takes an argument of the type being allocated, and returns a pointer to the new items allocated address.
-- If no memory available, an exception occurs.
-- We can dynamically deallocate memory with the corresponding delete operator on a pointer to a dynamically allocated object.
 
 * Third Session (12:40 - 1:40)
-** Linked Lists
-- A linked list is a linear collection of self-referential user defined types (~Node~).
-- The nodes are connected by pointer links.
-- There is a linear ordering.  There is a first item in a list, which points to the next item, and so on.
-- The last item in the list (by convention) points to the NULL pointer.  We use the NULL pointer when processing
-  such a list to determine when we have reached the end of the list.  Forgetting to set the NULL pointer
-  for the last item will cause incorrect behavior.
-
-** Circular linked lists
-** Doubly linked list
 
