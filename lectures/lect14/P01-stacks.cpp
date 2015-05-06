@@ -42,6 +42,24 @@ Stack* createStack()
 }
 
 
+/** push item on stack
+ * Given a stack, and an integer item, create a new node and pust the
+ * node to the top of the stack.
+ *
+ * @param stack A Stack* pointing to an existing stack.
+ * @param value The value to be pushed onto the stack.
+ *
+ * @returns stack A Stack*, the pointer to a newly dynamically
+ *           allocated stack item.
+ */
+Stack* createStack()
+{
+  Stack* stack = new Stack();
+  stack->top = NULL;
+  return stack;
+}
+
+
 /** main entry point
  * The main entry point for this program.  Execution
  * of this program will begin with this function.
@@ -53,7 +71,9 @@ Stack* createStack()
  */
 int main()
 {
+  Stack* s = createStack();
 
+  
   // retun 0 to indicate successful completion
   return 0;
 }
