@@ -79,7 +79,7 @@ void push(Stack* stack, int value)
  *    As a side effect the stack will be modified to
  *    remove the top node from the stack.
  */
-void push(Stack* stack, int value)
+int pop(Stack* stack)
 {
   Node* newItem = new Node();
 
