@@ -87,6 +87,16 @@ int pop(Stack* stack)
     cerr << "pop: ERROR: attempt to pop from empty stack" << endl;
     exit(1);
   }
+
+  // get the value to return
+  int value = stack->top->data;
+
+  // remove the top node from the stack, and deallocate it
+  Node* nodeToRemove = stack->top;
+  stack->top = stack->top->nextPtr;
+  delete(nodeToRemove);
+
+  return value;
 }
 
 
