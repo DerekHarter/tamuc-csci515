@@ -61,7 +61,7 @@ void push(Stack* stack, int value)
   newItem->data = value;
 
   // push the new node to the top of the stack
-  newItem->next = stack->top;
+  newItem->nextPtr = stack->top;
   stack->top = newItem;
 }
 
@@ -100,6 +100,21 @@ int pop(Stack* stack)
 }
 
 
+/** test if stack empty
+ * Test if the stack is empty or not.  Return true if
+ * the stack is empty, and false otherwise.
+ *
+ * @param stack A Stack* pointing to an existing stack.
+ *
+ * @returns bool True if stack is currently empty,
+ *    false otherwise.
+ */
+int isStackEmpty(Stack* stack)
+{
+  return (stack->top == NULL);
+}
+
+
 /** print stack
  * Print the values currently on the stack.
  *
@@ -121,12 +136,20 @@ void printStack(Stack* stack)
   int idx = 1;
   while (node != NULL)
   {
-    cout << setw(3) << idx
-	 << ": "
-	 << node->data
-	 << endl;
+    if (idx == 1)
+    {
+      cout << setw(3) << "TOP";
+    }
+    else
+    {
+      cout << setw(3) << idx;
+    }
+    cout << ": " << node->data << endl;
+
+    node = node->nextPtr;
+    idx++;
   }
-  cout << "EOS (end of stack)" << endl;
+  cout << "EOS (end of stack)" << endl << endl;
 }
 
 
@@ -143,7 +166,32 @@ int main()
 {
   Stack* s = createStack();
 
-  
+  cout << "Stack after creation:" << endl;
+  printStack(s);
+
+  push(s, 5);
+  push(s, 3);
+  push(s, 7);
+  cout << "Stack after pushing 3 items:" << endl;
+  printStack(s);
+
+  int val = pop(s); 
+  cout << "Poped value from stack: " << val << endl;
+  val = pop(s);
+  cout << "Poped value from stack: " << val << endl;
+  cout << "Test if stack currently empty: " << (isStackEmpty(s) ? "True" : "False") << endl;
+  cout << "Stack after 2 pops: " << endl;
+  printStack(s);
+
+  val = pop(s);
+  cout << "Poped value from stack: " << val << endl;
+  cout << "Test if stack currently empty: " << (isStackEmpty(s) ? "True" : "False") << endl;
+  cout << "Stack after 3 pops: " << endl;
+  printStack(s);
+
+  val = pop(s);
+  cout << "Poped from empty stack, should not reach this point" << endl;
+
   // retun 0 to indicate successful completion
   return 0;
 }
